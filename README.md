@@ -76,7 +76,7 @@ c:\dev\OpenADK-csharp> git rebase --continue
 9. Push your local changes to your remote repository.
 
 ```dos
-c:\dev\OpenADK-csharp> git push origin develop
+c:\dev\OpenADK-csharp> git push origin ISSUE_XXX
 ```
 
 ### Issue a Pull Request ###
@@ -85,9 +85,9 @@ The [Using Pull Requests][2] article provides a comprehensive guide for issuing 
 
 10. Browse to your remote (forked) repository on the GitHub site.
 
-11. Swith to the _develop_ branch and press the "Pull Request" button.
+11. Swith to the _ISSUE_XXX_ branch and press the "Pull Request" button.
 
-12. Review the Pull Request details and provide a meaningful title (with issue number if appropriate) and description of your change. It is important to ensure that the _base branch_ and _head branch_ settings are both _develop_.
+12. Review the Pull Request details and provide a meaningful title (with issue number if appropriate) and description of your change. It is important to ensure that the _base branch_ and _head branch_ settings are both _ISSUE_XXX_.
 
 13. Press the "Send pull request" button.
 
