@@ -87,7 +87,7 @@ The [Using Pull Requests][2] article provides a comprehensive guide for issuing 
 
 11. Swith to the _ISSUE_XXX_ branch and press the "Pull Request" button.
 
-12. Review the Pull Request details and provide a meaningful title (with issue number if appropriate) and description of your change. It is important to ensure that the _base branch_ and _head branch_ settings are both _ISSUE_XXX_.
+12. Review the Pull Request details and provide a meaningful title (with issue number if appropriate) and description of your change. It is important to ensure that the _base branch_ is set to _develop_ and the _head branch_ is set to _ISSUE_XXX_.
 
 13. Press the "Send pull request" button.
 
