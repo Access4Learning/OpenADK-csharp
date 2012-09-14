@@ -1,0 +1,20 @@
+<StudentMeal StudentPersonalRefId="D3E34B359D75101A8C3D00AA001A1652">
+  <MealStatus Type="Free" />
+  <HistoricalMealStatus>
+    <MealStatus Type="Reduced">
+      <StartDate>2003-09-01</StartDate>
+      <EndDate>2004-06-01</EndDate>
+      <SchoolYear>2004</SchoolYear>
+    </MealStatus>
+    <MealStatus Type="None">
+      <SchoolYear>2003</SchoolYear>
+    </MealStatus>
+  </HistoricalMealStatus>
+  <LastBreakfastDate>2005-09-25</LastBreakfastDate>
+  <LastLunchDate>2005-09-25</LastLunchDate>
+  <Amounts>
+    <Amount Type="Cash" Credits="0">3.50</Amount>
+    <Amount Type="BreakfastCredit" Credits="3">3.00</Amount>
+    <Amount Type="LunchCredit" Credits="5">7.50</Amount>
+  </Amounts>
+</StudentMeal>

@@ -1,0 +1,42 @@
+<SIF_ObjectData>
+<BusInfo RefId="C6003D3217DC11DBAC45F9B6C961BAEA">
+  <VehicleNumber>190</VehicleNumber>
+  <SeatingCapacity>38</SeatingCapacity>
+  <Contractor>Ryder Systems</Contractor>
+  <Equipment BusEquipmentRefId="C5C7A10017DC11DBAC45F628AFE51D47" Count="1" />
+  <Equipment BusEquipmentRefId="C5C61A6017DC11DBAC45D69878FFE43D" Count="3" />
+  <Equipment BusEquipmentRefId="C5C7A10017DC11DBAC45F628AFE51D47" Count="2" />
+  <Equipment BusEquipmentRefId="C5CAAE4017DC11DBAC45FB5A92E598E8" Count="2" />
+  <Equipment BusEquipmentRefId="C5CC34E017DC11DBAC459E7750AC877F" Count="1" />
+</BusInfo>
+<BusInfo RefId="C65ED7F017DC11DBAC45D4EF522A4ECF">
+  <VehicleNumber>99</VehicleNumber>
+  <SeatingCapacity>20</SeatingCapacity>
+  <Contractor>Atlantic Express</Contractor>
+  <Equipment BusEquipmentRefId="C5CAAE4017DC11DBAC45FB5A92E598E8" Count="1" />
+  <Equipment BusEquipmentRefId="C5CC34E017DC11DBAC459E7750AC877F" Count="1" />
+</BusInfo>
+<BusInfo RefId="C66826C017DC11DBAC45C93A7D2FB2C9">
+  <VehicleNumber>2</VehicleNumber>
+  <SeatingCapacity>47</SeatingCapacity>
+  <Contractor>Atlantic Express</Contractor>
+  <Equipment BusEquipmentRefId="C5CAAE4017DC11DBAC45FB5A92E598E8" Count="1" />
+  <Equipment BusEquipmentRefId="C5CC34E017DC11DBAC459E7750AC877F" Count="4" />
+</BusInfo>
+<BusInfo RefId="C6745BC117DC11DBAC458D49C5128AE2">
+  <VehicleNumber>105</VehicleNumber>
+  <SeatingCapacity>16</SeatingCapacity>
+  <Contractor>Laidlaw Transit</Contractor>
+  <Equipment BusEquipmentRefId="C5C927A017DC11DBAC45A693E1006562" Count="3" />
+  <Equipment BusEquipmentRefId="C5C7A10017DC11DBAC45F628AFE51D47" Count="4" />
+  <Equipment BusEquipmentRefId="C5C61A6017DC11DBAC45D69878FFE43D" Count="2" />
+  <Equipment BusEquipmentRefId="C5CC34E017DC11DBAC459E7750AC877F" Count="3" />
+  <Equipment BusEquipmentRefId="C5CAAE4017DC11DBAC45FB5A92E598E8" Count="1" />
+</BusInfo>
+<BusInfo RefId="C68090C017DC11DBAC45AE8335F9D7E0">
+  <VehicleNumber>61</VehicleNumber>
+  <SeatingCapacity>40</SeatingCapacity>
+  <Contractor>Atlantic Express</Contractor>
+  <Equipment BusEquipmentRefId="C5C7A10017DC11DBAC45F628AFE51D47" Count="4" />
+  <Equipment BusEquipmentRefId="C5C7A10017DC11DBAC45F628AFE51D47" Count="4" />
+</BusInfo></SIF_ObjectData>

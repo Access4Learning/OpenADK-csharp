@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: AssessmentSubTest
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.6.10 AssessmentSubTest -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+  <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="imports/xml/xml.xsd" />
+
+	<element name='AssessmentSubTest'>
+		<complexType>
+			<sequence>
+				<element ref='sif:AssessmentRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SubTestName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CompositeIndicator' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LearningStandardItemRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:GradeLevels' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute ref='xml:lang' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='SubTestName' type='string'/>
+
+		<element name='CompositeIndicator' type='sif:TrueOrFalseOrEmptyType'/>
+
+</schema>

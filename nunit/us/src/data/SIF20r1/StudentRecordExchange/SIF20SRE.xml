@@ -1,0 +1,11 @@
+<StudentRecordExchange RefId="0EAF9D6DA4854F348103B04BFEAC65B2">
+  <StateProvinceId>2983472</StateProvinceId>
+  <Records>
+    <StudentDemographicRecordRefId>0B4AC4176FED4F00BCB6FBF1AE466FD2</StudentDemographicRecordRefId>
+    <StudentAcademicRecordRefId>D932E34082D04C048112729922B58A93</StudentAcademicRecordRefId>
+    <StudentSpecialEducationRecordRefId>DA92717DE79A4D428E1107F5DC4ECED8</StudentSpecialEducationRecordRefId>
+    <OtherRecords>
+      <StudentRecordPackageRefId>25FCD7C038E44E38A025FFD609B9D190</StudentRecordPackageRefId>
+    </OtherRecords>
+  </Records>
+</StudentRecordExchange>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: EmployeePicture
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.5.9 EmployeePicture -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='EmployeePicture'>
+		<complexType>
+			<sequence>
+				<element ref='sif:PictureSource' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='EmployeePersonalRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+</schema>

@@ -1,0 +1,34 @@
+<SIF_ObjectData>
+<SchoolInfo RefId="C17250A017DC11DBAC458FE86C20166B">
+  <LocalId>C17250A017DC11DBAC458FE86C20166B</LocalId>
+  <StatePrId>C17250A017DC11DBAC458FE86C20166B</StatePrId>
+  <SchoolName>John Adams High</SchoolName>
+  <SchoolDistrict LEAInfoRefId="C13B3B1017DC11DBAC45846E3A400876" />
+  <SchoolFocus Type="Regular" />
+  <SchoolURL>http://compliance.sifinfo.org:8080/sifcompliance/SchoolURL.jsp?SchoolName=JohnAdamsHigh</SchoolURL>
+  <PrincipalInfo>
+    <ContactName>Javier Gedzyk</ContactName>
+  </PrincipalInfo>
+  <PhoneNumber Format="FF" Type="18">(561) 562-9328</PhoneNumber>
+  <Address Type="04">
+    <Street>
+      <Line1>7926 Lincoln St.</Line1>
+      <StreetNumber>7926</StreetNumber>
+      <StreetName>Lincoln</StreetName>
+      <StreetType>St.</StreetType>
+    </Street>
+    <City>Boca Raton</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33432</PostalCode>
+  </Address>
+  <IdentificationInfo Code="18">00124</IdentificationInfo>
+  <SessionType Code="04" />
+  <GradeLevels>
+    <GradeLevel Code="11" />
+    <GradeLevel Code="12" />
+    <GradeLevel Code="09" />
+    <GradeLevel Code="10" />
+  </GradeLevels>
+</SchoolInfo></SIF_ObjectData>

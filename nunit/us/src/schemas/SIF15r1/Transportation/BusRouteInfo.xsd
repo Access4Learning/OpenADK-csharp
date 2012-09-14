@@ -1,0 +1,109 @@
+<!--
+
+Object: BusRouteInfo
+
+Owner: Transporation and Geographic Information Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated namespace
+
+2003-06-09 Mark Reichert
+- Changed RefIdType to RefIdOrEmptyType
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.9.4 BusRouteInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='BusRouteInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Bus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:RouteNumber' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:RouteType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:MaximumLoad' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Name' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:RouteDuration' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:RouteDistance' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='Bus'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='BusInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='RouteNumber' type='string'/>
+
+	<element name='RouteType'>
+		<simpleType>
+			<restriction base='string'>
+				<enumeration value='Inbound'/>
+				<enumeration value='Outbound'/>
+				<enumeration value=''/>
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name='MaximumLoad' type='string'/>
+
+	<element name='RouteDuration'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Type' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Loaded'/>
+								<enumeration value='Total'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='RouteDistance'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Type' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Loaded'/>
+								<enumeration value='Total'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+</schema>
+

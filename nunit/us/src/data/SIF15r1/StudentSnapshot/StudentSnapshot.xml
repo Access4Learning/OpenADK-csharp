@@ -1,0 +1,51 @@
+<StudentSnapshot SnapDate="20030911" StudentPersonalRefId="4A917F280C0AB83B4D00A08A0C84C925">
+  <SchoolYear>2004</SchoolYear>
+  <Name Type="01">
+    <LastName>Student</LastName>
+    <FirstName>Joe</FirstName>
+    <MiddleName></MiddleName>
+    <PreferredName>Joe</PreferredName>
+  </Name>
+  <LocalId>1089543</LocalId>
+  <StatePrId>A50321</StatePrId>
+  <Address Type="O4">
+    <Street>
+      <Line1>1 IBM Plaza</Line1>
+      <Line2>Suite 2000</Line2>
+      <Line3>Salt Lake City, UT 84102</Line3>
+      <StreetNumber>1</StreetNumber>
+      <StreetName>IBM</StreetName>
+      <StreetType>Plaza</StreetType>
+      <AptType>Suite</AptType>
+      <AptNumber>2000</AptNumber>
+    </Street>
+    <City>Salt Lake City</City>
+    <StatePr Code="UT"/>
+    <Country Code="US"/>
+    <PostalCode>84102</PostalCode>
+  </Address>
+  <Ethnicity Type="NA" Code="C"/>
+  <Gender>M</Gender>
+  <BirthDate>19880302</BirthDate>
+  <Age>15</Age>
+  <GradYear Type="Original">2006</GradYear>
+  <HomeEnrollment>
+    <EnrollmentId StudentSchoolEnrollmentRefId="B9F7A2D63BA045C74A01A08A0C84C925"/>
+    <SchoolName>Academy HS</SchoolName>
+    <SchoolId SchoolInfoRefId="754704BF3E5C07DE4202A08A0C84C925"/>
+    <LocalId>ACAD</LocalId>
+    <StatePrId>0573032</StatePrId>
+    <Status>Active</Status>
+    <GradeLevel Code="09"/>
+    <HomeroomId RoomInfoRefId="862795AEE57B8AEF4503A08A0C84C925"/>
+    <HomeroomNumber>B024</HomeroomNumber>
+    <FullYearEnrollment>Unknown</FullYearEnrollment>
+  </HomeEnrollment>
+  <IDEA>No</IDEA>
+  <Migrant>Yes</Migrant>
+  <Title1>No</Title1>
+  <GiftedTalented>Yes</GiftedTalented>
+  <EconomicDisadvantage>No</EconomicDisadvantage>
+  <ELL>Yes</ELL>
+  <Homeless>No</Homeless>
+</StudentSnapshot>

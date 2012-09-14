@@ -1,0 +1,7 @@
+<AssessmentPackage RefId="3C5540A0FF3211DC9CC3BAA57A75DACB">
+	<XMLData Description="thirdPartyAssessment">
+	   <thirdPartyAssessment xmlns:tpa="http://thirdparty.com/namespaces/Assessment">
+		  <name>Third Party Assessment</name>
+	   </thirdPartyAssessment>
+	</XMLData>
+ </AssessmentPackage>

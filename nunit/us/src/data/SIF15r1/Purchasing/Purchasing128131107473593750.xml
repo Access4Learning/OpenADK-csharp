@@ -1,0 +1,14 @@
+<SIF_ObjectData>
+<Purchasing RefId="F160AB9017DC11DBAC45FA4F3EDA7DC0">
+  <FormType Code="PO" />
+  <FormNumber>48134</FormNumber>
+  <Vendor VendorInfoRefId="F138FF5017DC11DBAC45A0329DB3F005" />
+  <PurchasingItem>
+    <ItemNumber>77116</ItemNumber>
+    <ItemDescription>Item</ItemDescription>
+    <ExpenseAccount>
+      <AccountCode>10-1100-610</AccountCode>
+      <Amount>462.19</Amount>
+    </ExpenseAccount>
+  </PurchasingItem>
+</Purchasing></SIF_ObjectData>

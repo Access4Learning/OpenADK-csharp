@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: ReportManifest
+
+Owner: Vertical Reporting Task Force
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+2004-07-27 Mark Reichert
+- Made ReportDefinitionSource mixed
+
+-->
+
+<!-- 5.10.1 ReportManifest -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='ReportManifest'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SIF_Version' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_MaxBufferSize' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ReceivingAuthority' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ReportName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ReportingPeriod' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ReportDefinitionSource' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ReportFormat' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_QueryGroup' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='ReportAuthorityInfoRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='ReceivingAuthority'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='ReportAuthorityInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='ReportName' type='string'/>
+
+		<element name='ReportingPeriod'>
+			<complexType>
+				<sequence>
+					<element ref='sif:BeginReportDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:EndReportDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:BeginSubmitDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:EndSubmitDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:DueDate' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+		<element name='BeginReportDate' type='sif:DateOrEmptyType'/>
+
+		<element name='EndReportDate' type='sif:DateOrEmptyType'/>
+
+		<element name='BeginSubmitDate' type='sif:DateOrEmptyType'/>
+
+		<element name='EndSubmitDate' type='sif:DateOrEmptyType'/>
+
+		<element name='ReportDefinitionSource'>
+			<complexType mixed="true">
+				<sequence>
+					<any namespace='http://www.sifinfo.org/infrastructure/1.x' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='Type' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='Description'/>
+							<enumeration value='URL'/>
+							<enumeration value='SIF_Query'/>
+							<enumeration value='ExampleObject'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+		<element name='ReportFormat'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='URL'/>
+									<enumeration value='Description'/>
+									<enumeration value='Bae64Binary'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='SIF_QueryGroup'>
+			<complexType>
+				<sequence>
+					<element name='SIF_Query' minOccurs='0' maxOccurs='unbounded'>
+						<complexType>
+							<sequence>
+								<element ref='sif:SIF_QueryObject'/>
+								<element name='SIF_ConditionGroup' minOccurs='0' maxOccurs='1'>
+									<complexType>
+										<sequence>
+											<element name='SIF_Conditions' maxOccurs='unbounded'>
+												<complexType>
+													<sequence>
+														<element name='SIF_Condition' maxOccurs='unbounded'>
+															<complexType>
+																<sequence>
+																	<element ref='sif:SIF_Element'/>
+																	<element name='SIF_Operator'>
+																		<simpleType>
+																			<restriction base='string'>
+																				<enumeration value='EQ'/>
+																				<enumeration value='LT'/>
+																				<enumeration value='LE'/>
+																				<enumeration value='GT'/>
+																				<enumeration value='GE'/>
+																				<enumeration value='NE'/>
+																				<enumeration value=''/>
+																			</restriction>
+																		</simpleType>
+																	</element>
+																	<element ref='sif:SIF_Value'/>
+																</sequence>
+															</complexType>
+														</element>
+													</sequence>
+													<attribute name='Type' type='sif:ConditionType' use='required'/>
+												</complexType>
+											</element>
+										</sequence>
+										<attribute name='Type' type='sif:ConditionType' use='required'/>
+									</complexType>
+								</element>
+
+							</sequence>
+						</complexType>
+					</element>
+				</sequence>
+			</complexType>
+		</element>
+
+</schema>

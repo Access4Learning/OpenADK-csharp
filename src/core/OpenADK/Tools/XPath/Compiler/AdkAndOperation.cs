@@ -1,0 +1,70 @@
+//
+// Copyright (c)1998-2011 Pearson Education, Inc. or its affiliate(s). 
+// All rights reserved.
+//
+
+using System;
+using System.Xml.Xsl;
+
+namespace OpenADK.Library.Tools.XPath.Compiler
+{
+    internal class AdkAndOperation : AdkOperation
+    {
+        public AdkAndOperation( AdkExpression[] args ) : base( args )
+        {
+        }
+
+        /// <summary>
+        /// Returns the XPath symbol for this operation, e.g. "+", "div", etc.
+        /// </summary>
+        protected override string Symbol
+        {
+            get { return "and"; }
+        }
+
+        /// <summary>
+        /// Computes the precedence of the operation
+        /// </summary>
+        /// <returns></returns>
+        protected override int Precedence
+        {
+            get { return 1; }
+        }
+
+        /// <summary>
+        /// Returns true if the operation is not sensitive to the order of arguments,
+        /// e.g. "=", "and" etc, and false if it is, e.g. "&lt;=", "div".
+        /// </summary>
+        protected override bool Symmetric
+        {
+            get { return true; }
+        }
+
+        /// <summary>
+        ///  Evaluates the expression. If the result is a node set, returns
+        /// the first element of the node set.
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
+        public override object ComputeValue( XsltContext context )
+        {
+            foreach ( AdkExpression expr in fArgs )
+            {
+                Object val = expr.ComputeValue( context );
+                if ( val is Boolean )
+                {
+                    if ( !(Boolean) val )
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    // An expression returned a non-boolean value. Return false  
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+}

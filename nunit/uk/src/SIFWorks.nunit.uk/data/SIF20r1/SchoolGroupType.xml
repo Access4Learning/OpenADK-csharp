@@ -1,0 +1,17 @@
+﻿<SchoolGroupType RefId="900B4180DC7E11DB9C0100163564AA14" SchoolInfoRefId="D6F60F2862CA460BAA95E57AB49CBE88" SchoolYear="2007" GroupType="T">
+  <Code>NSCI</Code>
+  <Title>Natural Science Studies</Title>
+  <Description>General classification for all study of the natural sciences</Description>
+  <SubjectAreaList>
+    <SubjectArea>ASC</SubjectArea>
+    <SubjectArea>BIO</SubjectArea>
+    <SubjectArea>CHM</SubjectArea>
+    <SubjectArea>CSB</SubjectArea>
+    <SubjectArea>CSC</SubjectArea>
+    <SubjectArea>CSP</SubjectArea>
+    <SubjectArea>ENV</SubjectArea>
+    <SubjectArea>GLG</SubjectArea>
+    <SubjectArea>PHY</SubjectArea>
+    <SubjectArea>SCI</SubjectArea>
+  </SubjectAreaList>
+</SchoolGroupType>

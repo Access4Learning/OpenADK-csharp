@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenADK.nunit.uk", "OpenADK.nunit.uk.csproj", "{308B403D-7654-4AC2-89E8-8C67ABF08743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenADK.UnitTesting", "..\..\..\framework\src\OpenADK.UnitTesting.csproj", "{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenADK-NET-Core", "..\..\..\..\src\core\OpenADK-NET-Core.csproj", "{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenADK-Nunit-Core", "..\..\..\core\src\OpenADK-Nunit-Core.csproj", "{96E593B8-5673-4F26-BAD8-746174CE802A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenADK-UK-SDO", "..\..\..\..\src\uk\OpenADK-UK-SDO.csproj", "{4E8A65A3-204A-4D82-A66C-627E3183A500}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Eval|Any CPU = Eval|Any CPU
+		Internal|Any CPU = Internal|Any CPU
+		PerfTest|Any CPU = PerfTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseDocs|Any CPU = ReleaseDocs|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.Eval|Any CPU.ActiveCfg = Release|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.Eval|Any CPU.Build.0 = Release|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.Internal|Any CPU.ActiveCfg = Release|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.Internal|Any CPU.Build.0 = Release|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.PerfTest|Any CPU.ActiveCfg = Release|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.PerfTest|Any CPU.Build.0 = Release|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.ReleaseDocs|Any CPU.ActiveCfg = Release|Any CPU
+		{308B403D-7654-4AC2-89E8-8C67ABF08743}.ReleaseDocs|Any CPU.Build.0 = Release|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.Eval|Any CPU.ActiveCfg = Eval|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.Eval|Any CPU.Build.0 = Eval|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.Internal|Any CPU.ActiveCfg = Internal|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.Internal|Any CPU.Build.0 = Internal|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.PerfTest|Any CPU.ActiveCfg = Internal|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.PerfTest|Any CPU.Build.0 = Internal|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.ReleaseDocs|Any CPU.ActiveCfg = ReleaseDocs|Any CPU
+		{50DACA02-66FB-47A4-93AD-B87AF55CFAF9}.ReleaseDocs|Any CPU.Build.0 = ReleaseDocs|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.Eval|Any CPU.ActiveCfg = Eval|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.Eval|Any CPU.Build.0 = Eval|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.Internal|Any CPU.ActiveCfg = Internal|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.Internal|Any CPU.Build.0 = Internal|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.PerfTest|Any CPU.ActiveCfg = Internal|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.PerfTest|Any CPU.Build.0 = Internal|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.ReleaseDocs|Any CPU.ActiveCfg = ReleaseDocs|Any CPU
+		{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}.ReleaseDocs|Any CPU.Build.0 = ReleaseDocs|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.Eval|Any CPU.ActiveCfg = Eval|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.Eval|Any CPU.Build.0 = Eval|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.Internal|Any CPU.ActiveCfg = Internal|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.Internal|Any CPU.Build.0 = Internal|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.PerfTest|Any CPU.ActiveCfg = Internal|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.PerfTest|Any CPU.Build.0 = Internal|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.ReleaseDocs|Any CPU.ActiveCfg = ReleaseDocs|Any CPU
+		{96E593B8-5673-4F26-BAD8-746174CE802A}.ReleaseDocs|Any CPU.Build.0 = ReleaseDocs|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.Eval|Any CPU.ActiveCfg = Eval|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.Eval|Any CPU.Build.0 = Eval|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.Internal|Any CPU.ActiveCfg = Internal|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.Internal|Any CPU.Build.0 = Internal|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.PerfTest|Any CPU.ActiveCfg = Internal|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.PerfTest|Any CPU.Build.0 = Internal|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.ReleaseDocs|Any CPU.ActiveCfg = ReleaseDocs|Any CPU
+		{4E8A65A3-204A-4D82-A66C-627E3183A500}.ReleaseDocs|Any CPU.Build.0 = ReleaseDocs|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

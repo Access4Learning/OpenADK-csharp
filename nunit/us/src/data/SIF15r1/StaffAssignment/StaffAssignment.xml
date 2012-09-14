@@ -1,0 +1,16 @@
+<StaffAssignment 
+		RefId="D3E34B359D75101A8C3D00AA001A1652"
+		SchoolInfoRefId="A8C3D3E34B359D75101D00AA001A1652" 
+		SchoolYear="2004"
+		StaffPersonalRefId="D3E34B359D75101A8C3D00AA001A1651">
+    <Description>First grade elementary teacher</Description>
+    <JobStartDate>20000905</JobStartDate>
+    <JobEndDate>20010625</JobEndDate>
+    <JobFTE>1.00</JobFTE >
+    <JobFunction Code="0210"/>
+    <TeachingAssignment Code="1304"/>
+    <GradeClassification Code="0794"/>
+    <ItinerantTeacher>No</ItinerantTeacher>
+    <InstructionLevel>0571</InstructionLevel>
+    <HRId EmployeePersonalRefId="43E34B359D75101A8C3D00AA001A1652"/>
+</StaffAssignment>

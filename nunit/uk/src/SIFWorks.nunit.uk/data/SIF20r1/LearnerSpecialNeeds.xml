@@ -1,0 +1,29 @@
+﻿<LearnerSpecialNeeds RefId="B3E949552545531BECC511DB91D00002" LearnerPersonalRefId="B7865180DC7E11DB9C010016353E6F4C" SchoolInfoRefId="3A35946CDC7D11DB9C010016353E6F4C">
+  <UnitMember>Yes</UnitMember>
+  <ResourcedProvisionMember>Yes</ResourcedProvisionMember>
+  <NextReviewDate>2007-05-25</NextReviewDate>
+  <Provision>A</Provision>
+  <StartDate>2006-09-01</StartDate>
+  <EndDate>2007-06-30</EndDate>
+  <SENTypeList>
+    <SENType Ranking="1">MLD</SENType>
+  </SENTypeList>
+  <AdviceAndAssessmentLevel>AA3</AdviceAndAssessmentLevel>
+  <GroupingAndSupportLevel>GS2</GroupingAndSupportLevel>
+  <SpecialisedResourcesLevel>SR1</SpecialisedResourcesLevel>
+  <TeachingMethodsLevel>CT3</TeachingMethodsLevel>
+  <EmbeddedBasicSkillsSupport>01</EmbeddedBasicSkillsSupport>
+  <LiteracyLevelStart>4</LiteracyLevelStart>
+  <LiteracyLevelEnd />
+  <NumeracyLevelStart>3</NumeracyLevelStart>
+  <NumeracyLevelEnd />
+  <NationalCurriculumList>
+    <NationalCurriculum>
+      <Modification>M</Modification>
+      <Subject>PRI</Subject>
+    </NationalCurriculum>
+  </NationalCurriculumList>
+  <MedicalFlag>No</MedicalFlag>
+  <ParamedicalSupport>S</ParamedicalSupport>
+  <MedicalNotes>Pupil must be monitored constantly.</MedicalNotes>
+</LearnerSpecialNeeds>

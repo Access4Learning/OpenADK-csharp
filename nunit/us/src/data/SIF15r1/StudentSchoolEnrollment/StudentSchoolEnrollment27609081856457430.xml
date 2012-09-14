@@ -1,0 +1,49 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>663B8BCE4391462890A405CB87B69A00</SIF_MsgId>
+      <SIF_Date>20050518</SIF_Date>
+      <SIF_Time Zone="UTC-05:00">11:10:26</SIF_Time>
+      <SIF_SourceId>SPIAgent</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>618B338D1D2844FDB5D6A00E21CC37FC</SIF_RequestMsgId>
+    <SIF_PacketNumber>6</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData>
+      <StudentSchoolEnrollment RefId="1B7251D7AD9944CAAEC94AB7C482562A" StudentPersonalRefId="F5DEB9FA90EA4FB695F4F7CE37D8A17C" SchoolInfoRefId="C00B759491E74745B5F10C89E39E8FF6" MembershipType="Home" TimeFrame="Historical">
+        <EntryDate>20041020</EntryDate>
+        <GradeLevel Code="07">07</GradeLevel>
+        <ExitDate>20050104</ExitDate>
+      </StudentSchoolEnrollment>
+      <StudentSchoolEnrollment RefId="223BD4CF024A4B238E564A68F404F857" StudentPersonalRefId="F522EE943D904B6094E3C8292310D114" SchoolInfoRefId="C00B759491E74745B5F10C89E39E8FF6" MembershipType="Home" TimeFrame="Future">
+        <EntryDate>20050527</EntryDate>
+        <GradeLevel Code="07">07</GradeLevel>
+      </StudentSchoolEnrollment>
+      <StudentSchoolEnrollment RefId="A9C3BDB9A81E45BB9A1D85BBEEF7A780" StudentPersonalRefId="6C1C7039797A4B4CAA9E72D179286BF7" SchoolInfoRefId="C00B759491E74745B5F10C89E39E8FF6" MembershipType="Home" TimeFrame="Future">
+        <EntryDate>20050527</EntryDate>
+        <GradeLevel Code="07">07</GradeLevel>
+      </StudentSchoolEnrollment>
+      <StudentSchoolEnrollment RefId="3E5B9542235A435082CF67C54C9E261F" StudentPersonalRefId="6C1C7039797A4B4CAA9E72D179286BF7" SchoolInfoRefId="C00B759491E74745B5F10C89E39E8FF6" MembershipType="Home" TimeFrame="Current">
+        <EntryDate>20040816</EntryDate>
+        <GradeLevel Code="07">07</GradeLevel>
+        <ExitDate>20050527</ExitDate>
+      </StudentSchoolEnrollment>
+      <StudentSchoolEnrollment RefId="E213ABF24C8B4D86BD27A087F4E1C707" StudentPersonalRefId="B3A5A2CD4F5840CD84C45236DEF66E8A" SchoolInfoRefId="C00B759491E74745B5F10C89E39E8FF6" MembershipType="Home" TimeFrame="Current">
+        <EntryDate>20050506</EntryDate>
+        <GradeLevel Code="07">07</GradeLevel>
+        <ExitDate>20050527</ExitDate>
+      </StudentSchoolEnrollment>
+      <StudentSchoolEnrollment RefId="82F8340696DD44C6BBAA73D08F1DF713" StudentPersonalRefId="B3A5A2CD4F5840CD84C45236DEF66E8A" SchoolInfoRefId="C00B759491E74745B5F10C89E39E8FF6" MembershipType="Home" TimeFrame="Historical">
+        <EntryDate>20040816</EntryDate>
+        <GradeLevel Code="07">07</GradeLevel>
+        <ExitDate>20050420</ExitDate>
+      </StudentSchoolEnrollment>
+      <StudentSchoolEnrollment RefId="0515497591F640DE91B3A4506D2E608B" StudentPersonalRefId="F522EE943D904B6094E3C8292310D114" SchoolInfoRefId="C00B759491E74745B5F10C89E39E8FF6" MembershipType="Home" TimeFrame="Current">
+        <EntryDate>20040816</EntryDate>
+        <GradeLevel Code="07">07</GradeLevel>
+        <ExitDate>20050527</ExitDate>
+      </StudentSchoolEnrollment>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

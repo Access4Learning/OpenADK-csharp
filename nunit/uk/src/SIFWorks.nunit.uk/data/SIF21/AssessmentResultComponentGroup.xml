@@ -1,0 +1,9 @@
+﻿<AssessmentResultComponentGroup RefId="C39048BE914227F9F32B193C408542D3">
+  <Name>Science Test Level KS2</Name>
+  <SupplierName>DCSF</SupplierName>
+  <ComponentList>
+    <AssessmentResultComponentRefId>C39048BE914224F9F32B193C408542D5</AssessmentResultComponentRefId>
+    <AssessmentResultComponentRefId>C39048BE914224F9F32B193C408542D5</AssessmentResultComponentRefId>
+    <AssessmentResultComponentRefId>C39048BE914224F9F32B193C408542D5</AssessmentResultComponentRefId>
+  </ComponentList>
+</AssessmentResultComponentGroup>

@@ -1,0 +1,44 @@
+<StaffPersonal RefId="D3E34F419D75101A8C3D00AA001A1652">
+  <LocalId>946379881</LocalId>
+  <StateProvinceId>C2345681</StateProvinceId>
+  <ElectronicIdList>
+    <ElectronicId Type="Barcode">206655</ElectronicId>
+  </ElectronicIdList>
+  <OtherIdList>
+    <OtherId Type="0004">333333333</OtherId>
+  </OtherIdList>
+  <Name Type="04">
+    <Prefix>Mr.</Prefix>
+    <LastName>Woodall</LastName>
+    <FirstName>Charles</FirstName>
+    <MiddleName>William</MiddleName>
+    <PreferredName>Chuck</PreferredName>
+  </Name>
+  <Demographics>
+    <Gender>M</Gender>
+  </Demographics>
+  <Title>Principal</Title>
+  <AddressList>
+    <Address Type="0123">
+      <Street>
+        <Line1>6799 33rd Ave.</Line1>
+        <StreetNumber>6799</StreetNumber>
+        <StreetName>33rd</StreetName>
+        <StreetType>Ave.</StreetType>
+      </Street>
+      <City>Chicago</City>
+      <StateProvince>IL</StateProvince>
+      <Country>US</Country>
+      <PostalCode>60660</PostalCode>
+    </Address>
+  </AddressList>
+  <PhoneNumberList>
+    <PhoneNumber Type="0096">
+      <Number>(312) 555-1234</Number>
+    </PhoneNumber>
+  </PhoneNumberList>
+  <EmailList>
+    <Email Type="Primary">chuckw@imginc.com</Email>
+  </EmailList>
+  <EmployeePersonalRefId>1652D3E34F419D75101A8C3D00AA001A</EmployeePersonalRefId>
+</StaffPersonal>

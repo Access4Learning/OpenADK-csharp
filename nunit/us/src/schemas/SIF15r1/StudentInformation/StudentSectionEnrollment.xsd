@@ -1,0 +1,66 @@
+<!--
+
+Object: StudentSectionEnrollment
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2003-01-15 Mark Reichert
+- Created object per SIS group.
+
+2003-06-09 Mark Reichert
+- Changed RefIdType to RefIdOrEmptyType
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.8.13 StudentSectionEnrollment -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StudentSectionEnrollment'>
+		<complexType>
+			<sequence>
+				<element ref='sif:EntryDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ExitDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ScheduleInfoOverride' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:CreditsAttempted' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='StudentPersonalRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='SectionInfoRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='ScheduleInfoOverride'>
+		<complexType>
+			<sequence>
+				<element ref='sif:MeetingTime' minOccurs='0' maxOccurs='unbounded'/>
+			</sequence>
+			<attribute name='Override' type='sif:YesOrNoOrEmptyType' use='required'/>
+			<attribute name='TermInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='CreditsAttempted'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+</schema>
+

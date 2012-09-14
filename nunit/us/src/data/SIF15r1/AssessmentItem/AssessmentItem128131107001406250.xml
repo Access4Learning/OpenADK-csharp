@@ -1,0 +1,11 @@
+<SIF_ObjectData>
+<AssessmentItem RefId="F3A25E3017DC11DBAC45C6F89017DD11" xml:lang="en">
+  <Title>Item F3A25E3017DC11DBAC45C6F89017DD11</Title>
+  <Presentation Width="320" Height="20" X0="0" Y0="0" xml:lang="en">
+    <Instruction>Please answer the following.</Instruction>
+    <Content>What is the name of this item?</Content>
+  </Presentation>
+  <ItemContent View="All">
+    <ItemAnswer>Item F3A25E3017DC11DBAC45C6F89017DD11</ItemAnswer>
+  </ItemContent>
+</AssessmentItem></SIF_ObjectData>

@@ -1,0 +1,8 @@
+<SIF_ObjectData>
+<FinancialAccount RefId="ED68966017DC11DBAC45F1E232B72154">
+  <AccountNumber>ED68966017DC11DBAC45F1E232B72154</AccountNumber>
+  <FinancialAccountName>ED68966017DC11DBAC45F1E232B72154</FinancialAccountName>
+  <FinancialClassRefId>ED1C241117DC11DBAC45D94FE7BC6551</FinancialClassRefId>
+  <CreationDate>20040905</CreationDate>
+  <CreationTime Zone="UTC-05:00">12:00:00</CreationTime>
+</FinancialAccount></SIF_ObjectData>

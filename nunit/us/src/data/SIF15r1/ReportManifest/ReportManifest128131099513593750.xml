@@ -1,0 +1,21 @@
+<SIF_ObjectData>
+<ReportManifest RefId="F4E64FE017DC11DBAC45B26C9CC72A59" ReportAuthorityInfoRefId="F4C0033017DC11DBAC45E9188000C07A">
+  <SIF_Version>1.5r1</SIF_Version>
+  <SIF_MaxBufferSize>65536</SIF_MaxBufferSize>
+  <ReportName>Report F4E64FE017DC11DBAC45B26C9CC72A59</ReportName>
+  <ReportDefinitionSource Type="SIF_Query" />
+  <SIF_QueryGroup>
+    <SIF_Query>
+      <SIF_QueryObject ObjectName="StudentPersonal" />
+      <SIF_ConditionGroup Type="None">
+        <SIF_Conditions Type="None">
+          <SIF_Condition>
+            <SIF_Element>Demographics/Gender</SIF_Element>
+            <SIF_Operator>EQ</SIF_Operator>
+            <SIF_Value>F</SIF_Value>
+          </SIF_Condition>
+        </SIF_Conditions>
+      </SIF_ConditionGroup>
+    </SIF_Query>
+  </SIF_QueryGroup>
+</ReportManifest></SIF_ObjectData>

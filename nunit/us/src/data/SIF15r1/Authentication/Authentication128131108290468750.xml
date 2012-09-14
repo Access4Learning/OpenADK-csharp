@@ -1,0 +1,8 @@
+<SIF_ObjectData>
+<Authentication RefId="F24BF5F017DC11DBAC45D60922FAF2FD" SifRefId="C3A18CB017DC11DBAC45D7BAAA0C7199" SifRefIdType="StaffPersonal">
+  <AuthenticationInfo>
+    <System Type="Network" />
+    <Username>StaffPersonal_C3A18CB017DC11DBAC45D7BAAA0C7199</Username>
+    <Password Algorithm="MD5" KeyName="">wh+Wm18D0z1D4E+PE252gg==</Password>
+  </AuthenticationInfo>
+</Authentication></SIF_ObjectData>

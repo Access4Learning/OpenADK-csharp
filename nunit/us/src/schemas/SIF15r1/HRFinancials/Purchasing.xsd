@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: Purchasing
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.5.21 Purchasing -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='Purchasing'>
+		<complexType>
+			<sequence>
+				<element ref='sif:FormType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FormNumber' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FiscalYearRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Vendor' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LocationInfoRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EmployeePersonalRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PurchasingItem' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='string' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='FormType'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='PO'/>
+									<enumeration value='REQ'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='FormNumber' type='string'/>
+
+		<element name='Vendor'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='VendorInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='EmployeePersonalRefId' type='string'/>
+
+		<element name='PurchasingItem'>
+			<complexType>
+					<sequence>
+						<element ref='sif:ItemNumber' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:ItemDescription' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Quantity' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:UnitCost' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:ExpenseAccount' minOccurs='0' maxOccurs='unbounded'/>
+					</sequence>
+			</complexType>
+		</element>
+
+			<element name='ItemNumber' type='string'/>
+
+			<element name='ItemDescription' type='string'/>
+
+			<element name='Quantity' type='string'/>
+
+			<element name='UnitCost' type='string'/>
+
+			<element name='ExpenseAccount'>
+				<complexType>
+					<sequence>
+						<element ref='sif:AccountCode' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Amount' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+				<element name='AccountCode' type='string'/>
+
+</schema>

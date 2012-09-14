@@ -1,0 +1,12 @@
+ <FinancialIncomeStatement RefId="3A99D500FF3211DC9CC3E83AAF2F46B8">
+	<GenerationDate>2008-03-31</GenerationDate>
+	<GenerationTime>10:53:31.166-05:00</GenerationTime>
+	<LocationInfoRefId>37F987A0FF3211DC9CC3F21CF78675E8</LocationInfoRefId>
+	<Period>
+	   <StartDate>2007-11-29</StartDate>
+	   <EndDate>2008-02-29</EndDate>
+	</Period>
+	<Amounts>
+	   <Amount Currency="USD" FinancialAccountAccountingPeriodLocationInfoRefId="3A845130FF3211DC9CC3A33D35457BEF" FinancialClassRefId="3A54B5B0FF3211DC9CC3E5473C53FFB5">176684.99</Amount>
+	</Amounts>
+ </FinancialIncomeStatement>

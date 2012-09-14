@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: EmployeeRecertification
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.5.10 EmployeeRecertification -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='EmployeeRecertification'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Ssn' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Name' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Demographics' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ActivityName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ActivityType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ActivityHours' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Earned' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:DateFrom' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:DateTo' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+		</complexType>
+	</element>
+
+		<element name='ActivityName' type='string'/>
+
+		<element name='ActivityType'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Course'/>
+					<enumeration value='Activity'/>
+					<enumeration value='Other'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='ActivityHours' type='string'/>
+
+		<element name='DateFrom' type='sif:DateOrEmptyType'/>
+
+		<element name='DateTo' type='sif:DateOrEmptyType'/>
+		
+</schema>

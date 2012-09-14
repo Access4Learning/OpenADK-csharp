@@ -1,0 +1,51 @@
+<SIF_ObjectData>
+<FoodserviceItemPortion RefId="EB255D2017DC11DBAC45D17AC3F9DE1B">
+  <FoodserviceItemUnitRefId>EAACAAB217DC11DBAC45E3E932A2B167</FoodserviceItemUnitRefId>
+  <ItemPortionQuantity>1</ItemPortionQuantity>
+  <ItemPortionType>Entree</ItemPortionType>
+</FoodserviceItemPortion>
+<FoodserviceItemPortion RefId="EB286A6017DC11DBAC45BEF993AE8267">
+  <FoodserviceItemUnitRefId>EB255D2317DC11DBAC45FFEE9BBF5566</FoodserviceItemUnitRefId>
+  <ItemPortionQuantity>1</ItemPortionQuantity>
+  <ItemPortionType>Entree</ItemPortionType>
+</FoodserviceItemPortion>
+<FoodserviceItemPortion RefId="EB2CFE4017DC11DBAC45B9B8A12A34BB">
+  <FoodserviceItemUnitRefId>EB29F10117DC11DBAC45D1A9DA5771FC</FoodserviceItemUnitRefId>
+  <ItemPortionQuantity>1</ItemPortionQuantity>
+  <ItemPortionType>Entree</ItemPortionType>
+</FoodserviceItemPortion>
+<FoodserviceItemPortion RefId="EB300B8017DC11DBAC45D0DEE4E77C41">
+  <FoodserviceItemUnitRefId>EB2CFE4317DC11DBAC45A6F25D0EAE5E</FoodserviceItemUnitRefId>
+  <ItemPortionQuantity>1</ItemPortionQuantity>
+  <ItemPortionType>Entree</ItemPortionType>
+</FoodserviceItemPortion>
+<FoodserviceItemPortion RefId="EB3318C117DC11DBAC45FC3FC0DA7E42">
+  <FoodserviceItemUnitRefId>EB31922117DC11DBAC45EB004882E5E9</FoodserviceItemUnitRefId>
+  <ItemPortionQuantity>1</ItemPortionQuantity>
+  <ItemPortionType>Entree</ItemPortionType>
+</FoodserviceItemPortion>
+<FoodserviceItemPortion RefId="EB37ACA017DC11DBAC45C228FACADACA">
+  <FoodserviceItemUnitRefId>EB349F6117DC11DBAC4591E480A10AF8</FoodserviceItemUnitRefId>
+  <ItemPortionQuantity>1</ItemPortionQuantity>
+  <ItemPortionType>Entree</ItemPortionType>
+</FoodserviceItemPortion>
+<FoodserviceItemPortion RefId="EB3DC72017DC11DBAC45869E1BB1F233">
+  <FoodserviceItemUnitRefId>EB3AB9E117DC11DBAC45F929588BF89D</FoodserviceItemUnitRefId>
+  <ItemPortionQuantity>1</ItemPortionQuantity>
+  <ItemPortionType>Entree</ItemPortionType>
+</FoodserviceItemPortion>
+<FoodserviceItemPortion RefId="EB45684017DC11DBAC4584B34AB921D3">
+  <FoodserviceItemUnitRefId>EB3F4DC117DC11DBAC45C2462325C4B3</FoodserviceItemUnitRefId>
+  <ItemPortionQuantity>1</ItemPortionQuantity>
+  <ItemPortionType>Entree</ItemPortionType>
+</FoodserviceItemPortion>
+<FoodserviceItemPortion RefId="EB4EB71017DC11DBAC45A80885140FD1">
+  <FoodserviceItemUnitRefId>EB45684317DC11DBAC45FA06F6E74524</FoodserviceItemUnitRefId>
+  <ItemPortionQuantity>1</ItemPortionQuantity>
+  <ItemPortionType>Entree</ItemPortionType>
+</FoodserviceItemPortion>
+<FoodserviceItemPortion RefId="EB534AF117DC11DBAC459AA0218CD6CE">
+  <FoodserviceItemUnitRefId>EB503DB017DC11DBAC45F4DD1BDFCB9D</FoodserviceItemUnitRefId>
+  <ItemPortionQuantity>1</ItemPortionQuantity>
+  <ItemPortionType>Entree</ItemPortionType>
+</FoodserviceItemPortion></SIF_ObjectData>

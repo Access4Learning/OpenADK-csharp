@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: TimeWorked
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.5.16 TimeWorked -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='TimeWorked'>
+		<complexType>
+			<sequence>
+				<element ref='sif:EmployeeId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EmployeeSiteId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:JobFunction' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:RegularHours' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:OvertimeHours' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PayPeriod' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='EmployeeSiteId'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='LocationInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+			<element name='RegularHours' type='string'/>
+
+			<element name='OvertimeHours' type='string'/>
+
+			<element name='PayPeriod' type='string'/>
+
+</schema>

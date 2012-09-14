@@ -1,0 +1,9 @@
+<FinancialTransaction RefId="E72C08BD41894187BA07B00C1401BE3F">
+  <TransactionDate>2003-01-01</TransactionDate>
+  <TransactionTime>04:32:23-08:00</TransactionTime>
+  <Amounts>
+    <Amount FinancialAccountAccountingPeriodLocationInfoRefId="B595A5959A8F43448DF0F5C635CD0E1D" Type="Debit" Currency="USD">99999.99</Amount>
+    <Amount FinancialAccountAccountingPeriodLocationInfoRefId="AFC675959A8F43448DF036C5F5CD0DE1" Type="Credit" Currency="USD">99999.99</Amount>
+  </Amounts>
+  <Program Type="Foodservice">NSLP</Program>
+</FinancialTransaction>

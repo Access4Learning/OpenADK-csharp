@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E8A65A3-204A-4D82-A66C-627E3183A500}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenADK.Library.uk</RootNamespace>
+    <AssemblyName>OpenADK.Sdo-UK</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\OpenADK.Sdo-UK.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Eval|AnyCPU' ">
+    <OutputPath>bin\Eval\</OutputPath>
+    <DefineConstants>TRACE;EVAL</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseDocs|AnyCPU' ">
+    <OutputPath>bin\ReleaseDocs\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Internal|AnyCPU' ">
+    <OutputPath>bin\Internal\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sdo\Assessment\AssessmentDTD.cs" />
+    <Compile Include="sdo\Assessment\AssessmentLearnerSet.cs" />
+    <Compile Include="sdo\Assessment\AssessmentMethodType.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResponseComponent.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResponseComponentGroup.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResponseComponentList.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResponseComponentRefId.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResultComponent.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResultComponentGroup.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResultComponentList.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResultComponentRefId.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResultGradeSet.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResultQualifierType.cs" />
+    <Compile Include="sdo\Assessment\AssessmentResultStatusType.cs" />
+    <Compile Include="sdo\Assessment\AssessmentSession.cs" />
+    <Compile Include="sdo\Assessment\AssessmentSessionList.cs" />
+    <Compile Include="sdo\Assessment\AssessmentSessionRefId.cs" />
+    <Compile Include="sdo\Assessment\AssessmentStage.cs" />
+    <Compile Include="sdo\Assessment\AssessmentStageRefId.cs" />
+    <Compile Include="sdo\Assessment\AssessmentStageType.cs" />
+    <Compile Include="sdo\Assessment\AssessmentSubject.cs" />
+    <Compile Include="sdo\Assessment\AssessmentSubjectList.cs" />
+    <Compile Include="sdo\Assessment\AssessmentSubjectType.cs" />
+    <Compile Include="sdo\Assessment\ComponentType.cs" />
+    <Compile Include="sdo\Assessment\Grade.cs" />
+    <Compile Include="sdo\Assessment\Grades.cs" />
+    <Compile Include="sdo\Assessment\GradeSet.cs" />
+    <Compile Include="sdo\Assessment\GradeSets.cs" />
+    <Compile Include="sdo\Assessment\GroupType.cs" />
+    <Compile Include="sdo\Assessment\Item.cs" />
+    <Compile Include="sdo\Assessment\Items.cs" />
+    <Compile Include="sdo\Assessment\LearnerAssessmentResponseSet.cs" />
+    <Compile Include="sdo\Assessment\LearnerAssessmentResult.cs" />
+    <Compile Include="sdo\Assessment\LearnerList.cs" />
+    <Compile Include="sdo\Assessment\MarkSet.cs" />
+    <Compile Include="sdo\Assessment\MarkSetList.cs" />
+    <Compile Include="sdo\Assessment\ResponseStatus.cs" />
+    <Compile Include="sdo\Assessment\SessionActivity.cs" />
+    <Compile Include="sdo\Assessment\SessionStatus.cs" />
+    <Compile Include="sdo\Assessment\StaffList.cs" />
+    <Compile Include="sdo\Assessment\StageList.cs" />
+    <Compile Include="sdo\Assessment\Year.cs" />
+    <Compile Include="sdo\Assessment\YearList.cs" />
+    <Compile Include="sdo\Catering\CateringDTD.cs" />
+    <Compile Include="sdo\Catering\Day.cs" />
+    <Compile Include="sdo\Catering\DietaryPreference.cs" />
+    <Compile Include="sdo\Catering\DietaryPreferenceList.cs" />
+    <Compile Include="sdo\Catering\Meal.cs" />
+    <Compile Include="sdo\Catering\MealEffect.cs" />
+    <Compile Include="sdo\Catering\Meals.cs" />
+    <Compile Include="sdo\Catering\MealTime.cs" />
+    <Compile Include="sdo\Catering\MealType.cs" />
+    <Compile Include="sdo\Catering\PersonDietaryPreference.cs" />
+    <Compile Include="sdo\Catering\PreferenceType.cs" />
+    <Compile Include="sdo\Catering\SchoolMealStatus.cs" />
+    <Compile Include="sdo\Catering\SchoolMealStatusDateSession.cs" />
+    <Compile Include="sdo\Catering\SchoolMealStatusTier.cs" />
+    <Compile Include="sdo\Catering\WeeklyMealPattern.cs" />
+    <Compile Include="sdo\Catering\WeeklyMealPatternList.cs" />
+    <Compile Include="sdo\Common\Address.cs" />
+    <Compile Include="sdo\Common\AddressableObjectName.cs" />
+    <Compile Include="sdo\Common\AddressList.cs" />
+    <Compile Include="sdo\Common\AddressType.cs" />
+    <Compile Include="sdo\Common\AlertMsg.cs" />
+    <Compile Include="sdo\Common\AlertMsgList.cs" />
+    <Compile Include="sdo\Common\AlertMsgType.cs" />
+    <Compile Include="sdo\Common\BirthDateVerificationLevel.cs" />
+    <Compile Include="sdo\Common\CommonDTD.cs" />
+    <Compile Include="sdo\Common\Contact.cs" />
+    <Compile Include="sdo\Common\ContactInfo.cs" />
+    <Compile Include="sdo\Common\ContactList.cs" />
+    <Compile Include="sdo\Common\CountriesOfCitizenship.cs" />
+    <Compile Include="sdo\Common\CountriesOfResidency.cs" />
+    <Compile Include="sdo\Common\Country.cs" />
+    <Compile Include="sdo\Common\CountryCode.cs" />
+    <Compile Include="sdo\Common\Demographics.cs" />
+    <Compile Include="sdo\Common\EALAcquisition.cs" />
+    <Compile Include="sdo\Common\EALSteps.cs" />
+    <Compile Include="sdo\Common\EducationStatus.cs" />
+    <Compile Include="sdo\Common\ElectronicId.cs" />
+    <Compile Include="sdo\Common\ElectronicIdList.cs" />
+    <Compile Include="sdo\Common\ElectronicIdType.cs" />
+    <Compile Include="sdo\Common\Email.cs" />
+    <Compile Include="sdo\Common\EmailList.cs" />
+    <Compile Include="sdo\Common\EmailType.cs" />
+    <Compile Include="sdo\Common\EnglishProficiency.cs" />
+    <Compile Include="sdo\Common\Ethnicity.cs" />
+    <Compile Include="sdo\Common\EthnicityCodes.cs" />
+    <Compile Include="sdo\Common\EthnicityList.cs" />
+    <Compile Include="sdo\Common\Gender.cs" />
+    <Compile Include="sdo\Common\GenderOfEntry.cs" />
+    <Compile Include="sdo\Common\GeneralSubjects.cs" />
+    <Compile Include="sdo\Common\GridLocation.cs" />
+    <Compile Include="sdo\Common\Language.cs" />
+    <Compile Include="sdo\Common\LanguageList.cs" />
+    <Compile Include="sdo\Common\Languages.cs" />
+    <Compile Include="sdo\Common\LanguageStudy.cs" />
+    <Compile Include="sdo\Common\LanguageUsage.cs" />
+    <Compile Include="sdo\Common\LanguageUsageList.cs" />
+    <Compile Include="sdo\Common\LanguageUsageType.cs" />
+    <Compile Include="sdo\Common\LearnerPersonalRefId.cs" />
+    <Compile Include="sdo\Common\ListedStatus.cs" />
+    <Compile Include="sdo\Common\LocationContext.cs" />
+    <Compile Include="sdo\Common\MaritalStatus.cs" />
+    <Compile Include="sdo\Common\MedicalAlertMsg.cs" />
+    <Compile Include="sdo\Common\MedicalAlertMsgList.cs" />
+    <Compile Include="sdo\Common\MedicalAlertMsgSeverity.cs" />
+    <Compile Include="sdo\Common\Name.cs" />
+    <Compile Include="sdo\Common\NameType.cs" />
+    <Compile Include="sdo\Common\NCYear.cs" />
+    <Compile Include="sdo\Common\NCYearGroup.cs" />
+    <Compile Include="sdo\Common\NCYearGroupList.cs" />
+    <Compile Include="sdo\Common\OtherId.cs" />
+    <Compile Include="sdo\Common\OtherIdList.cs" />
+    <Compile Include="sdo\Common\OtherIdType.cs" />
+    <Compile Include="sdo\Common\OtherNames.cs" />
+    <Compile Include="sdo\Common\PersonalInformation.cs" />
+    <Compile Include="sdo\Common\PhoneNumber.cs" />
+    <Compile Include="sdo\Common\PhoneNumberList.cs" />
+    <Compile Include="sdo\Common\PhoneType.cs" />
+    <Compile Include="sdo\Common\PictureSourceType.cs" />
+    <Compile Include="sdo\Common\RelationshipCode.cs" />
+    <Compile Include="sdo\Common\Religion.cs" />
+    <Compile Include="sdo\Common\ReligiousAffiliation.cs" />
+    <Compile Include="sdo\Common\SIF_RefObject.cs" />
+    <Compile Include="sdo\Common\SIF_RefObjectList.cs" />
+    <Compile Include="sdo\Common\SourceOfCode.cs" />
+    <Compile Include="sdo\Common\SubjectArea.cs" />
+    <Compile Include="sdo\Common\SubjectAreaList.cs" />
+    <Compile Include="sdo\Common\Topics.cs" />
+    <Compile Include="sdo\Common\Traveller.cs" />
+    <Compile Include="sdo\Common\TravellerCode.cs" />
+    <Compile Include="sdo\Common\WorkforcePersonalRefId.cs" />
+    <Compile Include="sdo\Datamodel\Created.cs" />
+    <Compile Include="sdo\Datamodel\Creator.cs" />
+    <Compile Include="sdo\Datamodel\Creators.cs" />
+    <Compile Include="sdo\Datamodel\DatamodelDTD.cs" />
+    <Compile Include="sdo\Datamodel\FeeForUse.cs" />
+    <Compile Include="sdo\Datamodel\FeesForUse.cs" />
+    <Compile Include="sdo\Datamodel\LifeCycle.cs" />
+    <Compile Include="sdo\Datamodel\ModificationHistory.cs" />
+    <Compile Include="sdo\Datamodel\Modified.cs" />
+    <Compile Include="sdo\Datamodel\RightsElement.cs" />
+    <Compile Include="sdo\Datamodel\RightsElements.cs" />
+    <Compile Include="sdo\Datamodel\SIF_Metadata.cs" />
+    <Compile Include="sdo\Datamodel\SpanGap.cs" />
+    <Compile Include="sdo\Datamodel\SpanGaps.cs" />
+    <Compile Include="sdo\Datamodel\TimeElement.cs" />
+    <Compile Include="sdo\Datamodel\TimeElements.cs" />
+    <Compile Include="sdo\Datamodel\TimeElementType.cs" />
+    <Compile Include="sdo\Infrastructure\AuthenticationSource.cs" />
+    <Compile Include="sdo\Infrastructure\Identity.cs" />
+    <Compile Include="sdo\Infrastructure\IdentityAssertion.cs" />
+    <Compile Include="sdo\Infrastructure\IdentityAssertions.cs" />
+    <Compile Include="sdo\Infrastructure\InfrastructureDTD.cs" />
+    <Compile Include="sdo\Infrastructure\PasswordList.cs" />
+    <Compile Include="sdo\Learner\Action.cs" />
+    <Compile Include="sdo\Learner\Actions.cs" />
+    <Compile Include="sdo\Learner\AdviceAndAssessment.cs" />
+    <Compile Include="sdo\Learner\AlternativeProvisionType.cs" />
+    <Compile Include="sdo\Learner\AlternativeTuition.cs" />
+    <Compile Include="sdo\Learner\AppealResult.cs" />
+    <Compile Include="sdo\Learner\AttendanceCodes.cs" />
+    <Compile Include="sdo\Learner\AttendanceCodeType.cs" />
+    <Compile Include="sdo\Learner\AttendanceDomain.cs" />
+    <Compile Include="sdo\Learner\AttendanceSession.cs" />
+    <Compile Include="sdo\Learner\AttendanceSourceType.cs" />
+    <Compile Include="sdo\Learner\BasicSkillsSupport.cs" />
+    <Compile Include="sdo\Learner\BehaviourType.cs" />
+    <Compile Include="sdo\Learner\BoarderType.cs" />
+    <Compile Include="sdo\Learner\ChildProtectionRegister.cs" />
+    <Compile Include="sdo\Learner\Classification.cs" />
+    <Compile Include="sdo\Learner\ClassType.cs" />
+    <Compile Include="sdo\Learner\Confidentiality.cs" />
+    <Compile Include="sdo\Learner\ConnexionsAgreement.cs" />
+    <Compile Include="sdo\Learner\ContactFlags.cs" />
+    <Compile Include="sdo\Learner\CurrentSchoolEnrolment.cs" />
+    <Compile Include="sdo\Learner\CurriculumTeachingMethods.cs" />
+    <Compile Include="sdo\Learner\Destination.cs" />
+    <Compile Include="sdo\Learner\Employee.cs" />
+    <Compile Include="sdo\Learner\Employees.cs" />
+    <Compile Include="sdo\Learner\EntitlementPeriod.cs" />
+    <Compile Include="sdo\Learner\EntitlementPeriodList.cs" />
+    <Compile Include="sdo\Learner\ExclusionCategory.cs" />
+    <Compile Include="sdo\Learner\ExclusionReason.cs" />
+    <Compile Include="sdo\Learner\ExitType.cs" />
+    <Compile Include="sdo\Learner\FamilyStructure.cs" />
+    <Compile Include="sdo\Learner\FormerUPNList.cs" />
+    <Compile Include="sdo\Learner\GroupingAndSupport.cs" />
+    <Compile Include="sdo\Learner\InCare.cs" />
+    <Compile Include="sdo\Learner\InCareType.cs" />
+    <Compile Include="sdo\Learner\Incident.cs" />
+    <Compile Include="sdo\Learner\Learner.cs" />
+    <Compile Include="sdo\Learner\LearnerAttendance.cs" />
+    <Compile Include="sdo\Learner\LearnerAttendanceSummary.cs" />
+    <Compile Include="sdo\Learner\LearnerBehaviourIncident.cs" />
+    <Compile Include="sdo\Learner\LearnerContact.cs" />
+    <Compile Include="sdo\Learner\LearnerDTD.cs" />
+    <Compile Include="sdo\Learner\LearnerEnrolmentStatus.cs" />
+    <Compile Include="sdo\Learner\LearnerEntitlement.cs" />
+    <Compile Include="sdo\Learner\LearnerExclusion.cs" />
+    <Compile Include="sdo\Learner\LearnerGroupEnrolment.cs" />
+    <Compile Include="sdo\Learner\LearnerIdentity.cs" />
+    <Compile Include="sdo\Learner\LearnerPersonal.cs" />
+    <Compile Include="sdo\Learner\Learners.cs" />
+    <Compile Include="sdo\Learner\LearnerSchoolEnrolment.cs" />
+    <Compile Include="sdo\Learner\LearnerSpecialNeeds.cs" />
+    <Compile Include="sdo\Learner\LeavingDestination.cs" />
+    <Compile Include="sdo\Learner\LeavingReason.cs" />
+    <Compile Include="sdo\Learner\Location.cs" />
+    <Compile Include="sdo\Learner\MembershipType.cs" />
+    <Compile Include="sdo\Learner\ModeOfTravel.cs" />
+    <Compile Include="sdo\Learner\Modification.cs" />
+    <Compile Include="sdo\Learner\Motivation.cs" />
+    <Compile Include="sdo\Learner\NationalCurriculum.cs" />
+    <Compile Include="sdo\Learner\NationalCurriculumList.cs" />
+    <Compile Include="sdo\Learner\ParamedicalSupport.cs" />
+    <Compile Include="sdo\Learner\Participants.cs" />
+    <Compile Include="sdo\Learner\ParticipationEnum.cs" />
+    <Compile Include="sdo\Learner\ParticipationType.cs" />
+    <Compile Include="sdo\Learner\ParticipationTypes.cs" />
+    <Compile Include="sdo\Learner\PreviousEstablishment.cs" />
+    <Compile Include="sdo\Learner\PreviousEstablishmentList.cs" />
+    <Compile Include="sdo\Learner\ProviderId.cs" />
+    <Compile Include="sdo\Learner\Reason.cs" />
+    <Compile Include="sdo\Learner\ReasonsList.cs" />
+    <Compile Include="sdo\Learner\ReasonStatus.cs" />
+    <Compile Include="sdo\Learner\ReasonType.cs" />
+    <Compile Include="sdo\Learner\Relationship.cs" />
+    <Compile Include="sdo\Learner\SENProvision.cs" />
+    <Compile Include="sdo\Learner\SENType.cs" />
+    <Compile Include="sdo\Learner\SENTypeCode.cs" />
+    <Compile Include="sdo\Learner\SENTypeList.cs" />
+    <Compile Include="sdo\Learner\Sibling.cs" />
+    <Compile Include="sdo\Learner\SiblingList.cs" />
+    <Compile Include="sdo\Learner\SpecialisedResources.cs" />
+    <Compile Include="sdo\Learner\TTRoom.cs" />
+    <Compile Include="sdo\Learner\TTSite.cs" />
+    <Compile Include="sdo\Learner\TTSiteType.cs" />
+    <Compile Include="sdo\Learner\TTSubject.cs" />
+    <Compile Include="sdo\Learner\TTTeacher.cs" />
+    <Compile Include="sdo\Learner\TuitionCategory.cs" />
+    <Compile Include="sdo\Learner\TuitionHours.cs" />
+    <Compile Include="sdo\Learner\UPN.cs" />
+    <Compile Include="sdo\Learner\UsualModeOfTravel.cs" />
+    <Compile Include="sdo\Learner\Weighting.cs" />
+    <Compile Include="sdo\Learning\Cycle.cs" />
+    <Compile Include="sdo\Learning\GroupDefinition.cs" />
+    <Compile Include="sdo\Learning\GroupDefinitionUKAssessmentStageType.cs" />
+    <Compile Include="sdo\Learning\GroupTeacher.cs" />
+    <Compile Include="sdo\Learning\GroupTeacherList.cs" />
+    <Compile Include="sdo\Learning\GroupTeacherType.cs" />
+    <Compile Include="sdo\Learning\Input.cs" />
+    <Compile Include="sdo\Learning\InputList.cs" />
+    <Compile Include="sdo\Learning\InputType.cs" />
+    <Compile Include="sdo\Learning\Junction.cs" />
+    <Compile Include="sdo\Learning\LearningDTD.cs" />
+    <Compile Include="sdo\Learning\NCYearList.cs" />
+    <Compile Include="sdo\Learning\NonTeachingActivity.cs" />
+    <Compile Include="sdo\Learning\NonTeachingActivityType.cs" />
+    <Compile Include="sdo\Learning\Output.cs" />
+    <Compile Include="sdo\Learning\OutputList.cs" />
+    <Compile Include="sdo\Learning\OutputType.cs" />
+    <Compile Include="sdo\Learning\Period.cs" />
+    <Compile Include="sdo\Learning\PeriodList.cs" />
+    <Compile Include="sdo\Learning\PeriodType.cs" />
+    <Compile Include="sdo\Learning\Scope.cs" />
+    <Compile Include="sdo\Learning\ScopeStatus.cs" />
+    <Compile Include="sdo\Learning\StandardPeriodList.cs" />
+    <Compile Include="sdo\Learning\TeachingGroup.cs" />
+    <Compile Include="sdo\Learning\TTDay.cs" />
+    <Compile Include="sdo\Learning\TTDayList.cs" />
+    <Compile Include="sdo\Reporting\ReportData.cs" />
+    <Compile Include="sdo\Reporting\ReportInfo.cs" />
+    <Compile Include="sdo\Reporting\ReportingDTD.cs" />
+    <Compile Include="sdo\Reporting\SIF_ReportObject.cs" />
+    <Compile Include="sdo\School\ContactPersonal.cs" />
+    <Compile Include="sdo\School\GovernanceType.cs" />
+    <Compile Include="sdo\School\GroupRole.cs" />
+    <Compile Include="sdo\School\GroupTypeCode.cs" />
+    <Compile Include="sdo\School\HeadTeacherInfo.cs" />
+    <Compile Include="sdo\School\IntakeType.cs" />
+    <Compile Include="sdo\School\LAInfo.cs" />
+    <Compile Include="sdo\School\Lesson.cs" />
+    <Compile Include="sdo\School\LessonType.cs" />
+    <Compile Include="sdo\School\OperationalStatus.cs" />
+    <Compile Include="sdo\School\PersonPicture.cs" />
+    <Compile Include="sdo\School\PhaseType.cs" />
+    <Compile Include="sdo\School\PictureSource.cs" />
+    <Compile Include="sdo\School\PictureType.cs" />
+    <Compile Include="sdo\School\ScheduleInfo.cs" />
+    <Compile Include="sdo\School\ScheduleInfoList.cs" />
+    <Compile Include="sdo\School\SchoolDTD.cs" />
+    <Compile Include="sdo\School\SchoolGroup.cs" />
+    <Compile Include="sdo\School\SchoolGroupType.cs" />
+    <Compile Include="sdo\School\SchoolInfo.cs" />
+    <Compile Include="sdo\School\SchoolType.cs" />
+    <Compile Include="sdo\School\Teacher.cs" />
+    <Compile Include="sdo\School\TeacherIDList.cs" />
+    <Compile Include="sdo\School\TeacherList.cs" />
+    <Compile Include="sdo\School\TermInfo.cs" />
+    <Compile Include="sdo\School\TTTeacherRefId.cs" />
+    <Compile Include="sdo\Workforce\CurrentAssignment.cs" />
+    <Compile Include="sdo\Workforce\CurrentAssignmentList.cs" />
+    <Compile Include="sdo\Workforce\EmployeePost.cs" />
+    <Compile Include="sdo\Workforce\Post.cs" />
+    <Compile Include="sdo\Workforce\Posts.cs" />
+    <Compile Include="sdo\Workforce\WorkforceDTD.cs" />
+    <Compile Include="sdo\Workforce\WorkforcePersonal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\core\OpenADK-NET-Core.csproj">
+      <Project>{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}</Project>
+      <Name>OpenADK-NET-Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,341 @@
+<SIF_ObjectData>
+<EmployeePersonal RefId="EE55676117DC11DBAC458067448028FA">
+  <HROtherId Type="9999">EE55676117DC11DBAC458067448028FA</HROtherId>
+  <Name Type="01">
+    <LastName>Riedy</LastName>
+    <FirstName>Dick</FirstName>
+  </Name>
+  <Email Type="Primary">DickRiedy@sifinfo.org</Email>
+  <Demographics>
+    <Gender>M</Gender>
+    <PlaceOfBirth>Delray Beach</PlaceOfBirth>
+    <CountyOfBirth>Palm Beach</CountyOfBirth>
+    <StateOfBirth Code="FL" />
+    <CountryOfBirth Code="US" />
+    <CountryOfCitizenship Code="US" />
+    <CountryOfResidency Code="US" />
+    <CitizenshipStatus>04</CitizenshipStatus>
+    <EnglishProficiency Code="01" />
+  </Demographics>
+  <Ssn>260229568</Ssn>
+  <Address Type="01">
+    <Street>
+      <Line1>10631 2nd Blvd.</Line1>
+      <StreetNumber>10631</StreetNumber>
+      <StreetName>2nd</StreetName>
+      <StreetType>Blvd.</StreetType>
+    </Street>
+    <City>Delray Beach</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33484</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(561) 266-2973</PhoneNumber>
+</EmployeePersonal>
+<EmployeePersonal RefId="F0169F6017DC11DBAC45AC3DA2A1272B">
+  <HROtherId Type="9999">F0169F6017DC11DBAC45AC3DA2A1272B</HROtherId>
+  <Name Type="01">
+    <LastName>Guidos</LastName>
+    <FirstName>Javier</FirstName>
+  </Name>
+  <Email Type="Primary">JavierGuidos@sifinfo.org</Email>
+  <Demographics>
+    <Gender>M</Gender>
+    <PlaceOfBirth>Boca Raton</PlaceOfBirth>
+    <CountyOfBirth>Palm Beach</CountyOfBirth>
+    <StateOfBirth Code="FL" />
+    <CountryOfBirth Code="US" />
+    <CountryOfCitizenship Code="US" />
+    <CountryOfResidency Code="US" />
+    <CitizenshipStatus>04</CitizenshipStatus>
+    <EnglishProficiency Code="01" />
+  </Demographics>
+  <Ssn>759963159</Ssn>
+  <Address Type="01">
+    <Street>
+      <Line1>6462 29th Blvd.</Line1>
+      <StreetNumber>6462</StreetNumber>
+      <StreetName>29th</StreetName>
+      <StreetType>Blvd.</StreetType>
+    </Street>
+    <City>Boca Raton</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33432</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(561) 436-5346</PhoneNumber>
+</EmployeePersonal>
+<EmployeePersonal RefId="F025E1A017DC11DBAC45DC2161B00F98">
+  <HROtherId Type="9999">F025E1A017DC11DBAC45DC2161B00F98</HROtherId>
+  <Name Type="01">
+    <LastName>Streeter</LastName>
+    <FirstName>John</FirstName>
+  </Name>
+  <Email Type="Primary">JohnStreeter@sifinfo.org</Email>
+  <Demographics>
+    <Gender>M</Gender>
+    <PlaceOfBirth>Delray Beach</PlaceOfBirth>
+    <CountyOfBirth>Palm Beach</CountyOfBirth>
+    <StateOfBirth Code="FL" />
+    <CountryOfBirth Code="US" />
+    <CountryOfCitizenship Code="US" />
+    <CountryOfResidency Code="US" />
+    <CitizenshipStatus>04</CitizenshipStatus>
+    <EnglishProficiency Code="01" />
+  </Demographics>
+  <Ssn>300558988</Ssn>
+  <Address Type="01">
+    <Street>
+      <Line1>620 24th St.</Line1>
+      <StreetNumber>620</StreetNumber>
+      <StreetName>24th</StreetName>
+      <StreetType>St.</StreetType>
+    </Street>
+    <City>Delray Beach</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33484</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(561) 670-7548</PhoneNumber>
+</EmployeePersonal>
+<EmployeePersonal RefId="F03B3E6017DC11DBAC458993E955EE2E">
+  <HROtherId Type="9999">F03B3E6017DC11DBAC458993E955EE2E</HROtherId>
+  <Name Type="01">
+    <LastName>Ziarko</LastName>
+    <FirstName>Judi</FirstName>
+  </Name>
+  <Email Type="Primary">JudiZiarko@sifinfo.org</Email>
+  <Demographics>
+    <Gender>F</Gender>
+    <PlaceOfBirth>West Allis</PlaceOfBirth>
+    <CountyOfBirth>Milwaukee</CountyOfBirth>
+    <StateOfBirth Code="WI" />
+    <CountryOfBirth Code="US" />
+    <CountryOfCitizenship Code="US" />
+    <CountryOfResidency Code="US" />
+    <CitizenshipStatus>04</CitizenshipStatus>
+    <EnglishProficiency Code="01" />
+  </Demographics>
+  <Ssn>994654330</Ssn>
+  <Address Type="01">
+    <Street>
+      <Line1>9735 20th Ave.</Line1>
+      <StreetNumber>9735</StreetNumber>
+      <StreetName>20th</StreetName>
+      <StreetType>Ave.</StreetType>
+    </Street>
+    <City>West Allis</City>
+    <County>Milwaukee</County>
+    <StatePr Code="WI" />
+    <Country Code="US" />
+    <PostalCode>53219</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(414) 272-7884</PhoneNumber>
+</EmployeePersonal>
+<EmployeePersonal RefId="F04F3B9217DC11DBAC45808B98761863">
+  <HROtherId Type="9999">F04F3B9217DC11DBAC45808B98761863</HROtherId>
+  <Name Type="01">
+    <LastName>Elmhorst</LastName>
+    <FirstName>Adrian</FirstName>
+  </Name>
+  <Email Type="Primary">AdrianElmhorst@sifinfo.org</Email>
+  <Demographics>
+    <Gender>M</Gender>
+    <PlaceOfBirth>Boca Raton</PlaceOfBirth>
+    <CountyOfBirth>Palm Beach</CountyOfBirth>
+    <StateOfBirth Code="FL" />
+    <CountryOfBirth Code="US" />
+    <CountryOfCitizenship Code="US" />
+    <CountryOfResidency Code="US" />
+    <CitizenshipStatus>04</CitizenshipStatus>
+    <EnglishProficiency Code="01" />
+  </Demographics>
+  <Ssn>138664405</Ssn>
+  <Address Type="01">
+    <Street>
+      <Line1>1748 31st St.</Line1>
+      <StreetNumber>1748</StreetNumber>
+      <StreetName>31st</StreetName>
+      <StreetType>St.</StreetType>
+    </Street>
+    <City>Boca Raton</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33432</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(561) 207-3794</PhoneNumber>
+</EmployeePersonal>
+<EmployeePersonal RefId="F0618B1117DC11DBAC45E869DEB529E8">
+  <HROtherId Type="9999">F0618B1117DC11DBAC45E869DEB529E8</HROtherId>
+  <Name Type="01">
+    <LastName>Herald</LastName>
+    <FirstName>Bill</FirstName>
+  </Name>
+  <Email Type="Primary">BillHerald@sifinfo.org</Email>
+  <Demographics>
+    <Gender>M</Gender>
+    <PlaceOfBirth>Boca Raton</PlaceOfBirth>
+    <CountyOfBirth>Palm Beach</CountyOfBirth>
+    <StateOfBirth Code="FL" />
+    <CountryOfBirth Code="US" />
+    <CountryOfCitizenship Code="US" />
+    <CountryOfResidency Code="US" />
+    <CitizenshipStatus>04</CitizenshipStatus>
+    <EnglishProficiency Code="01" />
+  </Demographics>
+  <Ssn>529673506</Ssn>
+  <Address Type="01">
+    <Street>
+      <Line1>7241 1st Ave.</Line1>
+      <StreetNumber>7241</StreetNumber>
+      <StreetName>1st</StreetName>
+      <StreetType>Ave.</StreetType>
+    </Street>
+    <City>Boca Raton</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33486</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(561) 384-6954</PhoneNumber>
+</EmployeePersonal>
+<EmployeePersonal RefId="F07253F217DC11DBAC45836A3A865BF2">
+  <HROtherId Type="9999">F07253F217DC11DBAC45836A3A865BF2</HROtherId>
+  <Name Type="01">
+    <LastName>Guidos</LastName>
+    <FirstName>Harry</FirstName>
+  </Name>
+  <Email Type="Primary">HarryGuidos@sifinfo.org</Email>
+  <Demographics>
+    <Gender>M</Gender>
+    <PlaceOfBirth>Delray Beach</PlaceOfBirth>
+    <CountyOfBirth>Palm Beach</CountyOfBirth>
+    <StateOfBirth Code="FL" />
+    <CountryOfBirth Code="US" />
+    <CountryOfCitizenship Code="US" />
+    <CountryOfResidency Code="US" />
+    <CitizenshipStatus>04</CitizenshipStatus>
+    <EnglishProficiency Code="01" />
+  </Demographics>
+  <Ssn>662173019</Ssn>
+  <Address Type="01">
+    <Street>
+      <Line1>6085 7th St.</Line1>
+      <StreetNumber>6085</StreetNumber>
+      <StreetName>7th</StreetName>
+      <StreetType>St.</StreetType>
+    </Street>
+    <City>Delray Beach</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33484</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(561) 720-4496</PhoneNumber>
+</EmployeePersonal>
+<EmployeePersonal RefId="F08C449017DC11DBAC4586BF6B33692D">
+  <HROtherId Type="9999">F08C449017DC11DBAC4586BF6B33692D</HROtherId>
+  <Name Type="01">
+    <LastName>Kaplanian</LastName>
+    <FirstName>Marnel</FirstName>
+  </Name>
+  <Email Type="Primary">MarnelKaplanian@sifinfo.org</Email>
+  <Demographics>
+    <Gender>F</Gender>
+    <PlaceOfBirth>Delray Beach</PlaceOfBirth>
+    <CountyOfBirth>Palm Beach</CountyOfBirth>
+    <StateOfBirth Code="FL" />
+    <CountryOfBirth Code="US" />
+    <CountryOfCitizenship Code="US" />
+    <CountryOfResidency Code="US" />
+    <CitizenshipStatus>04</CitizenshipStatus>
+    <EnglishProficiency Code="01" />
+  </Demographics>
+  <Ssn>482238228</Ssn>
+  <Address Type="01">
+    <Street>
+      <Line1>1360 1st Ave.</Line1>
+      <StreetNumber>1360</StreetNumber>
+      <StreetName>1st</StreetName>
+      <StreetType>Ave.</StreetType>
+    </Street>
+    <City>Delray Beach</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33484</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(561) 202-3893</PhoneNumber>
+</EmployeePersonal>
+<EmployeePersonal RefId="F0A01AB117DC11DBAC45C110A1800901">
+  <HROtherId Type="9999">F0A01AB117DC11DBAC45C110A1800901</HROtherId>
+  <Name Type="01">
+    <LastName>Ward</LastName>
+    <FirstName>Barbara</FirstName>
+  </Name>
+  <Email Type="Primary">BarbaraWard@sifinfo.org</Email>
+  <Demographics>
+    <Gender>F</Gender>
+    <PlaceOfBirth>Boca Raton</PlaceOfBirth>
+    <CountyOfBirth>Palm Beach</CountyOfBirth>
+    <StateOfBirth Code="FL" />
+    <CountryOfBirth Code="US" />
+    <CountryOfCitizenship Code="US" />
+    <CountryOfResidency Code="US" />
+    <CitizenshipStatus>04</CitizenshipStatus>
+    <EnglishProficiency Code="01" />
+  </Demographics>
+  <Ssn>279763549</Ssn>
+  <Address Type="01">
+    <Street>
+      <Line1>2629 17th Blvd.</Line1>
+      <StreetNumber>2629</StreetNumber>
+      <StreetName>17th</StreetName>
+      <StreetType>Blvd.</StreetType>
+    </Street>
+    <City>Boca Raton</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33487</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(561) 749-4872</PhoneNumber>
+</EmployeePersonal>
+<EmployeePersonal RefId="F0AF840117DC11DBAC45B307851EA0DB">
+  <HROtherId Type="9999">F0AF840117DC11DBAC45B307851EA0DB</HROtherId>
+  <Name Type="01">
+    <LastName>Magner</LastName>
+    <FirstName>Gregg</FirstName>
+  </Name>
+  <Email Type="Primary">GreggMagner@sifinfo.org</Email>
+  <Demographics>
+    <Gender>M</Gender>
+    <PlaceOfBirth>Boca Raton</PlaceOfBirth>
+    <CountyOfBirth>Palm Beach</CountyOfBirth>
+    <StateOfBirth Code="FL" />
+    <CountryOfBirth Code="US" />
+    <CountryOfCitizenship Code="US" />
+    <CountryOfResidency Code="US" />
+    <CitizenshipStatus>04</CitizenshipStatus>
+    <EnglishProficiency Code="01" />
+  </Demographics>
+  <Ssn>101347823</Ssn>
+  <Address Type="01">
+    <Street>
+      <Line1>2118 30th Ave.</Line1>
+      <StreetNumber>2118</StreetNumber>
+      <StreetName>30th</StreetName>
+      <StreetType>Ave.</StreetType>
+    </Street>
+    <City>Boca Raton</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33432</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(561) 403-4469</PhoneNumber>
+</EmployeePersonal></SIF_ObjectData>

@@ -1,0 +1,38 @@
+<LibraryPatronStatus SifRefIdType="StudentPersonal" LibraryType="AP" SifRefId="E81D329D0AB0791C4300B7837FB2F211">
+  <ElectronicId Type="Barcode">P12345</ElectronicId>
+  <CircTx>
+    <ItemTitle>How I Did It</ItemTitle>
+    <ItemElectronicId Type="Barcode">T876</ItemElectronicId>
+    <CallNumber>FIC</CallNumber>
+    <CopyPrice>23.95</CopyPrice>
+    <DueInfo>
+      <Date>19990130</Date>
+      <Time Zone="UTC-08:00">20:39:12</Time>
+    </DueInfo>
+    <FineInfo Type="Damaged">
+      <Date>19990122</Date>
+      <Description>Broken spine</Description>
+      <Amount>4.00</Amount>
+    </FineInfo>
+    <HoldInfo Type="Ready">
+      <DatePlaced>19981217</DatePlaced>
+      <DateNeeded>19990120</DateNeeded>
+      <MadeAvailable>19990116</MadeAvailable>
+      <Expires>19990201</Expires>
+    </HoldInfo>
+  </CircTx>
+  <Message Priority="Urgent">
+    <Date>19990129</Date>
+    <Time Zone="UTC-08:00">20:39:12</Time>
+    <Text>Please contact Ms. Burke immediately</Text>
+  </Message>
+  <Message Priority="Low">
+    <Text>January is a great month to read about snow!</Text>
+  </Message>
+  <NumCheckouts>1</NumCheckouts>
+  <NumFines>2</NumFines>
+  <NumOverdues>3</NumOverdues>
+  <FineAmount>4.00</FineAmount>
+  <NumRefunds>5</NumRefunds>
+  <RefundAmount>6.00</RefundAmount>
+</LibraryPatronStatus>

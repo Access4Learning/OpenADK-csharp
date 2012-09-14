@@ -1,0 +1,109 @@
+<!--
+
+Object: SchoolInfo
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Added LowGradeLevel and HighGradeLevel, per SIS changes
+- Updated namespace
+
+-->
+
+
+<!-- 5.8.5 SchoolInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='SchoolInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SchoolName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolJurisdiction' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolURL' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PrincipalInfo' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Address' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:IdentificationInfo' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SessionType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LowGradeLevel' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:HighGradeLevel' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='SchoolName' type='string'/>
+
+	<element name='SchoolJurisdiction'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='SchoolType'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='SchoolURL' type='string'/>
+
+	<element name='PrincipalInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:ContactName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ContactTitle' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name='ContactName' type='string'/>
+
+	<element name='ContactTitle' type='string'/>
+
+	<element name='IdentificationInfo'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='SessionType'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='LowGradeLevel' type='string'/>
+
+	<element name='HighGradeLevel' type='string'/>
+
+</schema>
+

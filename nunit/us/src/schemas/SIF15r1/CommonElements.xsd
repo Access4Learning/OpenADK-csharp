@@ -1,0 +1,1197 @@
+<!--
+
+Object: Common Elements
+
+Owner: Common Elements
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated Demographics with SIS changes (BirthDateVerification, CountyOfBirth,
+  CitizenshipStatus, DwellingArrangement, MaritalStatus, enumerated Gender)
+- Added MeetingTime, renumbered section references accordingly
+- Updated namespace
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+2004-06-16 Mark Reichert
+- 1.5r1 updates
+
+2004-06-30 Mark Reichert
+- 1.5r1 Draft 2 updates
+
+-->
+
+
+<!-- 5.1 Common Elements -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+
+	<!-- 5.1.1 Address -->
+
+		<element name='Address'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Street' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:City' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:County' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:StatePr' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Country' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:PostalCode' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:GridLocation' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='Type' type='string' use='required'/>
+			</complexType>
+		</element>
+
+			<element name='Street'>
+				<complexType>
+					<sequence>
+						<element ref='sif:Line1' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Line2' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Line3' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Complex' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:StreetNumber' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:StreetPrefix' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:StreetName' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:StreetType' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:StreetSuffix' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:AptType' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:AptNumPrefix' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:AptNumber' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:AptNumSuffix' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+				<element name='Line1' type='string'/>
+
+				<element name='Line2' type='string'/>
+
+				<element name='Line3' type='string'/>
+
+				<element name='Complex' type='string'/>
+
+				<element name='StreetNumber' type='string'/>
+
+				<element name='StreetPrefix' type='string'/>
+
+				<element name='StreetName' type='string'/>
+
+				<element name='StreetType' type='string'/>
+
+				<element name='StreetSuffix' type='string'/>
+
+				<element name='AptType' type='string'/>
+
+				<element name='AptNumPrefix' type='string'/>
+
+				<element name='AptNumber' type='string'/>
+
+				<element name='AptNumSuffix' type='string'/>
+
+			<element name='City' type='string'/>
+
+			<element name='County' type='string'/>
+
+			<element name='StatePr'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Code' type='string' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='Country'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Code' type='string' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='PostalCode' type='string'/>
+
+
+	<!-- 5.1.2 Demographics -->
+
+		<element name='Demographics'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Ethnicity' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:Gender' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:BirthDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:BirthDateVerification' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:PlaceOfBirth' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:CountyOfBirth' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:StateOfBirth' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:CountryOfBirth' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:CountryOfCitizenship' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:CountryOfResidency' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:CountryArrivalDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:CitizenshipStatus' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:EnglishProficiency' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Language' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:DwellingArrangement' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:MaritalStatus' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='Ethnicity'>
+				<complexType>
+					<sequence>
+						<element ref='sif:Proportion' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+					<attribute name='Type' type='string' use='required'/>
+					<attribute name='Code' type='string' use='required'/>
+				</complexType>
+			</element>
+
+				<element name='Proportion' type='string'/>
+
+			<element name='Gender'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='M'/>
+						<enumeration value='F'/>
+						<enumeration value='U'/>
+						<enumeration value=''/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+			<element name='BirthDate' type='sif:DateOrEmptyType'/>
+
+			<element name='BirthDateVerification' type='string'/>
+
+			<element name='PlaceOfBirth' type='string'/>
+
+			<element name='CountyOfBirth' type='string'/>
+
+			<element name='StateOfBirth'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Code' type='string' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='CountryOfBirth'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Code' type='string' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='CountryOfCitizenship'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Code' type='string' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='CountryOfResidency'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Code' type='string' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='CountryArrivalDate' type='sif:DateOrEmptyType'/>
+
+			<element name='CitizenshipStatus' type='string'/>
+
+			<element name='EnglishProficiency'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Code' type='string' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='Language'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Type' type='string' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='DwellingArrangement' type='string'/>
+
+			<element name='MaritalStatus' type='string'/>
+
+
+	<!-- 5.1.3 Email -->
+
+		<element name='Email'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Primary'/>
+									<enumeration value='Alternate1'/>
+									<enumeration value='Alternate2'/>
+									<enumeration value='Alternate3'/>
+									<enumeration value='Alternate4'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+ 
+	<!-- 5.1.4 GridLocation -->
+
+		<element name='GridLocation'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Latitude' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Longitude' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='Latitude' type='string'/>
+
+			<element name='Longitude' type='string'/>
+
+
+	<!-- 5.1.5 MeetingTime -->
+
+		<element name='MeetingTime'>
+			<complexType>
+				<sequence>
+					<element ref='sif:TimetableDay' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:TimetablePeriod' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='TimetableDay' type='string'/>
+
+			<element name='TimetablePeriod' type='string'/>
+
+
+	<!-- 5.1.6 Name -->
+
+		<element name='Name'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Prefix' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:LastName' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:FirstName' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:MiddleName' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Suffix' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:PreferredName' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:SortName' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:FullName' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='Type' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='01'/>
+							<enumeration value='02'/>
+							<enumeration value='03'/>
+							<enumeration value='04'/>
+							<enumeration value='05'/>
+							<enumeration value='07'/>
+							<enumeration value='08'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+			<element name='Prefix' type='string'/>
+
+			<element name='LastName' type='string'/>
+
+			<element name='FirstName' type='string'/>
+
+			<element name='MiddleName' type='string'/>
+
+			<element name='Suffix' type='string'/>
+
+			<element name='PreferredName' type='string'/>
+
+			<element name='SortName' type='string'/>
+
+			<element name='FullName' type='string'/>
+
+
+	<!-- 5.1.7 OtherId -->
+
+		<element name='OtherId'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+	<!-- 5.1.8 PhoneNumber -->
+
+		<element name='PhoneNumber'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Format' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='NA'/>
+									<enumeration value='EU'/>
+									<enumeration value='FF'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+						<attribute name='Type' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+	<!-- 5.1.9 CongressionalDistrict -->
+
+		<element name='CongressionalDistrict' type='string'/>
+
+
+	<!-- 5.1.10 ContactInfo -->
+
+		<element name='ContactInfo'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Name' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:PositionTitle' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Email' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='unbounded'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='PositionTitle' type='string'/>
+
+
+	<!-- 5.1.11 Description -->
+
+		<element name='Description' type='string'/>
+
+
+	<!-- 5.1.12 EducationalLevel -->
+
+		<element name='EducationalLevel'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+	<!-- 5.1.13 ElectronicId -->
+
+		<element name='ElectronicId'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Barcode'/>
+									<enumeration value='Magstripe'/>
+									<enumeration value='PIN'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+	<!-- 5.1.14 GradeLevel -->
+
+		<element name='GradeLevel'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='PK'/>
+									<enumeration value='0K'/>
+									<enumeration value='KG'/>
+									<enumeration value='01'/>
+									<enumeration value='02'/>
+									<enumeration value='03'/>
+									<enumeration value='04'/>
+									<enumeration value='05'/>
+									<enumeration value='06'/>
+									<enumeration value='07'/>
+									<enumeration value='08'/>
+									<enumeration value='09'/>
+									<enumeration value='10'/>
+									<enumeration value='11'/>
+									<enumeration value='12'/>
+									<enumeration value='PG'/>
+									<enumeration value='UN'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+	
+	<!-- 5.1.15 GradeLevels -->
+
+		<element name='GradeLevels'>
+			<complexType>
+				<sequence>
+					<element ref='sif:GradeLevel' minOccurs='0' maxOccurs='unbounded'/>
+				</sequence>
+			</complexType>
+		</element>
+
+
+	<!-- 5.1.16 GradYear -->
+
+		<element name='GradYear'>
+			<complexType>
+				<simpleContent>
+					<extension base='sif:YearOrEmptyType'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Original'/>
+									<enumeration value='Projected'/>
+									<enumeration value='Actual'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+	<!-- 5.1.17 LocalId -->
+	
+		<element name='LocalId' type='string'/>
+		
+			
+	<!-- 5.1.18 NCESId -->
+	
+		<element name='NCESId' type='string'/>
+		
+			
+	<!-- 5.1.19 OperationalStatus -->
+	
+		<element name='OperationalStatus' type='string'/>
+		
+			
+	<!-- 5.1.20 PublishInDirectory -->
+	
+		<element name='PublishInDirectory' type='sif:YesOrNoOrEmptyType'/>
+		
+
+	<!-- 5.1.21 Relationship -->
+				
+		<element name='Relationship'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+	<!-- 5.1.22 SchoolYear -->
+				
+		<element name='SchoolYear' type='sif:YearOrEmptyType'/>
+
+
+	<!-- 5.1.23 StatePrId -->
+	
+		<element name='StatePrId' type='string'/>
+		
+			
+	<!-- 5.1.24 SubjectArea -->
+				
+		<element name='SubjectArea'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+	<!-- 5.1.25 SIF_ExtendedElements -->
+
+		<element name='SIF_ExtendedElements'>
+			<complexType>
+				<sequence>
+					<element ref='sif:SIF_ExtendedElement' minOccurs='0' maxOccurs='unbounded'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='SIF_ExtendedElement'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Name' type='string' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+
+	<!-- 5.1.26 Program -->
+				
+		<element name='Program'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Foodservice'/>
+									<enumeration value='CFDA'/>
+									<enumeration value='NCES'/>
+									<enumeration value='StateDOE'/>
+									<enumeration value='Local'/>
+									<enumeration value='Text'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+	<!-- 5.1.27 EntryDate -->
+				
+		<element name='EntryDate' type='sif:DateOrEmptyType'/>
+
+		
+	<!-- 5.1.28 ExitDate -->
+				
+		<element name='ExitDate' type='sif:DateOrEmptyType'/>
+
+
+	<!-- 5.1.29 HomeroomNumber -->
+	
+		<element name='HomeroomNumber' type='string'/>
+		
+			
+	<!-- 5.1.30 SchoolName -->
+	
+		<element name='SchoolName' type='string'/>
+		
+			
+	<!--
+
+	Commonly used elements not listed in 5.1 Common Elements
+
+	-->
+
+
+		<element name='AmountEx'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Cash'/>
+									<enumeration value='BreakfastCredit'/>
+									<enumeration value='LunchCredit'/>
+									<enumeration value='Check'/>
+									<enumeration value='CreditCard'/>
+									<enumeration value='ACH'/>
+									<enumeration value='Value'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+						<attribute name='Quantity' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='ApprovalDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='AssessmentInstanceForm'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Assessment'/>
+					<enumeration value='Level'/>
+					<enumeration value='Form'/>
+					<enumeration value='Subtest'/>
+					<enumeration value='Item'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+
+		<element name='AssessmentItemRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='AssessmentRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='AssessmentSectionRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='ContactName' type='string'/>
+
+
+		<element name='Content' type='string'/>
+
+
+		<element name='CreationDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='Date' type='sif:DateOrEmptyType'/>
+
+
+		<element name='DueDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='DueTime' type='sif:TimeWithZoneOrEmptyType'/>
+
+
+		<element name='Duration'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Units' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='week'/>
+									<enumeration value='day'/>
+									<enumeration value='hour'/>
+									<enumeration value='minute'/>
+									<enumeration value='second'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='Earned'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Hours'/>
+									<enumeration value='Credits'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='EarnedStatus'>
+			<complexType>
+				<sequence>
+					<element ref='sif:StartDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:EndDate' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='Type' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='Yes'/>
+							<enumeration value='No'/>
+							<enumeration value='NA'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+
+		<element name='EffectiveDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='EmployeeId'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='EmployeePersonalRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='EndDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='EntityId' type='string'/>
+
+
+		<element name='EssentialMaterial' type='string'/>
+
+
+		<element name='EvaluationDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='FeedbackTitle' type='string'/>
+
+
+		<element name='FinishDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='FiscalYearRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='FiscalYr' type='string'/>
+
+
+		<element name='FoodserviceTransactionRefId' type='sif:RefIdOrEmptyType'/>
+
+
+<!--	<element name='FTE' type='string'/> -->
+		<element name='FTE'>
+			<simpleType>
+				<restriction base='float'>
+					<minInclusive value='0'/>
+					<maxInclusive value='1'/>
+				</restriction>
+			</simpleType>
+		</element>
+
+
+		<element name='IdentificationInfo'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='JobStartDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='JobEndDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='JobFTE' type='string'/>
+
+
+		<element name='JobFunction'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='LastBreakfastDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='LastLunchDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='LearningObjective' type='string'/>
+
+
+		<element name='LearningResourceRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='LearningStandardDocumentRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='LearningStandardItemRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='LocationInfoRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='LocationName' type='string'/>
+
+
+		<element name='MaxAttemptsAllowed' type='string'/>
+
+
+		<element name='MealStatus'>
+			<complexType>
+				<sequence>
+					<element ref='sif:StartDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:EndDate' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='Type' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='Free'/>
+							<enumeration value='Reduced'/>
+							<enumeration value='None'/>
+							<enumeration value='NA'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+
+		<element name='MealType'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='FirstMeal'/>
+									<enumeration value='SecondMeal'/>
+									<enumeration value='StaffMeal'/>
+									<enumeration value='AdultMeal'/>
+									<enumeration value='AlaCarte'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='Objective'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='View' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='All'/>
+									<enumeration value='Administrator'/>
+									<enumeration value='AdminAuthority'/>
+									<enumeration value='Assessor'/>
+									<enumeration value='Author'/>
+									<enumeration value='Candidate'/>
+									<enumeration value='InvigilatorProctor'/>
+									<enumeration value='Psychometrician'/>
+									<enumeration value='Scorer'/>
+									<enumeration value='Tutor'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='ObjectRefId'>
+			<complexType>
+				<simpleContent>
+					<extension base='sif:RefIdOrEmptyType'>
+						<attribute name='ObjectType' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='Organization' type='string'/>
+
+		<element name='OtherLEA'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='LEAInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='OutcomesProcessingExtension'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='ExtensionType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='URI'/>
+									<enumeration value='SIF_GUID'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='PauseFlag' type='sif:YesOrNoOrEmptyType'/>
+
+
+		<element name='PictureSource'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='URL'/>
+									<enumeration value='JPEG'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='Preamble' type='string'/>
+
+		<element name='Prerequisite' type='string'/>
+
+		<element name='PresentationMaterial'>
+			<complexType>
+				<sequence>
+					<element ref='sif:PresentationMaterialRefId' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='PresentationMaterialRefId'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='ReferenceType' use='required'>
+								<simpleType>
+									<restriction base='string'>
+										<enumeration value='URI'/>
+										<enumeration value='SIF_GUID'/>
+									</restriction>
+								</simpleType>
+							</attribute>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+
+		<element name='Reference' type='string'/>
+
+
+		<element name='ReportDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='Rubric'>
+			<complexType>
+				<sequence>
+					<element ref='sif:RubricLink' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:Rating' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:Criterion' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:RubricStandard' minOccurs='0' maxOccurs='unbounded'/>
+				</sequence>
+				<attribute name='View' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='All'/>
+							<enumeration value='Administrator'/>
+							<enumeration value='AdminAuthority'/>
+							<enumeration value='Assessor'/>
+							<enumeration value='Author'/>
+							<enumeration value='Candidate'/>
+							<enumeration value='InvigilatorProctor'/>
+							<enumeration value='Psychometrician'/>
+							<enumeration value='Scorer'/>
+							<enumeration value='Tutor'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+			<element name='RubricLink'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='ReferenceType' use='required'>
+								<simpleType>
+									<restriction base='string'>
+										<enumeration value='URI'/>
+										<enumeration value='SIF_GUID'/>
+									</restriction>
+								</simpleType>
+							</attribute>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='Rating' type='string'/>
+
+			<element name='Criterion' type='string'/>
+
+			<element name='RubricStandard' type='string'/>
+
+
+		<element name='SchoolDistrict'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='LEAInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='SchoolInfoRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='SelectionOrdering'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='OrderingType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='URI'/>
+									<enumeration value='SIF_GUID'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='Source' type='string'/>
+
+
+		<element name='SourceObjectRefId'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Assessment'/>
+									<enumeration value='LearningResource'/>
+									<enumeration value='Activity'/>
+									<enumeration value='Lesson'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+
+		<element name='Ssn' type='string'/>
+
+
+		<element name='StaffPersonalRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='StartDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='StartTime' type='sif:TimeWithZoneOrEmptyType'/>
+
+
+		<element name='Status' type='string'/>
+
+
+		<element name='StudentPersonalRefId' type='sif:RefIdOrEmptyType'/>
+
+
+		<element name='TechnicalRequirement' type='string'/>
+
+
+		<element name='Time' type='sif:TimeWithZoneOrEmptyType'/>
+
+
+		<element name='Title' type='string'/>
+
+
+		<element name='TotalYears' type='string'/>
+
+
+		<element name='TransactionDate' type='sif:DateOrEmptyType'/>
+
+
+		<element name='TransactionDescription' type='string'/>
+
+
+		<element name='TransactionTime' type='sif:TimeWithZoneOrEmptyType'/>
+
+
+		<element name='Value' type='string'/>
+
+
+</schema>

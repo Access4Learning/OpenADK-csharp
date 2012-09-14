@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OpenADK.Core</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpenADK</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\SifWorks.Adk.xml</DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Eval|AnyCPU' ">
+    <OutputPath>bin\Eval\</OutputPath>
+    <DefineConstants>TRACE;EVAL</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>
+    </DocumentationFile>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseDocs|AnyCPU' ">
+    <OutputPath>bin\ReleaseDocs\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Internal|AnyCPU' ">
+    <OutputPath>bin\Internal\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Mentalis.Security, Version=1.0.14.25108, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Org.Mentalis.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OpenADK\ISifDtd.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\AdkTypeParseException.cs" />
+    <Compile Include="OpenADK\au\SdoLibraryType.cs" />
+    <Compile Include="OpenADK\au\SifDtd.cs" />
+    <Compile Include="OpenADK\ElementRef.cs" />
+    <Compile Include="OpenADK\Global\CurrencyNames.cs" />
+    <Compile Include="OpenADK\Global\GlobalDTD.cs" />
+    <Compile Include="OpenADK\Global\MediaType.cs" />
+    <Compile Include="OpenADK\Global\MediaTypes.cs" />
+    <Compile Include="OpenADK\Global\MonetaryAmount.cs" />
+    <Compile Include="OpenADK\Global\SIFActionType.cs" />
+    <Compile Include="OpenADK\Global\SIF_ExtendedElement.cs" />
+    <Compile Include="OpenADK\Global\SIF_ExtendedElements.cs" />
+    <Compile Include="OpenADK\Global\SIF_RefId.cs" />
+    <Compile Include="OpenADK\Global\XMLData.cs" />
+    <Compile Include="OpenADK\Global\YesNo.cs" />
+    <Compile Include="OpenADK\Global\YesNoNA.cs" />
+    <Compile Include="OpenADK\Global\YesNoUnknown.cs" />
+    <Compile Include="OpenADK\Impl\DTDInternals.cs" />
+    <Compile Include="OpenADK\Impl\ObjectFactory.cs" />
+    <Compile Include="OpenADK\Impl\ObjectFactoryImpl.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\FauxAttribute.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\FauxSifElementPointer.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\SurrogateSimpleFieldPointer.cs" />
+    <Compile Include="OpenADK\Impl\TransportManagerImpl.cs" />
+    <Compile Include="OpenADK\Infra\Action.cs" />
+    <Compile Include="OpenADK\Infra\AuthenticationLevel.cs" />
+    <Compile Include="OpenADK\Infra\C.cs" />
+    <Compile Include="OpenADK\Infra\ConditionType.cs" />
+    <Compile Include="OpenADK\Infra\EncryptionLevel.cs" />
+    <Compile Include="OpenADK\Infra\InfraDTD.cs" />
+    <Compile Include="OpenADK\Infra\LogLevel.cs" />
+    <Compile Include="OpenADK\Infra\LogSource.cs" />
+    <Compile Include="OpenADK\Infra\Operators.cs" />
+    <Compile Include="OpenADK\Infra\Password.cs" />
+    <Compile Include="OpenADK\Infra\PasswordAlgorithm.cs" />
+    <Compile Include="OpenADK\Infra\R.cs" />
+    <Compile Include="OpenADK\Infra\SIFColumnHeader.cs" />
+    <Compile Include="OpenADK\Infra\SIFJoinType.cs" />
+    <Compile Include="OpenADK\Infra\SIFLogCategory.cs" />
+    <Compile Include="OpenADK\Infra\SIFMode.cs" />
+    <Compile Include="OpenADK\Infra\SIFOrderBy.cs" />
+    <Compile Include="OpenADK\Infra\SIFOrderByElement.cs" />
+    <Compile Include="OpenADK\Infra\SIFProtocolName.cs" />
+    <Compile Include="OpenADK\Infra\SIFSelectElement.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Ack.cs" />
+    <Compile Include="OpenADK\Infra\SIF_AddPublishers.cs" />
+    <Compile Include="OpenADK\Infra\SIF_AgentACL.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Application.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ChangePublishers.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ColumnHeaders.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Condition.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ConditionGroup.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Conditions.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Context.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Contexts.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Data.cs" />
+    <Compile Include="OpenADK\Infra\SIF_DeletePublishers.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Element.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Error.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Event.cs" />
+    <Compile Include="OpenADK\Infra\SIF_EventObject.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Example.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ExtendedQuery.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ExtendedQueryResults.cs" />
+    <Compile Include="OpenADK\Infra\SIF_From.cs" />
+    <Compile Include="OpenADK\Infra\SIF_GetAgentACL.cs" />
+    <Compile Include="OpenADK\Infra\SIF_GetMessage.cs" />
+    <Compile Include="OpenADK\Infra\SIF_GetZoneStatus.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Header.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Join.cs" />
+    <Compile Include="OpenADK\Infra\SIF_JoinOn.cs" />
+    <Compile Include="OpenADK\Infra\SIF_LeftElement.cs" />
+    <Compile Include="OpenADK\Infra\SIF_LogEntry.cs" />
+    <Compile Include="OpenADK\Infra\SIF_LogEntryHeader.cs" />
+    <Compile Include="OpenADK\Infra\SIF_LogObject.cs" />
+    <Compile Include="OpenADK\Infra\SIF_LogObjects.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Object.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ObjectData.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ObjectList.cs" />
+    <Compile Include="OpenADK\Infra\SIF_OrderBy.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Ping.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Property.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Protocol.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ProtocolName.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Provide.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ProvideAccess.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ProvideObjects.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Provider.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Providers.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Provision.cs" />
+    <Compile Include="OpenADK\Infra\SIF_PublishAddAccess.cs" />
+    <Compile Include="OpenADK\Infra\SIF_PublishAddObjects.cs" />
+    <Compile Include="OpenADK\Infra\SIF_PublishChangeAccess.cs" />
+    <Compile Include="OpenADK\Infra\SIF_PublishChangeObjects.cs" />
+    <Compile Include="OpenADK\Infra\SIF_PublishDeleteAccess.cs" />
+    <Compile Include="OpenADK\Infra\SIF_PublishDeleteObjects.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Publisher.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Query.cs" />
+    <Compile Include="OpenADK\Infra\SIF_QueryObject.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Register.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Request.cs" />
+    <Compile Include="OpenADK\Infra\SIF_RequestAccess.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Requester.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Requesters.cs" />
+    <Compile Include="OpenADK\Infra\SIF_RequestObjects.cs" />
+    <Compile Include="OpenADK\Infra\SIF_RespondAccess.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Responder.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Responders.cs" />
+    <Compile Include="OpenADK\Infra\SIF_RespondObjects.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Response.cs" />
+    <Compile Include="OpenADK\Infra\SIF_RightElement.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Rows.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SecureChannel.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Security.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Select.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SIFNode.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SIFNodes.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SIFNodeType.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Sleep.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Status.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Subscribe.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SubscribeAccess.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SubscribeObjects.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Subscriber.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Subscribers.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SupportedAuthentication.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SupportedProtocols.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SupportedVersions.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SystemControl.cs" />
+    <Compile Include="OpenADK\Infra\SIF_SystemControlData.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Unprovide.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Unregister.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Unsubscribe.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Vendor.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Version.cs" />
+    <Compile Include="OpenADK\Infra\SIF_VersionList.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Wakeup.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Where.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ZoneStatus.cs" />
+    <Compile Include="OpenADK\ITransportManager.cs" />
+    <Compile Include="OpenADK\Query.cs" />
+    <Compile Include="OpenADK\SifFloat.cs" />
+    <Compile Include="OpenADK\SifLong.cs" />
+    <Compile Include="OpenADK\SIFVariant.cs" />
+    <Compile Include="OpenADK\Tools\Policy\AdkDefaultPolicy.cs" />
+    <Compile Include="OpenADK\Tools\Policy\ObjectPolicy.cs" />
+    <Compile Include="OpenADK\Tools\Policy\ObjectRequestPolicy.cs" />
+    <Compile Include="OpenADK\Tools\Policy\PolicyFactory.cs" />
+    <Compile Include="OpenADK\Tools\Policy\PolicyManager.cs" />
+    <Compile Include="OpenADK\Tools\Policy\PolicyManagerImpl.cs" />
+    <Compile Include="OpenADK\Tools\Queries\Dialect.cs" />
+    <Compile Include="OpenADK\Tools\Queries\IQueryField.cs" />
+    <Compile Include="OpenADK\Tools\Queries\SqlDialect.cs" />
+    <Compile Include="OpenADK\Tools\VariantAssisstant.cs" />
+    <Compile Include="OpenADK\Tools\XPath\AdkAttributeIterator.cs" />
+    <Compile Include="OpenADK\Tools\XPath\AdkElementIterator.cs" />
+    <Compile Include="OpenADK\Tools\XPath\AdkNodeIterator.cs" />
+    <Compile Include="OpenADK\Tools\XPath\INodeIterator.cs" />
+    <Compile Include="OpenADK\Tools\XPath\SingleNodeIterator.cs" />
+    <Compile Include="OpenADK\Impl\ProvisionedObject.cs" />
+    <Compile Include="OpenADK\Impl\ProvisioningMatrix.cs" />
+    <Compile Include="OpenADK\Impl\Sif1xElementSorter.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\AbstractRenderSurrogate.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\FauxElementPointer.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\IRenderSurrogate.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\SIFTimeSurrogate.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\SurrogateElementPointer.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\TimeStampSurrogate.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\XPathSurrogate.cs" />
+    <Compile Include="OpenADK\IProvisioner.cs" />
+    <Compile Include="OpenADK\ProvisioningOptions.cs" />
+    <Compile Include="OpenADK\PublishingOptions.cs" />
+    <Compile Include="OpenADK\QueryResultOptions.cs" />
+    <Compile Include="OpenADK\ReportPublishingOptions.cs" />
+    <Compile Include="OpenADK\SifDuration.cs" />
+    <Compile Include="OpenADK\SifKeyedList.cs" />
+    <Compile Include="OpenADK\SifSimpleType.cs" />
+    <Compile Include="OpenADK\SubscriptionOptions.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\DataMapper.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\DataReaderAdaptor.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\DataRowAdaptor.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\IFieldAdaptor.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\MappingBehavior.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\MappingsContext.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\ObjectMapAdaptor.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\StringMapAdaptor.cs" />
+    <Compile Include="OpenADK\Tools\XPath\AbstractNodePointer.cs" />
+    <Compile Include="OpenADK\Tools\XPath\AdkElementPointer.cs" />
+    <Compile Include="OpenADK\Tools\XPath\AdkFunctions.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkAxisType.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkStaticValue.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkOperation.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkAndOperation.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkEqualOperation.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkExpression.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkFunction.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkLocPath.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkOpExpression.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkXPath.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\XPathParser.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Functions\ClassFunctions.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Functions\CustomFunction.cs" />
+    <Compile Include="OpenADK\Tools\XPath\IPointer.cs" />
+    <Compile Include="OpenADK\Tools\XPath\INodePointer.cs" />
+    <Compile Include="OpenADK\Tools\XPath\IXPathFunctionLibrary.cs" />
+    <Compile Include="OpenADK\Tools\XPath\IXPathVariableLibrary.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkNodeNameTest.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkNodeTest.cs" />
+    <Compile Include="OpenADK\Tools\XPath\SifElementPointer.cs" />
+    <Compile Include="OpenADK\Tools\XPath\SifXPathContext.cs" />
+    <Compile Include="OpenADK\Tools\XPath\SifXPathExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\XPath\SifXPathNavigator.cs" />
+    <Compile Include="OpenADK\Tools\XPath\SifXsltContext.cs" />
+    <Compile Include="OpenADK\Tools\XPath\SimpleFieldAttributePointer.cs" />
+    <Compile Include="OpenADK\Tools\XPath\SimpleFieldElementPointer.cs" />
+    <Compile Include="OpenADK\Tools\XPath\SimpleFieldPointer.cs" />
+    <Compile Include="OpenADK\Tools\XPath\Compiler\AdkXPathStep.cs" />
+    <Compile Include="OpenADK\TypedElementList.cs" />
+    <Compile Include="OpenADK\SifElementList.cs" />
+    <Compile Include="OpenADK\IElementVersionInfo.cs" />
+    <Compile Include="OpenADK\Impl\SifIOFormatter.cs" />
+    <Compile Include="OpenADK\IRenderSurrogate.cs" />
+    <Compile Include="OpenADK\Impl\Sif1xFormatter.cs" />
+    <Compile Include="OpenADK\Impl\Sif2xFormatter.cs" />
+    <Compile Include="OpenADK\SifBoolean.cs" />
+    <Compile Include="OpenADK\SifContext.cs" />
+    <Compile Include="OpenADK\SifDataType.cs" />
+    <Compile Include="OpenADK\SifDateTime.cs" />
+    <Compile Include="OpenADK\SifDecimal.cs" />
+    <Compile Include="OpenADK\SifFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SifInt.cs" />
+    <Compile Include="OpenADK\ADK.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ADKDebugFlags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ADKException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\AdkQueueLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ADKMessagingException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ADKNotSupportedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ADKParsingException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ADKProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\AdkQueryOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\AdkQueueException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ADKSchemaException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ADKTransportException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ADKUnknownOperatorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ADKZoneNotConnectedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Agent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\AgentMessagingMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\AgentProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\AgentProvisioningMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ComparisonOperators.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Condition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ConditionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\DefaultValueBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Element.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Event.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\EventAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\GroupOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\HttpProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\HttpsProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IDataObjectInputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IDataObjectOutputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IDTD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IElementDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IMessageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IMessagingListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\AdkHttpPushProtocolHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ADKUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\AnonymousHttpHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\BaseHttpProtocolHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\DataObjectInputStreamImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\DataObjectOutputFileStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\DataObjectOutputStreamImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ElementDefAlias.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ElementDefImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ElementSorter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\HttpPullProtocolHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\HttpsTransportPlugin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\HttpTransport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\HttpTransportPlugin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\IAgentQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\IMessageInputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\IMessageOutputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IProtocolHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ISIFPrimitives.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ITransport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\LifecycleException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\MessageDirection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\MessageDispatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\MessageStreamer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\MessageStreamImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ProfilerUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\RequestCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\RequestCacheFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\RequestCacheFileEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ResponseDelivery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ResponseDeliveryType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\SdoLibraryImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\SIFPrimitives.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\SIF_Message.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\Statistic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\TopicFactoryImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\TopicImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\TransportImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\TransportPlugin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ZoneFactoryImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ZoneImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IPropertyCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IPublisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IQueryResults.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ISubscriber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ITopic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ITopicFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IUndeliverableMessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IValueBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IZone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\IZoneFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Log\DefaultServerLogModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Log\IServerLogModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Log\LogEntryCodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Log\ServerLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\MessagingReturnCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ProvisioningFlags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFDataObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFDataObjectXML.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SifList.cs" />
+    <Compile Include="OpenADK\SifEncryption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SifErrorCategoryCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFErrorCodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SifKey.cs" />
+    <Compile Include="OpenADK\SifActionList.cs" />
+    <Compile Include="OpenADK\SifKeyedElement.cs" />
+    <Compile Include="OpenADK\SIFMessageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFMessagePayload.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFMessageType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFParserFlags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SifResponseSender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\AdkDataType.cs" />
+    <Compile Include="OpenADK\SIFStatusCodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SifString.cs" />
+    <Compile Include="OpenADK\SIFTime.cs" />
+    <Compile Include="OpenADK\SifTypeConverter.cs" />
+    <Compile Include="OpenADK\SifTypeConverters.cs" />
+    <Compile Include="OpenADK\SIFVersion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SimpleField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Baton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Cfg\ADKConfigException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Cfg\AgentConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\LoadBalancer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\LoadBalancerListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\ADKMappingException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\FieldMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\MappingDirection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\Mappings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\MappingsFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\ObjectMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\OtherIdMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\OtherIdRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\Rule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\ValueSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\ValueSetEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\XPathRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Queries\QueryFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Queries\QueryFormatterException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Queries\SQLField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Queries\SQLQueryFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\TransportProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\TypeConverter.cs" />
+    <Compile Include="OpenADK\uk\SdoLibraryType.cs" />
+    <Compile Include="OpenADK\uk\SifDtd.cs" />
+    <Compile Include="OpenADK\us\SdoLibraryType.cs" />
+    <Compile Include="OpenADK\us\SifDtd.cs" />
+    <Compile Include="Util\ADKConsoleWait.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\AdkPropertyCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\ADKStringUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\ADKXmlConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\AsyncUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\ClassFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\DirectorySearcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\EnumeratorWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\IFileNameFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\InternalErrorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\MergeSort.cs" />
+    <Compile Include="Util\NetworkUtils.cs" />
+    <Compile Include="Util\Properties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Streams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\XmlUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\AdkDefaultAcceptSocket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\AdkDefaultConnectSocket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\AdkPortBindingType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\AdkSocketBinding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\AdkSocketConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\AdkSocketErrorHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\AdkSocketMessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\AdkSSLAcceptSocket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\AdkSSLConnectedSocket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpApplicationServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpDirectoryServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpFileRequestHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpFileServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpHeadersReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpRequestContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpStatusCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\AdkHttpUtilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\IAdkHttpHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\IAdkHttpHandlerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Http\IHttpServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\IAcceptSocket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\IConnectedSocket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OpenADK\Tools\Metadata\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,71 @@
+<SIF_ObjectData>
+<LearningResource RefId="6938D88F82A37EFD88892429EC6AB1B5" xml:lang="en" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <ResourceName>A World of Words (Teacher Reference Sheet)</ResourceName>
+  <ResourceAuthor>The Kennedy Center Arts Edge</ResourceAuthor>
+  <ResourceContact>
+    <Address Type="M">
+      <Street>
+        <Line1>The John F. Kennedy Center for the Performing Arts</Line1>
+        <Line2>2700 F Street, NW</Line2>
+        <Line3>Washington, DC 20566</Line3>
+        <StreetNumber>2700</StreetNumber>
+        <StreetName>F</StreetName>
+        <StreetType>Street</StreetType>
+        <StreetSuffix>NW</StreetSuffix>
+      </Street>
+      <City>Washington, D.C.</City>
+      <County>Cook</County>
+      <StatePr Code= "DC"/>
+      <Country Code= "US"/>
+      <PostalCode>20566</PostalCode>
+    </Address>
+    <PhoneNumber Format="NA" Type="HP">(312) 555-1234</PhoneNumber>
+    <Email Type="Primary">info@kennedy-center.org</Email>
+  </ResourceContact>
+  <ResourceLocation ReferenceType="URI">
+    http://www.artsedge.kennedy-Center.org/teaching_materials/curricula/curric/86_u_dreams/489_words.pdf
+  </ResourceLocation>
+  <ResourceStatus>Available</ResourceStatus>
+  <ResourceDescription>Teacher Reference Sheet</ResourceDescription>
+  <GradeLevels>
+    <GradeLevel Code="03"/>
+    <GradeLevel Code="04"/>
+    <GradeLevel Code="05"/>
+  </GradeLevels>
+  <SubjectArea Code="10">English Language and Literature</SubjectArea>
+  <ResourceMedia>x-application/pdf</ResourceMedia>
+  <UseAgreement>
+    see http://www.artsedge.kennedycenter.org/teaching_materials/using/artsedge.html for the user aggreement
+  </UseAgreement>
+  <AgreementDate>20020605</AgreementDate>
+  <ResourceApproval>
+    <ApprovalOrganization>
+      OurDistrict Local Schools, Office of Curriculum and
+      Planning
+    </ApprovalOrganization>
+    <ApprovalDate>20020315</ApprovalDate>
+  </ResourceApproval>
+  <ResourceEvaluation EvaluationRefId="F1BC63DFD02CCED654EF558E84904E01">
+    <Description>This resource addresses Washington State EALRs</Description>
+    <EvaluationDate>20010615</EvaluationDate>
+    <Name Type="02">
+      <LastName>Doe</LastName>
+      <FirstName>Joan</FirstName>
+    </Name>
+  </ResourceEvaluation>
+  <ResourceComponent ResourceComponentRefId="9E1AA17560E116D27EE9CCE8661640FA">
+    <ComponentName>Vocabulary</ComponentName>
+    <ComponentReference>
+      http://www.artsedge.kennedycenter.org/teaching_materials/curricula/curric/86_u_dreams/489_vocab.html
+    </ComponentReference>
+    <ComponentDescription>
+      Students learn about social contexts such as nationality, culture, etc.
+    </ComponentDescription>
+    <ResourceStrategy>Inquiry</ResourceStrategy>
+    <ObjectRefId ObjectType="Lesson">667A87E21B4B9470CE61568576DF921E</ObjectRefId >
+  </ResourceComponent>
+  <LearningStandardItemRefId>D56D76D40F0B96916DA4CA2E230494E8</LearningStandardItemRefId>
+  <LearningStandardItemRefId>DBCE64060B47E555A64AF7FCE6C1A4A9</LearningStandardItemRefId>
+</LearningResource>
+
+</SIF_ObjectData>

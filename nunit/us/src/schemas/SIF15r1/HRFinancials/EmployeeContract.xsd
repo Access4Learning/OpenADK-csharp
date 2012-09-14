@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: EmployeeContract
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.5.5 EmployeeContract -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='EmployeeContract'>
+		<complexType>
+			<sequence>
+				<element ref='sif:BaseSalary' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ContractStart' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ContractEnd' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ContractTerm' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ContractDays' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AssignmentDays' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='EmployeePersonalRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='BaseSalary' type='string'/>
+
+		<element name='ContractStart' type='string'/>
+
+		<element name='ContractEnd' type='string'/>
+
+		<element name='ContractTerm' type='string'/>
+
+		<element name='ContractDays' type='string'/>
+
+		<element name='AssignmentDays' type='string'/>
+		
+</schema>

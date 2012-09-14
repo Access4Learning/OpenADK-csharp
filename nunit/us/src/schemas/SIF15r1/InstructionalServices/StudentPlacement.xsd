@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: StudentPlacement
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.6.14 StudentPlacement -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StudentPlacement'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Service' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ServiceProviderAgency' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ServiceProviderName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ServiceLocation' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StartDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EndDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FrequencyTime' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:DirectTime' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:IndirectTime' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TotalServiceDuration' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SpecialNeedsTransportation' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AssistiveTechnology' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='StudentParticipationRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='StudentPersonalRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='Service'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='CodeType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='NCES'/>
+									<enumeration value='StateDOE'/>
+									<enumeration value='Local'/>
+									<enumeration value='Text'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='InstructionalService'/>
+									<enumeration value='RelatedService'/>
+									<enumeration value='Other'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='ServiceProviderAgency' type='string'/>
+
+		<element name='ServiceProviderName' type='string'/>
+
+		<element name='ServiceLocation'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='CodeType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='NCES'/>
+									<enumeration value='StateDOE'/>
+									<enumeration value='Local'/>
+									<enumeration value='Text'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='FrequencyTime' type='string'/>
+
+		<element name='DirectTime'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='UnitOfMeasure' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Minutes'/>
+									<enumeration value='Hours'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='IndirectTime'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='UnitOfMeasure' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Minutes'/>
+									<enumeration value='Hours'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='TotalServiceDuration'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='UnitOfMeasure' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Minutes'/>
+									<enumeration value='Hours'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='SpecialNeedsTransportation' type='sif:YesOrNoOrEmptyType'/>
+
+		<element name='AssistiveTechnology' type='sif:YesOrNoOrEmptyType'/>
+
+</schema>

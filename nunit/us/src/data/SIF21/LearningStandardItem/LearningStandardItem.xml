@@ -1,0 +1,35 @@
+<LearningStandardItem RefId="A5D75F789175101B8C7E08EA123A8234" xml:lang="en">
+  <StandardHierarchyLevel>
+    <Number>3</Number>
+    <Description>Indicator</Description>
+  </StandardHierarchyLevel>
+  <PredecessorItems>
+    <LearningStandardItemRefId>DE072A87EFAD4B778AF9FAF83C94839E</LearningStandardItemRefId>
+  </PredecessorItems>
+  <StatementCodes>
+    <StatementCode>Mathematics.2.03.a</StatementCode>
+  </StatementCodes>
+  <Statements>
+    <Statement>Counting from 0 to 100 using whole numbers</Statement>
+  </Statements>
+  <GradeLevels>
+    <GradeLevel>
+      <Code>04</Code>
+    </GradeLevel>
+    <GradeLevel>
+      <Code>05</Code>
+    </GradeLevel>
+  </GradeLevels>
+  <SubjectArea>
+    <Code>52</Code>
+    <OtherCodeList>
+      <OtherCode Codeset="Text">Mathematics</OtherCode>
+    </OtherCodeList>
+  </SubjectArea>
+  <LearningStandardDocumentRefId>8454189F6BBC26C6B97DDB4B6D0E3AC8</LearningStandardDocumentRefId>
+  <RelatedLearningStandardItems>
+    <LearningStandardItemRefId RelationshipType="Content">869670E8540A43509515AFB767FADD9A</LearningStandardItemRefId>
+    <LearningStandardItemRefId RelationshipType="State">B14FDAB437CA4565A9765A5B824545C4</LearningStandardItemRefId>
+    <LearningStandardItemRefId RelationshipType="PD">D5440A11F5A44AC1920261ECBE5A29F6</LearningStandardItemRefId>
+  </RelatedLearningStandardItems>
+</LearningStandardItem>

@@ -1,0 +1,27 @@
+﻿<SIF_Message xmlns="http://www.sifinfo.org/infrastructure/1.x">
+	<SIF_Event>
+		<SIF_Header>
+			<SIF_MsgId>140502020931235114143229E953A0F9</SIF_MsgId>
+			<SIF_Date>20050202</SIF_Date>
+			<SIF_Time Zone="UTC-08:00">09:49:35</SIF_Time>
+			<SIF_SourceId>MS1</SIF_SourceId>
+		</SIF_Header>
+		<SIF_ObjectData>
+			<SIF_EventObject ObjectName="SectionInfo" Action="Add">
+				<SectionInfo RefId="140502020931234F3CED04FAD1664A64" SchoolCourseInfoRefId="787DB2CB34687ACE49E8B32B17CE4765">
+					<ScheduleInfo TermInfoRefId="1405011F093303123CFFC652F585EB16">
+						<Teacher StaffPersonalRefId="1405011F0F37352D1E2292EA9C307E89" />
+						<SectionRoom RoomInfoRefId="1405020208132A5F141156F80CCD5104" />
+						<MeetingTime>
+							<TimetableDay>A</TimetableDay>
+							<TimetablePeriod>2</TimetablePeriod>
+						</MeetingTime>
+					</ScheduleInfo>
+					<SchoolCourseInfoOverride Override="Yes">
+						<CourseCodeOverride>M3933</CourseCodeOverride>
+					</SchoolCourseInfoOverride>
+				</SectionInfo>
+			</SIF_EventObject>
+		</SIF_ObjectData>
+	</SIF_Event>
+</SIF_Message>

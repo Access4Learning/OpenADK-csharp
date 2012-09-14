@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{891B42F5-F3CC-4457-B48C-04DBE0B3E210}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Edustructures.SifWorks</RootNamespace>
+    <AssemblyName>SifWorks.Sdo-AU</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\SifWorks.Sdo-AU.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\SifWorks.Sdo-AU.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseDocs|AnyCPU' ">
+    <OutputPath>bin\ReleaseDocs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>bin\SifWorks.Sdo-AU.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sdo\Common\AcademicYearCode.cs" />
+    <Compile Include="sdo\Common\Address.cs" />
+    <Compile Include="sdo\Common\AddressList.cs" />
+    <Compile Include="sdo\Common\AddressRoleType.cs" />
+    <Compile Include="sdo\Common\AddressType.cs" />
+    <Compile Include="sdo\Common\AttendanceCode.cs" />
+    <Compile Include="sdo\Common\AttendanceCodeType.cs" />
+    <Compile Include="sdo\Common\AU025AddressType.cs" />
+    <Compile Include="sdo\Common\AU0315BirthdateVerificationType.cs" />
+    <Compile Include="sdo\Common\AU0600DwellingArrangementType.cs" />
+    <Compile Include="sdo\Common\AU0609RelationshipToStudentType.cs" />
+    <Compile Include="sdo\Common\AUAddressRoleType.cs" />
+    <Compile Include="sdo\Common\AUEnglishProficiencyType.cs" />
+    <Compile Include="sdo\Common\AULanguageType.cs" />
+    <Compile Include="sdo\Common\AustralianCitizenshipStatusType.cs" />
+    <Compile Include="sdo\Common\AustralianClassificationOfLanguagesType.cs" />
+    <Compile Include="sdo\Common\AustralianStandardClassificationOfCulturalAndEthnicGroupsASCCEGType.cs" />
+    <Compile Include="sdo\Common\AustralianStandardClassificationOfReligiousGroupsASCRGType.cs" />
+    <Compile Include="sdo\Common\Campus.cs" />
+    <Compile Include="sdo\Common\CampusAUSchoolLevelType.cs" />
+    <Compile Include="sdo\Common\Codeset.cs" />
+    <Compile Include="sdo\Common\CommonDTD.cs" />
+    <Compile Include="sdo\Common\ContactInfo.cs" />
+    <Compile Include="sdo\Common\ContactName.cs" />
+    <Compile Include="sdo\Common\CountriesOfCitizenship.cs" />
+    <Compile Include="sdo\Common\CountriesOfResidency.cs" />
+    <Compile Include="sdo\Common\Country.cs" />
+    <Compile Include="sdo\Common\CountryCode.cs" />
+    <Compile Include="sdo\Common\Demographics.cs" />
+    <Compile Include="sdo\Common\DwellingArrangement.cs" />
+    <Compile Include="sdo\Common\ElectronicId.cs" />
+    <Compile Include="sdo\Common\ElectronicIdList.cs" />
+    <Compile Include="sdo\Common\ElectronicIdType.cs" />
+    <Compile Include="sdo\Common\Email.cs" />
+    <Compile Include="sdo\Common\EmailList.cs" />
+    <Compile Include="sdo\Common\EmailType.cs" />
+    <Compile Include="sdo\Common\EndCode.cs" />
+    <Compile Include="sdo\Common\EnglishProficiency.cs" />
+    <Compile Include="sdo\Common\GridLocation.cs" />
+    <Compile Include="sdo\Common\ImmunisationCertificateStatusType.cs" />
+    <Compile Include="sdo\Common\IndigenousStatusType.cs" />
+    <Compile Include="sdo\Common\Language.cs" />
+    <Compile Include="sdo\Common\LanguageList.cs" />
+    <Compile Include="sdo\Common\MapReference.cs" />
+    <Compile Include="sdo\Common\Name.cs" />
+    <Compile Include="sdo\Common\NameType.cs" />
+    <Compile Include="sdo\Common\OtherCode.cs" />
+    <Compile Include="sdo\Common\OtherCodeList.cs" />
+    <Compile Include="sdo\Common\OtherId.cs" />
+    <Compile Include="sdo\Common\OtherIdList.cs" />
+    <Compile Include="sdo\Common\OtherIdType.cs" />
+    <Compile Include="sdo\Common\OtherLEA.cs" />
+    <Compile Include="sdo\Common\OtherLEASIF_RefObject.cs" />
+    <Compile Include="sdo\Common\OtherNames.cs" />
+    <Compile Include="sdo\Common\ParentObjectRefId.cs" />
+    <Compile Include="sdo\Common\ParentObjectRefIdSIF_RefObject.cs" />
+    <Compile Include="sdo\Common\PermanentResidentStatusType.cs" />
+    <Compile Include="sdo\Common\PersonInfo.cs" />
+    <Compile Include="sdo\Common\PhoneNumber.cs" />
+    <Compile Include="sdo\Common\PhoneNumberList.cs" />
+    <Compile Include="sdo\Common\PhoneNumberType.cs" />
+    <Compile Include="sdo\Common\PictureSource.cs" />
+    <Compile Include="sdo\Common\PictureSourceType.cs" />
+    <Compile Include="sdo\Common\PrincipalInfo.cs" />
+    <Compile Include="sdo\Common\Relationship.cs" />
+    <Compile Include="sdo\Common\Religion.cs" />
+    <Compile Include="sdo\Common\ReligionType.cs" />
+    <Compile Include="sdo\Common\ReligiousEvent.cs" />
+    <Compile Include="sdo\Common\ReligiousEventList.cs" />
+    <Compile Include="sdo\Common\SchoolContact.cs" />
+    <Compile Include="sdo\Common\SchoolContactList.cs" />
+    <Compile Include="sdo\Common\SessionType.cs" />
+    <Compile Include="sdo\Common\Sex.cs" />
+    <Compile Include="sdo\Common\SIF_RefObject.cs" />
+    <Compile Include="sdo\Common\StartCode.cs" />
+    <Compile Include="sdo\Common\StateTerritoryCodeType.cs" />
+    <Compile Include="sdo\Common\Street.cs" />
+    <Compile Include="sdo\Common\SubjectArea.cs" />
+    <Compile Include="sdo\Common\SubjectAreaList.cs" />
+    <Compile Include="sdo\Common\Topics.cs" />
+    <Compile Include="sdo\Common\VisaStatCodeType.cs" />
+    <Compile Include="sdo\Common\VisaSubClassType.cs" />
+    <Compile Include="sdo\Common\YearLevel.cs" />
+    <Compile Include="sdo\Common\YearLevelCode.cs" />
+    <Compile Include="sdo\Common\YearLevels.cs" />
+    <Compile Include="sdo\Datamodel\Created.cs" />
+    <Compile Include="sdo\Datamodel\Creator.cs" />
+    <Compile Include="sdo\Datamodel\Creators.cs" />
+    <Compile Include="sdo\Datamodel\DatamodelDTD.cs" />
+    <Compile Include="sdo\Datamodel\FeeForUse.cs" />
+    <Compile Include="sdo\Datamodel\FeesForUse.cs" />
+    <Compile Include="sdo\Datamodel\LifeCycle.cs" />
+    <Compile Include="sdo\Datamodel\ModificationHistory.cs" />
+    <Compile Include="sdo\Datamodel\Modified.cs" />
+    <Compile Include="sdo\Datamodel\RightsElement.cs" />
+    <Compile Include="sdo\Datamodel\RightsElements.cs" />
+    <Compile Include="sdo\Datamodel\SIF_Metadata.cs" />
+    <Compile Include="sdo\Datamodel\SpanGap.cs" />
+    <Compile Include="sdo\Datamodel\SpanGaps.cs" />
+    <Compile Include="sdo\Datamodel\TimeElement.cs" />
+    <Compile Include="sdo\Datamodel\TimeElements.cs" />
+    <Compile Include="sdo\Datamodel\TimeElementType.cs" />
+    <Compile Include="sdo\Gradebook\GradebookDTD.cs" />
+    <Compile Include="sdo\Gradebook\StudentPeriodAttendance.cs" />
+    <Compile Include="sdo\Gradebook\StudentPeriodAttendanceAttendanceStatusType.cs" />
+    <Compile Include="sdo\Infrastructure\AuthenticationSource.cs" />
+    <Compile Include="sdo\Infrastructure\Identity.cs" />
+    <Compile Include="sdo\Infrastructure\IdentityAssertion.cs" />
+    <Compile Include="sdo\Infrastructure\IdentityAssertions.cs" />
+    <Compile Include="sdo\Infrastructure\InfrastructureDTD.cs" />
+    <Compile Include="sdo\Infrastructure\PasswordList.cs" />
+    <Compile Include="sdo\Learning\LearningDTD.cs" />
+    <Compile Include="sdo\Learning\StudentList.cs" />
+    <Compile Include="sdo\Learning\TeacherList.cs" />
+    <Compile Include="sdo\Learning\TeachingGroup.cs" />
+    <Compile Include="sdo\Learning\TeachingGroupStudent.cs" />
+    <Compile Include="sdo\Learning\TeachingGroupTeacher.cs" />
+    <Compile Include="sdo\Programs\ManagingSchool.cs" />
+    <Compile Include="sdo\Programs\ManagingSchoolSIF_RefObject.cs" />
+    <Compile Include="sdo\Programs\ProgramFundingSource.cs" />
+    <Compile Include="sdo\Programs\ProgramFundingSourceCodeType.cs" />
+    <Compile Include="sdo\Programs\ProgramFundingSources.cs" />
+    <Compile Include="sdo\Programs\ProgramsDTD.cs" />
+    <Compile Include="sdo\Programs\StudentFamilyProgramType.cs" />
+    <Compile Include="sdo\Programs\StudentParticipation.cs" />
+    <Compile Include="sdo\Reporting\AuthorityLevel.cs" />
+    <Compile Include="sdo\Reporting\ReceivingAuthority.cs" />
+    <Compile Include="sdo\Reporting\ReceivingAuthoritySIF_RefObject.cs" />
+    <Compile Include="sdo\Reporting\ReportAuthorityInfo.cs" />
+    <Compile Include="sdo\Reporting\ReportData.cs" />
+    <Compile Include="sdo\Reporting\ReportDefinitionSource.cs" />
+    <Compile Include="sdo\Reporting\ReportDefinitionSourceType.cs" />
+    <Compile Include="sdo\Reporting\ReportFormat.cs" />
+    <Compile Include="sdo\Reporting\ReportFormatList.cs" />
+    <Compile Include="sdo\Reporting\ReportFormatType.cs" />
+    <Compile Include="sdo\Reporting\ReportInfo.cs" />
+    <Compile Include="sdo\Reporting\ReportingDTD.cs" />
+    <Compile Include="sdo\Reporting\ReportingPeriod.cs" />
+    <Compile Include="sdo\Reporting\ReportManifest.cs" />
+    <Compile Include="sdo\Reporting\ReportSubmitterInfo.cs" />
+    <Compile Include="sdo\Reporting\SIF_QueryGroup.cs" />
+    <Compile Include="sdo\Reporting\SIF_ReportObject.cs" />
+    <Compile Include="sdo\Reporting\SubmissionReason.cs" />
+    <Compile Include="sdo\School\AcademicYear.cs" />
+    <Compile Include="sdo\School\AcademicYearRange.cs" />
+    <Compile Include="sdo\School\AUSchoolFocusCodeType.cs" />
+    <Compile Include="sdo\School\CampusSchoolLevelType.cs" />
+    <Compile Include="sdo\School\End.cs" />
+    <Compile Include="sdo\School\FederalElectorateType.cs" />
+    <Compile Include="sdo\School\PersonPicture.cs" />
+    <Compile Include="sdo\School\Program.cs" />
+    <Compile Include="sdo\School\SchoolCoEdStatusType.cs" />
+    <Compile Include="sdo\School\SchoolDTD.cs" />
+    <Compile Include="sdo\School\SchoolFocus.cs" />
+    <Compile Include="sdo\School\SchoolFocusList.cs" />
+    <Compile Include="sdo\School\SchoolGroup.cs" />
+    <Compile Include="sdo\School\SchoolGroupList.cs" />
+    <Compile Include="sdo\School\SchoolInfo.cs" />
+    <Compile Include="sdo\School\SchoolLevelType.cs" />
+    <Compile Include="sdo\School\SchoolLocationType.cs" />
+    <Compile Include="sdo\School\SchoolProgramList.cs" />
+    <Compile Include="sdo\School\SchoolPrograms.cs" />
+    <Compile Include="sdo\School\SchoolSectorCodeType.cs" />
+    <Compile Include="sdo\School\SchoolSystemType.cs" />
+    <Compile Include="sdo\School\SessionInfo.cs" />
+    <Compile Include="sdo\School\Start.cs" />
+    <Compile Include="sdo\School\SystemicStatusType.cs" />
+    <Compile Include="sdo\School\TimeTable.cs" />
+    <Compile Include="sdo\School\TimeTableCell.cs" />
+    <Compile Include="sdo\School\TimeTableDay.cs" />
+    <Compile Include="sdo\School\TimeTableDayList.cs" />
+    <Compile Include="sdo\School\TimeTablePeriod.cs" />
+    <Compile Include="sdo\School\TimeTablePeriodList.cs" />
+    <Compile Include="sdo\School\TimeTableSubject.cs" />
+    <Compile Include="sdo\Student\ActivityInfo.cs" />
+    <Compile Include="sdo\Student\ActivityInvolvementCodeType.cs" />
+    <Compile Include="sdo\Student\ActivityType.cs" />
+    <Compile Include="sdo\Student\Advisor.cs" />
+    <Compile Include="sdo\Student\AdvisorSIF_RefObject.cs" />
+    <Compile Include="sdo\Student\AlertMessage.cs" />
+    <Compile Include="sdo\Student\AlertMessages.cs" />
+    <Compile Include="sdo\Student\AlertMessageType.cs" />
+    <Compile Include="sdo\Student\AreasOfInterestList.cs" />
+    <Compile Include="sdo\Student\AttendanceCodeInfo.cs" />
+    <Compile Include="sdo\Student\AttendanceStatusType.cs" />
+    <Compile Include="sdo\Student\AttendanceType.cs" />
+    <Compile Include="sdo\Student\AU0084CalendarEventType.cs" />
+    <Compile Include="sdo\Student\AU0266SessionType.cs" />
+    <Compile Include="sdo\Student\AU0274StudentFamilyProgramType.cs" />
+    <Compile Include="sdo\Student\AU0598PublicSchoolCatchmentStatusType.cs" />
+    <Compile Include="sdo\Student\AU0619EntryType.cs" />
+    <Compile Include="sdo\Student\AU0643ExitWithdrawalStatusType.cs" />
+    <Compile Include="sdo\Student\AU0644ExitWithdrawalType.cs" />
+    <Compile Include="sdo\Student\AUSchoolLevelType.cs" />
+    <Compile Include="sdo\Student\CalendarDate.cs" />
+    <Compile Include="sdo\Student\CalendarDateType.cs" />
+    <Compile Include="sdo\Student\CalendarSIF_RefObject.cs" />
+    <Compile Include="sdo\Student\CalendarSummary.cs" />
+    <Compile Include="sdo\Student\CalendarType.cs" />
+    <Compile Include="sdo\Student\CatchmentStatus.cs" />
+    <Compile Include="sdo\Student\ContactFlags.cs" />
+    <Compile Include="sdo\Student\Counselor.cs" />
+    <Compile Include="sdo\Student\CounselorSIF_RefObject.cs" />
+    <Compile Include="sdo\Student\DayValueCodeType.cs" />
+    <Compile Include="sdo\Student\EducationAgencyCode.cs" />
+    <Compile Include="sdo\Student\EducationAgencyType.cs" />
+    <Compile Include="sdo\Student\EmploymentType.cs" />
+    <Compile Include="sdo\Student\Enrollment.cs" />
+    <Compile Include="sdo\Student\EnrollmentList.cs" />
+    <Compile Include="sdo\Student\EntryType.cs" />
+    <Compile Include="sdo\Student\ExitStatus.cs" />
+    <Compile Include="sdo\Student\ExitType.cs" />
+    <Compile Include="sdo\Student\FTPTStatusCodeType.cs" />
+    <Compile Include="sdo\Student\FurtherInformation.cs" />
+    <Compile Include="sdo\Student\HomeEnrollment.cs" />
+    <Compile Include="sdo\Student\Homeroom.cs" />
+    <Compile Include="sdo\Student\Household.cs" />
+    <Compile Include="sdo\Student\HouseholdList.cs" />
+    <Compile Include="sdo\Student\LEAContact.cs" />
+    <Compile Include="sdo\Student\LEAContactList.cs" />
+    <Compile Include="sdo\Student\LEAInfo.cs" />
+    <Compile Include="sdo\Student\Location.cs" />
+    <Compile Include="sdo\Student\LocationRefId.cs" />
+    <Compile Include="sdo\Student\LocationRefIdSIF_RefObject.cs" />
+    <Compile Include="sdo\Student\LocationType.cs" />
+    <Compile Include="sdo\Student\MedicalAlertMessage.cs" />
+    <Compile Include="sdo\Student\MedicalAlertMessages.cs" />
+    <Compile Include="sdo\Student\MembershipType.cs" />
+    <Compile Include="sdo\Student\MostRecent.cs" />
+    <Compile Include="sdo\Student\NonSchoolEducationType.cs" />
+    <Compile Include="sdo\Student\OtherLearningArea.cs" />
+    <Compile Include="sdo\Student\OtherLearningAreasList.cs" />
+    <Compile Include="sdo\Student\PastoralCare.cs" />
+    <Compile Include="sdo\Student\PreviousSchool.cs" />
+    <Compile Include="sdo\Student\PreviousSchoolsList.cs" />
+    <Compile Include="sdo\Student\ProgressLevelType.cs" />
+    <Compile Include="sdo\Student\PromotionInfo.cs" />
+    <Compile Include="sdo\Student\PromotionStatus.cs" />
+    <Compile Include="sdo\Student\Recognition.cs" />
+    <Compile Include="sdo\Student\RecognitionList.cs" />
+    <Compile Include="sdo\Student\RecordClosureReason.cs" />
+    <Compile Include="sdo\Student\RoomInfo.cs" />
+    <Compile Include="sdo\Student\SchoolCourseInfo.cs" />
+    <Compile Include="sdo\Student\SchoolEnrollment.cs" />
+    <Compile Include="sdo\Student\SchoolEnrollmentList.cs" />
+    <Compile Include="sdo\Student\SchoolEnrollmentType.cs" />
+    <Compile Include="sdo\Student\SchoolInfoReligionType.cs" />
+    <Compile Include="sdo\Student\Severity.cs" />
+    <Compile Include="sdo\Student\SourceCodeType.cs" />
+    <Compile Include="sdo\Student\Staff.cs" />
+    <Compile Include="sdo\Student\StaffAssignment.cs" />
+    <Compile Include="sdo\Student\StaffList.cs" />
+    <Compile Include="sdo\Student\StaffPersonal.cs" />
+    <Compile Include="sdo\Student\StaffPersonalRefId.cs" />
+    <Compile Include="sdo\Student\StaffSubject.cs" />
+    <Compile Include="sdo\Student\StaffSubjectList.cs" />
+    <Compile Include="sdo\Student\StatisticalLocalAreaCodeType.cs" />
+    <Compile Include="sdo\Student\Student.cs" />
+    <Compile Include="sdo\Student\StudentActivityInfo.cs" />
+    <Compile Include="sdo\Student\StudentActivityParticipation.cs" />
+    <Compile Include="sdo\Student\StudentActivityType.cs" />
+    <Compile Include="sdo\Student\StudentAttendance.cs" />
+    <Compile Include="sdo\Student\StudentAttendanceSummary.cs" />
+    <Compile Include="sdo\Student\StudentContact.cs" />
+    <Compile Include="sdo\Student\StudentContactPersonal.cs" />
+    <Compile Include="sdo\Student\StudentContactRelationship.cs" />
+    <Compile Include="sdo\Student\StudentDailyAttendance.cs" />
+    <Compile Include="sdo\Student\StudentDTD.cs" />
+    <Compile Include="sdo\Student\StudentPersonal.cs" />
+    <Compile Include="sdo\Student\StudentPicture.cs" />
+    <Compile Include="sdo\Student\StudentSchoolEnrollment.cs" />
+    <Compile Include="sdo\Student\StudentSDTN.cs" />
+    <Compile Include="sdo\Student\StudentSDTNProgressLevelType.cs" />
+    <Compile Include="sdo\Student\StudentSnapshot.cs" />
+    <Compile Include="sdo\Student\StudentSnapshotSex.cs" />
+    <Compile Include="sdo\Student\StudentSnapshotSexCodeType.cs" />
+    <Compile Include="sdo\Student\StudentSubjectChoice.cs" />
+    <Compile Include="sdo\Student\StudentSubjectChoiceList.cs" />
+    <Compile Include="sdo\Student\StudyDescription.cs" />
+    <Compile Include="sdo\Student\SummaryEnrollmentInfo.cs" />
+    <Compile Include="sdo\Student\TermInfo.cs" />
+    <Compile Include="sdo\Student\TermInfoSessionType.cs" />
+    <Compile Include="sdo\Student\TimeFrame.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\core\OpenADK-NET-Core.csproj">
+      <Project>{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}</Project>
+      <Name>OpenADK-NET-Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

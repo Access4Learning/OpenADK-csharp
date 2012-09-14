@@ -1,0 +1,91 @@
+<SIF_ObjectData>
+<EmployeeAssignment RefId="EEAC881017DC11DBAC45C4DD44FCAA36" EmployeePersonalRefId="EE55676117DC11DBAC458067448028FA">
+  <Description>Teacher</Description>
+  <LocationId LocationInfoRefId="C1D2720017DC11DBAC45FDAC2E1E6C23" />
+  <JobStartDate>20010614</JobStartDate>
+  <JobFTE>1.00</JobFTE>
+  <JobClassification Code="0209" />
+  <ProgramType Code="0100" />
+  <FundingSource Code="0622" />
+</EmployeeAssignment>
+<EmployeeAssignment RefId="F018260017DC11DBAC45CE70D258E4C9" EmployeePersonalRefId="F0169F6017DC11DBAC45AC3DA2A1272B">
+  <Description>Teacher</Description>
+  <LocationId LocationInfoRefId="C1D2720017DC11DBAC45FDAC2E1E6C23" />
+  <JobStartDate>20010312</JobStartDate>
+  <JobFTE>1.00</JobFTE>
+  <JobClassification Code="0209" />
+  <ProgramType Code="0100" />
+  <FundingSource Code="0622" />
+</EmployeeAssignment>
+<EmployeeAssignment RefId="F027684017DC11DBAC45B6C140FF9F02" EmployeePersonalRefId="F025E1A017DC11DBAC45DC2161B00F98">
+  <Description>Teacher</Description>
+  <LocationId LocationInfoRefId="C1D2720017DC11DBAC45FDAC2E1E6C23" />
+  <JobStartDate>20020715</JobStartDate>
+  <JobFTE>1.00</JobFTE>
+  <JobClassification Code="0209" />
+  <ProgramType Code="0100" />
+  <FundingSource Code="0622" />
+</EmployeeAssignment>
+<EmployeeAssignment RefId="F03CC50017DC11DBAC45FA57A96DBF9C" EmployeePersonalRefId="F03B3E6017DC11DBAC458993E955EE2E">
+  <Description>Teacher</Description>
+  <LocationId LocationInfoRefId="C1D2720017DC11DBAC45FDAC2E1E6C23" />
+  <JobStartDate>20000710</JobStartDate>
+  <JobFTE>1.00</JobFTE>
+  <JobClassification Code="0209" />
+  <ProgramType Code="0100" />
+  <FundingSource Code="0622" />
+</EmployeeAssignment>
+<EmployeeAssignment RefId="F050C23117DC11DBAC45B219275DEB3E" EmployeePersonalRefId="F04F3B9217DC11DBAC45808B98761863">
+  <Description>Teacher</Description>
+  <LocationId LocationInfoRefId="C1D2720017DC11DBAC45FDAC2E1E6C23" />
+  <JobStartDate>20020511</JobStartDate>
+  <JobFTE>1.00</JobFTE>
+  <JobClassification Code="0209" />
+  <ProgramType Code="0100" />
+  <FundingSource Code="0622" />
+</EmployeeAssignment>
+<EmployeeAssignment RefId="F06311B017DC11DBAC45C27B22281B78" EmployeePersonalRefId="F0618B1117DC11DBAC45E869DEB529E8">
+  <Description>Teacher</Description>
+  <LocationId LocationInfoRefId="C1D2720017DC11DBAC45FDAC2E1E6C23" />
+  <JobStartDate>20010215</JobStartDate>
+  <JobFTE>1.00</JobFTE>
+  <JobClassification Code="0209" />
+  <ProgramType Code="0100" />
+  <FundingSource Code="0622" />
+</EmployeeAssignment>
+<EmployeeAssignment RefId="F075613017DC11DBAC45F164EC8D18A9" EmployeePersonalRefId="F07253F217DC11DBAC45836A3A865BF2">
+  <Description>Teacher</Description>
+  <LocationId LocationInfoRefId="C1D2720017DC11DBAC45FDAC2E1E6C23" />
+  <JobStartDate>20000813</JobStartDate>
+  <JobFTE>1.00</JobFTE>
+  <JobClassification Code="0209" />
+  <ProgramType Code="0100" />
+  <FundingSource Code="0622" />
+</EmployeeAssignment>
+<EmployeeAssignment RefId="F08DCB3017DC11DBAC45A92DD063CAD9" EmployeePersonalRefId="F08C449017DC11DBAC4586BF6B33692D">
+  <Description>Teacher</Description>
+  <LocationId LocationInfoRefId="C1D2720017DC11DBAC45FDAC2E1E6C23" />
+  <JobStartDate>20020114</JobStartDate>
+  <JobFTE>1.00</JobFTE>
+  <JobClassification Code="0209" />
+  <ProgramType Code="0100" />
+  <FundingSource Code="0622" />
+</EmployeeAssignment>
+<EmployeeAssignment RefId="F0A1A15117DC11DBAC4587C32DF8681F" EmployeePersonalRefId="F0A01AB117DC11DBAC45C110A1800901">
+  <Description>Teacher</Description>
+  <LocationId LocationInfoRefId="C1D2720017DC11DBAC45FDAC2E1E6C23" />
+  <JobStartDate>20020413</JobStartDate>
+  <JobFTE>1.00</JobFTE>
+  <JobClassification Code="0209" />
+  <ProgramType Code="0100" />
+  <FundingSource Code="0622" />
+</EmployeeAssignment>
+<EmployeeAssignment RefId="F0B10AA017DC11DBAC45FED6E7EC986E" EmployeePersonalRefId="F0AF840117DC11DBAC45B307851EA0DB">
+  <Description>Teacher</Description>
+  <LocationId LocationInfoRefId="C1D2720017DC11DBAC45FDAC2E1E6C23" />
+  <JobStartDate>20000713</JobStartDate>
+  <JobFTE>1.00</JobFTE>
+  <JobClassification Code="0209" />
+  <ProgramType Code="0100" />
+  <FundingSource Code="0622" />
+</EmployeeAssignment></SIF_ObjectData>

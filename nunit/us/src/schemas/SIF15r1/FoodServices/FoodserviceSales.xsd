@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: FoodserviceSales
+
+Owner: Food Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.3.11 FoodserviceSales -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='FoodserviceSales'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SchoolInfoRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Date' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Program' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SalesAmount' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='SalesAmount'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Cash'/>
+									<enumeration value='Account'/>
+									<enumeration value='Charged'/>
+									<enumeration value='Earned'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+						<attribute name='AccountType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='PrepaidCash'/>
+									<enumeration value='BreakfastCredit'/>
+									<enumeration value='LunchCredit'/>
+									<enumeration value='NA'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>

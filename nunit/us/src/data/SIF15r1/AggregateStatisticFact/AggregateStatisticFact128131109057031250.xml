@@ -1,0 +1,6 @@
+<SIF_ObjectData>
+<AggregateStatisticFact RefId="F205C53017DC11DBAC459FA3860FDE67">
+  <Characteristic AggregateCharacteristicInfoRefId="F1DDF1E017DC11DBAC45D122C8093F93" />
+  <Statistic AggregateStatisticInfoRefId="F1B952E017DC11DBAC459E792C8A41B5" />
+  <Value>170</Value>
+</AggregateStatisticFact></SIF_ObjectData>

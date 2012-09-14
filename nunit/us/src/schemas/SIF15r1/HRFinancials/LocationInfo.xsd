@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: LocationInfo
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.5.20 LocationInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='LocationInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SiteCategory' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LocationName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LocalId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:IdentificationInfo' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:StatePrId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:NCESId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolDistrict' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:OtherLEA' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ParentLocationInfo' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:School' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Address' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='LocationType' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='School'/>
+						<enumeration value='NonSchool'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+		</complexType>
+	</element>
+
+		<element name='SiteCategory' type='string'/>
+
+		<element name='ParentLocationInfo'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='LocationInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='School'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='SchoolInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>

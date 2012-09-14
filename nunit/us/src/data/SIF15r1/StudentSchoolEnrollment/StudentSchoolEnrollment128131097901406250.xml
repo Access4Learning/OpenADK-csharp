@@ -1,0 +1,22 @@
+<SIF_ObjectData>
+  <StudentSchoolEnrollment RefId="C7CF30D017DC11DBAC4589477D178C7E" StudentPersonalRefId="C6E56D1017DC11DBAC45BEBBBA7C526E" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B" MembershipType="Home" TimeFrame="Current">
+    <EnrollStatus Code="B30" />
+    <EntryDate>20040902</EntryDate>
+    <EntryType Code="01" />
+    <GradeLevel Code="12" />
+    <Homeroom RoomInfoRefId="C40F90C017DC11DBAC45D2E48876DE16" />
+    <StaffAssigned Type="Counselor" StaffPersonalRefId="C38922B017DC11DBAC45D51A9AB64709" />
+    <FTE>1.00</FTE>
+    <FTPTStatus>FullTime</FTPTStatus>
+  </StudentSchoolEnrollment>
+  <StudentSchoolEnrollment RefId="C8C5299017DC11DBAC45A745C4A381D8" StudentPersonalRefId="C8A9B25117DC11DBAC4580A21788A936" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B" MembershipType="Home" TimeFrame="Current">
+    <EnrollStatus Code="B30" />
+    <EntryDate>20040902</EntryDate>
+    <EntryType Code="01" />
+    <GradeLevel Code="10" />
+    <Homeroom RoomInfoRefId="C421E04017DC11DBAC45FC476ECB217D" />
+    <StaffAssigned Type="Advisor" StaffPersonalRefId="C33FBDA017DC11DBAC45B7230049056B" />
+    <FTE>1.00</FTE>
+    <FTPTStatus>FullTime</FTPTStatus>
+  </StudentSchoolEnrollment>
+</SIF_ObjectData>

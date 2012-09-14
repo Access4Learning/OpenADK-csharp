@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<SIF_Message xmlns="http://www.sifinfo.org/infrastructure/1.x" Version="1.5r1">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>A134BDFFF02445EFADF1D44D47ED40F1</SIF_MsgId>
+      <SIF_Date>20080828</SIF_Date>
+      <SIF_Time Zone="UTC-05:00">00:18:43</SIF_Time>
+      <SIF_SourceId>SPIAgent</SIF_SourceId>
+      <SIF_DestinationId>InfoCentre135</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>76449DE4B1364582BB16F2D4269BC95A</SIF_RequestMsgId>
+    <SIF_PacketNumber>107</SIF_PacketNumber>
+    <SIF_MorePackets>Yes</SIF_MorePackets>
+    <SIF_ObjectData>
+      <StudentPersonal RefId="01670ABAD3C84F1BA18FEE866F41A20A">
+        <LocalId>28920</LocalId>
+        <OtherId Type="06">28920</OtherId>
+        <OtherId Type="10">664905194</OtherId>
+        <OtherId Type="ZS">57913107</OtherId>
+        <OtherId Type="ZZ">GRADE:PK</OtherId>
+        <Name Type="04">
+          <LastName>Young</LastName>
+          <FirstName>Aniyah</FirstName>
+          <MiddleName>Le Shae</MiddleName>
+          <FullName>Young, Aniyah Le Shae</FullName>
+        </Name>
+        <GradYear Type="Original">2022</GradYear>
+        <Demographics>
+          <Ethnicity Type="NA" Code="7" />
+          <Gender>F</Gender>
+          <BirthDate>20040413</BirthDate>
+          <PlaceOfBirth>Dallas</PlaceOfBirth>
+          <StateOfBirth Code="TX" />
+          <CountryOfBirth Code="ZZ">USA</CountryOfBirth>
+          <Language Type="UND">Eng</Language>
+        </Demographics>
+        <StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+          <Address Type="01">
+            <Street>
+              <Line1>246 Rolling Hills PL</Line1>
+              <StreetNumber>246</StreetNumber>
+              <StreetName>Rolling Hills</StreetName>
+              <StreetType>PL</StreetType>
+            </Street>
+            <City>Lancaster</City>
+            <StatePr Code="TX" />
+            <Country Code="US" />
+            <PostalCode>75146</PostalCode>
+          </Address>
+        </StudentAddress>
+        <StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+          <Address Type="03">
+            <Street>
+              <Line1>246 Rolling Hills PL</Line1>
+              <StreetNumber>246</StreetNumber>
+              <StreetName>Rolling Hills</StreetName>
+              <StreetType>PL</StreetType>
+            </Street>
+            <City>Lancaster</City>
+            <StatePr Code="TX" />
+            <Country Code="US" />
+            <PostalCode>75146</PostalCode>
+          </Address>
+        </StudentAddress>
+        <PhoneNumber Format="NA" Type="06">(214)524-8057</PhoneNumber>
+        <SIF_ExtendedElements>
+          <SIF_ExtendedElement Name="CurrentStatus">Active</SIF_ExtendedElement>
+          <SIF_ExtendedElement Name="PrimaryHomeroom">104</SIF_ExtendedElement>
+        </SIF_ExtendedElements>
+      </StudentPersonal>
+      <StudentPersonal RefId="061072A7FA914BC2999776944277A6C3">
+        <LocalId>28921</LocalId>
+        <OtherId Type="06">28921</OtherId>
+        <OtherId Type="10">638824324</OtherId>
+        <OtherId Type="ZS">57913107</OtherId>
+        <OtherId Type="ZZ">GRADE:01</OtherId>
+        <Name Type="04">
+          <LastName>Agent</LastName>
+          <FirstName>Demorrey</FirstName>
+          <MiddleName>Wayne</MiddleName>
+          <FullName>Agent, Demorrey Wayne</FullName>
+        </Name>
+        <GradYear Type="Original">2020</GradYear>
+        <Demographics>
+          <Ethnicity Type="NA" Code="7" />
+          <Gender>M</Gender>
+          <BirthDate>20020719</BirthDate>
+          <PlaceOfBirth>Dallas</PlaceOfBirth>
+          <StateOfBirth Code="TX" />
+          <CountryOfBirth Code="ZZ">USA</CountryOfBirth>
+          <Language Type="UND">Eng</Language>
+        </Demographics>
+        <StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+          <Address Type="01">
+            <Street>
+              <Line1>1605 N Houston School RD</Line1>
+              <Line2>Rosemont Apt 4102</Line2>
+              <Complex>Rosemont</Complex>
+              <StreetNumber>1605</StreetNumber>
+              <StreetPrefix>N</StreetPrefix>
+              <StreetName>Houston School</StreetName>
+              <StreetType>RD</StreetType>
+              <AptNumber>4102</AptNumber>
+            </Street>
+            <City>Lancaster</City>
+            <StatePr Code="TX" />
+            <Country Code="US" />
+            <PostalCode>75134</PostalCode>
+          </Address>
+        </StudentAddress>
+        <StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+          <Address Type="03">
+            <Street>
+              <Line1>1605 N Houston School RD</Line1>
+              <Line2>Rosemont Apt 4102</Line2>
+              <Complex>Rosemont</Complex>
+              <StreetNumber>1605</StreetNumber>
+              <StreetPrefix>N</StreetPrefix>
+              <StreetName>Houston School</StreetName>
+              <StreetType>RD</StreetType>
+              <AptNumber>4102</AptNumber>
+            </Street>
+            <City>Lancaster</City>
+            <StatePr Code="TX" />
+            <Country Code="US" />
+            <PostalCode>75134</PostalCode>
+          </Address>
+        </StudentAddress>
+        <PhoneNumber Format="NA" Type="06">(214)854-9616</PhoneNumber>
+        <SIF_ExtendedElements>
+          <SIF_ExtendedElement Name="CurrentStatus">Active</SIF_ExtendedElement>
+          <SIF_ExtendedElement Name="PrimaryHomeroom">110</SIF_ExtendedElement>
+        </SIF_ExtendedElements>
+      </StudentPersonal>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

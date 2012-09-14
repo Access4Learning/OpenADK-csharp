@@ -1,0 +1,29 @@
+<SIF_ObjectData>
+<Activity RefId="C27E1FCFC163485FBEF0F36F18A0493A" xml:lang="en">
+  <Title>Shakespeare Essay - Much Ado About Nothing</Title>
+  <Preamble>
+    This is a very funny comedy - students should have passing familiarity with
+    Shakespeare
+  </Preamble>
+  <LearningStandardItemRefId>9DB15CEAB2C54F6694C37D0A0CAEDDA4</LearningStandardItemRefId>
+  <SourceObjectRefId Type = "Lesson">A71ADBD3D93DA64B7166E420D50EDABC</SourceObjectRefId>
+  <Points>50</Points>
+  <ActivityTime>
+    <CreationDate>20020615</CreationDate>
+    <Duration Units="minute">30</Duration>
+    <StartDate>20020910</StartDate>
+    <FinishDate>20020912</FinishDate>
+    <DueDate>20020912</DueDate>
+  </ActivityTime>
+  <AssessmentRefId>03EDB29E8116B4500435FA87E42A0AD2</AssessmentRefId>
+  <MaxAttemptsAllowed>3</MaxAttemptsAllowed>
+  <ActivityWeight>5%</ActivityWeight>
+  <Evaluation EvaluationType = "Inline">
+    <Description>
+      Students should be able to correctly identify all major
+      characters.
+    </Description>
+  </Evaluation>
+  <LearningResourceRefId>B7337698BF6DB1937F79A07B87211B93</LearningResourceRefId>
+</Activity>
+</SIF_ObjectData>

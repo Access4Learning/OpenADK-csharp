@@ -1,0 +1,42 @@
+<SIF_Message xmlns="http://www.sifinfo.org/infrastructure/1.x" Version="1.5r1">
+	<SIF_Ack>
+		<SIF_Header>
+			<SIF_MsgId>A9079727CFF0592D23EC7A9E160AB7F6</SIF_MsgId>
+			<SIF_Date>20020917</SIF_Date>
+			<SIF_Time Zone="MST">11:44:41</SIF_Time>
+			<SIF_SourceId>BLASTER</SIF_SourceId>
+			<SIF_DestinationId>OLM_Andy</SIF_DestinationId>
+		</SIF_Header>
+		<SIF_OriginalSourceId>RamseySIS</SIF_OriginalSourceId>
+		<SIF_OriginalMsgId>875612033261545A31905937B265CE01</SIF_OriginalMsgId>
+		<SIF_Status>
+			<SIF_Code>0</SIF_Code>
+			<SIF_Data>
+				<SIF_Message xmlns="http://www.sifinfo.org/infrastructure/1.x" Version="1.5r1">
+					<SIF_Event>
+						<SIF_Header>
+							<SIF_MsgId>AB34DC093261545A31905937B265CE01</SIF_MsgId>
+							<SIF_Date>19990218</SIF_Date>
+							<SIF_Time Zone="UTC-08:00">20:39:12</SIF_Time>
+							<SIF_SourceId>RamseySIS</SIF_SourceId>
+						</SIF_Header>
+						<SIF_ObjectData>
+							<SIF_EventObject ObjectName="SchoolCourseInfo" Action="Change">
+								<SchoolCourseInfo RefId="E14CF484CCDE4D1797B8BA83C02F04FD" SchoolInfoRefId="0E8CC608C5CE49F9A1A6E92120AA0113">
+									<CourseCode>CS101</CourseCode>
+									<StateCourseCode>08-001</StateCourseCode>
+									<DistrictCourseCode>CS101</DistrictCourseCode>
+									<SubjectArea Code="13">Graphic Arts</SubjectArea>
+									<CourseTitle>Gif, JPeg, or Png: What's the Difference?</CourseTitle>
+									<InstructionalLevel>10</InstructionalLevel>
+									<CourseCredits Code="01">2</CourseCredits>
+									<CourseCredits Code="02">1.00</CourseCredits>
+								</SchoolCourseInfo>
+							</SIF_EventObject>
+						</SIF_ObjectData>
+					</SIF_Event>
+				</SIF_Message>
+			</SIF_Data>
+		</SIF_Status>
+	</SIF_Ack>
+</SIF_Message>

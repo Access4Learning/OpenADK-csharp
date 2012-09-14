@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: FinancialAccountAccountingPeriodLocationInfo
+
+Owner: Food Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-06-16 Mark Reichert
+- 1.5r1 updates
+
+-->
+
+<!-- 5.3.15 FinancialAccountAccountingPeriodLocationInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='FinancialAccountAccountingPeriodLocationInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:FinancialAccountRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AccountingPeriodRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LocationInfoRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='FinancialAccountRefId' type='sif:RefIdOrEmptyType'/>
+
+		<element name='AccountingPeriodRefId' type='sif:RefIdOrEmptyType'/>
+
+</schema>

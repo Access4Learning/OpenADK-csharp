@@ -1,0 +1,31 @@
+<SIF_ObjectData>
+<Billing RefId="C568DF3017DC11DBAC45E9750DFCE2AF">
+  <EntityId>C568DF3017DC11DBAC45E9750DFCE2AF</EntityId>
+  <BillingDate>20030110</BillingDate>
+  <TransactionDescription>activity fees</TransactionDescription>
+  <BilledAmount>63.00</BilledAmount>
+</Billing>
+<Billing RefId="C56A65D017DC11DBAC45BBECE3CFC10C">
+  <EntityId>C56A65D017DC11DBAC45BBECE3CFC10C</EntityId>
+  <BillingDate>20030123</BillingDate>
+  <TransactionDescription>yearbook fees</TransactionDescription>
+  <BilledAmount>42.00</BilledAmount>
+</Billing>
+<Billing RefId="C56BEC7017DC11DBAC45BCE2E58A2F17">
+  <EntityId>C56BEC7017DC11DBAC45BCE2E58A2F17</EntityId>
+  <BillingDate>20030123</BillingDate>
+  <TransactionDescription>class ring</TransactionDescription>
+  <BilledAmount>26.00</BilledAmount>
+</Billing>
+<Billing RefId="C56D731017DC11DBAC45F5A245226762">
+  <EntityId>C56D731017DC11DBAC45F5A245226762</EntityId>
+  <BillingDate>20030110</BillingDate>
+  <TransactionDescription>activity fees</TransactionDescription>
+  <BilledAmount>49.00</BilledAmount>
+</Billing>
+<Billing RefId="C56EF9B017DC11DBAC45B24C08681BD4">
+  <EntityId>C56EF9B017DC11DBAC45B24C08681BD4</EntityId>
+  <BillingDate>20030118</BillingDate>
+  <TransactionDescription>yearbook fees</TransactionDescription>
+  <BilledAmount>24.00</BilledAmount>
+</Billing></SIF_ObjectData>

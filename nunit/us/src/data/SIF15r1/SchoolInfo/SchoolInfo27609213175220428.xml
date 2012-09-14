@@ -1,0 +1,39 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>ACC46C6BD9D5B25F433668D638774E19</SIF_MsgId>
+      <SIF_Date>20050518</SIF_Date>
+      <SIF_Time Zone="UTC-07:00">14:25:13</SIF_Time>
+      <SIF_Security>
+        <SIF_SecureChannel>
+          <SIF_AuthenticationLevel>0</SIF_AuthenticationLevel>
+          <SIF_EncryptionLevel>0</SIF_EncryptionLevel>
+        </SIF_SecureChannel>
+      </SIF_Security>
+      <SIF_SourceId>SASIxp</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>29891B6525E84EEF852C6E264F76E38C</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData>
+      <SchoolInfo RefId="46420A057DA1736E410068D638774E19">
+        <SchoolName>Junior High Demo</SchoolName>
+        <PrincipalInfo>
+          <ContactName>Mrs. Pleasant</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="TE">888-9877</PhoneNumber>
+        <Address Type="SS">
+          <Street>
+            <Line1>Grand Avenue</Line1>
+          </Street>
+          <City>Plesantville</City>
+          <StatePr Code="CA" />
+          <Country Code="US" />
+          <PostalCode>12345</PostalCode>
+        </Address>
+        <IdentificationInfo Code="76">997</IdentificationInfo>
+      </SchoolInfo>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

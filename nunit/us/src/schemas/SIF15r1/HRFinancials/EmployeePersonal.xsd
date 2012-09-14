@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: EmployeePersonal
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.5.8 EmployeePersonal -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='EmployeePersonal'>
+		<complexType>
+			<sequence>
+				<element ref='sif:HROtherId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Name' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Email' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Demographics' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Ssn' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Address' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='HROtherId'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>

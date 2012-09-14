@@ -1,0 +1,12 @@
+﻿<AssessmentLearnerSet RefId="AE98AE59A2841743117D9192C326B873" AssessmentResultComponentGroupRefId="8456D39051CC755293A4A4763088F3D3">
+  <CreationDateTime>2007-02-04T15:30:05</CreationDateTime>
+  <LocalId>21</LocalId>
+  <LearnerList>
+    <LearnerPersonalRefId>8456D39051CC755293A4A4763088F3D1</LearnerPersonalRefId>
+    <LearnerPersonalRefId>8456D39051CC755293A5A4763088F3D2</LearnerPersonalRefId>
+    <LearnerPersonalRefId>8456D39051CC755293A6A4763088F3D3</LearnerPersonalRefId>
+    <LearnerPersonalRefId>8456D39051CC755293A7A4763088F3D4</LearnerPersonalRefId>
+    <LearnerPersonalRefId>8456D39051CC755293A8A4763088F3D5</LearnerPersonalRefId>
+  </LearnerList>
+  <WorkforcePersonalRefId>AE98AE59A2841743117D9192C326B878</WorkforcePersonalRefId>
+</AssessmentLearnerSet>

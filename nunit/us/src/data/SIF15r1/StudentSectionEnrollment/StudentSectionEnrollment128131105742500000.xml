@@ -1,0 +1,8 @@
+<SIF_ObjectData>
+  <StudentSectionEnrollment RefId="C8295EC017DC11DBAC45BA8B19E98F28" StudentPersonalRefId="C6E56D1017DC11DBAC45BEBBBA7C526E" SectionInfoRefId="C492F19017DC11DBAC4586AAADAC5C6E">
+    <EntryDate>20040901</EntryDate>
+  </StudentSectionEnrollment>
+  <StudentSectionEnrollment RefId="C82F794017DC11DBAC45ABC567DFA728" StudentPersonalRefId="C6E56D1017DC11DBAC45BEBBBA7C526E" SectionInfoRefId="C492F19017DC11DBAC4586AAADAC5C6E">
+    <EntryDate>20040901</EntryDate>
+  </StudentSectionEnrollment>
+</SIF_ObjectData>

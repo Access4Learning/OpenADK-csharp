@@ -1,0 +1,148 @@
+<!--
+
+Object: Common Types
+
+Owner: Common Types
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated namespace
+
+2003-01-23 Mark Reichert
+- Updated pattern for VersionWithWildcardsType
+
+2003-03-28 Mark Reichert
+- Added pattern for RefIdOrEmptyType
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+<simpleType name='RefIdType'>
+	<restriction base='string'>
+		<pattern value='[0-9A-F]{32}'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='RefIdOrEmptyType'>
+	<restriction base='string'>
+		<pattern value='([0-9A-F]{32})?'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='DateType'>
+	<restriction base='string'>
+		<pattern value='[0-9]{4}(([0][13578]|[1][02])([0][1-9]|[12][0-9]|[3][0-1])|([0][469]|[1][1])([0][1-9]|[12][0-9]|[3][0])|([0][2])([0][1-9]|[12][0-9]))'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='DateOrEmptyType'>
+	<restriction base='string'>
+		<pattern value='([0-9]{4}(([0][13578]|[1][02])([0][1-9]|[12][0-9]|[3][0-1])|([0][469]|[1][1])([0][1-9]|[12][0-9]|[3][0])|([0][2])([0][1-9]|[12][0-9])))?'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='YearType'>
+	<restriction base='string'>
+		<pattern value='[0-9]{4}'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='YearOrEmptyType'>
+	<restriction base='string'>
+		<pattern value='([0-9]{4})?'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='TimeType'>
+	<restriction base='string'>
+		<pattern value='([0-1][0-9]|[2][0-3]):[0-5][0-9]:[0-5][0-9]'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='TimeOrEmptyType'>
+	<restriction base='string'>
+		<pattern value='(([0-1][0-9]|[2][0-3]):[0-5][0-9]:[0-5][0-9])?'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='TimeZoneType'>
+	<restriction base='string'>
+		<pattern value='UTC[+\-]([0-1][0-9]|[2][0-3]):[0-5][0-9]'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='TimeZoneOrEmptyType'>
+	<restriction base='string'>
+		<pattern value='(UTC[+\-]([0-1][0-9]|[2][0-3]):[0-5][0-9])?'/>
+	</restriction>
+</simpleType>
+
+<complexType name='TimeWithZoneType'>
+	<simpleContent>
+		<extension base='sif:TimeType'>
+			<attribute name='Zone' type='sif:TimeZoneType' use='required'/>
+		</extension>
+	</simpleContent>
+</complexType>
+
+<complexType name='TimeWithZoneOrEmptyType'>
+	<simpleContent>
+		<extension base='sif:TimeOrEmptyType'>
+			<attribute name='Zone' type='sif:TimeZoneOrEmptyType' use='required'/>
+		</extension>
+	</simpleContent>
+</complexType>
+
+<simpleType name='VersionType'>
+	<restriction base='string'>
+		<pattern value='[0-9]+[.][0-9]+(r[0-9]+)?'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='VersionWithWildcardsType'>
+	<restriction base='string'>
+		<pattern value='\*|([0-9]+[.]\*)|([0-9]+[.][0-9]+r\*)|([0-9]+[.][0-9]+(r[0-9]+)?)'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='YesOrNoType'>
+	<restriction base='string'>
+		<enumeration value='Yes'/>
+		<enumeration value='No'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='YesOrNoOrEmptyType'>
+	<restriction base='string'>
+		<pattern value="(Yes|No)?"/>
+	</restriction>
+</simpleType>
+
+<simpleType name='TrueOrFalseType'>
+	<restriction base='string'>
+		<enumeration value='True'/>
+		<enumeration value='False'/>
+	</restriction>
+</simpleType>
+
+<simpleType name='TrueOrFalseOrEmptyType'>
+	<restriction base='string'>
+		<pattern value="(True|False)?"/>
+	</restriction>
+</simpleType>
+
+</schema>

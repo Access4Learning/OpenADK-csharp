@@ -1,0 +1,80 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>14050511071420472813F515FA93CE6D</SIF_MsgId>
+      <SIF_Date>20050517</SIF_Date>
+      <SIF_Time Zone="UTC-07:00">07:20:32</SIF_Time>
+      <SIF_SourceId>ApplePowerSchoolSIFAgent</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>895DDD1EB05D428084732CB635066585</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData>
+      <StudentPersonal RefId="1405050D1115164D461C7458ECB9FAAA">
+        <OtherId Type="10">555-09-0909</OtherId>
+        <OtherId Type="06">10007</OtherId>
+        <Name Type="01">
+          <LastName>Setzer</LastName>
+          <FirstName>Elizabeth</FirstName>
+          <MiddleName>Ann</MiddleName>
+          <FullName>Setzer, Elizabeth Ann</FullName>
+        </Name>
+        <Demographics>
+          <Ethnicity Type="NA" Code="C">
+            <Proportion>100%</Proportion>
+          </Ethnicity>
+          <Gender>F</Gender>
+        </Demographics>
+        <PhoneNumber Format="FF" Type="06">801-555-9999</PhoneNumber>
+      </StudentPersonal>
+      <StudentPersonal RefId="140505100F081C3114BDFF110F723E44">
+        <OtherId Type="10">555-66-7777</OtherId>
+        <OtherId Type="06">10008</OtherId>
+        <Name Type="01">
+          <LastName>Disney</LastName>
+          <FirstName>Roy</FirstName>
+          <FullName>Disney, Roy</FullName>
+        </Name>
+        <Demographics>
+          <Gender>U</Gender>
+        </Demographics>
+        <PhoneNumber Format="FF" Type="06">801-555-1414</PhoneNumber>
+      </StudentPersonal>
+      <StudentPersonal RefId="1405050D11042721007CB8FF23CD80E8">
+        <OtherId Type="10">555-12-4321</OtherId>
+        <OtherId Type="06">10005</OtherId>
+        <Name Type="01">
+          <LastName>Setzer</LastName>
+          <FirstName>Thomas</FirstName>
+          <MiddleName>James</MiddleName>
+          <FullName>Setzer, Thomas James</FullName>
+        </Name>
+        <Demographics>
+          <Ethnicity Type="NA" Code="C">
+            <Proportion>100%</Proportion>
+          </Ethnicity>
+          <Gender>M</Gender>
+        </Demographics>
+        <PhoneNumber Format="FF" Type="06">801-555-1111</PhoneNumber>
+      </StudentPersonal>
+      <StudentPersonal RefId="1405050D110C331B5AF6639DF8A95FCD">
+        <OtherId Type="10">555-12-0987</OtherId>
+        <OtherId Type="06">10006</OtherId>
+        <Name Type="01">
+          <LastName>Setzer</LastName>
+          <FirstName>John</FirstName>
+          <MiddleName>Patrick</MiddleName>
+          <FullName>Setzer, John Patrick</FullName>
+        </Name>
+        <Demographics>
+          <Ethnicity Type="NA" Code="C">
+            <Proportion>100%</Proportion>
+          </Ethnicity>
+          <Gender>M</Gender>
+        </Demographics>
+        <PhoneNumber Format="FF" Type="06">801-555-4321</PhoneNumber>
+      </StudentPersonal>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: ReportAuthorityInfo
+
+Owner: Vertical Reporting Task Force
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.10.2 ReportAuthorityInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='ReportAuthorityInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:AuthorityName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AuthorityId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AuthorityDept' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AuthorityLevel' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ContactInfo' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Address' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='AuthorityName' type='string'/>
+
+		<element name='AuthorityId' type='string'/>
+
+		<element name='AuthorityDept' type='string'/>
+
+		<element name='AuthorityLevel'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Federal'/>
+					<enumeration value='State'/>
+					<enumeration value='RSA'/>
+					<enumeration value='LEA'/>
+					<enumeration value='School'/>
+					<enumeration value='Other'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+</schema>

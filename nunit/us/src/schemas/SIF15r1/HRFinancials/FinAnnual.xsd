@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: FinAnnual
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.5.11 FinAnnual -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='FinAnnual'>
+		<complexType>
+			<sequence>
+				<element ref='sif:ReportDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StatePrId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FiscalYr' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AnnualItem' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+		</complexType>
+	</element>
+
+		<element name='AnnualItem'>
+			<complexType>
+				<sequence>
+					<element ref='sif:AcctType' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:FundType' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:ExpArea' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Function' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Object' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:InstProgram' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Amount' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:SpecAmtType' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:GLAmtType' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='AcctType'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Revenue'/>
+						<enumeration value='Expenditure'/>
+						<enumeration value='Other'/>
+						<enumeration value=''/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name='FundType'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='General'/>
+						<enumeration value='Special'/>
+						<enumeration value=''/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name='ExpArea'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Elementary'/>
+						<enumeration value='Secondary'/>
+						<enumeration value='Federal'/>
+						<enumeration value='Other'/>
+						<enumeration value=''/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name='Function' type='string'/>
+
+			<element name='Object' type='string'/>
+
+			<element name='InstProgram' type='string'/>
+
+			<element name='SpecAmtType'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='1'/>
+						<enumeration value='2'/>
+						<enumeration value='3'/>
+						<enumeration value='4'/>
+						<enumeration value='5'/>
+						<enumeration value=''/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name='GLAmtType'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='1'/>
+						<enumeration value='2'/>
+						<enumeration value='3'/>
+						<enumeration value='4'/>
+						<enumeration value='5'/>
+						<enumeration value='6'/>
+						<enumeration value='7'/>
+						<enumeration value='8'/>
+						<enumeration value='9'/>
+						<enumeration value='10'/>
+						<enumeration value='11'/>
+						<enumeration value='12'/>
+						<enumeration value=''/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+</schema>

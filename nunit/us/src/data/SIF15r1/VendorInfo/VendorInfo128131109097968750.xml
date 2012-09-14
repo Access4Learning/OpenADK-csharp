@@ -1,0 +1,22 @@
+<SIF_ObjectData>
+<VendorInfo RefId="F138FF5017DC11DBAC45A0329DB3F005">
+  <VendorName>Kleinman &amp; Co.</VendorName>
+  <Address Type="01">
+    <Street>
+      <Line1>4267 13th St.</Line1>
+      <StreetNumber>4267</StreetNumber>
+      <StreetName>13th</StreetName>
+      <StreetType>St.</StreetType>
+    </Street>
+    <City>West Allis</City>
+    <County>Milwaukee</County>
+    <StatePr Code="WI" />
+    <Country Code="US" />
+    <PostalCode>53219</PostalCode>
+  </Address>
+  <PhoneNumber Format="FF" Type="18">(414) 179-3044</PhoneNumber>
+  <Email Type="Primary">EricKleinman@sifinfo.org</Email>
+  <ContactName>EricKleinman</ContactName>
+  <CustomerId>F138FF5017DC11DBAC45A0329DB3F005</CustomerId>
+  <Send1099 Code="No" />
+</VendorInfo></SIF_ObjectData>

@@ -1,0 +1,44 @@
+<SIF_ObjectData>
+  <StudentSnapshot SnapDate="20040930" StudentPersonalRefId="C6E56D1017DC11DBAC45BEBBBA7C526E">
+    <SchoolYear>2004</SchoolYear>
+    <Name Type="01">
+      <LastName>Merrell</LastName>
+      <FirstName>Patrick</FirstName>
+    </Name>
+    <LocalId>C6E56D1</LocalId>
+    <Gender>M</Gender>
+    <BirthDate>19900218</BirthDate>
+    <GradYear Type="Original">2004</GradYear>
+    <HomeEnrollment>
+      <EnrollmentId StudentSchoolEnrollmentRefId="C7CF30D017DC11DBAC4589477D178C7E" />
+      <SchoolName>John Adams High</SchoolName>
+      <SchoolId SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B" />
+      <LocalId>C17250A017DC11DBAC458FE86C20166B</LocalId>
+      <StatePrId>C17250A017DC11DBAC458FE86C20166B</StatePrId>
+      <Status>Active</Status>
+      <GradeLevel Code="12" />
+      <HomeroomId RoomInfoRefId="C40F90C017DC11DBAC45D2E48876DE16" />
+    </HomeEnrollment>
+  </StudentSnapshot>
+  <StudentSnapshot SnapDate="20040930" StudentPersonalRefId="C8A9B25117DC11DBAC4580A21788A936">
+    <SchoolYear>2004</SchoolYear>
+    <Name Type="01">
+      <LastName>Williams</LastName>
+      <FirstName>Malia</FirstName>
+    </Name>
+    <LocalId>C8A9B25</LocalId>
+    <Gender>F</Gender>
+    <BirthDate>19930316</BirthDate>
+    <GradYear Type="Projected">2006</GradYear>
+    <HomeEnrollment>
+      <EnrollmentId StudentSchoolEnrollmentRefId="C8C5299017DC11DBAC45A745C4A381D8" />
+      <SchoolName>John Adams High</SchoolName>
+      <SchoolId SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B" />
+      <LocalId>C17250A017DC11DBAC458FE86C20166B</LocalId>
+      <StatePrId>C17250A017DC11DBAC458FE86C20166B</StatePrId>
+      <Status>Active</Status>
+      <GradeLevel Code="10" />
+      <HomeroomId RoomInfoRefId="C421E04017DC11DBAC45FC476ECB217D" />
+    </HomeEnrollment>
+  </StudentSnapshot>
+</SIF_ObjectData>

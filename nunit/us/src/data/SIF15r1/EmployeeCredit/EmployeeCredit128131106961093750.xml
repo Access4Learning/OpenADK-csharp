@@ -1,0 +1,41 @@
+<SIF_ObjectData>
+<EmployeeCredit RefId="EF97D27017DC11DBAC45A4AF501C6959" EmployeePersonalRefId="EE55676117DC11DBAC458067448028FA" ProfDevActivitiesRefId="EE53E0C017DC11DBAC45DA0FDD8B0FE2">
+  <EndDate>20001101</EndDate>
+  <Earned Type="Credits">3</Earned>
+</EmployeeCredit>
+<EmployeeCredit RefId="F0214DC017DC11DBAC45F03E6ECE26F0" EmployeePersonalRefId="F0169F6017DC11DBAC45AC3DA2A1272B" ProfDevActivitiesRefId="EE53E0C017DC11DBAC45DA0FDD8B0FE2">
+  <EndDate>20001001</EndDate>
+  <Earned Type="Credits">2</Earned>
+</EmployeeCredit>
+<EmployeeCredit RefId="F03523E017DC11DBAC45BF2AE9DD1235" EmployeePersonalRefId="F025E1A017DC11DBAC45DC2161B00F98" ProfDevActivitiesRefId="EE53E0C017DC11DBAC45DA0FDD8B0FE2">
+  <EndDate>20021101</EndDate>
+  <Earned Type="Credits">3</Earned>
+</EmployeeCredit>
+<EmployeeCredit RefId="F04AA7B017DC11DBAC45E6071A4CE244" EmployeePersonalRefId="F03B3E6017DC11DBAC458993E955EE2E" ProfDevActivitiesRefId="EE53E0C017DC11DBAC45DA0FDD8B0FE2">
+  <EndDate>20011201</EndDate>
+  <Earned Type="Credits">1</Earned>
+</EmployeeCredit>
+<EmployeeCredit RefId="F05CF73017DC11DBAC459EEFFFAB218E" EmployeePersonalRefId="F04F3B9217DC11DBAC45808B98761863" ProfDevActivitiesRefId="EE53E0C017DC11DBAC45DA0FDD8B0FE2">
+  <EndDate>20011201</EndDate>
+  <Earned Type="Credits">5</Earned>
+</EmployeeCredit>
+<EmployeeCredit RefId="F06C397017DC11DBAC45850FE3A1604D" EmployeePersonalRefId="F0618B1117DC11DBAC45E869DEB529E8" ProfDevActivitiesRefId="EE53E0C017DC11DBAC45DA0FDD8B0FE2">
+  <EndDate>20021101</EndDate>
+  <Earned Type="Credits">2</Earned>
+</EmployeeCredit>
+<EmployeeCredit RefId="F0862A1017DC11DBAC45F0BA1A0DA877" EmployeePersonalRefId="F07253F217DC11DBAC45836A3A865BF2" ProfDevActivitiesRefId="EE53E0C017DC11DBAC45DA0FDD8B0FE2">
+  <EndDate>20011211</EndDate>
+  <Earned Type="Credits">4</Earned>
+</EmployeeCredit>
+<EmployeeCredit RefId="F09B86D017DC11DBAC45A302799E094E" EmployeePersonalRefId="F08C449017DC11DBAC4586BF6B33692D" ProfDevActivitiesRefId="EE53E0C017DC11DBAC45DA0FDD8B0FE2">
+  <EndDate>20001221</EndDate>
+  <Earned Type="Credits">2</Earned>
+</EmployeeCredit>
+<EmployeeCredit RefId="F0AAC91017DC11DBAC458E7EF5411DE8" EmployeePersonalRefId="F0A01AB117DC11DBAC45C110A1800901" ProfDevActivitiesRefId="EE53E0C017DC11DBAC45DA0FDD8B0FE2">
+  <EndDate>20031211</EndDate>
+  <Earned Type="Credits">5</Earned>
+</EmployeeCredit>
+<EmployeeCredit RefId="F0BD3FA017DC11DBAC45EDD2933E2DCF" EmployeePersonalRefId="F0AF840117DC11DBAC45B307851EA0DB" ProfDevActivitiesRefId="EE53E0C017DC11DBAC45DA0FDD8B0FE2">
+  <EndDate>20031211</EndDate>
+  <Earned Type="Credits">4</Earned>
+</EmployeeCredit></SIF_ObjectData>

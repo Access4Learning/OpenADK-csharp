@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: CurriculumStructure
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.6.3 CurriculumStructure -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+  <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="imports/xml/xml.xsd" />
+		<element name='CurriculumStructure'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Title' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SubjectArea' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CurriculumHierarchyLevel' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ParentObjectRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ObjectiveText' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ObjectRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:LearningStandardItemRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute ref='xml:lang' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='CurriculumHierarchyLevel'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='HierarchyLevelName' type='string' use='required'/>
+						<attribute name='HierarchyLevelDescription' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='ParentObjectRefId' type='sif:RefIdOrEmptyType'/>
+
+		<element name='ObjectiveText' type='string'/>
+
+</schema>

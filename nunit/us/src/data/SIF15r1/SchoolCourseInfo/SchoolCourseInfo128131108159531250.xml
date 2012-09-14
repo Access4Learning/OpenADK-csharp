@@ -1,0 +1,18 @@
+<SIF_ObjectData>
+  <SchoolCourseInfo RefId="C43D578017DC11DBAC45C04412E54C66" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+    <CourseCode>3644D</CourseCode>
+    <StateCourseCode>3705B</StateCourseCode>
+    <DistrictCourseCode>3956H</DistrictCourseCode>
+    <CourseTitle>German</CourseTitle>
+    <InstructionalLevel>04</InstructionalLevel>
+    <CourseCredits Code="01">1</CourseCredits>
+  </SchoolCourseInfo>
+  <SchoolCourseInfo RefId="C49A92B017DC11DBAC45C9FE76A3A509" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+    <CourseCode>1469N</CourseCode>
+    <StateCourseCode>1565Z</StateCourseCode>
+    <DistrictCourseCode>2350X</DistrictCourseCode>
+    <CourseTitle>Anthropology</CourseTitle>
+    <InstructionalLevel>04</InstructionalLevel>
+    <CourseCredits Code="01">2</CourseCredits>
+  </SchoolCourseInfo>
+</SIF_ObjectData>

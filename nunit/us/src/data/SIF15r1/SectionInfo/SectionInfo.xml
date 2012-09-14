@@ -1,0 +1,27 @@
+<SectionInfo RefId="AA7AAE9A8481FE5C4204A08A0C84C925" SchoolCourseInfoRefId="695A5825761B16F64005A08A0C84C925">
+  <ScheduleInfo TermInfoRefId="13B78D1F0C2D6D084300A08A0C84C925">
+    <Teacher StaffPersonalRefId="14FBA3CAA54CAC074606A08A0C84C925"/>
+    <Teacher StaffPersonalRefId="B7D7E21144B3ECB64207A08A0C84C925"/>
+    <Teacher StaffPersonalRefId="B7D7E21144B3ECB64207A08A0C84C925"/>
+    <SectionRoom RoomInfoRefId="2ED8C798D327C3554808A08A0C84C925"/>
+    <MeetingTime>
+      <TimetableDay>A</TimetableDay>
+      <TimetablePeriod>6</TimetablePeriod>
+    </MeetingTime>
+  </ScheduleInfo>
+  <ScheduleInfo TermInfoRefId="13B78D1F0C2D6D084300A08A0C84C925">
+    <Teacher StaffPersonalRefId="329EF4978C1ACA4E4809A08A0C84C925"/>
+    <SectionRoom RoomInfoRefId="61557A061AFFD9614B0AA08A0C84C925"/>
+    <MeetingTime>
+      <TimetableDay>B</TimetableDay>
+      <TimetablePeriod>6</TimetablePeriod>
+    </MeetingTime>
+  </ScheduleInfo>
+  <MediumOfInstruction Code="03"/>
+  <LanguageOfInstruction>ENG</LanguageOfInstruction>
+  <LocationOfInstruction Code="03">Pennsylvania College of Technology</LocationOfInstruction>
+  <SchoolCourseInfoOverride Override="Yes" CourseCodeOverride="CS101A" StateCourseCodeOverride="08-001A" DistrictCourseCodeOverride="CS101A" CourseTitleOverride="Graphics Basics" InstructionalLevelOverride="09">
+    <SubjectAreaOverride Code="13">Graphic Arts for Beginners</SubjectAreaOverride>
+    <CourseCreditsOverride Code="02">0.50</CourseCreditsOverride>
+  </SchoolCourseInfoOverride>
+</SectionInfo>

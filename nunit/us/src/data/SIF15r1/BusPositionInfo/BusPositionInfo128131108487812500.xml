@@ -1,0 +1,17 @@
+<SIF_ObjectData>
+<BusPositionInfo BusInfoRefId="C6003D3217DC11DBAC45F9B6C961BAEA">
+  <Date>20041119</Date>
+  <Time Zone="UTC-07:00">08:18:12</Time>
+  <GridLocation>
+    <Latitude>42.57017</Latitude>
+    <Longitude>116.45165</Longitude>
+  </GridLocation>
+  <TelematicsId>NexTel866-456-7890</TelematicsId>
+  <Telemetry>Close</Telemetry>
+  <BusDriver Status="Sched">
+    <EmpLink EmployeePersonalRefId="F025E1A017DC11DBAC45DC2161B00F98" />
+  </BusDriver>
+  <RouteStatus Status="Continue" BusRouteInfoRefId="C655B03017DC11DBAC45BD619806C7B8" />
+  <Odometer Unit="km">51509.2</Odometer>
+  <Speedometer Unit="km">44</Speedometer>
+</BusPositionInfo></SIF_ObjectData>
