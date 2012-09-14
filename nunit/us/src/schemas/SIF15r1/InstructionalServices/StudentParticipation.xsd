@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: StudentParticipation
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.6.13 StudentParticipation -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StudentParticipation'>
+		<complexType>
+			<sequence>
+				<element ref='sif:ReferralDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EvaluationDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ReevaluationDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ExceptionalityCategory' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ProgramEligibilityDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ProgramPlan' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ProgramPlanDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ProgramPlacementDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LeastRestrictiveEnvironment' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ExtendedSchoolYear' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PrivateNotPlacedByPublic' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ProgramReviewDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ProgramExitDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ProgramExitReason' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ParticipationContact' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='StudentPersonalRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='Type' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='IDEA-B'/>
+						<enumeration value='IDEA-C'/>
+						<enumeration value='ESL'/>
+						<enumeration value='Section504'/>
+						<enumeration value='Title1'/>
+						<enumeration value='LIT'/>
+						<enumeration value='GiftedTalented'/>
+						<enumeration value='BehaviorDisorder'/>
+						<enumeration value='Correctional'/>
+						<enumeration value='Vocational'/>
+						<enumeration value='Migrant'/>
+						<enumeration value='EvenStart'/>
+						<enumeration value='HeadStart'/>
+						<enumeration value='Other'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+		</complexType>
+	</element>
+
+		<element name='ReferralDate' type='sif:DateOrEmptyType'/>
+
+		<element name='ReevaluationDate' type='sif:DateOrEmptyType'/>
+
+		<element name='ExceptionalityCategory'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='CodeType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='NCES'/>
+									<enumeration value='StateDOE'/>
+									<enumeration value='Local'/>
+									<enumeration value='Text'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Primary'/>
+									<enumeration value='Secondary'/>
+									<enumeration value='Tertiary'/>
+									<enumeration value='Additional'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='ProgramEligibilityDate' type='sif:DateOrEmptyType'/>
+
+		<element name='ProgramPlan'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='IFSP'/>
+					<enumeration value='IEP'/>
+					<enumeration value='ILP'/>
+					<enumeration value='LIT'/>
+					<enumeration value='SP'/>
+					<enumeration value='ITP'/>
+					<enumeration value='Other'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='ProgramPlanDate' type='sif:DateOrEmptyType'/>
+
+		<element name='ProgramPlacementDate' type='sif:DateOrEmptyType'/>
+
+		<element name='LeastRestrictiveEnvironment'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='CodeType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='NCES'/>
+									<enumeration value='StateDOE'/>
+									<enumeration value='Local'/>
+									<enumeration value='Text'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='ExtendedSchoolYear' type='sif:YesOrNoOrEmptyType'/>
+
+		<element name='PrivateNotPlacedByPublic' type='sif:YesOrNoOrEmptyType'/>
+
+		<element name='ProgramReviewDate' type='sif:DateOrEmptyType'/>
+
+		<element name='ProgramExitDate' type='sif:DateOrEmptyType'/>
+
+		<element name='ProgramExitReason'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='CodeType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='NCES'/>
+									<enumeration value='StateDOE'/>
+									<enumeration value='Local'/>
+									<enumeration value='Text'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='ParticipationContact' type='string'/>
+
+</schema>

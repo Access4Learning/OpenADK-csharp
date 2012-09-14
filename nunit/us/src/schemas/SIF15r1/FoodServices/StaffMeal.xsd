@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: StaffMeal
+
+Owner: Food Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.3.7 StaffMeal -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StaffMeal'>
+		<complexType>
+			<sequence>
+				<element ref='sif:EarnedStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LastBreakfastDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LastLunchDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AmountEx' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='StaffPersonalRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+</schema>

@@ -1,0 +1,61 @@
+<SIF_Message xmlns="http://www.sifinfo.org/infrastructure/1.x"  Version="1.5r1">
+	<SIF_Response>
+		<SIF_Header>
+			<SIF_MsgId>A9079727CFF0592D23EC7A9E160AB7F6</SIF_MsgId>
+			<SIF_Date>20020917</SIF_Date>
+			<SIF_Time Zone="MST">11:44:41</SIF_Time>
+			<SIF_SourceId>BLASTER</SIF_SourceId>
+			<SIF_DestinationId>OLM_Andy</SIF_DestinationId>
+		</SIF_Header>
+		<SIF_RequestMsgId>7F16ADA30CBC4197BB5CC1CE30B2DF06</SIF_RequestMsgId>
+		<SIF_PacketNumber>1</SIF_PacketNumber>
+		<SIF_MorePackets>No</SIF_MorePackets>
+		<SIF_ObjectData>
+			<StudentPersonal RefId="1CA767A3663B40F4B965488729292107">
+				<OtherId Type="06">1</OtherId>
+				<OtherId Type="SY">765231234</OtherId>
+				<OtherId Type="ZZ">HOMEROOM:1005</OtherId>
+				<OtherId Type="ZZ">SCHOOL:515</OtherId>
+				<OtherId Type="ZZ">GRADE:07</OtherId>
+				<Name Type="02">
+					<LastName>Favre</LastName>
+					<FirstName>Brett</FirstName>
+					<MiddleName>Suzy</MiddleName>
+				</Name>
+				<GradYear Type="Original">2008</GradYear>
+				<Demographics>
+					<Ethnicity Type="DMG05-1109" Code="C" />
+					<Gender>F</Gender>
+					<BirthDate>19870312</BirthDate>
+					<CountryOfResidency Code="US" />
+          <CitizenshipStatus>US Citizen</CitizenshipStatus>
+					<EnglishProficiency Code="2" />
+					<Language Type="SPA" />
+				</Demographics>
+				<StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+					<Address Type="M">
+						<Street>
+							<Line1>3421 Briar DR</Line1>
+						</Street>
+						<City>Torrance</City>
+						<StatePr Code="IN" />
+						<Country Code="US" />
+						<PostalCode>23132</PostalCode>
+					</Address>
+				</StudentAddress>
+				<StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+					<Address Type="R">
+						<Street>
+							<Line1>241325 Quail Run Pkwy</Line1>
+						</Street>
+						<City>Utopia</City>
+						<StatePr Code="AK" />
+						<Country Code="US" />
+						<PostalCode>76132</PostalCode>
+					</Address>
+				</StudentAddress>
+				<PhoneNumber Format="NA" Type="HP">3248762123</PhoneNumber>
+			</StudentPersonal>
+		</SIF_ObjectData>
+	</SIF_Response>
+</SIF_Message>

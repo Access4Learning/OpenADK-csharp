@@ -1,0 +1,197 @@
+<!--
+
+Object: SchoolInfo
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Added LowGradeLevel and HighGradeLevel, per SIS changes
+- Updated namespace
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.8.5 SchoolInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='SchoolInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:LocalId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StatePrId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:NCESId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolDistrict' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:OtherLEA' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SchoolJurisdiction' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolFocus' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SchoolURL' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PrincipalInfo' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolContact' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Address' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:IdentificationInfo' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SessionType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LowGradeLevel' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:HighGradeLevel' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GradeLevels' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Title1Status' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:OperationalStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CongressionalDistrict' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='SchoolJurisdiction'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='SchoolType'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='SchoolFocus'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Type' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Regular'/>
+								<enumeration value='SpecialEd'/>
+								<enumeration value='Vocational'/>
+								<enumeration value='Alternative'/>
+								<enumeration value='Magnet'/>
+								<enumeration value='Charter'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='SchoolURL' type='string'/>
+
+	<element name='PrincipalInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:ContactName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ContactTitle' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+		</complexType>
+	</element>
+
+		<element name='ContactTitle' type='string'/>
+
+	<element name='SchoolContact'>
+		<complexType>
+			<sequence>
+				<element ref='sif:PublishInDirectory' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ContactInfo' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name='SessionType'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='LowGradeLevel'>
+		<simpleType>
+			<restriction base='string'>
+				<enumeration value='PK'/>
+				<enumeration value='0K'/>
+				<enumeration value='KG'/>
+				<enumeration value='01'/>
+				<enumeration value='02'/>
+				<enumeration value='03'/>
+				<enumeration value='04'/>
+				<enumeration value='05'/>
+				<enumeration value='06'/>
+				<enumeration value='07'/>
+				<enumeration value='08'/>
+				<enumeration value='09'/>
+				<enumeration value='10'/>
+				<enumeration value='11'/>
+				<enumeration value='12'/>
+				<enumeration value='PG'/>
+				<enumeration value='UN'/>
+				<enumeration value=''/>
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name='HighGradeLevel'>
+		<simpleType>
+			<restriction base='string'>
+				<enumeration value='PK'/>
+				<enumeration value='0K'/>
+				<enumeration value='KG'/>
+				<enumeration value='01'/>
+				<enumeration value='02'/>
+				<enumeration value='03'/>
+				<enumeration value='04'/>
+				<enumeration value='05'/>
+				<enumeration value='06'/>
+				<enumeration value='07'/>
+				<enumeration value='08'/>
+				<enumeration value='09'/>
+				<enumeration value='10'/>
+				<enumeration value='11'/>
+				<enumeration value='12'/>
+				<enumeration value='PG'/>
+				<enumeration value='UN'/>
+				<enumeration value=''/>
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name='Title1Status'>
+		<simpleType>
+			<restriction base='string'>
+				<enumeration value='Targeted'/>
+				<enumeration value='SchoolWide'/>
+				<enumeration value='NA'/>
+				<enumeration value=''/>
+			</restriction>
+		</simpleType>
+	</element>
+
+</schema>
+

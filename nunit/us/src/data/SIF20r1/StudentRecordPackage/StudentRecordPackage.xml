@@ -1,0 +1,8 @@
+<StudentRecordPackage RefId="3DFB4F80FF3211DC9CC3A3931AEA07FE" SIF_RefId="3DCDFDF0FF3211DC9CC3DC5599639584" SIF_RefObject="StudentRecordExchange">
+	<XMLData>
+	   <student_record xmlns:ex="http://thirdparty.com/namespaces/student_record">
+		  <type>dental</type>
+		  <cavities>1</cavities>
+	   </student_record>
+	</XMLData>
+ </StudentRecordPackage>

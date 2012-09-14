@@ -1,0 +1,19 @@
+﻿<StudentPersonal RefId="D3E34B359D75101A8C3D00AA001A1652">
+  <AlertMessages>
+    <AlertMessage Type="Legal">This is the Legal Alert for Joe Student</AlertMessage>
+  </AlertMessages>
+  <LocalId>P00001</LocalId>
+  <StateProvinceId>WB0025</StateProvinceId>
+  <ElectronicIdList>
+    <ElectronicId Type="Barcode">206654</ElectronicId>
+  </ElectronicIdList>
+  <Name Type="04">
+    <LastName>Student</LastName>
+    <FirstName>Joe</FirstName>
+    <MiddleName />
+    <PreferredName>Joe</PreferredName>
+  </Name>
+  <Demographics>
+    <Gender>M</Gender>
+  </Demographics>
+</StudentPersonal>

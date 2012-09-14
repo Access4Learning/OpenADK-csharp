@@ -1,0 +1,16 @@
+<SIF_ObjectData>
+<BusEquipment RefId="C5C61A6017DC11DBAC45D69878FFE43D">
+  <Description>clipboard</Description>
+</BusEquipment>
+<BusEquipment RefId="C5C7A10017DC11DBAC45F628AFE51D47">
+  <Description>first aid kit</Description>
+</BusEquipment>
+<BusEquipment RefId="C5C927A017DC11DBAC45A693E1006562">
+  <Description>ice scraper</Description>
+</BusEquipment>
+<BusEquipment RefId="C5CAAE4017DC11DBAC45FB5A92E598E8">
+  <Description>ice scraper</Description>
+</BusEquipment>
+<BusEquipment RefId="C5CC34E017DC11DBAC459E7750AC877F">
+  <Description>radio</Description>
+</BusEquipment></SIF_ObjectData>

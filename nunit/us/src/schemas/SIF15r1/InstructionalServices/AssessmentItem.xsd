@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: AssessmentItem
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.6.9 AssessmentItem -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+  <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="imports/xml/xml.xsd" />
+	<element name='AssessmentItem'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Title' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LearningStandardItemRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Label' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:MaxAttemptsAllowed' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ItemComment' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Duration' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Objective' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ItemControl' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Rubric' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Presentation' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ResponseProcessing' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ItemFeedback' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ItemContent' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute ref='xml:lang' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='Label' type='string'/>
+
+		<element name='ItemComment'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute ref='xml:lang' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='ItemControl'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='View' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='All'/>
+									<enumeration value='Administrator'/>
+									<enumeration value='AdminAuthority'/>
+									<enumeration value='Assessor'/>
+									<enumeration value='Author'/>
+									<enumeration value='Candidate'/>
+									<enumeration value='InvigilatorProctor'/>
+									<enumeration value='Psychometrician'/>
+									<enumeration value='Scorer'/>
+									<enumeration value='Tutor'/>
+								</restriction>
+						</simpleType>
+					</attribute>
+					<attribute name='SolutionSwitch' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Yes'/>
+								<enumeration value='No'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+					<attribute name='HintSwitch' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Yes'/>
+								<enumeration value='No'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+					<attribute name='FeedbackSwitch' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Yes'/>
+								<enumeration value='No'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='Presentation'>
+			<complexType>
+				<sequence>
+					<element ref='sif:PresentationLabel' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Instruction' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Content' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='Width' type='string' use='required'/>
+				<attribute name='Height' type='string' use='required'/>
+				<attribute name='X0' type='string' use='required'/>
+				<attribute name='Y0' type='string' use='required'/>
+				<attribute ref='xml:lang' use='required'/>
+			</complexType>
+		</element>
+
+			<element name='PresentationLabel' type='string'/>
+
+			<element name='Instruction' type='string'/>
+
+		<element name='ResponseProcessing' type='string'/>
+
+		<element name='ItemFeedback'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Title' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Feedback' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='View' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='All'/>
+							<enumeration value='Administrator'/>
+							<enumeration value='AdminAuthority'/>
+							<enumeration value='Assessor'/>
+							<enumeration value='Author'/>
+							<enumeration value='Candidate'/>
+							<enumeration value='InvigilatorProctor'/>
+							<enumeration value='Psychometrician'/>
+							<enumeration value='Scorer'/>
+							<enumeration value='Tutor'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+			<element name='Feedback' type='string'/>
+
+		<element name='ItemContent'>
+			<complexType>
+				<sequence>
+					<element ref='sif:ItemContentType' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:ItemAnswer' minOccurs='0' maxOccurs='unbounded'/>
+				</sequence>
+				<attribute name='View' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='All'/>
+							<enumeration value='Administrator'/>
+							<enumeration value='AdminAuthority'/>
+							<enumeration value='Assessor'/>
+							<enumeration value='Author'/>
+							<enumeration value='Candidate'/>
+							<enumeration value='InvigilatorProctor'/>
+							<enumeration value='Psychometrician'/>
+							<enumeration value='Scorer'/>
+							<enumeration value='Tutor'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+			<element name='ItemContentType' type='string'/>
+
+			<element name='ItemAnswer' type='string'/>
+
+</schema>

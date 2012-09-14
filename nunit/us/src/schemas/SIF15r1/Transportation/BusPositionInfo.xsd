@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: BusPositionInfo
+
+Owner: Transporation and Geographic Information Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.9.7 BusPositionInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='BusPositionInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Date' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Time' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GridLocation' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TelematicsId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Telemetry' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:BusDriver' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:BusStaff' minOccurs='0' maxOccurs='unbounded'/>
+				<choice minOccurs='0' maxOccurs='1'>
+					<element ref='sif:RouteStatus'/>
+					<element ref='sif:OtherStatus'/>
+				</choice>
+				<element ref='sif:Odometer' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Speedometer' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Students' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='BusInfoRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='TelematicsId' type='string'/>
+
+		<element name='Telemetry' type='string'/>
+
+		<element name='BusDriver'>
+			<complexType>
+				<choice minOccurs='0' maxOccurs='1'>
+					<element ref='sif:Name'/>
+					<element ref='sif:EmpLink'/>
+				</choice>
+				<attribute name='Status' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='On'/>
+							<enumeration value='Off'/>
+							<enumeration value='Sched'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+			<element name='EmpLink'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='EmployeePersonalRefId' type='sif:RefIdOrEmptyType' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+		<element name='BusStaff'>
+			<complexType>
+				<choice minOccurs='0' maxOccurs='1'>
+					<element ref='sif:Name'/>
+					<element ref='sif:EmpLink'/>
+				</choice>
+				<attribute name='Status' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='On'/>
+							<enumeration value='Off'/>
+							<enumeration value='Sched'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+		<element name='RouteStatus'>
+			<complexType>
+				<sequence>
+					<element ref='sif:BusStopId' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='Status' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='Begin'/>
+							<enumeration value='End'/>
+							<enumeration value='Continue'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+				<attribute name='BusRouteInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+			</complexType>
+		</element>
+
+			<element name='BusStopId'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='BusRouteDetailRefId' type='sif:RefIdOrEmptyType' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+		<element name='OtherStatus' type='string'/>
+
+		<element name='Odometer'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Unit' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='km'/>
+									<enumeration value='m'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='Speedometer'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Unit' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='km'/>
+									<enumeration value='m'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='Students'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='StudentPersonalRefId' type='sif:RefIdOrEmptyType' use='required'/>
+						<attribute name='Status' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='On'/>
+									<enumeration value='Off'/>
+									<enumeration value='Entered'/>
+									<enumeration value='Exited'/>
+									<enumeration value='Sched'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>

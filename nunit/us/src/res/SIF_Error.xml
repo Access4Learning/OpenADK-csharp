@@ -1,0 +1,6 @@
+﻿<SIF_Error>
+  <SIF_Category>1</SIF_Category>
+  <SIF_Code>3</SIF_Code>
+  <SIF_Desc>Unknown element or attribute</SIF_Desc>
+  <SIF_ExtendedDesc>PrincipalInfo/PhoneNumber is not a recognized element of SIF 1.5</SIF_ExtendedDesc>
+</SIF_Error>

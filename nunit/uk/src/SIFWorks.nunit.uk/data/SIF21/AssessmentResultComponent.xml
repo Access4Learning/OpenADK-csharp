@@ -1,0 +1,25 @@
+﻿<AssessmentResultComponent RefId="7C834EA9EDA12090347F83297E1C290C">
+  <Name>AT2</Name>
+  <ShortDescription>AT2</ShortDescription>
+  <Description>English Reading (AT2)</Description>
+  <YearList>
+    <Year>2007</Year>
+  </YearList>
+  <AssessmentSubjectList>
+    <Subject>ENG</Subject>
+  </AssessmentSubjectList>
+  <StageList>
+    <Stage>KS1</Stage>
+  </StageList>
+  <MarkSetList>
+    <MarkSet>
+      <StartDate>2005-07-01</StartDate>
+      <MinValue>5</MinValue>
+      <MaxValue>17</MaxValue>
+    </MarkSet>
+  </MarkSetList>
+  <ComponentType>Mark</ComponentType>
+  <ResultQualifier>NL</ResultQualifier>
+  <AssessmentMethod>TA</AssessmentMethod>
+  <SupplierName>XYZ Assessment Services</SupplierName>
+</AssessmentResultComponent>

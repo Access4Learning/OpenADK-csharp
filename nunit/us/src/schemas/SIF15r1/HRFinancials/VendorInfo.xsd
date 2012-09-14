@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: VendorInfo
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+2004-06-30 Mark Reichert
+- 1.5r1 Draft 2 updates
+
+-->
+
+<!-- 5.5.17 VendorInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='VendorInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:VendorName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Address' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Email' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ContactName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CustomerId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EmployeeId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Send1099' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FederalTaxId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='VendorName' type='string'/>
+
+		<element name='CustomerId' type='string'/>
+
+		<element name='Send1099'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Yes'/>
+									<enumeration value='No'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='FederalTaxId'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='EIN'/>
+									<enumeration value='SSNO'/>
+									<enumeration value='ITIN'/>
+									<enumeration value='ATIN'/>
+									<enumeration value='OTHER'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>

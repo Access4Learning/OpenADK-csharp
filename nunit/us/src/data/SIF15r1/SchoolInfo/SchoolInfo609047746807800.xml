@@ -1,0 +1,667 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>45419197CEA949859BE8FA2D9B919E63</SIF_MsgId>
+      <SIF_Date>20050518</SIF_Date>
+      <SIF_Time Zone="UTC-05:00">10:45:24</SIF_Time>
+      <SIF_SourceId>SPIAgent</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>DEA04C04E5F742598E254B3F9C11AD82</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData>
+      <SchoolInfo RefId="40C95D5627B04F69BFE07DC15D2E173B">
+        <LocalId>127</LocalId>
+        <SchoolName>TRIMMIER ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>PENNY BATTS</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2270</PhoneNumber>
+        <IdentificationInfo Code="76">127</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="BAA03FDDDD624C6EBCA8A78ECA9F4E12">
+        <LocalId>128</LocalId>
+        <SchoolName>MONTAGUE VILLAGE ELEM</SchoolName>
+        <PrincipalInfo>
+          <ContactName>BARBARA CARPENTER</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2230</PhoneNumber>
+        <IdentificationInfo Code="76">128</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="F050366C664646F7937A4E7F3073908E">
+        <LocalId>126</LocalId>
+        <SchoolName>VENABLE VILLAGE ELEM</SchoolName>
+        <PrincipalInfo>
+          <ContactName>CYNTHIA POTVIN</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1980</PhoneNumber>
+        <IdentificationInfo Code="76">126</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="EB7D3971A79E497EADBE4F904EC58915">
+        <LocalId>124</LocalId>
+        <SchoolName>CEDAR VALLEY ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>LUCILLE HUSUNG</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1480</PhoneNumber>
+        <IdentificationInfo Code="76">124</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="ECF0792224E94C8AAB63C5C33C3EF530">
+        <LocalId>125</LocalId>
+        <SchoolName>BROOKHAVEN ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>PAT YOUNG</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1440</PhoneNumber>
+        <IdentificationInfo Code="76">125</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="985EC1D991F5487984F1701A856EAD73">
+        <LocalId>129</LocalId>
+        <SchoolName>MAXDALE ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>TINA COLE</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2460</PhoneNumber>
+        <IdentificationInfo Code="76">129</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="399082908F064732927E16B3549C27B0">
+        <LocalId>133</LocalId>
+        <SchoolName>TIMBER RIDGE ELEMENTARY</SchoolName>
+        <PhoneNumber Format="NA" Type="18">(254)200-6630</PhoneNumber>
+        <IdentificationInfo Code="76">133</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="10197BA7B20A47E8ABBE32035D4A5040">
+        <LocalId>194</LocalId>
+        <SchoolName>ELEMENTARY SUMMER SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">194</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="6B652D868EF64ABEAA23F82669E67564">
+        <LocalId>132</LocalId>
+        <SchoolName>OVETA CULP HOBBY ELEM</SchoolName>
+        <PrincipalInfo>
+          <ContactName>KEITH MOORE</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)200-6500</PhoneNumber>
+        <IdentificationInfo Code="76">132</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="4872B60E8E254D54B86EA47159A343C4">
+        <LocalId>130</LocalId>
+        <SchoolName>IRA CROSS ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>JERRY BROUGHTON</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2550</PhoneNumber>
+        <IdentificationInfo Code="76">130</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="B2FF5F30EA2647FD94D8C6B6310102EF">
+        <LocalId>131</LocalId>
+        <SchoolName>IDUMA ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>JUDY TYSON</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2590</PhoneNumber>
+        <IdentificationInfo Code="76">131</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="5ADFE20DB0E542B0A9408F712AE4FBB8">
+        <LocalId>115</LocalId>
+        <SchoolName>NOLANVILLE ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>SHARON DAVIS</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2180</PhoneNumber>
+        <IdentificationInfo Code="76">115</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="E7A56C1B420D47AEBC4CC680DC6E1EB9">
+        <LocalId>116</LocalId>
+        <SchoolName>CLARKE ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>SANDY FRANKLIN</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1510</PhoneNumber>
+        <IdentificationInfo Code="76">116</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="F596A95D71E64606B34D21D2370933E8">
+        <LocalId>114</LocalId>
+        <SchoolName>MARLBORO ELEMENTARY</SchoolName>
+        <IdentificationInfo Code="76">114</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="C43D8D769B6A457980D59CC1895FBC29">
+        <LocalId>112</LocalId>
+        <SchoolName>WEST WARD ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>MAUREEN ADAMS</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1830</PhoneNumber>
+        <IdentificationInfo Code="76">112</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="A414BACDAEE6493F949508F760FE39D0">
+        <LocalId>113</LocalId>
+        <SchoolName>BELLAIRE ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>LIODOLEE GARCIA</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1410</PhoneNumber>
+        <IdentificationInfo Code="76">113</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="16FE91F53E1946E5BBF3421AE2DFCCF3">
+        <LocalId>117</LocalId>
+        <SchoolName>DUNCAN ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>DIANA MILLER</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1620</PhoneNumber>
+        <IdentificationInfo Code="76">117</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="66C76192215A4FCC9735226D1F398074">
+        <LocalId>122</LocalId>
+        <SchoolName>REECES CREEK ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>PHILLYS HILL</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2150</PhoneNumber>
+        <IdentificationInfo Code="76">122</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="746262D5073D439EBE212E861A6BCD53">
+        <LocalId>123</LocalId>
+        <SchoolName>CLEAR CREEK ELMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>JERRE VARNELL</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1550</PhoneNumber>
+        <IdentificationInfo Code="76">123</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="6BCAA76EAA174E6B8308D0656826EDE2">
+        <LocalId>121</LocalId>
+        <SchoolName>MOUNTAIN VIEW ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>DANA COLEMAN</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1900</PhoneNumber>
+        <IdentificationInfo Code="76">121</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="A91ABC0EFDA54414931C359E97E57B26">
+        <LocalId>119</LocalId>
+        <SchoolName>HAY BRANCH ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>PAT PERKISON</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2080</PhoneNumber>
+        <IdentificationInfo Code="76">119</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="30DBB5D87CE244EE800AE9F73B9B7737">
+        <LocalId>120</LocalId>
+        <SchoolName>WILLOW SPRINGS ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>SUSAN BAUMANN</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2020</PhoneNumber>
+        <IdentificationInfo Code="76">120</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="BAF655EB194C4085A075D615D4C74CF3">
+        <LocalId>251</LocalId>
+        <SchoolName>BCJDC MIDDLE SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">251</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="AA71149D977C47ACA524F3D6E432C6C6">
+        <LocalId>252</LocalId>
+        <SchoolName>BCJDC HIGH SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">252</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="4E05C3AE1958467D87B6E6E071BB3110">
+        <LocalId>232</LocalId>
+        <SchoolName>CEDAR CREST HIGH SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">232</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="7F0319099DC64E709C3DDA6C493BA203">
+        <LocalId>230</LocalId>
+        <SchoolName>CEDAR CREST ELEMENTARY</SchoolName>
+        <IdentificationInfo Code="76">230</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="5CA02A8866CA45B0A687636968F1B4DE">
+        <LocalId>231</LocalId>
+        <SchoolName>CEDAR CREST MIDDLE SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">231</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="B6C6AABA3C29436C923E10D3E1269CD2">
+        <LocalId>301</LocalId>
+        <SchoolName>PREGNANT STUDENT MS</SchoolName>
+        <IdentificationInfo Code="76">301</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="1659637EDF8D46FF987D61C879188210">
+        <LocalId>9039</LocalId>
+        <SchoolName>OUT OF DISTICT HS/SS</SchoolName>
+        <IdentificationInfo Code="76">9039</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="F86CA983A5274D8881E65753E63EE5D9">
+        <LocalId>9099</LocalId>
+        <SchoolName>OUT OF DISTRICT MS</SchoolName>
+        <IdentificationInfo Code="76">9099</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="57F1F6D1357A4821973C0B0C7C4F6B0C">
+        <LocalId>9000</LocalId>
+        <SchoolName>OUT OF DISTRICT HS</SchoolName>
+        <IdentificationInfo Code="76">9000</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="42CEDF93FF104FBD9562E6590AC07ED4">
+        <LocalId>302</LocalId>
+        <SchoolName>PREGNANT STUDENT HS</SchoolName>
+        <IdentificationInfo Code="76">302</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="3D3D8576651E4F19A0FB4972411C894E">
+        <LocalId>999</LocalId>
+        <SchoolName>INACTIVE STUDENTS</SchoolName>
+        <IdentificationInfo Code="76">999</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="FBE22F9C55244B48B3FB8635D472D23D">
+        <LocalId>206</LocalId>
+        <SchoolName>SAC MS</SchoolName>
+        <IdentificationInfo Code="76">206</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="CD6392105A054D3EB2BD21430E3FC52D">
+        <LocalId>207</LocalId>
+        <SchoolName>SAC HS</SchoolName>
+        <IdentificationInfo Code="76">207</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="6567809223D3414DB88A5F257100C3EE">
+        <LocalId>202</LocalId>
+        <SchoolName>GREENLEAF HIGH SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">202</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="F09F0D84C39D44DD99F3537C9F1C5C95">
+        <LocalId>200</LocalId>
+        <SchoolName>GREENLEAF ELEMENTARY</SchoolName>
+        <IdentificationInfo Code="76">200</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="35808AC032D94AC499EAF1F6D155D6A6">
+        <LocalId>201</LocalId>
+        <SchoolName>GREENLEAF MIDDLE SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">201</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="2C4394A17C18438E9C80B7E98916CA17">
+        <LocalId>210</LocalId>
+        <SchoolName>WOODS ELEMENTARY</SchoolName>
+        <IdentificationInfo Code="76">210</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="EC8FC4513B154420A15D1DDE80BABB86">
+        <LocalId>221</LocalId>
+        <SchoolName>METROPLEX MIDDLE SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">221</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="8ADED7AD1D174A64B27F68DE81ECFF87">
+        <LocalId>222</LocalId>
+        <SchoolName>METROPLEX HIGH SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">222</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="4D214B6CF4D44B6CA17F17E5CA8B3215">
+        <LocalId>220</LocalId>
+        <SchoolName>METROPLEX ELEMENTARY</SchoolName>
+        <IdentificationInfo Code="76">220</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="E5D6C71525714D87AD9BB4873ACEA756">
+        <LocalId>211</LocalId>
+        <SchoolName>WOODS MIDDLE SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">211</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="84130A45EF214D1BABC7E4BFAF30C9A9">
+        <LocalId>212</LocalId>
+        <SchoolName>WOODS HIGH SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">212</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="81A3FCA0FDB54945BF9B138143A1401D">
+        <LocalId>24</LocalId>
+        <SchoolName>JUVENILE JUSTICE OD</SchoolName>
+        <IdentificationInfo Code="76">24</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="53D922E2E47A430E8F24B73C94EED357">
+        <LocalId>25</LocalId>
+        <SchoolName>BELL COUNTY JUV DET CTR</SchoolName>
+        <PrincipalInfo>
+          <ContactName>KASSA WILLINGHAM</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)690-7022</PhoneNumber>
+        <IdentificationInfo Code="76">25</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="ED216B91859F425EBA28CEA0A1ECD026">
+        <LocalId>23</LocalId>
+        <SchoolName>CEDAR CREST</SchoolName>
+        <IdentificationInfo Code="76">23</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="1D756DE969784D51A9AC7594CB2F89C2">
+        <LocalId>12</LocalId>
+        <SchoolName>ELLISON 9TH GRADE CENTER</SchoolName>
+        <IdentificationInfo Code="76">12</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="D4BA9E0C265B4503B4FC51FC437F9D6B">
+        <LocalId>22</LocalId>
+        <SchoolName>METROPLEX SCHOOL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>KATHRYN LOVETT</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1721</PhoneNumber>
+        <IdentificationInfo Code="76">22</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="1FBC0DDA5874461FBF175F8932EAD2AE">
+        <LocalId>26</LocalId>
+        <SchoolName>JUVENILE JUSTICE KISD</SchoolName>
+        <PrincipalInfo>
+          <ContactName>KASSA WILLINGHAM</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)690-7336</PhoneNumber>
+        <IdentificationInfo Code="76">26</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="F01E32F8DDC44264B9518E77F3CA0E52">
+        <LocalId>42</LocalId>
+        <SchoolName>NOLAN MIDDLE SCHOOL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>MIKE BURCH</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1150</PhoneNumber>
+        <IdentificationInfo Code="76">42</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="A841724BBD38480B8B673C0D760855C9">
+        <LocalId>43</LocalId>
+        <SchoolName>RANCIER MIDDLE SCHOOL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>CORBETT LAWLER</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1250</PhoneNumber>
+        <IdentificationInfo Code="76">43</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="9CCCAE5D4F254A9689BABD419DDE6844">
+        <LocalId>41</LocalId>
+        <SchoolName>FAIRWAY MIDDLE SCHOOL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>TERESA DAUGHERTY</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1000</PhoneNumber>
+        <IdentificationInfo Code="76">41</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="F022F81670C046B5ABB9D1ABC8CDE1B8">
+        <LocalId>38</LocalId>
+        <SchoolName>ALL SCHOOLS</SchoolName>
+        <PhoneNumber Format="NA" Type="18">501-0064</PhoneNumber>
+        <IdentificationInfo Code="76">38</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="6861E106DA45427F9D77AB85393FB888">
+        <LocalId>39</LocalId>
+        <SchoolName>KISD HS/SS</SchoolName>
+        <PrincipalInfo>
+          <ContactName>LARRY BRAZZILL</ContactName>
+        </PrincipalInfo>
+        <IdentificationInfo Code="76">39</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="49B262CE2C7E4AC99BFE83E60FDA0303">
+        <LocalId>2</LocalId>
+        <SchoolName>ELLISON HIGH SCHOOL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>MARVIN RAINWATER</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-0629</PhoneNumber>
+        <IdentificationInfo Code="76">2</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="3404E5B8D616400DBEA41450A4E2731E">
+        <LocalId>3</LocalId>
+        <SchoolName>CAREER CENTER</SchoolName>
+        <PrincipalInfo>
+          <ContactName>JACK WELLS</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-0563</PhoneNumber>
+        <IdentificationInfo Code="76">3</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="B79678F84E474DE4AC1BB564F86BDF88">
+        <LocalId>1</LocalId>
+        <SchoolName>KILLEEN HIGH SCHOOL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>MICHAEL SIBBERSON</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-0400</PhoneNumber>
+        <IdentificationInfo Code="76">1</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="DC8D1DD2BDCE4154B3BE2373DC7ECC19">
+        <LocalId>-1</LocalId>
+        <SchoolName>CALL ANDY GREER</SchoolName>
+        <IdentificationInfo Code="76">-1</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="E83601E5B9CD42E0B41AD9ECD61DBB8B">
+        <LocalId>0</LocalId>
+        <SchoolName>CALL ANDY GREER</SchoolName>
+        <IdentificationInfo Code="76">0</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="9BC760F463F14401AEDCD8D9A063C09B">
+        <LocalId>4</LocalId>
+        <SchoolName>KILLEEN ALTERNATIVE CTR</SchoolName>
+        <PrincipalInfo>
+          <ContactName>JOHNNY JAMES</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-0750</PhoneNumber>
+        <IdentificationInfo Code="76">4</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="F0CFE5BD0E424F15919F8B255203B8E4">
+        <LocalId>9</LocalId>
+        <SchoolName>MIDDLE LEVEL LEARNING CTR</SchoolName>
+        <PrincipalInfo>
+          <ContactName>PHYLLIS ROSEN</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-0276</PhoneNumber>
+        <IdentificationInfo Code="76">9</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="904434C1242E4A01A392E56B97EC912B">
+        <LocalId>11</LocalId>
+        <SchoolName>KILLEEN 9TH GRADE CENTER</SchoolName>
+        <IdentificationInfo Code="76">11</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="FB743B61F0984AF0974B749E7BD642DA">
+        <LocalId>8</LocalId>
+        <SchoolName>ROBERT M SHOEMAKER HS</SchoolName>
+        <PrincipalInfo>
+          <ContactName>NELDA HOWTON</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-0900</PhoneNumber>
+        <IdentificationInfo Code="76">8</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="C4A6EA38C23E4E3FA8C5F2B279B1B152">
+        <LocalId>6</LocalId>
+        <SchoolName>PATHWAYS LEARNING CENTER</SchoolName>
+        <PrincipalInfo>
+          <ContactName>BOBBIE REEDERS</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-0550</PhoneNumber>
+        <IdentificationInfo Code="76">6</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="C21F164EED914458A85D4EC7DA67A63A">
+        <LocalId>7</LocalId>
+        <SchoolName>HARKER HEIGHTS HS</SchoolName>
+        <PrincipalInfo>
+          <ContactName>RALPH BRAY</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-0800</PhoneNumber>
+        <IdentificationInfo Code="76">7</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="BD017B485A764F18BF5C7CAC1838BD07">
+        <LocalId>104</LocalId>
+        <SchoolName>FOWLER ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>SUE CUMMINGS</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1760</PhoneNumber>
+        <IdentificationInfo Code="76">104</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="D9D47A6569F545699D96A01B75DBCA41">
+        <LocalId>105</LocalId>
+        <SchoolName>HARKER HEIGHTS ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>CAROLYN DUGGER</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2050</PhoneNumber>
+        <IdentificationInfo Code="76">105</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="22E57AFE838E4D7D8B2499146D4A98F0">
+        <LocalId>103</LocalId>
+        <SchoolName>EASTWARD ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>DEBRA BURCH</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1650</PhoneNumber>
+        <IdentificationInfo Code="76">103</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="DF666C13C7DB49D59D9CA399804A60CC">
+        <LocalId>101</LocalId>
+        <SchoolName>OVETA CULP HOBBY ALT CTR</SchoolName>
+        <PrincipalInfo>
+          <ContactName>KEITH MOORE</ContactName>
+        </PrincipalInfo>
+        <IdentificationInfo Code="76">101</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="3DA1BC83818E4242803EFDEAB4877EA8">
+        <LocalId>102</LocalId>
+        <SchoolName>CLIFTON PARK ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>JENNIFER SULLIVAN</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1580</PhoneNumber>
+        <IdentificationInfo Code="76">102</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="CB675E1767B54231BBBCD447E85B57FC">
+        <LocalId>106</LocalId>
+        <SchoolName>HAYNES ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>LINDA PELTON</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1680</PhoneNumber>
+        <IdentificationInfo Code="76">106</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="4C194C943AF145818206F6F3C2DA25FD">
+        <LocalId>110</LocalId>
+        <SchoolName>PERSHING PARK ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>JUDY VAN RIPER</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1790</PhoneNumber>
+        <IdentificationInfo Code="76">110</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="B7E9FEF912324EE4866F06CE5A92BEE4">
+        <LocalId>111</LocalId>
+        <SchoolName>SUGAR LOAF ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>KARL BRADLEY</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1940</PhoneNumber>
+        <IdentificationInfo Code="76">111</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="6972C43906E24ABF94AC92D31F8E9ADC">
+        <LocalId>109</LocalId>
+        <SchoolName>PEEBLES ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>GAYLE DUDLEY</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2120</PhoneNumber>
+        <IdentificationInfo Code="76">109</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="9CFF0F8AC34E4E6C851E7B83C0E21DC8">
+        <LocalId>107</LocalId>
+        <SchoolName>DEVELOPMENTAL CENTER ELEM</SchoolName>
+        <IdentificationInfo Code="76">107</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="2EBD7A220E304AB7A54B0922D9A17B29">
+        <LocalId>108</LocalId>
+        <SchoolName>MEADOW ELEMENTARY</SchoolName>
+        <PrincipalInfo>
+          <ContactName>HAL ADAMS</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1870</PhoneNumber>
+        <IdentificationInfo Code="76">108</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="F10FE038535343878071067ACE842485">
+        <LocalId>48</LocalId>
+        <SchoolName>PALO ALTO MIDDLE SCHOOL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>STEVE CARUSO</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1200</PhoneNumber>
+        <IdentificationInfo Code="76">48</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="16CA5693EB244DCC82ED03AAA998AA40">
+        <LocalId>49</LocalId>
+        <SchoolName>LIBERTY HILLS MIDDLE SCHL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>KEITH HARRISON</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1370</PhoneNumber>
+        <IdentificationInfo Code="76">49</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="6647CDF485094816B875800B694D2FBD">
+        <LocalId>46</LocalId>
+        <SchoolName>EASTERN HILLS MIDDLE SCHL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>SHARON MILLER</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1100</PhoneNumber>
+        <IdentificationInfo Code="76">46</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="D768179F88544EE1A67B3DF0E67FBCDF">
+        <LocalId>44</LocalId>
+        <SchoolName>MANOR MIDDLE SCHOOL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>FLORISTINE GRAY</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1310</PhoneNumber>
+        <IdentificationInfo Code="76">44</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="D351845CB1FA463CA6ED2DA648E8E399">
+        <LocalId>45</LocalId>
+        <SchoolName>SMITH MIDDLE SCHOOL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>SANDRA FORSYTHE</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-1050</PhoneNumber>
+        <IdentificationInfo Code="76">45</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="C00B759491E74745B5F10C89E39E8FF6">
+        <LocalId>50</LocalId>
+        <SchoolName>LIVE OAK RIDGE MIDDLE SCH</SchoolName>
+        <PrincipalInfo>
+          <ContactName>BRENDA ALEXANDER</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)501-2490</PhoneNumber>
+        <IdentificationInfo Code="76">50</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="D1E29F61E98F4CAA8A587BB041CC0C68">
+        <LocalId>99</LocalId>
+        <SchoolName>KISD MS SUMMER SCHOOL</SchoolName>
+        <IdentificationInfo Code="76">99</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="DDB7186D79F64921A7C05C056FD70668">
+        <LocalId>100</LocalId>
+        <SchoolName>IRA CROSS ALTERNATIVE CTR</SchoolName>
+        <PrincipalInfo>
+          <ContactName>JERRY BROUGHTON</ContactName>
+        </PrincipalInfo>
+        <IdentificationInfo Code="76">100</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="B4EB4BDB3FD94F149C8923FF1FDCE5D4">
+        <LocalId>98</LocalId>
+        <SchoolName>ALL MIDDLE SCHOOLS</SchoolName>
+        <IdentificationInfo Code="76">98</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="08D86A8F21B240AB9A32F32726570548">
+        <LocalId>51</LocalId>
+        <SchoolName>UNION GROVE MIDDLE SCHL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>RON GRAY</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)200-6580</PhoneNumber>
+        <IdentificationInfo Code="76">51</IdentificationInfo>
+      </SchoolInfo>
+      <SchoolInfo RefId="1F57211409E7415CBD7B99C9827F5A8D">
+        <LocalId>52</LocalId>
+        <SchoolName>AUDIE MURPHY MIDDLE SCHL</SchoolName>
+        <PrincipalInfo>
+          <ContactName>MINERVA TRUJILLO</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="NA" Type="18">(254)200-6530</PhoneNumber>
+        <IdentificationInfo Code="76">52</IdentificationInfo>
+      </SchoolInfo>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

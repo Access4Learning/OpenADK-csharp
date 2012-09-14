@@ -1,0 +1,72 @@
+<!--
+
+Object: SchoolCourseInfo
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2003-01-15 Mark Reichert
+- Created object per SIS group.
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.8.4 SchoolCourseInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='SchoolCourseInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:CourseCode' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StateCourseCode' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:DistrictCourseCode' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SubjectArea' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:CourseTitle' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:InstructionalLevel' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CourseCredits' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:CoreAcademicCourse' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GradRequirement' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='SchoolInfoRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='CourseCode' type='string'/>
+
+	<element name='StateCourseCode' type='string'/>
+
+	<element name='DistrictCourseCode' type='string'/>
+
+	<element name='CourseTitle' type='string'/>
+
+	<element name='InstructionalLevel' type='string'/>
+
+	<element name='CourseCredits'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='CoreAcademicCourse' type='sif:YesOrNoOrEmptyType'/>
+
+	<element name='GradRequirement' type='sif:YesOrNoOrEmptyType'/>
+
+</schema>
+

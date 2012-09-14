@@ -1,0 +1,15 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>1405051107142F6128CA04F761FD202F</SIF_MsgId>
+      <SIF_Date>20050517</SIF_Date>
+      <SIF_Time Zone="UTC-07:00">07:20:47</SIF_Time>
+      <SIF_SourceId>ApplePowerSchoolSIFAgent</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>5C694C364CD0458498C7C1C69B26A4FA</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData />
+  </SIF_Response>
+</SIF_Message>

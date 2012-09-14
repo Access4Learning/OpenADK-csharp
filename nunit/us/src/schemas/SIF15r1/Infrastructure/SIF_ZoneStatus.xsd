@@ -1,0 +1,171 @@
+<!--
+
+Object: SIF_ZoneStatus
+
+Owner: Infrastructure Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Made SIF_Version repeatable in SIF_SIFNode
+- Updated namespace
+
+2003-01-23 Mark Reichert
+- Updated type for SIF_Version in SIF_SIFNode
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 4.3.1 SIF_ZoneStatus -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='SIF_ZoneStatus'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SIF_Name' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_Vendor' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_Providers' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_Subscribers' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_SIFNodes' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_SupportedAuthentication' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_SupportedProtocols' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_SupportedVersions' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_AdministrationURL' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='ZoneId' type='string' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='SIF_Vendor'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SIF_Name' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_Product' minOccurs='0' maxOccurs='1'/>
+				<element name='SIF_Version' type='string' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name='SIF_Product' type='string'/>
+
+	<element name='SIF_Providers'>
+		<complexType>
+		<sequence>
+			<element ref='sif:SIF_Provider' maxOccurs='unbounded'/>
+		</sequence>
+		</complexType>
+	</element>
+
+	<element name='SIF_Provider'>
+		<complexType>
+			<sequence>
+				<element name='SIF_Object' maxOccurs='unbounded'>
+					<complexType>
+						<attribute name='ObjectName' type='sif:ProvideObjectNames' use='required'/>
+					</complexType>
+				</element>
+			</sequence>
+			<attribute name='SourceId' type='string' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='SIF_Subscribers'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SIF_Subscriber' maxOccurs='unbounded'/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name='SIF_Subscriber'>
+		<complexType>
+			<sequence>
+				<element name='SIF_Object' maxOccurs='unbounded'>
+					<complexType>
+						<attribute name='ObjectName' type='sif:SubscribeObjectNames' use='required'/>
+					</complexType>
+				</element>
+			</sequence>
+			<attribute name='SourceId' type='string' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='SIF_SIFNodes'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SIF_SIFNode' minOccurs='0' maxOccurs='unbounded'/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name='SIF_SIFNode'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SIF_Name' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_SourceId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_Mode' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_Protocol' minOccurs='0' maxOccurs='1'/>
+				<element name='SIF_Version' type='sif:VersionWithWildcardsType' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_AuthenticationLevel' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_EncryptionLevel' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_MaxBufferSize' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_Sleeping' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_DynamicConnectionData' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='Type' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Agent'/>
+						<enumeration value='ZIS'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+		</complexType>
+	</element>
+
+	<element name='SIF_Sleeping' type='sif:YesOrNoType'/>
+
+	<element name='SIF_DynamicConnectionData'/>
+
+	<element name='SIF_SupportedAuthentication'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SIF_ProtocolName' minOccurs='0' maxOccurs='unbounded'/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name='SIF_ProtocolName' type='string'/>
+
+	<element name='SIF_SupportedProtocols'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SIF_Protocol' minOccurs='0' maxOccurs='unbounded'/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name='SIF_SupportedVersions'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SIF_Version' maxOccurs='unbounded'/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name='SIF_AdministrationURL' type='string'/>
+
+</schema>

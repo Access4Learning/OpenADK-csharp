@@ -1,0 +1,42 @@
+<StudentPlacement RefId="A3E34B359A75101D8C3A00DD001D1652" StudentParticipationRefId="D3E34B359D75101A8C3D00AA001A1652"
+	StudentPersonalRefId="A2E34F59A742C1A4B3D11CC002B163A2">
+	<StudentPlacementAsOfDate>2006-07-13</StudentPlacementAsOfDate>
+	<Service>
+		<Code>0290</Code>
+		<OtherCodeList>
+			<OtherCode Codeset="StateProvince">8829</OtherCode>
+		</OtherCodeList>
+	</Service>
+	<ServiceFundingSources>
+		<ServiceFundingSource>
+			<Code>0797</Code>
+		</ServiceFundingSource>
+	</ServiceFundingSources>
+	<ServicingPublicAgency SIF_RefObject="LEAInfo">F3434F59A742C1A4B3D11CC002B163A2</ServicingPublicAgency>
+	<ServicingSchool SIF_RefObject="SchoolInfo">D93F4D183A42C1A4B3D11CC002B163A2</ServicingSchool>
+	<SchoolWhereServiceDelivered SIF_RefObject="SchoolInfo">D93F4D183A42C1A4B3D11CC002B163A2</SchoolWhereServiceDelivered>
+	<ServiceProviderType>
+		<Code>0203</Code>
+	</ServiceProviderType>
+	<AgencyType>Public School</AgencyType>
+	<ServiceProviderName>John Q. Public</ServiceProviderName>
+	<ServiceSetting>
+		<Code>0356</Code>
+	</ServiceSetting>
+	<WhenServiceProvided>
+		<Code>0231</Code>
+	</WhenServiceProvided>
+	<LatestStartDate>2006-02-01</LatestStartDate>
+	<StartDate>2006-02-01</StartDate>
+	<EndDate>2007-01-09</EndDate>
+	<FrequencyTime>
+		<Code>S001</Code>
+	</FrequencyTime>
+	<DirectTime UnitOfMeasure="Minutes">60</DirectTime>
+	<IndirectTime UnitOfMeasure="Minutes">0</IndirectTime>
+	<TotalServiceDuration UnitOfMeasure="Minutes">60</TotalServiceDuration>
+	<IncludedInSpecialEducationFTE>true</IncludedInSpecialEducationFTE>
+	<SpecialNeedsTransportation>true</SpecialNeedsTransportation>
+	<AssistiveTechnology>false</AssistiveTechnology>
+	<EntryPerson>Jill Anderson</EntryPerson>
+</StudentPlacement>

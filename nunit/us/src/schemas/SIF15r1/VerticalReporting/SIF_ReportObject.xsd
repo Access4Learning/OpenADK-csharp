@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: SIF_ReportObject
+
+Owner: Vertical Reporting Task Force
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-02-25 Mark Reichert
+- Incorporated object from task force.
+
+2004-07-27 Mark Reichert
+- 1.5r1 Draft 3 updates
+
+-->
+
+<!-- 5.10.3 SIF_ReportObject -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='SIF_ReportObject'>
+		<complexType>
+			<sequence>
+				<choice minOccurs='0' maxOccurs='1'>
+					<element ref='sif:ReportInfo'/>
+					<element ref='sif:ReportData'/>
+				</choice>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='ReportInfo'>
+			<complexType>
+				<sequence>
+					<element ref='sif:CalculationDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:SubmissionNumber' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:SubmissionReason' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:ReportSubmitterInfo' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='ReportManifestRefId' type='sif:RefIdOrEmptyType' use='required'/>
+			</complexType>
+		</element>
+
+			<element name='CalculationDate' type='sif:DateOrEmptyType'/>
+
+			<element name='SubmissionNumber' type='string'/>
+
+			<element name='SubmissionReason'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Initial'/>
+						<enumeration value='Correction'/>
+						<enumeration value='Revision'/>
+						<enumeration value='Addition'/>
+						<enumeration value=''/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name='ReportSubmitterInfo'>
+				<complexType>
+					<sequence>
+						<element ref='sif:SifEntity' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:SubmitterName' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:SubmitterDept' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:ContactInfo' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Address' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:SubmitterNotes' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+				<element name='SifEntity'>
+					<complexType>
+						<simpleContent>
+							<extension base='string'>
+								<attribute name='ObjectName' use='required'>
+									<simpleType>
+										<restriction base='string'>
+											<enumeration value='SchoolInfo'/>
+											<enumeration value='LEAInfo'/>
+										</restriction>
+									</simpleType>
+								</attribute>
+								<attribute name='RefId' type='sif:RefIdOrEmptyType' use='required'/>
+							</extension>
+						</simpleContent>
+					</complexType>
+				</element>
+
+				<element name='SubmitterName' type='string'/>
+
+				<element name='SubmitterDept' type='string'/>
+
+				<element name='SubmitterNotes' type='string'/>
+
+		<element name='ReportData'>
+
+			<complexType>
+
+				<choice>
+
+					<element ref='sif:SIF_ZoneStatus'/>
+
+					<element ref='sif:AggregateStatisticInfo'/>
+					<element ref='sif:AggregateCharacteristicInfo'/>
+					<element ref='sif:AggregateStatisticFact'/>
+
+					<element ref='sif:StudentMeal'/>
+					<element ref='sif:FoodserviceItem'/>
+					<element ref='sif:FoodserviceItemUnit'/>
+					<element ref='sif:FoodserviceItemPortion'/>
+					<element ref='sif:FoodserviceReimbursementRates'/>
+					<element ref='sif:FoodserviceMealPrices'/>
+					<element ref='sif:StaffMeal'/>
+					<element ref='sif:FoodserviceTransaction'/>
+					<element ref='sif:FoodserviceTransactionDetails'/>
+					<element ref='sif:FoodserviceTransactionPayMethod'/>
+					<element ref='sif:FoodserviceSales'/>
+					<element ref='sif:FoodserviceItemSales'/>
+					<element ref='sif:AccountingPeriod'/>
+					<element ref='sif:FinancialAccount'/>
+					<element ref='sif:FinancialAccountAccountingPeriodLocationInfo'/>
+					<element ref='sif:FinancialClass'/>
+					<element ref='sif:FinancialIncomeStatement'/>
+					<element ref='sif:FinancialTransaction'/>
+					<element ref='sif:FiscalYear'/>
+
+					<element ref='sif:Billing'/>
+					<element ref='sif:Payment'/>
+					<element ref='sif:ActivityProvider'/>
+					<element ref='sif:EmployeeAssignment'/>
+					<element ref='sif:EmployeeContract'/>
+					<element ref='sif:EmployeeCredit'/>
+					<element ref='sif:EmployeeHR'/>
+					<element ref='sif:EmployeePersonal'/>
+					<element ref='sif:EmployeePicture'/>
+					<element ref='sif:EmployeeRecertification'/>
+					<element ref='sif:FinAnnual'/>
+					<element ref='sif:EmployeeCredential'/>
+					<element ref='sif:FinBudget'/>
+					<element ref='sif:ProfDevActivities'/>
+					<element ref='sif:StaffAssignment'/>
+					<element ref='sif:TimeWorked'/>
+					<element ref='sif:VendorInfo'/>
+					<element ref='sif:W4'/>
+					<element ref='sif:EmployeeWage'/>
+					<element ref='sif:LocationInfo'/>
+					<element ref='sif:Purchasing'/>
+
+					<element ref='sif:LearningStandardDocument'/>
+					<element ref='sif:LearningStandardItem'/>
+					<element ref='sif:CurriculumStructure'/>
+					<element ref='sif:Lesson'/>
+					<element ref='sif:Activity'/>
+					<element ref='sif:Assignment'/>
+					<element ref='sif:Assessment'/>
+					<element ref='sif:AssessmentSection'/>
+					<element ref='sif:AssessmentItem'/>
+					<element ref='sif:AssessmentSubTest'/>
+
+					<element ref='sif:StudentResultSet'/>
+					<element ref='sif:LearningResource'/>
+					<element ref='sif:StudentParticipation'/>
+					<element ref='sif:StudentPlacement'/>
+
+					<element ref='sif:LibraryPatronStatus'/>
+
+					<element ref='sif:AttendanceCodeInfo'/>
+					<element ref='sif:RoomInfo'/>
+					<element ref='sif:RoomType'/>
+					<element ref='sif:SchoolCourseInfo'/>
+					<element ref='sif:SchoolInfo'/>
+					<element ref='sif:SectionInfo'/>
+					<element ref='sif:StaffPersonal'/>
+					<element ref='sif:StudentContact'/>
+					<element ref='sif:StudentDailyAttendance'/>
+					<element ref='sif:StudentPersonal'/>
+					<element ref='sif:StudentPicture'/>
+					<element ref='sif:StudentSchoolEnrollment'/>
+					<element ref='sif:StudentSectionEnrollment'/>
+					<element ref='sif:TermInfo'/>
+					<element ref='sif:LEAInfo'/>
+					<element ref='sif:StudentSnapshot'/>
+
+					<element ref='sif:BusEquipment'/>
+					<element ref='sif:BusInfo'/>
+					<element ref='sif:BusRouteDetail'/>
+					<element ref='sif:BusRouteInfo'/>
+					<element ref='sif:BusStopInfo'/>
+					<element ref='sif:StudentTransportInfo'/>
+					<element ref='sif:BusPositionInfo'/>
+
+					<element ref='sif:ReportManifest'/>
+					<element ref='sif:ReportAuthorityInfo'/>
+					<element ref='sif:SIF_ReportObject'/>
+					<element ref='sif:StudentLocator'/>
+					
+					<element ref='sif:SIF_LogEntry'/>
+					<element ref='sif:Authentication'/>
+
+				</choice>
+
+			</complexType>
+
+		</element>
+
+</schema>

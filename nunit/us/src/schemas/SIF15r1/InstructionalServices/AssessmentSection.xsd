@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: AssessmentSection
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.6.8 AssessmentSection -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+  <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="imports/xml/xml.xsd" />
+	<element name='AssessmentSection'>
+		<complexType>
+			<sequence>
+				<element ref='sif:LearningStandardItemRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Title' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:MaxAttemptsAllowed' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SectionComment' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Duration' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PauseFlag' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Objective' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SectionControl' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Rubric' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:PresentationMaterial' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:OutcomesProcessingExtension' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SectionFeedback' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SelectionOrdering' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Reference' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AssessmentSectionRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:AssessmentItemRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute ref='xml:lang' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='SectionComment'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute ref='xml:lang' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='SectionControl'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='View' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='All'/>
+									<enumeration value='Administrator'/>
+									<enumeration value='AdminAuthority'/>
+									<enumeration value='Assessor'/>
+									<enumeration value='Author'/>
+									<enumeration value='Candidate'/>
+									<enumeration value='InvigilatorProctor'/>
+									<enumeration value='Psychometrician'/>
+									<enumeration value='Scorer'/>
+									<enumeration value='Tutor'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+						<attribute name='SolutionSwitch' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Yes'/>
+									<enumeration value='No'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+						<attribute name='HintSwitch' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Yes'/>
+									<enumeration value='No'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+						<attribute name='FeedbackSwitch' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Yes'/>
+									<enumeration value='No'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='SectionFeedback'>
+			<complexType>
+				<sequence>
+					<element ref='sif:FeedbackTitle' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Content' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='SectionFeedbackRefId' type='sif:RefIdOrEmptyType' use='required'/>
+				<attribute name='View' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='All'/>
+							<enumeration value='Administrator'/>
+							<enumeration value='AdminAuthority'/>
+							<enumeration value='Assessor'/>
+							<enumeration value='Author'/>
+							<enumeration value='Candidate'/>
+							<enumeration value='InvigilatorProctor'/>
+							<enumeration value='Psychometrician'/>
+							<enumeration value='Scorer'/>
+							<enumeration value='Tutor'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+</schema>

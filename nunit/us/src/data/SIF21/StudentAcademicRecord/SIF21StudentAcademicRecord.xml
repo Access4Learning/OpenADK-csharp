@@ -1,0 +1,365 @@
+<StudentAcademicRecord RefId="D932E34082D04C048112729922B58A93" SIF_RefObject="StudentRecordExchange" SIF_RefId="0EAF9D6DA4854F348103B04BFEAC65B2">
+  <ReportingDate>2006-09-26</ReportingDate>
+  <StudentSchoolEnrollmentData SchoolAttendedRefId="39FA2714A63543B0A7732796825E9C68">
+    <GradeLevel>
+      <Code>12</Code>
+    </GradeLevel>
+  </StudentSchoolEnrollmentData>
+  <DistrictEntryDate>2003-09-01</DistrictEntryDate>
+  <SchoolAttendanceHistory>
+    <SchoolAttended RefId="39FA2714A63543B0A7732796825E9C67">
+      <SchoolInfoData>
+        <LocalId>43</LocalId>
+        <StateProvinceId>389</StateProvinceId>
+        <SchoolName>Thomas Jefferson HS</SchoolName>
+        <GradeLevels>
+          <GradeLevel>
+            <Code>09</Code>
+          </GradeLevel>
+          <GradeLevel>
+            <Code>10</Code>
+          </GradeLevel>
+          <GradeLevel>
+            <Code>11</Code>
+          </GradeLevel>
+          <GradeLevel>
+            <Code>12</Code>
+          </GradeLevel>
+        </GradeLevels>
+      </SchoolInfoData>
+      <MarkingSystems>
+        <MarkValueInfoData RefId="DBA34A13FF234C7994AAE13D89DA9A50">
+          <Name>Letter Grades</Name>
+          <Letter>
+            <ValidMark>
+              <Code>A</Code>
+              <NumericEquivalent>4.0</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>A-</Code>
+              <NumericEquivalent>3.7</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>B+</Code>
+              <NumericEquivalent>3.2</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>B</Code>
+              <NumericEquivalent>3.0</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>B-</Code>
+              <NumericEquivalent>2.7</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>C+</Code>
+              <NumericEquivalent>2.8</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>C</Code>
+              <NumericEquivalent>2.0</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>C-</Code>
+              <NumericEquivalent>1.7</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>D+</Code>
+              <NumericEquivalent>1.2</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>D</Code>
+              <NumericEquivalent>1.0</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>E</Code>
+              <NumericEquivalent>0.0</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>F</Code>
+              <NumericEquivalent>0.0</NumericEquivalent>
+            </ValidMark>
+          </Letter>
+        </MarkValueInfoData>
+      </MarkingSystems>
+    </SchoolAttended>
+    <SchoolAttended RefId="39FA2714A63543B0A7732796825E9C68">
+      <LEAInfoData>
+        <LEAName>Everett School District</LEAName>
+      </LEAInfoData>
+      <SchoolInfoData>
+        <LocalId>44</LocalId>
+        <StateProvinceId>390</StateProvinceId>
+        <SchoolName>Everett HS</SchoolName>
+        <AddressList>
+          <Address Type="0123">
+            <Street>
+              <Line1>2416 Colby Ave</Line1>
+            </Street>
+            <City>Everett</City>
+            <StateProvince>WA</StateProvince>
+            <Country>US</Country>
+            <PostalCode>98201</PostalCode>
+          </Address>
+        </AddressList>
+        <GradeLevels>
+          <GradeLevel>
+            <Code>09</Code>
+          </GradeLevel>
+          <GradeLevel>
+            <Code>10</Code>
+          </GradeLevel>
+          <GradeLevel>
+            <Code>11</Code>
+          </GradeLevel>
+          <GradeLevel>
+            <Code>12</Code>
+          </GradeLevel>
+        </GradeLevels>
+      </SchoolInfoData>
+      <MarkingSystems>
+        <MarkValueInfoData RefId="FBE50CCA156741F389D916B89923DFFE">
+          <Name>Letter Grades</Name>
+          <Letter>
+            <ValidMark>
+              <Code>A</Code>
+              <NumericEquivalent>4.0</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>A-</Code>
+              <NumericEquivalent>3.7</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>B+</Code>
+              <NumericEquivalent>3.2</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>B</Code>
+              <NumericEquivalent>3.0</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>B-</Code>
+              <NumericEquivalent>2.7</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>C+</Code>
+              <NumericEquivalent>2.8</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>C</Code>
+              <NumericEquivalent>2.0</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>C-</Code>
+              <NumericEquivalent>1.7</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>D+</Code>
+              <NumericEquivalent>1.2</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>D</Code>
+              <NumericEquivalent>1.0</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>E</Code>
+              <NumericEquivalent>0.0</NumericEquivalent>
+            </ValidMark>
+            <ValidMark>
+              <Code>F</Code>
+              <NumericEquivalent>0.0</NumericEquivalent>
+            </ValidMark>
+          </Letter>
+        </MarkValueInfoData>
+      </MarkingSystems>
+    </SchoolAttended>
+    <SchoolAttended RefId="39FA2714A63543B0A7732796825E9C69">
+      <SchoolInfoData>
+        <LocalId>45</LocalId>
+        <StateProvinceId>391</StateProvinceId>
+        <NCESId />
+        <SchoolName>Thomas Alva Edison HS</SchoolName>
+        <GradeLevels>
+          <GradeLevel>
+            <Code>09</Code>
+          </GradeLevel>
+          <GradeLevel>
+            <Code>10</Code>
+          </GradeLevel>
+          <GradeLevel>
+            <Code>11</Code>
+          </GradeLevel>
+          <GradeLevel>
+            <Code>12</Code>
+          </GradeLevel>
+        </GradeLevels>
+      </SchoolInfoData>
+    </SchoolAttended>
+  </SchoolAttendanceHistory>
+  <EnrollmentHistory>
+    <StudentSchoolEnrollmentData SchoolAttendedRefId="39FA2714A63543B0A7732796825E9C67">
+      <SchoolYear>1998</SchoolYear>
+      <EntryDate>1997-09-01</EntryDate>
+      <ExitDate>1998-06-30</ExitDate>
+    </StudentSchoolEnrollmentData>
+    <StudentSchoolEnrollmentData SchoolAttendedRefId="39FA2714A63543B0A7732796825E9C68">
+      <SchoolYear>1999</SchoolYear>
+      <EntryDate>1998-09-01</EntryDate>
+      <ExitDate>1999-06-30</ExitDate>
+    </StudentSchoolEnrollmentData>
+    <StudentSchoolEnrollmentData SchoolAttendedRefId="39FA2714A63543B0A7732796825E9C69">
+      <SchoolYear>2000</SchoolYear>
+      <EntryDate>1999-09-01</EntryDate>
+      <ExitDate>2000-06-30</ExitDate>
+    </StudentSchoolEnrollmentData>
+    <StudentSchoolEnrollmentData SchoolAttendedRefId="39FA2714A63543B0A7732796825E9C68">
+      <SchoolYear>2002</SchoolYear>
+      <EntryDate>2001-09-01</EntryDate>
+    </StudentSchoolEnrollmentData>
+  </EnrollmentHistory>
+  <CourseHistory>
+    <Term>
+      <TermInfoData SchoolAttendedRefId="39FA2714A63543B0A7732796825E9C67">
+        <SchoolYear>1998</SchoolYear>
+        <StartDate>1997-09-01</StartDate>
+        <EndDate>1998-03-30</EndDate>
+      </TermInfoData>
+      <Courses>
+        <Course>
+          <SchoolCourseInfoData>
+            <CourseCode>ENG031</CourseCode>
+            <CourseTitle>Grammar</CourseTitle>
+          </SchoolCourseInfoData>
+          <StartDate>1997-09-01</StartDate>
+          <EndDate>1998-03-30</EndDate>
+          <MarkingPeriods>
+            <MarkingPeriod>
+              <GradeLevelWhenTaken>
+                <Code>09</Code>
+              </GradeLevelWhenTaken>
+              <MarkData MarkValueInfoDataRefId="DBA34A13FF234C7994AAE13D89DA9A50">
+                <Letter>A</Letter>
+              </MarkData>
+              <CourseCreditsAttempted>0.50</CourseCreditsAttempted>
+              <CourseCreditsEarned>0.50</CourseCreditsEarned>
+              <DaysAbsent>0</DaysAbsent>
+              <DaysPresent>85</DaysPresent>
+            </MarkingPeriod>
+          </MarkingPeriods>
+        </Course>
+        <!-- ... -->
+      </Courses>
+    </Term>
+    <!-- ... -->
+  </CourseHistory>
+  <AcademicPerformanceHistory>
+    <TermPerformance>
+      <TermInfoData>
+        <EndDate>1998-03-31</EndDate>
+      </TermInfoData>
+      <GradeLevelWhenTaken>
+        <Code>09</Code>
+      </GradeLevelWhenTaken>
+      <CreditsAttempted>3.0</CreditsAttempted>
+      <CreditsEarned>3.0</CreditsEarned>
+      <GPACreditsAttempted>3.0</GPACreditsAttempted>
+      <GPACreditsEarned>3.0</GPACreditsEarned>
+      <GPAGradePoints>12.0</GPAGradePoints>
+      <GPA>4.00</GPA>
+      <DaysAbsent>0</DaysAbsent>
+      <DaysPresent>85</DaysPresent>
+    </TermPerformance>
+    <TermPerformance>
+      <TermInfoData>
+        <EndDate>1998-06-30</EndDate>
+      </TermInfoData>
+      <GradeLevelWhenTaken>
+        <Code>09</Code>
+      </GradeLevelWhenTaken>
+      <CreditsAttempted>3.5</CreditsAttempted>
+      <CreditsEarned>3.5</CreditsEarned>
+      <GPACreditsAttempted>3.5</GPACreditsAttempted>
+      <GPACreditsEarned>3.5</GPACreditsEarned>
+      <GPAGradePoints>12.0</GPAGradePoints>
+      <GPA>4.00</GPA>
+      <DaysAbsent>0</DaysAbsent>
+      <DaysPresent>85</DaysPresent>
+    </TermPerformance>
+    <TermPerformance>
+      <TermInfoData>
+        <EndDate>1999-01-31</EndDate>
+      </TermInfoData>
+      <GradeLevelWhenTaken>
+        <Code>09</Code>
+      </GradeLevelWhenTaken>
+      <CreditsAttempted>3.0</CreditsAttempted>
+      <CreditsEarned>3.0</CreditsEarned>
+      <GPACreditsAttempted>2.5</GPACreditsAttempted>
+      <GPACreditsEarned>2.5</GPACreditsEarned>
+      <GPAGradePoints>12.0</GPAGradePoints>
+      <GPA>4.00</GPA>
+      <DaysAbsent>0</DaysAbsent>
+      <DaysPresent>85</DaysPresent>
+    </TermPerformance>
+    <!-- ... -->
+  </AcademicPerformanceHistory>
+  <AcademicPerformanceSummary>
+    <TotalCreditsAttempted>27.3</TotalCreditsAttempted>
+    <TotalCreditsEarned>27.3</TotalCreditsEarned>
+    <CumulativeGPACreditsEarned>22.5</CumulativeGPACreditsEarned>
+    <CumulativeGradePoints>94.0</CumulativeGradePoints>
+    <CumulativeGPA>4.000</CumulativeGPA>
+    <ClassRank>1</ClassRank>
+    <ClassTotalNumber>250</ClassTotalNumber>
+    <ClassRankingDate>2002-06-01</ClassRankingDate>
+    <ProjectedGraduationDate>2002-06-05</ProjectedGraduationDate>
+  </AcademicPerformanceSummary>
+  <AssessmentPerformanceHistory>
+    <Assessment>
+      <Name>WASL</Name>
+      <AdministrationDate>2002-01-02</AdministrationDate>
+      <Level>4</Level>
+      <StudentGradeLevelWhenAssessed>
+        <Code>12</Code>
+      </StudentGradeLevelWhenAssessed>
+      <SubtestCategory>Reading</SubtestCategory>
+      <TestScoreType>0512</TestScoreType>
+      <TestScore>SCHOLAR</TestScore>
+    </Assessment>
+    <Assessment>
+      <Name>WASL</Name>
+      <AdministrationDate>2002-01-02</AdministrationDate>
+      <Level>1</Level>
+      <StudentGradeLevelWhenAssessed>
+        <Code>12</Code>
+      </StudentGradeLevelWhenAssessed>
+      <SubtestCategory>Writing</SubtestCategory>
+      <TestScoreType>0512</TestScoreType>
+      <TestScore>NOT MET</TestScore>
+    </Assessment>
+    <!-- ... -->
+  </AssessmentPerformanceHistory>
+  <AdditionalGraduationRequirementPerformanceHistory>
+    <Requirement>
+      <Name>WASL Cert Acad Achievement</Name>
+      <Status>Met</Status>
+      <StatusDeterminationDate>2002-06-01</StatusDeterminationDate>
+    </Requirement>
+    <Requirement>
+      <Name>High School &amp; Beyond Plan</Name>
+      <Method />
+      <Status>Not Met</Status>
+      <StatusDeterminationDate>2002-06-01</StatusDeterminationDate>
+    </Requirement>
+    <!-- ... -->
+  </AdditionalGraduationRequirementPerformanceHistory>
+  <ActivityAwardHistory>
+    <ActivityAward>
+      <Name>Computer club</Name>
+      <InvolvementCode>0701</InvolvementCode>
+      <InvolvementBeginningDate>2001-09-01</InvolvementBeginningDate>
+      <InvolvementEndingDate>2002-06-30</InvolvementEndingDate>
+    </ActivityAward>
+    <!-- ... -->
+  </ActivityAwardHistory>
+</StudentAcademicRecord>

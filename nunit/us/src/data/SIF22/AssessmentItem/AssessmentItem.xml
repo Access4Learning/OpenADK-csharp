@@ -1,0 +1,45 @@
+<AssessmentItem RefId="C294F3E190F019AD8E1DFC8367537EC8" AssessmentFormRefId="9372CB8EA910FF87D5672CAEF01387AA" ResponseType="multiple-choice">
+  <ItemLabel>5</ItemLabel>
+  <ItemName>Geometry diagnostic</ItemName>
+  <LearningStandardItems>
+    <LearningStandardItemRefId>DE072A87EFAD4B778AF9FAF83C94839E</LearningStandardItemRefId>
+  </LearningStandardItems>
+  <Stimulus>
+    <Reference MIMEType="image/jpeg" Description="triangle_1">
+      <URL>http://www.trianglezz.com/triangle.jpg</URL>
+    </Reference>
+  </Stimulus>
+  <Stem>
+    <TextData Description="Pythagorean Theorem"> Express the length of side C in terms of A and B. </TextData>
+  </Stem>
+  <ResponseChoices>
+    <Choice>
+      <ChoiceLabel>A</ChoiceLabel>
+      <ChoiceContent>
+        <TextData>A + B</TextData>
+      </ChoiceContent>
+      <CreditValue>0.0</CreditValue>
+    </Choice>
+    <Choice>
+      <ChoiceLabel>B</ChoiceLabel>
+      <ChoiceContent>
+        <TextData>3PI*R</TextData>
+      </ChoiceContent>
+      <CreditValue>-0.1</CreditValue>
+    </Choice>
+    <Choice>
+      <ChoiceLabel>C</ChoiceLabel>
+      <ChoiceContent>
+        <TextData>SQRT(A2 + B2)</TextData>
+      </ChoiceContent>
+      <CreditValue>1.0</CreditValue>
+    </Choice>
+    <Choice>
+      <ChoiceLabel>D</ChoiceLabel>
+      <ChoiceContent>
+        <TextData>A2 + B2</TextData>
+      </ChoiceContent>
+      <CreditValue>0.5</CreditValue>
+    </Choice>
+  </ResponseChoices>
+</AssessmentItem>

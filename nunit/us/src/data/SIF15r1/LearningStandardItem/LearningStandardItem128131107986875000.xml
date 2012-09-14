@@ -1,0 +1,12 @@
+<SIF_ObjectData>
+<LearningStandardItem RefId="F25089D217DC11DBAC4586DAFF19E980" xml:lang="en">
+  <StandardHierarchyLevel HierarchyLevelDescription="Indicator">1</StandardHierarchyLevel>
+  <Statement>Learning Standard Item F25089D217DC11DBAC4586DAFF19E980</Statement>
+  <GradeLevels>
+    <GradeLevel Code="11" />
+    <GradeLevel Code="12" />
+    <GradeLevel Code="09" />
+    <GradeLevel Code="10" />
+  </GradeLevels>
+  <LearningStandardDocumentRefId>F25089D117DC11DBAC45AD47C108AADC</LearningStandardDocumentRefId>
+</LearningStandardItem></SIF_ObjectData>

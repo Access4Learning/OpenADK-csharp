@@ -1,0 +1,17 @@
+﻿<SchoolGroup RefId="448CCF34A4B54757B09E4BB37DE69CB1" SchoolGroupTypeRefId="900B4180DC7E11DB9C0100163564AA14" SchoolYear="2007">
+  <LocalId>SCI200</LocalId>
+  <GroupName>Natural Science II</GroupName>
+  <Description>Exploration of natural sciences, 2nd Year</Description>
+  <ScheduleInfoList>
+    <ScheduleInfo>
+      <TeacherList>
+        <Teacher WorkforcePersonalRefId="5EE44B359D75101A8C3D00AA001B7B89">
+          <Role>TCH</Role>
+        </Teacher>
+        <Teacher WorkforcePersonalRefId="3D00AA001B7B895EE44B359D75101A8C">
+          <Role>SUP</Role>
+        </Teacher>
+      </TeacherList>
+    </ScheduleInfo>
+  </ScheduleInfoList>
+</SchoolGroup>

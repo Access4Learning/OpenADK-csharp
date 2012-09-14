@@ -1,0 +1,20 @@
+﻿<LearnerContact LearnerPersonalRefId="20C10263ECC511DB91D00002B3E94955" ContactPersonalRefId="DF1D7BA3ECC411DB91D00002B3E94955">
+  <Relationship>RELA</Relationship>
+  <LocalId>01216</LocalId>
+  <ContactFlags>
+    <ParentLegalGuardian>No</ParentLegalGuardian>
+    <PickupRights>Yes</PickupRights>
+    <LivesWith>No</LivesWith>
+    <AddressDisclosure>Yes</AddressDisclosure>
+    <EmailCommunication>No</EmailCommunication>
+    <EmergencyContact>Yes</EmergencyContact>
+    <DisciplinaryContact>No</DisciplinaryContact>
+    <HomeDuringDay>No</HomeDuringDay>
+    <MemberOfArmedForces>No</MemberOfArmedForces>
+    <PrimaryCareProvider>No</PrimaryCareProvider>
+    <RequiresInterpreter>No</RequiresInterpreter>
+    <TransferAddress>Yes</TransferAddress>
+  </ContactFlags>
+  <ContactSequence>3</ContactSequence>
+  <ContactSequenceSource>P</ContactSequenceSource>
+</LearnerContact>

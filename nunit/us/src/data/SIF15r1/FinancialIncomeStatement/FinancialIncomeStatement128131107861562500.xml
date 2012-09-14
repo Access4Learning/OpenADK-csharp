@@ -1,0 +1,9 @@
+<SIF_ObjectData>
+<FinancialIncomeStatement RefId="EDDE3B9017DC11DBAC45893E74B89CBA">
+  <GenerationDate>20040906</GenerationDate>
+  <GenerationTime Zone="UTC-05:00">12:00:00</GenerationTime>
+  <LocationInfoRefId>C1D2720017DC11DBAC45FDAC2E1E6C23</LocationInfoRefId>
+  <FISPeriod StartDate="20030604" EndDate="20040905" />
+  <FISAmount FinancialAccountAccountingPeriodLocationInfoRefId="EDB4E1A017DC11DBAC45FA00C15858A3" FinancialClassRefId="ED1C241117DC11DBAC45D94FE7BC6551">99999.99</FISAmount>
+  <Program Type="Foodservice">NSLP</Program>
+</FinancialIncomeStatement></SIF_ObjectData>

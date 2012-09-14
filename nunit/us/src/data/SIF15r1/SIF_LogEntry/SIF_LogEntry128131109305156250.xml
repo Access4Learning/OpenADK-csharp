@@ -1,0 +1,12 @@
+<SIF_ObjectData>
+<SIF_LogEntry Source="Agent" LogLevel="Info">
+  <SIF_LogEntryHeader>
+    <SIF_Header>
+      <SIF_MsgId>F228DD9017DC11DBAC45FEB260A13AEF</SIF_MsgId>
+      <SIF_Date>20041117</SIF_Date>
+      <SIF_Time Zone="UTC-07:00">08:34:07</SIF_Time>
+      <SIF_SourceId>SIF_LogEntryAgent</SIF_SourceId>
+    </SIF_Header>
+  </SIF_LogEntryHeader>
+  <SIF_Desc>SIF_LogEntryAgent-added SIF_LogEntry</SIF_Desc>
+</SIF_LogEntry></SIF_ObjectData>

@@ -1,0 +1,14 @@
+<SIF_ObjectData>
+  <SectionInfo RefId="C492F19017DC11DBAC4586AAADAC5C6E" SchoolCourseInfoRefId="C43D578017DC11DBAC45C04412E54C66">
+    <ScheduleInfo TermInfoRefId="C266C2C017DC11DBAC45FECB1F21903A">
+      <Teacher StaffPersonalRefId="C33FBDA017DC11DBAC45B7230049056B" />
+      <SectionRoom RoomInfoRefId="C421E04017DC11DBAC45FC476ECB217D" />
+      <MeetingTime>
+        <TimetableDay>W</TimetableDay>
+        <TimetablePeriod>4</TimetablePeriod>
+      </MeetingTime>
+    </ScheduleInfo>
+    <MediumOfInstruction Code="03" />
+    <LanguageOfInstruction>ENG</LanguageOfInstruction>
+  </SectionInfo>
+</SIF_ObjectData>

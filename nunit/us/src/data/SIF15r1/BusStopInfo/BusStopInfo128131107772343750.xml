@@ -1,0 +1,71 @@
+<SIF_ObjectData>
+<BusStopInfo RefId="C5F25A8017DC11DBAC4590CEB7B608CD">
+  <Description>31st Blvd. @ 26th Blvd.</Description>
+  <GridLocation>
+    <Latitude>34.35817</Latitude>
+    <Longitude>100.31601</Longitude>
+  </GridLocation>
+</BusStopInfo>
+<BusStopInfo RefId="C5F3E12017DC11DBAC458F429E94D0A8">
+  <Description>29th St. @ 4th Blvd.</Description>
+  <GridLocation>
+    <Latitude>40.55095</Latitude>
+    <Longitude>85.13184</Longitude>
+  </GridLocation>
+</BusStopInfo>
+<BusStopInfo RefId="C5F567C017DC11DBAC45ABBBDE43C629">
+  <Description>30th St. @ 24th St.</Description>
+  <GridLocation>
+    <Latitude>33.85442</Latitude>
+    <Longitude>97.43007</Longitude>
+  </GridLocation>
+</BusStopInfo>
+<BusStopInfo RefId="C5F6EE6017DC11DBAC45D8EAE99BBC08">
+  <Description>34th St. @ 31st Blvd.</Description>
+  <GridLocation>
+    <Latitude>31.38659</Latitude>
+    <Longitude>81.50424</Longitude>
+  </GridLocation>
+</BusStopInfo>
+<BusStopInfo RefId="C5F8750017DC11DBAC45F4F310A90E77">
+  <Description>19th Ave. @ 29th Blvd.</Description>
+  <GridLocation>
+    <Latitude>46.12279</Latitude>
+    <Longitude>82.60435</Longitude>
+  </GridLocation>
+</BusStopInfo>
+<BusStopInfo RefId="C5FA22B017DC11DBAC45C6C07AF71447">
+  <Description>31st Ave. @ 32nd St.</Description>
+  <GridLocation>
+    <Latitude>47.72656</Latitude>
+    <Longitude>88.28536</Longitude>
+  </GridLocation>
+</BusStopInfo>
+<BusStopInfo RefId="C5FBA95017DC11DBAC45CE48394F030C">
+  <Description>10th Blvd. @ 33rd Blvd.</Description>
+  <GridLocation>
+    <Latitude>36.52544</Latitude>
+    <Longitude>85.43545</Longitude>
+  </GridLocation>
+</BusStopInfo>
+<BusStopInfo RefId="C5FD2FF017DC11DBAC45A780BDA19515">
+  <Description>32nd Ave. @ 23rd Blvd.</Description>
+  <GridLocation>
+    <Latitude>34.69102</Latitude>
+    <Longitude>93.27959</Longitude>
+  </GridLocation>
+</BusStopInfo>
+<BusStopInfo RefId="C5FEB69017DC11DBAC45EF2A550B031A">
+  <Description>30th Ave. @ 17th St.</Description>
+  <GridLocation>
+    <Latitude>47.93478</Latitude>
+    <Longitude>110.13658</Longitude>
+  </GridLocation>
+</BusStopInfo>
+<BusStopInfo RefId="C6003D3017DC11DBAC459C7D95B7DAF5">
+  <Description>2nd St. @ 28th St.</Description>
+  <GridLocation>
+    <Latitude>40.47062</Latitude>
+    <Longitude>105.28014</Longitude>
+  </GridLocation>
+</BusStopInfo></SIF_ObjectData>

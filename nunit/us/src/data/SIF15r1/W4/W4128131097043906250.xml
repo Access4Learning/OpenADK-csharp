@@ -1,0 +1,71 @@
+<SIF_ObjectData>
+<W4 EmployeePersonalRefId="EE55676117DC11DBAC458067448028FA">
+  <W4Date>20041112</W4Date>
+  <MaritalStatusRate Code="Single" />
+  <FedAllowancesNumber>1</FedAllowancesNumber>
+  <StatePr Code="FL" />
+  <Exempt Code="No" />
+</W4>
+<W4 EmployeePersonalRefId="F0169F6017DC11DBAC45AC3DA2A1272B">
+  <W4Date>20041115</W4Date>
+  <MaritalStatusRate Code="Single" />
+  <FedAllowancesNumber>1</FedAllowancesNumber>
+  <StatePr Code="FL" />
+  <Exempt Code="No" />
+</W4>
+<W4 EmployeePersonalRefId="F025E1A017DC11DBAC45DC2161B00F98">
+  <W4Date>20041015</W4Date>
+  <MaritalStatusRate Code="Single" />
+  <FedAllowancesNumber>1</FedAllowancesNumber>
+  <StatePr Code="FL" />
+  <Exempt Code="No" />
+</W4>
+<W4 EmployeePersonalRefId="F03B3E6017DC11DBAC458993E955EE2E">
+  <W4Date>20041115</W4Date>
+  <MaritalStatusRate Code="Single" />
+  <FedAllowancesNumber>1</FedAllowancesNumber>
+  <StatePr Code="FL" />
+  <Exempt Code="No" />
+</W4>
+<W4 EmployeePersonalRefId="F04F3B9217DC11DBAC45808B98761863">
+  <W4Date>20041015</W4Date>
+  <MaritalStatusRate Code="Single" />
+  <FedAllowancesNumber>1</FedAllowancesNumber>
+  <StatePr Code="FL" />
+  <Exempt Code="No" />
+</W4>
+<W4 EmployeePersonalRefId="F0618B1117DC11DBAC45E869DEB529E8">
+  <W4Date>20041010</W4Date>
+  <MaritalStatusRate Code="Single" />
+  <FedAllowancesNumber>1</FedAllowancesNumber>
+  <StatePr Code="FL" />
+  <Exempt Code="No" />
+</W4>
+<W4 EmployeePersonalRefId="F07253F217DC11DBAC45836A3A865BF2">
+  <W4Date>20041112</W4Date>
+  <MaritalStatusRate Code="Single" />
+  <FedAllowancesNumber>1</FedAllowancesNumber>
+  <StatePr Code="FL" />
+  <Exempt Code="No" />
+</W4>
+<W4 EmployeePersonalRefId="F08C449017DC11DBAC4586BF6B33692D">
+  <W4Date>20041110</W4Date>
+  <MaritalStatusRate Code="Single" />
+  <FedAllowancesNumber>1</FedAllowancesNumber>
+  <StatePr Code="FL" />
+  <Exempt Code="No" />
+</W4>
+<W4 EmployeePersonalRefId="F0A01AB117DC11DBAC45C110A1800901">
+  <W4Date>20041017</W4Date>
+  <MaritalStatusRate Code="Single" />
+  <FedAllowancesNumber>1</FedAllowancesNumber>
+  <StatePr Code="FL" />
+  <Exempt Code="No" />
+</W4>
+<W4 EmployeePersonalRefId="F0AF840117DC11DBAC45B307851EA0DB">
+  <W4Date>20041113</W4Date>
+  <MaritalStatusRate Code="Single" />
+  <FedAllowancesNumber>1</FedAllowancesNumber>
+  <StatePr Code="FL" />
+  <Exempt Code="No" />
+</W4></SIF_ObjectData>

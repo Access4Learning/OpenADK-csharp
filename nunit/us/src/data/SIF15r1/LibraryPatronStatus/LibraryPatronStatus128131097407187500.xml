@@ -1,0 +1,80 @@
+<SIF_ObjectData>
+  <LibraryPatronStatus LibraryType="" SifRefId="C26B56A017DC11DBAC45AEA85C21CDB5" SifRefIdType="StaffPersonal">
+    <ElectronicId Type="Barcode">C321392017DC11DBAC458E8A05452678</ElectronicId>
+    <CircTx>
+      <ItemTitle>Medea</ItemTitle>
+      <ItemElectronicId Type="Barcode">C321392117DC11DBAC45EA4B8F699FBB</ItemElectronicId>
+      <CallNumber>FIC</CallNumber>
+      <CopyPrice>3.69</CopyPrice>
+      <DueInfo>
+        <Date>20060715</Date>
+        <Time Zone="UTC-04:00">16:00:00</Time>
+      </DueInfo>
+    </CircTx>
+    <CircTx>
+      <ItemTitle>Fahrenheit 451</ItemTitle>
+      <ItemElectronicId Type="Barcode">C321392217DC11DBAC459D64C37DA28B</ItemElectronicId>
+      <CallNumber>FIC</CallNumber>
+      <CopyPrice>6.59</CopyPrice>
+      <HoldInfo Type="Ready">
+        <DatePlaced>20060716</DatePlaced>
+        <DateNeeded>20060814</DateNeeded>
+        <MadeAvailable>20060720</MadeAvailable>
+        <Expires>20060803</Expires>
+      </HoldInfo>
+    </CircTx>
+    <NumCheckouts>0</NumCheckouts>
+    <NumOverdues>1</NumOverdues>
+    <NumFines>0</NumFines>
+    <FineAmount>0.00</FineAmount>
+    <NumRefunds>0</NumRefunds>
+    <RefundAmount>0.00</RefundAmount>
+  </LibraryPatronStatus>
+  <LibraryPatronStatus LibraryType="" SifRefId="C322BFC017DC11DBAC45CDC4C2586B04" SifRefIdType="StaffPersonal">
+    <ElectronicId Type="Barcode">C32A60E017DC11DBAC45EB3105FE34BE</ElectronicId>
+    <CircTx>
+      <ItemTitle>Pride and Prejudice</ItemTitle>
+      <ItemElectronicId Type="Barcode">C32A60E217DC11DBAC45AD43D821F99F</ItemElectronicId>
+      <CallNumber>FIC</CallNumber>
+      <CopyPrice>7.99</CopyPrice>
+      <FineInfo Type="Overdue">
+        <Date>20060629</Date>
+        <Time Zone="UTC-04:00">17:00:00</Time>
+        <Amount>5.25</Amount>
+      </FineInfo>
+    </CircTx>
+    <CircTx>
+      <ItemTitle>Speak</ItemTitle>
+      <ItemElectronicId Type="Barcode">C32A60E117DC11DBAC45E188CBE382AB</ItemElectronicId>
+      <CallNumber>FIC</CallNumber>
+      <CopyPrice>4.79</CopyPrice>
+      <DueInfo>
+        <Date>20060717</Date>
+        <Time Zone="UTC-04:00">16:00:00</Time>
+      </DueInfo>
+    </CircTx>
+    <CircTx>
+      <ItemTitle>Holes</ItemTitle>
+      <ItemElectronicId Type="Barcode">C32A60E317DC11DBAC45C305E0C1F9BC</ItemElectronicId>
+      <CallNumber>FIC</CallNumber>
+      <CopyPrice>4.79</CopyPrice>
+      <HoldInfo Type="Ready">
+        <DatePlaced>20060716</DatePlaced>
+        <DateNeeded>20060829</DateNeeded>
+        <MadeAvailable>20060720</MadeAvailable>
+        <Expires>20060803</Expires>
+      </HoldInfo>
+    </CircTx>
+    <Message Priority="Normal">
+      <Date>20030206</Date>
+      <Time Zone="UTC-06:00">08:46:59</Time>
+      <Text>Please see the librarian</Text>
+    </Message>
+    <NumCheckouts>0</NumCheckouts>
+    <NumOverdues>1</NumOverdues>
+    <NumFines>1</NumFines>
+    <FineAmount>5.25</FineAmount>
+    <NumRefunds>0</NumRefunds>
+    <RefundAmount>0.00</RefundAmount>
+  </LibraryPatronStatus>
+</SIF_ObjectData>

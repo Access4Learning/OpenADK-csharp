@@ -1,0 +1,18 @@
+<StudentLEARelationship RefId="98C3D3224B35AA75101D00AA201B1652" StudentPersonalRefId="D3E34B359D75101A8C3D00AA001A1652" LEAInfoRefId="D3E34B359D7511AA223D00AA001A165A" SchoolYear="2007" xmlns="http://www.sifinfo.org/infrastructure/2.x">
+  <MembershipType>Home</MembershipType>
+  <LEARelationshipType>
+    <ResidencyStatus>
+      <Code>1652</Code>
+    </ResidencyStatus>
+    <ProvidingInstruction>true</ProvidingInstruction>
+    <ProvidingServices>true</ProvidingServices>
+    <FinanciallyResponsible>true</FinanciallyResponsible>
+  </LEARelationshipType>
+  <EntryDate>2007-08-15</EntryDate>
+  <EntryType>
+    <Code>1838</Code>
+  </EntryType>
+  <GradeLevel>
+    <Code>10</Code>
+  </GradeLevel>
+</StudentLEARelationship>

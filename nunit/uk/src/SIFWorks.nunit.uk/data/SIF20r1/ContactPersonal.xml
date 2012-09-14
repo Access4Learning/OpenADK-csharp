@@ -1,0 +1,31 @@
+﻿<ContactPersonal RefId="92E50229EC3911DBA762000E0CA41EF3">
+  <PersonalInformation>
+    <Name Type="C">
+      <FamilyName>Jorgenson</FamilyName>
+      <GivenName>Stephen</GivenName>
+    </Name>
+    <Demographics>
+      <Gender>M</Gender>
+    </Demographics>
+    <Email Type="Personal">sjorgens@myschool.co.uk</Email>
+    <Address Type="Current">
+      <PAON>
+        <StartNumber>27</StartNumber>
+      </PAON>
+      <Street>Lower Guildford Road</Street>
+      <Locality>Knaphill</Locality>
+      <Town>Woking</Town>
+      <AdministrativeArea>Surrey</AdministrativeArea>
+      <PostCode>GU22 2DE</PostCode>
+      <Country>GBR</Country>
+    </Address>
+    <PhoneNumber Type="H">
+      <Number>01748661731</Number>
+    </PhoneNumber>
+    <OtherPhoneNumberList>
+      <PhoneNumber Type="M">
+        <Number>07777977341</Number>
+      </PhoneNumber>
+    </OtherPhoneNumberList>
+  </PersonalInformation>
+</ContactPersonal>

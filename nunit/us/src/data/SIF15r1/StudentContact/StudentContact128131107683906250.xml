@@ -1,0 +1,70 @@
+<SIF_ObjectData>
+  <StudentContact RefId="C762B36017DC11DBAC45E16BAC7300AC" StudentPersonalRefId="C6E56D1017DC11DBAC45BEBBBA7C526E" Type="S1">
+    <Name Type="01">
+      <LastName>Plant</LastName>
+      <FirstName>Wendy</FirstName>
+    </Name>
+    <PhoneNumber Format="FF" Type="18">(561) 570-1759</PhoneNumber>
+    <Email Type="Primary">WendyPlant@sifinfo.org</Email>
+    <Demographics>
+      <Gender>F</Gender>
+      <PlaceOfBirth>Boca Raton</PlaceOfBirth>
+      <CountyOfBirth>Palm Beach</CountyOfBirth>
+      <StateOfBirth Code="FL" />
+      <CountryOfBirth Code="US" />
+      <CountryOfCitizenship Code="US" />
+      <CountryOfResidency Code="US" />
+      <CitizenshipStatus>04</CitizenshipStatus>
+      <EnglishProficiency Code="01" />
+    </Demographics>
+    <Address Type="04">
+      <Street>
+        <Line1>3113 6th Ave.</Line1>
+        <StreetNumber>3113</StreetNumber>
+        <StreetName>6th</StreetName>
+        <StreetType>Ave.</StreetType>
+      </Street>
+      <City>Boca Raton</City>
+      <County>Palm Beach</County>
+      <StatePr Code="FL" />
+      <Country Code="US" />
+      <PostalCode>33487</PostalCode>
+    </Address>
+    <Relationship Code="06" />
+    <PickupRights>No</PickupRights>
+  </StudentContact>
+  <StudentContact RefId="C8AE463017DC11DBAC45B8CAE5B3BA73" StudentPersonalRefId="C8A9B25117DC11DBAC4580A21788A936" Type="P3">
+    <Name Type="01">
+      <LastName>Herald</LastName>
+      <FirstName>Steve</FirstName>
+    </Name>
+    <PhoneNumber Format="FF" Type="18">(561) 168-3620</PhoneNumber>
+    <Email Type="Primary">SteveHerald@sifinfo.org</Email>
+    <Demographics>
+      <Gender>M</Gender>
+      <PlaceOfBirth>Boca Raton</PlaceOfBirth>
+      <CountyOfBirth>Palm Beach</CountyOfBirth>
+      <StateOfBirth Code="FL" />
+      <CountryOfBirth Code="US" />
+      <CountryOfCitizenship Code="US" />
+      <CountryOfResidency Code="US" />
+      <CitizenshipStatus>04</CitizenshipStatus>
+      <EnglishProficiency Code="01" />
+    </Demographics>
+    <Address Type="04">
+      <Street>
+        <Line1>6647 17th St.</Line1>
+        <StreetNumber>6647</StreetNumber>
+        <StreetName>17th</StreetName>
+        <StreetType>St.</StreetType>
+      </Street>
+      <City>Boca Raton</City>
+      <County>Palm Beach</County>
+      <StatePr Code="FL" />
+      <Country Code="US" />
+      <PostalCode>33487</PostalCode>
+    </Address>
+    <Relationship Code="34" />
+    <PickupRights>No</PickupRights>
+  </StudentContact>
+</SIF_ObjectData>

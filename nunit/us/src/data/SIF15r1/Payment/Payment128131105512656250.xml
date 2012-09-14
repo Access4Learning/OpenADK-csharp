@@ -1,0 +1,36 @@
+<SIF_ObjectData>
+<Payment RefId="C595466017DC11DBAC45937B037DF5DB">
+  <EntityId>C595466017DC11DBAC45937B037DF5DB</EntityId>
+  <ReceivedDate>20030118</ReceivedDate>
+  <TransactionDescription>yearbook fees</TransactionDescription>
+  <ReceivedAmount>58.00</ReceivedAmount>
+  <ReceivedTransactionId>C595466017DC11DBAC45937B037DF5DB</ReceivedTransactionId>
+</Payment>
+<Payment RefId="C59853A017DC11DBAC45BD2D73D75DEC">
+  <EntityId>C59853A017DC11DBAC45BD2D73D75DEC</EntityId>
+  <ReceivedDate>20030110</ReceivedDate>
+  <TransactionDescription>laboratory fees</TransactionDescription>
+  <ReceivedAmount>60.00</ReceivedAmount>
+  <ReceivedTransactionId>C59853A017DC11DBAC45BD2D73D75DEC</ReceivedTransactionId>
+</Payment>
+<Payment RefId="C59853A217DC11DBAC45E74B39BAA676">
+  <EntityId>C59853A217DC11DBAC45E74B39BAA676</EntityId>
+  <ReceivedDate>20030124</ReceivedDate>
+  <TransactionDescription>yearbook fees</TransactionDescription>
+  <ReceivedAmount>63.00</ReceivedAmount>
+  <ReceivedTransactionId>C59853A217DC11DBAC45E74B39BAA676</ReceivedTransactionId>
+</Payment>
+<Payment RefId="C599DA4117DC11DBAC45E83844FF9D08">
+  <EntityId>C599DA4117DC11DBAC45E83844FF9D08</EntityId>
+  <ReceivedDate>20030111</ReceivedDate>
+  <TransactionDescription>laboratory fees</TransactionDescription>
+  <ReceivedAmount>65.00</ReceivedAmount>
+  <ReceivedTransactionId>C599DA4117DC11DBAC45E83844FF9D08</ReceivedTransactionId>
+</Payment>
+<Payment RefId="C59B60E117DC11DBAC45A93E15ACD4DE">
+  <EntityId>C59B60E117DC11DBAC45A93E15ACD4DE</EntityId>
+  <ReceivedDate>20030110</ReceivedDate>
+  <TransactionDescription>laboratory fees</TransactionDescription>
+  <ReceivedAmount>35.00</ReceivedAmount>
+  <ReceivedTransactionId>C59B60E117DC11DBAC45A93E15ACD4DE</ReceivedTransactionId>
+</Payment></SIF_ObjectData>

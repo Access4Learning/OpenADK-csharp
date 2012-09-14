@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: Lesson
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.6.4 Lesson -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+  <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="imports/xml/xml.xsd" />
+	
+	<element name='Lesson'>
+		<complexType>
+			<sequence>
+				<element ref='sif:CurriculumStructureRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SubjectArea' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Title' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Duration' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Strategy' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:LearningObjective' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ActivityRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:LearningStandardItemRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:LearningResourceRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:LessonSource' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute ref='xml:lang' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='CurriculumStructureRefId' type='string'/>
+
+		<element name='Strategy' type='string'/>
+
+		<element name='ActivityRefId' type='sif:RefIdOrEmptyType'/>
+
+		<element name='LessonSource'>
+			<complexType>
+				<sequence>
+					<element ref='sif:SourceAuthor' minOccurs='0' maxOccurs='unbounded'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='SourceAuthor'>
+				<complexType>
+					<sequence>
+						<element ref='sif:Name' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Organization' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Address' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Email' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+</schema>

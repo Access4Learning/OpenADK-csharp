@@ -1,0 +1,45 @@
+<SIF_ObjectData>
+<FoodserviceMealPrices RefId="EBA2A37017DC11DBAC45DE6ED7581EE4">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <Price Value="5.99">
+    <MealStatus Type="Reduced" />
+    <MealType Type="FirstMeal" />
+    <GradeLevels>
+      <GradeLevel Code="11" />
+      <GradeLevel Code="12" />
+      <GradeLevel Code="09" />
+      <GradeLevel Code="10" />
+    </GradeLevels>
+  </Price>
+  <Price Value="5.99">
+    <MealStatus Type="None" />
+    <MealType Type="FirstMeal" />
+    <GradeLevels>
+      <GradeLevel Code="11" />
+      <GradeLevel Code="12" />
+      <GradeLevel Code="09" />
+      <GradeLevel Code="10" />
+    </GradeLevels>
+  </Price>
+  <Price Value="5.99">
+    <MealStatus Type="Free" />
+    <MealType Type="FirstMeal" />
+    <GradeLevels>
+      <GradeLevel Code="11" />
+      <GradeLevel Code="12" />
+      <GradeLevel Code="09" />
+      <GradeLevel Code="10" />
+    </GradeLevels>
+  </Price>
+  <Price Value="5.99">
+    <MealStatus Type="Free" />
+    <MealType Type="SecondMeal" />
+    <GradeLevels>
+      <GradeLevel Code="11" />
+      <GradeLevel Code="12" />
+      <GradeLevel Code="09" />
+      <GradeLevel Code="10" />
+    </GradeLevels>
+  </Price>
+</FoodserviceMealPrices></SIF_ObjectData>

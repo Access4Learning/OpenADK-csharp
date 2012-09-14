@@ -1,0 +1,73 @@
+<!--
+
+Object: AttendanceCodeInfo
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2003-01-15 Mark Reichert
+- Created object per SIS group.
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.8.1 AttendanceCodeInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='AttendanceCodeInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:AttendanceCode' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AttendanceType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AttendanceStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AttendanceValue' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='SchoolInfoRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='AttendanceCode' type='string'/>
+
+	<element name='AttendanceType'>
+		<simpleType>
+			<restriction base='string'>
+				<enumeration value='Absent'/>
+				<enumeration value='Tardy'/>
+				<enumeration value='EarlyDeparture'/>
+				<enumeration value='Partial'/>
+				<enumeration value='Present'/>
+				<enumeration value='Other'/>
+				<enumeration value=''/>
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name='AttendanceStatus'>
+		<simpleType>
+			<restriction base='string'>
+				<enumeration value='Excused'/>
+				<enumeration value='Unexcused'/>
+				<enumeration value='Unknown'/>
+				<enumeration value='NA'/>
+				<enumeration value=''/>
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name='AttendanceValue' type='string'/>
+
+</schema>
+

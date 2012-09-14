@@ -1,0 +1,10 @@
+﻿<AssessmentResponseComponentGroup RefId="87302A8E7492310B8CC5636A321F934E" AssessmentSessionRefId="559023AF3BC83210987477108EFA438C">
+  <Name>Maths Level 4</Name>
+  <LocalId>MAT4</LocalId>
+  <SupplierName>ABC Assessments</SupplierName>
+  <ComponentList>
+    <AssessmentResponseComponentRefId>73920A9834E8DF216526690AE58F3219</AssessmentResponseComponentRefId>
+    <AssessmentResponseComponentRefId>829763D0934A98120AB87459381AB064</AssessmentResponseComponentRefId>
+    <AssessmentResponseComponentRefId>87389EE348A23416589320A7DE456104</AssessmentResponseComponentRefId>
+  </ComponentList>
+</AssessmentResponseComponentGroup>

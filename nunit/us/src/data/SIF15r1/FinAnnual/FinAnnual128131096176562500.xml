@@ -1,0 +1,17 @@
+<SIF_ObjectData>
+<FinAnnual>
+  <ReportDate>20031231</ReportDate>
+  <StatePrId>F0E6728017DC11DBAC45C57B84948A14</StatePrId>
+  <FiscalYr>2002</FiscalYr>
+  <AnnualItem>
+    <AcctType>Expenditure</AcctType>
+    <FundType>Special</FundType>
+    <ExpArea>Secondary</ExpArea>
+    <Function>100</Function>
+    <Object>610</Object>
+    <InstProgram>4000</InstProgram>
+    <Amount>732</Amount>
+    <SpecAmtType>1</SpecAmtType>
+    <GLAmtType>1</GLAmtType>
+  </AnnualItem>
+</FinAnnual></SIF_ObjectData>

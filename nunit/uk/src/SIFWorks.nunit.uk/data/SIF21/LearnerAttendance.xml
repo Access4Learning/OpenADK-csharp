@@ -1,0 +1,14 @@
+﻿<LearnerAttendance RefId="749382AD4800123C9ED02054FB7842B7" LearnerPersonalRefId="98120AB87459381AB064829763D0934A" SchoolInfoRefId="44AC87090487621198AC4E89480D3AC1">
+  <AttendanceDate>2008-04-15</AttendanceDate>
+  <TimeIn>08:03:44</TimeIn>
+  <StartTime>08:00:00</StartTime>
+  <FinishTime>08:40:00</FinishTime>
+  <Session>AM</Session>
+  <SessionLabel>AM Session</SessionLabel>
+  <AttendanceDomain>Both</AttendanceDomain>
+  <AttendanceCode>/</AttendanceCode>
+  <RecordTimestamp>2008-04-16T10:45:21Z</RecordTimestamp>
+  <InputSource>WF</InputSource>
+  <WorkforcePersonalRefId>6589320A7DE45610487389EE348A2341</WorkforcePersonalRefId>
+  <SchoolGroupRefId>94278329AE45903845F109E45934BA17</SchoolGroupRefId>
+</LearnerAttendance>

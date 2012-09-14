@@ -1,0 +1,60 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>DD05F7C9668749C3ACDB9EE96C1A79A9</SIF_MsgId>
+      <SIF_Date>20050518</SIF_Date>
+      <SIF_Time Zone="UTC-05:00">14:32:26</SIF_Time>
+      <SIF_Security>
+        <SIF_SecureChannel>
+          <SIF_AuthenticationLevel>0</SIF_AuthenticationLevel>
+          <SIF_EncryptionLevel>0</SIF_EncryptionLevel>
+        </SIF_SecureChannel>
+      </SIF_Security>
+      <SIF_SourceId>SIS2000</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>B29AE16DE4224967A5A225253CD78B12</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData>
+      <StudentPersonal RefId="1555A633A0AF40BBBF0B0A154DB4C5B7">
+        <LocalId>1899</LocalId>
+        <OtherId Type="06">1899</OtherId>
+        <Name Type="02">
+          <LastName>Abraham</LastName>
+          <FirstName>Shawn</FirstName>
+          <MiddleName />
+        </Name>
+        <GradYear Type="Original">2011</GradYear>
+        <Demographics>
+          <Ethnicity Type="NA" Code="C" />
+          <Gender>M</Gender>
+          <BirthDate>19921027</BirthDate>
+          <CountryOfCitizenship Code="ZZ" />
+          <CountryOfResidency Code="" />
+          <Language Type="EN" />
+        </Demographics>
+        <PhoneNumber Format="NA" Type="06">4359462968</PhoneNumber>
+      </StudentPersonal>
+      <StudentPersonal RefId="8096E92C93ED4507BDA41C30DF200A51">
+        <LocalId>2125</LocalId>
+        <OtherId Type="06">2125</OtherId>
+        <Name Type="02">
+          <LastName>Allen</LastName>
+          <FirstName>Tanner</FirstName>
+          <MiddleName>Thomas</MiddleName>
+        </Name>
+        <GradYear Type="Original">2016</GradYear>
+        <Demographics>
+          <Ethnicity Type="NA" Code="C" />
+          <Gender>M</Gender>
+          <BirthDate>19980315</BirthDate>
+          <CountryOfCitizenship Code="ZZ" />
+          <CountryOfResidency Code="" />
+          <Language Type="EN" />
+        </Demographics>
+        <PhoneNumber Format="NA" Type="06">4359462968</PhoneNumber>
+      </StudentPersonal>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

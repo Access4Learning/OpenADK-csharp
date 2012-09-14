@@ -1,0 +1,19 @@
+<SchoolInfo RefId="1DE046862708471D8043991876635110">
+  <SchoolName>Sunny Valley Elementary 0001</SchoolName>
+  <SchoolJurisdiction Code="SS" />
+  <PrincipalInfo>
+    <ContactName />
+  </PrincipalInfo>
+  <PhoneNumber Format="NA" Type="TE">(993) 3338888</PhoneNumber>
+  <Address Type="SS">
+    <Street>
+      <Line1>20 S Cedar St</Line1>
+      <Line2 />
+    </Street>
+    <City>Sunny Valley</City>
+    <StatePr Code="PA" />
+    <PostalCode>17777</PostalCode>
+  </Address>
+  <IdentificationInfo Code="76">0001</IdentificationInfo>
+  <IdentificationInfo Code="75">1133</IdentificationInfo>
+</SchoolInfo>

@@ -1,0 +1,32 @@
+﻿<LAInfo RefId="81559915646EBEC342277E6D2AA5EAEA">
+  <LAId>330</LAId>
+  <LAName>BIRMINGHAM</LAName>
+  <LAFullName>Birmingham City Council</LAFullName>
+  <LAURL>http://www.birmingham.gov.uk</LAURL>
+  <LAAddress Type="Mailing">
+    <PAON>
+      <Description>Victoria Square</Description>
+    </PAON>
+    <SAON>
+      <Description>Council House</Description>
+    </SAON>
+    <AdministrativeArea>Birmingham</AdministrativeArea>
+    <PostCode>B1 1BB</PostCode>
+    <Country>GBR</Country>
+  </LAAddress>
+  <LAPhoneNumber Type="W">
+    <Number>01213039944</Number>
+  </LAPhoneNumber>
+  <LAContactList>
+    <Contact SIF_RefId="7B391229EC3911DBA762000E0CA444AF" SIF_RefObject="ContactPersonal">
+      <PositionTitle>Chief Auditor</PositionTitle>
+      <Role>Financial auditor</Role>
+      <PublishInDirectory>Yes</PublishInDirectory>
+    </Contact>
+    <Contact SIF_RefId="9AB56229EC3911DBA762000E0C57A9E3" SIF_RefObject="ContactPersonal">
+      <PositionTitle>Building Inspector</PositionTitle>
+      <Role>Maintains buildings per city codes</Role>
+      <PublishInDirectory>Yes</PublishInDirectory>
+    </Contact>
+  </LAContactList>
+</LAInfo>

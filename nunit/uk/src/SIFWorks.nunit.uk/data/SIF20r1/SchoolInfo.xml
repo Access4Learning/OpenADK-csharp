@@ -1,0 +1,52 @@
+﻿<SchoolInfo RefId="D6F60F2862CA460BAA95E57AB49CBE88" LAInfoRefId="81559915646EBEC342277E6D2AA5EAEA">
+  <LocalId>005415</LocalId>
+  <EstablishmentId>5415</EstablishmentId>
+  <LAId>330</LAId>
+  <SchoolName>King's Norton Boys' School</SchoolName>
+  <SchoolFullName>King's Norton Boys' School</SchoolFullName>
+  <SchoolURL>www.kingsnortonboys.bham.sch.uk</SchoolURL>
+  <SchoolAddress Type="Current">
+    <PAON>
+      <Description>Main Office</Description>
+    </PAON>
+    <Street>Northfield Road</Street>
+    <Town>Birmingham</Town>
+    <PostCode>B30 1DY</PostCode>
+    <Country>GBR</Country>
+  </SchoolAddress>
+  <SchoolPhoneNumber Type="W">
+    <Number>01216280010</Number>
+    <ListedStatus>Listed</ListedStatus>
+  </SchoolPhoneNumber>
+  <OtherPhoneNumberList>
+    <PhoneNumber Type="F">
+      <Number>01216280080</Number>
+    </PhoneNumber>
+  </OtherPhoneNumberList>
+  <SchoolEmail Type="Business">enquiry@kingsnortonboys.bham.sch.uk</SchoolEmail>
+  <HeadTeacherInfo>
+    <ContactName>Mr. Roy Baylis</ContactName>
+    <ContactTitle>Head Teacher</ContactTitle>
+  </HeadTeacherInfo>
+  <Phase>SY</Phase>
+  <SchoolType>39</SchoolType>
+  <Governance>FO</Governance>
+  <Intake>SEL3</Intake>
+  <NCYearGroupList>
+    <NCYearGroup>7</NCYearGroup>
+    <NCYearGroup>8</NCYearGroup>
+    <NCYearGroup>9</NCYearGroup>
+    <NCYearGroup>10</NCYearGroup>
+    <NCYearGroup>11</NCYearGroup>
+    <NCYearGroup>12</NCYearGroup>
+    <NCYearGroup>13</NCYearGroup>
+    <NCYearGroup>14</NCYearGroup>
+  </NCYearGroupList>
+  <GenderOfEntry>M</GenderOfEntry>
+  <GenderSixthForm>M</GenderSixthForm>
+  <Boarders>No</Boarders>
+  <SessionsPerDay>2</SessionsPerDay>
+  <Nursery>No</Nursery>
+  <Special>No</Special>
+  <OperationalStatus>1</OperationalStatus>
+</SchoolInfo>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: EmployeeHR
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.5.7 EmployeeHR -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='EmployeeHR'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Active' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FullTimeStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:HireDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TotalYears' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PositionTitle' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PositionNumber' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SeniorityDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TenureDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='EmployeePersonalRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='Active'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Yes'/>
+									<enumeration value='No'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='FullTimeStatus'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='HireDate' type='sif:DateOrEmptyType'/>
+
+		<element name='PositionNumber' type='string'/>
+
+		<element name='SeniorityDate' type='sif:DateOrEmptyType'/>
+
+		<element name='TenureDate' type='sif:DateOrEmptyType'/>
+
+</schema>

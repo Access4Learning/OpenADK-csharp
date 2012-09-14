@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: StudentSnapshot
+
+Owner: Student Information Systems Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.8.15 StudentSnapshot -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StudentSnapshot'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SchoolYear' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Name' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LocalId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StatePrId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Address' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Ethnicity' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Gender' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:BirthDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Age' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GradYear' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:GradAward' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GradOnTime' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:HomeEnrollment' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:IDEA' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Migrant' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Title1' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GiftedTalented' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EconomicDisadvantage' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ELL' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Homeless' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Section504' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:VocationalConcentrator' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Immigrant' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='SnapDate' type='sif:DateOrEmptyType' use='required'/>
+			<attribute name='StudentPersonalRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='Age' type='string'/>
+
+		<element name='GradAward'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Diploma'/>
+									<enumeration value='Certificate'/>
+									<enumeration value='GED'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='GradOnTime'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unavailable'/>
+					<enumeration value='NA'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='HomeEnrollment'>
+			<complexType>
+				<sequence>
+					<element ref='sif:EnrollmentId' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:SchoolName' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:SchoolId' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:LocalId' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:StatePrId' minOccurs='0' maxOccurs='1'/>
+					<element name='Status' minOccurs='0' maxOccurs='1'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Active'/>
+								<enumeration value='Inactive'/>
+								<enumeration value='Unreported'/>
+								<enumeration value=''/>
+							</restriction>
+						</simpleType>
+					</element>
+					<element ref='sif:GradeLevel' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:HomeroomId' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:HomeroomNumber' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:FullYearEnrollment' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='EnrollmentId'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='StudentSchoolEnrollmentRefId' type='sif:RefIdOrEmptyType' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='SchoolId'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='SchoolInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='HomeroomId'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='RoomInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='FullYearEnrollment'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Yes'/>
+						<enumeration value='No'/>
+						<enumeration value='Unknown'/>
+						<enumeration value=''/>
+					</restriction>
+				</simpleType>
+			</element>
+
+		<element name='IDEA'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='Migrant'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='Title1'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='GiftedTalented'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='EconomicDisadvantage'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='ELL'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='Homeless'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='Section504'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='VocationalConcentrator'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='Immigrant'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Yes'/>
+					<enumeration value='No'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+</schema>

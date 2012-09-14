@@ -1,0 +1,42 @@
+<StudentPersonal RefId="D3E34B359D75101A8C3D00AA001A1652">
+  <AlertMessages>
+    <AlertMessage Type="Legal">This is the Legal Alert for Joe Student</AlertMessage>
+  </AlertMessages>
+  <LocalId>P00001</LocalId>
+  <StateProvinceId>WB0025</StateProvinceId>
+  <ElectronicIdList>
+    <ElectronicId Type="Barcode">206654</ElectronicId>
+  </ElectronicIdList>
+  <Name Type="04">
+    <LastName>Student</LastName>
+    <FirstName>Joe</FirstName>
+    <MiddleName />
+    <PreferredName>Joe</PreferredName>
+  </Name>
+  <Demographics>
+    <Gender>M</Gender>
+  </Demographics>
+  <AddressList>
+    <Address Type="0123">
+      <Street>
+        <Line1>6799 33rd Ave.</Line1>
+        <StreetNumber>6799</StreetNumber>
+        <StreetName>33rd</StreetName>
+        <StreetType>Ave.</StreetType>
+      </Street>
+      <City>Chicago</City>
+      <StateProvince>IL</StateProvince>
+      <Country>US</Country>
+      <PostalCode>60660</PostalCode>
+    </Address>
+  </AddressList>
+  <PhoneNumberList>
+    <PhoneNumber Type="0096">
+      <Number>(312) 555-1234</Number>
+    </PhoneNumber>
+  </PhoneNumberList>
+  <EmailList>
+    <Email Type="Primary">Joe.Student@anyschool.com</Email>
+  </EmailList>
+  <OnTimeGraduationYear>2007</OnTimeGraduationYear>
+</StudentPersonal>

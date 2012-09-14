@@ -1,0 +1,10 @@
+﻿<AssessmentResponseComponent RefId="876602EF432763EB81928376498038E3">
+  <Name>Maths 4C</Name>
+  <LocalId>MAT4C</LocalId>
+  <SupplierName>ABC Assessments</SupplierName>
+  <Description>Maths Level 4 Section C</Description>
+  <YearList>
+    <Year>2007</Year>
+    <Year>2008</Year>
+  </YearList>
+</AssessmentResponseComponent>

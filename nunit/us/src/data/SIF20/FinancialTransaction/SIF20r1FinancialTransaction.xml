@@ -1,0 +1,7 @@
+ <FinancialTransaction RefId="3AAF58D0FF3211DC9CC3FDA71D7DD106">
+	<TransactionDate>2008-03-31</TransactionDate>
+	<TransactionTime>10:53:31.275-05:00</TransactionTime>
+	<Amounts>
+	   <Amount Currency="USD" FinancialAccountAccountingPeriodLocationInfoRefId="3A845130FF3211DC9CC3A33D35457BEF" Type="Debit">805.99</Amount>
+	</Amounts>
+ </FinancialTransaction>

@@ -1,0 +1,87 @@
+<StudentParticipation RefId="D3E34B359D75101A8C3D00AA001A1652" StudentPersonalRefId="A2E34F59A742C1A4B3D11CC002B163A2">
+	<StudentParticipationAsOfDate>2006-07-13</StudentParticipationAsOfDate>
+	<ProgramType>
+		<Code>0270</Code>
+		<OtherCodeList>
+			<OtherCode Codeset="StateProvince">0839</OtherCode>
+		</OtherCodeList>
+	</ProgramType>
+	<ProgramFundingSources>
+		<ProgramFundingSource>
+			<Code>0797</Code>
+		</ProgramFundingSource>
+	</ProgramFundingSources>
+	<ManagingPublicAgency SIF_RefObject="LEAInfo">F3434F59A742C1A4B3D11CC002B163A2</ManagingPublicAgency>
+	<ManagingSchool SIF_RefObject="SchoolInfo">D93F4D183A42C1A4B3D11CC002B163A2</ManagingSchool>
+	<PartCTransitionMeetingNotHeldReasons>
+		<PartCTransitionMeetingNotHeldReason>
+			<Code>S001</Code>
+		</PartCTransitionMeetingNotHeldReason>
+	</PartCTransitionMeetingNotHeldReasons>
+	<PartCTransitionMeetingDate>2006-04-09</PartCTransitionMeetingDate>
+	<PartCTransitionMeetingOutcomes>
+		<PartCTransitionMeetingOutcome>
+			<Code>S002</Code>
+		</PartCTransitionMeetingOutcome>
+	</PartCTransitionMeetingOutcomes>
+	<ReferralDate>2005-09-04</ReferralDate>
+	<ReferralSource>
+		<Code>2148</Code>
+	</ReferralSource>
+	<ProgramStatus>
+		<Code>S004</Code>
+	</ProgramStatus>
+	<GiftedEligibilityCriteria>G938</GiftedEligibilityCriteria>
+	<EvaluationParentalConsentDate>2005-11-09</EvaluationParentalConsentDate>
+	<EvaluationDate>2005-11-25</EvaluationDate>
+	<EvaluationExtensionDate>2005-12-10</EvaluationExtensionDate>
+	<ExtensionComments>Reason that extension was allowed</ExtensionComments>
+	<ReevaluationDate>2008-11-25</ReevaluationDate>
+	<ExceptionalityCategories>
+		<ExceptionalityCategory>
+			<Code>2121</Code>
+			<ExceptionalityPriority>Primary</ExceptionalityPriority>
+		</ExceptionalityCategory>
+		<ExceptionalityCategory>
+			<Code>2134</Code>
+			<ExceptionalityPriority>Secondary</ExceptionalityPriority>
+		</ExceptionalityCategory>
+		<ExceptionalityCategory>
+			<Code>2127</Code>
+			<ExceptionalityPriority>Tertiary</ExceptionalityPriority>
+		</ExceptionalityCategory>
+	</ExceptionalityCategories>
+	<ProgramEligibilityDate>2006-01-04</ProgramEligibilityDate>
+	<ProgramPlanType>
+		<Code>2196</Code>
+	</ProgramPlanType>
+	<ProgramPlanDate>2006-01-02</ProgramPlanDate>
+	<NOREPDate>2006-01-09</NOREPDate>
+	<PlacementParentalConsentDate>2006-01-02</PlacementParentalConsentDate>
+	<ProgramPlacementDate>2006-01-09</ProgramPlacementDate>
+	<LeastRestrictiveEnvironment>
+		<Code>0135</Code>
+	</LeastRestrictiveEnvironment>
+	<ExtendedSchoolYear>true</ExtendedSchoolYear>
+	<ExtendedDay>false</ExtendedDay>
+	<ProgramAvailability>
+		<Code>0231</Code>
+		<OtherCodeList>
+			<OtherCode Codeset="StateProvince">2674</OtherCode>
+		</OtherCodeList>
+	</ProgramAvailability>
+	<PrivateNotPlacedByPublic>true</PrivateNotPlacedByPublic>
+	<ProgramReviewDate>2007-01-09</ProgramReviewDate>
+	<FBADate>2006-04-15</FBADate>
+	<BIPDate>2006-04-24</BIPDate>
+	<ProgramExitReason>
+		<Code>2216</Code>
+	</ProgramExitReason>
+	<ProjectedExitDate>2009-01-04</ProjectedExitDate>
+	<ProjectedExitReason Codeset="StateProvince">9568</ProjectedExitReason>
+	<PlannedAssessmentParticipation Codeset="StateProvince">Accommodations - Students with Disabilities</PlannedAssessmentParticipation>
+	<TransitionPlanning Codeset="StateProvince">Postsecondary Ed - transition services should be targeted toward postsecondary education</TransitionPlanning>
+	<StudentSpecialEducationFTE>0.45</StudentSpecialEducationFTE>
+	<EntryPerson>Jill Anderson</EntryPerson>
+	<ParticipationContact>John Mason</ParticipationContact>
+</StudentParticipation>

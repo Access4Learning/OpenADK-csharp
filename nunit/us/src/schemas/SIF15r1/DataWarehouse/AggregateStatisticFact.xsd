@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: AggregateStatisticFact
+
+Owner: Data Warehousing Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+2004-06-16 Mark Reichert
+- 1.5r1 updates
+
+2004-09-12 Mark Reichert
+- Changed StatisticInfoRefId to AggregateStatisticInfoRefId
+
+-->
+
+<!-- 5.2.3 AggregateStatisticFact -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='AggregateStatisticFact'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Characteristic' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Statistic' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Excluded' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Value' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='Characteristic'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='AggregateCharacteristicInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='Statistic'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='AggregateStatisticInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='Excluded' type='sif:YesOrNoOrEmptyType'/>
+
+</schema>

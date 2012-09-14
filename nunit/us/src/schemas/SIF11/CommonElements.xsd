@@ -1,0 +1,310 @@
+<!--
+
+Object: Common Elements
+
+Owner: Common Elements
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated Demographics with SIS changes (BirthDateVerification, CountyOfBirth,
+  CitizenshipStatus, DwellingArrangement, MaritalStatus, enumerated Gender)
+- Added MeetingTime, renumbered section references accordingly
+- Updated namespace
+
+-->
+<!-- 5.1 Common Elements -->
+<schema xmlns='http://www.w3.org/2001/XMLSchema' targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+	xmlns:sif='http://www.sifinfo.org/infrastructure/1.x' elementFormDefault='qualified'>
+	<!-- 5.1.1 Address -->
+	<element name='Address'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Street' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:City' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:County' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:StatePr' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:Country' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:PostalCode' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:GridLocation' minOccurs='0' maxOccurs='1' />
+			</sequence>
+			<attribute name='Type' type='string' use='required' />
+		</complexType>
+	</element>
+	<element name='Street'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Line1' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:Line2' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:Line3' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:Complex' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:StreetNumber' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:StreetPrefix' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:StreetName' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:StreetType' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:StreetSuffix' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:AptType' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:AptNumPrefix' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:AptNumber' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:AptNumSuffix' minOccurs='0' maxOccurs='1' />
+			</sequence>
+		</complexType>
+	</element>
+	<element name='Line1' type='string' />
+	<element name='Line2' type='string' />
+	<element name='Line3' type='string' />
+	<element name='Complex' type='string' />
+	<element name='StreetNumber' type='string' />
+	<element name='StreetPrefix' type='string' />
+	<element name='StreetName' type='string' />
+	<element name='StreetType' type='string' />
+	<element name='StreetSuffix' type='string' />
+	<element name='AptType' type='string' />
+	<element name='AptNumPrefix' type='string' />
+	<element name='AptNumber' type='string' />
+	<element name='AptNumSuffix' type='string' />
+	<element name='City' type='string' />
+	<element name='County' type='string' />
+	<element name='StatePr'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required' />
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<element name='Country'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required' />
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<element name='PostalCode' type='string' />
+	<!-- 5.1.2 Demographics -->
+	<element name='Demographics'>
+		<annotation>
+			<documentation>Information about a person</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<element ref='sif:Ethnicity' minOccurs='0' maxOccurs='unbounded'>
+					<annotation>
+						<documentation>The person's ethnicity</documentation>
+					</annotation>
+				</element>
+				<element ref='sif:Gender' minOccurs='0' maxOccurs='1'>
+					<annotation>
+						<documentation>The person's Gender</documentation>
+					</annotation>
+				</element>
+				<element ref='sif:BirthDate' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:BirthDateVerification' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:PlaceOfBirth' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:CountyOfBirth' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:StateOfBirth' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:CountryOfBirth' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:CountryOfCitizenship' minOccurs='0' maxOccurs='unbounded' />
+				<element ref='sif:CountryOfResidency' minOccurs='0' maxOccurs='unbounded' />
+				<element ref='sif:CitizenshipStatus' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:EnglishProficiency' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:Language' minOccurs='0' maxOccurs='unbounded' />
+				<element ref='sif:DwellingArrangement' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:MaritalStatus' minOccurs='0' maxOccurs='1' />
+			</sequence>
+		</complexType>
+	</element>
+	<element name='Ethnicity'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Proportion' minOccurs='0' maxOccurs='1' />
+			</sequence>
+			<attribute name='Type' type='string' use='required' />
+			<attribute name='Code' type='string' use='required' />
+		</complexType>
+	</element>
+	<element name='Proportion' type='string' />
+	<element name='Gender'>
+		<simpleType>
+			<restriction base='string'>
+				<enumeration value='M' />
+				<enumeration value='F' />
+				<enumeration value='U' />
+			</restriction>
+		</simpleType>
+	</element>
+	<element name='BirthDate' type='string' />
+	<element name='BirthDateVerification' type='string' />
+	<element name='PlaceOfBirth' type='string' />
+	<element name='CountyOfBirth' type='string' />
+	<element name='StateOfBirth'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required' />
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<element name='CountryOfBirth'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required' />
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<element name='CountryOfCitizenship'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required' />
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<element name='CountryOfResidency'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required' />
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<element name='CitizenshipStatus' type='string' />
+	<element name='EnglishProficiency'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required' />
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<element name='Language'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Type' type='string' use='required' />
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<element name='DwellingArrangement' type='string' />
+	<element name='MaritalStatus' type='string' />
+	<!-- 5.1.3 Email -->
+	<element name='Email'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Type' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Primary' />
+								<enumeration value='Alternate1' />
+								<enumeration value='Alternate2' />
+								<enumeration value='Alternate3' />
+								<enumeration value='Alternate4' />
+							</restriction>
+						</simpleType>
+					</attribute>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<!-- 5.1.4 GridLocation -->
+	<element name='GridLocation'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Latitude' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:Longitude' minOccurs='0' maxOccurs='1' />
+			</sequence>
+		</complexType>
+	</element>
+	<element name='Latitude' type='string' />
+	<element name='Longitude' type='string' />
+	<!-- 5.1.5 Meeting Time -->
+	<element name='MeetingTime'>
+		<complexType>
+			<sequence>
+				<element ref='sif:TimetableDay' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:TimetablePeriod' minOccurs='0' maxOccurs='1' />
+			</sequence>
+		</complexType>
+	</element>
+	<element name='TimetableDay' type='string' />
+	<element name='TimetablePeriod' type='string' />
+	<!-- 5.1.6 Name -->
+	<element name='Name'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Prefix' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:LastName' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:FirstName' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:MiddleName' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:Suffix' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:PreferredName' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:SortName' minOccurs='0' maxOccurs='1' />
+				<element ref='sif:FullName' minOccurs='0' maxOccurs='1' />
+			</sequence>
+			<attribute name='Type' type='string' use='required' />
+		</complexType>
+	</element>
+	<element name='Prefix' type='string' />
+	<element name='LastName' type='string' />
+	<element name='FirstName' type='string' />
+	<element name='MiddleName' type='string' />
+	<element name='Suffix' type='string' />
+	<element name='PreferredName' type='string' />
+	<element name='SortName' type='string' />
+	<element name='FullName' type='string' />
+	<!-- 5.1.7 OtherId -->
+	<element name='OtherId'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Type' type='string' use='required' />
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<!-- 5.1.8 PhoneNumber -->
+	<element name='PhoneNumber'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Format' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='NA' />
+								<enumeration value='EU' />
+								<enumeration value='FF' />
+							</restriction>
+						</simpleType>
+					</attribute>
+					<attribute name='Type' type='string' use='required' />
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+	<!-- 
+
+	Common Elements used by DTDs from multiple working groups, but not listed in 
+	5.1 Common Elements
+
+	-->
+	<element name='Description' type='string' />
+	<element name='EntityId' type='string' />
+	<element name='EntryDate' type='string' />
+	<element name='ExitDate' type='string' />
+	<element name='TransactionDescription' type='string' />
+</schema>

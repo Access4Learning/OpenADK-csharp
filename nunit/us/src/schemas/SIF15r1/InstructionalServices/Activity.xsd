@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: Activity
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.6.5 Activity -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+  <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="imports/xml/xml.xsd" />
+	<element name='Activity'>
+		<complexType>
+			<sequence>
+				<element ref='sif:TechnicalRequirement' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:EssentialMaterial' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Title' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Preamble' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LearningObjective' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:LearningStandardItemRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SubjectArea' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Prerequisite' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:StudentPersonalRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SourceObjectRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Points' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ActivityTime' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AssessmentRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:MaxAttemptsAllowed' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ActivityWeight' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Evaluation' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LearningResourceRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute ref='xml:lang' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='Points' type='string'/>
+
+		<element name='ActivityTime'>
+			<complexType>
+				<sequence>
+					<element ref='sif:CreationDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Duration' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:StartDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:FinishDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:DueDate' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+		<element name='ActivityWeight' type='string'/>
+
+		<element name='Evaluation'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='EvaluationType' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='Inline'/>
+							<enumeration value='RefId'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+</schema>

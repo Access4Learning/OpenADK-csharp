@@ -1,0 +1,27 @@
+<SIF_ObjectData>
+<FoodserviceReimbursementRates RefId="EB79709017DC11DBAC45C8F7ABE28AA5">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <StartDate>20040906</StartDate>
+  <EndDate>20050603</EndDate>
+  <Program Type="Foodservice">NSLP</Program>
+  <Agency Type="Federal" Name="NA">
+    <Rate SevereNeed="Yes" Value="4.00">
+      <MealStatus Type="Free" />
+    </Rate>
+    <Rate SevereNeed="Yes" Value="5.00">
+      <MealStatus Type="Reduced" />
+    </Rate>
+    <Rate SevereNeed="No" Value="6.00">
+      <MealStatus Type="None" />
+    </Rate>
+    <Rate SevereNeed="No" Value="1.00">
+      <MealStatus Type="Free" />
+    </Rate>
+    <Rate SevereNeed="No" Value="2.00">
+      <MealStatus Type="Reduced" />
+    </Rate>
+    <Rate SevereNeed="No" Value="3.00">
+      <MealStatus Type="None" />
+    </Rate>
+  </Agency>
+</FoodserviceReimbursementRates></SIF_ObjectData>

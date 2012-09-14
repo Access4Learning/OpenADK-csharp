@@ -1,0 +1,1201 @@
+<!--
+
+Object: SIF_Message
+
+Owner: Infrastructure Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Added new SIS objects (TermInfo, SchoolCourseInfo, SectionInfo, StudentSectionEnrollment,
+  AttendanceCodeInfo, StudentDailyAttendance)
+- Removed Purchasing
+- Changed (SIF_PacketNumber, SIF_MorePackets)? to SIF_PacketNumber, SIF_MorePackets in SIF_Response
+  (per issue 152)
+- Added Version attribute to SIF_Message
+- Made SIF_Version repeatable in SIF_Register
+- Updated namespace
+
+2003-02-04 Mark Reichert
+- Added default Value for SIF_Message/@Version.
+
+2003-02-07 Mark Reichert
+- Changed definition of SIF_Ack/SIF_Data to allow for text or SIF_Message
+
+2003-03-28 Mark Reichert
+- Changed definition of SIF_Ack/SIF_OriginalMsgId to allow for empty RefId
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+2004-06-16 Mark Reichert
+- 1.5r1 updates
+
+-->
+
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+  
+		
+		<!-- all includes come first... -->
+
+				
+			<!-- include common types -->
+
+				<include schemaLocation="CommonTypes.xsd"/>
+
+
+			<!-- include Infrastructure objects -->
+		
+
+				<!-- 4.3 Objects -->
+
+					<include schemaLocation="Infrastructure/SIF_ZoneStatus.xsd"/>
+
+
+			<!-- include Data Model -->
+
+
+				<!-- 5 DATA MODEL -->
+
+
+					<!-- 5.1 Common Elements -->
+
+						<include schemaLocation="CommonElements.xsd"/>
+
+
+					<!-- 5.2 Data Analysis & Reporting Working Group Objects -->
+
+						<include schemaLocation="DataWarehouse/AggregateStatisticInfo.xsd"/>
+						<include schemaLocation="DataWarehouse/AggregateCharacteristicInfo.xsd"/>
+						<include schemaLocation="DataWarehouse/AggregateStatisticFact.xsd"/>
+
+					<!-- 5.3 Food Services Working Group Objects -->
+
+						<include schemaLocation="FoodServices/StudentMeal.xsd"/>
+						<include schemaLocation="FoodServices/FoodserviceItem.xsd"/>
+						<include schemaLocation="FoodServices/FoodserviceItemUnit.xsd"/>
+						<include schemaLocation="FoodServices/FoodserviceItemPortion.xsd"/>
+						<include schemaLocation="FoodServices/FoodserviceReimbursementRates.xsd"/>
+						<include schemaLocation="FoodServices/FoodserviceMealPrices.xsd"/>
+						<include schemaLocation="FoodServices/StaffMeal.xsd"/>
+						<include schemaLocation="FoodServices/FoodserviceTransaction.xsd"/>
+						<include schemaLocation="FoodServices/FoodserviceTransactionDetails.xsd"/>
+						<include schemaLocation="FoodServices/FoodserviceTransactionPayMethod.xsd"/>
+						<include schemaLocation="FoodServices/FoodserviceSales.xsd"/>
+						<include schemaLocation="FoodServices/FoodserviceItemSales.xsd"/>
+						<include schemaLocation="FoodServices/AccountingPeriod.xsd"/>
+						<include schemaLocation="FoodServices/FinancialAccount.xsd"/>
+						<include schemaLocation="FoodServices/FinancialAccountAccountingPeriodLocationInfo.xsd"/>
+						<include schemaLocation="FoodServices/FinancialClass.xsd"/>
+						<include schemaLocation="FoodServices/FinancialIncomeStatement.xsd"/>
+						<include schemaLocation="FoodServices/FinancialTransaction.xsd"/>
+						<include schemaLocation="FoodServices/FiscalYear.xsd"/>
+
+					<!-- 5.4 Grade Book Working Group Objects -->
+
+						<!-- no approved objects -->
+
+					<!-- 5.5 Human Resources & Financials Working Group Objects -->
+
+						<include schemaLocation="HRFinancials/Billing.xsd"/>
+						<include schemaLocation="HRFinancials/Payment.xsd"/>
+						<include schemaLocation="HRFinancials/ActivityProvider.xsd"/>
+						<include schemaLocation="HRFinancials/EmployeeAssignment.xsd"/>
+						<include schemaLocation="HRFinancials/EmployeeContract.xsd"/>
+						<include schemaLocation="HRFinancials/EmployeeCredit.xsd"/>
+						<include schemaLocation="HRFinancials/EmployeeHR.xsd"/>
+						<include schemaLocation="HRFinancials/EmployeePersonal.xsd"/>
+						<include schemaLocation="HRFinancials/EmployeePicture.xsd"/>
+						<include schemaLocation="HRFinancials/EmployeeRecertification.xsd"/>
+						<include schemaLocation="HRFinancials/FinAnnual.xsd"/>
+						<include schemaLocation="HRFinancials/EmployeeCredential.xsd"/>
+						<include schemaLocation="HRFinancials/FinBudget.xsd"/>
+						<include schemaLocation="HRFinancials/ProfDevActivities.xsd"/>
+						<include schemaLocation="HRFinancials/StaffAssignment.xsd"/>
+						<include schemaLocation="HRFinancials/TimeWorked.xsd"/>
+						<include schemaLocation="HRFinancials/VendorInfo.xsd"/>
+						<include schemaLocation="HRFinancials/W4.xsd"/>
+						<include schemaLocation="HRFinancials/EmployeeWage.xsd"/>
+						<include schemaLocation="HRFinancials/LocationInfo.xsd"/>
+						<include schemaLocation="HRFinancials/Purchasing.xsd"/>
+
+					<!-- 5.6 Instructional Services Working Group Objects -->
+
+						<include schemaLocation="InstructionalServices/LearningStandardDocument.xsd"/>
+						<include schemaLocation="InstructionalServices/LearningStandardItem.xsd"/>
+						<include schemaLocation="InstructionalServices/CurriculumStructure.xsd"/>
+						<include schemaLocation="InstructionalServices/Lesson.xsd"/>
+						<include schemaLocation="InstructionalServices/Activity.xsd"/>
+						<include schemaLocation="InstructionalServices/Assignment.xsd"/>
+						<include schemaLocation="InstructionalServices/Assessment.xsd"/>
+						<include schemaLocation="InstructionalServices/AssessmentSection.xsd"/>
+						<include schemaLocation="InstructionalServices/AssessmentItem.xsd"/>
+						<include schemaLocation="InstructionalServices/AssessmentSubTest.xsd"/>
+						<include schemaLocation="InstructionalServices/StudentResultSet.xsd"/>
+						<include schemaLocation="InstructionalServices/LearningResource.xsd"/>
+						<include schemaLocation="InstructionalServices/StudentParticipation.xsd"/>
+						<include schemaLocation="InstructionalServices/StudentPlacement.xsd"/>
+
+					<!-- 5.7 Library Automation Working Group Objects -->
+
+						<include schemaLocation="LibraryAutomation/LibraryPatronStatus.xsd"/>
+
+					<!-- 5.8 Student Information Working Group Objects -->
+
+						<include schemaLocation="StudentInformation/AttendanceCodeInfo.xsd"/>
+						<include schemaLocation="StudentInformation/RoomInfo.xsd"/>
+						<include schemaLocation="StudentInformation/RoomType.xsd"/>
+						<include schemaLocation="StudentInformation/SchoolCourseInfo.xsd"/>
+						<include schemaLocation="StudentInformation/SchoolInfo.xsd"/>
+						<include schemaLocation="StudentInformation/SectionInfo.xsd"/>
+						<include schemaLocation="StudentInformation/StaffPersonal.xsd"/>
+						<include schemaLocation="StudentInformation/StudentContact.xsd"/>
+						<include schemaLocation="StudentInformation/StudentDailyAttendance.xsd"/>
+						<include schemaLocation="StudentInformation/StudentPersonal.xsd"/>
+						<include schemaLocation="StudentInformation/StudentPicture.xsd"/>
+						<include schemaLocation="StudentInformation/StudentSchoolEnrollment.xsd"/>
+						<include schemaLocation="StudentInformation/StudentSectionEnrollment.xsd"/>
+						<include schemaLocation="StudentInformation/TermInfo.xsd"/>
+						<include schemaLocation="StudentInformation/StudentSnapshot.xsd"/>
+						<include schemaLocation="StudentInformation/LEAInfo.xsd"/>
+
+					<!-- 5.9 Transporation and Geographic Information Working Group Objects -->
+
+						<include schemaLocation="Transportation/BusEquipment.xsd"/>
+						<include schemaLocation="Transportation/BusInfo.xsd"/>
+						<include schemaLocation="Transportation/BusRouteDetail.xsd"/>
+						<include schemaLocation="Transportation/BusRouteInfo.xsd"/>
+						<include schemaLocation="Transportation/BusStopInfo.xsd"/>
+						<include schemaLocation="Transportation/StudentTransportInfo.xsd"/>
+						<include schemaLocation="Transportation/BusPositionInfo.xsd"/>
+
+					<!-- 5.10 Vertical Reporting Task Force Objects -->
+
+						<include schemaLocation="VerticalReporting/ReportManifest.xsd"/>
+						<include schemaLocation="VerticalReporting/ReportAuthorityInfo.xsd"/>
+						<include schemaLocation="VerticalReporting/SIF_ReportObject.xsd"/>
+						<include schemaLocation="VerticalReporting/StudentLocator.xsd"/>
+
+					<!-- 5.11 Infrastructure Working Group Objects -->
+
+						<include schemaLocation="Infrastructure/SIF_LogEntry.xsd"/>
+						<include schemaLocation="Infrastructure/Authentication.xsd"/>
+
+
+	<!-- 4 INFRASTRUCTURE -->
+
+		<!-- 4.1 Elements -->
+
+			<!-- 4.1.1 SIF_Header -->
+
+				<element name='SIF_Header'>
+					<complexType>
+						<sequence>
+							<element ref='sif:SIF_MsgId'/>
+							<element ref='sif:SIF_Date'/>
+							<element ref='sif:SIF_Time'/>
+							<element ref='sif:SIF_Security' minOccurs='0' maxOccurs='1'/>
+							<element ref='sif:SIF_SourceId'/>
+							<element ref='sif:SIF_DestinationId' minOccurs='0' maxOccurs='1'/>
+						</sequence>
+					</complexType>
+				</element>
+
+				<element name='SIF_MsgId' type='sif:RefIdType'/>
+
+				<element name='SIF_Date' type='sif:DateType'/>
+
+				<element name='SIF_Time' type='sif:TimeWithZoneType'/>
+
+				<element name='SIF_Security'>
+					<complexType>
+						<sequence>
+							<element ref='sif:SIF_SecureChannel'/>
+						</sequence>
+					</complexType>
+				</element>
+
+				<element name='SIF_SecureChannel'>
+					<complexType>
+						<sequence>
+							<element ref='sif:SIF_AuthenticationLevel'/>
+							<element ref='sif:SIF_EncryptionLevel'/>
+						</sequence>
+					</complexType>
+				</element>
+
+				<element name='SIF_AuthenticationLevel'>
+					<simpleType>
+						<restriction base='integer'>
+							<minInclusive value='0'/>
+							<maxInclusive value='3'/>
+						</restriction>
+					</simpleType>
+				</element>
+
+				<element name='SIF_EncryptionLevel'>
+					<simpleType>
+						<restriction base='integer'>
+							<minInclusive value='0'/>
+							<maxInclusive value='4'/>
+						</restriction>
+					</simpleType>
+				</element>
+
+				<element name='SIF_SourceId' type='string'/>
+
+				<element name='SIF_DestinationId' type='string'/>
+
+		<!-- 4.1.2 SIF_Message -->
+
+			<element name='SIF_Message'>
+				<complexType>
+					<choice>
+						<element ref='sif:SIF_Ack'/>
+						<element ref='sif:SIF_Event'/>
+						<element ref='sif:SIF_Provide'/>
+						<element ref='sif:SIF_Register'/>
+						<element ref='sif:SIF_Request'/>
+						<element ref='sif:SIF_Response'/>
+						<element ref='sif:SIF_Subscribe'/>
+						<element ref='sif:SIF_SystemControl'/>
+						<element ref='sif:SIF_Unprovide'/>
+						<element ref='sif:SIF_Unregister'/>
+						<element ref='sif:SIF_Unsubscribe'/>
+					</choice>
+<!--				<attribute name='xmlns' type='string' use='required'/> -->
+					<attribute name="Version" type='string' use='optional' default='1.1'/>
+				</complexType>
+			</element>
+
+
+	<!-- 4.2 Messages -->
+
+		<complexType name="SIF_MessageType"> 
+		  <sequence> 
+			<element ref="sif:SIF_Header" /> 
+		  </sequence> 
+		</complexType> 
+
+		<!-- 4.2.1 SIF_Ack -->
+
+			<element name='SIF_Ack'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'>
+							<sequence>
+								<element ref='sif:SIF_OriginalSourceId'/>
+								<element ref='sif:SIF_OriginalMsgId'/>
+								<choice>
+									<element ref='sif:SIF_Status'/>
+									<element ref='sif:SIF_Error'/>
+								</choice>
+							</sequence>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+
+			<element name='SIF_OriginalSourceId' type='string'/>
+
+			<element name='SIF_OriginalMsgId' type='sif:RefIdOrEmptyType'/>
+
+			<element name='SIF_Status'>
+				<complexType>
+					<sequence>
+						<element ref='sif:SIF_Code'/>
+						<element ref='sif:SIF_Data' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+			<element name='SIF_Code' type='integer'/>
+
+			<element name='SIF_Data'>
+				<complexType mixed="true">
+					<sequence>
+						<element ref='sif:SIF_Message' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+			<element name='SIF_Error'>
+				<complexType>
+					<sequence>
+						<element ref='sif:SIF_Category'/>
+						<element ref='sif:SIF_Code'/>
+						<element ref='sif:SIF_Desc'/>
+						<element ref='sif:SIF_ExtendedDesc' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+			<element name='SIF_Category' type='integer'/>
+
+			<element name='SIF_Desc' type='string'/>
+
+			<element name='SIF_ExtendedDesc' type='string'/>
+
+
+		<!-- 4.2.2 SIF_Event -->
+
+			<element name='SIF_Event'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'>
+							<sequence>
+								<element name='SIF_ObjectData'>
+									<complexType>
+										<sequence>
+											<element ref='sif:SIF_EventObject'/>
+										</sequence>
+									</complexType>
+								</element>
+							</sequence>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+
+			<element name='SIF_EventObject'>
+
+				<complexType>
+
+					<choice>
+
+						<element ref='sif:AggregateStatisticInfo'/>
+						<element ref='sif:AggregateCharacteristicInfo'/>
+						<element ref='sif:AggregateStatisticFact'/>
+
+						<element ref='sif:StudentMeal'/>
+						<element ref='sif:FoodserviceItem'/>
+						<element ref='sif:FoodserviceItemUnit'/>
+						<element ref='sif:FoodserviceItemPortion'/>
+						<element ref='sif:FoodserviceReimbursementRates'/>
+						<element ref='sif:FoodserviceMealPrices'/>
+						<element ref='sif:StaffMeal'/>
+						<element ref='sif:FoodserviceTransaction'/>
+						<element ref='sif:FoodserviceTransactionDetails'/>
+						<element ref='sif:FoodserviceTransactionPayMethod'/>
+						<element ref='sif:FoodserviceSales'/>
+						<element ref='sif:FoodserviceItemSales'/>
+						<element ref='sif:AccountingPeriod'/>
+						<element ref='sif:FinancialAccount'/>
+						<element ref='sif:FinancialAccountAccountingPeriodLocationInfo'/>
+						<element ref='sif:FinancialClass'/>
+						<element ref='sif:FinancialIncomeStatement'/>
+						<element ref='sif:FinancialTransaction'/>
+						<element ref='sif:FiscalYear'/>
+
+						<element ref='sif:Billing'/>
+						<element ref='sif:Payment'/>
+						<element ref='sif:ActivityProvider'/>
+						<element ref='sif:EmployeeAssignment'/>
+						<element ref='sif:EmployeeContract'/>
+						<element ref='sif:EmployeeCredit'/>
+						<element ref='sif:EmployeeHR'/>
+						<element ref='sif:EmployeePersonal'/>
+						<element ref='sif:EmployeePicture'/>
+						<element ref='sif:ProfDevActivities'/>
+						<element ref='sif:StaffAssignment'/>
+						<element ref='sif:TimeWorked'/>
+						<element ref='sif:VendorInfo'/>
+						<element ref='sif:W4'/>
+						<element ref='sif:EmployeeWage'/>
+						<element ref='sif:LocationInfo'/>
+						<element ref='sif:Purchasing'/>
+
+						<element ref='sif:LearningStandardDocument'/>
+						<element ref='sif:LearningStandardItem'/>
+						<element ref='sif:CurriculumStructure'/>
+						<element ref='sif:Lesson'/>
+						<element ref='sif:Activity'/>
+						<element ref='sif:Assignment'/>
+						<element ref='sif:Assessment'/>
+						<element ref='sif:AssessmentSection'/>
+						<element ref='sif:AssessmentItem'/>
+						<element ref='sif:AssessmentSubTest'/>
+						<element ref='sif:StudentResultSet'/>
+						<element ref='sif:LearningResource'/>
+						<element ref='sif:StudentParticipation'/>
+						<element ref='sif:StudentPlacement'/>
+
+						<element ref='sif:AttendanceCodeInfo'/>
+						<element ref='sif:RoomInfo'/>
+						<element ref='sif:RoomType'/>
+						<element ref='sif:SchoolCourseInfo'/>
+						<element ref='sif:SchoolInfo'/>
+						<element ref='sif:SectionInfo'/>
+						<element ref='sif:StaffPersonal'/>
+						<element ref='sif:StudentContact'/>
+						<element ref='sif:StudentDailyAttendance'/>
+						<element ref='sif:StudentPersonal'/>
+						<element ref='sif:StudentPicture'/>
+						<element ref='sif:StudentSchoolEnrollment'/>
+						<element ref='sif:StudentSectionEnrollment'/>
+						<element ref='sif:TermInfo'/>
+						<element ref='sif:LEAInfo'/>
+
+						<element ref='sif:BusEquipment'/>
+						<element ref='sif:BusInfo'/>
+						<element ref='sif:BusRouteDetail'/>
+						<element ref='sif:BusRouteInfo'/>
+						<element ref='sif:BusStopInfo'/>
+						<element ref='sif:StudentTransportInfo'/>
+						<element ref='sif:BusPositionInfo'/>
+
+						<element ref='sif:ReportManifest'/>
+						<element ref='sif:ReportAuthorityInfo'/>
+						<element ref='sif:SIF_ReportObject'/>
+						
+						<element ref='sif:SIF_LogEntry'/>
+						<element ref='sif:Authentication'/>
+
+					</choice>
+
+					<attribute name='ObjectName' type='sif:SubscribeObjectNames' use='required'/>
+
+					<attribute name='Action' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Add'/>
+								<enumeration value='Delete'/>
+								<enumeration value='Change'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+
+				</complexType>
+
+			</element>
+
+			<simpleType name='ProvideObjectNames'>
+
+				<restriction base='string'>
+
+					<enumeration value='AggregateStatisticInfo'/>
+					<enumeration value='AggregateCharacteristicInfo'/>
+					<enumeration value='AggregateStatisticFact'/>
+
+					<enumeration value='StudentMeal'/>
+					<enumeration value='FoodserviceItem'/>
+					<enumeration value='FoodserviceItemUnit'/>
+					<enumeration value='FoodserviceItemPortion'/>
+					<enumeration value='FoodserviceReimbursementRates'/>
+					<enumeration value='FoodserviceMealPrices'/>
+					<enumeration value='StaffMeal'/>
+					<enumeration value='FoodserviceTransaction'/>
+					<enumeration value='FoodserviceTransactionDetails'/>
+					<enumeration value='FoodserviceTransactionPayMethod'/>
+					<enumeration value='FoodserviceSales'/>
+					<enumeration value='FoodserviceItemSales'/>
+					<enumeration value='AccountingPeriod'/>
+					<enumeration value='FinancialAccount'/>
+					<enumeration value='FinancialAccountAccountingPeriodLocationInfo'/>
+					<enumeration value='FinancialClass'/>
+					<enumeration value='FinancialIncomeStatement'/>
+					<enumeration value='FinancialTransaction'/>
+					<enumeration value='FiscalYear'/>
+
+					<enumeration value='Billing'/>
+					<enumeration value='Payment'/>
+					<enumeration value='ActivityProvider'/>
+					<enumeration value='EmployeeAssignment'/>
+					<enumeration value='EmployeeContract'/>
+					<enumeration value='EmployeeCredit'/>
+					<enumeration value='EmployeeHR'/>
+					<enumeration value='EmployeePersonal'/>
+					<enumeration value='EmployeePicture'/>
+					<enumeration value='EmployeeRecertification'/>
+					<enumeration value='FinAnnual'/>
+					<enumeration value='EmployeeCredential'/>
+					<enumeration value='FinBudget'/>
+					<enumeration value='ProfDevActivities'/>
+					<enumeration value='StaffAssignment'/>
+					<enumeration value='TimeWorked'/>
+					<enumeration value='VendorInfo'/>
+					<enumeration value='W4'/>
+					<enumeration value='EmployeeWage'/>
+					<enumeration value='LocationInfo'/>
+					<enumeration value='Purchasing'/>
+
+					<enumeration value='LearningStandardDocument'/>
+					<enumeration value='LearningStandardItem'/>
+					<enumeration value='CurriculumStructure'/>
+					<enumeration value='Lesson'/>
+					<enumeration value='Activity'/>
+					<enumeration value='Assignment'/>
+					<enumeration value='Assessment'/>
+					<enumeration value='AssessmentSection'/>
+					<enumeration value='AssessmentItem'/>
+					<enumeration value='AssessmentSubTest'/>
+
+					<enumeration value='StudentResultSet'/>
+					<enumeration value='LearningResource'/>
+					<enumeration value='StudentParticipation'/>
+					<enumeration value='StudentPlacement'/>
+
+					<enumeration value='LibraryPatronStatus'/>
+
+					<enumeration value='AttendanceCodeInfo'/>
+					<enumeration value='RoomInfo'/>
+					<enumeration value='RoomType'/>
+					<enumeration value='SchoolCourseInfo'/>
+					<enumeration value='SchoolInfo'/>
+					<enumeration value='SectionInfo'/>
+					<enumeration value='StaffPersonal'/>
+					<enumeration value='StudentContact'/>
+					<enumeration value='StudentDailyAttendance'/>
+					<enumeration value='StudentPersonal'/>
+					<enumeration value='StudentPicture'/>
+					<enumeration value='StudentSchoolEnrollment'/>
+					<enumeration value='StudentSectionEnrollment'/>
+					<enumeration value='TermInfo'/>
+					<enumeration value='LEAInfo'/>
+					<enumeration value='StudentSnapshot'/>
+
+					<enumeration value='BusEquipment'/>
+					<enumeration value='BusInfo'/>
+					<enumeration value='BusRouteDetail'/>
+					<enumeration value='BusRouteInfo'/>
+					<enumeration value='BusStopInfo'/>
+					<enumeration value='StudentTransportInfo'/>
+					<enumeration value='BusPositionInfo'/>
+
+					<enumeration value='ReportManifest'/>
+					<enumeration value='ReportAuthorityInfo'/>
+					<enumeration value='SIF_ReportObject'/>
+					<enumeration value='StudentLocator'/>
+					
+					<enumeration value='SIF_LogEntry'/>
+					<enumeration value='Authentication'/>
+
+				</restriction>
+
+			</simpleType>
+
+			<element name='SIF_Provide'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'>
+							<sequence>
+								<element name='SIF_Object' maxOccurs='unbounded'>
+									<complexType>
+										<attribute name='ObjectName' type='sif:ProvideObjectNames' use='required'/>
+									</complexType>
+								</element>
+							</sequence>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+
+
+		<!-- 4.2.4 SIF_Register -->
+
+			<element name='SIF_Register'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'>
+							<sequence>
+								<element ref='sif:SIF_Name'/>
+								<element name='SIF_Version' type='sif:VersionWithWildcardsType' minOccurs='1' maxOccurs='unbounded'/>
+								<element ref='sif:SIF_MaxBufferSize'/>
+								<element ref='sif:SIF_Mode'/>
+								<element ref='sif:SIF_Protocol' minOccurs='0' maxOccurs='1'/>
+							</sequence>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+
+			<element name='SIF_Name' type='string'/>
+
+			<element name='SIF_Version' type='sif:VersionType'/>
+
+			<element name='SIF_MaxBufferSize' type='nonNegativeInteger'/>
+
+			<element name='SIF_Mode'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Push'/>
+						<enumeration value='Pull'/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name='SIF_Protocol'>
+				<complexType>
+					<choice>
+						<element ref='sif:SIF_URL'/>
+						<element ref='sif:SIF_Property' minOccurs='0' maxOccurs='unbounded'/>
+					</choice>
+					<attribute name='Type' type='string' use='required'/>
+					<attribute name='Secure' type='sif:YesOrNoType' use='required'>
+					</attribute>
+				</complexType>
+			</element>
+
+			<element name='SIF_URL' type='string'/>
+
+			<element name='SIF_Property'>
+				<complexType>
+					<sequence>
+						<element ref='sif:SIF_Name'/>
+						<element ref='sif:SIF_Value'/>
+					</sequence>
+				</complexType>
+			</element>
+
+			<element name='SIF_Value' type='string'/>
+
+
+		<!-- 4.2.5 SIF_Request -->
+
+			<element name='SIF_Request'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'>
+							<sequence>
+								<element ref='sif:SIF_Version'/>
+								<element ref='sif:SIF_MaxBufferSize'/>
+								<element ref='sif:SIF_Query'/>
+							</sequence>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+
+			<element name='SIF_Query'>
+				<complexType>
+					<sequence>
+						<element ref='sif:SIF_QueryObject'/>
+						<element ref='sif:SIF_ConditionGroup' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+			<element name='SIF_QueryObject'>
+
+				<complexType>
+
+					<sequence>
+						<element ref='sif:SIF_Element' minOccurs='0' maxOccurs='unbounded'/>
+					</sequence>
+
+					<attribute name='ObjectName' use='required'>
+
+						<simpleType>
+
+							<restriction base='string'>
+
+								<enumeration value='SIF_ZoneStatus'/>
+
+								<enumeration value='AggregateStatisticInfo'/>
+								<enumeration value='AggregateCharacteristicInfo'/>
+								<enumeration value='AggregateStatisticFact'/>
+
+								<enumeration value='StudentMeal'/>
+								<enumeration value='FoodserviceItem'/>
+								<enumeration value='FoodserviceItemUnit'/>
+								<enumeration value='FoodserviceItemPortion'/>
+								<enumeration value='FoodserviceReimbursementRates'/>
+								<enumeration value='FoodserviceMealPrices'/>
+								<enumeration value='StaffMeal'/>
+								<enumeration value='FoodserviceTransaction'/>
+								<enumeration value='FoodserviceTransactionDetails'/>
+								<enumeration value='FoodserviceTransactionPayMethod'/>
+								<enumeration value='FoodserviceSales'/>
+								<enumeration value='FoodserviceItemSales'/>
+								<enumeration value='AccountingPeriod'/>
+								<enumeration value='FinancialAccount'/>
+								<enumeration value='FinancialAccountAccountingPeriodLocationInfo'/>
+								<enumeration value='FinancialClass'/>
+								<enumeration value='FinancialIncomeStatement'/>
+								<enumeration value='FinancialTransaction'/>
+								<enumeration value='FiscalYear'/>
+
+								<enumeration value='Billing'/>
+								<enumeration value='Payment'/>
+								<enumeration value='ActivityProvider'/>
+								<enumeration value='EmployeeAssignment'/>
+								<enumeration value='EmployeeContract'/>
+								<enumeration value='EmployeeCredit'/>
+								<enumeration value='EmployeeHR'/>
+								<enumeration value='EmployeePersonal'/>
+								<enumeration value='EmployeePicture'/>
+								<enumeration value='EmployeeRecertification'/>
+								<enumeration value='FinAnnual'/>
+								<enumeration value='EmployeeCredential'/>
+								<enumeration value='FinBudget'/>
+								<enumeration value='ProfDevActivities'/>
+								<enumeration value='StaffAssignment'/>
+								<enumeration value='TimeWorked'/>
+								<enumeration value='VendorInfo'/>
+								<enumeration value='W4'/>
+								<enumeration value='EmployeeWage'/>
+								<enumeration value='LocationInfo'/>
+								<enumeration value='Purchasing'/>
+
+								<enumeration value='LearningStandardDocument'/>
+								<enumeration value='LearningStandardItem'/>
+								<enumeration value='CurriculumStructure'/>
+								<enumeration value='Lesson'/>
+								<enumeration value='Activity'/>
+								<enumeration value='Assignment'/>
+								<enumeration value='Assessment'/>
+								<enumeration value='AssessmentSection'/>
+								<enumeration value='AssessmentItem'/>
+								<enumeration value='AssessmentSubTest'/>
+
+								<enumeration value='StudentResultSet'/>
+								<enumeration value='LearningResource'/>
+								<enumeration value='StudentParticipation'/>
+								<enumeration value='StudentPlacement'/>
+
+								<enumeration value='LibraryPatronStatus'/>
+
+								<enumeration value='AttendanceCodeInfo'/>
+								<enumeration value='RoomInfo'/>
+								<enumeration value='RoomType'/>
+								<enumeration value='SchoolCourseInfo'/>
+								<enumeration value='SchoolInfo'/>
+								<enumeration value='SectionInfo'/>
+								<enumeration value='StaffPersonal'/>
+								<enumeration value='StudentContact'/>
+								<enumeration value='StudentDailyAttendance'/>
+								<enumeration value='StudentPersonal'/>
+								<enumeration value='StudentPicture'/>
+								<enumeration value='StudentSchoolEnrollment'/>
+								<enumeration value='StudentSectionEnrollment'/>
+								<enumeration value='TermInfo'/>
+								<enumeration value='LEAInfo'/>
+								<enumeration value='StudentSnapshot'/>
+
+								<enumeration value='BusEquipment'/>
+								<enumeration value='BusInfo'/>
+								<enumeration value='BusRouteDetail'/>
+								<enumeration value='BusRouteInfo'/>
+								<enumeration value='BusStopInfo'/>
+								<enumeration value='StudentTransportInfo'/>
+								<enumeration value='BusPositionInfo'/>
+
+								<enumeration value='ReportManifest'/>
+								<enumeration value='ReportAuthorityInfo'/>
+								<enumeration value='SIF_ReportObject'/>
+								<enumeration value='StudentLocator'/>
+								
+								<enumeration value='SIF_LogEntry'/>
+								<enumeration value='Authentication'/>
+
+							</restriction>
+
+						</simpleType>
+
+					</attribute>
+
+				</complexType>
+
+			</element>
+
+			<element name='SIF_Element' type='string'/>
+
+			<simpleType name='ConditionType'>
+				<restriction base='string'>
+					<enumeration value='And'/>
+					<enumeration value='Or'/>
+					<enumeration value='None'/>
+				</restriction>
+			</simpleType>
+
+			<simpleType name='OperatorType'>
+				<restriction base='string'>
+					<enumeration value='EQ'/>
+				</restriction>
+			</simpleType>
+
+			<element name='SIF_ConditionGroup'>
+				<complexType>
+					<sequence>
+						<element ref='sif:SIF_Conditions' maxOccurs='unbounded'/>
+					</sequence>
+					<attribute name='Type' type='sif:ConditionType' use='required'/>
+				</complexType>
+			</element>
+
+			<element name='SIF_Conditions'>
+				<complexType>
+					<sequence>
+						<element ref='sif:SIF_Condition' maxOccurs='unbounded'/>
+					</sequence>
+					<attribute name='Type' type='sif:ConditionType' use='required'/>
+				</complexType>
+			</element>
+
+			<element name='SIF_Condition'>
+				<complexType>
+					<sequence>
+						<element ref='sif:SIF_Element'/>
+						<element ref='sif:SIF_Operator'/>
+						<element ref='sif:SIF_Value'/>
+					</sequence>
+				</complexType>
+			</element>
+
+			<element name='SIF_Operator' type='sif:OperatorType'/>
+
+
+		<!-- 4.2.6 SIF_Response -->
+
+			<element name='SIF_Response'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'>
+							<sequence>
+								<element ref='sif:SIF_RequestMsgId'/>
+								<element ref='sif:SIF_Error' minOccurs='0' maxOccurs='1'/>
+								<element ref='sif:SIF_PacketNumber'/>
+								<element ref='sif:SIF_MorePackets'/>
+								<element ref='sif:SIF_ObjectData'/>
+							</sequence>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+
+			<element name='SIF_RequestMsgId' type='sif:RefIdType'/>
+
+			<element name='SIF_PacketNumber' type='positiveInteger'/>
+
+			<element name='SIF_MorePackets' type='sif:YesOrNoType'/>
+
+			<element name='SIF_ObjectData'>
+
+				<complexType>
+
+					<choice>
+
+						<element ref='sif:SIF_ZoneStatus' minOccurs='0' maxOccurs='unbounded'/>
+
+						<element ref='sif:AggregateStatisticInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:AggregateCharacteristicInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:AggregateStatisticFact' minOccurs='0' maxOccurs='unbounded'/>
+
+						<element ref='sif:StudentMeal' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FoodserviceItem' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FoodserviceItemUnit' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FoodserviceItemPortion' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FoodserviceReimbursementRates' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FoodserviceMealPrices' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StaffMeal' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FoodserviceTransaction' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FoodserviceTransactionDetails' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FoodserviceTransactionPayMethod' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FoodserviceSales' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FoodserviceItemSales' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:AccountingPeriod' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FinancialAccount' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FinancialAccountAccountingPeriodLocationInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FinancialClass' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FinancialIncomeStatement' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FinancialTransaction' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FiscalYear' minOccurs='0' maxOccurs='unbounded'/>
+
+						<element ref='sif:Billing' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:Payment' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:ActivityProvider' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:EmployeeAssignment' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:EmployeeContract' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:EmployeeCredit' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:EmployeeHR' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:EmployeePersonal' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:EmployeePicture' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:EmployeeRecertification' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FinAnnual' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:EmployeeCredential' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:FinBudget' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:ProfDevActivities' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StaffAssignment' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:TimeWorked' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:VendorInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:W4' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:EmployeeWage' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:LocationInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:Purchasing' minOccurs='0' maxOccurs='unbounded'/>
+
+						<element ref='sif:LearningStandardDocument' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:LearningStandardItem' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:CurriculumStructure' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:Lesson' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:Activity' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:Assignment' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:Assessment' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:AssessmentSection' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:AssessmentItem' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:AssessmentSubTest' minOccurs='0' maxOccurs='unbounded'/>
+
+						<element ref='sif:StudentResultSet' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:LearningResource' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentParticipation' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentPlacement' minOccurs='0' maxOccurs='unbounded'/>
+
+						<element ref='sif:LibraryPatronStatus' minOccurs='0' maxOccurs='unbounded'/>
+
+						<element ref='sif:AttendanceCodeInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:RoomInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:RoomType' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:SchoolCourseInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:SchoolInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:SectionInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StaffPersonal' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentContact' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentDailyAttendance' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentPersonal' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentPicture' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentSchoolEnrollment' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentSectionEnrollment' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:TermInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:LEAInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentSnapshot' minOccurs='0' maxOccurs='unbounded'/>
+
+						<element ref='sif:BusEquipment' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:BusInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:BusRouteDetail' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:BusRouteInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:BusStopInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentTransportInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:BusPositionInfo' minOccurs='0' maxOccurs='unbounded'/>
+
+						<element ref='sif:ReportManifest' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:ReportAuthorityInfo' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:SIF_ReportObject' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:StudentLocator' minOccurs='0' maxOccurs='unbounded'/>
+						
+						<element ref='sif:SIF_LogEntry' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:Authentication' minOccurs='0' maxOccurs='unbounded'/>
+
+					</choice>
+				
+				</complexType>
+			
+			</element>
+
+
+		<!-- 4.2.7 SIF_Subscribe -->
+
+			<simpleType name='SubscribeObjectNames'>
+				
+				<restriction base='string'>
+				
+					<enumeration value='AggregateStatisticInfo'/>
+					<enumeration value='AggregateCharacteristicInfo'/>
+					<enumeration value='AggregateStatisticFact'/>
+
+					<enumeration value='StudentMeal'/>
+					<enumeration value='FoodserviceItem'/>
+					<enumeration value='FoodserviceItemUnit'/>
+					<enumeration value='FoodserviceItemPortion'/>
+					<enumeration value='FoodserviceReimbursementRates'/>
+					<enumeration value='FoodserviceMealPrices'/>
+					<enumeration value='StaffMeal'/>
+					<enumeration value='FoodserviceTransaction'/>
+					<enumeration value='FoodserviceTransactionDetails'/>
+					<enumeration value='FoodserviceTransactionPayMethod'/>
+					<enumeration value='FoodserviceSales'/>
+					<enumeration value='FoodserviceItemSales'/>
+					<enumeration value='AccountingPeriod'/>
+					<enumeration value='FinancialAccount'/>
+					<enumeration value='FinancialAccountAccountingPeriodLocationInfo'/>
+					<enumeration value='FinancialClass'/>
+					<enumeration value='FinancialIncomeStatement'/>
+					<enumeration value='FinancialTransaction'/>
+					<enumeration value='FiscalYear'/>
+
+					<enumeration value='Billing'/>
+					<enumeration value='Payment'/>
+					<enumeration value='ActivityProvider'/>
+					<enumeration value='EmployeeAssignment'/>
+					<enumeration value='EmployeeContract'/>
+					<enumeration value='EmployeeCredit'/>
+					<enumeration value='EmployeeHR'/>
+					<enumeration value='EmployeePersonal'/>
+					<enumeration value='EmployeePicture'/>
+					<enumeration value='ProfDevActivities'/>
+					<enumeration value='StaffAssignment'/>
+					<enumeration value='TimeWorked'/>
+					<enumeration value='VendorInfo'/>
+					<enumeration value='W4'/>
+					<enumeration value='EmployeeWage'/>
+					<enumeration value='LocationInfo'/>
+					<enumeration value='Purchasing'/>
+
+					<enumeration value='LearningStandardDocument'/>
+					<enumeration value='LearningStandardItem'/>
+					<enumeration value='CurriculumStructure'/>
+					<enumeration value='Lesson'/>
+					<enumeration value='Activity'/>
+					<enumeration value='Assignment'/>
+					<enumeration value='Assessment'/>
+					<enumeration value='AssessmentSection'/>
+					<enumeration value='AssessmentItem'/>
+					<enumeration value='AssessmentSubTest'/>
+
+					<enumeration value='StudentResultSet'/>
+					<enumeration value='LearningResource'/>
+					<enumeration value='StudentParticipation'/>
+					<enumeration value='StudentPlacement'/>
+
+					<enumeration value='AttendanceCodeInfo'/>
+					<enumeration value='RoomInfo'/>
+					<enumeration value='RoomType'/>
+					<enumeration value='SchoolCourseInfo'/>
+					<enumeration value='SchoolInfo'/>
+					<enumeration value='SectionInfo'/>
+					<enumeration value='StaffPersonal'/>
+					<enumeration value='StudentContact'/>
+					<enumeration value='StudentDailyAttendance'/>
+					<enumeration value='StudentPersonal'/>
+					<enumeration value='StudentPicture'/>
+					<enumeration value='StudentSchoolEnrollment'/>
+					<enumeration value='StudentSectionEnrollment'/>
+					<enumeration value='TermInfo'/>
+					<enumeration value='LEAInfo'/>
+
+					<enumeration value='BusEquipment'/>
+					<enumeration value='BusInfo'/>
+					<enumeration value='BusRouteDetail'/>
+					<enumeration value='BusRouteInfo'/>
+					<enumeration value='BusStopInfo'/>
+					<enumeration value='StudentTransportInfo'/>
+					<enumeration value='BusPositionInfo'/>
+
+					<enumeration value='ReportManifest'/>
+					<enumeration value='ReportAuthorityInfo'/>
+					<enumeration value='SIF_ReportObject'/>
+					
+					<enumeration value='SIF_LogEntry'/>
+					<enumeration value='Authentication'/>
+
+				</restriction>
+			
+			</simpleType>
+
+			<element name='SIF_Subscribe'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'>
+							<sequence>
+								<element name='SIF_Object' maxOccurs='unbounded'>
+									<complexType>
+										<attribute name='ObjectName' type='sif:SubscribeObjectNames' use='required'/>
+									</complexType>
+								</element>
+							</sequence>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+
+
+		<!-- 4.2.8 SIF_SystemControl -->
+
+			<element name='SIF_SystemControl'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'>
+							<sequence>
+								<element ref='sif:SIF_SystemControlData'/>
+							</sequence>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+
+			<element name='SIF_SystemControlData'>
+				<complexType>
+					<choice>
+						<element ref='sif:SIF_Ping'/>
+						<element ref='sif:SIF_Sleep'/>
+						<element ref='sif:SIF_Wakeup'/>
+						<element ref='sif:SIF_GetMessage'/>
+					</choice>
+				</complexType>
+			</element>
+
+			<element name='SIF_Ping'>
+				<complexType/>
+			</element>
+
+			<element name='SIF_Sleep'>
+				<complexType/>
+			</element>
+
+			<element name='SIF_Wakeup'>
+				<complexType/>
+			</element>
+
+			<element name='SIF_GetMessage'>
+				<complexType/>
+			</element>
+
+
+		<!-- 4.2.9 SIF_Unprovide -->
+
+			<element name='SIF_Unprovide'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'>
+							<sequence>
+								<element name='SIF_Object' maxOccurs='unbounded'>
+									<complexType>
+										<attribute name='ObjectName' type='sif:ProvideObjectNames' use='required'/>
+									</complexType>
+								</element>
+							</sequence>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+
+
+		<!-- 4.2.10 SIF_Unregister -->
+
+			<element name='SIF_Unregister'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'/>
+					</complexContent>
+				</complexType>
+			</element>
+
+
+		<!-- 4.2.11 SIF_Unsubscribe -->
+
+			<element name='SIF_Unsubscribe'>
+				<complexType>
+					<complexContent>
+						<extension base='sif:SIF_MessageType'>
+							<sequence>
+								<element name='SIF_Object' maxOccurs='unbounded'>
+									<complexType>
+										<attribute name='ObjectName' type='sif:SubscribeObjectNames' use='required'/>
+									</complexType>
+								</element>
+							</sequence>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+
+
+</schema>

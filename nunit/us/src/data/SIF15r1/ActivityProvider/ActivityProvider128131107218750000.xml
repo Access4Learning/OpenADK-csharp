@@ -1,0 +1,18 @@
+<SIF_ObjectData>
+<ActivityProvider RefId="EE2D941017DC11DBAC45E8B6A9745757">
+  <LocalId>EE2D941017DC11DBAC45E8B6A9745757</LocalId>
+  <ProviderName>School of Rock</ProviderName>
+  <Address Type="01">
+    <Street>
+      <Line1>13917 4th St.</Line1>
+      <StreetNumber>13917</StreetNumber>
+      <StreetName>4th</StreetName>
+      <StreetType>St.</StreetType>
+    </Street>
+    <City>Boca Raton</City>
+    <County>Palm Beach</County>
+    <StatePr Code="FL" />
+    <Country Code="US" />
+    <PostalCode>33487</PostalCode>
+  </Address>
+</ActivityProvider></SIF_ObjectData>

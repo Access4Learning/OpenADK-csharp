@@ -1,0 +1,101 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>1C3E29D74E12405AAB075A9159A6BF7E</SIF_MsgId>
+      <SIF_Date>20050518</SIF_Date>
+      <SIF_Time Zone="UTC-05:00">14:32:05</SIF_Time>
+      <SIF_Security>
+        <SIF_SecureChannel>
+          <SIF_AuthenticationLevel>0</SIF_AuthenticationLevel>
+          <SIF_EncryptionLevel>0</SIF_EncryptionLevel>
+        </SIF_SecureChannel>
+      </SIF_Security>
+      <SIF_SourceId>SIS2000</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>4C9FD6EACC8C49AFAF29843A8FBC0407</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData><SchoolInfo RefId="44C1643F9B824F8EB32E19C3539B89AB">
+  <LocalId>110</LocalId>
+  <StatePrId>110</StatePrId>
+  <SchoolName>Test No Rich Elem</SchoolName>
+  <SchoolDistrict LEAInfoRefId="96818DB59876493FBBDC36EE70238EF9" />
+  <PhoneNumber Format="NA" Type="18">4359463359</PhoneNumber>
+  <Address Type="03">
+    <Street>
+      <Line1>P.O. Box 129</Line1>
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <IdentificationInfo Code="76">110</IdentificationInfo>
+  <IdentificationInfo Code="16">24110</IdentificationInfo>
+</SchoolInfo><SchoolInfo RefId="5E15469B8859483281F35D192BD29848">
+  <LocalId>708</LocalId>
+  <StatePrId>708</StatePrId>
+  <SchoolName>Test Rich High School</SchoolName>
+  <SchoolDistrict LEAInfoRefId="96818DB59876493FBBDC36EE70238EF9" />
+  <PhoneNumber Format="NA" Type="18">4357932365</PhoneNumber>
+  <Address Type="03">
+    <Street>
+      <Line1>P O Box 278</Line1>
+    </Street>
+    <City>Randolph</City>
+    <StatePr Code="UT" />
+    <PostalCode>84064</PostalCode>
+  </Address>
+  <IdentificationInfo Code="76">708</IdentificationInfo>
+  <IdentificationInfo Code="16">24708</IdentificationInfo>
+</SchoolInfo><SchoolInfo RefId="A73A9E3EAE8A4EB9A34442B690135BC9">
+  <LocalId>304</LocalId>
+  <StatePrId>304</StatePrId>
+  <SchoolName>Test Rich Mid Schl</SchoolName>
+  <SchoolDistrict LEAInfoRefId="96818DB59876493FBBDC36EE70238EF9" />
+  <PhoneNumber Format="NA" Type="18">4359463359</PhoneNumber>
+  <Address Type="03">
+    <Street>
+      <Line1>P.O. Box 129</Line1>
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <IdentificationInfo Code="76">304</IdentificationInfo>
+  <IdentificationInfo Code="16">24304</IdentificationInfo>
+</SchoolInfo><SchoolInfo RefId="31771C6D61FE4F7CAA5270D979A0A50F">
+  <LocalId>150</LocalId>
+  <StatePrId>150</StatePrId>
+  <SchoolName>North Rich Preschool</SchoolName>
+  <SchoolDistrict LEAInfoRefId="96818DB59876493FBBDC36EE70238EF9" />
+  <PhoneNumber Format="NA" Type="18">4357932135</PhoneNumber>
+  <Address Type="03">
+    <Street>
+      <Line1>P O Box 67</Line1>
+    </Street>
+    <City>Randolph</City>
+    <StatePr Code="UT" />
+    <PostalCode>84064</PostalCode>
+  </Address>
+  <IdentificationInfo Code="76">150</IdentificationInfo>
+  <IdentificationInfo Code="16">24150</IdentificationInfo>
+</SchoolInfo><SchoolInfo RefId="3EA929267C7641C0BD55B699337CA8C6">
+  <LocalId>112</LocalId>
+  <StatePrId>112</StatePrId>
+  <SchoolName>Test So RIch Elem</SchoolName>
+  <SchoolDistrict LEAInfoRefId="96818DB59876493FBBDC36EE70238EF9" />
+  <PhoneNumber Format="NA" Type="18">4357933195</PhoneNumber>
+  <Address Type="03">
+    <Street>
+      <Line1>P.O. Box 67</Line1>
+    </Street>
+    <City>Randolph</City>
+    <StatePr Code="UT" />
+    <PostalCode>84064</PostalCode>
+  </Address>
+  <IdentificationInfo Code="76">112</IdentificationInfo>
+  <IdentificationInfo Code="16">24112</IdentificationInfo>
+</SchoolInfo></SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

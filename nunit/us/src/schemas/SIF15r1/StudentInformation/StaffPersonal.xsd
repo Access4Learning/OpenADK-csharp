@@ -1,0 +1,61 @@
+<!--
+
+Object: StaffPersonal
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated namespace
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.8.7 StaffPersonal -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StaffPersonal'>
+		<complexType>
+			<sequence>
+				<element ref='sif:LocalId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StatePrId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ElectronicId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:OtherId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Name' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Title' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Email' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Demographics' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Address' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:EmployeeLink' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='EmployeeLink'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='EmployeePersonalRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>
+

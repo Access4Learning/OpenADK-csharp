@@ -1,0 +1,26 @@
+<LearningStandardDocument RefId="A5A575C789175101B8E7F08ED123A823" xml:lang="en">
+	<Title>Washington Essential Academic Learning Requirements</Title>
+	<Description>This document addresses high school English Language Arts</Description>
+	<Source>State</Source>
+	<Organization>State of Washington</Organization>
+	<Author>McREL</Author>
+	<OrganizationContactPoint>http://www.mcrel.org</OrganizationContactPoint>
+	<SubjectArea Code="10">English Language and Literature</SubjectArea>
+	<DocumentStatus>Adopted</DocumentStatus>
+	<DocumentDate>20010415</DocumentDate>
+	<LocalAdoptionDate>20020106</LocalAdoptionDate>
+	<EndOfLifeDate>20030415</EndOfLifeDate>
+	<Copyright>
+		<Date>20010205</Date>
+		<Holder>State of Washington</Holder>
+	</Copyright>
+	<GradeLevels>
+		<GradeLevel Code="09" />
+		<GradeLevel Code="10" />
+		<GradeLevel Code="11" />
+		<GradeLevel Code="12" />
+	</GradeLevels>
+	<RepositoryDate>20010415</RepositoryDate>
+	<LearningStandardItemRefId>B7D26D789139214A8C7F08EA123A8234</LearningStandardItemRefId>
+	<LearningStandardDocumentRefId>B216162FC98D202E62A64D53C991A25A</LearningStandardDocumentRefId>
+</LearningStandardDocument>

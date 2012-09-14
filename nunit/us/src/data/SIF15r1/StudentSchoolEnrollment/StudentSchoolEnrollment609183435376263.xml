@@ -1,0 +1,38 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>98DFFFA41FA940DBA64F511A18DC5463</SIF_MsgId>
+      <SIF_Date>20050518</SIF_Date>
+      <SIF_Time Zone="UTC-05:00">14:32:19</SIF_Time>
+      <SIF_Security>
+        <SIF_SecureChannel>
+          <SIF_AuthenticationLevel>0</SIF_AuthenticationLevel>
+          <SIF_EncryptionLevel>0</SIF_EncryptionLevel>
+        </SIF_SecureChannel>
+      </SIF_Security>
+      <SIF_SourceId>SIS2000</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>0D09ED0247F846CB9796FC8230F9AB41</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData>
+      <StudentSchoolEnrollment RefId="25A18C03D8804D05A597DBFD30413044" StudentPersonalRefId="10CEE296BFA146C6B939CB6AC9A0B536" SchoolInfoRefId="44C1643F9B824F8EB32E19C3539B89AB" MembershipType="Home" TimeFrame="Historical">
+        <SchoolYear>2001</SchoolYear>
+        <EntryDate>20000828</EntryDate>
+        <EntryType Code="05" />
+        <GradeLevel Code="04" />
+        <ExitDate>20010524</ExitDate>
+        <ExitType Code="03" />
+      </StudentSchoolEnrollment>
+      <StudentSchoolEnrollment RefId="6F5D238C0DCE49FE807C60E87A2B8FB5" StudentPersonalRefId="F54EED39951148F0ACEE2E46956A1AFD" SchoolInfoRefId="44C1643F9B824F8EB32E19C3539B89AB" MembershipType="Home" TimeFrame="Historical">
+        <SchoolYear>2001</SchoolYear>
+        <EntryDate>20000828</EntryDate>
+        <EntryType Code="05" />
+        <GradeLevel Code="02" />
+        <ExitDate>20010524</ExitDate>
+        <ExitType Code="03" />
+      </StudentSchoolEnrollment>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

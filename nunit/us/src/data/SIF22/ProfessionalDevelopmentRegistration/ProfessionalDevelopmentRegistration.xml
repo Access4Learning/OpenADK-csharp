@@ -1,0 +1,6 @@
+<ProfessionalDevelopmentRegistration RefId="ACB1254742AE54CC874567DFCD196832" EmployeePersonalRefId="D4E1EA3D82614CA39361514E5F115B14">
+  <RegistrationStatus>Registered</RegistrationStatus>
+  <ProfessionalDevelopmentActivityRefId>13F1BD47F2AE862C874567ABE4196DD1</ProfessionalDevelopmentActivityRefId>
+  <PaidAmount Currency="USD">25</PaidAmount>
+  <Stipend Currency="USD">500</Stipend>
+</ProfessionalDevelopmentRegistration>

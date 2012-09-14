@@ -1,0 +1,14 @@
+<FinancialIncomeStatement RefId="E72C08BD41894187BA07B00C1401BE3F">
+  <GenerationDate>2003-12-31</GenerationDate>
+  <GenerationTime>04:32:23-08:00</GenerationTime>
+  <LocationInfoRefId>FAE352080CC74A3DA815E82FB96F5E15</LocationInfoRefId>
+  <Period>
+    <StartDate>2003-01-01</StartDate>
+    <EndDate>2003-03-31</EndDate>
+  </Period>
+  <Amounts>
+    <Amount FinancialAccountAccountingPeriodLocationInfoRefId="B595A5959A8F43448DF0F5C635CD0E1D" FinancialClassRefId="7582E711FDEE468686CBE623A7C31743" Currency="USD">99999999.99</Amount>
+    <Amount FinancialAccountAccountingPeriodLocationInfoRefId="DE0E6B3C73F6413AA9C1EFCCA57B356B" FinancialClassRefId="7582E711FDEE468686CBE623A7C31743" Currency="USD">99999999.99</Amount>
+  </Amounts>
+  <Program Type="Foodservice">NSLP</Program>
+</FinancialIncomeStatement>

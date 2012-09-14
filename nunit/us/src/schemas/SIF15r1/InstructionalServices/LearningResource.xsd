@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: LearningResource
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+2004-06-30 Mark Reichert
+- 1.5r1 Draft 2 updates
+
+-->
+
+<!-- 5.6.12 LearningResource -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+  <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="imports/xml/xml.xsd" />
+
+	
+	<element name='LearningResource'>
+		<complexType>
+			<sequence>
+				<element ref='sif:ResourceName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ResourceAuthor' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ResourceContact' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ResourceLocation' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ResourceStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ResourceDescription' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GradeLevels' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SubjectArea' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ResourceMedia' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:UseAgreement' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AgreementDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ResourceApproval' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ResourceEvaluation' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ResourceComponent' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:LearningStandardItemRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute ref='xml:lang' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='ResourceName' type='string'/>
+
+		<element name='ResourceAuthor' type='string'/>
+
+		<element name='ResourceContact'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Name' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Address' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Email' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+		<element name='ResourceLocation'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='ReferenceType' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='ResourceStatus' type='string'/>
+
+		<element name='ResourceDescription' type='string'/>
+
+		<element name='ResourceMedia' type='string'/>
+
+		<element name='UseAgreement' type='string'/>
+
+		<element name='AgreementDate' type='sif:DateOrEmptyType'/>
+
+		<element name='ResourceApproval'>
+			<complexType>
+				<sequence>
+					<element ref='sif:ApprovalOrganization' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:ApprovalDate' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='ApprovalOrganization' type='string'/>
+
+		<element name='ResourceEvaluation'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:EvaluationDate' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Name' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='EvaluationRefId' type='sif:RefIdOrEmptyType' use='required'/>
+			</complexType>
+		</element>
+
+		<element name='ResourceComponent'>
+			<complexType>
+				<sequence>
+					<element ref='sif:ComponentName' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:ComponentReference' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:ComponentDescription' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:ResourceStrategy' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:ObjectRefId' minOccurs='0' maxOccurs='unbounded'/>
+				</sequence>
+				<attribute name='ResourceComponentRefId' type='sif:RefIdOrEmptyType' use='required'/>
+			</complexType>
+		</element>
+
+			<element name='ComponentName' type='string'/>
+
+			<element name='ComponentReference' type='string'/>
+
+			<element name='ComponentDescription' type='string'/>
+
+			<element name='ResourceStrategy' type='string'/>
+
+</schema>

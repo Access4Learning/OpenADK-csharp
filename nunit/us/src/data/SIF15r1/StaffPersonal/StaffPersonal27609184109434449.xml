@@ -1,0 +1,1423 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>707E49DE4523418C8FB2DBDA0E333B7E</SIF_MsgId>
+      <SIF_Date>20050518</SIF_Date>
+      <SIF_Time Zone="UTC-05:00">14:32:27</SIF_Time>
+      <SIF_Security>
+        <SIF_SecureChannel>
+          <SIF_AuthenticationLevel>0</SIF_AuthenticationLevel>
+          <SIF_EncryptionLevel>0</SIF_EncryptionLevel>
+        </SIF_SecureChannel>
+      </SIF_Security>
+      <SIF_SourceId>SIS2000</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>85BF415194E5405DA691458E5B70CDCC</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData><StaffPersonal RefId="9552E62B52A44F4BA09CFFD211A0FC56">
+  <StatePrId>107</StatePrId>
+  <OtherId Type="07">107</OtherId>
+  <Name Type="02">
+    <LastName>xxx</LastName>
+    <FirstName>ReNae</FirstName>
+  </Name>
+  <Email Type="Primary">rm8685@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="04C1E42295A54DDF9D0606A249CF81AF">
+  <StatePrId>56</StatePrId>
+  <OtherId Type="07">56</OtherId>
+  <Name Type="02">
+    <LastName>Motta</LastName>
+    <FirstName>Kip</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">kmotta@kipmotta.com</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>647 Calamity Dr.</Line1>
+      <Line2 />
+    </Street>
+    <City>Fish Haven</City>
+    <StatePr Code="ID" />
+    <PostalCode>83287</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359453030</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="70962571345C477B97C758F69588D84E">
+  <StatePrId>67</StatePrId>
+  <OtherId Type="07">67</OtherId>
+  <Name Type="02">
+    <LastName>Webb</LastName>
+    <FirstName>Kathy</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">kwebb@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <BirthDate>20481228</BirthDate>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>100 North Bear Lake Blvd</Line1>
+      <Line2 />
+    </Street>
+    <City>Garden City</City>
+    <StatePr Code="UT" />
+    <PostalCode>84028</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06" />
+</StaffPersonal><StaffPersonal RefId="F3E557E2015044AA90B74BF7FE4445C1">
+  <StatePrId>105</StatePrId>
+  <OtherId Type="07">105</OtherId>
+  <Name Type="02">
+    <LastName>Johnson</LastName>
+    <FirstName>Kathy</FirstName>
+  </Name>
+  <Email Type="Primary">kjohnson@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="801E843D564C48F98C4F6D925B303928">
+  <StatePrId>106</StatePrId>
+  <OtherId Type="07">106</OtherId>
+  <Name Type="02">
+    <LastName>Motta</LastName>
+    <FirstName>Joanne</FirstName>
+  </Name>
+  <Email Type="Primary">mjoanne@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="B5B5DD38B4C24E5EB9584382C58237D5">
+  <StatePrId>108</StatePrId>
+  <OtherId Type="07">108</OtherId>
+  <Name Type="02">
+    <LastName>Negus</LastName>
+    <FirstName>Elaine</FirstName>
+  </Name>
+  <Email Type="Primary">en6045@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="B8074B08C0B54EC08F759E589C285113">
+  <StatePrId>110</StatePrId>
+  <OtherId Type="07">110</OtherId>
+  <Name Type="02">
+    <LastName>Weston</LastName>
+    <FirstName>Holly</FirstName>
+  </Name>
+  <Email Type="Primary">hweston@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="F5E8A3B32C624F079E2C57A6B6FE4E97">
+  <StatePrId>116</StatePrId>
+  <OtherId Type="07">116</OtherId>
+  <Name Type="02">
+    <LastName>Johnson</LastName>
+    <FirstName>Charlotte</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 126</Line1>
+      <Line2 />
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359463248</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="E9448798F0904CD3A22F69806D862E28">
+  <StatePrId>117</StatePrId>
+  <OtherId Type="07">117</OtherId>
+  <Name Type="02">
+    <LastName>Pugmire</LastName>
+    <FirstName>Sharon</FirstName>
+  </Name>
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 64</Line1>
+      <Line2 />
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359463430</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="13332BE7C1B243239D6715845ECC8156">
+  <StatePrId>164</StatePrId>
+  <OtherId Type="07">164</OtherId>
+  <Name Type="02">
+    <LastName>rms</LastName>
+    <FirstName>secretary</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>U</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="118FF9D671614F50AE0E391FF7FD63BF">
+  <StatePrId>74</StatePrId>
+  <OtherId Type="07">74</OtherId>
+  <Name Type="02">
+    <LastName>xxxx</LastName>
+    <FirstName>Carol</FirstName>
+  </Name>
+  <Email Type="Primary">garrisonc@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="009FDE7E958F46FEB40EA2645AE8A5AA">
+  <StatePrId>75</StatePrId>
+  <OtherId Type="07">75</OtherId>
+  <Name Type="02">
+    <LastName>xxxx</LastName>
+    <FirstName>Farren</FirstName>
+  </Name>
+  <Email Type="Primary">haderlief@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="074F39002C914CDF936FB08160814D81">
+  <StatePrId>77</StatePrId>
+  <OtherId Type="07">77</OtherId>
+  <Name Type="02">
+    <LastName>RHS Cheerleaders</LastName>
+    <FirstName />
+  </Name>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="FFD8729FCA974A7283158A73783D960D">
+  <StatePrId>90</StatePrId>
+  <OtherId Type="07">90</OtherId>
+  <Name Type="02">
+    <LastName>xxx</LastName>
+    <FirstName>Kelly</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">westonk@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="8C39FF67A5504CC7A5DA49FD5F6A13A2">
+  <StatePrId>65</StatePrId>
+  <OtherId Type="07">65</OtherId>
+  <Name Type="02">
+    <LastName>Lamborn</LastName>
+    <FirstName>Dale</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">dlamborn@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="F4AFA8006D4F4BDE8A41DA2CC75B3B97">
+  <StatePrId>68</StatePrId>
+  <OtherId Type="07">68</OtherId>
+  <Name Type="02">
+    <LastName>Allen</LastName>
+    <FirstName>Karla</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">kallen@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="1147192ECFCC49829BCD16274DBBC904">
+  <StatePrId>71</StatePrId>
+  <OtherId Type="07">71</OtherId>
+  <Name Type="02">
+    <LastName>Davis</LastName>
+    <FirstName>Sherrie</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">sdavis@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="1" />
+    <CountryOfResidency Code="US" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="171D29034D5D4646A4D25A696881CEBC">
+  <StatePrId>72</StatePrId>
+  <OtherId Type="07">72</OtherId>
+  <Name Type="02">
+    <LastName>Eborn</LastName>
+    <FirstName>Reed</FirstName>
+  </Name>
+  <Email Type="Primary">reborn@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="608C5ED025144CF88DF31C4980B2E7A6">
+  <StatePrId>73</StatePrId>
+  <OtherId Type="07">73</OtherId>
+  <Name Type="02">
+    <LastName>Ferguson</LastName>
+    <FirstName>Scott</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">fergs@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="E4AC56455C174EC5A32886BA63A4D92A">
+  <StatePrId>76</StatePrId>
+  <OtherId Type="07">76</OtherId>
+  <Name Type="02">
+    <LastName>Hatch</LastName>
+    <FirstName>Jane</FirstName>
+  </Name>
+  <Email Type="Primary">hatchj@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="7B817EFED14240C5955C6AB4646E18CB">
+  <StatePrId>78</StatePrId>
+  <OtherId Type="07">78</OtherId>
+  <Name Type="02">
+    <LastName>Hurd</LastName>
+    <FirstName>Blair</FirstName>
+  </Name>
+  <Email Type="Primary">hurdb@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="76210F1898214A37ABB1F97D50D0D39E">
+  <StatePrId>79</StatePrId>
+  <OtherId Type="07">79</OtherId>
+  <Name Type="02">
+    <LastName>Kay</LastName>
+    <FirstName>Lonnie</FirstName>
+  </Name>
+  <Email Type="Primary">lkay@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="B1A5BAF4B51E4F8187E1BB3FBEBCACA3">
+  <StatePrId>82</StatePrId>
+  <OtherId Type="07">82</OtherId>
+  <Name Type="02">
+    <LastName>Leifson</LastName>
+    <FirstName>Robert</FirstName>
+  </Name>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="C3069BFA016E46C98A1669EA65D8573E">
+  <StatePrId>84</StatePrId>
+  <OtherId Type="07">84</OtherId>
+  <Name Type="02">
+    <LastName>Peart</LastName>
+    <FirstName>Becky</FirstName>
+  </Name>
+  <Email Type="Primary">peartb@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="953FB2DDE7D54CDDB4BB188D0B54B0D5">
+  <StatePrId>85</StatePrId>
+  <OtherId Type="07">85</OtherId>
+  <Name Type="02">
+    <LastName>xxxxx</LastName>
+    <FirstName>Cynthia</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">seiercyn@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="62F3F1E33E114AA8A414344FC0D6B000">
+  <StatePrId>87</StatePrId>
+  <OtherId Type="07">87</OtherId>
+  <Name Type="02">
+    <LastName>Smith</LastName>
+    <FirstName>Glenn</FirstName>
+  </Name>
+  <Email Type="Primary">smithg@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="501504854F414CFE9E300329469A7CE5">
+  <StatePrId>88</StatePrId>
+  <OtherId Type="07">88</OtherId>
+  <Name Type="02">
+    <LastName>Stuart</LastName>
+    <FirstName>Cindy</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">stuartc@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="E2A478D10EB44337AB1831401D9C9AB8">
+  <StatePrId>89</StatePrId>
+  <OtherId Type="07">89</OtherId>
+  <Name Type="02">
+    <LastName>Webb</LastName>
+    <FirstName>Paul</FirstName>
+  </Name>
+  <Email Type="Primary">pwebb@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="1648FA863A98424B9D30A0F21049B09F">
+  <StatePrId>126</StatePrId>
+  <OtherId Type="07">126</OtherId>
+  <Name Type="02">
+    <LastName>rhs</LastName>
+    <FirstName>secretary</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>U</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="4CC569CFCF7846BA8767C422ED508259">
+  <StatePrId>144</StatePrId>
+  <OtherId Type="07">144</OtherId>
+  <Name Type="02">
+    <LastName>Petersen</LastName>
+    <FirstName>Jason</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>U</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="AC82D8B687ED44EBA36F1E789C975F18">
+  <StatePrId>145</StatePrId>
+  <OtherId Type="07">145</OtherId>
+  <Name Type="02">
+    <LastName>Pugmire</LastName>
+    <FirstName>Keri</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>U</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="01DCAC7BF6BE4083AC14C7654EEDF4C5">
+  <StatePrId>149</StatePrId>
+  <OtherId Type="07">149</OtherId>
+  <Name Type="02">
+    <LastName>Spencer</LastName>
+    <FirstName>Terry</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>U</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="81ACB898605847A0B6802CFC83601AE3">
+  <StatePrId>155</StatePrId>
+  <OtherId Type="07">155</OtherId>
+  <Name Type="02">
+    <LastName>Larsen</LastName>
+    <FirstName>Rick</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="3CFA3CB46D694C75B9B4B7D4C6522251">
+  <StatePrId>160</StatePrId>
+  <OtherId Type="07">160</OtherId>
+  <Name Type="02">
+    <LastName>Birch</LastName>
+    <FirstName>Glenn</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="81DE9C65CF1D46A9A07718DCCDBC1D2C">
+  <StatePrId>52</StatePrId>
+  <OtherId Type="07">52</OtherId>
+  <Name Type="02">
+    <LastName>xxxxx</LastName>
+    <FirstName>Bess</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">bhuefner@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box</Line1>
+      <Line2 />
+    </Street>
+    <City>Garden City</City>
+    <StatePr Code="UT" />
+    <PostalCode>84028</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359463277</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="E5E9F06291CE4ECFA22AB33AE8A614A9">
+  <StatePrId>53</StatePrId>
+  <OtherId Type="07">53</OtherId>
+  <Name Type="02">
+    <LastName>Floyd</LastName>
+    <FirstName>Jane</FirstName>
+  </Name>
+  <Email Type="Primary">jane@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 4</Line1>
+      <Line2 />
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359463453</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="662C1A72B7D64E50ABA189B447F88104">
+  <StatePrId>54</StatePrId>
+  <OtherId Type="07">54</OtherId>
+  <Name Type="02">
+    <LastName>xxxxx</LastName>
+    <FirstName>Jean</FirstName>
+  </Name>
+  <Title />
+  <Demographics>
+    <Ethnicity Type="NA" Code="" />
+    <Gender />
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 33</Line1>
+      <Line2 />
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359462993</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="AD9330A500F748158801B5DFD0E2CFF9">
+  <StatePrId>55</StatePrId>
+  <OtherId Type="07">55</OtherId>
+  <Name Type="02">
+    <LastName>xxxx</LastName>
+    <FirstName>Margie</FirstName>
+  </Name>
+  <Email Type="Primary">mfloyd@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="CF9FEBD30B174024988A76ADE75C87EC">
+  <StatePrId>47</StatePrId>
+  <OtherId Type="07">47</OtherId>
+  <Name Type="02">
+    <LastName>Earley</LastName>
+    <FirstName>Connie</FirstName>
+  </Name>
+  <Email Type="Primary">cearley@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 212</Line1>
+      <Line2 />
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359468631</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="FE6DF931A5DC4E78BD1A123597966DD7">
+  <StatePrId>48</StatePrId>
+  <OtherId Type="07">48</OtherId>
+  <Name Type="02">
+    <LastName>Floyd</LastName>
+    <FirstName>Craig</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">cfloyd@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 4</Line1>
+      <Line2 />
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359463453</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="A02BFF18BA1040BFBA56214364EC07D2">
+  <StatePrId>50</StatePrId>
+  <OtherId Type="07">50</OtherId>
+  <Name Type="02">
+    <LastName>Johnson</LastName>
+    <FirstName>Delora</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">djohnson@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 116</Line1>
+      <Line2 />
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359463294</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="75934A1611C848B18A163398E9839D4A">
+  <StatePrId>57</StatePrId>
+  <OtherId Type="07">57</OtherId>
+  <Name Type="02">
+    <LastName>Muirbrook</LastName>
+    <FirstName>Travis</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">tmuirbrook@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box  91</Line1>
+      <Line2 />
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359462783</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="8246EE2B8BC84825BCB9AABA3F752C27">
+  <StatePrId>58</StatePrId>
+  <OtherId Type="07">58</OtherId>
+  <Name Type="02">
+    <LastName>Robinson</LastName>
+    <FirstName>Jan</FirstName>
+  </Name>
+  <Email Type="Primary">jsrobinson@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 54</Line1>
+      <Line2 />
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359462906</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="6A3AA38350154BD6B75171E78D4EF838">
+  <StatePrId>60</StatePrId>
+  <OtherId Type="07">60</OtherId>
+  <Name Type="02">
+    <LastName>Williamson</LastName>
+    <FirstName>Mike</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">mlw@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 23</Line1>
+      <Line2 />
+    </Street>
+    <City>Laketown</City>
+    <StatePr Code="UT" />
+    <PostalCode>84038</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359468623</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="5177AA31078144409800EF75086C1C27">
+  <StatePrId>69</StatePrId>
+  <OtherId Type="07">69</OtherId>
+  <Name Type="02">
+    <LastName>Groll</LastName>
+    <FirstName>Justin</FirstName>
+  </Name>
+  <Email Type="Primary">grollj@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>M</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 54</Line1>
+      <Line2 />
+    </Street>
+    <City>Randolph</City>
+    <StatePr Code="UT" />
+    <PostalCode>84064</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4357935144</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="3EB7281F676948E0B01EF6ED0B4C4320">
+  <StatePrId>123</StatePrId>
+  <OtherId Type="07">123</OtherId>
+  <Name Type="02">
+    <LastName>Nielson</LastName>
+    <FirstName>Doreen</FirstName>
+  </Name>
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>U</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 54</Line1>
+      <Line2 />
+    </Street>
+    <City>Garden City</City>
+    <StatePr Code="UT" />
+    <PostalCode>84028</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4359468830</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="08BC386D5DA746A5BB9FBDE095535127">
+  <StatePrId>142</StatePrId>
+  <OtherId Type="07">142</OtherId>
+  <Name Type="02">
+    <LastName>Norris</LastName>
+    <FirstName>Jacilyn</FirstName>
+  </Name>
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>U</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1>P O Box 235</Line1>
+      <Line2 />
+    </Street>
+    <City>Randolph</City>
+    <StatePr Code="UT" />
+    <PostalCode>84064</PostalCode>
+  </Address>
+  <PhoneNumber Format="NA" Type="06">4357936475</PhoneNumber>
+</StaffPersonal><StaffPersonal RefId="DF15F033C716457B9AEFB0B6317BE890">
+  <StatePrId>153</StatePrId>
+  <OtherId Type="07">153</OtherId>
+  <Name Type="02">
+    <LastName>Larsen</LastName>
+    <FirstName>ChaRee</FirstName>
+  </Name>
+  <Email Type="Primary">larsenc@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+    <BirthDate>19670414</BirthDate>
+    <CountryOfCitizenship Code="1" />
+    <CountryOfResidency Code="US" />
+    <MaritalStatus>M</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="E5A727C51504432CAB3BDC29CD7C7E74">
+  <StatePrId>166</StatePrId>
+  <OtherId Type="07">166</OtherId>
+  <Name Type="02">
+    <LastName>England</LastName>
+    <FirstName>Connie</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="7AB9CB81DC1D489CA1997A020C840A4B">
+  <StatePrId>sa</StatePrId>
+  <OtherId Type="07">sa</OtherId>
+  <Name Type="02">
+    <LastName>Administrator</LastName>
+    <FirstName>System</FirstName>
+  </Name>
+  <Title />
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>U</Gender>
+    <CountryOfCitizenship Code="1" />
+    <CountryOfResidency Code="US" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <PostalCode>91</PostalCode>
+  </Address>
+</StaffPersonal><StaffPersonal RefId="146F5CDF09024B5CAA65FB2CD361C377">
+  <StatePrId>97</StatePrId>
+  <OtherId Type="07">97</OtherId>
+  <Name Type="02">
+    <LastName>Weston</LastName>
+    <FirstName>Sue</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">westons@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="FC83413A3434453AA1F91C19C7E804ED">
+  <StatePrId>98</StatePrId>
+  <OtherId Type="07">98</OtherId>
+  <Name Type="02">
+    <LastName>Cornia</LastName>
+    <FirstName>Linda</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">lcornia@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="548242C0DA884942B9AC72CDC50BC399">
+  <StatePrId>99</StatePrId>
+  <OtherId Type="07">99</OtherId>
+  <Name Type="02">
+    <LastName>Hoffman</LastName>
+    <FirstName>LouDawn</FirstName>
+  </Name>
+  <Email Type="Primary">hoffmanl@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="2117AF50DB8342AEA5C49D935E282A43">
+  <StatePrId>100</StatePrId>
+  <OtherId Type="07">100</OtherId>
+  <Name Type="02">
+    <LastName>Cornia</LastName>
+    <FirstName>Taralyn</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">corniat@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="BB4681F92A5245AC83CC24C4666E8182">
+  <StatePrId>101</StatePrId>
+  <OtherId Type="07">101</OtherId>
+  <Name Type="02">
+    <LastName>Hoffman</LastName>
+    <FirstName>Renee</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">hoffmanr@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="9501151FB4FF4C59B6A34678A663BE56">
+  <StatePrId>102</StatePrId>
+  <OtherId Type="07">102</OtherId>
+  <Name Type="02">
+    <LastName>Ward</LastName>
+    <FirstName>Calvin</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">wardc@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="D6FF13D25F1941709C0C04ABE3BDA781">
+  <StatePrId>103</StatePrId>
+  <OtherId Type="07">103</OtherId>
+  <Name Type="02">
+    <LastName>Digerness</LastName>
+    <FirstName>Nancy</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">digernessn@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="B8632D14E8D34706B1346BE49C6A5D2B">
+  <StatePrId>104</StatePrId>
+  <OtherId Type="07">104</OtherId>
+  <Name Type="02">
+    <LastName>Brown</LastName>
+    <FirstName>Ashley</FirstName>
+  </Name>
+  <Title />
+  <Email Type="Primary">browna@m.rich.k12.ut.us</Email>
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>M</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="2E5939BDBED2411A94FC03F52C8E4C9D">
+  <StatePrId>113</StatePrId>
+  <OtherId Type="07">113</OtherId>
+  <Name Type="02">
+    <LastName>Hellstrom</LastName>
+    <FirstName>Janet</FirstName>
+  </Name>
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="7" />
+    <Gender>U</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal><StaffPersonal RefId="E387AABB24A548AB980A1239F604A85F">
+  <StatePrId>114</StatePrId>
+  <OtherId Type="07">114</OtherId>
+  <Name Type="02">
+    <LastName>Kennedy</LastName>
+    <FirstName>Wendy</FirstName>
+  </Name>
+  <Email Type="Primary" />
+  <Demographics>
+    <Ethnicity Type="NA" Code="C" />
+    <Gender>F</Gender>
+    <CountryOfCitizenship Code="ZZ" />
+    <CountryOfResidency Code="ZZ" />
+    <MaritalStatus>_</MaritalStatus>
+  </Demographics>
+  <Address Type="01">
+    <Street>
+      <Line1 />
+      <Line2 />
+    </Street>
+    <City />
+    <StatePr Code="" />
+    <PostalCode />
+  </Address>
+</StaffPersonal></SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

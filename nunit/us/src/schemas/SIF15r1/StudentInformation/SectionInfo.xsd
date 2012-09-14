@@ -1,0 +1,147 @@
+<!--
+
+Object: SectionInfo
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2003-01-15 Mark Reichert
+- Created object per SIS group.
+
+2003-06-09 Mark Reichert
+- Changed RefIdType to RefIdOrEmptyType
+
+2003-06-09 Mark Reichert
+- Changed RefIdType to RefIdOrEmptyType
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.8.6 SectionInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='SectionInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:ScheduleInfo' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:MediumOfInstruction' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LanguageOfInstruction' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LocationOfInstruction' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolCourseInfoOverride' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='SchoolCourseInfoRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='ScheduleInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Teacher' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SectionRoom' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:MeetingTime' minOccurs='0' maxOccurs='unbounded'/>
+			</sequence>
+			<attribute name='TermInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='Teacher'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='StaffPersonalRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='SectionRoom'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='RoomInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+	<element name='MediumOfInstruction'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='LanguageOfInstruction' type='string'/>
+
+	<element name='LocationOfInstruction'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='SchoolCourseInfoOverride'>
+		<complexType>
+			<sequence>
+				<element ref='sif:CourseCodeOverride' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StateCourseCodeOverride' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:DistrictCourseCodeOverride' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SubjectAreaOverride' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CourseTitleOverride' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:InstructionalLevelOverride' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CourseCreditsOverride' minOccurs='0' maxOccurs='unbounded'/>
+			</sequence>
+			<attribute name='Override' type='sif:YesOrNoOrEmptyType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='CourseCodeOverride' type='string'/>
+
+		<element name='StateCourseCodeOverride' type='string'/>
+
+		<element name='DistrictCourseCodeOverride' type='string'/>
+
+		<element name='SubjectAreaOverride'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='CourseTitleOverride' type='string'/>
+
+		<element name='InstructionalLevelOverride' type='string'/>
+
+		<element name='CourseCreditsOverride'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>
+

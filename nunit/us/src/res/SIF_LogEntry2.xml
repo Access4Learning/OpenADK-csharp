@@ -1,0 +1,112 @@
+﻿<SIF_Message xmlns="http://www.sifinfo.org/infrastructure/1.x" Version="1.5r1">
+	<SIF_Ack>
+		<SIF_Header>
+			<SIF_MsgId>14FAD479DCF3414D41D5B4779E3F202F</SIF_MsgId>
+			<SIF_Date>20060803</SIF_Date>
+			<SIF_Time Zone="UTC-04:00">08:33:32</SIF_Time>
+			<SIF_SourceId>ECOT_Dev</SIF_SourceId>
+		</SIF_Header>
+		<SIF_OriginalSourceId>MyTestAgentCfg</SIF_OriginalSourceId>
+		<SIF_OriginalMsgId>5E7D267E97BC4EDC89BDD2AB7D99C6B9</SIF_OriginalMsgId>
+		<SIF_Status>
+			<SIF_Code>0</SIF_Code>
+			<SIF_Data>
+				<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+					<SIF_Event>
+						<SIF_Header>
+							<SIF_MsgId>5CD187DA73214E3496C2D046669B356A</SIF_MsgId>
+							<SIF_Date>20060802</SIF_Date>
+							<SIF_Time Zone="UTC-04:00">08:43:21</SIF_Time>
+							<SIF_Security>
+								<SIF_SecureChannel>
+									<SIF_AuthenticationLevel>0</SIF_AuthenticationLevel>
+									<SIF_EncryptionLevel>0</SIF_EncryptionLevel>
+								</SIF_SecureChannel>
+							</SIF_Security>
+							<SIF_SourceId>StudentPersonalViewer</SIF_SourceId>
+						</SIF_Header>
+						<SIF_ObjectData>
+							<SIF_EventObject ObjectName="SIF_LogEntry" Action="Add">
+								<SIF_LogEntry Source="Agent" LogLevel="Error">
+									<SIF_LogEntryHeader>
+										<SIF_Header>
+											<SIF_MsgId>5CD187DA73214E3496C2D046669B356A</SIF_MsgId>
+											<SIF_Date>20060802</SIF_Date>
+											<SIF_Time Zone="UTC-04:00">08:43:21</SIF_Time>
+											<SIF_Security>
+												<SIF_SecureChannel>
+													<SIF_AuthenticationLevel>0</SIF_AuthenticationLevel>
+													<SIF_EncryptionLevel>0</SIF_EncryptionLevel>
+												</SIF_SecureChannel>
+											</SIF_Security>
+											<SIF_SourceId>StudentPersonalViewer</SIF_SourceId>
+										</SIF_Header>
+									</SIF_LogEntryHeader>
+									<SIF_OriginalHeader>
+										<SIF_Header>
+											<SIF_MsgId>195BFDB1EF0B4667A1C73391A96B8664</SIF_MsgId>
+											<SIF_Date>20060802</SIF_Date>
+											<SIF_Time Zone="UTC-04:00">08:42:30</SIF_Time>
+											<SIF_Security>
+												<SIF_SecureChannel>
+													<SIF_AuthenticationLevel>0</SIF_AuthenticationLevel>
+													<SIF_EncryptionLevel>0</SIF_EncryptionLevel>
+												</SIF_SecureChannel>
+											</SIF_Security>
+											<SIF_SourceId>MyTestAgentCfg</SIF_SourceId>
+										</SIF_Header>
+									</SIF_OriginalHeader>
+									<SIF_Category>3</SIF_Category>
+									<SIF_Code>2</SIF_Code>
+									<SIF_ApplicationCode />
+									<SIF_Desc>Failed to add student to LMS.</SIF_Desc>
+									<SIF_ExtendedDesc />
+									<SIF_LogObject ObjectName="StudentPersonal">
+										<StudentPersonal RefId="CA14BBB48CB74DDF826D1E0F795FA7FF">
+											<StatePrId>R999999999</StatePrId>
+											<OtherId Type="05">66666</OtherId>
+											<Name>
+												<LastName>LastName</LastName>
+												<FirstName>FirstName</FirstName>
+												<MiddleName>MiddleName</MiddleName>
+											</Name>
+											<Demographics>
+												<Gender>M</Gender>
+												<BirthDate>06/27/1999</BirthDate>
+											</Demographics>
+											<StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+												<Address Type="01">
+													<Street>
+														<Line1>666 Mockingbird Lane</Line1>
+													</Street>
+													<City>Columbus</City>
+													<County>Franklin</County>
+													<StatePr Code="OH" />
+													<Country Code="US" />
+													<PostalCode>43017</PostalCode>
+												</Address>
+											</StudentAddress>
+											<PhoneNumber Format="NA" Type="06">(614) 793-3337</PhoneNumber>
+											<SIF_ExtendedElements>
+												<SIF_ExtendedElement Name="EEEducationUnit">E</SIF_ExtendedElement>
+												<SIF_ExtendedElement Name="EERaSEPID">66667</SIF_ExtendedElement>
+												<SIF_ExtendedElement Name="EESEPLogin">PMF66666</SIF_ExtendedElement>
+												<SIF_ExtendedElement Name="EEStatus">ENROLLED</SIF_ExtendedElement>
+												<SIF_ExtendedElement Name="EEAdmissionDate">9/1/2005</SIF_ExtendedElement>
+												<SIF_ExtendedElement Name="EEEnrollmentDate">9/5/2005</SIF_ExtendedElement>
+												<SIF_ExtendedElement Name="EEGradelevel">10</SIF_ExtendedElement>
+												<SIF_ExtendedElement Name="EE105">6</SIF_ExtendedElement>
+												<SIF_ExtendedElement Name="EEDecIndicator">Y</SIF_ExtendedElement>
+												<SIF_ExtendedElement Name="EETargetTypeID">1</SIF_ExtendedElement>
+											</SIF_ExtendedElements>
+										</StudentPersonal>
+									</SIF_LogObject>
+								</SIF_LogEntry>
+							</SIF_EventObject>
+						</SIF_ObjectData>
+					</SIF_Event>
+				</SIF_Message>
+			</SIF_Data>
+		</SIF_Status>
+	</SIF_Ack>
+</SIF_Message>

@@ -1,0 +1,102 @@
+<!--
+
+Object: StudentTransportInfo
+
+Owner: Transporation and Geographic Information Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated namespace
+
+2003-06-09 Mark Reichert
+- Changed RefIdType to RefIdOrEmptyType
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.9.6 StudentTransportInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StudentTransportInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Eligibility' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:HomeBusRouteDetail' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TransferPoint' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SchoolBusRouteDetail' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='StudentPersonalRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='Type' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Inbound'/>
+						<enumeration value='Outbound'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+			<attribute name='DayOfWeek' type='string' use='required'/>
+			<attribute name='SchoolInfoRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='Eligibility'>
+		<simpleType>
+			<restriction base='string'>
+				<enumeration value='Bus'/>
+				<enumeration value='Walk'/>
+				<enumeration value='BusHazard'/>
+				<enumeration value='BusOutOfAttendance'/>
+				<enumeration value='ParentPay'/>
+				<enumeration value='Unknown'/>
+				<enumeration value=''/>
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name='HomeBusRouteDetail'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='BusRouteDetailRefId' type='sif:RefIdOrEmptyType' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='TransferPoint'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='EmbarkBusRouteDetailRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					<attribute name='DisembarkBusRouteDetailRefId' type='sif:RefIdOrEmptyType' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='SchoolBusRouteDetail'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='BusRouteDetailRefId' type='sif:RefIdOrEmptyType' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+</schema>

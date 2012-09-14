@@ -1,0 +1,61 @@
+<SIF_ObjectData>
+<FoodserviceItem RefId="EAACAAB117DC11DBAC458E69BC0B4E17">
+  <LocalId>EAACAAB117DC11DBAC458E69BC0B4E17</LocalId>
+  <Description>summer sausage</Description>
+  <ElectronicId Type="Barcode">EAACAAB117DC11DBAC458E69BC0B4E17</ElectronicId>
+  <ItemCategory>7</ItemCategory>
+</FoodserviceItem>
+<FoodserviceItem RefId="EB255D2217DC11DBAC45D96572C9EA73">
+  <LocalId>EB255D2217DC11DBAC45D96572C9EA73</LocalId>
+  <Description>cherry yogurt</Description>
+  <ElectronicId Type="Barcode">EB255D2217DC11DBAC45D96572C9EA73</ElectronicId>
+  <ItemCategory>1</ItemCategory>
+</FoodserviceItem>
+<FoodserviceItem RefId="EB29F10017DC11DBAC45BAAF7FFDF403">
+  <LocalId>EB29F10017DC11DBAC45BAAF7FFDF403</LocalId>
+  <Description>summer sausage</Description>
+  <ElectronicId Type="Barcode">EB29F10017DC11DBAC45BAAF7FFDF403</ElectronicId>
+  <ItemCategory>7</ItemCategory>
+</FoodserviceItem>
+<FoodserviceItem RefId="EB2CFE4217DC11DBAC45BBD487FF8606">
+  <LocalId>EB2CFE4217DC11DBAC45BBD487FF8606</LocalId>
+  <Description>cherry yogurt</Description>
+  <ElectronicId Type="Barcode">EB2CFE4217DC11DBAC45BBD487FF8606</ElectronicId>
+  <ItemCategory>1</ItemCategory>
+</FoodserviceItem>
+<FoodserviceItem RefId="EB31922017DC11DBAC45BFA1A2CB96B2">
+  <LocalId>EB31922017DC11DBAC45BFA1A2CB96B2</LocalId>
+  <Description>cherry yogurt</Description>
+  <ElectronicId Type="Barcode">EB31922017DC11DBAC45BFA1A2CB96B2</ElectronicId>
+  <ItemCategory>1</ItemCategory>
+</FoodserviceItem>
+<FoodserviceItem RefId="EB349F6017DC11DBAC45FA14C7CB8502">
+  <LocalId>EB349F6017DC11DBAC45FA14C7CB8502</LocalId>
+  <Description>cherry yogurt</Description>
+  <ElectronicId Type="Barcode">EB349F6017DC11DBAC45FA14C7CB8502</ElectronicId>
+  <ItemCategory>1</ItemCategory>
+</FoodserviceItem>
+<FoodserviceItem RefId="EB3AB9E017DC11DBAC45DEC5FA779A73">
+  <LocalId>EB3AB9E017DC11DBAC45DEC5FA779A73</LocalId>
+  <Description>cherry yogurt</Description>
+  <ElectronicId Type="Barcode">EB3AB9E017DC11DBAC45DEC5FA779A73</ElectronicId>
+  <ItemCategory>1</ItemCategory>
+</FoodserviceItem>
+<FoodserviceItem RefId="EB3F4DC017DC11DBAC45B728E9404CA7">
+  <LocalId>EB3F4DC017DC11DBAC45B728E9404CA7</LocalId>
+  <Description>mayonnaise</Description>
+  <ElectronicId Type="Barcode">EB3F4DC017DC11DBAC45B728E9404CA7</ElectronicId>
+  <ItemCategory>4</ItemCategory>
+</FoodserviceItem>
+<FoodserviceItem RefId="EB45684217DC11DBAC45FDA0DF52971D">
+  <LocalId>EB45684217DC11DBAC45FDA0DF52971D</LocalId>
+  <Description>pepper</Description>
+  <ElectronicId Type="Barcode">EB45684217DC11DBAC45FDA0DF52971D</ElectronicId>
+  <ItemCategory>2</ItemCategory>
+</FoodserviceItem>
+<FoodserviceItem RefId="EB4EB71217DC11DBAC45C0D9FB7B0BBD">
+  <LocalId>EB4EB71217DC11DBAC45C0D9FB7B0BBD</LocalId>
+  <Description>cherry yogurt</Description>
+  <ElectronicId Type="Barcode">EB4EB71217DC11DBAC45C0D9FB7B0BBD</ElectronicId>
+  <ItemCategory>1</ItemCategory>
+</FoodserviceItem></SIF_ObjectData>

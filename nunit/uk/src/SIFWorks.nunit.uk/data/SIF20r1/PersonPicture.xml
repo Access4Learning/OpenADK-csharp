@@ -1,0 +1,8 @@
+﻿<PersonPicture PersonRefId="D3E34B359D75101A8C3D00AA001A1652">
+  <SIF_RefObjectList>
+    <SIF_RefObject>LearnerPersonal</SIF_RefObject>
+  </SIF_RefObjectList>
+  <SchoolYear>2007</SchoolYear>
+  <PictureSource Type="URL">http://www.schoolsite.com/pictures/1999/1234.jpg</PictureSource>
+  <OKToPublish>Yes</OKToPublish>
+</PersonPicture>

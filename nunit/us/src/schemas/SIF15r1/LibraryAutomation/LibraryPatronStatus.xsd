@@ -1,0 +1,178 @@
+<!--
+
+Object: LibraryPatronStatus
+
+Owner: Library Automation Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated namespace
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.7.1 LibraryPatronStatus -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='LibraryPatronStatus'>
+		<complexType>
+			<sequence>
+				<element ref='sif:ElectronicId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:CircTx' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Message' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:NumCheckouts' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:NumOverdues' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:NumFines' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FineAmount' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:NumRefunds' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:RefundAmount' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='LibraryType' type='string' use='required'/>
+			<attribute name='SifRefIdType' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='StudentPersonal'/>
+						<enumeration value='StaffPersonal'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+			<attribute name='SifRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='CircTx'>
+		<complexType>
+			<sequence>
+				<element ref='sif:ItemTitle' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ItemElectronicId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CallNumber' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CopyPrice' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:DueInfo' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FineInfo' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:HoldInfo' minOccurs='0' maxOccurs='unbounded'/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name='ItemTitle' type='string'/>
+
+	<element name='ItemElectronicId'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Type' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Barcode'/>
+								<enumeration value='Magstripe'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='CallNumber' type='string'/>
+
+	<element name='CopyPrice' type='string'/>
+
+	<element name='DueInfo'>
+		<complexType>
+			<sequence>
+				<element name='Date' type='sif:DateOrEmptyType' minOccurs='0' maxOccurs='1'/>
+				<element name='Time' type='sif:TimeWithZoneOrEmptyType' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name='FineInfo'>
+		<complexType>
+			<sequence>
+				<element name='Date' type='sif:DateOrEmptyType' minOccurs='0' maxOccurs='1'/>
+				<element name='Time' type='sif:TimeWithZoneOrEmptyType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Amount' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='Type' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Damaged'/>
+						<enumeration value='Lost'/>
+						<enumeration value='Overdue'/>
+						<enumeration value='Refund'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+		</complexType>
+	</element>
+
+	<element name='Amount' type='string'/>
+
+	<element name='HoldInfo'>
+		<complexType>
+			<sequence>
+				<element name='DatePlaced' type='sif:DateOrEmptyType' minOccurs='0' maxOccurs='1'/>
+				<element name='DateNeeded' type='sif:DateOrEmptyType' minOccurs='0' maxOccurs='1'/>
+				<element name='MadeAvailable' type='sif:DateOrEmptyType' minOccurs='0' maxOccurs='1'/>
+				<element name='Expires' type='sif:DateOrEmptyType' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='Type' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Ready'/>
+						<enumeration value='NotReady'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+		</complexType>
+	</element>
+
+	<element name='Message'>
+		<complexType>
+			<sequence>
+				<element name='Date' type='sif:DateOrEmptyType' minOccurs='0' maxOccurs='1'/>
+				<element name='Time' type='sif:TimeWithZoneOrEmptyType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Text' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='Priority' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Low'/>
+						<enumeration value='Normal'/>
+						<enumeration value='Urgent'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+		</complexType>
+	</element>
+
+	<element name='Text' type='string'/>
+
+	<element name='NumCheckouts' type='string'/>
+
+	<element name='NumOverdues' type='string'/>
+
+	<element name='NumFines' type='string'/>
+
+	<element name='FineAmount' type='string'/>
+
+	<element name='NumRefunds' type='string'/>
+
+	<element name='RefundAmount' type='string'/>
+
+</schema>
