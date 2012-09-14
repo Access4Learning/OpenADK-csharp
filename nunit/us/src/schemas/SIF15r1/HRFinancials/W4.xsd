@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: W4
+
+Owner: HR/Financials Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.5.18 W4 -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='W4'>
+		<complexType>
+			<sequence>
+				<element ref='sif:W4Date' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:MaritalStatusRate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FedAllowancesNumber' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StateAllowancesNumber' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StatePr' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Exempt' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='EmployeePersonalRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='W4Date' type='sif:DateOrEmptyType'/>
+
+		<element name='MaritalStatusRate'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Married'/>
+									<enumeration value='Single'/>
+									<enumeration value='MarriedSingleRate'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='FedAllowancesNumber' type='string'/>
+
+		<element name='StateAllowancesNumber' type='string'/>
+
+		<element name='Exempt'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Yes'/>
+									<enumeration value='No'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>

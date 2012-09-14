@@ -1,0 +1,58 @@
+<!--
+
+Object: BusRouteDetail
+
+Owner: Transporation and Geographic Information Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated namespace
+
+2003-06-09 Mark Reichert
+- Changed RefIdType to RefIdOrEmptyType
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.9.3 BusRouteDetail -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='BusRouteDetail'>
+		<complexType>
+			<sequence>
+				<element ref='sif:BusStop' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ArrivalTime' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='BusRouteInfoRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='BusStop'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='BusStopInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='ArrivalTime' type='sif:TimeWithZoneOrEmptyType'/>
+
+</schema>
+

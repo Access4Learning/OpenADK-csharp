@@ -1,0 +1,31 @@
+<SIF_ObjectData>
+<RoomType RefId="C1FD529017DC11DBAC458AF3579CC9AE" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Description>library</Description>
+</RoomType>
+<RoomType RefId="C1FED93017DC11DBAC45FE1E41355B74" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Description>gymnasium</Description>
+</RoomType>
+<RoomType RefId="C2005FD017DC11DBAC4581ECDD0244FC" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Description>lab</Description>
+</RoomType>
+<RoomType RefId="C201E67017DC11DBAC45F3C41AEA38BB" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Description>cafeteria</Description>
+</RoomType>
+<RoomType RefId="C2036D1017DC11DBAC45E986EF44BC04" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Description>auditorium</Description>
+</RoomType>
+<RoomType RefId="C204F3B017DC11DBAC458C5F3F7136E1" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Description>lounge</Description>
+</RoomType>
+<RoomType RefId="C2067A5117DC11DBAC45B5157D0CF1FB" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Description>office</Description>
+</RoomType>
+<RoomType RefId="C20800F117DC11DBAC4599CC969C24A7" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Description>auditorium</Description>
+</RoomType>
+<RoomType RefId="C209879017DC11DBAC45BE65EC89F04B" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Description>gymnasium</Description>
+</RoomType>
+<RoomType RefId="C20C94D017DC11DBAC4595FB82217EF5" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Description>standard classroom</Description>
+</RoomType></SIF_ObjectData>

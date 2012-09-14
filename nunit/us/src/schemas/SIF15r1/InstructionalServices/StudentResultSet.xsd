@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: StudentResultSet
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+2004-06-30 Mark Reichert
+- 1.5r1 Draft 2 updates
+
+2004-07-27 Mark Reichert
+- 1.5r1 Draft 3 updates
+
+-->
+
+<!-- 5.6.11 StudentResultSet -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+  <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="imports/xml/xml.xsd" />
+	<element name='StudentResultSet'>
+		<complexType>
+			<sequence>
+				<element ref='sif:StudentPersonalRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GradeLevels' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:OrganizationRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Administration' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Result' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute ref='xml:lang' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='OrganizationRefId'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='RefIdType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='SIF_GUID'/>
+									<enumeration value='URI'/>
+									<enumeration value='Namestring'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='LEAInfo'/>
+									<enumeration value='SchoolInfo'/>
+									<enumeration value='NA'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='Administration'>
+			<complexType>
+				<sequence>
+					<element ref='sif:StaffPersonalRefId' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:Form' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:SpecialCondition' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:AdminTime' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='Form'>
+				<complexType>
+					<sequence>
+						<element ref='sif:Number' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:FormName' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Level' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Period' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+				<element name='Number' type='string'/>
+
+				<element name='FormName' type='string'/>
+
+				<element name='Level' type='string'/>
+
+				<element name='Period' type='string'/>
+
+			<element name='SpecialCondition'>
+				<complexType>
+					<sequence>
+						<element ref='sif:ConditionCode' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+				<element name='ConditionCode' type='string'/>
+
+			<element name='AdminTime'>
+				<complexType>
+					<sequence>
+						<element ref='sif:ResultDuration' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:StartDate' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:FinishDate' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:StartTime' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:FinishTime' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:DueDate' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+				</complexType>
+			</element>
+
+				<element name='ResultDuration' type='string'/>
+
+				<element name='FinishTime'>
+					<complexType>
+						<simpleContent>
+							<extension base='string'>
+								<attribute name='Zone' type='string' use='required'/>
+							</extension>
+						</simpleContent>
+					</complexType>
+				</element>
+
+		<element name='Result'>
+			<complexType>
+				<sequence>
+					<element ref='sif:AssessmentInstanceForm' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Score' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:Response' minOccurs='0' maxOccurs='unbounded'/>
+					<element ref='sif:GradeBookFlag' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:LearningStandardItemRefId' minOccurs='0' maxOccurs='unbounded'/>
+				</sequence>
+				<attribute name='Type' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='LearningResource'/>
+							<enumeration value='ResourceComponent'/>
+							<enumeration value='Activity'/>
+							<enumeration value='Assignment'/>
+							<enumeration value='AssessmentSubTest'/>
+							<enumeration value='Lesson'/>
+							<enumeration value='Assessment'/>
+							<enumeration value='AssessmentItem'/>
+							<enumeration value='Section'/>
+							<enumeration value='Objectives'/>
+							<enumeration value='Custom'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+			<element name='Score'>
+				<complexType>
+					<sequence>
+						<element ref='sif:Diagnostic' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:ScoreValue' minOccurs='0' maxOccurs='unbounded'/>
+						<element ref='sif:Min' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Max' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Cut' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+					<attribute name='ScoreRefId' type='string' use='required'/>
+					<attribute name='RefIdType' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='SIF_GUID'/>
+								<enumeration value='URI'/>
+								<enumeration value='Namestring'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+				</complexType>
+			</element>
+
+				<element name='Diagnostic'>
+					<complexType>
+						<sequence>
+							<element ref='sif:DiagnosticStatement' minOccurs='0' maxOccurs='1'/>
+						</sequence>
+						<attribute name='DiagnosticRefId' type='string' use='required'/>
+						<attribute name='DiagnosticType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='LearningResource'/>
+									<enumeration value='ResourceComponent'/>
+									<enumeration value='Activity'/>
+									<enumeration value='Assignment'/>
+									<enumeration value='AssessmentSubTest'/>
+									<enumeration value='Lesson'/>
+									<enumeration value='Assessment'/>
+									<enumeration value='AssessmentItem'/>
+									<enumeration value='Section'/>
+									<enumeration value='NA'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+						<attribute name='RefIdType' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='SIF_GUID'/>
+									<enumeration value='URI'/>
+									<enumeration value='Namestring'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</complexType>
+				</element>
+
+					<element name='DiagnosticStatement' type='string'/>
+
+				<element name='ScoreValue'>
+					<complexType>
+						<simpleContent>
+							<extension base='string'>
+								<attribute name='Metric' type='string' use='required'/>
+								<attribute name='Weight' type='string' use='required'/>
+							</extension>
+						</simpleContent>
+					</complexType>
+				</element>
+
+				<element name='Min' type='string'/>
+
+				<element name='Max' type='string'/>
+
+				<element name='Cut' type='string'/>
+
+			<element name='Response'>
+				<complexType>
+					<sequence>
+						<element ref='sif:ResponseValue' minOccurs='0' maxOccurs='1'/>
+						<element ref='sif:Status' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+					<attribute name='ResponseRefId' type='string' use='required'/>
+					<attribute name='RefIdType' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='SIF_GUID'/>
+								<enumeration value='URI'/>
+								<enumeration value='Namestring'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+					<attribute name='ValueType' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Inline'/>
+								<enumeration value='URL'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+					<attribute name='ContentType' type='string' use='required'/>
+				</complexType>
+			</element>
+
+				<element name='ResponseValue' type='string'/>
+
+			<element name='GradeBookFlag' type='sif:YesOrNoOrEmptyType'/>
+
+</schema>

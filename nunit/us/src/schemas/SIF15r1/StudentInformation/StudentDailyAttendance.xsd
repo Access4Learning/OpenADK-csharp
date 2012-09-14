@@ -1,0 +1,62 @@
+<!--
+
+Object: StudentDailyAttendance
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2003-01-15 Mark Reichert
+- Created object per SIS group.
+
+2003-06-09 Mark Reichert
+- Changed RefIdType to RefIdOrEmptyType
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.8.9 StudentDailyAttendance -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StudentDailyAttendance'>
+		<complexType>
+			<sequence>
+				<element ref='sif:DailyAttendanceCode' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TimeIn' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TimeOut' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AttendanceNote' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='StudentPersonalRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='SchoolInfoRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='Date' type='sif:DateOrEmptyType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='DailyAttendanceCode'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='AttendanceCodeInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='TimeIn' type='string'/>
+
+	<element name='TimeOut' type='string'/>
+
+	<element name='AttendanceNote' type='string'/>
+
+</schema>
+

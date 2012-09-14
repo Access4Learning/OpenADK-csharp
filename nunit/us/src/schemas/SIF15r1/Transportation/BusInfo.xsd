@@ -1,0 +1,63 @@
+<!--
+
+Object: BusInfo
+
+Owner: Transporation and Geographic Information Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated namespace
+
+2003-06-09 Mark Reichert
+- Changed RefIdType to RefIdOrEmptyType
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.9.2 BusInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='BusInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:VehicleNumber' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SeatingCapacity' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Contractor' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Equipment' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='VehicleNumber' type='string'/>
+
+	<element name='SeatingCapacity' type='string'/>
+
+	<element name='Contractor' type='string'/>
+
+	<element name='Equipment'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='BusEquipmentRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					<attribute name='Count' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+</schema>

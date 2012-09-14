@@ -1,0 +1,15 @@
+<StudentContact 
+	RefId="B5D77FCFC209AE5B4E00A08A0C84C925" 
+	StudentPersonalRefId="338F0F0F43945C6E4701A08A0C84C925"
+	Type="6X">
+  <Name Type="01">
+    <LastName>STUDENT</LastName>
+    <FirstName>JOE</FirstName>
+  </Name>
+  <PhoneNumber Format="NA" Type="HP"/>
+  <Email Type="Primary">last@org.edu</Email>
+  <Relationship Code="03"/>
+  <EmployerType Code="06"/>
+  <EducationalLevel Code="AD"/>
+  <PickupRights>Yes</PickupRights>
+</StudentContact>

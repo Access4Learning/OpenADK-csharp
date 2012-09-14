@@ -1,0 +1,9 @@
+ <OfficialStudentPeriodAttendance Date="2008-03-31" RefId="3D866DA0FF3211DC9CC38B7F339018C0" SchoolInfoRefId="37BDDE30FF3211DC9CC3BC76542233F5" SectionInfoRefId="388D3C20FF3211DC9CC3E5CD9D3D9BDE" StudentPersonalRefId="38D25B70FF3211DC9CC3C71FF3530774">
+	<AttendanceCode AttendanceCodeInfoRefId="38161050FF3211DC9CC3DD8880E1A000"/>
+	<AuditInfo>
+	   <CreationUser Type="School&#xA;Admin">
+		  <UserId>Schoolzilla</UserId>
+	   </CreationUser>
+	   <CreationDateTime>2008-03-31T10:53:36.57-05:00</CreationDateTime>
+	</AuditInfo>
+ </OfficialStudentPeriodAttendance>

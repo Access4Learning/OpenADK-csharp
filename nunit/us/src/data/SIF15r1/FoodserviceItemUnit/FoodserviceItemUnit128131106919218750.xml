@@ -1,0 +1,61 @@
+<SIF_ObjectData>
+<FoodserviceItemUnit RefId="EAACAAB217DC11DBAC45E3E932A2B167">
+  <FoodserviceItemRefId>EAACAAB117DC11DBAC458E69BC0B4E17</FoodserviceItemRefId>
+  <Description>cup</Description>
+  <MeasureDescriptionCode>CUP01</MeasureDescriptionCode>
+  <GramWeight>49</GramWeight>
+</FoodserviceItemUnit>
+<FoodserviceItemUnit RefId="EB255D2317DC11DBAC45FFEE9BBF5566">
+  <FoodserviceItemRefId>EB255D2217DC11DBAC45D96572C9EA73</FoodserviceItemRefId>
+  <Description>cup</Description>
+  <MeasureDescriptionCode>CUP01</MeasureDescriptionCode>
+  <GramWeight>60</GramWeight>
+</FoodserviceItemUnit>
+<FoodserviceItemUnit RefId="EB29F10117DC11DBAC45D1A9DA5771FC">
+  <FoodserviceItemRefId>EB29F10017DC11DBAC45BAAF7FFDF403</FoodserviceItemRefId>
+  <Description>cup</Description>
+  <MeasureDescriptionCode>CUP01</MeasureDescriptionCode>
+  <GramWeight>7</GramWeight>
+</FoodserviceItemUnit>
+<FoodserviceItemUnit RefId="EB2CFE4317DC11DBAC45A6F25D0EAE5E">
+  <FoodserviceItemRefId>EB2CFE4217DC11DBAC45BBD487FF8606</FoodserviceItemRefId>
+  <Description>cup</Description>
+  <MeasureDescriptionCode>CUP01</MeasureDescriptionCode>
+  <GramWeight>13</GramWeight>
+</FoodserviceItemUnit>
+<FoodserviceItemUnit RefId="EB31922117DC11DBAC45EB004882E5E9">
+  <FoodserviceItemRefId>EB31922017DC11DBAC45BFA1A2CB96B2</FoodserviceItemRefId>
+  <Description>cup</Description>
+  <MeasureDescriptionCode>CUP01</MeasureDescriptionCode>
+  <GramWeight>22</GramWeight>
+</FoodserviceItemUnit>
+<FoodserviceItemUnit RefId="EB349F6117DC11DBAC4591E480A10AF8">
+  <FoodserviceItemRefId>EB349F6017DC11DBAC45FA14C7CB8502</FoodserviceItemRefId>
+  <Description>cup</Description>
+  <MeasureDescriptionCode>CUP01</MeasureDescriptionCode>
+  <GramWeight>92</GramWeight>
+</FoodserviceItemUnit>
+<FoodserviceItemUnit RefId="EB3AB9E117DC11DBAC45F929588BF89D">
+  <FoodserviceItemRefId>EB3AB9E017DC11DBAC45DEC5FA779A73</FoodserviceItemRefId>
+  <Description>cup</Description>
+  <MeasureDescriptionCode>CUP01</MeasureDescriptionCode>
+  <GramWeight>81</GramWeight>
+</FoodserviceItemUnit>
+<FoodserviceItemUnit RefId="EB3F4DC117DC11DBAC45C2462325C4B3">
+  <FoodserviceItemRefId>EB3F4DC017DC11DBAC45B728E9404CA7</FoodserviceItemRefId>
+  <Description>cup</Description>
+  <MeasureDescriptionCode>CUP01</MeasureDescriptionCode>
+  <GramWeight>55</GramWeight>
+</FoodserviceItemUnit>
+<FoodserviceItemUnit RefId="EB45684317DC11DBAC45FA06F6E74524">
+  <FoodserviceItemRefId>EB45684217DC11DBAC45FDA0DF52971D</FoodserviceItemRefId>
+  <Description>cup</Description>
+  <MeasureDescriptionCode>CUP01</MeasureDescriptionCode>
+  <GramWeight>53</GramWeight>
+</FoodserviceItemUnit>
+<FoodserviceItemUnit RefId="EB503DB017DC11DBAC45F4DD1BDFCB9D">
+  <FoodserviceItemRefId>EB4EB71217DC11DBAC45C0D9FB7B0BBD</FoodserviceItemRefId>
+  <Description>cup</Description>
+  <MeasureDescriptionCode>CUP01</MeasureDescriptionCode>
+  <GramWeight>71</GramWeight>
+</FoodserviceItemUnit></SIF_ObjectData>

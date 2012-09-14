@@ -1,0 +1,79 @@
+<!--
+
+Object: StudentContact
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated namespace
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.8.8 StudentContact -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StudentContact'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Name' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Email' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Demographics' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Address' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:OtherId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Relationship' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EmployerType' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:EducationalLevel' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:PickupRights' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='StudentPersonalRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='Type' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='6X'/>
+						<enumeration value='E1'/>
+						<enumeration value='E2'/>
+						<enumeration value='E3'/>
+						<enumeration value='E4'/>
+						<enumeration value='EM'/>
+						<enumeration value='P3'/>
+						<enumeration value='S1'/>
+						<enumeration value='S2'/>
+						<enumeration value='S3'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+		</complexType>
+	</element>
+
+	<element name='EmployerType'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='PickupRights' type='sif:YesOrNoOrEmptyType'/>
+
+</schema>
+

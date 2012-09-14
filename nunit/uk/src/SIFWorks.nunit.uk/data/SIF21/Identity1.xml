@@ -1,0 +1,7 @@
+﻿<Identity RefId="4286194F43ED43C18EE2F0A27C4BEF86">
+  <SIF_RefId SIF_RefObject="LearnerPersonal">23B08571E4D645C3B82A3E52E5349925</SIF_RefId>
+  <AuthenticationSource>UKAccessShibboleth</AuthenticationSource>
+  <IdentityAssertions>
+    <IdentityAssertion SchemaName="eduPersonPrincipalName">john.doe@asdf.sch.uk</IdentityAssertion>
+  </IdentityAssertions>
+</Identity>

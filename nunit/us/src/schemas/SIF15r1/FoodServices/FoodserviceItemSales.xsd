@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: FoodserviceItemSales
+
+Owner: Food Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.3.12 FoodserviceItemSales -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='FoodserviceItemSales'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SchoolInfoRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Date' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Program' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ItemQuantity' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='ItemQuantity'>
+			<complexType>
+				<sequence>
+					<element ref='sif:MealType' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:GradeLevels' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Cost' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='FoodserviceItemPortionRefId' type='sif:RefIdOrEmptyType' use='required'/>
+				<attribute name='Value' type='string' use='required'/>
+			</complexType>
+		</element>
+
+			<element name='Cost' type='string'/>
+
+</schema>

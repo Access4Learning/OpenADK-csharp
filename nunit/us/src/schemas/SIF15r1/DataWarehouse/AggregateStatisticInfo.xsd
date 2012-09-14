@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: AggregateStatisticInfo
+
+Owner: Data Warehousing Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+2004-06-16 Mark Reichert
+- 1.5r1 updates
+
+2004-06-30 Mark Reichert
+- 1.5r1 Draft 2 updates
+
+2004-07-27 Mark Reichert
+- 1.5r1 Draft 3 updates
+
+-->
+
+<!-- 5.2.1 AggregateStatisticInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='AggregateStatisticInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:StatisticName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CalculationRule' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ApprovalDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ExpirationDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ExclusionRule' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Source' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EffectiveDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:DiscontinueDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Location' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Measure' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='StatisticName' type='string'/>
+
+		<element name='CalculationRule'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Description'/>
+									<enumeration value='Formula'/>
+									<enumeration value='URL'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='ExpirationDate' type='sif:DateOrEmptyType'/>
+
+		<element name='ExclusionRule'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='SampleSize'/>
+									<enumeration value='Description'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='DiscontinueDate' type='sif:DateOrEmptyType'/>
+
+		<element name='Location'>
+			<complexType>
+				<sequence>
+					<element ref='sif:LocationName' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:LocationRefId' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='Type' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='Classroom'/>
+							<enumeration value='School'/>
+							<enumeration value='District'/>
+							<enumeration value='Campus'/>
+							<enumeration value='IntermediateUnit'/>
+							<enumeration value='StateEducationAgency'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+		</element>
+
+		<element name='LocationRefId'>
+			<complexType>
+				<simpleContent>
+					<extension base='sif:RefIdOrEmptyType'>
+						<attribute name='ObjectName' use='required'>
+							<simpleType>
+
+								<restriction base='string'>
+
+									<enumeration value='SchoolInfo'/>
+									<enumeration value='LEAInfo'/>
+									<enumeration value='RoomInfo'/>
+
+								</restriction>
+
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='Measure'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Count'/>
+									<enumeration value='Minimum'/>
+									<enumeration value='Maximum'/>
+									<enumeration value='Percent'/>
+									<enumeration value='Mean'/>
+									<enumeration value='Median'/>
+									<enumeration value='Mode'/>
+									<enumeration value='Sum'/>
+									<enumeration value='StandardDeviation'/>
+									<enumeration value='UnduplicatedCount'/>
+									<enumeration value='FTE'/>
+									<enumeration value='Other'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>

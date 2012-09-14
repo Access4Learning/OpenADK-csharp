@@ -1,0 +1,159 @@
+<!--
+
+Object: StudentSchoolEnrollment
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Added FTE and FTPTStatus, per SIS changes
+- Updated namespace
+
+2003-06-09 Mark Reichert
+- Changed RefIdType to RefIdOrEmptyType
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.8.12 StudentSchoolEnrollment -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StudentSchoolEnrollment'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SchoolYear' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EnrollStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EntryDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EntryType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GradeLevel' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Homeroom' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StaffAssigned' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:ExitDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ExitStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ExitType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FTE' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FTPTStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:ResidencyStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:NonResidentAttendReason' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='StudentPersonalRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='SchoolInfoRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='MembershipType' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Home'/>
+						<enumeration value='Concurrent'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+			<attribute name='TimeFrame' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Current'/>
+						<enumeration value='Historical'/>
+						<enumeration value='Future'/>
+						<enumeration value='NA'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+		</complexType>
+	</element>
+
+	<element name='EnrollStatus'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='EntryType'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='Homeroom'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='RoomInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='StaffAssigned'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Type' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Advisor'/>
+								<enumeration value='Counselor'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+					<attribute name='StaffPersonalRefId' type='sif:RefIdOrEmptyType' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='ExitStatus'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='ExitType'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+	<element name='FTPTStatus'>
+		<simpleType>
+			<restriction base='string'>
+				<enumeration value='FullTime'/>
+				<enumeration value='PartTime'/>
+				<enumeration value=''/>
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name='ResidencyStatus' type='string'/>
+
+	<element name='NonResidentAttendReason' type='string'/>
+
+</schema>

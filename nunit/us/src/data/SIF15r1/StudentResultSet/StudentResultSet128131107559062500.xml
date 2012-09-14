@@ -1,0 +1,11 @@
+<SIF_ObjectData>
+<StudentResultSet RefId="F3ED22D017DC11DBAC45B87F495FB845" xml:lang="en">
+  <StudentPersonalRefId>D194B77117DC11DBAC45C13C476A1B51</StudentPersonalRefId>
+  <Result Type="Assignment">
+    <Score ScoreRefId="F30C86D017DC11DBAC45CFD944A0419D" RefIdType="SIF_GUID">
+      <ScoreValue Metric="0502" Weight="none">93</ScoreValue>
+      <Min>0</Min>
+      <Max>100</Max>
+    </Score>
+  </Result>
+</StudentResultSet></SIF_ObjectData>

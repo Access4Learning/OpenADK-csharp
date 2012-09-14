@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: FoodserviceTransaction
+
+Owner: Food Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.3.8 FoodserviceTransaction -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='FoodserviceTransaction'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SchoolInfoRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Program' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TransactionDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TransactionTime' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TransactionType' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:FSCustomerId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AmountEx' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Tax' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Voided' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='TransactionType'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Purchase'/>
+									<enumeration value='Prepayment'/>
+									<enumeration value='Refund'/>
+									<enumeration value='Repayment'/>
+									<enumeration value='Adjustment'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='FSCustomerId'>
+			<complexType>
+				<sequence>
+					<element ref='sif:MealStatus' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:EarnedStatus' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+				<attribute name='Type' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='StudentPersonalRefId'/>
+							<enumeration value='StaffPersonalRefId'/>
+							<enumeration value='Other'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+				<attribute name='Value' type='string' use='required'/>
+			</complexType>
+		</element>
+
+		<element name='Tax' type='string'/>
+
+		<element name='Voided' type='sif:YesOrNoOrEmptyType'/>
+
+</schema>

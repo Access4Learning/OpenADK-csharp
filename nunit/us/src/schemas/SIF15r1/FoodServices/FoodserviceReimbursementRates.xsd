@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: FoodserviceReimbursementRates
+
+Owner: Food Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.3.5 FoodserviceReimbursementRates -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='FoodserviceReimbursementRates'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SchoolInfoRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StartDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EndDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Program' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Agency' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='Agency'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Rate' minOccurs='0' maxOccurs='unbounded'/>
+				</sequence>
+				<attribute name='Type' use='required'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='Federal'/>
+							<enumeration value='State'/>
+							<enumeration value='Local'/>
+							<enumeration value='Other'/>
+						</restriction>
+					</simpleType>
+				</attribute>
+				<attribute name='Name' type='string' use='required'/>
+			</complexType>
+		</element>
+
+			<element name='Rate'>
+				<complexType>
+					<sequence>
+						<element ref='sif:MealStatus' minOccurs='0' maxOccurs='1'/>
+					</sequence>
+					<attribute name='SevereNeed' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='Yes'/>
+								<enumeration value='No'/>
+								<enumeration value='NA'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+					<attribute name='Value' type='string' use='required'/>
+				</complexType>
+			</element>
+
+</schema>

@@ -1,0 +1,25 @@
+<StudentTransportInfo RefId="D3E34B359D75101A8C3D00AA001A1652" StudentPersonalRefId="C2F23F450B86234B9B3D00AA001A1652" Type="Inbound" DayOfWeek="MoWeFr" SchoolInfoRefId="B7A34E561C97345C0A4E11BB112B2753">
+  <Eligibility>Bus</Eligibility>
+  <HomeToSchoolDistance Unit="m">2.4</HomeToSchoolDistance>
+  <WalkToStopDistance Unit="m">.4</WalkToStopDistance>
+  <StopToSchoolDistance Unit="m">2.0</StopToSchoolDistance>
+  <OriginPoint BusRouteDetailRefId="AAE34B359D75101A8C3D00AA001A1652">
+    <ArrivalTime>09:10:00</ArrivalTime>
+    <RouteNumber>134A</RouteNumber>
+    <RouteDescription>RiverFront</RouteDescription>
+    <VehicleNumber>16</VehicleNumber>
+    <BusStopDescription>Elm St @ Pine Ave</BusStopDescription>
+  </OriginPoint>
+  <HomeBusRouteDetail SIF_RefObject="BusRouteDetail">A3B7564E971C5C344E0ABB11EE272B53</HomeBusRouteDetail>
+  <SchoolBusRouteDetail SIF_RefObject="BusRouteDetail">7B3AE465C17943C5A0E411BB11B27235</SchoolBusRouteDetail>
+  <DestinationPoint BusRouteDetailRefId="AAE34B359D75101A8C3D00AA001A1652">
+    <ArrivalTime>09:31:00</ArrivalTime>
+    <RouteNumber>134P</RouteNumber>
+    <RouteDescription>RiverFront</RouteDescription>
+    <VehicleNumber>16</VehicleNumber>
+    <BusStopDescription>George Washington Elementary West</BusStopDescription>
+  </DestinationPoint>
+  <StateAidQualification>2065</StateAidQualification>
+  <TransportationStatus>2060</TransportationStatus>
+  <PublicExpense>2068</PublicExpense>
+</StudentTransportInfo>

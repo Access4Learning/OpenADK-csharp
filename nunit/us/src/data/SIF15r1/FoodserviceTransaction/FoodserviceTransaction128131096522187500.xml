@@ -1,0 +1,131 @@
+<SIF_ObjectData>
+<FoodserviceTransaction RefId="EBA42A1017DC11DBAC4580942A672EED">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <TransactionDate>20041112</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">12:13:17</TransactionTime>
+  <TransactionType Type="Prepayment" />
+  <FSCustomerId Type="StudentPersonalRefId" Value="D21691A017DC11DBAC45943D703BDC69">
+    <MealStatus Type="None" />
+  </FSCustomerId>
+  <AmountEx Type="Value" Quantity="0">1.99</AmountEx>
+  <Tax>0.12</Tax>
+  <Voided>No</Voided>
+</FoodserviceTransaction>
+<FoodserviceTransaction RefId="EC2DCC7217DC11DBAC45C53DAC050DBF">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <TransactionDate>20041019</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">12:11:17</TransactionTime>
+  <TransactionType Type="Purchase" />
+  <FSCustomerId Type="StaffPersonalRefId" Value="C348E56017DC11DBAC4596B3449D461B">
+    <EarnedStatus Type="No" />
+  </FSCustomerId>
+  <AmountEx Type="Value" Quantity="0">1.99</AmountEx>
+  <Tax>0.12</Tax>
+  <Voided>No</Voided>
+</FoodserviceTransaction>
+<FoodserviceTransaction RefId="EC356D9117DC11DBAC4587402E896DC3">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <TransactionDate>20041017</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">12:10:19</TransactionTime>
+  <TransactionType Type="Purchase" />
+  <FSCustomerId Type="StaffPersonalRefId" Value="C3381C8017DC11DBAC4580BC84547ACB">
+    <EarnedStatus Type="No" />
+  </FSCustomerId>
+  <AmountEx Type="Value" Quantity="0">1.99</AmountEx>
+  <Tax>0.12</Tax>
+  <Voided>No</Voided>
+</FoodserviceTransaction>
+<FoodserviceTransaction RefId="EC3B881217DC11DBAC45853F33C7C308">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <TransactionDate>20041014</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">12:19:19</TransactionTime>
+  <TransactionType Type="Purchase" />
+  <FSCustomerId Type="StudentPersonalRefId" Value="D262DCE017DC11DBAC45997EB8250A40">
+    <MealStatus Type="None" />
+  </FSCustomerId>
+  <AmountEx Type="Value" Quantity="0">1.99</AmountEx>
+  <Tax>0.12</Tax>
+  <Voided>No</Voided>
+</FoodserviceTransaction>
+<FoodserviceTransaction RefId="EC53F21017DC11DBAC45DA49C191155C">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <TransactionDate>20041114</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">12:16:15</TransactionTime>
+  <TransactionType Type="Purchase" />
+  <FSCustomerId Type="StaffPersonalRefId" Value="C3BB7D5217DC11DBAC45FEB9C2C7EE5A">
+    <EarnedStatus Type="No" />
+  </FSCustomerId>
+  <AmountEx Type="Value" Quantity="0">1.99</AmountEx>
+  <Tax>0.12</Tax>
+  <Voided>No</Voided>
+</FoodserviceTransaction>
+<FoodserviceTransaction RefId="EC5A0C9017DC11DBAC45FFAB25885117">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <TransactionDate>20041016</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">12:10:16</TransactionTime>
+  <TransactionType Type="Purchase" />
+  <FSCustomerId Type="StaffPersonalRefId" Value="C38922B017DC11DBAC45D51A9AB64709">
+    <EarnedStatus Type="No" />
+  </FSCustomerId>
+  <AmountEx Type="Value" Quantity="0">1.99</AmountEx>
+  <Tax>0.12</Tax>
+  <Voided>No</Voided>
+</FoodserviceTransaction>
+<FoodserviceTransaction RefId="EC5EA07217DC11DBAC45B25E6B9AB7B7">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <TransactionDate>20041013</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">12:17:11</TransactionTime>
+  <TransactionType Type="Purchase" />
+  <FSCustomerId Type="StudentPersonalRefId" Value="E9441A0017DC11DBAC45AD9EEE854481">
+    <MealStatus Type="None" />
+  </FSCustomerId>
+  <AmountEx Type="Value" Quantity="0">1.99</AmountEx>
+  <Tax>0.12</Tax>
+  <Voided>No</Voided>
+</FoodserviceTransaction>
+<FoodserviceTransaction RefId="EC770A7017DC11DBAC45EE1FC7B5D6B0">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <TransactionDate>20041013</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">12:16:10</TransactionTime>
+  <TransactionType Type="Purchase" />
+  <FSCustomerId Type="StaffPersonalRefId" Value="C381819017DC11DBAC45E43A7023D35D">
+    <EarnedStatus Type="No" />
+  </FSCustomerId>
+  <AmountEx Type="Value" Quantity="0">1.99</AmountEx>
+  <Tax>0.12</Tax>
+  <Voided>No</Voided>
+</FoodserviceTransaction>
+<FoodserviceTransaction RefId="EC7D24F217DC11DBAC45BCFED79F6B5A">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <TransactionDate>20041113</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">12:11:18</TransactionTime>
+  <TransactionType Type="Purchase" />
+  <FSCustomerId Type="StudentPersonalRefId" Value="D981FBA117DC11DBAC45CE0E6E04BA6B">
+    <MealStatus Type="None" />
+  </FSCustomerId>
+  <AmountEx Type="Value" Quantity="0">1.99</AmountEx>
+  <Tax>0.12</Tax>
+  <Voided>No</Voided>
+</FoodserviceTransaction>
+<FoodserviceTransaction RefId="EC942F6017DC11DBAC45F87449D61CA9">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Program Type="Foodservice">NSLP</Program>
+  <TransactionDate>20041114</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">12:15:18</TransactionTime>
+  <TransactionType Type="Purchase" />
+  <FSCustomerId Type="StaffPersonalRefId" Value="C376AC2017DC11DBAC45EDE65F7E0AD7">
+    <EarnedStatus Type="No" />
+  </FSCustomerId>
+  <AmountEx Type="Value" Quantity="0">1.99</AmountEx>
+  <Tax>0.12</Tax>
+  <Voided>No</Voided>
+</FoodserviceTransaction></SIF_ObjectData>

@@ -1,0 +1,61 @@
+<SIF_ObjectData>
+<FoodserviceTransactionPayMethod RefId="EC2DCC7017DC11DBAC45BB9A3F521207">
+  <FoodserviceTransactionRefId>EBA42A1017DC11DBAC4580942A672EED</FoodserviceTransactionRefId>
+  <TransactionPayMethod Type="Payment">
+    <AmountEx Type="Cash" Quantity="0">2.11</AmountEx>
+  </TransactionPayMethod>
+</FoodserviceTransactionPayMethod>
+<FoodserviceTransactionPayMethod RefId="EC33E6F017DC11DBAC45F9E02CB47D20">
+  <FoodserviceTransactionRefId>EC2DCC7217DC11DBAC45C53DAC050DBF</FoodserviceTransactionRefId>
+  <TransactionPayMethod Type="Payment">
+    <AmountEx Type="Cash" Quantity="0">2.11</AmountEx>
+  </TransactionPayMethod>
+</FoodserviceTransactionPayMethod>
+<FoodserviceTransactionPayMethod RefId="EC3B881017DC11DBAC45F9DDC0DF4567">
+  <FoodserviceTransactionRefId>EC356D9117DC11DBAC4587402E896DC3</FoodserviceTransactionRefId>
+  <TransactionPayMethod Type="Payment">
+    <AmountEx Type="Cash" Quantity="0">2.11</AmountEx>
+  </TransactionPayMethod>
+</FoodserviceTransactionPayMethod>
+<FoodserviceTransactionPayMethod RefId="EC526B7017DC11DBAC459E087C3E8ADF">
+  <FoodserviceTransactionRefId>EC3B881217DC11DBAC45853F33C7C308</FoodserviceTransactionRefId>
+  <TransactionPayMethod Type="Payment">
+    <AmountEx Type="Cash" Quantity="0">2.11</AmountEx>
+  </TransactionPayMethod>
+</FoodserviceTransactionPayMethod>
+<FoodserviceTransactionPayMethod RefId="EC5885F017DC11DBAC45D997DF94E91E">
+  <FoodserviceTransactionRefId>EC53F21017DC11DBAC45DA49C191155C</FoodserviceTransactionRefId>
+  <TransactionPayMethod Type="Payment">
+    <AmountEx Type="Cash" Quantity="0">2.11</AmountEx>
+  </TransactionPayMethod>
+</FoodserviceTransactionPayMethod>
+<FoodserviceTransactionPayMethod RefId="EC5EA07017DC11DBAC45EAD89869078F">
+  <FoodserviceTransactionRefId>EC5A0C9017DC11DBAC45FFAB25885117</FoodserviceTransactionRefId>
+  <TransactionPayMethod Type="Payment">
+    <AmountEx Type="Cash" Quantity="0">2.11</AmountEx>
+  </TransactionPayMethod>
+</FoodserviceTransactionPayMethod>
+<FoodserviceTransactionPayMethod RefId="EC7583D017DC11DBAC4585E3704A407B">
+  <FoodserviceTransactionRefId>EC5EA07217DC11DBAC45B25E6B9AB7B7</FoodserviceTransactionRefId>
+  <TransactionPayMethod Type="Payment">
+    <AmountEx Type="Cash" Quantity="0">2.11</AmountEx>
+  </TransactionPayMethod>
+</FoodserviceTransactionPayMethod>
+<FoodserviceTransactionPayMethod RefId="EC7D24F017DC11DBAC459F6B013B1E85">
+  <FoodserviceTransactionRefId>EC770A7017DC11DBAC45EE1FC7B5D6B0</FoodserviceTransactionRefId>
+  <TransactionPayMethod Type="Payment">
+    <AmountEx Type="Cash" Quantity="0">2.11</AmountEx>
+  </TransactionPayMethod>
+</FoodserviceTransactionPayMethod>
+<FoodserviceTransactionPayMethod RefId="EC92A8C117DC11DBAC4594657BA31894">
+  <FoodserviceTransactionRefId>EC7D24F217DC11DBAC45BCFED79F6B5A</FoodserviceTransactionRefId>
+  <TransactionPayMethod Type="Payment">
+    <AmountEx Type="Cash" Quantity="0">2.11</AmountEx>
+  </TransactionPayMethod>
+</FoodserviceTransactionPayMethod>
+<FoodserviceTransactionPayMethod RefId="EC98C34117DC11DBAC45FA851B4A5894">
+  <FoodserviceTransactionRefId>EC942F6017DC11DBAC45F87449D61CA9</FoodserviceTransactionRefId>
+  <TransactionPayMethod Type="Payment">
+    <AmountEx Type="Cash" Quantity="0">2.11</AmountEx>
+  </TransactionPayMethod>
+</FoodserviceTransactionPayMethod></SIF_ObjectData>

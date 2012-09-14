@@ -1,0 +1,62 @@
+<SchoolInfo RefId="D3E34B359D75101A8C3D00AA001A1652">
+  <LocalId>946379881</LocalId>
+  <StateProvinceId>C2345681</StateProvinceId>
+  <NCESId>421575003045</NCESId>
+  <SchoolName>Lincoln High School</SchoolName>
+  <LEAInfoRefId>73648462888624AA5294BC6380173276</LEAInfoRefId>
+  <OtherLEA SIF_RefObject="LEAInfo">AA648462888624AA5294BC638017320B</OtherLEA>
+  <SchoolFocusList>
+    <SchoolFocus>Regular</SchoolFocus>
+  </SchoolFocusList>
+  <SchoolURL>http://www.lincolnhs.edu</SchoolURL>
+  <PrincipalInfo>
+    <ContactName>Richard Knudson</ContactName>
+    <ContactTitle>Dr.</ContactTitle>
+  </PrincipalInfo>
+  <SchoolContactList>
+    <SchoolContact>
+      <PublishInDirectory>Yes</PublishInDirectory>
+      <ContactInfo>
+        <Name Type="04">
+          <LastName>Miller</LastName>
+          <FirstName>James</FirstName>
+        </Name>
+        <PositionTitle>Office Assistant</PositionTitle>
+        <EmailList>
+          <Email Type="Primary">jmiller@lhs.k12.state.us</Email>
+        </EmailList>
+        <PhoneNumberList>
+          <PhoneNumber Type="0096">
+            <Number>(555) 555-1235</Number>
+          </PhoneNumber>
+        </PhoneNumberList>
+      </ContactInfo>
+    </SchoolContact>
+  </SchoolContactList>
+  <PhoneNumberList>
+    <PhoneNumber Type="0096">
+      <Number>(555) 555-1234</Number>
+    </PhoneNumber>
+  </PhoneNumberList>
+  <IdentificationInfoList>
+    <IdentificationInfo Code="0175">00123</IdentificationInfo>
+  </IdentificationInfoList>
+  <SessionType>0830</SessionType>
+  <GradeLevels>
+    <GradeLevel>
+      <Code>09</Code>
+    </GradeLevel>
+    <GradeLevel>
+      <Code>10</Code>
+    </GradeLevel>
+    <GradeLevel>
+      <Code>11</Code>
+    </GradeLevel>
+    <GradeLevel>
+      <Code>12</Code>
+    </GradeLevel>
+  </GradeLevels>
+  <Title1Status>Targeted</Title1Status>
+  <OperationalStatus>0820</OperationalStatus>
+  <CongressionalDistrict>3</CongressionalDistrict>
+</SchoolInfo>

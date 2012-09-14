@@ -1,0 +1,28 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>EA53C30E94F4C7254B4868D638774E19</SIF_MsgId>
+      <SIF_Date>20050518</SIF_Date>
+      <SIF_Time Zone="UTC-07:00">14:26:13</SIF_Time>
+      <SIF_Security>
+        <SIF_SecureChannel>
+          <SIF_AuthenticationLevel>0</SIF_AuthenticationLevel>
+          <SIF_EncryptionLevel>0</SIF_EncryptionLevel>
+        </SIF_SecureChannel>
+      </SIF_Security>
+      <SIF_SourceId>SASIxp</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>714C9A2036594C9FAFDDD06396C6BCB4</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData>
+      <StudentSchoolEnrollment RefId="A9A297F9EDD9B45F47DC68D638774E19" StudentPersonalRefId="16456D968B17EAE2474468D638774E19" SchoolInfoRefId="66541D6D63DA302D4D1B68D638774E19" MembershipType="Home" TimeFrame="Historical">
+        <EnrollStatus Code="B33" />
+        <EntryDate>20010904</EntryDate>
+        <EntryType Code="R2" />
+        <GradeLevel Code="01" />
+      </StudentSchoolEnrollment>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

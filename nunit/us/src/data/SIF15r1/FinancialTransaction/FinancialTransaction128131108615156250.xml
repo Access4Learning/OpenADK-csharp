@@ -1,0 +1,8 @@
+<SIF_ObjectData>
+<FinancialTransaction RefId="EE05E7D017DC11DBAC45D8C2284A4762">
+  <TransactionDate>20041011</TransactionDate>
+  <TransactionTime Zone="UTC-05:00">11:34:47</TransactionTime>
+  <FTAmount FinancialAccountAccountingPeriodLocationInfoRefId="EDB4E1A017DC11DBAC45FA00C15858A3" Type="Credit">506.99</FTAmount>
+  <FTAmount FinancialAccountAccountingPeriodLocationInfoRefId="EDB4E1A017DC11DBAC45FA00C15858A3" Type="Debit">216.99</FTAmount>
+  <Program Type="Foodservice">NSLP</Program>
+</FinancialTransaction></SIF_ObjectData>

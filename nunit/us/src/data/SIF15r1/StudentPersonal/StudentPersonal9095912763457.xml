@@ -1,0 +1,160 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>46619E63CCF04200AA3DE9AC73644B0A</SIF_MsgId>
+      <SIF_Date>20050518</SIF_Date>
+      <SIF_Time Zone="UTC-05:00">12:01:49</SIF_Time>
+      <SIF_SourceId>SPIAgent</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>F34B263B529942DAB617125FEB813408</SIF_RequestMsgId>
+    <SIF_PacketNumber>25</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData>
+      <StudentPersonal RefId="FC870B0F66DE4DEF9FE2FCCF223A6B7B">
+        <LocalId>645268522</LocalId>
+        <StatePrId>645268522</StatePrId>
+        <OtherId Type="ZZ">GRADE:07</OtherId>
+        <OtherId Type="ZS">44</OtherId>
+        <OtherId Type="06">645268522</OtherId>
+        <OtherId Type="ZZ">HOMEROOM:N/A</OtherId>
+        <Name Type="04">
+          <LastName>WORD</LastName>
+          <FirstName>ASHLEY</FirstName>
+          <MiddleName>NICHOLE</MiddleName>
+          <FullName>WORD, ASHLEY NICHOLE</FullName>
+        </Name>
+        <GradYear Type="Original">2010</GradYear>
+        <Demographics>
+          <Ethnicity Type="NA" Code="7" />
+          <Gender>F</Gender>
+          <BirthDate>19911227</BirthDate>
+          <Language Type="UND">98</Language>
+        </Demographics>
+        <StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+          <Address Type="01">
+            <Street>
+              <Line1>1306  DUVALL  DR</Line1>
+              <StreetNumber>1306</StreetNumber>
+              <StreetName>DUVALL</StreetName>
+              <StreetType>DR</StreetType>
+            </Street>
+            <City>KILLEEN</City>
+            <StatePr Code="TX" />
+            <Country Code="US" />
+            <PostalCode>76542</PostalCode>
+          </Address>
+        </StudentAddress>
+        <PhoneNumber Format="NA" Type="12">(254)699-7499</PhoneNumber>
+      </StudentPersonal>
+      <StudentPersonal RefId="7AD26BC1DDB24511B3A87F31E4370A83">
+        <LocalId>645268463</LocalId>
+        <StatePrId>645268463</StatePrId>
+        <OtherId Type="ZZ">GRADE:07</OtherId>
+        <OtherId Type="ZS">50</OtherId>
+        <OtherId Type="06">645268463</OtherId>
+        <OtherId Type="ZZ">HOMEROOM:N/A</OtherId>
+        <Name Type="04">
+          <LastName>HANKINS</LastName>
+          <FirstName>JAMES</FirstName>
+          <MiddleName>DEAN</MiddleName>
+          <FullName>HANKINS, JAMES DEAN</FullName>
+        </Name>
+        <GradYear Type="Original">2010</GradYear>
+        <Demographics>
+          <Ethnicity Type="NA" Code="7" />
+          <Gender>M</Gender>
+          <BirthDate>19911222</BirthDate>
+          <Language Type="UND">98</Language>
+        </Demographics>
+        <StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+          <Address Type="01">
+            <Street>
+              <Line1>2304  HUCKLEBERRY  DR</Line1>
+              <StreetNumber>2304</StreetNumber>
+              <StreetName>HUCKLEBERRY</StreetName>
+              <StreetType>DR</StreetType>
+            </Street>
+            <City>KILLEEN</City>
+            <StatePr Code="TX" />
+            <Country Code="US" />
+            <PostalCode>76549</PostalCode>
+          </Address>
+        </StudentAddress>
+        <PhoneNumber Format="NA" Type="12">(254)501-7022</PhoneNumber>
+      </StudentPersonal>
+      <StudentPersonal RefId="CA31E27F9856460BA1957B91C0F7FDE6">
+        <LocalId>645262722</LocalId>
+        <StatePrId>645262722</StatePrId>
+        <OtherId Type="ZZ">GRADE:07</OtherId>
+        <OtherId Type="ZS">50</OtherId>
+        <OtherId Type="06">645262722</OtherId>
+        <OtherId Type="ZZ">HOMEROOM:N/A</OtherId>
+        <Name Type="04">
+          <LastName>LAWSON</LastName>
+          <FirstName>DAVID</FirstName>
+          <MiddleName>RAMONE</MiddleName>
+          <FullName>LAWSON, DAVID RAMONE</FullName>
+        </Name>
+        <GradYear Type="Original">2010</GradYear>
+        <Demographics>
+          <Ethnicity Type="NA" Code="7" />
+          <Gender>M</Gender>
+          <BirthDate>19911119</BirthDate>
+          <Language Type="UND">98</Language>
+        </Demographics>
+        <StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+          <Address Type="01">
+            <Street>
+              <Line1>4203  RAMBLING RANGE  DR</Line1>
+              <StreetNumber>4203</StreetNumber>
+              <StreetName>RAMBLING RANGE</StreetName>
+              <StreetType>DR</StreetType>
+            </Street>
+            <City>KILLEEN</City>
+            <StatePr Code="TX" />
+            <Country Code="US" />
+            <PostalCode>76549</PostalCode>
+          </Address>
+        </StudentAddress>
+        <PhoneNumber Format="NA" Type="12">(254)519-2807</PhoneNumber>
+      </StudentPersonal>
+      <StudentPersonal RefId="EE7C57FB9D3B47239B992EB2EE844EED">
+        <LocalId>645305266</LocalId>
+        <StatePrId>645305266</StatePrId>
+        <OtherId Type="ZZ">GRADE:07</OtherId>
+        <OtherId Type="ZS">50</OtherId>
+        <OtherId Type="06">645305266</OtherId>
+        <OtherId Type="ZZ">HOMEROOM:N/A</OtherId>
+        <Name Type="04">
+          <LastName>BEHRENS</LastName>
+          <FirstName>MEGAN</FirstName>
+          <MiddleName>BROOKE</MiddleName>
+          <FullName>BEHRENS, MEGAN BROOKE</FullName>
+        </Name>
+        <GradYear Type="Original">2010</GradYear>
+        <Demographics>
+          <Ethnicity Type="NA" Code="7" />
+          <Gender>F</Gender>
+          <BirthDate>19920629</BirthDate>
+          <Language Type="UND">98</Language>
+        </Demographics>
+        <StudentAddress PickupOrDropoff="NA" DayOfWeek="NA">
+          <Address Type="01">
+            <Street>
+              <Line1>5018  LANCE  LOOP</Line1>
+              <StreetNumber>5018</StreetNumber>
+              <StreetName>LANCE</StreetName>
+              <StreetType>LOOP</StreetType>
+            </Street>
+            <City>KILLEEN</City>
+            <StatePr Code="TX" />
+            <Country Code="US" />
+            <PostalCode>76549</PostalCode>
+          </Address>
+        </StudentAddress>
+        <PhoneNumber Format="NA" Type="12">(254)554-8937</PhoneNumber>
+      </StudentPersonal>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

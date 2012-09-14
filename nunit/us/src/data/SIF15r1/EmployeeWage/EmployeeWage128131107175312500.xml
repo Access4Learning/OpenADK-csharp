@@ -1,0 +1,61 @@
+<SIF_ObjectData>
+<EmployeeWage RefId="F0120B8017DC11DBAC45B9069D22E23A" EmployeePersonalRefId="EE55676117DC11DBAC458067448028FA">
+  <PayRate Type="P">
+    <Amount>743</Amount>
+    <Percentage>100</Percentage>
+  </PayRate>
+</EmployeeWage>
+<EmployeeWage RefId="F0245B0117DC11DBAC45F4038E74ECD2" EmployeePersonalRefId="F0169F6017DC11DBAC45AC3DA2A1272B">
+  <PayRate Type="P">
+    <Amount>829</Amount>
+    <Percentage>100</Percentage>
+  </PayRate>
+</EmployeeWage>
+<EmployeeWage RefId="F039B7C017DC11DBAC45E0D3E7904BB6" EmployeePersonalRefId="F025E1A017DC11DBAC45DC2161B00F98">
+  <PayRate Type="P">
+    <Amount>2300</Amount>
+    <Percentage>100</Percentage>
+  </PayRate>
+</EmployeeWage>
+<EmployeeWage RefId="F04F3B9017DC11DBAC45D185DCC42CE9" EmployeePersonalRefId="F03B3E6017DC11DBAC458993E955EE2E">
+  <PayRate Type="P">
+    <Amount>1910</Amount>
+    <Percentage>100</Percentage>
+  </PayRate>
+</EmployeeWage>
+<EmployeeWage RefId="F060047117DC11DBAC45A18B57464344" EmployeePersonalRefId="F04F3B9217DC11DBAC45808B98761863">
+  <PayRate Type="P">
+    <Amount>1313</Amount>
+    <Percentage>100</Percentage>
+  </PayRate>
+</EmployeeWage>
+<EmployeeWage RefId="F07253F017DC11DBAC45EDD75CDA3C22" EmployeePersonalRefId="F0618B1117DC11DBAC45E869DEB529E8">
+  <PayRate Type="P">
+    <Amount>2364</Amount>
+    <Percentage>100</Percentage>
+  </PayRate>
+</EmployeeWage>
+<EmployeeWage RefId="F08ABDF017DC11DBAC45CDA34164E53D" EmployeePersonalRefId="F07253F217DC11DBAC45836A3A865BF2">
+  <PayRate Type="P">
+    <Amount>1823</Amount>
+    <Percentage>100</Percentage>
+  </PayRate>
+</EmployeeWage>
+<EmployeeWage RefId="F09E941117DC11DBAC45F37A8BBD3251" EmployeePersonalRefId="F08C449017DC11DBAC4586BF6B33692D">
+  <PayRate Type="P">
+    <Amount>2560</Amount>
+    <Percentage>100</Percentage>
+  </PayRate>
+</EmployeeWage>
+<EmployeeWage RefId="F0ADFD6117DC11DBAC45C27176DA700B" EmployeePersonalRefId="F0A01AB117DC11DBAC45C110A1800901">
+  <PayRate Type="P">
+    <Amount>544</Amount>
+    <Percentage>100</Percentage>
+  </PayRate>
+</EmployeeWage>
+<EmployeeWage RefId="F0C1D38017DC11DBAC45AF7165D64B00" EmployeePersonalRefId="F0AF840117DC11DBAC45B307851EA0DB">
+  <PayRate Type="P">
+    <Amount>1467</Amount>
+    <Percentage>100</Percentage>
+  </PayRate>
+</EmployeeWage></SIF_ObjectData>

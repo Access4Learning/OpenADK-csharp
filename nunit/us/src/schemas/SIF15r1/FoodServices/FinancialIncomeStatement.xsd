@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: FinancialIncomeStatement
+
+Owner: Food Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-06-16 Mark Reichert
+- 1.5r1 updates
+
+-->
+
+<!-- 5.3.17 FinancialIncomeStatement -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='FinancialIncomeStatement'>
+		<complexType>
+			<sequence>
+				<element ref='sif:GenerationDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GenerationTime' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LocationInfoRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FISPeriod' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FISAmount' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Program' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='GenerationDate' type='sif:DateOrEmptyType'/>
+
+		<element name='GenerationTime' type='sif:TimeWithZoneOrEmptyType'/>
+
+		<element name='FISPeriod'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='StartDate' type='sif:DateOrEmptyType' use='required'/>
+						<attribute name='EndDate' type='sif:DateOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='FISAmount'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='FinancialAccountAccountingPeriodLocationInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+						<attribute name='FinancialClassRefId' type='sif:RefIdOrEmptyType' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>

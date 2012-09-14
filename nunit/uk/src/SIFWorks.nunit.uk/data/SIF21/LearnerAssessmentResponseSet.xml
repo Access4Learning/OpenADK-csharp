@@ -1,0 +1,15 @@
+﻿<LearnerAssessmentResponseSet RefId="D6548D9AE6B87192AE98384174359C32" AssessmentResponseComponentRefId="7192AE98384139051CC755293A2117BC" LearnerPersonalRefId="7192AE98384139051CC755293A2117BC">
+  <Items>
+    <Item>
+      <Response>C</Response>
+      <ResponseStatus>Complete</ResponseStatus>
+      <ResponseTime>PT32S</ResponseTime>
+      <Mark>Y</Mark>
+      <Group>Writing Section 3</Group>
+      <ItemName>Writing 3A</ItemName>
+      <ItemNumber>W3A</ItemNumber>
+      <OrderAsked>1</OrderAsked>
+      <NumberOfAttempts>2</NumberOfAttempts>
+    </Item>
+  </Items>
+</LearnerAssessmentResponseSet>

@@ -1,0 +1,110 @@
+<!--
+
+Object: Authentication
+
+Owner: Infrastructure Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+2004-07-27 Mark Reichert
+- 1.5r1 Draft 3 updates
+
+2004-08-19 Mark Reichert
+- Changed EmployeeInfo to EmployeePersonal in SifRefIdType
+
+-->
+
+<!-- 5.11.2 Authentication -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='Authentication'>
+		<complexType>
+			<sequence>
+				<element ref='sif:AuthenticationInfo' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='SifRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='SifRefIdType' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='StudentPersonal'/>
+						<enumeration value='StaffPersonal'/>
+						<enumeration value='StudentContact'/>
+						<enumeration value='EmployeePersonal'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+		</complexType>
+	</element>
+
+		<element name='AuthenticationInfo'>
+			<complexType>
+				<sequence>
+					<element ref='sif:System' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Username' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:DistinguishedName' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Password' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='System'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Type' use='required'>
+								<simpleType>
+									<restriction base='string'>
+										<enumeration value='Network'/>
+										<enumeration value='Application'/>
+									</restriction>
+								</simpleType>
+							</attribute>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+			<element name='Username' type='string'/>
+
+			<element name='DistinguishedName' type='string'/>
+
+			<element name='Password'>
+				<complexType>
+					<simpleContent>
+						<extension base='string'>
+							<attribute name='Algorithm' use='required'>
+								<simpleType>
+									<restriction base='string'>
+										<enumeration value='base64'/>
+										<enumeration value='MD5'/>
+										<enumeration value='SHA1'/>
+										<enumeration value='DES'/>
+										<enumeration value='TripleDES'/>
+										<enumeration value='RC2'/>
+										<enumeration value='RSA'/>
+										<enumeration value='DSA'/>
+									</restriction>
+								</simpleType>
+							</attribute>
+							<attribute name='KeyName' type='string' use='required'/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+
+</schema>

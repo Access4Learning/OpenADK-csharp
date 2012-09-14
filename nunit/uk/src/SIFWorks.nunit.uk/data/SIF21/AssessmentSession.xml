@@ -1,0 +1,9 @@
+﻿<AssessmentSession RefId="E98AE59C32A2117D9192A6B873841743" AssessmentLearnerSetRefId="8456D39051CC755293A4A4763088F3D3">
+  <SessionDate>2007-01-27</SessionDate>
+  <SchoolInfoRefId>8456D39051CC755293A4A4763088F3D3</SchoolInfoRefId>
+  <Activity>Test</Activity>
+  <Status>Complete</Status>
+  <StaffList>
+    <WorkforcePersonalRefId>E98AE59C32A2117D9192A6B873841743</WorkforcePersonalRefId>
+  </StaffList>
+</AssessmentSession>

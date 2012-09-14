@@ -1,0 +1,12 @@
+<SIF_ObjectData>
+<FoodserviceSales RefId="ECCCA48017DC11DBAC45E298599B41A8">
+  <SchoolInfoRefId>C17250A017DC11DBAC458FE86C20166B</SchoolInfoRefId>
+  <Date>20041011</Date>
+  <Program Type="Foodservice">NSLP</Program>
+  <SalesAmount Type="Charged" AccountType="BreakfastCredit">4371.90</SalesAmount>
+  <SalesAmount Type="Charged" AccountType="LunchCredit">7867.90</SalesAmount>
+  <SalesAmount Type="Earned" AccountType="NA">9480.99</SalesAmount>
+  <SalesAmount Type="Cash" AccountType="NA">7537.99</SalesAmount>
+  <SalesAmount Type="Account" AccountType="PrepaidCash">9209.91</SalesAmount>
+  <SalesAmount Type="Charged" AccountType="PrepaidCash">9444.91</SalesAmount>
+</FoodserviceSales></SIF_ObjectData>

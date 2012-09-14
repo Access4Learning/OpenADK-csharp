@@ -1,0 +1,49 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>140505110710275600EBA6904B78FA94</SIF_MsgId>
+      <SIF_Date>20050517</SIF_Date>
+      <SIF_Time Zone="UTC-07:00">07:16:39</SIF_Time>
+      <SIF_SourceId>ApplePowerSchoolSIFAgent</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>D00FDB4A67AB4DFBB49EB64C568F40CE</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData>
+      <SchoolInfo RefId="1405050D101E3A0D0AC7F1D5131AE301">
+        <SchoolName>Westside Elementary</SchoolName>
+        <PrincipalInfo>
+          <ContactName>Susan Huff</ContactName>
+        </PrincipalInfo>
+        <PhoneNumber Format="FF" Type="18">801-555-1212</PhoneNumber>
+        <PhoneNumber Format="FF" Type="17">801-555-1313</PhoneNumber>
+        <Address Type="04">
+          <Street>
+            <Line1>600 West Center Street</Line1>
+          </Street>
+          <City>Hobble Creek</City>
+          <County>Utah County</County>
+          <StatePr Code="UT" />
+          <Country Code="US" />
+          <PostalCode>84663</PostalCode>
+        </Address>
+        <IdentificationInfo Code="99">4</IdentificationInfo>
+        <LowGradeLevel>KG</LowGradeLevel>
+        <HighGradeLevel>05</HighGradeLevel>
+      </SchoolInfo>
+      <SchoolInfo RefId="1405050D111C180A28F2CC7F1D5131AE">
+        <SchoolName>Graduated Students</SchoolName>
+        <IdentificationInfo Code="99">999999</IdentificationInfo>
+        <LowGradeLevel>KG</LowGradeLevel>
+        <HighGradeLevel>KG</HighGradeLevel>
+      </SchoolInfo>
+      <SchoolInfo RefId="1405050D111C18061E5F4007B9EAB78C">
+        <SchoolName>Example High School</SchoolName>
+        <IdentificationInfo Code="99">0</IdentificationInfo>
+        <LowGradeLevel>KG</LowGradeLevel>
+        <HighGradeLevel>KG</HighGradeLevel>
+      </SchoolInfo>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

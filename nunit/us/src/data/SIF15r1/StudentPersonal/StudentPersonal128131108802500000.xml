@@ -1,0 +1,78 @@
+<SIF_ObjectData>
+  <StudentPersonal RefId="C6E56D1017DC11DBAC45BEBBBA7C526E">
+    <LocalId>C6E56D1</LocalId>
+    <ElectronicId Type="Barcode">41898989</ElectronicId>
+    <Name Type="01">
+      <LastName>Merrell</LastName>
+      <FirstName>Patrick</FirstName>
+    </Name>
+    <Email Type="Primary">PatrickMerrell@sifinfo.org</Email>
+    <GradYear Type="Original">2004</GradYear>
+    <Demographics>
+      <Gender>M</Gender>
+      <BirthDate>19900218</BirthDate>
+      <PlaceOfBirth>Boca Raton</PlaceOfBirth>
+      <CountyOfBirth>Palm Beach</CountyOfBirth>
+      <StateOfBirth Code="FL" />
+      <CountryOfBirth Code="US" />
+      <CountryOfCitizenship Code="US" />
+      <CountryOfResidency Code="US" />
+      <CitizenshipStatus>04</CitizenshipStatus>
+      <EnglishProficiency Code="01" />
+    </Demographics>
+    <StudentAddress PickupOrDropoff="Dropoff" DayOfWeek="WeFr">
+      <Address Type="01">
+        <Street>
+          <Line1>4491 29th Blvd.</Line1>
+          <StreetNumber>4491</StreetNumber>
+          <StreetName>29th</StreetName>
+          <StreetType>Blvd.</StreetType>
+        </Street>
+        <City>Boca Raton</City>
+        <County>Palm Beach</County>
+        <StatePr Code="FL" />
+        <Country Code="US" />
+        <PostalCode>33486</PostalCode>
+      </Address>
+    </StudentAddress>
+    <PhoneNumber Format="FF" Type="18">(561) 515-3700</PhoneNumber>
+  </StudentPersonal>
+  <StudentPersonal RefId="C8A9B25117DC11DBAC4580A21788A936">
+    <LocalId>C8A9B25</LocalId>
+    <ElectronicId Type="Barcode">62510052</ElectronicId>
+    <Name Type="01">
+      <LastName>Williams</LastName>
+      <FirstName>Malia</FirstName>
+    </Name>
+    <Email Type="Primary">MaliaWilliams@sifinfo.org</Email>
+    <GradYear Type="Projected">2006</GradYear>
+    <Demographics>
+      <Gender>F</Gender>
+      <BirthDate>19930316</BirthDate>
+      <PlaceOfBirth>Boca Raton</PlaceOfBirth>
+      <CountyOfBirth>Palm Beach</CountyOfBirth>
+      <StateOfBirth Code="FL" />
+      <CountryOfBirth Code="US" />
+      <CountryOfCitizenship Code="US" />
+      <CountryOfResidency Code="US" />
+      <CitizenshipStatus>04</CitizenshipStatus>
+      <EnglishProficiency Code="01" />
+    </Demographics>
+    <StudentAddress PickupOrDropoff="NA" DayOfWeek="MoTuWeThFr">
+      <Address Type="01">
+        <Street>
+          <Line1>13416 12th Ave.</Line1>
+          <StreetNumber>13416</StreetNumber>
+          <StreetName>12th</StreetName>
+          <StreetType>Ave.</StreetType>
+        </Street>
+        <City>Boca Raton</City>
+        <County>Palm Beach</County>
+        <StatePr Code="FL" />
+        <Country Code="US" />
+        <PostalCode>33486</PostalCode>
+      </Address>
+    </StudentAddress>
+    <PhoneNumber Format="FF" Type="18">(561) 445-7814</PhoneNumber>
+  </StudentPersonal>
+</SIF_ObjectData>

@@ -1,0 +1,20 @@
+<SIF_ObjectData>
+<FinBudget>
+  <ReportDate>20031231</ReportDate>
+  <StatePrId>F10FA56017DC11DBAC45C19F9201C396</StatePrId>
+  <FiscalYr>2002</FiscalYr>
+  <BudgetAccount>
+    <AccountClass>Expenditure</AccountClass>
+    <FundBreak>10</FundBreak>
+    <FuncBreak>1200</FuncBreak>
+    <ObjBreak>610</ObjBreak>
+    <BudgetAmount>56000</BudgetAmount>
+  </BudgetAccount>
+  <BudgetAccount>
+    <AccountClass>Expenditure</AccountClass>
+    <FundBreak>10</FundBreak>
+    <FuncBreak>1100</FuncBreak>
+    <ObjBreak>610</ObjBreak>
+    <BudgetAmount>402234</BudgetAmount>
+  </BudgetAccount>
+</FinBudget></SIF_ObjectData>

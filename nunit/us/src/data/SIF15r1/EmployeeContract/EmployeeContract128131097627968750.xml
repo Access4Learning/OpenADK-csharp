@@ -1,0 +1,51 @@
+<SIF_ObjectData>
+<EmployeeContract RefId="EED1271017DC11DBAC45D25EF082FA97" EmployeePersonalRefId="EE55676117DC11DBAC458067448028FA">
+  <BaseSalary>42413</BaseSalary>
+  <ContractStart>20000101</ContractStart>
+  <ContractEnd>20061231</ContractEnd>
+</EmployeeContract>
+<EmployeeContract RefId="F019ACA017DC11DBAC45DE161B55034B" EmployeePersonalRefId="F0169F6017DC11DBAC45AC3DA2A1272B">
+  <BaseSalary>41630</BaseSalary>
+  <ContractStart>20000101</ContractStart>
+  <ContractEnd>20061231</ContractEnd>
+</EmployeeContract>
+<EmployeeContract RefId="F028EEE017DC11DBAC4591E4D0F3D91A" EmployeePersonalRefId="F025E1A017DC11DBAC45DC2161B00F98">
+  <BaseSalary>36904</BaseSalary>
+  <ContractStart>20000101</ContractStart>
+  <ContractEnd>20061231</ContractEnd>
+</EmployeeContract>
+<EmployeeContract RefId="F03E4BA017DC11DBAC45A80E8E51C1DF" EmployeePersonalRefId="F03B3E6017DC11DBAC458993E955EE2E">
+  <BaseSalary>41232</BaseSalary>
+  <ContractStart>20000101</ContractStart>
+  <ContractEnd>20061231</ContractEnd>
+</EmployeeContract>
+<EmployeeContract RefId="F05248D117DC11DBAC459E4AC2F5642F" EmployeePersonalRefId="F04F3B9217DC11DBAC45808B98761863">
+  <BaseSalary>29915</BaseSalary>
+  <ContractStart>20000101</ContractStart>
+  <ContractEnd>20061231</ContractEnd>
+</EmployeeContract>
+<EmployeeContract RefId="F064985017DC11DBAC45A0A2D644BFF9" EmployeePersonalRefId="F0618B1117DC11DBAC45E869DEB529E8">
+  <BaseSalary>40235</BaseSalary>
+  <ContractStart>20000101</ContractStart>
+  <ContractEnd>20061231</ContractEnd>
+</EmployeeContract>
+<EmployeeContract RefId="F075613217DC11DBAC45B40C65AB6C35" EmployeePersonalRefId="F07253F217DC11DBAC45836A3A865BF2">
+  <BaseSalary>25035</BaseSalary>
+  <ContractStart>20000101</ContractStart>
+  <ContractEnd>20061231</ContractEnd>
+</EmployeeContract>
+<EmployeeContract RefId="F08F51D017DC11DBAC45D61586C2A4BB" EmployeePersonalRefId="F08C449017DC11DBAC4586BF6B33692D">
+  <BaseSalary>28379</BaseSalary>
+  <ContractStart>20000101</ContractStart>
+  <ContractEnd>20061231</ContractEnd>
+</EmployeeContract>
+<EmployeeContract RefId="F0A327F117DC11DBAC45C018A089CC9C" EmployeePersonalRefId="F0A01AB117DC11DBAC45C110A1800901">
+  <BaseSalary>31212</BaseSalary>
+  <ContractStart>20000101</ContractStart>
+  <ContractEnd>20061231</ContractEnd>
+</EmployeeContract>
+<EmployeeContract RefId="F0B2914117DC11DBAC45A8C94727CF5B" EmployeePersonalRefId="F0AF840117DC11DBAC45B307851EA0DB">
+  <BaseSalary>38812</BaseSalary>
+  <ContractStart>20000101</ContractStart>
+  <ContractEnd>20061231</ContractEnd>
+</EmployeeContract></SIF_ObjectData>

@@ -1,0 +1,10 @@
+<StudentSchoolEnrollment RefId="2B964584CFCA5CA5490C204F3A361B99" StudentPersonalRefId="1DFA5566541497B8430AFE900ED26EA0" SchoolInfoRefId="DE6B65527D993793460DB693DC62DB10" MembershipType="Home" TimeFrame="NA">
+  <EnrollStatus Code="B30"/>
+  <EntryDate></EntryDate>
+  <EntryType Code="E02"/>
+  <GradeLevel Code="10"/>
+  <Homeroom RoomInfoRefId="CEB18C950E8C0A2C4BB5FE900ED26EA0"/>
+  <StaffAssigned Type="Counselor" StaffPersonalRefId="D7D3FF85E0C49CC5490CFE900ED26EA0"/>
+  <FTE>1.0</FTE>
+  <FTPTStatus>FullTime</FTPTStatus>
+</StudentSchoolEnrollment>

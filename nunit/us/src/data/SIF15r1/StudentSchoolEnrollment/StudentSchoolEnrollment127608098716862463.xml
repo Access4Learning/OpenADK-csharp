@@ -1,0 +1,44 @@
+<SIF_Message Version="1.5r1" xmlns="http://www.sifinfo.org/infrastructure/1.x">
+  <SIF_Response>
+    <SIF_Header>
+      <SIF_MsgId>14050511071411215A67607809FBA8DB</SIF_MsgId>
+      <SIF_Date>20050517</SIF_Date>
+      <SIF_Time Zone="UTC-07:00">07:20:17</SIF_Time>
+      <SIF_SourceId>ApplePowerSchoolSIFAgent</SIF_SourceId>
+      <SIF_DestinationId>DirectoryAgent</SIF_DestinationId>
+    </SIF_Header>
+    <SIF_RequestMsgId>5DAC710486964A0D80EFC2DC91B7F174</SIF_RequestMsgId>
+    <SIF_PacketNumber>1</SIF_PacketNumber>
+    <SIF_MorePackets>No</SIF_MorePackets>
+    <SIF_ObjectData>
+      <StudentSchoolEnrollment RefId="1405050D1115164E14DF3BB2CE3C995F" StudentPersonalRefId="1405050D1115164D461C7458ECB9FAAA" SchoolInfoRefId="1405050D101E3A0D0AC7F1D5131AE301" MembershipType="Home" TimeFrame="Current">
+        <EnrollStatus Code="B30" />
+        <EntryDate>20050513</EntryDate>
+        <EntryType Code="99" />
+        <GradeLevel Code="KG" />
+        <ExitDate>20050601</ExitDate>
+      </StudentSchoolEnrollment>
+      <StudentSchoolEnrollment RefId="140505100F081C313CBD50AADF6639DF" StudentPersonalRefId="140505100F081C3114BDFF110F723E44" SchoolInfoRefId="1405050D101E3A0D0AC7F1D5131AE301" MembershipType="Home" TimeFrame="Current">
+        <EnrollStatus Code="B30" />
+        <EntryDate>20050516</EntryDate>
+        <EntryType Code="03" />
+        <GradeLevel Code="KG" />
+        <ExitDate>20050601</ExitDate>
+      </StudentSchoolEnrollment>
+      <StudentSchoolEnrollment RefId="1405050D1104272132586E8CAD8ABD50" StudentPersonalRefId="1405050D11042721007CB8FF23CD80E8" SchoolInfoRefId="1405050D101E3A0D0AC7F1D5131AE301" MembershipType="Home" TimeFrame="Current">
+        <EnrollStatus Code="B30" />
+        <EntryDate>20050513</EntryDate>
+        <EntryType Code="99" />
+        <GradeLevel Code="KG" />
+        <ExitDate>20050601</ExitDate>
+      </StudentSchoolEnrollment>
+      <StudentSchoolEnrollment RefId="1405050D110C331C2846EC78EDE93677" StudentPersonalRefId="1405050D110C331B5AF6639DF8A95FCD" SchoolInfoRefId="1405050D101E3A0D0AC7F1D5131AE301" MembershipType="Home" TimeFrame="Current">
+        <EnrollStatus Code="B30" />
+        <EntryDate>20050513</EntryDate>
+        <EntryType Code="99" />
+        <GradeLevel Code="KG" />
+        <ExitDate>20050601</ExitDate>
+      </StudentSchoolEnrollment>
+    </SIF_ObjectData>
+  </SIF_Response>
+</SIF_Message>

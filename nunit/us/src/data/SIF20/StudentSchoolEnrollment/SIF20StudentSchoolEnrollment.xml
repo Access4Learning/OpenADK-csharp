@@ -1,0 +1,18 @@
+<StudentSchoolEnrollment RefId="A8C3D3E34B359D75101D00AA001A1652" StudentPersonalRefId="D3E34B359D75101A8C3D00AA001A1652"
+	SchoolInfoRefId="D3E34B359D75101A8C3D00AA001A1651" MembershipType="Home" TimeFrame="Current" SchoolYear="2004">
+	<EntryDate>2004-01-29</EntryDate>
+	<EntryType>
+		<Code>1838</Code>
+	</EntryType>
+	<GradeLevel>
+		<Code>10</Code>
+	</GradeLevel>
+	<Homeroom SIF_RefObject="RoomInfo">D7510D3E34B3591A8C3D00AA001A1651</Homeroom>
+	<Advisor SIF_RefObject="StaffPersonal">B359D3E34D75101A8C3D00AA001A1652</Advisor>
+	<FTE>1.00</FTE>
+	<FTPTStatus>FullTime</FTPTStatus>
+	<ResidencyStatus>
+		<Code>1653</Code>
+	</ResidencyStatus>
+	<NonResidentAttendReason>1658</NonResidentAttendReason>
+</StudentSchoolEnrollment>

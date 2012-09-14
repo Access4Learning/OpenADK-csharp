@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: LEAInfo
+
+Owner: Student Information Systems Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.8.16 LEAInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='LEAInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:LocalId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:StatePrId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:NCESId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LEAName' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LEAURL' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EducationAgencyType' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LEAContact' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:PhoneNumber' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Address' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:IdentificationInfo' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:GradeLevels' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:OperationalStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:CongressionalDistrict' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='LEAName' type='string'/>
+
+		<element name='LEAURL' type='string'/>
+
+		<element name='EducationAgencyType'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='Code' type='string' use='required'/>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+		<element name='LEAContact'>
+			<complexType>
+				<sequence>
+					<element ref='sif:PublishInDirectory' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:ContactInfo' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+</schema>

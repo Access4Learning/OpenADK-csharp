@@ -1,0 +1,7 @@
+<SIF_ObjectData>
+<AggregateStatisticInfo RefId="F1B952E017DC11DBAC459E792C8A41B5">
+  <StatisticName>Gifted/Talented Count</StatisticName>
+  <CalculationRule Type="Description">Total number of gifted/talented students</CalculationRule>
+  <ApprovalDate>20040912</ApprovalDate>
+  <Measure Type="Count" />
+</AggregateStatisticInfo></SIF_ObjectData>

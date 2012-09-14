@@ -1,0 +1,1047 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95C75EB1-9CD1-42B1-AA8F-F615B0C8DE96}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SIFWorks.Nunit.US</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SIFWorks.Nunit.US</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccAuxPath>
+    </SccAuxPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>618</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>0618</NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'PerfTest|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;PERFTEST</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Eval|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseDocs|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Internal|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.4.3.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\nunit\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.3.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\nunit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Mentalis.Security, Version=1.0.14.25108, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Org.Mentalis.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OpenADK\Common\DemographicsTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Common\PartialDateTests.cs" />
+    <Compile Include="OpenADK\Impl\DirectorySearcherTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\ErrorMessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\MessageDispatcherTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\MessageStreamerTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\RequestCacheFileTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\Surrogates\FauxAttributeTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\FauxSIFElementPointerTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\GradYearNodePointerTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\GradYearSurrogateTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\GradYearTypePointerTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\PhoneNumberSurrogateTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\ProportionSurrogateTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\RouteElementSurrogateTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\ServiceLocationSurrogateTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\ServiceSurrogateTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\SifEntitySurrogateTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\SIFTimeSurrogateTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\SurrogateSimpleFieldPointerTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\TimeStampSurrogateTests.cs" />
+    <Compile Include="OpenADK\Impl\Surrogates\XPathSurrogateTests.cs" />
+    <Compile Include="OpenADK\Impl\TestState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Impl\TestZoneImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Instr\TestLearningStandardDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Instr\TestStudentPlacement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\ObjectCreator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\QueryTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Reporting\TestReportAuthority.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Reporting\TestReportManifest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SDOParsingTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SifDataObjectTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SifElementTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SifEncryptionTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SIFParserTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\SifResponseSenderTests.cs" />
+    <Compile Include="OpenADK\SifWriterTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Student\LEAInfoTests.cs" />
+    <Compile Include="OpenADK\Student\ParseStudentPersonal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Student\SchoolCourseInfoTests.cs" />
+    <Compile Include="OpenADK\Student\SIF15r1StudentValidationTests.cs" />
+    <Compile Include="OpenADK\Student\SIF20StudentValidationTests.cs" />
+    <Compile Include="OpenADK\Student\StaffAssignmentTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\AdvancedMappingsTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\AttributeMappingTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\BaseMappingsTest.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\DestinyMappingTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\MappingsObjectTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\MappingsSelectTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\MappingsSpeedTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\MappingTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenADK\Tools\Mapping\OtherIdMappingsTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\SASIMappingsTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\SIF15MappingTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\SIF20MappingTests.cs" />
+    <Compile Include="OpenADK\Tools\Mapping\TestValueBuilder.cs" />
+    <Compile Include="OpenADK\Tools\Queries\SQLQueryFormatterTests.cs" />
+    <Compile Include="OpenADK\Tools\USSchemaValidator.cs" />
+    <Compile Include="OpenADK\Tools\ValidationTest.cs" />
+    <Compile Include="UsAdkTest.cs" />
+    <Compile Include="Util\AdkStringUtilsTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Versioning\MetadataVersioningTests.cs" />
+    <Compile Include="Versioning\VersioningTests.cs" />
+    <Compile Include="Web\Http\HttpsTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="res\127.0.0.1.pfx" />
+    <EmbeddedResource Include="res\BusRouteDetail.xml" />
+    <EmbeddedResource Include="res\EmptyResponse.pkt" />
+    <EmbeddedResource Include="res\GetNextMessageResponse.xml" />
+    <EmbeddedResource Include="res\invalid.pfx" />
+    <EmbeddedResource Include="res\issuer.pfx" />
+    <EmbeddedResource Include="res\LearningStandardDocument.xml" />
+    <EmbeddedResource Include="res\LibraryPatronStatus.xml" />
+    <EmbeddedResource Include="res\localhost.pfx" />
+    <EmbeddedResource Include="res\SchoolInfo.xml" />
+    <EmbeddedResource Include="res\SectionInfo.xml" />
+    <EmbeddedResource Include="res\SectionInfo_SchoolCourseInfoOverride.xml" />
+    <EmbeddedResource Include="res\SIF_Error.xml" />
+    <EmbeddedResource Include="res\SIF_LogEntry.xml" />
+    <EmbeddedResource Include="res\SIF_LogEntry2.xml" />
+    <EmbeddedResource Include="res\StudentPersonal.xml" />
+    <EmbeddedResource Include="res\StudentPersonalResponse_AddForDelete.xml" />
+    <EmbeddedResource Include="res\StudentPersonal_Small.xml" />
+    <EmbeddedResource Include="res\adk.pfx" />
+    <EmbeddedResource Include="res\AdkTestClientCertificate.cer" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="data\SIF15r1\EmployeeWage\{C59A3426-AF47-4FDD-9D1F-66577F94C70E}" />
+    <None Include="OpenADK\Tools\Mapping\Destiny2.0.cfg" />
+    <None Include="OpenADK\Tools\Mapping\MultiVersion.agent.cfg" />
+    <None Include="OpenADK\Tools\Mapping\SASI2.0.cfg" />
+    <None Include="OpenADK\Tools\Mapping\SIF1.5.agent.cfg" />
+    <None Include="OpenADK\Tools\Mapping\SIF2.0.agent.cfg" />
+    <EmbeddedResource Include="schemas\SIF11\AttendanceCodeInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\Billing.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\BusEquipment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\BusInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\BusRouteDetail.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\BusRouteInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\BusStopInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\CommonElements.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\CommonTypes.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\LibraryPatronStatus.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\Payment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\RoomInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\RoomType.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\SchoolCourseInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\SchoolInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\SectionInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\SIF_Message.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\SIF_ZoneStatus.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\StaffPersonal.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\StudentContact.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\StudentDailyAttendance.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\StudentMeal.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\StudentPersonal.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\StudentPicture.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\StudentSchoolEnrollment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\StudentSectionEnrollment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\StudentTransportInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF11\TermInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\CommonElements.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\CommonTypes.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\DataWarehouse\AggregateCharacteristicInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\DataWarehouse\AggregateStatisticFact.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\DataWarehouse\AggregateStatisticInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\AccountingPeriod.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FinancialAccount.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FinancialAccountAccountingPeriodLocationInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FinancialClass.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FinancialIncomeStatement.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FinancialTransaction.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FiscalYear.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FoodserviceItem.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FoodserviceItemPortion.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FoodserviceItemSales.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FoodserviceItemUnit.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FoodserviceMealPrices.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FoodserviceReimbursementRates.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FoodserviceSales.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FoodserviceTransaction.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FoodserviceTransactionDetails.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\FoodserviceTransactionPayMethod.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\StaffMeal.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\FoodServices\StudentMeal.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\ActivityProvider.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\Billing.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\EmployeeAssignment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\EmployeeContract.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\EmployeeCredential.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\EmployeeCredit.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\EmployeeHR.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\EmployeePersonal.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\EmployeePicture.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\EmployeeRecertification.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\EmployeeWage.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\FinAnnual.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\FinBudget.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\LocationInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\Payment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\ProfDevActivities.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\Purchasing.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\StaffAssignment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\TimeWorked.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\VendorInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\HRFinancials\W4.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\Infrastructure\Authentication.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\Infrastructure\SIF_LogEntry.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\Infrastructure\SIF_ZoneStatus.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\Activity.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\Assessment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\AssessmentItem.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\AssessmentSection.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\AssessmentSubTest.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\Assignment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\CurriculumStructure.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\LearningResource.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\LearningStandardDocument.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\LearningStandardItem.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\Lesson.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\StudentParticipation.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\StudentPlacement.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\InstructionalServices\StudentResultSet.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\LibraryAutomation\LibraryPatronStatus.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\SIF_Message.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\AttendanceCodeInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\LEAInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\RoomInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\RoomType.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\SchoolCourseInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\SchoolInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\SectionInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\StaffPersonal.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\StudentContact.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\StudentDailyAttendance.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\StudentPersonal.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\StudentPicture.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\StudentSchoolEnrollment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\StudentSectionEnrollment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\StudentSnapshot.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\StudentInformation\TermInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\Transportation\BusEquipment.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\Transportation\BusInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\Transportation\BusPositionInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\Transportation\BusRouteDetail.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\Transportation\BusRouteInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\Transportation\BusStopInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\Transportation\StudentTransportInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\VerticalReporting\ReportAuthorityInfo.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\VerticalReporting\ReportManifest.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\VerticalReporting\SIF_ReportObject.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\VerticalReporting\StudentLocator.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF20r1\SIF_Message.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF20\SIF_Message.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF21\SIF_Message.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF22\imports\xml\xml.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF22\SIF_Message.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF21\imports\xml\xml.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF20r1\imports\xml\xml.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF20\imports\xml\xml.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schemas\SIF15r1\imports\xml\xml.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\SIF15r1\AccountingPeriod\AccountingPeriod128131108028125000.xml" />
+    <Content Include="data\SIF15r1\ActivityProvider\ActivityProvider128131107218750000.xml" />
+    <Content Include="data\SIF15r1\Activity\Activity128131106746562500.xml" />
+    <Content Include="data\SIF15r1\AggregateCharacteristicInfo\AggregateCharacteristicInfo128131098670312500.xml" />
+    <Content Include="data\SIF15r1\AggregateStatisticFact\AggregateStatisticFact128131109057031250.xml" />
+    <Content Include="data\SIF15r1\AggregateStatisticInfo\AggregateStatisticInfo128131098996250000.xml" />
+    <Content Include="data\SIF15r1\AssessmentItem\AssessmentItem128131107001406250.xml" />
+    <Content Include="data\SIF15r1\AssessmentSection\AssessmentSection128131108245468750.xml" />
+    <Content Include="data\SIF15r1\AssessmentSubTest\AssessmentSubTest128131108655937500.xml" />
+    <Content Include="data\SIF15r1\Assessment\Assessment128131105875625000.xml" />
+    <Content Include="data\SIF15r1\Assignment\Assignment128131105428593750.xml" />
+    <Content Include="data\SIF15r1\AttendanceCodeInfo\AttendanceCodeInfo128131109451250000.xml" />
+    <Content Include="data\SIF15r1\Authentication\Authentication128131108290468750.xml" />
+    <Content Include="data\SIF15r1\Billing\Billing128131095962187500.xml" />
+    <Content Include="data\SIF15r1\BusEquipment\BusEquipment128131106877031250.xml" />
+    <Content Include="data\SIF15r1\BusInfo\BusInfo128131108571406250.xml" />
+    <Content Include="data\SIF15r1\BusPositionInfo\BusPositionInfo128131108487812500.xml" />
+    <Content Include="data\SIF15r1\BusRouteDetail\BusRouteDetail128131108891562500.xml" />
+    <Content Include="data\SIF15r1\BusRouteInfo\BusRouteInfo128131107305000000.xml" />
+    <Content Include="data\SIF15r1\BusStopInfo\BusStopInfo128131107772343750.xml" />
+    <Content Include="data\SIF15r1\CurriculumStructure\CurriculumStructure128131108974218750.xml" />
+    <Content Include="data\SIF15r1\EmployeeAssignment\EmployeeAssignment128131105471093750.xml" />
+    <Content Include="data\SIF15r1\EmployeeContract\EmployeeContract128131097627968750.xml" />
+    <Content Include="data\SIF15r1\EmployeeCredential\EmployeeCredential128131108203125000.xml" />
+    <Content Include="data\SIF15r1\EmployeeCredit\EmployeeCredit128131106961093750.xml" />
+    <Content Include="data\SIF15r1\EmployeeHR\EmployeeHR128131099152343750.xml" />
+    <Content Include="data\SIF15r1\EmployeePersonal\EmployeePersonal128131107348750000.xml" />
+    <Content Include="data\SIF15r1\EmployeePicture\EmployeePicture128131096936562500.xml" />
+    <Content Include="data\SIF15r1\EmployeeRecertification\EmployeeRecertification128131107729843750.xml" />
+    <Content Include="data\SIF15r1\EmployeeWage\EmployeeWage128131107175312500.xml" />
+    <Content Include="data\SIF15r1\FinancialAccountAccountingPeriodLocationInfo\FinancialAccountAccountingPeriodLocationInfo128131107391093750.xml" />
+    <Content Include="data\SIF15r1\FinancialAccount\FinancialAccount128131107946250000.xml" />
+    <Content Include="data\SIF15r1\FinancialClass\FinancialClass128131099795000000.xml" />
+    <Content Include="data\SIF15r1\FinancialIncomeStatement\FinancialIncomeStatement128131107861562500.xml" />
+    <Content Include="data\SIF15r1\FinancialTransaction\FinancialTransaction128131108615156250.xml" />
+    <Content Include="data\SIF15r1\FinAnnual\FinAnnual128131096176562500.xml" />
+    <Content Include="data\SIF15r1\FinBudget\FinBudget128131099265781250.xml" />
+    <Content Include="data\SIF15r1\FiscalYear\FiscalYear128131096748593750.xml" />
+    <Content Include="data\SIF15r1\FoodserviceItemPortion\FoodserviceItemPortion128131107905156250.xml" />
+    <Content Include="data\SIF15r1\FoodserviceItemSales\FoodserviceItemSales128131109264687500.xml" />
+    <Content Include="data\SIF15r1\FoodserviceItemUnit\FoodserviceItemUnit128131106919218750.xml" />
+    <Content Include="data\SIF15r1\FoodserviceItem\FoodserviceItem128131107433125000.xml" />
+    <Content Include="data\SIF15r1\FoodserviceMealPrices\FoodserviceMealPrices128131109138906250.xml" />
+    <Content Include="data\SIF15r1\FoodserviceReimbursementRates\FoodserviceReimbursementRates128131105555625000.xml" />
+    <Content Include="data\SIF15r1\FoodserviceSales\FoodserviceSales128131107818437500.xml" />
+    <Content Include="data\SIF15r1\FoodserviceTransactionDetails\FoodserviceTransactionDetails128131109224218750.xml" />
+    <Content Include="data\SIF15r1\FoodserviceTransactionPayMethod\FoodserviceTransactionPayMethod128131105918125000.xml" />
+    <Content Include="data\SIF15r1\FoodserviceTransaction\FoodserviceTransaction128131096522187500.xml" />
+    <Content Include="data\SIF15r1\LEAInfo\LEAInfo128131108933750000.xml" />
+    <Content Include="data\SIF15r1\LearningResource\LearningResource128131096350468750.xml" />
+    <Content Include="data\SIF15r1\LearningStandardDocument\LearningStandardDocument128131107259218750.xml" />
+    <Content Include="data\SIF15r1\LearningStandardItem\LearningStandardItem128131107986875000.xml" />
+    <Content Include="data\SIF15r1\Lesson\Lesson128131108439687500.xml" />
+    <Content Include="data\SIF15r1\LibraryPatronStatus\LibraryPatronStatus.xml" />
+    <Content Include="data\SIF15r1\LibraryPatronStatus\LibraryPatronStatus128131097407187500.xml" />
+    <Content Include="data\SIF15r1\LocationInfo\LocationInfo128131099675781250.xml" />
+    <Content Include="data\SIF15r1\Payment\Payment128131105512656250.xml" />
+    <Content Include="data\SIF15r1\ProfDevActivities\ProfDevActivities128131108332500000.xml" />
+    <Content Include="data\SIF15r1\Purchasing\Purchasing128131107473593750.xml" />
+    <Content Include="data\SIF15r1\ReportAuthorityInfo\ReportAuthorityInfo128131108529843750.xml" />
+    <Content Include="data\SIF15r1\ReportManifest\ReportManifest128131099513593750.xml" />
+    <Content Include="data\SIF15r1\RoomInfo\RoomInfo128131105597968750.xml" />
+    <Content Include="data\SIF15r1\RoomType\RoomType128131108846718750.xml" />
+    <Content Include="data\SIF15r1\SchoolCourseInfo\SchoolCourseInfo128131108159531250.xml" />
+    <Content Include="data\SIF15r1\SchoolInfo\SchoolInfo128131107091406250.xml" />
+    <Content Include="data\SIF15r1\SchoolInfo\SchoolInfo27609213175220428.xml" />
+    <Content Include="data\SIF15r1\SchoolInfo\SchoolInfo608096286915474.xml" />
+    <Content Include="data\SIF15r1\SchoolInfo\SchoolInfo609047746807800.xml" />
+    <Content Include="data\SIF15r1\SchoolInfo\SchoolInfo7609183253971174.xml" />
+    <Content Include="data\SIF15r1\SectionInfo\SectionInfo.xml" />
+    <Content Include="data\SIF15r1\SectionInfo\SectionInfo128131105835000000.xml" />
+    <Content Include="data\SIF15r1\SIF_LogEntry\SIF_LogEntry128131109305156250.xml" />
+    <Content Include="data\SIF15r1\SIF_ReportObject\SIF_ReportObject128131109179843750.xml" />
+    <Content Include="data\SIF15r1\StaffAssignment\StaffAssignment.xml" />
+    <Content Include="data\SIF15r1\StaffAssignment\StaffAssignment128131099435000000.xml" />
+    <Content Include="data\SIF15r1\StaffAssignment\StaffAssignment9184106309469.xml" />
+    <Content Include="data\SIF15r1\StaffMeal\StaffMeal128131108072187500.xml" />
+    <Content Include="data\SIF15r1\StaffPersonal\StaffPersonal.xml" />
+    <Content Include="data\SIF15r1\StaffPersonal\StaffPersonal128131107050468750.xml" />
+    <Content Include="data\SIF15r1\StaffPersonal\StaffPersonal27609184109434449.xml" />
+    <Content Include="data\SIF15r1\StaffPersonal\StaffPersonal7608098741201115.xml" />
+    <Content Include="data\SIF15r1\StudentContact\StudentContact.xml" />
+    <Content Include="data\SIF15r1\StudentContact\StudentContact128131107683906250.xml" />
+    <Content Include="data\SIF15r1\StudentDailyAttendance\StudentDailyAttendance128131108393125000.xml" />
+    <Content Include="data\SIF15r1\StudentLocator\StudentLocator128131107133281250.xml" />
+    <Content Include="data\SIF15r1\StudentMeal\StudentMeal128131106833906250.xml" />
+    <Content Include="data\SIF15r1\StudentParticipation\StudentParticipation128131108112968750.xml" />
+    <Content Include="data\SIF15r1\StudentPersonal\SampleSIF_Response.xml" />
+    <Content Include="data\SIF15r1\StudentPersonal\StudentPersonal.xml" />
+    <Content Include="data\SIF15r1\StudentPersonal\StudentPersonal09184032716190.xml" />
+    <Content Include="data\SIF15r1\StudentPersonal\StudentPersonal128131108802500000.xml" />
+    <Content Include="data\SIF15r1\StudentPersonal\StudentPersonal7608098731840095.xml" />
+    <Content Include="data\SIF15r1\StudentPersonal\StudentPersonal9095912763457.xml" />
+    <Content Include="data\SIF15r1\StudentPicture\StudentPicture128131098160625000.xml" />
+    <Content Include="data\SIF15r1\StudentPicture\StudentPicture128131098320312500.xml" />
+    <Content Include="data\SIF15r1\StudentPicture\StudentPicture128131098538281250.xml" />
+    <Content Include="data\SIF15r1\StudentPlacement\StudentPlacement128131096272812500.xml" />
+    <Content Include="data\SIF15r1\StudentResultSet\StudentResultSet128131107559062500.xml" />
+    <Content Include="data\SIF15r1\StudentSchoolEnrollment\StudentSchoolEnrollment.xml" />
+    <Content Include="data\SIF15r1\StudentSchoolEnrollment\StudentSchoolEnrollment127608098716862463.xml" />
+    <Content Include="data\SIF15r1\StudentSchoolEnrollment\StudentSchoolEnrollment128131097901406250.xml" />
+    <Content Include="data\SIF15r1\StudentSchoolEnrollment\StudentSchoolEnrollment27609081856457430.xml" />
+    <Content Include="data\SIF15r1\StudentSchoolEnrollment\StudentSchoolEnrollment27609214150052987.xml" />
+    <Content Include="data\SIF15r1\StudentSchoolEnrollment\StudentSchoolEnrollment609183435376263.xml" />
+    <Content Include="data\SIF15r1\StudentSectionEnrollment\StudentSectionEnrollment128131105742500000.xml" />
+    <Content Include="data\SIF15r1\StudentSnapshot\StudentSnapshot.xml" />
+    <Content Include="data\SIF15r1\StudentSnapshot\StudentSnapshot128131109408125000.xml" />
+    <Content Include="data\SIF15r1\StudentTransportInfo\StudentTransportInfo128131098877031250.xml" />
+    <Content Include="data\SIF15r1\TermInfo\TermInfo.xml" />
+    <Content Include="data\SIF15r1\TermInfo\TermInfo128131109015156250.xml" />
+    <Content Include="data\SIF15r1\TimeWorked\TimeWorked128131107518125000.xml" />
+    <Content Include="data\SIF15r1\VendorInfo\VendorInfo128131109097968750.xml" />
+    <Content Include="data\SIF15r1\W4\W4128131097043906250.xml" />
+    <Content Include="data\SIF20r1\AssessmentPackage\SIF20r1AssessmentPackage.xml" />
+    <Content Include="data\SIF20r1\Assessment\SIF20Assessment.xml" />
+    <Content Include="data\SIF20r1\FinancialIncomeStatement\SIF20FinancialIncomeStatement.xml" />
+    <Content Include="data\SIF20r1\FinancialIncomeStatement\SIF20r1FinancialIncomeStatement.xml" />
+    <Content Include="data\SIF20r1\FinancialTransaction\SIF20r1FinancialTransaction.xml" />
+    <Content Include="data\SIF20r1\OfficialStudentPeriodAttendance\SIF20r1OfficialStudentPeriodAttendance.xml" />
+    <Content Include="data\SIF20r1\SchoolInfo\SIF20SchoolInfo.xml" />
+    <Content Include="data\SIF20r1\StaffPersonal\SIF20StaffPersonal.xml" />
+    <Content Include="data\SIF20r1\StudentAcademicRecord\SIF20StudentAcademicRecord.xml" />
+    <Content Include="data\SIF20r1\StudentDemographicRecord\SIF20StudentDemographicRecord.xml" />
+    <Content Include="data\SIF20r1\StudentMeal\StudentMeal.xml" />
+    <Content Include="data\SIF20r1\StudentParticipation\SFI20StudentParticipation.xml" />
+    <Content Include="data\SIF20r1\StudentParticipation\StudentParticipation1.xml" />
+    <Content Include="data\SIF20r1\StudentPersonal\SIF20StudentPersonal.xml" />
+    <Content Include="data\SIF20r1\StudentPlacement\SIF20StudentPlacement.xml" />
+    <Content Include="data\SIF20r1\StudentPlacement\StudentPlacement1.xml" />
+    <Content Include="data\SIF20r1\StudentRecordExchange\SIF20SRE.xml" />
+    <Content Include="data\SIF20r1\StudentRecordPackage\SIF20r1StudentRecordPackage.xml" />
+    <Content Include="data\SIF20r1\StudentRecordPackage\SIF20StudentRecordPackage.xml" />
+    <Content Include="data\SIF20r1\StudentRecordPackage\StudentRecordPackage.xml" />
+    <Content Include="data\SIF20r1\StudentSchoolEnrollment\SIF20StudentSchoolEnrollment.xml" />
+    <Content Include="data\SIF20\AssessmentPackage\SIF20r1AssessmentPackage.xml" />
+    <Content Include="data\SIF20\Assessment\SIF20Assessment.xml" />
+    <Content Include="data\SIF20\FinancialIncomeStatement\SIF20FinancialIncomeStatement.xml" />
+    <Content Include="data\SIF20\FinancialTransaction\SIF20r1FinancialTransaction.xml" />
+    <Content Include="data\SIF20\OfficialStudentPeriodAttendance\SIF20r1OfficialStudentPeriodAttendance.xml" />
+    <Content Include="data\SIF20\SchoolInfo\SIF20SchoolInfo.xml" />
+    <Content Include="data\SIF20\StaffPersonal\SIF20StaffPersonal.xml" />
+    <Content Include="data\SIF20\StudentAcademicRecord\SIF20StudentAcademicRecord.xml" />
+    <Content Include="data\SIF20\StudentDemographicRecord\SIF20StudentDemographicRecord.xml" />
+    <Content Include="data\SIF20\StudentParticipation\SFI20StudentParticipation.xml" />
+    <Content Include="data\SIF20\StudentParticipation\StudentParticipation1.xml" />
+    <Content Include="data\SIF20\StudentPersonal\SIF20StudentPersonal.xml" />
+    <Content Include="data\SIF20\StudentPlacement\SIF20StudentPlacement.xml" />
+    <Content Include="data\SIF20\StudentPlacement\StudentPlacement1.xml" />
+    <Content Include="data\SIF20\StudentRecordExchange\SIF20SRE.xml" />
+    <Content Include="data\SIF20\StudentRecordPackage\SIF20r1StudentRecordPackage.xml" />
+    <Content Include="data\SIF20\StudentRecordPackage\SIF20StudentRecordPackage.xml" />
+    <Content Include="data\SIF20\StudentRecordPackage\StudentRecordPackage.xml" />
+    <Content Include="data\SIF20\StudentSchoolEnrollment\SIF20StudentSchoolEnrollment.xml" />
+    <Content Include="data\SIF21\Assessment\Assessment.xml" />
+    <Content Include="data\SIF21\LearningResourcePackage\SIF21LearningResourcePackage.xml" />
+    <Content Include="data\SIF21\LearningResource\LearningResource.xml" />
+    <Content Include="data\SIF21\LearningStandardItem\LearningStandardItem.xml" />
+    <Content Include="data\SIF21\Lesson\Lesson.xml" />
+    <Content Include="data\SIF21\ProfessionalDevelopmentActivities\ProfessionalDevelopmentActivities.xml" />
+    <Content Include="data\SIF21\ProfessionalDevelopmentProgram\ProfessionalDevelopmentProgram.xml" />
+    <Content Include="data\SIF21\StudentAcademicRecord\SIF21StudentAcademicRecord.xml" />
+    <Content Include="data\SIF21\StudentDemographicRecord\SIF21StudentDemographicRecord.xml" />
+    <Content Include="data\SIF22\AssessmentItem\AssessmentItem.xml" />
+    <Content Include="data\SIF22\ProfessionalDevelopmentRegistration\ProfessionalDevelopmentRegistration.xml" />
+    <Content Include="data\SIF22\SIF_Metadata\SIF_Metadata.xml" />
+    <Content Include="data\SIF22\StudentAcademicRecord\StudentAcademicRecord.xml" />
+    <Content Include="data\SIF22\StudentLEARelationShip\StudentLEARelationship.xml" />
+    <Content Include="data\SIF22\StudentTransportInfo\StudentTransportInfo.xml" />
+    <EmbeddedResource Include="res\ReportData.xml" />
+    <EmbeddedResource Include="res\Activity.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\core\OpenADK-NET-Core.csproj">
+      <Project>{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}</Project>
+      <Name>OpenADK-NET-Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\us\OpenADK-US-SDO.csproj">
+      <Project>{B706E722-0A7F-4527-BBA7-963C08C7678D}</Project>
+      <Name>OpenADK-US-SDO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\core\src\OpenADK-Nunit-Core.csproj">
+      <Project>{96E593B8-5673-4F26-BAD8-746174CE802A}</Project>
+      <Name>OpenADK-Nunit-Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\framework\src\OpenADK.UnitTesting.csproj">
+      <Project>{FC272D01-101F-4F63-A9F9-EB498D6BF74A}</Project>
+      <Name>OpenADK.UnitTesting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

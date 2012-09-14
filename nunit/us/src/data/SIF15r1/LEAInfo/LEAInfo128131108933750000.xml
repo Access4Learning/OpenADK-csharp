@@ -1,0 +1,28 @@
+<SIF_ObjectData>
+<LEAInfo RefId="C13B3B1017DC11DBAC45846E3A400876">
+  <LocalId>C13B3B1017DC11DBAC45846E3A400876</LocalId>
+  <StatePrId>C13B3B1017DC11DBAC45846E3A400876</StatePrId>
+  <NCESId>C13B3B1017DC11DBAC45846E3A400876</NCESId>
+  <LEAName>Franklin Pierce High</LEAName>
+  <LEAURL>http://compliance.sifinfo.org:8080/sifcompliance/SchoolURL.jsp?SchoolName=FranklinPierceHigh</LEAURL>
+  <EducationAgencyType Code="1" />
+  <LEAContact>
+    <PublishInDirectory>Yes</PublishInDirectory>
+    <ContactInfo>
+      <Name Type="04">
+        <LastName>Kleinman</LastName>
+        <FirstName>Rebecca</FirstName>
+      </Name>
+      <PositionTitle>Superintendent</PositionTitle>
+      <Email Type="Primary">Rebecca_Kleinman@FranklinPierceHigh.edu</Email>
+    </ContactInfo>
+  </LEAContact>
+  <IdentificationInfo Code="9999">2134A</IdentificationInfo>
+  <GradeLevels>
+    <GradeLevel Code="11" />
+    <GradeLevel Code="12" />
+    <GradeLevel Code="09" />
+    <GradeLevel Code="10" />
+  </GradeLevels>
+  <OperationalStatus>0820</OperationalStatus>
+</LEAInfo></SIF_ObjectData>

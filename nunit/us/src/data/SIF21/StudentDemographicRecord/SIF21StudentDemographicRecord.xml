@@ -1,0 +1,30 @@
+<StudentDemographicRecord RefId="0B4AC4176FED4F00BCB6FBF1AE466FD2" SIF_RefObject="StudentRecordExchange" SIF_RefId="0EAF9D6DA4854F348103B04BFEAC65B2">
+  <ReportingDate>2006-09-26</ReportingDate>
+  <StudentPersonalData>
+    <LocalId>00356</LocalId>
+    <StateProvinceId>2983472</StateProvinceId>
+    <SSN>399091093</SSN>
+    <Name Type="04">
+      <LastName>Costis</LastName>
+      <FirstName>Martha</FirstName>
+      <MiddleName>Parke</MiddleName>
+    </Name>
+    <DemographicsData>
+      <Gender>F</Gender>
+    </DemographicsData>
+  </StudentPersonalData>
+  <StudentContactsSummary>
+    <ParentGuardian1>
+      <Name Type="04">
+        <LastName>Costis</LastName>
+        <FirstName>George</FirstName>
+      </Name>
+    </ParentGuardian1>
+    <ParentGuardian2>
+      <Name Type="04">
+        <LastName>Costis</LastName>
+        <FirstName>Martha</FirstName>
+      </Name>
+    </ParentGuardian2>
+  </StudentContactsSummary>
+</StudentDemographicRecord>

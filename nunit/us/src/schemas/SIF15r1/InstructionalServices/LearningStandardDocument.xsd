@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: LearningStandardDocument
+
+Owner: Instructional Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.6.1 LearningStandardDocument -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+  <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="imports/xml/xml.xsd" />
+		<element name='LearningStandardDocument'>
+		<complexType>
+			<sequence>
+				<element ref='sif:Title' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element name='Source' minOccurs='0' maxOccurs='1'>
+					<simpleType>
+						<restriction base='string'>
+							<enumeration value='National'/>
+							<enumeration value='State'/>
+							<enumeration value='Regional'/>
+							<enumeration value='District'/>
+							<enumeration value='Site'/>
+							<enumeration value='Classroom'/>
+							<enumeration value=''/>
+						</restriction>
+					</simpleType>
+				</element>
+				<element ref='sif:Organization' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Author' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:OrganizationContactPoint' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SubjectArea' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:DocumentStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:DocumentDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LocalAdoptionDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LocalArchiveDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EndOfLifeDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Copyright' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GradeLevels' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:RepositoryDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LearningStandardItemRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:LearningStandardDocumentRefId' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute ref='xml:lang' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='Author' type='string'/>
+
+		<element name='OrganizationContactPoint' type='string'/>
+
+		<element name='DocumentStatus'>
+			<simpleType>
+				<restriction base='string'>
+					<enumeration value='Draft'/>
+					<enumeration value='Adopted'/>
+					<enumeration value='Archived'/>
+					<enumeration value='Unknown'/>
+					<enumeration value=''/>
+				</restriction>
+			</simpleType>
+		</element>
+
+		<element name='DocumentDate' type='sif:DateOrEmptyType'/>
+
+		<element name='LocalAdoptionDate' type='sif:DateOrEmptyType'/>
+
+		<element name='LocalArchiveDate' type='sif:DateOrEmptyType'/>
+
+		<element name='EndOfLifeDate' type='sif:DateOrEmptyType'/>
+
+		<element name='Copyright'>
+			<complexType>
+				<sequence>
+					<element ref='sif:Date' minOccurs='0' maxOccurs='1'/>
+					<element ref='sif:Holder' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+			<element name='Holder' type='string'/>
+
+		<element name='RepositoryDate' type='sif:DateOrEmptyType'/>
+
+</schema>

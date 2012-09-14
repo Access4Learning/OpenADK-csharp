@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: FinancialTransaction
+
+Owner: Food Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-06-16 Mark Reichert
+- 1.5r1 updates
+
+-->
+
+<!-- 5.3.18 FinancialTransaction -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='FinancialTransaction'>
+		<complexType>
+			<sequence>
+				<element ref='sif:TransactionDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TransactionTime' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:FTAmount' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:Program' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='FTAmount'>
+			<complexType>
+				<simpleContent>
+					<extension base='string'>
+						<attribute name='FinancialAccountAccountingPeriodLocationInfoRefId' type='sif:RefIdOrEmptyType' use='required'/>
+						<attribute name='Type' use='required'>
+							<simpleType>
+								<restriction base='string'>
+									<enumeration value='Debit'/>
+									<enumeration value='Credit'/>
+								</restriction>
+							</simpleType>
+						</attribute>
+					</extension>
+				</simpleContent>
+			</complexType>
+		</element>
+
+</schema>

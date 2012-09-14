@@ -1,0 +1,59 @@
+<!--
+
+Object: StudentMeal
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated namespace
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.3.1 StudentMeal -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StudentMeal'>
+		<complexType>
+			<sequence>
+				<element ref='sif:MealStatus' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SchoolYear' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LastBrkDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LastLunDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Cash' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:BrkCredits' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LunCredits' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LastBreakfastDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:LastLunchDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:AmountEx' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='StudentPersonalRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='LastBrkDate' type='sif:DateOrEmptyType'/>
+
+	<element name='LastLunDate' type='sif:DateOrEmptyType'/>
+
+	<element name='Cash' type='string'/>
+
+	<element name='BrkCredits' type='string'/>
+
+	<element name='LunCredits' type='string'/>
+
+</schema>

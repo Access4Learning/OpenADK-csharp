@@ -1,0 +1,62 @@
+<!--
+
+Object: TermInfo
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2003-01-15 Mark Reichert
+- Created object per SIS group.
+
+2004-03-15 Mark Reichert
+- 1.5 updates
+
+-->
+
+
+<!-- 5.8.14 TermInfo -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='TermInfo'>
+		<complexType>
+			<sequence>
+				<element ref='sif:StartDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:EndDate' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:RelativeDuration' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TermCode' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Track' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:TermSpan' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+			<attribute name='SchoolInfoRefId' type='sif:RefIdType' use='required'/>
+			<attribute name='SchoolYear' type='sif:YearOrEmptyType' use='required'/>
+		</complexType>
+	</element>
+	
+	<element name='RelativeDuration' type='string'/>
+
+	<element name='TermCode' type='string'/>
+
+	<element name='Track' type='string'/>
+
+	<element name='TermSpan'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Code' type='string' use='required'/>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+</schema>
+

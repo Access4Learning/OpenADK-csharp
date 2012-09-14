@@ -1,0 +1,721 @@
+<SIF_ObjectData>
+<StudentTransportInfo RefId="C864E12017DC11DBAC45E1B07A29F36E" StudentPersonalRefId="C6E56D1017DC11DBAC45BEBBBA7C526E" Type="Inbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="C8E0C7E117DC11DBAC458A6760F25BA2" StudentPersonalRefId="C8A9B25117DC11DBAC4580A21788A936" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="C91F578017DC11DBAC45CAE7E3DF4065" StudentPersonalRefId="C8F931E017DC11DBAC45FCDA725BE238" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="C962A21017DC11DBAC45DCCE9596D172" StudentPersonalRefId="C9332DA017DC11DBAC45E76EB682B698" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="C999909017DC11DBAC45D5B1AD425426" StudentPersonalRefId="C976783117DC11DBAC45DF954563ABD2" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="C9D3B36017DC11DBAC45A11EC5B74F7F" StudentPersonalRefId="C9AD66B017DC11DBAC45BA487C3B311A" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CA0AA1E117DC11DBAC45B69B37BF9E8B" StudentPersonalRefId="C9E7898117DC11DBAC45A341D6E7B22E" Type="Outbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CA4030D117DC11DBAC45B03B542FE5A8" StudentPersonalRefId="CA1E9F1117DC11DBAC45A159AD78AA25" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" DisembarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CA81CDB117DC11DBAC45B9722D739C29" StudentPersonalRefId="CA589AD017DC11DBAC45B549FF16ED1B" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CABEFDC017DC11DBAC45D83676A6A916" StudentPersonalRefId="CA9BE56117DC11DBAC45BBE98C553BF4" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" DisembarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CAF6135017DC11DBAC45A81D04631362" StudentPersonalRefId="CAD767C017DC11DBAC4588B65706A289" Type="Inbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CB300F1017DC11DBAC45E22341215445" StudentPersonalRefId="CB0CF6B117DC11DBAC45FA9622BB364B" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CB7666E017DC11DBAC45C58B090ED93D" StudentPersonalRefId="CB48791117DC11DBAC45E5C165C8F168" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CBAEDC0017DC11DBAC45B8690DC0F379" StudentPersonalRefId="CB8ED0E017DC11DBAC45ACEDF1BB8071" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CBEF195117DC11DBAC45B380B83C7C17" StudentPersonalRefId="CBC438C017DC11DBAC45E358DC833F17" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CC3B8BA017DC11DBAC45DDEFD8BD3565" StudentPersonalRefId="CC05FCB117DC11DBAC45D06E41F0115A" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" DisembarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CC75876017DC11DBAC45FBBD26C7C5E5" StudentPersonalRefId="CC526F0017DC11DBAC45D134CD464C2A" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CCB5C4B117DC11DBAC45F4B0090C6781" StudentPersonalRefId="CC8AE42017DC11DBAC45C4DE2426E00C" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" DisembarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CCF8E83117DC11DBAC45F0C399D91BD1" StudentPersonalRefId="CCCE2EB017DC11DBAC45A65B0BD0CC99" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CD3DB96017DC11DBAC45854185B84C54" StudentPersonalRefId="CD0FF2A117DC11DBAC459F716A4EE2B5" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CD74CEF017DC11DBAC45DD9125F07651" StudentPersonalRefId="CD53162117DC11DBAC45AC745263AD2C" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CDB66BD017DC11DBAC45BBB33857A258" StudentPersonalRefId="CD8BB25017DC11DBAC45C6B459B89657" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CDF6A92117DC11DBAC45D0245D14DB2B" StudentPersonalRefId="CDCD4F3017DC11DBAC45A69B5B687439" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CE3E608017DC11DBAC45DF86424098FB" StudentPersonalRefId="CE1099C017DC11DBAC45CA83D43F6793" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CE78835017DC11DBAC458493516D65AF" StudentPersonalRefId="CE56F19017DC11DBAC45DC12F2BCB00C" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CEBBCDE017DC11DBAC45E3FE5027C481" StudentPersonalRefId="CE8F66B017DC11DBAC45C27DFC665B04" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CEFEF16017DC11DBAC45ADFCCB2B14B5" StudentPersonalRefId="CED437E017DC11DBAC45EDAEAE82CFFE" Type="Outbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" DisembarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CF3A9AD017DC11DBAC459CAD53392C7B" StudentPersonalRefId="CF175B6017DC11DBAC4592C3B340D83C" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CF77A3D017DC11DBAC45D997CDA5C496" StudentPersonalRefId="CF5304D117DC11DBAC45FBC10ECE17D0" Type="Outbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CFBC750017DC11DBAC45F2E9B74729E0" StudentPersonalRefId="CF9034E117DC11DBAC45EBFC68074F4A" Type="Outbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" DisembarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="CFFCB25017DC11DBAC45DCE86A8999AD" StudentPersonalRefId="CFD4DF0117DC11DBAC45FA4B54175A34" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D045F05017DC11DBAC45DE48465F17E0" StudentPersonalRefId="D016A2F117DC11DBAC45CCAEC6544E18" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D083206117DC11DBAC45E6044DF7A390" StudentPersonalRefId="D060080017DC11DBAC45FBC38F1E79AE" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D0C0296017DC11DBAC45D5916C12F7AD" StudentPersonalRefId="D09E97A017DC11DBAC459B006D8EF541" Type="Outbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D0FD597017DC11DBAC45AF0F2A140A33" StudentPersonalRefId="D0DBC7B017DC11DBAC45FE799C68A16A" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D13F1D6017DC11DBAC45CF22E7AB84C6" StudentPersonalRefId="D118D0B017DC11DBAC4591E5A8B4388E" Type="Inbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" DisembarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D17A9FC117DC11DBAC45AD3BB7D2DE8F" StudentPersonalRefId="D1590E0117DC11DBAC45D18D9C7348E2" Type="Inbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" DisembarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D1B9567017DC11DBAC45B849DB7F9E78" StudentPersonalRefId="D194B77117DC11DBAC45C13C476A1B51" Type="Inbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D1F96CB017DC11DBAC45F98579C6B23D" StudentPersonalRefId="D1D7DAF117DC11DBAC458E21A002044B" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" DisembarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D2414B2017DC11DBAC45EBE38DD27FF2" StudentPersonalRefId="D21691A017DC11DBAC45943D703BDC69" Type="Outbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D2830F1117DC11DBAC45EDDA8B9F3E72" StudentPersonalRefId="D262DCE017DC11DBAC45997EB8250A40" Type="Inbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" DisembarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D2C93FD017DC11DBAC458E3F56F65E27" StudentPersonalRefId="D2A1939117DC11DBAC45A1C831CD8D63" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D3111E4017DC11DBAC45D4CBC2E298ED" StudentPersonalRefId="D2E9720117DC11DBAC45DF311D6DE428" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" DisembarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D34FD4F017DC11DBAC45A9A234333B06" StudentPersonalRefId="D331296117DC11DBAC458C8A19941E10" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D3978C5017DC11DBAC45E66A90C3F390" StudentPersonalRefId="D36FE01117DC11DBAC45E346F7129BEA" Type="Inbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D3D4BC6017DC11DBAC45E52D3C658330" StudentPersonalRefId="D3B637E017DC11DBAC4584016647EDF8" Type="Inbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" DisembarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D41FA81017DC11DBAC4580F004B4A2BF" StudentPersonalRefId="D3F4C78017DC11DBAC45A0A1FADA3FB2" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D46BF35017DC11DBAC45DCE7D8831DA0" StudentPersonalRefId="D44139D017DC11DBAC45DBF887D66815" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D4B24B2017DC11DBAC45AC41AD790313" StudentPersonalRefId="D489184017DC11DBAC45E461CC88969E" Type="Outbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D4F101D017DC11DBAC45C3F7FFA40E0E" StudentPersonalRefId="D4D2564017DC11DBAC45A399643BDC30" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D52E0AD017DC11DBAC45D0358A5F0394" StudentPersonalRefId="D5110CF017DC11DBAC45985B7CDF648C" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D572DC0017DC11DBAC45B47A398D9FE1" StudentPersonalRefId="D54FC3A017DC11DBAC45F7B08D80BD65" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D5BDC7B117DC11DBAC459B264B7D7ACD" StudentPersonalRefId="D5977B0017DC11DBAC45C7C09128E00B" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D603F87017DC11DBAC45C91FA2851F1E" StudentPersonalRefId="D5DF597017DC11DBAC45EA772218EEF1" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" DisembarkBusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D64D5D8017DC11DBAC45A165D8E567E0" StudentPersonalRefId="D625B14017DC11DBAC45C95DD26C2337" Type="Outbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D69B567017DC11DBAC45C3140F9C1941" StudentPersonalRefId="D66D68A017DC11DBAC45DF2F21EF2FB3" Type="Outbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" DisembarkBusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D6E9285017DC11DBAC45D1E4026C8885" StudentPersonalRefId="D6BE6ED017DC11DBAC458262EDC5226B" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D72C72E017DC11DBAC45A20320F291BB" StudentPersonalRefId="D70AE12017DC11DBAC45BDABCB044924" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D774515017DC11DBAC4595D03838C87D" StudentPersonalRefId="D74E04A117DC11DBAC45897B68B5D1DB" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D7BD8F5017DC11DBAC45A121AFEC56D3" StudentPersonalRefId="D798F05017DC11DBAC45DC6A78EFD9A3" Type="Outbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D800D9E017DC11DBAC45E740B096CA91" StudentPersonalRefId="D7E0CEC017DC11DBAC458895FFB07126" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D84731B017DC11DBAC45A0E55A40D340" StudentPersonalRefId="D820E50017DC11DBAC45EF9CA4219CA7" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D88EE91117DC11DBAC45BDD2C985AC0F" StudentPersonalRefId="D86A4A1017DC11DBAC45B6E49B7F9344" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D8D233A117DC11DBAC45BF4BFED9A8BC" StudentPersonalRefId="D8B2288117DC11DBAC45AB2CEC9C7B7E" Type="Outbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D9188B7017DC11DBAC458BCDA09992C4" StudentPersonalRefId="D8F8594017DC11DBAC4584D1649C1E80" Type="Inbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D95EBC3017DC11DBAC45B35420DF6ED7" StudentPersonalRefId="D93A1D3117DC11DBAC45B4D1B2476D80" Type="Inbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D9A206C017DC11DBAC45C1B5A1E37052" StudentPersonalRefId="D981FBA117DC11DBAC45CE0E6E04BA6B" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="D9EB6BD017DC11DBAC458B3510917BD5" StudentPersonalRefId="D9C6A5C017DC11DBAC45CBFEA5489799" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DA36307017DC11DBAC45CA0EF6EE3774" StudentPersonalRefId="DA100AD117DC11DBAC45EEFBCD8F9338" Type="Inbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DA797B0017DC11DBAC45B1622D8A6319" StudentPersonalRefId="DA5AF68117DC11DBAC45A3FD5210D97C" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DABCC59017DC11DBAC45BA3A438B06EF" StudentPersonalRefId="DA9E1A0017DC11DBAC45A44D20F57A33" Type="Outbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DB02F65017DC11DBAC4583EE28DBEE95" StudentPersonalRefId="DAE2EB3017DC11DBAC45AB91B11B9F47" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" DisembarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DB4C5B6117DC11DBAC45B74A9E44C2EF" StudentPersonalRefId="DB2AC9A117DC11DBAC45E9B99FD38F5F" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DB9439D017DC11DBAC45C66C71A14C4D" StudentPersonalRefId="DB7407A017DC11DBAC459DB21067843F" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DBDEFE7117DC11DBAC45BDFD669C55AD" StudentPersonalRefId="DBBEF35017DC11DBAC45EA817C2C47F7" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DC3004A017DC11DBAC45910FDAA0E603" StudentPersonalRefId="DC09DF0017DC11DBAC45E5B660AC0CEF" Type="Outbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" DisembarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DC7C76F017DC11DBAC45F7D441C40467" StudentPersonalRefId="DC54A3A117DC11DBAC45A395218511C6" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" DisembarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DCCBF68017DC11DBAC45B7571F38BA25" StudentPersonalRefId="DCA4233017DC11DBAC45B80350F9927A" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DD12274117DC11DBAC45C216F82FB503" StudentPersonalRefId="DCF0958117DC11DBAC45C8B1D10A799F" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DD5A05B017DC11DBAC45E77E56ADE774" StudentPersonalRefId="DD39FA9017DC11DBAC459CBC087ABBCC" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DDA7FEA117DC11DBAC45D0399CD73104" StudentPersonalRefId="DD81B1F017DC11DBAC45959F7B057946" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DDFD71A017DC11DBAC45F5522CFAB4AC" StudentPersonalRefId="DDCFAAE017DC11DBAC4584B7ABBAEA38" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DE4CF13117DC11DBAC45F39E93C30A2D" StudentPersonalRefId="DE26CB9117DC11DBAC4593C53A39D31D" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DE93490017DC11DBAC45A8D4355475D2" StudentPersonalRefId="DE764B2017DC11DBAC45BCFF4FBD39CA" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DEE2C89117DC11DBAC45C9B4B0D8BE6C" StudentPersonalRefId="DEBAF54117DC11DBAC459EAA21180D41" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DF2C069017DC11DBAC45DD848DF2973B" StudentPersonalRefId="DF0D821017DC11DBAC45EF81C052F722" Type="Outbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DF7878E017DC11DBAC45FF3EF1DD9BB9" StudentPersonalRefId="DF55608017DC11DBAC45D5E280FDA0F7" Type="Inbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" DisembarkBusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="DFCF999017DC11DBAC45C5D355052E9D" StudentPersonalRefId="DFA4B90017DC11DBAC45D6C7F471A4B6" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" DisembarkBusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D9381017DC11DBAC45DE0CF9A8E230" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E01D928117DC11DBAC459C69655B4EB8" StudentPersonalRefId="DFF5BF3017DC11DBAC45B66E54FEBA9E" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E06E71A017DC11DBAC4589E6BBEF5A8D" StudentPersonalRefId="E0484C0017DC11DBAC45FDAC92A72A4A" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E0B95D5017DC11DBAC45FF0E9C44C6AC" StudentPersonalRefId="E09644F117DC11DBAC458FCDA36F2B09" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E10BEA2017DC11DBAC45FD8207580918" StudentPersonalRefId="E0E59D7017DC11DBAC458D0B5C6BD951" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" DisembarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E15E76F117DC11DBAC45F448E9F070D8" StudentPersonalRefId="E1382A4117DC11DBAC45A4B42713BD20" Type="Outbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E1ADCF7017DC11DBAC45ABD1C738AEC3" StudentPersonalRefId="E18DC45117DC11DBAC45ED30F1272400" Type="Outbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E2005C4017DC11DBAC45FA71AC585D8F" StudentPersonalRefId="E1DD43E017DC11DBAC45B0A0103A7332" Type="Outbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E25A8A3017DC11DBAC459C20D129CE92" StudentPersonalRefId="E22FD0B117DC11DBAC45EBFDB5963454" Type="Inbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" DisembarkBusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C3B44017DC11DBAC45CF29CD8284DE" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E2A575E117DC11DBAC45C74044A49957" StudentPersonalRefId="E286CA5017DC11DBAC458205B105DFE0" Type="Outbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E2F4CE6017DC11DBAC45FEE46FA4C5E2" StudentPersonalRefId="E2D1B60117DC11DBAC45A2B005914F0B" Type="Inbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E34D75B017DC11DBAC45AB910119BDB4" StudentPersonalRefId="E32A5D5017DC11DBAC45F4515209EDD9" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E39B6EA017DC11DBAC45F4828F845A20" StudentPersonalRefId="E379DCE017DC11DBAC45C0C130B1028C" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E3E7E0F117DC11DBAC459425393A83C8" StudentPersonalRefId="E3C7AEC017DC11DBAC45F8242B94A05F" Type="Outbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E43F01A017DC11DBAC458047EBAE9943" StudentPersonalRefId="E415A7B017DC11DBAC45DB1F064E11A9" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E48E5A2017DC11DBAC45E026F11A9F71" StudentPersonalRefId="E46E4F0017DC11DBAC45B1BAB1B20A78" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E4E57AD017DC11DBAC45980F7E3111B3" StudentPersonalRefId="E4BAC15017DC11DBAC45D5987B0EB550" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" DisembarkBusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B905E017DC11DBAC45D25584ECB6DA" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E53807A017DC11DBAC45D5E380864625" StudentPersonalRefId="E51368A017DC11DBAC4581314744D8D0" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E592359017DC11DBAC45C8C0ABD42D43" StudentPersonalRefId="E565CE6017DC11DBAC459375AB97E097" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E5F58B4117DC11DBAC45A2274A01B031" StudentPersonalRefId="E5CF3E9017DC11DBAC45B25C04C5DC6E" Type="Outbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" DisembarkBusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6B4720017DC11DBAC45D8922D3CDE30" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E64977A017DC11DBAC45FF570E3B92B2" StudentPersonalRefId="E624D8A017DC11DBAC45996F39760D79" Type="Outbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Walk</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E69F11B017DC11DBAC459832600F13CE" StudentPersonalRefId="E675DED117DC11DBAC45A0A28A05773B" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" DisembarkBusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6BD99C017DC11DBAC45C3C862E04ECF" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E6F7B90017DC11DBAC45850198F50412" StudentPersonalRefId="E6CE862017DC11DBAC45A0A287FA27E9" Type="Outbound" DayOfWeek="Fr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E74A45D017DC11DBAC4586C3ABB8DCCC" StudentPersonalRefId="E72A3AB017DC11DBAC45F882455EA1B0" Type="Outbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusOutOfAttendance</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E79CD2A017DC11DBAC45A1E046A611D9" StudentPersonalRefId="E77B19D017DC11DBAC458E76AA01C0A5" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E7F7009017DC11DBAC45D6D00C24B8D2" StudentPersonalRefId="E7CF2D4017DC11DBAC45CE14B6646F3A" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Unknown</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E8528E1017DC11DBAC4587A0937EE6C7" StudentPersonalRefId="E82AE1D017DC11DBAC458AF1B3D08106" Type="Inbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E8ACBC0017DC11DBAC45FAA37B0B331A" StudentPersonalRefId="E8881D0017DC11DBAC45BD71FE28FF4E" Type="Inbound" DayOfWeek="MoTuWeThFr" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>ParentPay</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" DisembarkBusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6AFDE2017DC11DBAC4588EACE3DF80D" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E911985017DC11DBAC45FF07507BAE7E" StudentPersonalRefId="E8ECF95117DC11DBAC458B38E312B239" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" DisembarkBusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D0105017DC11DBAC45EDD72FA2C05B" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E968B90117DC11DBAC45E6350B465DA1" StudentPersonalRefId="E9441A0017DC11DBAC45AD9EEE854481" Type="Inbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" DisembarkBusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6C8482017DC11DBAC45EFE366DA8007" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="E9CA881017DC11DBAC45B677C6BC8E35" StudentPersonalRefId="E9A1553017DC11DBAC45C4C175381D71" Type="Inbound" DayOfWeek="MoWe" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="EA1B8E4017DC11DBAC45F33DF66CA4A3" StudentPersonalRefId="E9FCE2B017DC11DBAC45CCED78D25C1D" Type="Inbound" DayOfWeek="Mo" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>BusHazard</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" DisembarkBusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6D4A43017DC11DBAC45C68DE32D9DC3" />
+</StudentTransportInfo>
+<StudentTransportInfo RefId="EA74359017DC11DBAC45FB075B3BB0C8" StudentPersonalRefId="EA4DE8E017DC11DBAC45CA0ABDFA1604" Type="Inbound" DayOfWeek="TuTh" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <Eligibility>Bus</Eligibility>
+  <HomeBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <TransferPoint EmbarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" DisembarkBusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+  <SchoolBusRouteDetail BusRouteDetailRefId="C6DF529117DC11DBAC45D71A69095125" />
+</StudentTransportInfo></SIF_ObjectData>

@@ -1,0 +1,22 @@
+<SIF_LogEntry Source="ZIS" LogLevel="Error">
+	<SIF_LogEntryHeader>
+		<SIF_Header>
+			<SIF_MsgId>BC1D982CEC5F49D998169930FE5B271C</SIF_MsgId>
+			<SIF_Date>20030819</SIF_Date>
+			<SIF_Time Zone="UTC-05:00">10:49:00</SIF_Time>
+			<SIF_SourceId>RamseyZIS</SIF_SourceId>
+		</SIF_Header>
+	</SIF_LogEntryHeader>
+	<SIF_OriginalHeader>
+		<SIF_Header>
+			<SIF_MsgId>74234DCB460A4BCB8937B07467EA73CC</SIF_MsgId>
+			<SIF_Date>20030819</SIF_Date>
+			<SIF_Time Zone="UTC-05:00">10:29:00</SIF_Time>
+			<SIF_SourceId>RamseyLibraryAgent</SIF_SourceId>
+		</SIF_Header>
+	</SIF_OriginalHeader>
+	<SIF_Category>4</SIF_Category>
+	<SIF_Code>2</SIF_Code>
+	<SIF_Desc>Could not deliver StudentPicture Add to RamseyLibraryAgent (127,546 bytes) due to
+maximum buffer size of 16,384 bytes</SIF_Desc>
+</SIF_LogEntry>

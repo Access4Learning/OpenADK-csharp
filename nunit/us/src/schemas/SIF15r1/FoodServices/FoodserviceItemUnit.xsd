@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Object: FoodserviceItemUnit
+
+Owner: Food Services Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-02 Mark Reichert
+- Created from 1.5 Draft 2
+
+-->
+
+<!-- 5.3.3 FoodserviceItemUnit -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='FoodserviceItemUnit'>
+		<complexType>
+			<sequence>
+				<element ref='sif:FoodserviceItemRefId' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:Description' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:MeasureDescriptionCode' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:GramWeight' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='RefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+		<element name='FoodserviceItemRefId' type='sif:RefIdOrEmptyType'/>
+
+		<element name='MeasureDescriptionCode' type='string'/>
+
+		<element name='GramWeight' type='string'/>
+
+</schema>

@@ -1,0 +1,12 @@
+<SIF_ObjectData>
+  <StaffAssignment RefId="C2EA239017DC11DBAC45FB03DB57CF80" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B" SchoolYear="2004" StaffPersonalRefId="C26B56A017DC11DBAC45AEA85C21CDB5">
+    <Description>Teacher</Description>
+    <JobStartDate>20010411</JobStartDate>
+    <JobFTE>1.00</JobFTE>
+    <JobFunction Code="0210" />
+    <TeachingAssignment Code="1304" />
+    <GradeClassification Code="0800" />
+    <ItinerantTeacher>No</ItinerantTeacher>
+    <InstructionLevel>0571</InstructionLevel>
+  </StaffAssignment>
+</SIF_ObjectData>

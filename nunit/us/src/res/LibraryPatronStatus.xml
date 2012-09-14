@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SIF_Message xmlns="http://www.sifinfo.org/infrastructure/1.x" Version="1.5r1">
+	<SIF_Response>
+		<SIF_Header>
+			<SIF_MsgId>A46B33DE8176247A402D9999D8C52D6F</SIF_MsgId>
+			<SIF_Date>20050127</SIF_Date>
+			<SIF_Time Zone="UTC-06:00">13:21:50</SIF_Time>
+			<SIF_Security>
+				<SIF_SecureChannel>
+					<SIF_AuthenticationLevel>0</SIF_AuthenticationLevel>
+					<SIF_EncryptionLevel>0</SIF_EncryptionLevel>
+				</SIF_SecureChannel>
+			</SIF_Security>
+			<SIF_SourceId>Spectrum</SIF_SourceId>
+			<SIF_DestinationId>SpectrumTest</SIF_DestinationId>
+		</SIF_Header>
+		<SIF_RequestMsgId>E4F2589649EC60664F169999D8C52D6F</SIF_RequestMsgId>
+		<SIF_PacketNumber>1</SIF_PacketNumber>
+		<SIF_MorePackets>No</SIF_MorePackets>
+		<SIF_ObjectData>
+			<LibraryPatronStatus LibraryType="STUDENT" SifRefId="58AF3B61889641154D039999D8C52D6F" SifRefIdType="StudentPersonal">
+				<ElectronicId Type="Barcode">PatronBarcode 979122</ElectronicId>
+				<CircTx>
+					<ItemTitle>Book 68472</ItemTitle>
+					<ItemElectronicId Type="Barcode">ItemBarcode 956068</ItemElectronicId>
+					<CallNumber>CallNumber 573112</CallNumber>
+					<CopyPrice>27.00</CopyPrice>
+					<DueInfo>
+						<Date>20050128</Date>
+						<Time Zone="UTC-06:00">12:00:00</Time>
+					</DueInfo>
+				</CircTx>
+				<NumCheckouts>1</NumCheckouts>
+				<NumOverdues>0</NumOverdues>
+				<NumFines>0</NumFines>
+				<FineAmount>0.00</FineAmount>
+				<NumRefunds>0</NumRefunds>
+				<RefundAmount>0.00</RefundAmount>
+			</LibraryPatronStatus>
+		</SIF_ObjectData>
+	</SIF_Response>
+</SIF_Message>

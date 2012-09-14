@@ -1,0 +1,101 @@
+<SIF_ObjectData>
+<RoomInfo RefId="C3FBBAA017DC11DBAC45E2AE1E49EDED" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <RoomNumber>72</RoomNumber>
+  <Staff StaffPersonalRefId="C3381C8017DC11DBAC4580BC84547ACB" />
+  <Description>Classroom A</Description>
+  <Building>Remote D</Building>
+  <Size>268</Size>
+  <Capacity>17</Capacity>
+  <PhoneNumber Format="FF" Type="18">(243) 277-9851</PhoneNumber>
+  <TypeOfRoom RoomTypeRefId="C20C94D017DC11DBAC4595FB82217EF5" />
+</RoomInfo>
+<RoomInfo RefId="C401D52017DC11DBAC45A29C826ECD5C" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <RoomNumber>108</RoomNumber>
+  <Staff StaffPersonalRefId="C322BFC017DC11DBAC45CDC4C2586B04" />
+  <Description>Science Lab</Description>
+  <Building>Remote C</Building>
+  <Size>147</Size>
+  <Capacity>28</Capacity>
+  <PhoneNumber Format="FF" Type="18">(257) 149-7944</PhoneNumber>
+  <TypeOfRoom RoomTypeRefId="C201E67017DC11DBAC45F3C41AEA38BB" />
+</RoomInfo>
+<RoomInfo RefId="C409764017DC11DBAC459626CADB5C0A" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <RoomNumber>245</RoomNumber>
+  <Staff StaffPersonalRefId="C35B34E017DC11DBAC4587CD26E36490" />
+  <Description>Classroom B</Description>
+  <Building>Main C</Building>
+  <Size>388</Size>
+  <Capacity>21</Capacity>
+  <PhoneNumber Format="FF" Type="18">(112) 213-7087</PhoneNumber>
+  <TypeOfRoom RoomTypeRefId="C2005FD017DC11DBAC4581ECDD0244FC" />
+</RoomInfo>
+<RoomInfo RefId="C40F90C017DC11DBAC45D2E48876DE16" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <RoomNumber>88</RoomNumber>
+  <Staff StaffPersonalRefId="C3C62BB017DC11DBAC45C37A8B21C414" />
+  <Description>Classroom A</Description>
+  <Building>Main A</Building>
+  <Size>200</Size>
+  <Capacity>27</Capacity>
+  <PhoneNumber Format="FF" Type="18">(339) 794-7967</PhoneNumber>
+  <TypeOfRoom RoomTypeRefId="C201E67017DC11DBAC45F3C41AEA38BB" />
+</RoomInfo>
+<RoomInfo RefId="C415AB4017DC11DBAC45DC968E9B375A" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <RoomNumber>273</RoomNumber>
+  <Staff StaffPersonalRefId="C3645CA017DC11DBAC45D37F0549C170" />
+  <Description>Lounge</Description>
+  <Building>Remote A</Building>
+  <Size>188</Size>
+  <Capacity>39</Capacity>
+  <PhoneNumber Format="FF" Type="18">(215) 511-3557</PhoneNumber>
+  <TypeOfRoom RoomTypeRefId="C2005FD017DC11DBAC4581ECDD0244FC" />
+</RoomInfo>
+<RoomInfo RefId="C41BC5C017DC11DBAC458FBC0A3722A9" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <RoomNumber>106</RoomNumber>
+  <Staff StaffPersonalRefId="C3BB7D5217DC11DBAC45FEB9C2C7EE5A" />
+  <Description>Classroom A</Description>
+  <Building>Main C</Building>
+  <Size>274</Size>
+  <Capacity>14</Capacity>
+  <PhoneNumber Format="FF" Type="18">(572) 196-1118</PhoneNumber>
+  <TypeOfRoom RoomTypeRefId="C1FD529017DC11DBAC458AF3579CC9AE" />
+</RoomInfo>
+<RoomInfo RefId="C421E04017DC11DBAC45FC476ECB217D" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <RoomNumber>261</RoomNumber>
+  <Staff StaffPersonalRefId="C381819017DC11DBAC45E43A7023D35D" />
+  <Description>Classroom B</Description>
+  <Building>Remote B</Building>
+  <Size>252</Size>
+  <Capacity>33</Capacity>
+  <PhoneNumber Format="FF" Type="18">(393) 485-4346</PhoneNumber>
+  <TypeOfRoom RoomTypeRefId="C201E67017DC11DBAC45F3C41AEA38BB" />
+</RoomInfo>
+<RoomInfo RefId="C427FAC017DC11DBAC45B923BB46B231" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <RoomNumber>302</RoomNumber>
+  <Staff StaffPersonalRefId="C3924A7017DC11DBAC4588A3F48842C0" />
+  <Description>Computer Lab</Description>
+  <Building>Main C</Building>
+  <Size>120</Size>
+  <Capacity>19</Capacity>
+  <PhoneNumber Format="FF" Type="18">(141) 634-9830</PhoneNumber>
+  <TypeOfRoom RoomTypeRefId="C2005FD017DC11DBAC4581ECDD0244FC" />
+</RoomInfo>
+<RoomInfo RefId="C42F9BE117DC11DBAC45FF1D5EC02022" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <RoomNumber>276</RoomNumber>
+  <Staff StaffPersonalRefId="C33FBDA017DC11DBAC45B7230049056B" />
+  <Description>Classroom B</Description>
+  <Building>Remote B</Building>
+  <Size>179</Size>
+  <Capacity>29</Capacity>
+  <PhoneNumber Format="FF" Type="18">(679) 195-5983</PhoneNumber>
+  <TypeOfRoom RoomTypeRefId="C2036D1017DC11DBAC45E986EF44BC04" />
+</RoomInfo>
+<RoomInfo RefId="C4373D0017DC11DBAC45E0873FD6E0AE" SchoolInfoRefId="C17250A017DC11DBAC458FE86C20166B">
+  <RoomNumber>30</RoomNumber>
+  <Staff StaffPersonalRefId="C33FBDA017DC11DBAC45B7230049056B" />
+  <Description>Classroom A</Description>
+  <Building>Remote B</Building>
+  <Size>203</Size>
+  <Capacity>13</Capacity>
+  <PhoneNumber Format="FF" Type="18">(108) 574-3452</PhoneNumber>
+  <TypeOfRoom RoomTypeRefId="C2067A5117DC11DBAC45B5157D0CF1FB" />
+</RoomInfo></SIF_ObjectData>

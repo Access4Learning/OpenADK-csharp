@@ -1,0 +1,300 @@
+<!--
+
+Object: SIF_LogEntry
+
+Owner: Infrastructure Working Group
+
+
+Note: All elements are marked as optional to support the SIF event and 
+response models.
+
+
+Revisions:
+
+2004-03-16 Mark Reichert
+- 1.5 updates
+
+-->
+
+<!-- 5.11.1 SIF_LogEntry -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='SIF_LogEntry'>
+		<complexType>
+			<sequence>
+				<element ref='sif:SIF_LogEntryHeader' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_OriginalHeader' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_Category' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_Code' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ApplicationCode' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_Desc' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_ExtendedDesc' minOccurs='0' maxOccurs='1'/>
+				<element ref='sif:SIF_LogObject' minOccurs='0' maxOccurs='unbounded'/>
+				<element ref='sif:SIF_ExtendedElements' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='Source' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Agent'/>
+						<enumeration value='ZIS'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+			<attribute name='LogLevel' use='required'>
+				<simpleType>
+					<restriction base='string'>
+						<enumeration value='Info'/>
+						<enumeration value='Warning'/>
+						<enumeration value='Error'/>
+					</restriction>
+				</simpleType>
+			</attribute>
+		</complexType>
+	</element>
+
+		<element name='SIF_LogEntryHeader'>
+			<complexType>
+				<sequence>
+					<element ref='sif:SIF_Header' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+		<element name='SIF_OriginalHeader'>
+			<complexType>
+				<sequence>
+					<element ref='sif:SIF_Header' minOccurs='0' maxOccurs='1'/>
+				</sequence>
+			</complexType>
+		</element>
+
+		<element name='SIF_ApplicationCode' type='string'/>
+
+		<element name='SIF_LogObject'>
+
+			<complexType>
+
+				<choice>
+
+					<element ref='sif:SIF_ZoneStatus'/>
+
+					<element ref='sif:AggregateStatisticInfo'/>
+					<element ref='sif:AggregateCharacteristicInfo'/>
+					<element ref='sif:AggregateStatisticFact'/>
+
+					<element ref='sif:StudentMeal'/>
+					<element ref='sif:FoodserviceItem'/>
+					<element ref='sif:FoodserviceItemUnit'/>
+					<element ref='sif:FoodserviceItemPortion'/>
+					<element ref='sif:FoodserviceReimbursementRates'/>
+					<element ref='sif:FoodserviceMealPrices'/>
+					<element ref='sif:StaffMeal'/>
+					<element ref='sif:FoodserviceTransaction'/>
+					<element ref='sif:FoodserviceTransactionDetails'/>
+					<element ref='sif:FoodserviceTransactionPayMethod'/>
+					<element ref='sif:FoodserviceSales'/>
+					<element ref='sif:FoodserviceItemSales'/>
+					<element ref='sif:AccountingPeriod'/>
+					<element ref='sif:FinancialAccount'/>
+					<element ref='sif:FinancialAccountAccountingPeriodLocationInfo'/>
+					<element ref='sif:FinancialClass'/>
+					<element ref='sif:FinancialIncomeStatement'/>
+					<element ref='sif:FinancialTransaction'/>
+					<element ref='sif:FiscalYear'/>
+
+					<element ref='sif:Billing'/>
+					<element ref='sif:Payment'/>
+					<element ref='sif:ActivityProvider'/>
+					<element ref='sif:EmployeeAssignment'/>
+					<element ref='sif:EmployeeContract'/>
+					<element ref='sif:EmployeeCredit'/>
+					<element ref='sif:EmployeeHR'/>
+					<element ref='sif:EmployeePersonal'/>
+					<element ref='sif:EmployeePicture'/>
+					<element ref='sif:EmployeeRecertification'/>
+					<element ref='sif:FinAnnual'/>
+					<element ref='sif:EmployeeCredential'/>
+					<element ref='sif:FinBudget'/>
+					<element ref='sif:ProfDevActivities'/>
+					<element ref='sif:StaffAssignment'/>
+					<element ref='sif:TimeWorked'/>
+					<element ref='sif:VendorInfo'/>
+					<element ref='sif:W4'/>
+					<element ref='sif:EmployeeWage'/>
+					<element ref='sif:LocationInfo'/>
+					<element ref='sif:Purchasing'/>
+
+					<element ref='sif:LearningStandardDocument'/>
+					<element ref='sif:LearningStandardItem'/>
+					<element ref='sif:CurriculumStructure'/>
+					<element ref='sif:Lesson'/>
+					<element ref='sif:Activity'/>
+					<element ref='sif:Assignment'/>
+					<element ref='sif:Assessment'/>
+					<element ref='sif:AssessmentSection'/>
+					<element ref='sif:AssessmentItem'/>
+					<element ref='sif:AssessmentSubTest'/>
+
+					<element ref='sif:StudentResultSet'/>
+					<element ref='sif:LearningResource'/>
+					<element ref='sif:StudentParticipation'/>
+					<element ref='sif:StudentPlacement'/>
+
+					<element ref='sif:LibraryPatronStatus'/>
+
+					<element ref='sif:AttendanceCodeInfo'/>
+					<element ref='sif:RoomInfo'/>
+					<element ref='sif:RoomType'/>
+					<element ref='sif:SchoolCourseInfo'/>
+					<element ref='sif:SchoolInfo'/>
+					<element ref='sif:SectionInfo'/>
+					<element ref='sif:StaffPersonal'/>
+					<element ref='sif:StudentContact'/>
+					<element ref='sif:StudentDailyAttendance'/>
+					<element ref='sif:StudentPersonal'/>
+					<element ref='sif:StudentPicture'/>
+					<element ref='sif:StudentSchoolEnrollment'/>
+					<element ref='sif:StudentSectionEnrollment'/>
+					<element ref='sif:TermInfo'/>
+					<element ref='sif:LEAInfo'/>
+					<element ref='sif:StudentSnapshot'/>
+
+					<element ref='sif:BusEquipment'/>
+					<element ref='sif:BusInfo'/>
+					<element ref='sif:BusRouteDetail'/>
+					<element ref='sif:BusRouteInfo'/>
+					<element ref='sif:BusStopInfo'/>
+					<element ref='sif:StudentTransportInfo'/>
+					<element ref='sif:BusPositionInfo'/>
+
+					<element ref='sif:ReportManifest'/>
+					<element ref='sif:ReportAuthorityInfo'/>
+					<element ref='sif:SIF_ReportObject'/>
+					<element ref='sif:StudentLocator'/>
+					
+					<element ref='sif:SIF_LogEntry'/>
+					<element ref='sif:Authentication'/>
+
+				</choice>
+
+				<attribute name='ObjectName' use='required'>
+
+					<simpleType>
+		
+						<restriction base='string'>
+
+							<enumeration value='SIF_ZoneStatus'/>
+
+							<enumeration value='AggregateStatisticInfo'/>
+							<enumeration value='AggregateCharacteristicInfo'/>
+							<enumeration value='AggregateStatisticFact'/>
+
+							<enumeration value='StudentMeal'/>
+							<enumeration value='FoodserviceItem'/>
+							<enumeration value='FoodserviceItemUnit'/>
+							<enumeration value='FoodserviceItemPortion'/>
+							<enumeration value='FoodserviceReimbursementRates'/>
+							<enumeration value='FoodserviceMealPrices'/>
+							<enumeration value='StaffMeal'/>
+							<enumeration value='FoodserviceTransaction'/>
+							<enumeration value='FoodserviceTransactionDetails'/>
+							<enumeration value='FoodserviceTransactionPayMethod'/>
+							<enumeration value='FoodserviceSales'/>
+							<enumeration value='FoodserviceItemSales'/>
+							<enumeration value='AccountingPeriod'/>
+							<enumeration value='FinancialAccount'/>
+							<enumeration value='FinancialAccountAccountingPeriodLocationInfo'/>
+							<enumeration value='FinancialClass'/>
+							<enumeration value='FinancialIncomeStatement'/>
+							<enumeration value='FinancialTransaction'/>
+							<enumeration value='FiscalYear'/>
+
+							<enumeration value='Billing'/>
+							<enumeration value='Payment'/>
+							<enumeration value='ActivityProvider'/>
+							<enumeration value='EmployeeAssignment'/>
+							<enumeration value='EmployeeContract'/>
+							<enumeration value='EmployeeCredit'/>
+							<enumeration value='EmployeeHR'/>
+							<enumeration value='EmployeePersonal'/>
+							<enumeration value='EmployeePicture'/>
+							<enumeration value='EmployeeRecertification'/>
+							<enumeration value='FinAnnual'/>
+							<enumeration value='EmployeeCredential'/>
+							<enumeration value='FinBudget'/>
+							<enumeration value='ProfDevActivities'/>
+							<enumeration value='StaffAssignment'/>
+							<enumeration value='TimeWorked'/>
+							<enumeration value='VendorInfo'/>
+							<enumeration value='W4'/>
+							<enumeration value='EmployeeWage'/>
+							<enumeration value='LocationInfo'/>
+							<enumeration value='Purchasing'/>
+
+							<enumeration value='LearningStandardDocument'/>
+							<enumeration value='LearningStandardItem'/>
+							<enumeration value='CurriculumStructure'/>
+							<enumeration value='Lesson'/>
+							<enumeration value='Activity'/>
+							<enumeration value='Assignment'/>
+							<enumeration value='Assessment'/>
+							<enumeration value='AssessmentSection'/>
+							<enumeration value='AssessmentItem'/>
+							<enumeration value='AssessmentSubTest'/>
+
+							<enumeration value='StudentResultSet'/>
+							<enumeration value='LearningResource'/>
+							<enumeration value='StudentParticipation'/>
+							<enumeration value='StudentPlacement'/>
+
+							<enumeration value='LibraryPatronStatus'/>
+
+							<enumeration value='AttendanceCodeInfo'/>
+							<enumeration value='RoomInfo'/>
+							<enumeration value='RoomType'/>
+							<enumeration value='SchoolCourseInfo'/>
+							<enumeration value='SchoolInfo'/>
+							<enumeration value='SectionInfo'/>
+							<enumeration value='StaffPersonal'/>
+							<enumeration value='StudentContact'/>
+							<enumeration value='StudentDailyAttendance'/>
+							<enumeration value='StudentPersonal'/>
+							<enumeration value='StudentPicture'/>
+							<enumeration value='StudentSchoolEnrollment'/>
+							<enumeration value='StudentSectionEnrollment'/>
+							<enumeration value='TermInfo'/>
+							<enumeration value='LEAInfo'/>
+							<enumeration value='StudentSnapshot'/>
+
+							<enumeration value='BusEquipment'/>
+							<enumeration value='BusInfo'/>
+							<enumeration value='BusRouteDetail'/>
+							<enumeration value='BusRouteInfo'/>
+							<enumeration value='BusStopInfo'/>
+							<enumeration value='StudentTransportInfo'/>
+							<enumeration value='BusPositionInfo'/>
+
+							<enumeration value='ReportManifest'/>
+							<enumeration value='ReportAuthorityInfo'/>
+							<enumeration value='SIF_ReportObject'/>
+							<enumeration value='StudentLocator'/>
+							
+							<enumeration value='SIF_LogEntry'/>
+							<enumeration value='Authentication'/>
+
+						</restriction>
+					
+					</simpleType>
+				
+				</attribute>
+			
+			</complexType>
+		
+		</element>
+
+</schema>

@@ -1,0 +1,54 @@
+<!--
+
+Object: StudentPicture
+
+Owner: Student Information Systems Working Group
+
+
+Revisions:
+
+2002-06-21 Mark Reichert
+- Initial draft.
+
+2003-01-15 Mark Reichert
+- Updated namespace
+
+-->
+
+
+<!-- 5.8.11 StudentPicture -->
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  targetNamespace='http://www.sifinfo.org/infrastructure/1.x'
+  xmlns:sif='http://www.sifinfo.org/infrastructure/1.x'
+  elementFormDefault='qualified'>
+
+	<element name='StudentPicture'>
+		<complexType>
+			<sequence>
+				<element ref='sif:PictureSource' minOccurs='0' maxOccurs='1'/>
+			</sequence>
+			<attribute name='StudentPersonalRefId' type='sif:RefIdType' use='required'/>
+		</complexType>
+	</element>
+
+	<element name='PictureSource'>
+		<complexType>
+			<simpleContent>
+				<extension base='string'>
+					<attribute name='Type' use='required'>
+						<simpleType>
+							<restriction base='string'>
+								<enumeration value='URL'/>
+								<enumeration value='JPEG'/>
+							</restriction>
+						</simpleType>
+					</attribute>
+				</extension>
+			</simpleContent>
+		</complexType>
+	</element>
+
+</schema>
+

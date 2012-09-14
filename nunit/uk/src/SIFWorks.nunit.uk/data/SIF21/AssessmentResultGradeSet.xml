@@ -1,0 +1,32 @@
+﻿<AssessmentResultGradeSet RefId="B8359C32AE94474174B03008D9A2744E">
+  <LocalId>PScaleIndATs</LocalId>
+  <Name>P Scale Individual ATs</Name>
+  <Notes>Grades for use with individual P Scale ATs in English and Maths</Notes>
+  <SupplierName>XYZ Assessment Services</SupplierName>
+  <GradeSets>
+    <GradeSet>
+      <StartDate>2004-01-09</StartDate>
+      <EndDate>2006-08-31</EndDate>
+      <Grades>
+        <Grade>
+          <Title>P8</Title>
+          <Description>P8</Description>
+          <RankOrder>1</RankOrder>
+          <NumericValue>8.00</NumericValue>
+        </Grade>
+        <Grade>
+          <Title>P7</Title>
+          <Description>P7</Description>
+          <RankOrder>22</RankOrder>
+          <NumericValue>7.00</NumericValue>
+        </Grade>
+        <Grade>
+          <Title>P6</Title>
+          <Description>P6</Description>
+          <RankOrder>3</RankOrder>
+          <NumericValue>6.00</NumericValue>
+        </Grade>
+      </Grades>
+    </GradeSet>
+  </GradeSets>
+</AssessmentResultGradeSet>

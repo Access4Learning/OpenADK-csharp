@@ -1,0 +1,22 @@
+<SIF_ObjectData>
+<Assignment RefId="DE072A87EFAD4B778AF9FAF83C94839E" xml:lang="en">
+  <StudentPersonalRefId>687FE59529E5FDB6A0949FDD8E12ACC3</StudentPersonalRefId>
+  <StaffPersonalRefId>994FE59529E5FDB6A0949FDD8E12ACC3</StaffPersonalRefId>
+  <TechnicalRequirement>Internet Explorer 5.5 or greater</TechnicalRequirement>
+  <EssentialMaterial>LCD Projector</EssentialMaterial>
+  <Title>The Painting of the Titanic: An Artistic Disaster</Title>
+  <Preamble>
+    Just how badly CAN the students paint? This assignment will help determine
+    this.
+  </Preamble>
+  <SourceObjectRefId Type="Assessment">C2AC666132E946D9828B506A851FC3F5</SourceObjectRefId>
+  <AssignmentTime>
+    <Duration Units="minute">30</Duration>
+    <StartDate>20030226</StartDate>
+    <DueDate>20030226</DueDate>
+    <AdminDate>20030226</AdminDate>
+  </AssignmentTime>
+  <MaxAttemptsAllowed>1</MaxAttemptsAllowed>
+  <AddToGradeBookFlag>True</AddToGradeBookFlag>
+</Assignment>
+</SIF_ObjectData>

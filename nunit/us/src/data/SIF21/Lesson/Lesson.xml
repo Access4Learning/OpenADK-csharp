@@ -1,0 +1,67 @@
+<Lesson RefId="6A6151B83273F352228C6411D0F09218" xml:lang="en">
+  <SourceObjects>
+    <SourceObject SIF_RefObject="Assessment">538A805BCFA442AFBC30BA300309F5B1</SourceObject>
+  </SourceObjects>
+  <CurriculumStructures>
+    <CurriculumStructureRefId>7301432402827BAA27A48A3374F774D7</CurriculumStructureRefId>
+  </CurriculumStructures>
+  <SubjectArea>
+    <Code>02</Code>
+    <OtherCodeList>
+      <OtherCode Codeset="Text">Principals of Algebra and Geometry</OtherCode>
+    </OtherCodeList>
+  </SubjectArea>
+  <Title>Spatial Relations</Title>
+  <Duration Units="minute">85</Duration>
+  <Description>Fundamentals of Plane Geometry: Right angle triangles and the Pythagorean Theorem</Description>
+  <Procedure>This lesson should only be done outside in a non-flammable area.</Procedure>
+  <Strategies>
+    <Strategy>Group Participation</Strategy>
+  </Strategies>
+  <LearningObjectives>
+    <LearningObjective>Student will be able to use Pythagorean Theorem to calculate the perimeter of a triangle.</LearningObjective>
+  </LearningObjectives>
+  <SupportingActivities>
+    <ActivityRefId>A41FAAC3081441E1E5591B7A76A3E543</ActivityRefId>
+    <ActivityRefId>D6B804025B22FB58C8F5DB44B36B8CB3</ActivityRefId>
+  </SupportingActivities>
+  <LearningStandards>
+    <LearningStandardItemRefId>2CB2A0EB86A9C174E883CD1F316DAECD</LearningStandardItemRefId>
+  </LearningStandards>
+  <LearningResources>
+    <LearningResourceRefId>6CACAFE29BEC1941D8348612DDDBEA13</LearningResourceRefId>
+    <LearningResourceRefId>DB7AAD3B2610D2AF8F5A131F203FE7CF</LearningResourceRefId>
+    <LearningResourceRefId>2975C9FE99B559F3D75D78750444C979</LearningResourceRefId>
+  </LearningResources>
+  <LessonSources>
+    <LessonSource>
+      <Author>
+        <Name Type="02">
+          <Prefix>Mr.</Prefix>
+          <LastName>Woodall</LastName>
+          <FirstName>Charles</FirstName>
+          <MiddleName>William</MiddleName>
+          <PreferredName>Chuck</PreferredName>
+        </Name>
+        <Organization>NCTM</Organization>
+        <Address Type="0123">
+          <Street>
+            <Line1>1 IBM Plaza</Line1>
+            <Line2>Suite 2000</Line2>
+            <StreetNumber>1</StreetNumber>
+            <StreetName>IBM</StreetName>
+            <StreetType>Plaza</StreetType>
+            <ApartmentType>Suite</ApartmentType>
+            <ApartmentNumber>2000</ApartmentNumber>
+          </Street>
+          <City>Chicago</City>
+          <County>Cook</County>
+          <StateProvince>IL</StateProvince>
+          <Country>US</Country>
+          <PostalCode>60611</PostalCode>
+        </Address>
+        <Email Type="Primary">chuckw@imginc.com</Email>
+      </Author>
+    </LessonSource>
+  </LessonSources>
+</Lesson>

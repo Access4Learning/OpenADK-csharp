@@ -1,0 +1,961 @@
+<SIF_ObjectData>
+<StudentMeal StudentPersonalRefId="C6E56D1017DC11DBAC45BEBBBA7C526E">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="25">25.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="54">54.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">43.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="C8A9B25117DC11DBAC4580A21788A936">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="37">37.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="26">26.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">60.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="C8F931E017DC11DBAC45FCDA725BE238">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="56">56.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="58">58.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">18.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="C9332DA017DC11DBAC45E76EB682B698">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="5">5.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="97">97.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">6.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="C976783117DC11DBAC45DF954563ABD2">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="86">86.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="82">82.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">65.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="C9AD66B017DC11DBAC45BA487C3B311A">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="77">77.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="1">1.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">57.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="C9E7898117DC11DBAC45A341D6E7B22E">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="41">41.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="67">67.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">48.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CA1E9F1117DC11DBAC45A159AD78AA25">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="38">38.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="90">90.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">44.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CA589AD017DC11DBAC45B549FF16ED1B">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="35">35.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="7">7.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">34.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CA9BE56117DC11DBAC45BBE98C553BF4">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="93">93.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="42">42.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">45.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CAD767C017DC11DBAC4588B65706A289">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="95">95.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="84">84.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">15.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CB0CF6B117DC11DBAC45FA9622BB364B">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="39">39.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="76">76.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">34.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CB48791117DC11DBAC45E5C165C8F168">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="5">5.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="9">9.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">28.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CB8ED0E017DC11DBAC45ACEDF1BB8071">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030111</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="2">2.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="3">3.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">52.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CBC438C017DC11DBAC45E358DC833F17">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="62">62.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="47">47.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">71.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CC05FCB117DC11DBAC45D06E41F0115A">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="77">77.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="72">72.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">67.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CC526F0017DC11DBAC45D134CD464C2A">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="49">49.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="9">9.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">40.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CC8AE42017DC11DBAC45C4DE2426E00C">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="84">84.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="15">15.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">27.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CCCE2EB017DC11DBAC45A65B0BD0CC99">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="44">44.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="23">23.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">88.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CD0FF2A117DC11DBAC459F716A4EE2B5">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030111</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="16">16.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="67">67.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">82.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CD53162117DC11DBAC45AC745263AD2C">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="95">95.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="12">12.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">20.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CD8BB25017DC11DBAC45C6B459B89657">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="91">91.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="13">13.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">95.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CDCD4F3017DC11DBAC45A69B5B687439">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="20">20.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="95">95.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">19.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CE1099C017DC11DBAC45CA83D43F6793">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="78">78.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="93">93.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">92.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CE56F19017DC11DBAC45DC12F2BCB00C">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="72">72.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="82">82.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">51.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CE8F66B017DC11DBAC45C27DFC665B04">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030119</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="98">98.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="43">43.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">17.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CED437E017DC11DBAC45EDAEAE82CFFE">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="0">0.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="84">84.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">64.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CF175B6017DC11DBAC4592C3B340D83C">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="67">67.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="73">73.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">8.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CF5304D117DC11DBAC45FBC10ECE17D0">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="87">87.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="23">23.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">12.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CF9034E117DC11DBAC45EBFC68074F4A">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="56">56.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="39">39.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">62.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="CFD4DF0117DC11DBAC45FA4B54175A34">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="86">86.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="80">80.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">3.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D016A2F117DC11DBAC45CCAEC6544E18">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="56">56.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="38">38.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">30.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D060080017DC11DBAC45FBC38F1E79AE">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="21">21.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="46">46.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">91.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D09E97A017DC11DBAC459B006D8EF541">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="2">2.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="98">98.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">95.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D0DBC7B017DC11DBAC45FE799C68A16A">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="16">16.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="68">68.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">16.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D118D0B017DC11DBAC4591E5A8B4388E">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030111</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="75">75.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="29">29.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">46.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D1590E0117DC11DBAC45D18D9C7348E2">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="88">88.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="86">86.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">93.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D194B77117DC11DBAC45C13C476A1B51">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="25">25.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="78">78.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">39.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D1D7DAF117DC11DBAC458E21A002044B">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="44">44.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="25">25.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">57.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D21691A017DC11DBAC45943D703BDC69">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="48">48.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="8">8.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">15.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D262DCE017DC11DBAC45997EB8250A40">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="99">99.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="57">57.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">94.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D2A1939117DC11DBAC45A1C831CD8D63">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="83">83.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="45">45.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">13.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D2E9720117DC11DBAC45DF311D6DE428">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="38">38.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="10">10.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">61.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D331296117DC11DBAC458C8A19941E10">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="63">63.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="8">8.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">40.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D36FE01117DC11DBAC45E346F7129BEA">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="77">77.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="6">6.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">95.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D3B637E017DC11DBAC4584016647EDF8">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="3">3.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="10">10.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">61.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D3F4C78017DC11DBAC45A0A1FADA3FB2">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030111</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="83">83.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="36">36.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">71.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D44139D017DC11DBAC45DBF887D66815">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="28">28.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="31">31.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">92.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D489184017DC11DBAC45E461CC88969E">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030119</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="98">98.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="23">23.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">43.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D4D2564017DC11DBAC45A399643BDC30">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="65">65.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="26">26.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">49.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D5110CF017DC11DBAC45985B7CDF648C">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030119</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="49">49.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="69">69.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">78.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D54FC3A017DC11DBAC45F7B08D80BD65">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="63">63.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="32">32.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">49.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D5977B0017DC11DBAC45C7C09128E00B">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="48">48.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="74">74.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">16.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D5DF597017DC11DBAC45EA772218EEF1">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="75">75.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="84">84.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">69.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D625B14017DC11DBAC45C95DD26C2337">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="98">98.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="41">41.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">96.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D66D68A017DC11DBAC45DF2F21EF2FB3">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="42">42.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="14">14.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">23.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D6BE6ED017DC11DBAC458262EDC5226B">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030119</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="68">68.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="95">95.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">83.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D70AE12017DC11DBAC45BDABCB044924">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="25">25.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="11">11.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">85.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D74E04A117DC11DBAC45897B68B5D1DB">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030119</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="67">67.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="48">48.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">26.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D798F05017DC11DBAC45DC6A78EFD9A3">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="47">47.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="97">97.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">26.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D7E0CEC017DC11DBAC458895FFB07126">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="28">28.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="26">26.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">21.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D820E50017DC11DBAC45EF9CA4219CA7">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="59">59.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="99">99.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">52.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D86A4A1017DC11DBAC45B6E49B7F9344">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="68">68.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="45">45.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">33.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D8B2288117DC11DBAC45AB2CEC9C7B7E">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="54">54.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="35">35.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">87.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D8F8594017DC11DBAC4584D1649C1E80">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="42">42.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="98">98.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">5.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D93A1D3117DC11DBAC45B4D1B2476D80">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="47">47.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="24">24.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">88.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D981FBA117DC11DBAC45CE0E6E04BA6B">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="15">15.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="71">71.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">18.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="D9C6A5C017DC11DBAC45CBFEA5489799">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="77">77.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="67">67.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">51.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DA100AD117DC11DBAC45EEFBCD8F9338">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="23">23.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="93">93.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">80.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DA5AF68117DC11DBAC45A3FD5210D97C">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="56">56.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="27">27.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">54.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DA9E1A0017DC11DBAC45A44D20F57A33">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030119</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="76">76.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="78">78.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">32.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DAE2EB3017DC11DBAC45AB91B11B9F47">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030119</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="19">19.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="81">81.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">5.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DB2AC9A117DC11DBAC45E9B99FD38F5F">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="44">44.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="39">39.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">9.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DB7407A017DC11DBAC459DB21067843F">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="21">21.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="29">29.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">2.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DBBEF35017DC11DBAC45EA817C2C47F7">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030111</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="75">75.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="41">41.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">33.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DC09DF0017DC11DBAC45E5B660AC0CEF">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="68">68.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="23">23.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">15.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DC54A3A117DC11DBAC45A395218511C6">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="89">89.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="38">38.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">20.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DCA4233017DC11DBAC45B80350F9927A">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="89">89.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="45">45.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">65.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DCF0958117DC11DBAC45C8B1D10A799F">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="7">7.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="84">84.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">50.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DD39FA9017DC11DBAC459CBC087ABBCC">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030111</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="40">40.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="65">65.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">12.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DD81B1F017DC11DBAC45959F7B057946">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="23">23.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="96">96.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">6.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DDCFAAE017DC11DBAC4584B7ABBAEA38">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="61">61.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="83">83.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">56.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DE26CB9117DC11DBAC4593C53A39D31D">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="16">16.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="82">82.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">38.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DE764B2017DC11DBAC45BCFF4FBD39CA">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="13">13.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="79">79.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">80.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DEBAF54117DC11DBAC459EAA21180D41">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="64">64.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="23">23.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">51.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DF0D821017DC11DBAC45EF81C052F722">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="84">84.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="92">92.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">74.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DF55608017DC11DBAC45D5E280FDA0F7">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="69">69.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="7">7.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">77.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DFA4B90017DC11DBAC45D6C7F471A4B6">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="52">52.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="33">33.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">39.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="DFF5BF3017DC11DBAC45B66E54FEBA9E">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="17">17.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="14">14.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">67.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E0484C0017DC11DBAC45FDAC92A72A4A">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030119</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="47">47.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="82">82.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">24.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E09644F117DC11DBAC458FCDA36F2B09">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="55">55.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="59">59.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">27.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E0E59D7017DC11DBAC458D0B5C6BD951">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="97">97.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="79">79.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">30.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E1382A4117DC11DBAC45A4B42713BD20">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="88">88.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="53">53.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">68.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E18DC45117DC11DBAC45ED30F1272400">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="2">2.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="9">9.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">65.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E1DD43E017DC11DBAC45B0A0103A7332">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="62">62.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="92">92.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">22.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E22FD0B117DC11DBAC45EBFDB5963454">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="29">29.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="68">68.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">93.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E286CA5017DC11DBAC458205B105DFE0">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="45">45.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="84">84.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">31.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E2D1B60117DC11DBAC45A2B005914F0B">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="31">31.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="96">96.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">43.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E32A5D5017DC11DBAC45F4515209EDD9">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="44">44.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="42">42.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">95.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E379DCE017DC11DBAC45C0C130B1028C">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="13">13.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="24">24.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">30.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E3C7AEC017DC11DBAC45F8242B94A05F">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="33">33.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="1">1.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">17.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E415A7B017DC11DBAC45DB1F064E11A9">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030118</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="90">90.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="42">42.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">93.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E46E4F0017DC11DBAC45B1BAB1B20A78">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="23">23.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="19">19.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">27.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E4BAC15017DC11DBAC45D5987B0EB550">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="69">69.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="20">20.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">33.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E51368A017DC11DBAC4581314744D8D0">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="70">70.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="20">20.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">85.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E565CE6017DC11DBAC459375AB97E097">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="85">85.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="9">9.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">2.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E5CF3E9017DC11DBAC45B25C04C5DC6E">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030123</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="60">60.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="42">42.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">17.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E624D8A017DC11DBAC45996F39760D79">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="21">21.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="92">92.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">46.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E675DED117DC11DBAC45A0A28A05773B">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="94">94.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="35">35.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">59.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E6CE862017DC11DBAC45A0A287FA27E9">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030124</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="82">82.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="15">15.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">67.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E72A3AB017DC11DBAC45F882455EA1B0">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030125</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="3">3.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="73">73.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">81.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E77B19D017DC11DBAC458E76AA01C0A5">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030110</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="28">28.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="7">7.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">9.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E7CF2D4017DC11DBAC45CE14B6646F3A">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030128</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="59">59.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="67">67.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">8.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E82AE1D017DC11DBAC458AF1B3D08106">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030119</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="33">33.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="60">60.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">47.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E8881D0017DC11DBAC45BD71FE28FF4E">
+  <MealStatus Type="None" />
+  <LastBreakfastDate>20030119</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="61">61.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="21">21.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">33.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E8ECF95117DC11DBAC458B38E312B239">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030125</LastBreakfastDate>
+  <LastLunchDate>20030128</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="97">97.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="53">53.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">30.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E9441A0017DC11DBAC45AD9EEE854481">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030106</LastBreakfastDate>
+  <LastLunchDate>20030123</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="53">53.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="37">37.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">71.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E9A1553017DC11DBAC45C4C175381D71">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030118</LastBreakfastDate>
+  <LastLunchDate>20030124</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="45">45.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="25">25.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">90.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="E9FCE2B017DC11DBAC45CCED78D25C1D">
+  <MealStatus Type="Free" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030106</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="81">81.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="60">60.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">45.00</AmountEx>
+</StudentMeal>
+<StudentMeal StudentPersonalRefId="EA4DE8E017DC11DBAC45CA0ABDFA1604">
+  <MealStatus Type="Reduced" />
+  <LastBreakfastDate>20030111</LastBreakfastDate>
+  <LastLunchDate>20030110</LastLunchDate>
+  <AmountEx Type="LunchCredit" Quantity="95">95.00</AmountEx>
+  <AmountEx Type="BreakfastCredit" Quantity="43">43.00</AmountEx>
+  <AmountEx Type="Cash" Quantity="0">36.00</AmountEx>
+</StudentMeal></SIF_ObjectData>
