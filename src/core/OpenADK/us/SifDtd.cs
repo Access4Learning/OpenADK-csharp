@@ -153,7 +153,7 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
 		}
 	}
 
-	internal static IDictionary<String,IElementDef> sElementDefs = new Dictionary<String,IElementDef>( 752 );
+	internal static IDictionary<String,IElementDef> sElementDefs = new Dictionary<String,IElementDef>( 753 );
 	static SifDtd()
 	{
 		sElementDefs[ "SIF_Message" ] = SIF_MESSAGE;
@@ -170,7 +170,7 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
 	public override String BasePackageName {
         get
         {
-		    return "Edustructures.SifWorks." + Variant;
+		    return "OpenADK.Library." + Variant;
         }
 	}
 
@@ -241,7 +241,7 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
     public override string SDOAssembly
     {
         // TODO: This will use reflection in the future
-        get { return "SifWorks.Sdo-" + Variant.ToUpper(); }
+        get { return "OpenADK.SDO-" + Variant.ToUpper(); }
     }
 
 // END EXTRA METHODS

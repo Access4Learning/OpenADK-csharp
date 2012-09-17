@@ -103,11 +103,31 @@ The [Using Pull Requests][2] article provides a comprehensive guide for issuing 
 
 10. Browse to your remote (forked) repository on the GitHub site.
 
-11. Swith to the _ISSUE_XXX_ branch and press the "Pull Request" button.
+11. Swith to the *ISSUE_XXX* branch and press the "Pull Request" button.
 
-12. Review the Pull Request details and provide a meaningful title (with issue number if appropriate) and description of your change. It is important to ensure that the _base branch_ is set to _develop_ and the _head branch_ is set to _ISSUE_XXX_.
+12. Review the Pull Request details and provide a meaningful title (with issue number if appropriate) and description of your change. It is important to ensure that the _base branch_ is set to _develop_ and the _head branch_ is set to *ISSUE_XXX*.
 
 13. Press the "Send pull request" button.
+
+### Completion of a Pull Request ###
+
+Pull Requests are automatically closed when the requested commits are merged into the [OpenADK-csharp][8] repository. However, a number of other tasks may be helpful once your changes have been accepted and processed.
+
+14. Remove the *ISSUE_XXX* branch both from your local repository and your remote repository.
+
+    ```dos
+    c:\dev\OpenADK-csharp> git branch -d *ISSUE_XXX*
+    c:\dev\OpenADK-csharp> git push origin --delete *ISSUE_XXX*
+    ```
+
+15. Update the _develop_ branch of your remote repository with the latest version of the [OpenADK-csharp][8] repository.
+
+    ```dos
+    c:\dev\OpenADK-csharp> git checkout develop
+    c:\dev\OpenADK-csharp> git fetch upstream
+    c:\dev\OpenADK-csharp> git merge upstream/develop
+    c:\dev\OpenADK-csharp> git push origin develop
+    ```
 
 Project Maintenance
 -------------------
@@ -128,11 +148,78 @@ GitHub provides the ability for a Pull Request to be automatically merged. If yo
     c:\dev\OpenADK-csharp> git pull https://github.com/USERNAME/OpenADK-csharp.git ISSUE_XXX
     ```
 
-3. Merge the changes and update the OpenADK-csharp repository.
+3. Merge the changes and update the [OpenADK-csharp][8] repository.
 
     ```dos
     c:\dev\OpenADK-csharp> git checkout develop
     c:\dev\OpenADK-csharp> git merge USERNAME-ISSUE_XXX
+    c:\dev\OpenADK-csharp> git push origin develop
+    ```
+
+### Creating a released version in master ###
+
+1. Merge from _release_ to _master_.
+
+2. Tag (annotated) the _master_ branch with an appropriate release number and share it with the [OpenADK-csharp][8] repository.
+
+    ```dos
+    c:\dev\OpenADK-csharp> git checkout master
+    c:\dev\OpenADK-csharp> git tag -a X.X.X -m MESSAGE
+    c:\dev\OpenADK-csharp> git push origin X.X.X
+    ```
+
+### Creating a hotfix ###
+
+The following steps need to be performed within your remote repository. __Care should be taken as these steps operate directory on the _master_ branch.__
+
+1. Create a new _topic_ branch within your remote repository for the hotfix.
+
+    ```dos
+    c:\dev\OpenADK-csharp> git checkout -b HOTFIX_XXX master
+    ```
+
+2. Apply your changes to the *HOTFIX_XXX* branch.
+
+3. Commit your changes.
+
+    ```dos
+    c:\dev\OpenADK-csharp> git commit -a -m MESSAGE
+    ```
+
+4. Push your local changes to your remote repository.
+
+    ```dos
+    c:\dev\OpenADK-csharp> git push origin HOTFIX_XXX
+    ```
+
+5. Browse to your remote (forked) repository on the GitHub site.
+
+6. Switch to the *HOTFIX_XXX* branch and press the "Pull Request" button.
+
+7. Review the Pull Request details and provide a meaningful title (with issue number if appropriate) and description of your change. It is important to ensure that the _base branch_ is set to _master_ and the _head branch_ is set to *HOTFIX_XXX*.
+
+8. Press the "Send pull request" button.
+
+The following steps need to be performed within the [OpenADK-csharp][8] repository.
+
+9. Browse to the [OpenADK-csharp][8] repository on the GitHub site.
+
+10. Find the Pull Request and merge it (using the "Merge pull request" button).
+
+11. __Before updating the (tag) version number, ensure that locally the code is up-to-date.__ Tag (annotated) the _master_ branch with an appropriate release number and share it with the [OpenADK-csharp][8] repository. With a hotfix submission, increment the third digit of the version number by 1.
+
+    ```dos
+    c:\dev\OpenADK-csharp> git checkout master
+    c:\dev\OpenADK-csharp> git tag -a X.X.X -m MESSAGE
+    c:\dev\OpenADK-csharp> git push origin X.X.X
+    ```
+
+12. Merge the changes into the develop branch.
+
+    ```dos
+    c:\dev\OpenADK-csharp> git checkout develop
+    c:\dev\OpenADK-csharp> git fetch origin
+    c:\dev\OpenADK-csharp> git merge origin/master
     c:\dev\OpenADK-csharp> git push origin develop
     ```
 

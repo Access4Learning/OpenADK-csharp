@@ -33,31 +33,37 @@ namespace OpenADK.Library.au
 	/// <summary>Identifies the Infrastructure Sdo library</summary>
 	Common = 0x10000000,
 
-	/// <summary>Identifies the Catering Sdo library</summary>
-	Catering = 0x000001,
+	/// <summary>Identifies the null Sdo library</summary>
+	Dw = 0x000001,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	Assessment = 0x000002,
+	System = 0x000002,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	Workforce = 0x000004,
+	Assessment = 0x000004,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	School = 0x000008,
+	Programs = 0x000008,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	Learner = 0x0000010,
-
-	/// <summary>Identifies the Learning Sdo library</summary>
-	Learning = 0x0000020,
+	School = 0x0000010,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	Reporting = 0x0000040,
+	Student = 0x0000020,
 
-	/// <summary>Identifies the Data Model Sdo library</summary>
-	Datamodel = 0x0000080,
+	/// <summary>Identifies the null Sdo library</summary>
+	Learning = 0x0000040,
+
+	/// <summary>Identifies the null Sdo library</summary>
+	Reporting = 0x0000080,
+
+	/// <summary>Identifies the null Sdo library</summary>
+	Datamodel = 0x00000100,
+
+	/// <summary>Identifies the null Sdo library</summary>
+	Gradebook = 0x00000200,
 
 	/// <summary>Identifies the Infrastructure Sdo library</summary>
-	Infrastructure = 0x00000100,
+	Infrastructure = 0x00000400,
 
 }}
