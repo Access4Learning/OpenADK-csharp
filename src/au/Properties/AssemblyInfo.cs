@@ -12,9 +12,9 @@ using System.Runtime.InteropServices;
 
 [assembly: CLSCompliant(true)]
 [assembly: ComVisible(false)]
-[assembly: AssemblyTitle("SIFWorks ADK for .Net, Release Build")]
+[assembly: AssemblyTitle("OpenADK for .NET, Release Build")]
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyVersion("9.2.4.12")]
-[assembly: AssemblyDescription("SIFWorks ADK for .Net, Release Build")]
+[assembly: AssemblyDescription("OpenADK for .NET, Release Build")]
 
 
