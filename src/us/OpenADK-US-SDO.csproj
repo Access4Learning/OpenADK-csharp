@@ -119,7 +119,6 @@
     <Compile Include="sdo\Assessment\AssessmentSubTestRefIds.cs" />
     <Compile Include="sdo\Assessment\AssessmentType.cs" />
     <Compile Include="sdo\Assessment\Choice.cs" />
-    <Compile Include="sdo\Assessment\Choise.cs" />
     <Compile Include="sdo\Assessment\ContentElement.cs" />
     <Compile Include="sdo\Assessment\CutScores.cs" />
     <Compile Include="sdo\Assessment\Descriptive.cs" />
@@ -129,6 +128,9 @@
     <Compile Include="sdo\Assessment\Item.cs" />
     <Compile Include="sdo\Assessment\ItemCharacteristics.cs" />
     <Compile Include="sdo\Assessment\Items.cs" />
+    <Compile Include="sdo\Assessment\Measurement.cs" />
+    <Compile Include="sdo\Assessment\MeasurementCodeEnum.cs" />
+    <Compile Include="sdo\Assessment\Measurements.cs" />
     <Compile Include="sdo\Assessment\PerformanceLevel.cs" />
     <Compile Include="sdo\Assessment\PerformanceLevels.cs" />
     <Compile Include="sdo\Assessment\ResponseChoicePattern.cs" />
@@ -370,6 +372,7 @@
     <Compile Include="sdo\Etranscripts\Course.cs" />
     <Compile Include="sdo\Etranscripts\CourseHistory.cs" />
     <Compile Include="sdo\Etranscripts\Courses.cs" />
+    <Compile Include="sdo\Etranscripts\CreditTypeType.cs" />
     <Compile Include="sdo\Etranscripts\CurrentCourseActivity.cs" />
     <Compile Include="sdo\Etranscripts\DemographicsData.cs" />
     <Compile Include="sdo\Etranscripts\DiplomaCredentialAndHonorsType.cs" />

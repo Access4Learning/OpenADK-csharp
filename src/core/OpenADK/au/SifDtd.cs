@@ -83,28 +83,32 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
 	// supported by the class framework.
 
 	// Package names that comprise the SIF Data Objects library
-	/** The name of the Catering package */
-	public const string CATERING = "Catering";
+	/** The name of the null package */
+	public const string DW = "Dw";
+	/** The name of the null package */
+	public const string SYSTEM = "System";
 	/** The name of the  package */
 	public const string GLOBAL = "Global";
 	/** The name of the null package */
 	public const string ASSESSMENT = "Assessment";
 	/** The name of the null package */
-	public const string WORKFORCE = "Workforce";
+	public const string PROGRAMS = "Programs";
 	/** The name of the null package */
 	public const string SCHOOL = "School";
 	/** The name of the null package */
-	public const string LEARNER = "Learner";
+	public const string STUDENT = "Student";
 	/** The name of the Core Infrastructure package */
 	public const string INFRA = "Infra";
-	/** The name of the Learning package */
+	/** The name of the null package */
 	public const string LEARNING = "Learning";
 	/** The name of the null package */
 	public const string COMMON = "Common";
 	/** The name of the null package */
 	public const string REPORTING = "Reporting";
-	/** The name of the Data Model package */
+	/** The name of the null package */
 	public const string DATAMODEL = "Datamodel";
+	/** The name of the null package */
+	public const string GRADEBOOK = "Gradebook";
 	/** The name of the Infrastructure package */
 	public const string INFRASTRUCTURE = "Infrastructure";
 
@@ -137,11 +141,11 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
 	/** The base xmlns for this edition of the ADK without the version */
 	public string XMLNS_BASE {
 		get{
-			return "http://www.sifinfo.org/uk/infrastructure";
+			return "http://www.sifinfo.org/au/infrastructure";
 		}
 	}
 
-	internal static IDictionary<String,IElementDef> sElementDefs = new Dictionary<String,IElementDef>( 310 );
+	internal static IDictionary<String,IElementDef> sElementDefs = new Dictionary<String,IElementDef>( 403 );
 	static SifDtd()
 	{
 		sElementDefs[ "SIF_Message" ] = SIF_MESSAGE;
@@ -158,7 +162,7 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
 	public override String BasePackageName {
         get
         {
-		    return "Edustructures.SifWorks." + Variant;
+		    return "OpenADK.Library." + Variant;
         }
 	}
 
@@ -229,7 +233,7 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
     public override string SDOAssembly
     {
         // TODO: This will use reflection in the future
-        get { return "SifWorks.Sdo-" + Variant.ToUpper(); }
+        get { return "OpenADK.SDO-" + Variant.ToUpper(); }
     }
 
 // END EXTRA METHODS
