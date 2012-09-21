@@ -8,8 +8,8 @@
     <ProjectGuid>{891B42F5-F3CC-4457-B48C-04DBE0B3E210}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Edustructures.SifWorks</RootNamespace>
-    <AssemblyName>SifWorks.Sdo-AU</AssemblyName>
+    <RootNamespace>OpenADK.Library.au</RootNamespace>
+    <AssemblyName>OpenADK.SDO-AU</AssemblyName>
     <SccProjectName>
     </SccProjectName>
     <SccLocalPath>
@@ -48,7 +48,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\SifWorks.Sdo-AU.xml</DocumentationFile>
+    <DocumentationFile>bin\OpenADK.SDO-AU.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
