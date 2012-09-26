@@ -77,6 +77,16 @@ namespace OpenADK.Library
             Initialize(SifVersion.LATEST, SIFVariant.SIF_US, int.MaxValue);
         }
 
+        /// <summary>
+        /// Initialize the Adk to use the latest version of SIF and all SIF Data Object (Sdo) libraries for the
+        /// specified variant. Calling this method when the Adk has already been initialized has no effect.
+        /// </summary>
+        /// <param name="sifVariant">SIF variant (locale) used.</param>
+        public static void Initialize(SIFVariant sifVariant)
+        {
+            Initialize(SifVersion.LATEST, sifVariant, int.MaxValue);
+        }
+
         /// <summary>  Initialize the Adk to use the specified version of SIF.
         /// 
         /// Calling this method when the Adk has already been initialized has no effect.
@@ -171,7 +181,7 @@ namespace OpenADK.Library
 
             // the default formatter for String APIs in the ADK is the SIF 1.x formatter
             // for backwards compatibility
-            sSingleton.fDefaultFormatter = OpenADK.Library.us.SifDtd.SIF_1X_FORMATTER;//Todo: SifDtd should have base class and move non-language related material out
+            sSingleton.fDefaultFormatter = SifDtd.SIF_1X_FORMATTER;
 
             //
             //	Set up the ServerLog

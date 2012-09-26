@@ -16,22 +16,22 @@ namespace OpenADK.Library.us
 	public enum SdoLibraryType : int
 {
 	/// <summary> All SDO libraries </summary>
-	All = -1, // 0xFFFFFFFF
+	All = IntrinsicLibraryType.All,
 
 	/// <summary> No SDO libraries </summary>
-	None = 0x00000000,
+	None = IntrinsicLibraryType.None,
 
 	//  These are always loaded regardless of what the user specifies.
 	//  They are considered "built-in" SDO libraries but under the hood they're 
 	//  treated just like any other SDO package.
 	/// <summary>Identifies the Infrastructure Sdo library</summary>
-	Global = 0x40000000,
+	Global = IntrinsicLibraryType.Global,
 
 	/// <summary>Identifies the Infrastructure Sdo library</summary>
-	Infra = 0x20000000,
+	Infra = IntrinsicLibraryType.Infra,
 
 	/// <summary>Identifies the Infrastructure Sdo library</summary>
-	Common = 0x10000000,
+	Common = IntrinsicLibraryType.Common,
 
 	/// <summary>Identifies the null Sdo library</summary>
 	Programs = 0x000001,
