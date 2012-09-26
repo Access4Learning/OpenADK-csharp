@@ -21,7 +21,7 @@ namespace OpenADK.Library.Impl
     internal class SIF_Message : SifMessagePayload
     {
         public SIF_Message()
-            : base(OpenADK.Library.us.SifDtd.SIF_MESSAGE) { }//Todo: SifDtd should have base class and move non-language related material out
+            : base(SifDtd.SIF_MESSAGE) { }
 
         /// <summary>  Gets the value of the <c>Version</c> attribute.
         /// The SIF specification defines the meaning of this attribute as: "The version of SIF to which this message conforms"
@@ -33,9 +33,9 @@ namespace OpenADK.Library.Impl
         /// </version>
         public virtual String Version
         {
-            get { return GetFieldValue(OpenADK.Library.us.SifDtd.SIF_MESSAGE_VERSION); }//Todo: SifDtd should have base class and move non-language related material out
+            get { return GetFieldValue(SifDtd.SIF_MESSAGE_VERSION); }
 
-            set { SetField(OpenADK.Library.us.SifDtd.SIF_MESSAGE_VERSION, value); }//Todo: SifDtd should have base class and move non-language related material out
+            set { SetField(SifDtd.SIF_MESSAGE_VERSION, value); }
         }
     }
 }

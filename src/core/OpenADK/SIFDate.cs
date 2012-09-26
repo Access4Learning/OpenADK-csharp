@@ -64,10 +64,10 @@ namespace OpenADK.Library
                                                     SifVersion version )
         {
             if ( version.CompareTo( SifVersion.SIF20 ) >= 0 ) {
-                return OpenADK.Library.us.SifDtd.SIF_2X_FORMATTER.ToDate( sifDate ); //Todo: SifDtd should have base class and move non-language related material out
+                return SifDtd.SIF_2X_FORMATTER.ToDate( sifDate );
             }
             else {
-                return OpenADK.Library.us.SifDtd.SIF_1X_FORMATTER.ToDate(sifDate);//Todo: SifDtd should have base class and move non-language related material out
+                return SifDtd.SIF_1X_FORMATTER.ToDate(sifDate);
             }
         }
     }
