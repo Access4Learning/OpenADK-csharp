@@ -12,7 +12,6 @@ using System.Runtime.CompilerServices;
 using OpenADK.Library.Impl;
 using OpenADK.Library.Log;
 using log4net;
-using OpenADK.Library.us;
 
 namespace OpenADK.Library
 {

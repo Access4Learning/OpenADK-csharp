@@ -73,12 +73,8 @@ using System.Text;
 	/// </para>
 	/// <code>SifDtd.LIBRARYPATRONSTATUS.Name;</code>
 	/// </remarks>
-public sealed partial class SifDtd : DTDInternals, ISifDtd
+public sealed partial class SifDtd : OpenADK.Library.SifDtd
 {
-	// SIF_Message mapping used internally by SIFParser
-	public static IElementDef SIF_MESSAGE = new ElementDefImpl(null,"SIF_Message",null,0,"Impl",SifVersion.SIF11, SifVersion.LATEST );
-	public static IElementDef SIF_MESSAGE_VERSION = new ElementDefImpl( SifDtd.SIF_MESSAGE,"Version",null,1,SifDtd.INFRA,(byte)(ElementDefImpl.FD_FIELD),SifVersion.SIF11, SifVersion.LATEST );
-
 	// Declare all object and field elements defined by all versions of SIF
 	// supported by the class framework.
 
@@ -91,24 +87,16 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
 	public const string TRANS = "Trans";
 	/** The name of the null package */
 	public const string FOOD = "Food";
-	/** The name of the Core Infrastructure package */
-	public const string INFRA = "Infra";
 	/** The name of the null package */
 	public const string ETRANSCRIPTS = "Etranscripts";
 	/** The name of the null package */
 	public const string DW = "Dw";
-	/** The name of the null package */
-	public const string COMMON = "Common";
-	/** The name of the null package */
-	public const string DATAMODEL = "Datamodel";
 	/** The name of the null package */
 	public const string ASSESSMENT = "Assessment";
 	/** The name of the null package */
 	public const string PROFDEV = "Profdev";
 	/** The name of the null package */
 	public const string LIBRARY = "Library";
-	/** The name of the  package */
-	public const string GLOBAL = "Global";
 	/** The name of the null package */
 	public const string GRADEBOOK = "Gradebook";
 	/** The name of the null package */
@@ -121,12 +109,12 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
 	public const string HRFIN = "Hrfin";
 
 	// The name of the data model variant this class is defined in
-	public string Variant { 
+	public override string Variant { 
 		get{
 			return "us";
 		}
 	}
-	public List<string> LoadedLibraryNames
+	public override List<string> LoadedLibraryNames
 	{
 	get
 			{
@@ -147,7 +135,7 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
 	}
 
 	/** The base xmlns for this edition of the ADK without the version */
-	public string XMLNS_BASE {
+	public override string XMLNS_BASE {
 		get{
 			return "http://www.sifinfo.org/infrastructure";
 		}
@@ -164,30 +152,6 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
 
 // BEGIN EXTRA METHODS (SIFDTD_Template_CS.txt)
 
-	/**
-	 *  Returns the package name for all classes in this data model
-	 */
-	public override String BasePackageName {
-        get
-        {
-		    return "OpenADK.Library." + Variant;
-        }
-	}
-
-
-
-	/**
-	 *  Returns the base version-independent namespace for this data model variant
-	 */
-	public override String BaseNamespace {
-        get
-        {
-        	if ( "us".Equals( Variant ))
-	            return "http://www.sifinfo.org/infrastructure";
-	        else
-	        	return "http://www.sifinfo.org/" + Variant + "/infrastructure";
-        }
-	}
 
     protected override String GetLibraryName(int type)
     {
@@ -197,7 +161,7 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
 
 
     /// <summary>  Gets the names of all Sdo libraries offered with this version of the Adk (Excluding Common, DataModel, and Infra)</summary>
-    public int[] AvailableLibraries
+    public override int[] AvailableLibraries
     {
         //TODO: Look at this signature to see if it can be changed back to SDOLibraryType
         get { return GetSdoTypes( (int)SdoLibraryType.All ^ (IntrinsicLibraries)).ToArray(); }
@@ -235,13 +199,6 @@ public sealed partial class SifDtd : DTDInternals, ISifDtd
         }
         return libTypes;
 
-    }
-
-
-    public override string SDOAssembly
-    {
-        // TODO: This will use reflection in the future
-        get { return "OpenADK.SDO-" + Variant.ToUpper(); }
     }
 
 // END EXTRA METHODS

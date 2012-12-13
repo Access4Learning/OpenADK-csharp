@@ -1,6 +1,13 @@
 OpenADK (C# version)
 ====================
 
+Download and installation
+-------------------------
+
+To download the OpenADK code, simply click on the 'ZIP' button and uncompress to a directory. Once done, load the appropriate Solution under the `src` directory in Visual Studio.
+
+The code base should include the latest data models for each locale.
+
 Instructions for generating data model files
 --------------------------------------------
 
@@ -103,7 +110,7 @@ The [Using Pull Requests][2] article provides a comprehensive guide for issuing 
 
 10. Browse to your remote (forked) repository on the GitHub site.
 
-11. Swith to the *ISSUE_XXX* branch and press the "Pull Request" button.
+11. Switch to the *ISSUE_XXX* branch and press the "Pull Request" button.
 
 12. Review the Pull Request details and provide a meaningful title (with issue number if appropriate) and description of your change. It is important to ensure that the _base branch_ is set to _develop_ and the _head branch_ is set to *ISSUE_XXX*.
 

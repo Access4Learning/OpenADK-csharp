@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Runtime.CompilerServices;
 using OpenADK.Library.Global;
-using OpenADK.Library.us;
 using OpenADK.Util;
 
 /**
@@ -84,16 +83,12 @@ namespace OpenADK.Library.Impl
                 }
             }
 
-            // TODO: Common should be loaded as an "Intrinsic Library in the SDO DTD"
-            // Note: This works by... luck I guess.  This will load the SdoLibraryType.Common for the US.  However,
-            //      the code generator generates every locale's common library as the same number.  So this should work for all locales.
-            //      If the Adk makes it to 3.0, this should be rectified however.
-            LoadLibrary((int)SdoLibraryType.Common, sdoAssembly);
+            LoadLibrary((int)IntrinsicLibraryType.Common, sdoAssembly);
  
             //Remove the libraries that have already been loaded.
             int toLoad = libraries & ~IntrinsicLibraries;
 
-            toLoad = toLoad & ~(int) SdoLibraryType.Common;
+            toLoad = toLoad & ~(int) IntrinsicLibraryType.Common;
 
             foreach (int lib in GetSdoTypes(toLoad))
             {
@@ -114,7 +109,7 @@ namespace OpenADK.Library.Impl
         { 
             get
             {
-                return (int)(SdoLibraryType.Global | SdoLibraryType.Infra );
+                return (int)(IntrinsicLibraryType.Global | IntrinsicLibraryType.Infra );
             }
         }
 

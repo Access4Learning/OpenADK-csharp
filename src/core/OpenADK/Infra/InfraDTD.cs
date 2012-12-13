@@ -12,7 +12,6 @@ using System.Runtime.CompilerServices;
 using OpenADK.Util;
 using OpenADK.Library;
 using OpenADK.Library.Impl;
-using SifDtd = OpenADK.Library.us.SifDtd;
 
 namespace OpenADK.Library.Infra
 {
