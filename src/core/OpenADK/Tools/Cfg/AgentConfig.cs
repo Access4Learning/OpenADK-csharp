@@ -135,6 +135,49 @@ namespace OpenADK.Library.Tools.Cfg
             }
         }
 
+        /// <summary>Gets the SIF Variant (locale) that should be used by the agent</summary>
+        /// <returns>A SIFVariant object for the value of the <c>sifVariant</c>
+        /// attribute specified by the <c>&lt;agent&gt;</c> element, or
+        /// the Adk's default SIFVariant if this attribute was not set.
+        /// </returns>
+        public virtual SIFVariant Variant
+        {
+
+            get
+            {
+                SIFVariant sifVariant = SIFVariant.SIF_US;
+                XmlElement agent = RootNode;
+
+                if (agent != null)
+                {
+                    string attribute = agent.GetAttribute("sifVariant");
+                
+                    if (String.IsNullOrEmpty(attribute))
+                    {
+                        if ((Adk.Debug & AdkDebugFlags.Properties) != 0) Agent.Log.Info("SIF Variant is not specified in the Agent configuration file; defaulting to SIF_US");
+                    }
+                    else
+                    {
+
+                        try
+                        {
+                            sifVariant = (SIFVariant)Enum.Parse(typeof(SIFVariant), attribute);
+                            if ((Adk.Debug & AdkDebugFlags.Properties) != 0) Agent.Log.Info("SIF Variant in the Agent configuration file is " + sifVariant.ToString());
+                        }
+                        catch (ArgumentException)
+                        {
+                            if ((Adk.Debug & AdkDebugFlags.Properties) != 0) Agent.Log.Info("SIF Variant in the Agent configuration file is not recognised; defaulting to SIF_US");
+                        }
+
+                    }
+
+                }
+
+                return sifVariant;
+            }
+
+        }
+
         /// <summary>  Gets the Mappings object</summary>
         /// <returns> The <c>&lt;agent&gt;</c> node if defined
         /// </returns>
@@ -224,8 +267,6 @@ namespace OpenADK.Library.Tools.Cfg
         /// </returns>
         /// <exception cref="IOException">  thrown if an error occurs reading the file
         /// </exception>
-        /// <exception cref="AdkException">  thrown if the Adk is not initialized
-        /// </exception>
         /// <exception cref="AdkMappingException">  thrown if an error occurs parsing any
         /// <c>&lt;mappings&gt;</c> elements
         /// </exception>
@@ -238,9 +279,6 @@ namespace OpenADK.Library.Tools.Cfg
         public virtual XmlDocument Read( string file,
                                          bool validate )
         {
-            if ( !Adk.Initialized ) {
-                throw new AdkException( "Adk is not initialized", null );
-            }
 
             try {
                 fSrc = new FileInfo( file );
