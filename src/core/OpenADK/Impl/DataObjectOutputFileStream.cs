@@ -271,7 +271,7 @@ namespace OpenADK.Library.Impl
                     buffer.Close();
                 }
             }
-            catch ( IOException ioe )
+            catch ( Exception ioe )
             {
                 throw new AdkException
                     (
