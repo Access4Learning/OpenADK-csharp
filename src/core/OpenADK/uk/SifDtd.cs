@@ -19,7 +19,7 @@ using System.Text;
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -128,14 +128,6 @@ public sealed partial class SifDtd : OpenADK.Library.SifDtd
 			return "http://www.sifinfo.org/uk/infrastructure";
 		}
 	}
-
-	internal static IDictionary<String,IElementDef> sElementDefs = new Dictionary<String,IElementDef>( 310 );
-	static SifDtd()
-	{
-		sElementDefs[ "SIF_Message" ] = SIF_MESSAGE;
-		sElementDefs[ "SIF_Message_Version" ] = SIF_MESSAGE_VERSION;
-	}
-
 
 
 // BEGIN EXTRA METHODS (SIFDTD_Template_CS.txt)

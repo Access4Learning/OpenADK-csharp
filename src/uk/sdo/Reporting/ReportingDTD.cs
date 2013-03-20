@@ -20,7 +20,7 @@ namespace OpenADK.Library.uk.Reporting
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -106,9 +106,9 @@ namespace OpenADK.Library.uk.Reporting
 	{
 		//  Objects defined by this SDO Library...
 
-		REPORTDATA = new ElementDefImpl( null, "ReportData", null, 0, SifDtd.REPORTING, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		REPORTINFO = new ElementDefImpl( null, "ReportInfo", null, 0, SifDtd.REPORTING, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_REPORTOBJECT = new ElementDefImpl( null, "SIF_ReportObject", null, 0, SifDtd.REPORTING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
+		REPORTDATA = new ElementDefImpl( null, "ReportData", null, 0, SifDtd.REPORTING, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		REPORTINFO = new ElementDefImpl( null, "ReportInfo", null, 0, SifDtd.REPORTING, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_REPORTOBJECT = new ElementDefImpl( null, "SIF_ReportObject", null, 0, SifDtd.REPORTING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
 
 
 		// <ReportData> fields (0 entries)
@@ -116,12 +116,12 @@ namespace OpenADK.Library.uk.Reporting
 		// <ReportInfo> fields (0 entries)
 
 		// <SIF_ReportObject> fields (4 entries)
-		ReportingDTD.SIF_REPORTOBJECT_REFID = new ElementDefImpl( SIF_REPORTOBJECT, "RefId", null, 1, SifDtd.REPORTING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.SIF_REPORTOBJECT_REPORTINFO = new ElementDefImpl( SIF_REPORTOBJECT, "ReportInfo", null, 2, SifDtd.REPORTING, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ReportingDTD.SIF_REPORTOBJECT_REPORTDATA = new ElementDefImpl( SIF_REPORTOBJECT, "ReportData", null, 3, SifDtd.REPORTING, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ReportingDTD.SIF_REPORTOBJECT_SIF_EXTENDEDQUERYRESULTS = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_ExtendedQueryResults", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_REPORTOBJECT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SIF_REPORTOBJECT_SIF_METADATA = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		ReportingDTD.SIF_REPORTOBJECT_REFID = new ElementDefImpl( SIF_REPORTOBJECT, "RefId", null, 1, SifDtd.REPORTING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.SIF_REPORTOBJECT_REPORTINFO = new ElementDefImpl( SIF_REPORTOBJECT, "ReportInfo", null, 2, SifDtd.REPORTING, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ReportingDTD.SIF_REPORTOBJECT_REPORTDATA = new ElementDefImpl( SIF_REPORTOBJECT, "ReportData", null, 3, SifDtd.REPORTING, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ReportingDTD.SIF_REPORTOBJECT_SIF_EXTENDEDQUERYRESULTS = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_ExtendedQueryResults", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_REPORTOBJECT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SIF_REPORTOBJECT_SIF_METADATA = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

@@ -20,7 +20,7 @@ namespace OpenADK.Library.uk.Learning
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -314,141 +314,141 @@ namespace OpenADK.Library.uk.Learning
 	{
 		//  Objects defined by this SDO Library...
 
-		CYCLE = new ElementDefImpl( null, "Cycle", null, 0, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		GROUPDEFINITION = new ElementDefImpl( null, "GroupDefinition", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		GROUPTEACHER = new ElementDefImpl( null, "GroupTeacher", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		GROUPTEACHERLIST = new ElementDefImpl( null, "GroupTeacherList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		INPUT = new ElementDefImpl( null, "Input", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		INPUTLIST = new ElementDefImpl( null, "InputList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		JUNCTION = new ElementDefImpl( null, "Junction", null, 0, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		NCYEARLIST = new ElementDefImpl( null, "NCYearList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		NONTEACHINGACTIVITY = new ElementDefImpl( null, "NonTeachingActivity", null, 0, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		OUTPUT = new ElementDefImpl( null, "Output", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		OUTPUTLIST = new ElementDefImpl( null, "OutputList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		PERIOD = new ElementDefImpl( null, "Period", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		PERIODLIST = new ElementDefImpl( null, "PeriodList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SCOPE = new ElementDefImpl( null, "Scope", null, 0, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		STANDARDPERIODLIST = new ElementDefImpl( null, "StandardPeriodList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TEACHINGGROUP = new ElementDefImpl( null, "TeachingGroup", null, 0, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		TTDAY = new ElementDefImpl( null, "TTDay", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TTDAYLIST = new ElementDefImpl( null, "TTDayList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		CYCLE = new ElementDefImpl( null, "Cycle", null, 0, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		GROUPDEFINITION = new ElementDefImpl( null, "GroupDefinition", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		GROUPTEACHER = new ElementDefImpl( null, "GroupTeacher", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		GROUPTEACHERLIST = new ElementDefImpl( null, "GroupTeacherList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		INPUT = new ElementDefImpl( null, "Input", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		INPUTLIST = new ElementDefImpl( null, "InputList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		JUNCTION = new ElementDefImpl( null, "Junction", null, 0, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		NCYEARLIST = new ElementDefImpl( null, "NCYearList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		NONTEACHINGACTIVITY = new ElementDefImpl( null, "NonTeachingActivity", null, 0, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		OUTPUT = new ElementDefImpl( null, "Output", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		OUTPUTLIST = new ElementDefImpl( null, "OutputList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		PERIOD = new ElementDefImpl( null, "Period", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		PERIODLIST = new ElementDefImpl( null, "PeriodList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SCOPE = new ElementDefImpl( null, "Scope", null, 0, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		STANDARDPERIODLIST = new ElementDefImpl( null, "StandardPeriodList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TEACHINGGROUP = new ElementDefImpl( null, "TeachingGroup", null, 0, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		TTDAY = new ElementDefImpl( null, "TTDay", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TTDAYLIST = new ElementDefImpl( null, "TTDayList", null, 0, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 
 		// <Cycle> fields (6 entries)
-		LearningDTD.CYCLE_REFID = new ElementDefImpl( CYCLE, "RefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.CYCLE_CYCLENAME = new ElementDefImpl( CYCLE, "CycleName", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.CYCLE_CYCLEDAYS = new ElementDefImpl( CYCLE, "CycleDays", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		LearningDTD.CYCLE_PERIODSPERDAY = new ElementDefImpl( CYCLE, "PeriodsPerDay", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		LearningDTD.CYCLE_STANDARDPERIODLIST = new ElementDefImpl( CYCLE, "StandardPeriodList", null, 5, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		LearningDTD.CYCLE_TTDAYLIST = new ElementDefImpl( CYCLE, "TTDayList", null, 6, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		CYCLE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( CYCLE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		CYCLE_SIF_METADATA = new ElementDefImpl( CYCLE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LearningDTD.CYCLE_REFID = new ElementDefImpl( CYCLE, "RefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.CYCLE_CYCLENAME = new ElementDefImpl( CYCLE, "CycleName", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.CYCLE_CYCLEDAYS = new ElementDefImpl( CYCLE, "CycleDays", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.CYCLE_PERIODSPERDAY = new ElementDefImpl( CYCLE, "PeriodsPerDay", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.CYCLE_STANDARDPERIODLIST = new ElementDefImpl( CYCLE, "StandardPeriodList", null, 5, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		LearningDTD.CYCLE_TTDAYLIST = new ElementDefImpl( CYCLE, "TTDayList", null, 6, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		CYCLE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( CYCLE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		CYCLE_SIF_METADATA = new ElementDefImpl( CYCLE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <GroupDefinition> fields (6 entries)
-		LearningDTD.GROUPDEFINITION_SHORTNAME = new ElementDefImpl( GROUPDEFINITION, "ShortName", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.GROUPDEFINITION_LONGNAME = new ElementDefImpl( GROUPDEFINITION, "LongName", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.GROUPDEFINITION_TTSUBJECTREFID = new ElementDefImpl( GROUPDEFINITION, "TTSubjectRefId", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.GROUPDEFINITION_SET = new ElementDefImpl( GROUPDEFINITION, "Set", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.GROUPDEFINITION_BLOCK = new ElementDefImpl( GROUPDEFINITION, "Block", null, 5, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.GROUPDEFINITION_LEVEL = new ElementDefImpl( GROUPDEFINITION, "Level", null, 6, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.GROUPDEFINITION_SHORTNAME = new ElementDefImpl( GROUPDEFINITION, "ShortName", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.GROUPDEFINITION_LONGNAME = new ElementDefImpl( GROUPDEFINITION, "LongName", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.GROUPDEFINITION_TTSUBJECTREFID = new ElementDefImpl( GROUPDEFINITION, "TTSubjectRefId", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.GROUPDEFINITION_SET = new ElementDefImpl( GROUPDEFINITION, "Set", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.GROUPDEFINITION_BLOCK = new ElementDefImpl( GROUPDEFINITION, "Block", null, 5, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.GROUPDEFINITION_LEVEL = new ElementDefImpl( GROUPDEFINITION, "Level", null, 6, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <GroupTeacher> fields (2 entries)
-		LearningDTD.GROUPTEACHER_TTTEACHERREFID = new ElementDefImpl( GROUPTEACHER, "TTTeacherRefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.GROUPTEACHER_TYPE = new ElementDefImpl( GROUPTEACHER, "Type", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.GROUPTEACHER_TTTEACHERREFID = new ElementDefImpl( GROUPTEACHER, "TTTeacherRefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.GROUPTEACHER_TYPE = new ElementDefImpl( GROUPTEACHER, "Type", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <GroupTeacherList> fields (1 entries)
-		LearningDTD.GROUPTEACHERLIST_GROUPTEACHER = new ElementDefImpl( GROUPTEACHERLIST, "GroupTeacher", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.GROUPTEACHERLIST_GROUPTEACHER = new ElementDefImpl( GROUPTEACHERLIST, "GroupTeacher", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <Input> fields (2 entries)
-		LearningDTD.INPUT_TYPE = new ElementDefImpl( INPUT, "Type", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.INPUT_GROUPLOCALID = new ElementDefImpl( INPUT, "GroupLocalId", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.INPUT_TYPE = new ElementDefImpl( INPUT, "Type", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.INPUT_GROUPLOCALID = new ElementDefImpl( INPUT, "GroupLocalId", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <InputList> fields (1 entries)
-		LearningDTD.INPUTLIST_INPUT = new ElementDefImpl( INPUTLIST, "Input", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.INPUTLIST_INPUT = new ElementDefImpl( INPUTLIST, "Input", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <Junction> fields (6 entries)
-		LearningDTD.JUNCTION_REFID = new ElementDefImpl( JUNCTION, "RefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.JUNCTION_LABEL = new ElementDefImpl( JUNCTION, "Label", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.JUNCTION_SHORTLABEL = new ElementDefImpl( JUNCTION, "ShortLabel", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.JUNCTION_LOCALTYPE = new ElementDefImpl( JUNCTION, "LocalType", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.JUNCTION_INPUTLIST = new ElementDefImpl( JUNCTION, "InputList", null, 5, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		LearningDTD.JUNCTION_OUTPUTLIST = new ElementDefImpl( JUNCTION, "OutputList", null, 6, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		JUNCTION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( JUNCTION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		JUNCTION_SIF_METADATA = new ElementDefImpl( JUNCTION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LearningDTD.JUNCTION_REFID = new ElementDefImpl( JUNCTION, "RefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.JUNCTION_LABEL = new ElementDefImpl( JUNCTION, "Label", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.JUNCTION_SHORTLABEL = new ElementDefImpl( JUNCTION, "ShortLabel", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.JUNCTION_LOCALTYPE = new ElementDefImpl( JUNCTION, "LocalType", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.JUNCTION_INPUTLIST = new ElementDefImpl( JUNCTION, "InputList", null, 5, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		LearningDTD.JUNCTION_OUTPUTLIST = new ElementDefImpl( JUNCTION, "OutputList", null, 6, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		JUNCTION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( JUNCTION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		JUNCTION_SIF_METADATA = new ElementDefImpl( JUNCTION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <NCYearList> fields (1 entries)
-		LearningDTD.NCYEARLIST_NCYEAR = new ElementDefAlias( NCYEARLIST, "NCYear", null, "NCYearGroup", 1, SifDtd.COMMON, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.NCYEARLIST_NCYEAR = new ElementDefAlias( NCYEARLIST, "NCYear", null, "NCYearGroup", 1, SifDtd.COMMON, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <NonTeachingActivity> fields (4 entries)
-		LearningDTD.NONTEACHINGACTIVITY_REFID = new ElementDefImpl( NONTEACHINGACTIVITY, "RefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.NONTEACHINGACTIVITY_NTCODE = new ElementDefImpl( NONTEACHINGACTIVITY, "NTCode", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.NONTEACHINGACTIVITY_DESCRIPTION = new ElementDefImpl( NONTEACHINGACTIVITY, "Description", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.NONTEACHINGACTIVITY_TYPE = new ElementDefImpl( NONTEACHINGACTIVITY, "Type", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		NONTEACHINGACTIVITY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( NONTEACHINGACTIVITY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		NONTEACHINGACTIVITY_SIF_METADATA = new ElementDefImpl( NONTEACHINGACTIVITY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LearningDTD.NONTEACHINGACTIVITY_REFID = new ElementDefImpl( NONTEACHINGACTIVITY, "RefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.NONTEACHINGACTIVITY_NTCODE = new ElementDefImpl( NONTEACHINGACTIVITY, "NTCode", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.NONTEACHINGACTIVITY_DESCRIPTION = new ElementDefImpl( NONTEACHINGACTIVITY, "Description", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.NONTEACHINGACTIVITY_TYPE = new ElementDefImpl( NONTEACHINGACTIVITY, "Type", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		NONTEACHINGACTIVITY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( NONTEACHINGACTIVITY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		NONTEACHINGACTIVITY_SIF_METADATA = new ElementDefImpl( NONTEACHINGACTIVITY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Output> fields (7 entries)
-		LearningDTD.OUTPUT_TYPE = new ElementDefImpl( OUTPUT, "Type", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.OUTPUT_LOCALTYPE = new ElementDefImpl( OUTPUT, "LocalType", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.OUTPUT_GROUPLOCALID = new ElementDefImpl( OUTPUT, "GroupLocalId", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.OUTPUT_TEACHINGGROUPREFID = new ElementDefImpl( OUTPUT, "TeachingGroupRefId", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.OUTPUT_DESC = new ElementDefImpl( OUTPUT, "Desc", null, 5, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.OUTPUT_SHORTDESC = new ElementDefImpl( OUTPUT, "ShortDesc", null, 6, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.OUTPUT_NCYEARLIST = new ElementDefImpl( OUTPUT, "NCYearList", null, 7, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.OUTPUT_TYPE = new ElementDefImpl( OUTPUT, "Type", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.OUTPUT_LOCALTYPE = new ElementDefImpl( OUTPUT, "LocalType", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.OUTPUT_GROUPLOCALID = new ElementDefImpl( OUTPUT, "GroupLocalId", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.OUTPUT_TEACHINGGROUPREFID = new ElementDefImpl( OUTPUT, "TeachingGroupRefId", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.OUTPUT_DESC = new ElementDefImpl( OUTPUT, "Desc", null, 5, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.OUTPUT_SHORTDESC = new ElementDefImpl( OUTPUT, "ShortDesc", null, 6, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.OUTPUT_NCYEARLIST = new ElementDefImpl( OUTPUT, "NCYearList", null, 7, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <OutputList> fields (1 entries)
-		LearningDTD.OUTPUTLIST_OUTPUT = new ElementDefImpl( OUTPUTLIST, "Output", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.OUTPUTLIST_OUTPUT = new ElementDefImpl( OUTPUTLIST, "Output", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <Period> fields (6 entries)
-		LearningDTD.PERIOD_PERIODINDEX = new ElementDefImpl( PERIOD, "PeriodIndex", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		LearningDTD.PERIOD_SHORTNAME = new ElementDefImpl( PERIOD, "ShortName", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.PERIOD_LONGNAME = new ElementDefImpl( PERIOD, "LongName", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.PERIOD_STARTTIME = new ElementDefImpl( PERIOD, "StartTime", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.TIME );
-		LearningDTD.PERIOD_ENDTIME = new ElementDefImpl( PERIOD, "EndTime", null, 5, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.TIME );
-		LearningDTD.PERIOD_TYPE = new ElementDefImpl( PERIOD, "Type", null, 6, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.PERIOD_PERIODINDEX = new ElementDefImpl( PERIOD, "PeriodIndex", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.PERIOD_SHORTNAME = new ElementDefImpl( PERIOD, "ShortName", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.PERIOD_LONGNAME = new ElementDefImpl( PERIOD, "LongName", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.PERIOD_STARTTIME = new ElementDefImpl( PERIOD, "StartTime", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.TIME );
+		LearningDTD.PERIOD_ENDTIME = new ElementDefImpl( PERIOD, "EndTime", null, 5, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.TIME );
+		LearningDTD.PERIOD_TYPE = new ElementDefImpl( PERIOD, "Type", null, 6, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <PeriodList> fields (1 entries)
-		LearningDTD.PERIODLIST_PERIOD = new ElementDefImpl( PERIODLIST, "Period", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.PERIODLIST_PERIOD = new ElementDefImpl( PERIODLIST, "Period", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <Scope> fields (15 entries)
-		LearningDTD.SCOPE_REFID = new ElementDefImpl( SCOPE, "RefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.SCOPE_TTSCOPENAME = new ElementDefImpl( SCOPE, "TTScopeName", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.SCOPE_SUPPLIERNAME = new ElementDefImpl( SCOPE, "SupplierName", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.SCOPE_SUPPLIERURL = new ElementDefImpl( SCOPE, "SupplierURL", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.SCOPE_PRODUCT = new ElementDefImpl( SCOPE, "Product", null, 5, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.SCOPE_VERSION = new ElementDefImpl( SCOPE, "Version", null, 6, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.SCOPE_SCHOOLINFOREFID = new ElementDefImpl( SCOPE, "SchoolInfoRefId", null, 7, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.SCOPE_SCHOOLNAME = new ElementDefImpl( SCOPE, "SchoolName", null, 8, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.SCOPE_SCHEDULECREATIONDATE = new ElementDefImpl( SCOPE, "ScheduleCreationDate", null, 9, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.SCOPE_SCHEDULENAME = new ElementDefImpl( SCOPE, "ScheduleName", null, 10, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.SCOPE_SCHOOLYEAR = new ElementDefImpl( SCOPE, "SchoolYear", null, 11, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		LearningDTD.SCOPE_STARTDATE = new ElementDefImpl( SCOPE, "StartDate", null, 12, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.SCOPE_ENDDATE = new ElementDefImpl( SCOPE, "EndDate", null, 13, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.SCOPE_STATUS = new ElementDefImpl( SCOPE, "Status", null, 14, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.SCOPE_PHONENUMBERLIST = new ElementDefImpl( SCOPE, "PhoneNumberList", null, 15, SifDtd.COMMON, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SCOPE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCOPE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SCOPE_SIF_METADATA = new ElementDefImpl( SCOPE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LearningDTD.SCOPE_REFID = new ElementDefImpl( SCOPE, "RefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.SCOPE_TTSCOPENAME = new ElementDefImpl( SCOPE, "TTScopeName", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.SCOPE_SUPPLIERNAME = new ElementDefImpl( SCOPE, "SupplierName", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.SCOPE_SUPPLIERURL = new ElementDefImpl( SCOPE, "SupplierURL", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.SCOPE_PRODUCT = new ElementDefImpl( SCOPE, "Product", null, 5, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.SCOPE_VERSION = new ElementDefImpl( SCOPE, "Version", null, 6, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.SCOPE_SCHOOLINFOREFID = new ElementDefImpl( SCOPE, "SchoolInfoRefId", null, 7, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.SCOPE_SCHOOLNAME = new ElementDefImpl( SCOPE, "SchoolName", null, 8, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.SCOPE_SCHEDULECREATIONDATE = new ElementDefImpl( SCOPE, "ScheduleCreationDate", null, 9, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.SCOPE_SCHEDULENAME = new ElementDefImpl( SCOPE, "ScheduleName", null, 10, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.SCOPE_SCHOOLYEAR = new ElementDefImpl( SCOPE, "SchoolYear", null, 11, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.SCOPE_STARTDATE = new ElementDefImpl( SCOPE, "StartDate", null, 12, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.SCOPE_ENDDATE = new ElementDefImpl( SCOPE, "EndDate", null, 13, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.SCOPE_STATUS = new ElementDefImpl( SCOPE, "Status", null, 14, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.SCOPE_PHONENUMBERLIST = new ElementDefImpl( SCOPE, "PhoneNumberList", null, 15, SifDtd.COMMON, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SCOPE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCOPE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SCOPE_SIF_METADATA = new ElementDefImpl( SCOPE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StandardPeriodList> fields (1 entries)
-		LearningDTD.STANDARDPERIODLIST_PERIOD = new ElementDefImpl( STANDARDPERIODLIST, "Period", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.STANDARDPERIODLIST_PERIOD = new ElementDefImpl( STANDARDPERIODLIST, "Period", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <TeachingGroup> fields (4 entries)
-		LearningDTD.TEACHINGGROUP_REFID = new ElementDefImpl( TEACHINGGROUP, "RefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_GROUPDEFINITION = new ElementDefImpl( TEACHINGGROUP, "GroupDefinition", null, 2, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		LearningDTD.TEACHINGGROUP_MAINTEACHERREFID = new ElementDefImpl( TEACHINGGROUP, "MainTeacherRefId", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_GROUPTEACHERLIST = new ElementDefImpl( TEACHINGGROUP, "GroupTeacherList", null, 4, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TEACHINGGROUP_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TEACHINGGROUP, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		TEACHINGGROUP_SIF_METADATA = new ElementDefImpl( TEACHINGGROUP, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LearningDTD.TEACHINGGROUP_REFID = new ElementDefImpl( TEACHINGGROUP, "RefId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_GROUPDEFINITION = new ElementDefImpl( TEACHINGGROUP, "GroupDefinition", null, 2, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		LearningDTD.TEACHINGGROUP_MAINTEACHERREFID = new ElementDefImpl( TEACHINGGROUP, "MainTeacherRefId", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_GROUPTEACHERLIST = new ElementDefImpl( TEACHINGGROUP, "GroupTeacherList", null, 4, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TEACHINGGROUP_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TEACHINGGROUP, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		TEACHINGGROUP_SIF_METADATA = new ElementDefImpl( TEACHINGGROUP, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TTDay> fields (5 entries)
-		LearningDTD.TTDAY_TTDAYID = new ElementDefImpl( TTDAY, "TTDayId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TTDAY_SHORTNAME = new ElementDefImpl( TTDAY, "ShortName", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TTDAY_LONGNAME = new ElementDefImpl( TTDAY, "LongName", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TTDAY_DAYINDEX = new ElementDefImpl( TTDAY, "DayIndex", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		LearningDTD.TTDAY_PERIODLIST = new ElementDefImpl( TTDAY, "PeriodList", null, 5, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.TTDAY_TTDAYID = new ElementDefImpl( TTDAY, "TTDayId", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TTDAY_SHORTNAME = new ElementDefImpl( TTDAY, "ShortName", null, 2, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TTDAY_LONGNAME = new ElementDefImpl( TTDAY, "LongName", null, 3, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TTDAY_DAYINDEX = new ElementDefImpl( TTDAY, "DayIndex", null, 4, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.TTDAY_PERIODLIST = new ElementDefImpl( TTDAY, "PeriodList", null, 5, SifDtd.LEARNING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <TTDayList> fields (1 entries)
-		LearningDTD.TTDAYLIST_TTDAY = new ElementDefImpl( TTDAYLIST, "TTDay", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.TTDAYLIST_TTDAY = new ElementDefImpl( TTDAYLIST, "TTDay", null, 1, SifDtd.LEARNING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

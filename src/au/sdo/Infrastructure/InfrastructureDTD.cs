@@ -20,7 +20,7 @@ namespace OpenADK.Library.au.Infrastructure
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -120,30 +120,30 @@ namespace OpenADK.Library.au.Infrastructure
 	{
 		//  Objects defined by this SDO Library...
 
-		IDENTITY = new ElementDefImpl( null, "Identity", null, 0, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		IDENTITYASSERTION = new ElementDefImpl( null, "IdentityAssertion", null, 0, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		IDENTITYASSERTIONS = new ElementDefImpl( null, "IdentityAssertions", null, 0, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		PASSWORDLIST = new ElementDefImpl( null, "PasswordList", null, 0, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		IDENTITY = new ElementDefImpl( null, "Identity", null, 0, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		IDENTITYASSERTION = new ElementDefImpl( null, "IdentityAssertion", null, 0, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		IDENTITYASSERTIONS = new ElementDefImpl( null, "IdentityAssertions", null, 0, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		PASSWORDLIST = new ElementDefImpl( null, "PasswordList", null, 0, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 
 		// <Identity> fields (6 entries)
-		InfrastructureDTD.IDENTITY_REFID = new ElementDefImpl( IDENTITY, "RefId", null, 1, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfrastructureDTD.IDENTITY_SIF_REFID = new ElementDefImpl( IDENTITY, "SIF_RefId", null, 2, SifDtd.GLOBAL, null, 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfrastructureDTD.IDENTITY_AUTHENTICATIONSOURCE = new ElementDefImpl( IDENTITY, "AuthenticationSource", null, 3, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfrastructureDTD.IDENTITY_IDENTITYASSERTIONS = new ElementDefImpl( IDENTITY, "IdentityAssertions", null, 4, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		InfrastructureDTD.IDENTITY_PASSWORDLIST = new ElementDefImpl( IDENTITY, "PasswordList", null, 5, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		InfrastructureDTD.IDENTITY_AUTHENTICATIONSOURCEGLOBALUID = new ElementDefImpl( IDENTITY, "AuthenticationSourceGlobalUID", null, 6, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		IDENTITY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( IDENTITY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		IDENTITY_SIF_METADATA = new ElementDefImpl( IDENTITY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		InfrastructureDTD.IDENTITY_REFID = new ElementDefImpl( IDENTITY, "RefId", null, 1, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfrastructureDTD.IDENTITY_SIF_REFID = new ElementDefImpl( IDENTITY, "SIF_RefId", null, 2, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		InfrastructureDTD.IDENTITY_AUTHENTICATIONSOURCE = new ElementDefImpl( IDENTITY, "AuthenticationSource", null, 3, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfrastructureDTD.IDENTITY_IDENTITYASSERTIONS = new ElementDefImpl( IDENTITY, "IdentityAssertions", null, 4, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		InfrastructureDTD.IDENTITY_PASSWORDLIST = new ElementDefImpl( IDENTITY, "PasswordList", null, 5, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		InfrastructureDTD.IDENTITY_AUTHENTICATIONSOURCEGLOBALUID = new ElementDefImpl( IDENTITY, "AuthenticationSourceGlobalUID", null, 6, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		IDENTITY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( IDENTITY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		IDENTITY_SIF_METADATA = new ElementDefImpl( IDENTITY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <IdentityAssertion> fields (1 entries)
-		InfrastructureDTD.IDENTITYASSERTION_SCHEMANAME = new ElementDefImpl( IDENTITYASSERTION, "SchemaName", null, 1, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfrastructureDTD.IDENTITYASSERTION_SCHEMANAME = new ElementDefImpl( IDENTITYASSERTION, "SchemaName", null, 1, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <IdentityAssertions> fields (1 entries)
-		InfrastructureDTD.IDENTITYASSERTIONS_IDENTITYASSERTION = new ElementDefImpl( IDENTITYASSERTIONS, "IdentityAssertion", null, 1, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfrastructureDTD.IDENTITYASSERTIONS_IDENTITYASSERTION = new ElementDefImpl( IDENTITYASSERTIONS, "IdentityAssertion", null, 1, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <PasswordList> fields (1 entries)
-		InfrastructureDTD.PASSWORDLIST_PASSWORD = new ElementDefImpl( PASSWORDLIST, "Password", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfrastructureDTD.PASSWORDLIST_PASSWORD = new ElementDefImpl( PASSWORDLIST, "Password", null, 1, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Datamodel
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -308,146 +308,146 @@ namespace OpenADK.Library.us.Datamodel
 	{
 		//  Objects defined by this SDO Library...
 
-		BLOOMSTAXONOMYLEVEL = new ElementDefImpl( null, "BloomsTaxonomyLevel", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		BLOOMSTAXONOMYLEVELS = new ElementDefImpl( null, "BloomsTaxonomyLevels", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		CREATED = new ElementDefImpl( null, "Created", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CREATOR = new ElementDefImpl( null, "Creator", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CREATORS = new ElementDefImpl( null, "Creators", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EDENINFOTYPE = new ElementDefImpl( null, "EDENInfoType", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		EDUCATIONFILTER = new ElementDefImpl( null, "EducationFilter", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
-		FEEFORUSE = new ElementDefImpl( null, "FeeForUse", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FEESFORUSE = new ElementDefImpl( null, "FeesForUse", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		INSTRUCTIONALSTRATEGIES = new ElementDefImpl( null, "InstructionalStrategies", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		INSTRUCTIONALSTRATEGY = new ElementDefImpl( null, "InstructionalStrategy", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		INTERESTLEVEL = new ElementDefImpl( null, "InterestLevel", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
-		INTERESTLEVELS = new ElementDefImpl( null, "InterestLevels", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
-		LIFECYCLE = new ElementDefImpl( null, "LifeCycle", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MODIFICATIONHISTORY = new ElementDefImpl( null, "ModificationHistory", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MODIFIED = new ElementDefImpl( null, "Modified", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MULTIPLEINTELLIGENCE = new ElementDefImpl( null, "MultipleIntelligence", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		MULTIPLEINTELLIGENCES = new ElementDefImpl( null, "MultipleIntelligences", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		RESOURCETYPES = new ElementDefImpl( null, "ResourceTypes", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		RESOURCETYPETYPE = new ElementDefImpl( null, "ResourceTypeType", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		RIGHTSELEMENT = new ElementDefImpl( null, "RightsElement", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		RIGHTSELEMENTS = new ElementDefImpl( null, "RightsElements", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SEACONTACT = new ElementDefImpl( null, "SEAContact", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SEACONTACTLIST = new ElementDefImpl( null, "SEAContactList", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SEAINFO = new ElementDefImpl( null, "SEAInfo", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SIF_METADATA = new ElementDefImpl( null, "SIF_Metadata", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		BLOOMSTAXONOMYLEVEL = new ElementDefImpl( null, "BloomsTaxonomyLevel", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		BLOOMSTAXONOMYLEVELS = new ElementDefImpl( null, "BloomsTaxonomyLevels", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		CREATED = new ElementDefImpl( null, "Created", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CREATOR = new ElementDefImpl( null, "Creator", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CREATORS = new ElementDefImpl( null, "Creators", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EDENINFOTYPE = new ElementDefImpl( null, "EDENInfoType", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		EDUCATIONFILTER = new ElementDefImpl( null, "EducationFilter", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
+		FEEFORUSE = new ElementDefImpl( null, "FeeForUse", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FEESFORUSE = new ElementDefImpl( null, "FeesForUse", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		INSTRUCTIONALSTRATEGIES = new ElementDefImpl( null, "InstructionalStrategies", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		INSTRUCTIONALSTRATEGY = new ElementDefImpl( null, "InstructionalStrategy", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		INTERESTLEVEL = new ElementDefImpl( null, "InterestLevel", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
+		INTERESTLEVELS = new ElementDefImpl( null, "InterestLevels", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
+		LIFECYCLE = new ElementDefImpl( null, "LifeCycle", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MODIFICATIONHISTORY = new ElementDefImpl( null, "ModificationHistory", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MODIFIED = new ElementDefImpl( null, "Modified", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MULTIPLEINTELLIGENCE = new ElementDefImpl( null, "MultipleIntelligence", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		MULTIPLEINTELLIGENCES = new ElementDefImpl( null, "MultipleIntelligences", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		RESOURCETYPES = new ElementDefImpl( null, "ResourceTypes", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		RESOURCETYPETYPE = new ElementDefImpl( null, "ResourceTypeType", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		RIGHTSELEMENT = new ElementDefImpl( null, "RightsElement", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		RIGHTSELEMENTS = new ElementDefImpl( null, "RightsElements", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SEACONTACT = new ElementDefImpl( null, "SEAContact", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SEACONTACTLIST = new ElementDefImpl( null, "SEAContactList", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SEAINFO = new ElementDefImpl( null, "SEAInfo", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SIF_METADATA = new ElementDefImpl( null, "SIF_Metadata", null, 0, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 
 		// <BloomsTaxonomyLevel> fields (0 entries)
 
 		// <BloomsTaxonomyLevels> fields (1 entries)
-		DatamodelDTD.BLOOMSTAXONOMYLEVELS_BLOOMSTAXONOMYLEVEL = new ElementDefImpl( BLOOMSTAXONOMYLEVELS, "BloomsTaxonomyLevel", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.BLOOMSTAXONOMYLEVELS_BLOOMSTAXONOMYLEVEL = new ElementDefImpl( BLOOMSTAXONOMYLEVELS, "BloomsTaxonomyLevel", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Created> fields (2 entries)
-		DatamodelDTD.CREATED_DATETIME = new ElementDefImpl( CREATED, "DateTime", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		DatamodelDTD.CREATED_CREATORS = new ElementDefImpl( CREATED, "Creators", null, 2, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.CREATED_DATETIME = new ElementDefImpl( CREATED, "DateTime", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		DatamodelDTD.CREATED_CREATORS = new ElementDefImpl( CREATED, "Creators", null, 2, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Creator> fields (2 entries)
-		DatamodelDTD.CREATOR_NAME = new ElementDefImpl( CREATOR, "Name", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.CREATOR_ID = new ElementDefImpl( CREATOR, "ID", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.CREATOR_NAME = new ElementDefImpl( CREATOR, "Name", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.CREATOR_ID = new ElementDefImpl( CREATOR, "ID", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Creators> fields (1 entries)
-		DatamodelDTD.CREATORS_CREATOR = new ElementDefImpl( CREATORS, "Creator", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.CREATORS_CREATOR = new ElementDefImpl( CREATORS, "Creator", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EDENInfoType> fields (2 entries)
-		DatamodelDTD.EDENINFOTYPE_FIPSSTATECODE = new ElementDefImpl( EDENINFOTYPE, "FIPSStateCode", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.EDENINFOTYPE_AGENCYIDNUMBER = new ElementDefImpl( EDENINFOTYPE, "AgencyIdNumber", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.EDENINFOTYPE_FIPSSTATECODE = new ElementDefImpl( EDENINFOTYPE, "FIPSStateCode", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.EDENINFOTYPE_AGENCYIDNUMBER = new ElementDefImpl( EDENINFOTYPE, "AgencyIdNumber", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <EducationFilter> fields (12 entries)
-		DatamodelDTD.EDUCATIONFILTER_MEDIATYPES = new ElementDefImpl( EDUCATIONFILTER, "MediaTypes", null, 1, SifDtd.GLOBAL, null, 0, SifVersion.SIF21, SifVersion.SIF25 );
-		DatamodelDTD.EDUCATIONFILTER_GRADELEVELS = new ElementDefImpl( EDUCATIONFILTER, "GradeLevels", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
-		DatamodelDTD.EDUCATIONFILTER_SUBJECTAREAS = new ElementDefImpl( EDUCATIONFILTER, "SubjectAreas", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
-		DatamodelDTD.EDUCATIONFILTER_INTERESTLEVELS = new ElementDefImpl( EDUCATIONFILTER, "InterestLevels", null, 4, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
+		DatamodelDTD.EDUCATIONFILTER_MEDIATYPES = new ElementDefImpl( EDUCATIONFILTER, "MediaTypes", null, 1, SifDtd.GLOBAL, null, 0, SifVersion.SIF21, SifVersion.SIF26 );
+		DatamodelDTD.EDUCATIONFILTER_GRADELEVELS = new ElementDefImpl( EDUCATIONFILTER, "GradeLevels", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
+		DatamodelDTD.EDUCATIONFILTER_SUBJECTAREAS = new ElementDefImpl( EDUCATIONFILTER, "SubjectAreas", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
+		DatamodelDTD.EDUCATIONFILTER_INTERESTLEVELS = new ElementDefImpl( EDUCATIONFILTER, "InterestLevels", null, 4, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
 		DatamodelDTD.EDUCATIONFILTER_LEARNINGSTANDARDITEMS = new ElementDefImpl( EDUCATIONFILTER, "LearningStandardItems", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF21 );
-		DatamodelDTD.EDUCATIONFILTER_BLOOMSTAXONOMYLEVELS = new ElementDefImpl( EDUCATIONFILTER, "BloomsTaxonomyLevels", null, 5, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		DatamodelDTD.EDUCATIONFILTER_MULTIPLEINTELLIGENCES = new ElementDefImpl( EDUCATIONFILTER, "MultipleIntelligences", null, 6, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		DatamodelDTD.EDUCATIONFILTER_INSTRUCTIONALSTRATEGIES = new ElementDefImpl( EDUCATIONFILTER, "InstructionalStrategies", null, 7, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		DatamodelDTD.EDUCATIONFILTER_LEARNINGOBJECTIVES = new ElementDefImpl( EDUCATIONFILTER, "LearningObjectives", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		DatamodelDTD.EDUCATIONFILTER_RESOURCETYPES = new ElementDefImpl( EDUCATIONFILTER, "ResourceTypes", null, 9, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		DatamodelDTD.EDUCATIONFILTER_SUMMARY = new ElementDefImpl( EDUCATIONFILTER, "Summary", null, 10, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.EDUCATIONFILTER_TITLE = new ElementDefImpl( EDUCATIONFILTER, "Title", null, 11, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.EDUCATIONFILTER_BLOOMSTAXONOMYLEVELS = new ElementDefImpl( EDUCATIONFILTER, "BloomsTaxonomyLevels", null, 5, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		DatamodelDTD.EDUCATIONFILTER_MULTIPLEINTELLIGENCES = new ElementDefImpl( EDUCATIONFILTER, "MultipleIntelligences", null, 6, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		DatamodelDTD.EDUCATIONFILTER_INSTRUCTIONALSTRATEGIES = new ElementDefImpl( EDUCATIONFILTER, "InstructionalStrategies", null, 7, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		DatamodelDTD.EDUCATIONFILTER_LEARNINGOBJECTIVES = new ElementDefImpl( EDUCATIONFILTER, "LearningObjectives", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		DatamodelDTD.EDUCATIONFILTER_RESOURCETYPES = new ElementDefImpl( EDUCATIONFILTER, "ResourceTypes", null, 9, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		DatamodelDTD.EDUCATIONFILTER_SUMMARY = new ElementDefImpl( EDUCATIONFILTER, "Summary", null, 10, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.EDUCATIONFILTER_TITLE = new ElementDefImpl( EDUCATIONFILTER, "Title", null, 11, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <FeeForUse> fields (4 entries)
-		DatamodelDTD.FEEFORUSE_USETYPE = new ElementDefImpl( FEEFORUSE, "UseType", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.FEEFORUSE_METERINGTYPE = new ElementDefImpl( FEEFORUSE, "MeteringType", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.FEEFORUSE_METERINGURL = new ElementDefImpl( FEEFORUSE, "MeteringURL", null, 3, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.FEEFORUSE_PERUSECHARGE = new ElementDefAlias( FEEFORUSE, "PerUseCharge", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		DatamodelDTD.FEEFORUSE_USETYPE = new ElementDefImpl( FEEFORUSE, "UseType", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.FEEFORUSE_METERINGTYPE = new ElementDefImpl( FEEFORUSE, "MeteringType", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.FEEFORUSE_METERINGURL = new ElementDefImpl( FEEFORUSE, "MeteringURL", null, 3, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.FEEFORUSE_PERUSECHARGE = new ElementDefAlias( FEEFORUSE, "PerUseCharge", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <FeesForUse> fields (1 entries)
-		DatamodelDTD.FEESFORUSE_FEEFORUSE = new ElementDefImpl( FEESFORUSE, "FeeForUse", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.FEESFORUSE_FEEFORUSE = new ElementDefImpl( FEESFORUSE, "FeeForUse", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <InstructionalStrategies> fields (1 entries)
-		DatamodelDTD.INSTRUCTIONALSTRATEGIES_INSTRUCTIONALSTRATEGY = new ElementDefImpl( INSTRUCTIONALSTRATEGIES, "InstructionalStrategy", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.INSTRUCTIONALSTRATEGIES_INSTRUCTIONALSTRATEGY = new ElementDefImpl( INSTRUCTIONALSTRATEGIES, "InstructionalStrategy", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <InstructionalStrategy> fields (0 entries)
 
 		// <InterestLevel> fields (2 entries)
-		DatamodelDTD.INTERESTLEVEL_CODE = new ElementDefImpl( INTERESTLEVEL, "Code", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.INTERESTLEVEL_OTHERCODELIST = new ElementDefImpl( INTERESTLEVEL, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
+		DatamodelDTD.INTERESTLEVEL_CODE = new ElementDefImpl( INTERESTLEVEL, "Code", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.INTERESTLEVEL_OTHERCODELIST = new ElementDefImpl( INTERESTLEVEL, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
 
 		// <InterestLevels> fields (1 entries)
-		DatamodelDTD.INTERESTLEVELS_INTERESTLEVEL = new ElementDefImpl( INTERESTLEVELS, "InterestLevel", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF21, SifVersion.SIF25 );
+		DatamodelDTD.INTERESTLEVELS_INTERESTLEVEL = new ElementDefImpl( INTERESTLEVELS, "InterestLevel", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF21, SifVersion.SIF26 );
 
 		// <LifeCycle> fields (3 entries)
-		DatamodelDTD.LIFECYCLE_CREATED = new ElementDefImpl( LIFECYCLE, "Created", null, 1, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.LIFECYCLE_MODIFICATIONHISTORY = new ElementDefImpl( LIFECYCLE, "ModificationHistory", null, 2, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.LIFECYCLE_TIMEELEMENTS = new ElementDefImpl( LIFECYCLE, "TimeElements", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.LIFECYCLE_CREATED = new ElementDefImpl( LIFECYCLE, "Created", null, 1, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.LIFECYCLE_MODIFICATIONHISTORY = new ElementDefImpl( LIFECYCLE, "ModificationHistory", null, 2, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.LIFECYCLE_TIMEELEMENTS = new ElementDefImpl( LIFECYCLE, "TimeElements", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ModificationHistory> fields (1 entries)
-		DatamodelDTD.MODIFICATIONHISTORY_MODIFIED = new ElementDefImpl( MODIFICATIONHISTORY, "Modified", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.MODIFICATIONHISTORY_MODIFIED = new ElementDefImpl( MODIFICATIONHISTORY, "Modified", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Modified> fields (3 entries)
-		DatamodelDTD.MODIFIED_BY = new ElementDefImpl( MODIFIED, "By", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.MODIFIED_DATETIME = new ElementDefImpl( MODIFIED, "DateTime", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		DatamodelDTD.MODIFIED_DESCRIPTION = new ElementDefImpl( MODIFIED, "Description", null, 3, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.MODIFIED_BY = new ElementDefImpl( MODIFIED, "By", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.MODIFIED_DATETIME = new ElementDefImpl( MODIFIED, "DateTime", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		DatamodelDTD.MODIFIED_DESCRIPTION = new ElementDefImpl( MODIFIED, "Description", null, 3, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MultipleIntelligence> fields (0 entries)
 
 		// <MultipleIntelligences> fields (1 entries)
-		DatamodelDTD.MULTIPLEINTELLIGENCES_MULTIPLEINTELLIGENCE = new ElementDefImpl( MULTIPLEINTELLIGENCES, "MultipleIntelligence", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.MULTIPLEINTELLIGENCES_MULTIPLEINTELLIGENCE = new ElementDefImpl( MULTIPLEINTELLIGENCES, "MultipleIntelligence", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ResourceTypes> fields (1 entries)
-		DatamodelDTD.RESOURCETYPES_RESOURCETYPE = new ElementDefAlias( RESOURCETYPES, "ResourceType", null, "ResourceTypeType", 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.RESOURCETYPES_RESOURCETYPE = new ElementDefAlias( RESOURCETYPES, "ResourceType", null, "ResourceTypeType", 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ResourceTypeType> fields (0 entries)
 
 		// <RightsElement> fields (4 entries)
-		DatamodelDTD.RIGHTSELEMENT_COST = new ElementDefImpl( RIGHTSELEMENT, "Cost", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		DatamodelDTD.RIGHTSELEMENT_FEESFORUSE = new ElementDefImpl( RIGHTSELEMENT, "FeesForUse", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.RIGHTSELEMENT_COPYRIGHTSTATEMENT = new ElementDefImpl( RIGHTSELEMENT, "CopyrightStatement", null, 3, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.RIGHTSELEMENT_TERMSOFUSE = new ElementDefImpl( RIGHTSELEMENT, "TermsOfUse", null, 4, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.RIGHTSELEMENT_COST = new ElementDefImpl( RIGHTSELEMENT, "Cost", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		DatamodelDTD.RIGHTSELEMENT_FEESFORUSE = new ElementDefImpl( RIGHTSELEMENT, "FeesForUse", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.RIGHTSELEMENT_COPYRIGHTSTATEMENT = new ElementDefImpl( RIGHTSELEMENT, "CopyrightStatement", null, 3, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.RIGHTSELEMENT_TERMSOFUSE = new ElementDefImpl( RIGHTSELEMENT, "TermsOfUse", null, 4, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RightsElements> fields (1 entries)
-		DatamodelDTD.RIGHTSELEMENTS_RIGHTSELEMENT = new ElementDefImpl( RIGHTSELEMENTS, "RightsElement", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.RIGHTSELEMENTS_RIGHTSELEMENT = new ElementDefImpl( RIGHTSELEMENTS, "RightsElement", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SEAContact> fields (2 entries)
-		DatamodelDTD.SEACONTACT_PUBLISHINDIRECTORY = new ElementDefImpl( SEACONTACT, "PublishInDirectory", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SEACONTACT_CONTACTINFO = new ElementDefImpl( SEACONTACT, "ContactInfo", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		DatamodelDTD.SEACONTACT_PUBLISHINDIRECTORY = new ElementDefImpl( SEACONTACT, "PublishInDirectory", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SEACONTACT_CONTACTINFO = new ElementDefImpl( SEACONTACT, "ContactInfo", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <SEAContactList> fields (1 entries)
-		DatamodelDTD.SEACONTACTLIST_SEACONTACT = new ElementDefImpl( SEACONTACTLIST, "SEAContact", null, 1, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		DatamodelDTD.SEACONTACTLIST_SEACONTACT = new ElementDefImpl( SEACONTACTLIST, "SEAContact", null, 1, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <SEAInfo> fields (11 entries)
-		DatamodelDTD.SEAINFO_REFID = new ElementDefImpl( SEAINFO, "RefId", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SEAINFO_LOCALID = new ElementDefImpl( SEAINFO, "LocalId", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SEAINFO_NCESID = new ElementDefImpl( SEAINFO, "NCESId", null, 3, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SEAINFO_SEANAME = new ElementDefImpl( SEAINFO, "SEAName", null, 4, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SEAINFO_SEAURL = new ElementDefImpl( SEAINFO, "SEAURL", null, 5, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SEAINFO_CSSOCONTACT = new ElementDefAlias( SEAINFO, "CSSOContact", null, "ContactInfo", 6, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		DatamodelDTD.SEAINFO_SEACONTACTLIST = new ElementDefImpl( SEAINFO, "SEAContactList", null, 7, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		DatamodelDTD.SEAINFO_PHONENUMBERLIST = new ElementDefImpl( SEAINFO, "PhoneNumberList", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		DatamodelDTD.SEAINFO_ADDRESSLIST = new ElementDefImpl( SEAINFO, "AddressList", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		DatamodelDTD.SEAINFO_OPERATIONALSTATUS = new ElementDefImpl( SEAINFO, "OperationalStatus", null, 10, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SEAINFO_EDENINFO = new ElementDefAlias( SEAINFO, "EDENInfo", null, "EDENInfoType", 11, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		DatamodelDTD.SEAINFO_REFID = new ElementDefImpl( SEAINFO, "RefId", null, 1, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SEAINFO_LOCALID = new ElementDefImpl( SEAINFO, "LocalId", null, 2, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SEAINFO_NCESID = new ElementDefImpl( SEAINFO, "NCESId", null, 3, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SEAINFO_SEANAME = new ElementDefImpl( SEAINFO, "SEAName", null, 4, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SEAINFO_SEAURL = new ElementDefImpl( SEAINFO, "SEAURL", null, 5, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SEAINFO_CSSOCONTACT = new ElementDefAlias( SEAINFO, "CSSOContact", null, "ContactInfo", 6, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		DatamodelDTD.SEAINFO_SEACONTACTLIST = new ElementDefImpl( SEAINFO, "SEAContactList", null, 7, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		DatamodelDTD.SEAINFO_PHONENUMBERLIST = new ElementDefImpl( SEAINFO, "PhoneNumberList", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		DatamodelDTD.SEAINFO_ADDRESSLIST = new ElementDefImpl( SEAINFO, "AddressList", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		DatamodelDTD.SEAINFO_OPERATIONALSTATUS = new ElementDefImpl( SEAINFO, "OperationalStatus", null, 10, SifDtd.DATAMODEL, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SEAINFO_EDENINFO = new ElementDefAlias( SEAINFO, "EDENInfo", null, "EDENInfoType", 11, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <SIF_Metadata> fields (4 entries)
-		DatamodelDTD.SIF_METADATA_TIMEELEMENTS = new ElementDefImpl( SIF_METADATA, "TimeElements", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.SIF_METADATA_LIFECYCLE = new ElementDefImpl( SIF_METADATA, "LifeCycle", null, 2, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.SIF_METADATA_RIGHTSELEMENTS = new ElementDefImpl( SIF_METADATA, "RightsElements", null, 3, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.SIF_METADATA_EDUCATIONFILTER = new ElementDefImpl( SIF_METADATA, "EducationFilter", null, 4, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
+		DatamodelDTD.SIF_METADATA_TIMEELEMENTS = new ElementDefImpl( SIF_METADATA, "TimeElements", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.SIF_METADATA_LIFECYCLE = new ElementDefImpl( SIF_METADATA, "LifeCycle", null, 2, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.SIF_METADATA_RIGHTSELEMENTS = new ElementDefImpl( SIF_METADATA, "RightsElements", null, 3, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.SIF_METADATA_EDUCATIONFILTER = new ElementDefImpl( SIF_METADATA, "EducationFilter", null, 4, SifDtd.DATAMODEL, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

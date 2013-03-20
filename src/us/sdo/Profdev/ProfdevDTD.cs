@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Profdev
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -324,196 +324,196 @@ namespace OpenADK.Library.us.Profdev
 	{
 		//  Objects defined by this SDO Library...
 
-		ACTIVITYPROVIDER = new ElementDefImpl( null, "ActivityProvider", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		BACKGROUNDCHECK = new ElementDefImpl( null, "BackgroundCheck", "Background", 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		ACTIVITYPROVIDER = new ElementDefImpl( null, "ActivityProvider", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		BACKGROUNDCHECK = new ElementDefImpl( null, "BackgroundCheck", "Background", 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		BACKGROUNDCHECK.DefineVersionInfo(SifVersion.SIF20, "BackgroundCheck", 0, (0)); // (Sif 20 alias)
-		BACKGROUNDCHECKS = new ElementDefImpl( null, "BackgroundChecks", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		CERTIFICATION = new ElementDefImpl( null, "Certification", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		CERTIFICATIONS = new ElementDefImpl( null, "Certifications", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		EARNED = new ElementDefImpl( null, "Earned", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		EMPLASSIGNMENT = new ElementDefImpl( null, "EmplAssignment", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEEASSIGNMENTS = new ElementDefImpl( null, "EmployeeAssignments", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		BACKGROUNDCHECKS = new ElementDefImpl( null, "BackgroundChecks", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		CERTIFICATION = new ElementDefImpl( null, "Certification", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		CERTIFICATIONS = new ElementDefImpl( null, "Certifications", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		EARNED = new ElementDefImpl( null, "Earned", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		EMPLASSIGNMENT = new ElementDefImpl( null, "EmplAssignment", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEEASSIGNMENTS = new ElementDefImpl( null, "EmployeeAssignments", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		EMPLOYEEASSIGNMENTS.DefineVersionInfo(SifVersion.SIF20, "Assignments", 0, (0)); // (Sif 20 alias)
-		EMPLOYEECREDENTIAL = new ElementDefImpl( null, "EmployeeCredential", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEECREDIT = new ElementDefImpl( null, "EmployeeCredit", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEERECERTIFICATION = new ElementDefImpl( null, "EmployeeRecertification", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		PROFESSIONALDEVELOPMENTACTIVITIES = new ElementDefImpl( null, "ProfessionalDevelopmentActivities", "ProfDevActivities", 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
+		EMPLOYEECREDENTIAL = new ElementDefImpl( null, "EmployeeCredential", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEECREDIT = new ElementDefImpl( null, "EmployeeCredit", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEERECERTIFICATION = new ElementDefImpl( null, "EmployeeRecertification", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		PROFESSIONALDEVELOPMENTACTIVITIES = new ElementDefImpl( null, "ProfessionalDevelopmentActivities", "ProfDevActivities", 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
 		PROFESSIONALDEVELOPMENTACTIVITIES.DefineVersionInfo(SifVersion.SIF20, "ProfessionalDevelopmentActivities", 0, (0)); // (Sif 20 alias)
-		PROFESSIONALDEVELOPMENTPROGRAM = new ElementDefImpl( null, "ProfessionalDevelopmentProgram", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF21, SifVersion.SIF25 );
-		PROFESSIONALDEVELOPMENTREGISTRATION = new ElementDefImpl( null, "ProfessionalDevelopmentRegistration", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF22, SifVersion.SIF25 );
-		TEACHINGCREDENTIAL = new ElementDefImpl( null, "TeachingCredential", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		PROFESSIONALDEVELOPMENTPROGRAM = new ElementDefImpl( null, "ProfessionalDevelopmentProgram", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF21, SifVersion.SIF26 );
+		PROFESSIONALDEVELOPMENTREGISTRATION = new ElementDefImpl( null, "ProfessionalDevelopmentRegistration", null, 0, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF22, SifVersion.SIF26 );
+		TEACHINGCREDENTIAL = new ElementDefImpl( null, "TeachingCredential", null, 0, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 
 		// <ActivityProvider> fields (5 entries)
-		ProfdevDTD.ACTIVITYPROVIDER_REFID = new ElementDefImpl( ACTIVITYPROVIDER, "RefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.ACTIVITYPROVIDER_LOCALID = new ElementDefImpl( ACTIVITYPROVIDER, "LocalId", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.ACTIVITYPROVIDER_STATEPROVINCEID = new ElementDefImpl( ACTIVITYPROVIDER, "StateProvinceId", "StatePrId", 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.ACTIVITYPROVIDER_REFID = new ElementDefImpl( ACTIVITYPROVIDER, "RefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.ACTIVITYPROVIDER_LOCALID = new ElementDefImpl( ACTIVITYPROVIDER, "LocalId", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.ACTIVITYPROVIDER_STATEPROVINCEID = new ElementDefImpl( ACTIVITYPROVIDER, "StateProvinceId", "StatePrId", 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.ACTIVITYPROVIDER_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.ACTIVITYPROVIDER_NAME = new ElementDefImpl( ACTIVITYPROVIDER, "Name", "ProviderName", 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.ACTIVITYPROVIDER_NAME = new ElementDefImpl( ACTIVITYPROVIDER, "Name", "ProviderName", 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.ACTIVITYPROVIDER_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.ACTIVITYPROVIDER_ADDRESS = new ElementDefImpl( ACTIVITYPROVIDER, "Address", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		ACTIVITYPROVIDER_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ACTIVITYPROVIDER, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ACTIVITYPROVIDER_SIF_METADATA = new ElementDefImpl( ACTIVITYPROVIDER, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		ProfdevDTD.ACTIVITYPROVIDER_ADDRESS = new ElementDefImpl( ACTIVITYPROVIDER, "Address", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		ACTIVITYPROVIDER_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ACTIVITYPROVIDER, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ACTIVITYPROVIDER_SIF_METADATA = new ElementDefImpl( ACTIVITYPROVIDER, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Background> fields (3 entries)
-		ProfdevDTD.BACKGROUNDCHECK_TYPE = new ElementDefImpl( BACKGROUNDCHECK, "Type", "CheckType", 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.BACKGROUNDCHECK_TYPE = new ElementDefImpl( BACKGROUNDCHECK, "Type", "CheckType", 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.BACKGROUNDCHECK_TYPE.DefineVersionInfo(SifVersion.SIF20, "Type", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.BACKGROUNDCHECK_DESCRIPTION = new ElementDefImpl( BACKGROUNDCHECK, "Description", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.BACKGROUNDCHECK_DESCRIPTION = new ElementDefImpl( BACKGROUNDCHECK, "Description", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.BACKGROUNDCHECK_DESCRIPTION.DefineVersionInfo(SifVersion.SIF20, "Description", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.BACKGROUNDCHECK_DATE = new ElementDefImpl( BACKGROUNDCHECK, "Date", "DateChecked", 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		ProfdevDTD.BACKGROUNDCHECK_DATE = new ElementDefImpl( BACKGROUNDCHECK, "Date", "DateChecked", 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		ProfdevDTD.BACKGROUNDCHECK_DATE.DefineVersionInfo(SifVersion.SIF20, "Date", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <BackgroundChecks> fields (1 entries)
-		ProfdevDTD.BACKGROUNDCHECKS_BACKGROUNDCHECK = new ElementDefImpl( BACKGROUNDCHECKS, "BackgroundCheck", "Background", 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		ProfdevDTD.BACKGROUNDCHECKS_BACKGROUNDCHECK = new ElementDefImpl( BACKGROUNDCHECKS, "BackgroundCheck", "Background", 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		ProfdevDTD.BACKGROUNDCHECKS_BACKGROUNDCHECK.DefineVersionInfo(SifVersion.SIF20, "BackgroundCheck", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <Certification> fields (2 entries)
-		ProfdevDTD.CERTIFICATION_DESCRIPTION = new ElementDefImpl( CERTIFICATION, "Description", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.CERTIFICATION_AREAAUTHORIZED = new ElementDefImpl( CERTIFICATION, "AreaAuthorized", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.CERTIFICATION_DESCRIPTION = new ElementDefImpl( CERTIFICATION, "Description", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.CERTIFICATION_AREAAUTHORIZED = new ElementDefImpl( CERTIFICATION, "AreaAuthorized", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Certifications> fields (1 entries)
-		ProfdevDTD.CERTIFICATIONS_CERTIFICATION = new ElementDefImpl( CERTIFICATIONS, "Certification", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		ProfdevDTD.CERTIFICATIONS_CERTIFICATION = new ElementDefImpl( CERTIFICATIONS, "Certification", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <Earned> fields (1 entries)
-		ProfdevDTD.EARNED_TYPE = new ElementDefImpl( EARNED, "Type", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EARNED_TYPE = new ElementDefImpl( EARNED, "Type", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <EmplAssignment> fields (4 entries)
-		ProfdevDTD.EMPLASSIGNMENT_SCHOOLINFOREFID = new ElementDefImpl( EMPLASSIGNMENT, "SchoolInfoRefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLASSIGNMENT_SCHOOLINFOREFID = new ElementDefImpl( EMPLASSIGNMENT, "SchoolInfoRefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLASSIGNMENT_SCHOOLINFOREFID.DefineVersionInfo(SifVersion.SIF20, "SchoolInfoRefId", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLASSIGNMENT_GRADELEVELS = new ElementDefImpl( EMPLASSIGNMENT, "GradeLevels", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		ProfdevDTD.EMPLASSIGNMENT_GRADELEVELS = new ElementDefImpl( EMPLASSIGNMENT, "GradeLevels", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		ProfdevDTD.EMPLASSIGNMENT_GRADELEVELS.DefineVersionInfo(SifVersion.SIF20, "GradeLevels", 2, 0); // (Sif 20 alias)
-		ProfdevDTD.EMPLASSIGNMENT_JOBFUNCTION = new ElementDefImpl( EMPLASSIGNMENT, "JobFunction", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		ProfdevDTD.EMPLASSIGNMENT_JOBFUNCTION = new ElementDefImpl( EMPLASSIGNMENT, "JobFunction", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		ProfdevDTD.EMPLASSIGNMENT_JOBFUNCTION.DefineVersionInfo(SifVersion.SIF20, "JobFunction", 3, 0); // (Sif 20 alias)
-		ProfdevDTD.EMPLASSIGNMENT_FTE = new ElementDefImpl( EMPLASSIGNMENT, "FTE", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		ProfdevDTD.EMPLASSIGNMENT_FTE = new ElementDefImpl( EMPLASSIGNMENT, "FTE", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <EmployeeAssignments> fields (1 entries)
-		ProfdevDTD.EMPLOYEEASSIGNMENTS_ASSIGNMENT = new ElementDefAlias( EMPLOYEEASSIGNMENTS, "Assignment", "EmplAssignment", "EmplAssignment", 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		ProfdevDTD.EMPLOYEEASSIGNMENTS_ASSIGNMENT = new ElementDefAlias( EMPLOYEEASSIGNMENTS, "Assignment", "EmplAssignment", "EmplAssignment", 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		ProfdevDTD.EMPLOYEEASSIGNMENTS_ASSIGNMENT.DefineVersionInfo(SifVersion.SIF20, "Assignment", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <EmployeeCredential> fields (19 entries)
-		ProfdevDTD.EMPLOYEECREDENTIAL_REPORTDATE = new ElementDefImpl( EMPLOYEECREDENTIAL, "ReportDate", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProfdevDTD.EMPLOYEECREDENTIAL_SCHOOLYEAR = new ElementDefImpl( EMPLOYEECREDENTIAL, "SchoolYear", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
-		ProfdevDTD.EMPLOYEECREDENTIAL_STATEPROVINCEID = new ElementDefImpl( EMPLOYEECREDENTIAL, "StateProvinceId", "StatePrId", 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDENTIAL_REPORTDATE = new ElementDefImpl( EMPLOYEECREDENTIAL, "ReportDate", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProfdevDTD.EMPLOYEECREDENTIAL_SCHOOLYEAR = new ElementDefImpl( EMPLOYEECREDENTIAL, "SchoolYear", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
+		ProfdevDTD.EMPLOYEECREDENTIAL_STATEPROVINCEID = new ElementDefImpl( EMPLOYEECREDENTIAL, "StateProvinceId", "StatePrId", 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEECREDENTIAL_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDENTIAL_SSN = new ElementDefImpl( EMPLOYEECREDENTIAL, "SSN", "Ssn", 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDENTIAL_SSN = new ElementDefImpl( EMPLOYEECREDENTIAL, "SSN", "Ssn", 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEECREDENTIAL_SSN.DefineVersionInfo(SifVersion.SIF20, "SSN", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDENTIAL_NAME = new ElementDefImpl( EMPLOYEECREDENTIAL, "Name", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		ProfdevDTD.EMPLOYEECREDENTIAL_DEMOGRAPHICS = new ElementDefImpl( EMPLOYEECREDENTIAL, "Demographics", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		ProfdevDTD.EMPLOYEECREDENTIAL_RACE = new ElementDefImpl( EMPLOYEECREDENTIAL, "Race", null, 7, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.EMPLOYEECREDENTIAL_HISPANIC = new ElementDefImpl( EMPLOYEECREDENTIAL, "Hispanic", null, 8, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.EMPLOYEECREDENTIAL_CERTIFICATIONS = new ElementDefImpl( EMPLOYEECREDENTIAL, "Certifications", null, 9, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		ProfdevDTD.EMPLOYEECREDENTIAL_NAME = new ElementDefImpl( EMPLOYEECREDENTIAL, "Name", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		ProfdevDTD.EMPLOYEECREDENTIAL_DEMOGRAPHICS = new ElementDefImpl( EMPLOYEECREDENTIAL, "Demographics", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		ProfdevDTD.EMPLOYEECREDENTIAL_RACE = new ElementDefImpl( EMPLOYEECREDENTIAL, "Race", null, 7, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDENTIAL_HISPANIC = new ElementDefImpl( EMPLOYEECREDENTIAL, "Hispanic", null, 8, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDENTIAL_CERTIFICATIONS = new ElementDefImpl( EMPLOYEECREDENTIAL, "Certifications", null, 9, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		ProfdevDTD.EMPLOYEECREDENTIAL_CERTIFICATIONS.DefineVersionInfo(SifVersion.SIF20, "Certifications", 9, 0); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDENTIAL_SALARY = new ElementDefAlias( EMPLOYEECREDENTIAL, "Salary", null, "MonetaryAmount", 10, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		ProfdevDTD.EMPLOYEECREDENTIAL_SALARY = new ElementDefAlias( EMPLOYEECREDENTIAL, "Salary", null, "MonetaryAmount", 10, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		ProfdevDTD.EMPLOYEECREDENTIAL_SALARY.DefineVersionInfo(SifVersion.SIF20, "Salary", 10, 0); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDENTIAL_STATUS = new ElementDefImpl( EMPLOYEECREDENTIAL, "Status", "~XPathSurrogate{Status/@Code=.}", 11, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDENTIAL_STATUS = new ElementDefImpl( EMPLOYEECREDENTIAL, "Status", "~XPathSurrogate{Status/@Code=.}", 11, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEECREDENTIAL_STATUS.DefineVersionInfo(SifVersion.SIF20, "Status", 11, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDENTIAL_LEAVE = new ElementDefImpl( EMPLOYEECREDENTIAL, "Leave", null, 12, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDENTIAL_LEAVE = new ElementDefImpl( EMPLOYEECREDENTIAL, "Leave", null, 12, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEECREDENTIAL_LEAVE.DefineVersionInfo(SifVersion.SIF20, "Leave", 12, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDENTIAL_TOTALYEARS = new ElementDefImpl( EMPLOYEECREDENTIAL, "TotalYears", null, 13, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		ProfdevDTD.EMPLOYEECREDENTIAL_TOTALYEARS = new ElementDefImpl( EMPLOYEECREDENTIAL, "TotalYears", null, 13, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		ProfdevDTD.EMPLOYEECREDENTIAL_TOTALYEARS.DefineVersionInfo(SifVersion.SIF20, "TotalYears", 13, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDENTIAL_UNITYEARS = new ElementDefImpl( EMPLOYEECREDENTIAL, "UnitYears", null, 14, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		ProfdevDTD.EMPLOYEECREDENTIAL_UNITYEARS = new ElementDefImpl( EMPLOYEECREDENTIAL, "UnitYears", null, 14, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		ProfdevDTD.EMPLOYEECREDENTIAL_UNITYEARS.DefineVersionInfo(SifVersion.SIF20, "UnitYears", 14, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDENTIAL_EDUCATION = new ElementDefImpl( EMPLOYEECREDENTIAL, "Education", null, 15, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDENTIAL_EDUCATION = new ElementDefImpl( EMPLOYEECREDENTIAL, "Education", null, 15, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEECREDENTIAL_EDUCATION.DefineVersionInfo(SifVersion.SIF20, "Education", 15, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDENTIAL_TEACHINGCREDENTIALTYPE = new ElementDefAlias( EMPLOYEECREDENTIAL, "TeachingCredentialType", null, "TeachingCredential", 16, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.EMPLOYEECREDENTIAL_TERMINATIONCODE = new ElementDefImpl( EMPLOYEECREDENTIAL, "TerminationCode", null, 17, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.EMPLOYEECREDENTIAL_BACKGROUNDCHECKS = new ElementDefImpl( EMPLOYEECREDENTIAL, "BackgroundChecks", null, 18, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		ProfdevDTD.EMPLOYEECREDENTIAL_TEACHINGCREDENTIALTYPE = new ElementDefAlias( EMPLOYEECREDENTIAL, "TeachingCredentialType", null, "TeachingCredential", 16, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDENTIAL_TERMINATIONCODE = new ElementDefImpl( EMPLOYEECREDENTIAL, "TerminationCode", null, 17, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDENTIAL_BACKGROUNDCHECKS = new ElementDefImpl( EMPLOYEECREDENTIAL, "BackgroundChecks", null, 18, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		ProfdevDTD.EMPLOYEECREDENTIAL_BACKGROUNDCHECKS.DefineVersionInfo(SifVersion.SIF20, "BackgroundChecks", 18, 0); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDENTIAL_ASSIGNMENTS = new ElementDefAlias( EMPLOYEECREDENTIAL, "Assignments", null, "EmployeeAssignments", 19, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		ProfdevDTD.EMPLOYEECREDENTIAL_ASSIGNMENTS = new ElementDefAlias( EMPLOYEECREDENTIAL, "Assignments", null, "EmployeeAssignments", 19, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		ProfdevDTD.EMPLOYEECREDENTIAL_ASSIGNMENTS.DefineVersionInfo(SifVersion.SIF20, "Assignments", 19, 0); // (Sif 20 alias)
-		EMPLOYEECREDENTIAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEECREDENTIAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEECREDENTIAL_SIF_METADATA = new ElementDefImpl( EMPLOYEECREDENTIAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EMPLOYEECREDENTIAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEECREDENTIAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEECREDENTIAL_SIF_METADATA = new ElementDefImpl( EMPLOYEECREDENTIAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EmployeeCredit> fields (5 entries)
-		ProfdevDTD.EMPLOYEECREDIT_REFID = new ElementDefImpl( EMPLOYEECREDIT, "RefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.EMPLOYEECREDIT_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLOYEECREDIT, "EmployeePersonalRefId", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.EMPLOYEECREDIT_PROFESSIONALDEVELOPMENTACTIVITIESREFID = new ElementDefImpl( EMPLOYEECREDIT, "ProfessionalDevelopmentActivitiesRefId", "ProfDevActivitiesRefId", 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDIT_REFID = new ElementDefImpl( EMPLOYEECREDIT, "RefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDIT_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLOYEECREDIT, "EmployeePersonalRefId", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDIT_PROFESSIONALDEVELOPMENTACTIVITIESREFID = new ElementDefImpl( EMPLOYEECREDIT, "ProfessionalDevelopmentActivitiesRefId", "ProfDevActivitiesRefId", 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEECREDIT_PROFESSIONALDEVELOPMENTACTIVITIESREFID.DefineVersionInfo(SifVersion.SIF20, "ProfessionalDevelopmentActivitiesRefId", 3, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDIT_ENDDATE = new ElementDefImpl( EMPLOYEECREDIT, "EndDate", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		ProfdevDTD.EMPLOYEECREDIT_ENDDATE = new ElementDefImpl( EMPLOYEECREDIT, "EndDate", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		ProfdevDTD.EMPLOYEECREDIT_ENDDATE.DefineVersionInfo(SifVersion.SIF20, "EndDate", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEECREDIT_EARNED = new ElementDefImpl( EMPLOYEECREDIT, "Earned", null, 5, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEECREDIT_EARNED = new ElementDefImpl( EMPLOYEECREDIT, "Earned", null, 5, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEECREDIT_EARNED.DefineVersionInfo(SifVersion.SIF20, "Earned", 5, 0); // (Sif 20 alias)
-		EMPLOYEECREDIT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEECREDIT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEECREDIT_SIF_METADATA = new ElementDefImpl( EMPLOYEECREDIT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EMPLOYEECREDIT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEECREDIT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEECREDIT_SIF_METADATA = new ElementDefImpl( EMPLOYEECREDIT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EmployeeRecertification> fields (10 entries)
-		ProfdevDTD.EMPLOYEERECERTIFICATION_SSN = new ElementDefImpl( EMPLOYEERECERTIFICATION, "SSN", "Ssn", 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEERECERTIFICATION_SSN = new ElementDefImpl( EMPLOYEERECERTIFICATION, "SSN", "Ssn", 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEERECERTIFICATION_SSN.DefineVersionInfo(SifVersion.SIF20, "SSN", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEERECERTIFICATION_STATEPROVINCEID = new ElementDefImpl( EMPLOYEERECERTIFICATION, "StateProvinceId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.EMPLOYEERECERTIFICATION_NAME = new ElementDefImpl( EMPLOYEERECERTIFICATION, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		ProfdevDTD.EMPLOYEERECERTIFICATION_STATEPROVINCEID = new ElementDefImpl( EMPLOYEERECERTIFICATION, "StateProvinceId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEERECERTIFICATION_NAME = new ElementDefImpl( EMPLOYEERECERTIFICATION, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		ProfdevDTD.EMPLOYEERECERTIFICATION_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 3, 0); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEERECERTIFICATION_DEMOGRAPHICS = new ElementDefImpl( EMPLOYEERECERTIFICATION, "Demographics", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		ProfdevDTD.EMPLOYEERECERTIFICATION_DEMOGRAPHICS = new ElementDefImpl( EMPLOYEERECERTIFICATION, "Demographics", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		ProfdevDTD.EMPLOYEERECERTIFICATION_DEMOGRAPHICS.DefineVersionInfo(SifVersion.SIF20, "Demographics", 4, 0); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEERECERTIFICATION_ACTIVITYNAME = new ElementDefImpl( EMPLOYEERECERTIFICATION, "ActivityName", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEERECERTIFICATION_ACTIVITYNAME = new ElementDefImpl( EMPLOYEERECERTIFICATION, "ActivityName", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEERECERTIFICATION_ACTIVITYNAME.DefineVersionInfo(SifVersion.SIF20, "ActivityName", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEERECERTIFICATION_ACTIVITYTYPE = new ElementDefImpl( EMPLOYEERECERTIFICATION, "ActivityType", null, 5, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEERECERTIFICATION_ACTIVITYTYPE = new ElementDefImpl( EMPLOYEERECERTIFICATION, "ActivityType", null, 5, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEERECERTIFICATION_ACTIVITYTYPE.DefineVersionInfo(SifVersion.SIF20, "ActivityType", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEERECERTIFICATION_ACTIVITYHOURS = new ElementDefImpl( EMPLOYEERECERTIFICATION, "ActivityHours", null, 6, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		ProfdevDTD.EMPLOYEERECERTIFICATION_ACTIVITYHOURS = new ElementDefImpl( EMPLOYEERECERTIFICATION, "ActivityHours", null, 6, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		ProfdevDTD.EMPLOYEERECERTIFICATION_ACTIVITYHOURS.DefineVersionInfo(SifVersion.SIF20, "ActivityHours", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEERECERTIFICATION_EARNED = new ElementDefImpl( EMPLOYEERECERTIFICATION, "Earned", null, 7, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.EMPLOYEERECERTIFICATION_EARNED = new ElementDefImpl( EMPLOYEERECERTIFICATION, "Earned", null, 7, SifDtd.PROFDEV, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.EMPLOYEERECERTIFICATION_EARNED.DefineVersionInfo(SifVersion.SIF20, "Earned", 8, 0); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEERECERTIFICATION_DATEFROM = new ElementDefImpl( EMPLOYEERECERTIFICATION, "DateFrom", null, 8, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		ProfdevDTD.EMPLOYEERECERTIFICATION_DATEFROM = new ElementDefImpl( EMPLOYEERECERTIFICATION, "DateFrom", null, 8, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		ProfdevDTD.EMPLOYEERECERTIFICATION_DATEFROM.DefineVersionInfo(SifVersion.SIF20, "DateFrom", 9, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ProfdevDTD.EMPLOYEERECERTIFICATION_DATETO = new ElementDefImpl( EMPLOYEERECERTIFICATION, "DateTo", null, 9, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		ProfdevDTD.EMPLOYEERECERTIFICATION_DATETO = new ElementDefImpl( EMPLOYEERECERTIFICATION, "DateTo", null, 9, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		ProfdevDTD.EMPLOYEERECERTIFICATION_DATETO.DefineVersionInfo(SifVersion.SIF20, "DateTo", 10, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		EMPLOYEERECERTIFICATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEERECERTIFICATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEERECERTIFICATION_SIF_METADATA = new ElementDefImpl( EMPLOYEERECERTIFICATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EMPLOYEERECERTIFICATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEERECERTIFICATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEERECERTIFICATION_SIF_METADATA = new ElementDefImpl( EMPLOYEERECERTIFICATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ProfDevActivities> fields (12 entries)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_REFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "RefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_ACTIVITYPROVIDERREFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "ActivityProviderRefId", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_PROFESSIONALDEVELOPMENTPROGRAMREFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "ProfessionalDevelopmentProgramRefId", null, 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_LOCALID = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "LocalId", null, 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_REFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "RefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_ACTIVITYPROVIDERREFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "ActivityProviderRefId", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_PROFESSIONALDEVELOPMENTPROGRAMREFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "ProfessionalDevelopmentProgramRefId", null, 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_LOCALID = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "LocalId", null, 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_LOCALID.DefineVersionInfo(SifVersion.SIF21, "LocalId", 4, (ElementDefImpl.FD_FIELD)); // (Sif 21 alias)
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_LOCALID.DefineVersionInfo(SifVersion.SIF22, "LocalId", 5, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_STARTDATE = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "StartDate", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_STARTDATE = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "StartDate", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_STARTDATE.DefineVersionInfo(SifVersion.SIF21, "StartDate", 5, (ElementDefImpl.FD_FIELD)); // (Sif 21 alias)
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_STARTDATE.DefineVersionInfo(SifVersion.SIF22, "StartDate", 6, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_LEARNINGSTANDARDITEMS = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "LearningStandardItems", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_ENDDATE = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "EndDate", null, 5, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_LEARNINGSTANDARDITEMS = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "LearningStandardItems", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_ENDDATE = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "EndDate", null, 5, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_ENDDATE.DefineVersionInfo(SifVersion.SIF21, "EndDate", 6, (ElementDefImpl.FD_FIELD)); // (Sif 21 alias)
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_ENDDATE.DefineVersionInfo(SifVersion.SIF22, "EndDate", 7, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_DESCRIPTION = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "Description", null, 6, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_DESCRIPTION = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "Description", null, 6, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_DESCRIPTION.DefineVersionInfo(SifVersion.SIF21, "Description", 7, (ElementDefImpl.FD_FIELD)); // (Sif 21 alias)
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_DESCRIPTION.DefineVersionInfo(SifVersion.SIF22, "Description", 8, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_CLOCKHOURS = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "ClockHours", "ClockHrs", 7, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_CLOCKHOURS = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "ClockHours", "ClockHrs", 7, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_CLOCKHOURS.DefineVersionInfo(SifVersion.SIF20, "ClockHours", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_CLOCKHOURS.DefineVersionInfo(SifVersion.SIF21, "ClockHours", 8, (ElementDefImpl.FD_FIELD)); // (Sif 21 alias)
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_CLOCKHOURS.DefineVersionInfo(SifVersion.SIF22, "ClockHours", 9, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_CREDITS = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "Credits", null, 8, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_CREDITS = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "Credits", null, 8, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_CREDITS.DefineVersionInfo(SifVersion.SIF21, "Credits", 9, (ElementDefImpl.FD_FIELD)); // (Sif 21 alias)
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_CREDITS.DefineVersionInfo(SifVersion.SIF22, "Credits", 10, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_STIPEND = new ElementDefAlias( PROFESSIONALDEVELOPMENTACTIVITIES, "Stipend", null, "MonetaryAmount", 10, SifDtd.GLOBAL, null, 0, SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_STIPEND = new ElementDefAlias( PROFESSIONALDEVELOPMENTACTIVITIES, "Stipend", null, "MonetaryAmount", 10, SifDtd.GLOBAL, null, 0, SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_STIPEND.DefineVersionInfo(SifVersion.SIF22, "Stipend", 11, 0); // (Sif 22 alias)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_FUNDINGSOURCE = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "FundingSource", null, 11, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_FUNDINGSOURCE = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "FundingSource", null, 11, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTACTIVITIES_FUNDINGSOURCE.DefineVersionInfo(SifVersion.SIF22, "FundingSource", 12, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		PROFESSIONALDEVELOPMENTACTIVITIES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		PROFESSIONALDEVELOPMENTACTIVITIES_SIF_METADATA = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		PROFESSIONALDEVELOPMENTACTIVITIES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		PROFESSIONALDEVELOPMENTACTIVITIES_SIF_METADATA = new ElementDefImpl( PROFESSIONALDEVELOPMENTACTIVITIES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ProfessionalDevelopmentProgram> fields (6 entries)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_REFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "RefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_LOCALPROGRAMID = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "LocalProgramId", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_REFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "RefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_LOCALPROGRAMID = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "LocalProgramId", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_LOCALPROGRAMID.DefineVersionInfo(SifVersion.SIF22, "LocalProgramId", 3, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_LEARNINGSTANDARDITEMS = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "LearningStandardItems", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_PROGRAMNAME = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "ProgramName", null, 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_LEARNINGSTANDARDITEMS = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "LearningStandardItems", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_PROGRAMNAME = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "ProgramName", null, 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_PROGRAMNAME.DefineVersionInfo(SifVersion.SIF22, "ProgramName", 4, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_PROGRAMTYPE = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "ProgramType", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_PROGRAMTYPE = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "ProgramType", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_PROGRAMTYPE.DefineVersionInfo(SifVersion.SIF22, "ProgramType", 5, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_FUNDINGSOURCE = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "FundingSource", null, 5, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_FUNDINGSOURCE = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "FundingSource", null, 5, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProfdevDTD.PROFESSIONALDEVELOPMENTPROGRAM_FUNDINGSOURCE.DefineVersionInfo(SifVersion.SIF22, "FundingSource", 6, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		PROFESSIONALDEVELOPMENTPROGRAM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		PROFESSIONALDEVELOPMENTPROGRAM_SIF_METADATA = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		PROFESSIONALDEVELOPMENTPROGRAM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		PROFESSIONALDEVELOPMENTPROGRAM_SIF_METADATA = new ElementDefImpl( PROFESSIONALDEVELOPMENTPROGRAM, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ProfessionalDevelopmentRegistration> fields (7 entries)
-		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_REFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "RefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_EMPLOYEEPERSONALREFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "EmployeePersonalRefId", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_REGISTRATIONSTATUS = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "RegistrationStatus", null, 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_PROFESSIONALDEVELOPMENTACTIVITYREFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "ProfessionalDevelopmentActivityRefId", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_PROFESSIONALDEVELOPMENTPROGRAMREFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "ProfessionalDevelopmentProgramRefId", null, 5, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_PAIDAMOUNT = new ElementDefAlias( PROFESSIONALDEVELOPMENTREGISTRATION, "PaidAmount", null, "MonetaryAmount", 6, SifDtd.GLOBAL, null, 0, SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_STIPEND = new ElementDefAlias( PROFESSIONALDEVELOPMENTREGISTRATION, "Stipend", null, "MonetaryAmount", 7, SifDtd.GLOBAL, null, 0, SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		PROFESSIONALDEVELOPMENTREGISTRATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		PROFESSIONALDEVELOPMENTREGISTRATION_SIF_METADATA = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_REFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "RefId", null, 1, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_EMPLOYEEPERSONALREFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "EmployeePersonalRefId", null, 2, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_REGISTRATIONSTATUS = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "RegistrationStatus", null, 3, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_PROFESSIONALDEVELOPMENTACTIVITYREFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "ProfessionalDevelopmentActivityRefId", null, 4, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_PROFESSIONALDEVELOPMENTPROGRAMREFID = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "ProfessionalDevelopmentProgramRefId", null, 5, SifDtd.PROFDEV, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_PAIDAMOUNT = new ElementDefAlias( PROFESSIONALDEVELOPMENTREGISTRATION, "PaidAmount", null, "MonetaryAmount", 6, SifDtd.GLOBAL, null, 0, SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		ProfdevDTD.PROFESSIONALDEVELOPMENTREGISTRATION_STIPEND = new ElementDefAlias( PROFESSIONALDEVELOPMENTREGISTRATION, "Stipend", null, "MonetaryAmount", 7, SifDtd.GLOBAL, null, 0, SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		PROFESSIONALDEVELOPMENTREGISTRATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		PROFESSIONALDEVELOPMENTREGISTRATION_SIF_METADATA = new ElementDefImpl( PROFESSIONALDEVELOPMENTREGISTRATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TeachingCredential> fields (0 entries)
 	}

@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Infrastructure
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -122,34 +122,34 @@ namespace OpenADK.Library.us.Infrastructure
 	{
 		//  Objects defined by this SDO Library...
 
-		AUTHENTICATION = new ElementDefImpl( null, "Authentication", null, 0, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		AUTHENTICATIONINFO = new ElementDefImpl( null, "AuthenticationInfo", null, 0, SifDtd.INFRASTRUCTURE, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		AUTHSYSTEM = new ElementDefImpl( null, "AuthSystem", "System", 0, SifDtd.INFRASTRUCTURE, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		PASSWORDLIST = new ElementDefImpl( null, "PasswordList", null, 0, SifDtd.INFRASTRUCTURE, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		AUTHENTICATION = new ElementDefImpl( null, "Authentication", null, 0, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		AUTHENTICATIONINFO = new ElementDefImpl( null, "AuthenticationInfo", null, 0, SifDtd.INFRASTRUCTURE, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		AUTHSYSTEM = new ElementDefImpl( null, "AuthSystem", "System", 0, SifDtd.INFRASTRUCTURE, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		PASSWORDLIST = new ElementDefImpl( null, "PasswordList", null, 0, SifDtd.INFRASTRUCTURE, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 
 
 		// <Authentication> fields (4 entries)
-		InfrastructureDTD.AUTHENTICATION_REFID = new ElementDefImpl( AUTHENTICATION, "RefId", null, 1, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfrastructureDTD.AUTHENTICATION_SIF_REFID = new ElementDefImpl( AUTHENTICATION, "SIF_RefId", "SifRefId", 2, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfrastructureDTD.AUTHENTICATION_REFID = new ElementDefImpl( AUTHENTICATION, "RefId", null, 1, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfrastructureDTD.AUTHENTICATION_SIF_REFID = new ElementDefImpl( AUTHENTICATION, "SIF_RefId", "SifRefId", 2, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfrastructureDTD.AUTHENTICATION_SIF_REFID.DefineVersionInfo(SifVersion.SIF20, "SIF_RefId", 2, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		InfrastructureDTD.AUTHENTICATION_SIF_REFOBJECT = new ElementDefImpl( AUTHENTICATION, "SIF_RefObject", "SifRefIdType", 3, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfrastructureDTD.AUTHENTICATION_SIF_REFOBJECT = new ElementDefImpl( AUTHENTICATION, "SIF_RefObject", "SifRefIdType", 3, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfrastructureDTD.AUTHENTICATION_SIF_REFOBJECT.DefineVersionInfo(SifVersion.SIF20, "SIF_RefObject", 3, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		InfrastructureDTD.AUTHENTICATION_AUTHENTICATIONINFO = new ElementDefImpl( AUTHENTICATION, "AuthenticationInfo", null, 4, SifDtd.INFRASTRUCTURE, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		AUTHENTICATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( AUTHENTICATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		AUTHENTICATION_SIF_METADATA = new ElementDefImpl( AUTHENTICATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		InfrastructureDTD.AUTHENTICATION_AUTHENTICATIONINFO = new ElementDefImpl( AUTHENTICATION, "AuthenticationInfo", null, 4, SifDtd.INFRASTRUCTURE, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		AUTHENTICATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( AUTHENTICATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		AUTHENTICATION_SIF_METADATA = new ElementDefImpl( AUTHENTICATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AuthenticationInfo> fields (4 entries)
-		InfrastructureDTD.AUTHENTICATIONINFO_SYSTEM = new ElementDefAlias( AUTHENTICATIONINFO, "System", null, "AuthSystem", 1, SifDtd.INFRASTRUCTURE, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfrastructureDTD.AUTHENTICATIONINFO_USERNAME = new ElementDefImpl( AUTHENTICATIONINFO, "Username", null, 2, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfrastructureDTD.AUTHENTICATIONINFO_DISTINGUISHEDNAME = new ElementDefImpl( AUTHENTICATIONINFO, "DistinguishedName", null, 3, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfrastructureDTD.AUTHENTICATIONINFO_PASSWORDLIST = new ElementDefImpl( AUTHENTICATIONINFO, "PasswordList", null, 4, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		InfrastructureDTD.AUTHENTICATIONINFO_SYSTEM = new ElementDefAlias( AUTHENTICATIONINFO, "System", null, "AuthSystem", 1, SifDtd.INFRASTRUCTURE, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfrastructureDTD.AUTHENTICATIONINFO_USERNAME = new ElementDefImpl( AUTHENTICATIONINFO, "Username", null, 2, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfrastructureDTD.AUTHENTICATIONINFO_DISTINGUISHEDNAME = new ElementDefImpl( AUTHENTICATIONINFO, "DistinguishedName", null, 3, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfrastructureDTD.AUTHENTICATIONINFO_PASSWORDLIST = new ElementDefImpl( AUTHENTICATIONINFO, "PasswordList", null, 4, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		InfrastructureDTD.AUTHENTICATIONINFO_PASSWORDLIST.DefineVersionInfo(SifVersion.SIF20, "PasswordList", 4, 0); // (Sif 20 alias)
 
 		// <System> fields (1 entries)
-		InfrastructureDTD.AUTHSYSTEM_TYPE = new ElementDefImpl( AUTHSYSTEM, "Type", null, 1, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfrastructureDTD.AUTHSYSTEM_TYPE = new ElementDefImpl( AUTHSYSTEM, "Type", null, 1, SifDtd.INFRASTRUCTURE, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <PasswordList> fields (1 entries)
-		InfrastructureDTD.PASSWORDLIST_PASSWORD = new ElementDefImpl( PASSWORDLIST, "Password", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfrastructureDTD.PASSWORDLIST_PASSWORD = new ElementDefImpl( PASSWORDLIST, "Password", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 	}
 
 	#region Update SifDtd

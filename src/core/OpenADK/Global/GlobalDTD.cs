@@ -18,7 +18,7 @@ namespace OpenADK.Library.Global
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -124,36 +124,36 @@ namespace OpenADK.Library.Global
 	{
 		//  Objects defined by this SDO Library...
 
-		MEDIATYPE = new ElementDefImpl( null, "MediaType", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		MEDIATYPES = new ElementDefImpl( null, "MediaTypes", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		MONETARYAMOUNT = new ElementDefImpl( null, "MonetaryAmount", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		SIF_EXTENDEDELEMENT = new ElementDefImpl( null, "SIF_ExtendedElement", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_EXTENDEDELEMENTS = new ElementDefImpl( null, "SIF_ExtendedElements", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		SIF_REFID = new ElementDefImpl( null, "SIF_RefId", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		XMLDATA = new ElementDefImpl( null, "XMLData", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		MEDIATYPE = new ElementDefImpl( null, "MediaType", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		MEDIATYPES = new ElementDefImpl( null, "MediaTypes", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		MONETARYAMOUNT = new ElementDefImpl( null, "MonetaryAmount", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		SIF_EXTENDEDELEMENT = new ElementDefImpl( null, "SIF_ExtendedElement", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_EXTENDEDELEMENTS = new ElementDefImpl( null, "SIF_ExtendedElements", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		SIF_REFID = new ElementDefImpl( null, "SIF_RefId", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		XMLDATA = new ElementDefImpl( null, "XMLData", null, 0, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 
 		// <MediaType> fields (0 entries)
 
 		// <MediaTypes> fields (1 entries)
-		GlobalDTD.MEDIATYPES_MEDIATYPE = new ElementDefImpl( MEDIATYPES, "MediaType", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		GlobalDTD.MEDIATYPES_MEDIATYPE = new ElementDefImpl( MEDIATYPES, "MediaType", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MonetaryAmount> fields (1 entries)
-		GlobalDTD.MONETARYAMOUNT_CURRENCY = new ElementDefImpl( MONETARYAMOUNT, "Currency", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		GlobalDTD.MONETARYAMOUNT_CURRENCY = new ElementDefImpl( MONETARYAMOUNT, "Currency", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_ExtendedElement> fields (3 entries)
-		GlobalDTD.SIF_EXTENDEDELEMENT_NAME = new ElementDefImpl( SIF_EXTENDEDELEMENT, "Name", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		GlobalDTD.SIF_EXTENDEDELEMENT_XSITYPE = new ElementDefImpl( SIF_EXTENDEDELEMENT, "XsiType", "xsi:type", 2, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		GlobalDTD.SIF_EXTENDEDELEMENT_SIF_ACTION = new ElementDefImpl( SIF_EXTENDEDELEMENT, "SIF_Action", null, 3, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		GlobalDTD.SIF_EXTENDEDELEMENT_NAME = new ElementDefImpl( SIF_EXTENDEDELEMENT, "Name", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		GlobalDTD.SIF_EXTENDEDELEMENT_XSITYPE = new ElementDefImpl( SIF_EXTENDEDELEMENT, "XsiType", "xsi:type", 2, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		GlobalDTD.SIF_EXTENDEDELEMENT_SIF_ACTION = new ElementDefImpl( SIF_EXTENDEDELEMENT, "SIF_Action", null, 3, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_ExtendedElements> fields (1 entries)
-		GlobalDTD.SIF_EXTENDEDELEMENTS_SIF_EXTENDEDELEMENT = new ElementDefImpl( SIF_EXTENDEDELEMENTS, "SIF_ExtendedElement", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		GlobalDTD.SIF_EXTENDEDELEMENTS_SIF_EXTENDEDELEMENT = new ElementDefImpl( SIF_EXTENDEDELEMENTS, "SIF_ExtendedElement", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_RefId> fields (1 entries)
-		GlobalDTD.SIF_REFID_SIF_REFOBJECT = new ElementDefImpl( SIF_REFID, "SIF_RefObject", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		GlobalDTD.SIF_REFID_SIF_REFOBJECT = new ElementDefImpl( SIF_REFID, "SIF_RefObject", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <XMLData> fields (1 entries)
-		GlobalDTD.XMLDATA_DESCRIPTION = new ElementDefImpl( XMLDATA, "Description", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		GlobalDTD.XMLDATA_DESCRIPTION = new ElementDefImpl( XMLDATA, "Description", null, 1, SifDtd.GLOBAL, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 	}
 
 	#region Update SifDtd

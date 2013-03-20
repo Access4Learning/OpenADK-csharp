@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Common
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -76,6 +76,8 @@ namespace OpenADK.Library.us.Common
 	/// </remarks>
 	public class CommonDTD : OpenADK.Library.Impl.SdoLibraryImpl
 	{
+	/** Defines the &lt;AbstractContentElementType&gt; SIF Data Object */
+	public static IElementDef ABSTRACTCONTENTELEMENTTYPE = null;
 	/** Defines the &lt;Address&gt; SIF Data Object */
 	public static IElementDef ADDRESS = null;
 	/** Defines the &lt;AddressList&gt; SIF Data Object */
@@ -283,6 +285,22 @@ namespace OpenADK.Library.us.Common
 	/** Defines the &lt;TimeElements&gt; SIF Data Object */
 	public static IElementDef TIMEELEMENTS = null;
 
+
+	// Field elements of ABSTRACTCONTENTELEMENTTYPE (7 fields)
+	/** Defines the &lt;XMLData&gt; element as a child of &lt;AbstractContentElementType&gt; */
+	public static IElementDef ABSTRACTCONTENTELEMENTTYPE_XMLDATA = null;
+	/** Defines the Description attribute as a child of &lt;AbstractContentElementType&gt; */
+	public static IElementDef ABSTRACTCONTENTELEMENTTYPE_DESCRIPTION = null;
+	/** Defines the &lt;TextData&gt; element as a child of &lt;AbstractContentElementType&gt; */
+	public static IElementDef ABSTRACTCONTENTELEMENTTYPE_TEXTDATA = null;
+	/** Defines the MIMEType attribute as a child of &lt;AbstractContentElementType&gt; */
+	public static IElementDef ABSTRACTCONTENTELEMENTTYPE_MIMETYPE = null;
+	/** Defines the FileName attribute as a child of &lt;AbstractContentElementType&gt; */
+	public static IElementDef ABSTRACTCONTENTELEMENTTYPE_FILENAME = null;
+	/** Defines the &lt;BinaryData&gt; element as a child of &lt;AbstractContentElementType&gt; */
+	public static IElementDef ABSTRACTCONTENTELEMENTTYPE_BINARYDATA = null;
+	/** Defines the &lt;Reference&gt; element as a child of &lt;AbstractContentElementType&gt; */
+	public static IElementDef ABSTRACTCONTENTELEMENTTYPE_REFERENCE = null;
 
 	// Field elements of ADDRESS (9 fields)
 	/** Defines the Type attribute as a child of &lt;Address&gt; */
@@ -1084,172 +1102,182 @@ namespace OpenADK.Library.us.Common
 	{
 		//  Objects defined by this SDO Library...
 
-		ADDRESS = new ElementDefImpl( null, "Address", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		ADDRESSLIST = new ElementDefImpl( null, "AddressList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		ATTENDANCECODE = new ElementDefImpl( null, "AttendanceCode", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		BINARYDATA = new ElementDefImpl( null, "BinaryData", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CODESETVALUE = new ElementDefImpl( null, "CodesetValue", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CONTACT = new ElementDefImpl( null, "Contact", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CONTACTINFO = new ElementDefImpl( null, "ContactInfo", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		CONTACTS = new ElementDefImpl( null, "Contacts", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		COUNTRIESOFCITIZENSHIP = new ElementDefImpl( null, "CountriesOfCitizenship", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		COUNTRIESOFRESIDENCY = new ElementDefImpl( null, "CountriesOfResidency", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		COUNTRY = new ElementDefImpl( null, "Country", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		ABSTRACTCONTENTELEMENTTYPE = new ElementDefImpl( null, "AbstractContentElementType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		ADDRESS = new ElementDefImpl( null, "Address", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		ADDRESSLIST = new ElementDefImpl( null, "AddressList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		ATTENDANCECODE = new ElementDefImpl( null, "AttendanceCode", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		BINARYDATA = new ElementDefImpl( null, "BinaryData", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CODESETVALUE = new ElementDefImpl( null, "CodesetValue", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CONTACT = new ElementDefImpl( null, "Contact", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CONTACTINFO = new ElementDefImpl( null, "ContactInfo", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		CONTACTS = new ElementDefImpl( null, "Contacts", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		COUNTRIESOFCITIZENSHIP = new ElementDefImpl( null, "CountriesOfCitizenship", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		COUNTRIESOFRESIDENCY = new ElementDefImpl( null, "CountriesOfResidency", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		COUNTRY = new ElementDefImpl( null, "Country", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		COUNTRYOFRESIDENCY = new ElementDefImpl( null, "CountryOfResidency", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF11, SifTypeConverters.STRING );
-		DEMOGRAPHICS = new ElementDefImpl( null, "Demographics", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		DURATION = new ElementDefImpl( null, "Duration", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DWELLINGARRANGEMENT = new ElementDefImpl( null, "DwellingArrangement", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		ELECTRONICID = new ElementDefImpl( null, "ElectronicId", "ItemElectronicId", 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		DEMOGRAPHICS = new ElementDefImpl( null, "Demographics", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		DURATION = new ElementDefImpl( null, "Duration", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DWELLINGARRANGEMENT = new ElementDefImpl( null, "DwellingArrangement", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		ELECTRONICID = new ElementDefImpl( null, "ElectronicId", "ItemElectronicId", 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		ELECTRONICID.DefineVersionInfo(SifVersion.SIF20, "ElectronicId", 0, (0)); // (Sif 20 alias)
-		ELECTRONICIDLIST = new ElementDefImpl( null, "ElectronicIdList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		EMAIL = new ElementDefImpl( null, "Email", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		EMAILLIST = new ElementDefImpl( null, "EmailList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		ENGLISHPROFICIENCY = new ElementDefImpl( null, "EnglishProficiency", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		ENTRYTYPE = new ElementDefImpl( null, "EntryType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		EXCEPTIONALITYCATEGORIES = new ElementDefImpl( null, "ExceptionalityCategories", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EXCEPTIONALITYCATEGORY = new ElementDefImpl( null, "ExceptionalityCategory", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		EXITSTATUS = new ElementDefImpl( null, "ExitStatus", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		EXITTYPE = new ElementDefImpl( null, "ExitType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		EXTENDEDPARAMETER = new ElementDefImpl( null, "ExtendedParameter", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EXTENDEDPARAMETERS = new ElementDefImpl( null, "ExtendedParameters", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		FREQUENCYTIME = new ElementDefImpl( null, "FrequencyTime", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		GRADELEVEL = new ElementDefImpl( null, "GradeLevel", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		GRADELEVELS = new ElementDefImpl( null, "GradeLevels", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		GRIDLOCATION = new ElementDefImpl( null, "GridLocation", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		IDENTIFICATIONINFO = new ElementDefImpl( null, "IdentificationInfo", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		IDENTIFICATIONINFOLIST = new ElementDefImpl( null, "IdentificationInfoList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		INSTRUCTIONALLEVEL = new ElementDefImpl( null, "InstructionalLevel", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		JOBFUNCTION = new ElementDefImpl( null, "JobFunction", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		LANGUAGE = new ElementDefImpl( null, "Language", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		LANGUAGELIST = new ElementDefImpl( null, "LanguageList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		LEAINFOLINK = new ElementDefImpl( null, "LeaInfoLink", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		LEARNINGOBJECTIVE = new ElementDefImpl( null, "LearningObjective", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		LEARNINGOBJECTIVES = new ElementDefImpl( null, "LearningObjectives", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		LEARNINGSTANDARDITEMREFID = new ElementDefImpl( null, "LearningStandardItemRefId", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		LEARNINGSTANDARDITEMREFIDS = new ElementDefImpl( null, "LearningStandardItemRefIds", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		LEARNINGSTANDARDITEMS = new ElementDefImpl( null, "LearningStandardItems", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
-		LRCONTACT = new ElementDefImpl( null, "LRContact", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		MANAGINGPUBLICAGENCY = new ElementDefImpl( null, "ManagingPublicAgency", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		MANAGINGSCHOOL = new ElementDefImpl( null, "ManagingSchool", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		MEETINGTIME = new ElementDefImpl( null, "MeetingTime", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		MEETINGTIMELIST = new ElementDefImpl( null, "MeetingTimeList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		NAME = new ElementDefImpl( null, "Name", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		ELECTRONICIDLIST = new ElementDefImpl( null, "ElectronicIdList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		EMAIL = new ElementDefImpl( null, "Email", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		EMAILLIST = new ElementDefImpl( null, "EmailList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		ENGLISHPROFICIENCY = new ElementDefImpl( null, "EnglishProficiency", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		ENTRYTYPE = new ElementDefImpl( null, "EntryType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		EXCEPTIONALITYCATEGORIES = new ElementDefImpl( null, "ExceptionalityCategories", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EXCEPTIONALITYCATEGORY = new ElementDefImpl( null, "ExceptionalityCategory", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		EXITSTATUS = new ElementDefImpl( null, "ExitStatus", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		EXITTYPE = new ElementDefImpl( null, "ExitType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		EXTENDEDPARAMETER = new ElementDefImpl( null, "ExtendedParameter", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EXTENDEDPARAMETERS = new ElementDefImpl( null, "ExtendedParameters", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		FREQUENCYTIME = new ElementDefImpl( null, "FrequencyTime", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		GRADELEVEL = new ElementDefImpl( null, "GradeLevel", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		GRADELEVELS = new ElementDefImpl( null, "GradeLevels", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		GRIDLOCATION = new ElementDefImpl( null, "GridLocation", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		IDENTIFICATIONINFO = new ElementDefImpl( null, "IdentificationInfo", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		IDENTIFICATIONINFOLIST = new ElementDefImpl( null, "IdentificationInfoList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		INSTRUCTIONALLEVEL = new ElementDefImpl( null, "InstructionalLevel", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		JOBFUNCTION = new ElementDefImpl( null, "JobFunction", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		LANGUAGE = new ElementDefImpl( null, "Language", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		LANGUAGELIST = new ElementDefImpl( null, "LanguageList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		LEAINFOLINK = new ElementDefImpl( null, "LeaInfoLink", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		LEARNINGOBJECTIVE = new ElementDefImpl( null, "LearningObjective", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		LEARNINGOBJECTIVES = new ElementDefImpl( null, "LearningObjectives", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		LEARNINGSTANDARDITEMREFID = new ElementDefImpl( null, "LearningStandardItemRefId", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		LEARNINGSTANDARDITEMREFIDS = new ElementDefImpl( null, "LearningStandardItemRefIds", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		LEARNINGSTANDARDITEMS = new ElementDefImpl( null, "LearningStandardItems", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
+		LRCONTACT = new ElementDefImpl( null, "LRContact", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		MANAGINGPUBLICAGENCY = new ElementDefImpl( null, "ManagingPublicAgency", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		MANAGINGSCHOOL = new ElementDefImpl( null, "ManagingSchool", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		MEETINGTIME = new ElementDefImpl( null, "MeetingTime", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		MEETINGTIMELIST = new ElementDefImpl( null, "MeetingTimeList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		NAME = new ElementDefImpl( null, "Name", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		NAMELIST = new ElementDefImpl( null, "NameList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF15r1 );
-		NAMES = new ElementDefImpl( null, "Names", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ORGANIZATIONRELATIONSHIPTYPE = new ElementDefImpl( null, "OrganizationRelationshipType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		OTHERCODE = new ElementDefImpl( null, "OtherCode", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		OTHERCODELIST = new ElementDefImpl( null, "OtherCodeList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		OTHERID = new ElementDefImpl( null, "OtherId", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		OTHERIDLIST = new ElementDefImpl( null, "OtherIdList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		OTHERNAMES = new ElementDefImpl( null, "OtherNames", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		PARTIALDATETYPE = new ElementDefImpl( null, "PartialDateType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		PERSONINFO = new ElementDefImpl( null, "PersonInfo", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		PHONENUMBER = new ElementDefImpl( null, "PhoneNumber", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		PHONENUMBERLIST = new ElementDefImpl( null, "PhoneNumberList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		PICTURESOURCE = new ElementDefImpl( null, "PictureSource", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		PLANNEDASSESSMENTPARTICIPATION = new ElementDefImpl( null, "PlannedAssessmentParticipation", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		PROGRAM = new ElementDefImpl( null, "Program", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		PROGRAMFUNDINGSOURCE = new ElementDefImpl( null, "ProgramFundingSource", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		PROGRAMFUNDINGSOURCES = new ElementDefImpl( null, "ProgramFundingSources", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		PROGRAMSTATUS = new ElementDefImpl( null, "ProgramStatus", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		PROGRAMTYPE = new ElementDefImpl( null, "ProgramType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		RACE = new ElementDefImpl( null, "Race", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		RACELIST = new ElementDefImpl( null, "RaceList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		REFERENCE = new ElementDefImpl( null, "Reference", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		RELATIONSHIP = new ElementDefImpl( null, "Relationship", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		RESIDENCYSTATUS = new ElementDefImpl( null, "ResidencyStatus", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		SCHOOLCONTACT = new ElementDefImpl( null, "SchoolContact", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		SCHOOLCONTACTLIST = new ElementDefImpl( null, "SchoolContactList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		SERVICE = new ElementDefImpl( null, "Service", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		SERVICEFUNDINGSOURCE = new ElementDefImpl( null, "ServiceFundingSource", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SERVICEFUNDINGSOURCES = new ElementDefImpl( null, "ServiceFundingSources", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SERVICEPROVIDERTYPE = new ElementDefImpl( null, "ServiceProviderType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SOFTWAREREQUIREMENT = new ElementDefImpl( null, "SoftwareRequirement", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		SOFTWAREREQUIREMENTLIST = new ElementDefImpl( null, "SoftwareRequirementList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		SPANGAP = new ElementDefImpl( null, "SpanGap", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SPANGAPS = new ElementDefImpl( null, "SpanGaps", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STAFFPARAMETERS = new ElementDefImpl( null, "StaffParameters", null, 0, SifDtd.COMMON, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		STREET = new ElementDefImpl( null, "Street", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		STUDENTLEARELATIONSHIP = new ElementDefImpl( null, "StudentLEARelationship", null, 0, SifDtd.COMMON, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF22, SifVersion.SIF25 );
-		STUDENTPARAMETERS = new ElementDefImpl( null, "StudentParameters", null, 0, SifDtd.COMMON, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTPARAMETERSCONTACTS = new ElementDefImpl( null, "StudentParametersContacts", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTPARTICIPATIONDATAELEMENT = new ElementDefImpl( null, "StudentParticipationDataElement", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTPARTICIPATIONLIST = new ElementDefImpl( null, "StudentParticipationList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTPERSONALREFID = new ElementDefImpl( null, "StudentPersonalRefId", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTPLACEMENTDATA = new ElementDefImpl( null, "StudentPlacementData", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTPLACEMENTLIST = new ElementDefImpl( null, "StudentPlacementList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTRECORDEXCHANGEDATA = new ElementDefImpl( null, "StudentRecordExchangeData", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTRECORDEXCHANGEDATALIST = new ElementDefImpl( null, "StudentRecordExchangeDataList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTS = new ElementDefImpl( null, "Students", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		SUBJECTAREA = new ElementDefImpl( null, "SubjectArea", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SUBJECTAREALIST = new ElementDefImpl( null, "SubjectAreaList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SUBJECTAREAS = new ElementDefImpl( null, "SubjectAreas", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		TERMSPAN = new ElementDefImpl( null, "TermSpan", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		TEXTDATA = new ElementDefImpl( null, "TextData", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		TIMEELEMENT = new ElementDefImpl( null, "TimeElement", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		TIMEELEMENTS = new ElementDefImpl( null, "TimeElements", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		NAMES = new ElementDefImpl( null, "Names", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ORGANIZATIONRELATIONSHIPTYPE = new ElementDefImpl( null, "OrganizationRelationshipType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		OTHERCODE = new ElementDefImpl( null, "OtherCode", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		OTHERCODELIST = new ElementDefImpl( null, "OtherCodeList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		OTHERID = new ElementDefImpl( null, "OtherId", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		OTHERIDLIST = new ElementDefImpl( null, "OtherIdList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		OTHERNAMES = new ElementDefImpl( null, "OtherNames", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		PARTIALDATETYPE = new ElementDefImpl( null, "PartialDateType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		PERSONINFO = new ElementDefImpl( null, "PersonInfo", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		PHONENUMBER = new ElementDefImpl( null, "PhoneNumber", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		PHONENUMBERLIST = new ElementDefImpl( null, "PhoneNumberList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		PICTURESOURCE = new ElementDefImpl( null, "PictureSource", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		PLANNEDASSESSMENTPARTICIPATION = new ElementDefImpl( null, "PlannedAssessmentParticipation", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		PROGRAM = new ElementDefImpl( null, "Program", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		PROGRAMFUNDINGSOURCE = new ElementDefImpl( null, "ProgramFundingSource", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		PROGRAMFUNDINGSOURCES = new ElementDefImpl( null, "ProgramFundingSources", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		PROGRAMSTATUS = new ElementDefImpl( null, "ProgramStatus", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		PROGRAMTYPE = new ElementDefImpl( null, "ProgramType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		RACE = new ElementDefImpl( null, "Race", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		RACELIST = new ElementDefImpl( null, "RaceList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		REFERENCE = new ElementDefImpl( null, "Reference", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		RELATIONSHIP = new ElementDefImpl( null, "Relationship", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		RESIDENCYSTATUS = new ElementDefImpl( null, "ResidencyStatus", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		SCHOOLCONTACT = new ElementDefImpl( null, "SchoolContact", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		SCHOOLCONTACTLIST = new ElementDefImpl( null, "SchoolContactList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		SERVICE = new ElementDefImpl( null, "Service", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		SERVICEFUNDINGSOURCE = new ElementDefImpl( null, "ServiceFundingSource", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SERVICEFUNDINGSOURCES = new ElementDefImpl( null, "ServiceFundingSources", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SERVICEPROVIDERTYPE = new ElementDefImpl( null, "ServiceProviderType", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SOFTWAREREQUIREMENT = new ElementDefImpl( null, "SoftwareRequirement", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		SOFTWAREREQUIREMENTLIST = new ElementDefImpl( null, "SoftwareRequirementList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		SPANGAP = new ElementDefImpl( null, "SpanGap", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SPANGAPS = new ElementDefImpl( null, "SpanGaps", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STAFFPARAMETERS = new ElementDefImpl( null, "StaffParameters", null, 0, SifDtd.COMMON, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		STREET = new ElementDefImpl( null, "Street", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		STUDENTLEARELATIONSHIP = new ElementDefImpl( null, "StudentLEARelationship", null, 0, SifDtd.COMMON, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF22, SifVersion.SIF26 );
+		STUDENTPARAMETERS = new ElementDefImpl( null, "StudentParameters", null, 0, SifDtd.COMMON, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTPARAMETERSCONTACTS = new ElementDefImpl( null, "StudentParametersContacts", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTPARTICIPATIONDATAELEMENT = new ElementDefImpl( null, "StudentParticipationDataElement", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTPARTICIPATIONLIST = new ElementDefImpl( null, "StudentParticipationList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTPERSONALREFID = new ElementDefImpl( null, "StudentPersonalRefId", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTPLACEMENTDATA = new ElementDefImpl( null, "StudentPlacementData", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTPLACEMENTLIST = new ElementDefImpl( null, "StudentPlacementList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTRECORDEXCHANGEDATA = new ElementDefImpl( null, "StudentRecordExchangeData", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTRECORDEXCHANGEDATALIST = new ElementDefImpl( null, "StudentRecordExchangeDataList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTS = new ElementDefImpl( null, "Students", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		SUBJECTAREA = new ElementDefImpl( null, "SubjectArea", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SUBJECTAREALIST = new ElementDefImpl( null, "SubjectAreaList", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SUBJECTAREAS = new ElementDefImpl( null, "SubjectAreas", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		TERMSPAN = new ElementDefImpl( null, "TermSpan", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		TEXTDATA = new ElementDefImpl( null, "TextData", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		TIMEELEMENT = new ElementDefImpl( null, "TimeElement", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		TIMEELEMENTS = new ElementDefImpl( null, "TimeElements", null, 0, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
+
+		// <AbstractContentElementType> fields (7 entries)
+		CommonDTD.ABSTRACTCONTENTELEMENTTYPE_XMLDATA = new ElementDefImpl( ABSTRACTCONTENTELEMENTTYPE, "XMLData", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.ABSTRACTCONTENTELEMENTTYPE_DESCRIPTION = new ElementDefImpl( ABSTRACTCONTENTELEMENTTYPE, "Description", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.ABSTRACTCONTENTELEMENTTYPE_TEXTDATA = new ElementDefImpl( ABSTRACTCONTENTELEMENTTYPE, "TextData", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.ABSTRACTCONTENTELEMENTTYPE_MIMETYPE = new ElementDefImpl( ABSTRACTCONTENTELEMENTTYPE, "MIMEType", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.ABSTRACTCONTENTELEMENTTYPE_FILENAME = new ElementDefImpl( ABSTRACTCONTENTELEMENTTYPE, "FileName", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.ABSTRACTCONTENTELEMENTTYPE_BINARYDATA = new ElementDefImpl( ABSTRACTCONTENTELEMENTTYPE, "BinaryData", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.ABSTRACTCONTENTELEMENTTYPE_REFERENCE = new ElementDefImpl( ABSTRACTCONTENTELEMENTTYPE, "Reference", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Address> fields (9 entries)
-		CommonDTD.ADDRESS_TYPE = new ElementDefImpl( ADDRESS, "Type", "~XPathSurrogate{@Type=.}", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ADDRESS_TYPE = new ElementDefImpl( ADDRESS, "Type", "~XPathSurrogate{@Type=.}", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.ADDRESS_TYPE.DefineVersionInfo(SifVersion.SIF20, "Type", 1, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		CommonDTD.ADDRESS_STREET = new ElementDefImpl( ADDRESS, "Street", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.ADDRESS_STREET = new ElementDefImpl( ADDRESS, "Street", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		CommonDTD.ADDRESS_STREET.DefineVersionInfo(SifVersion.SIF20, "Street", 3, 0); // (Sif 20 alias)
-		CommonDTD.ADDRESS_SIF_ACTION = new ElementDefImpl( ADDRESS, "SIF_Action", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.ADDRESS_CITY = new ElementDefImpl( ADDRESS, "City", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ADDRESS_SIF_ACTION = new ElementDefImpl( ADDRESS, "SIF_Action", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.ADDRESS_CITY = new ElementDefImpl( ADDRESS, "City", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.ADDRESS_CITY.DefineVersionInfo(SifVersion.SIF20, "City", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.ADDRESS_COUNTY = new ElementDefImpl( ADDRESS, "County", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ADDRESS_COUNTY = new ElementDefImpl( ADDRESS, "County", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.ADDRESS_COUNTY.DefineVersionInfo(SifVersion.SIF20, "County", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.ADDRESS_STATEPROVINCE = new ElementDefImpl( ADDRESS, "StateProvince", "~XPathSurrogate{StatePr/@Code=.}StatePr", 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ADDRESS_STATEPROVINCE = new ElementDefImpl( ADDRESS, "StateProvince", "~XPathSurrogate{StatePr/@Code=.}StatePr", 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.ADDRESS_STATEPROVINCE.DefineVersionInfo(SifVersion.SIF20, "StateProvince", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.ADDRESS_COUNTRY = new ElementDefImpl( ADDRESS, "Country", "~XPathSurrogate{Country/@Code=.}", 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ADDRESS_COUNTRY = new ElementDefImpl( ADDRESS, "Country", "~XPathSurrogate{Country/@Code=.}", 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.ADDRESS_COUNTRY.DefineVersionInfo(SifVersion.SIF20, "Country", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.ADDRESS_POSTALCODE = new ElementDefImpl( ADDRESS, "PostalCode", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ADDRESS_POSTALCODE = new ElementDefImpl( ADDRESS, "PostalCode", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.ADDRESS_POSTALCODE.DefineVersionInfo(SifVersion.SIF20, "PostalCode", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.ADDRESS_GRIDLOCATION = new ElementDefImpl( ADDRESS, "GridLocation", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.ADDRESS_GRIDLOCATION = new ElementDefImpl( ADDRESS, "GridLocation", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		CommonDTD.ADDRESS_GRIDLOCATION.DefineVersionInfo(SifVersion.SIF20, "GridLocation", 9, 0); // (Sif 20 alias)
 
 		// <AddressList> fields (1 entries)
-		CommonDTD.ADDRESSLIST_ADDRESS = new ElementDefImpl( ADDRESSLIST, "Address", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.ADDRESSLIST_ADDRESS = new ElementDefImpl( ADDRESSLIST, "Address", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <AttendanceCode> fields (1 entries)
-		CommonDTD.ATTENDANCECODE_ATTENDANCECODEINFOREFID = new ElementDefImpl( ATTENDANCECODE, "AttendanceCodeInfoRefId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ATTENDANCECODE_ATTENDANCECODEINFOREFID = new ElementDefImpl( ATTENDANCECODE, "AttendanceCodeInfoRefId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <BinaryData> fields (3 entries)
-		CommonDTD.BINARYDATA_MIMETYPE = new ElementDefImpl( BINARYDATA, "MIMEType", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.BINARYDATA_FILENAME = new ElementDefImpl( BINARYDATA, "FileName", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.BINARYDATA_DESCRIPTION = new ElementDefImpl( BINARYDATA, "Description", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.BINARYDATA_MIMETYPE = new ElementDefImpl( BINARYDATA, "MIMEType", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.BINARYDATA_FILENAME = new ElementDefImpl( BINARYDATA, "FileName", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.BINARYDATA_DESCRIPTION = new ElementDefImpl( BINARYDATA, "Description", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <CodesetValue> fields (2 entries)
-		CommonDTD.CODESETVALUE_CODE = new ElementDefImpl( CODESETVALUE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.CODESETVALUE_OTHERCODELIST = new ElementDefImpl( CODESETVALUE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.CODESETVALUE_CODE = new ElementDefImpl( CODESETVALUE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.CODESETVALUE_OTHERCODELIST = new ElementDefImpl( CODESETVALUE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Contact> fields (4 entries)
-		CommonDTD.CONTACT_RELATIONSHIP = new ElementDefImpl( CONTACT, "Relationship", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.CONTACT_NAMES = new ElementDefImpl( CONTACT, "Names", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.CONTACT_OTHERIDLIST = new ElementDefImpl( CONTACT, "OtherIdList", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.CONTACT_EDUCATIONALLEVEL = new ElementDefImpl( CONTACT, "EducationalLevel", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.CONTACT_RELATIONSHIP = new ElementDefImpl( CONTACT, "Relationship", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.CONTACT_NAMES = new ElementDefImpl( CONTACT, "Names", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.CONTACT_OTHERIDLIST = new ElementDefImpl( CONTACT, "OtherIdList", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.CONTACT_EDUCATIONALLEVEL = new ElementDefImpl( CONTACT, "EducationalLevel", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ContactInfo> fields (6 entries)
-		CommonDTD.CONTACTINFO_NAME = new ElementDefImpl( CONTACTINFO, "Name", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		CommonDTD.CONTACTINFO_POSITIONTITLE = new ElementDefImpl( CONTACTINFO, "PositionTitle", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.CONTACTINFO_ROLE = new ElementDefImpl( CONTACTINFO, "Role", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.CONTACTINFO_EMAILLIST = new ElementDefImpl( CONTACTINFO, "EmailList", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		CommonDTD.CONTACTINFO_NAME = new ElementDefImpl( CONTACTINFO, "Name", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		CommonDTD.CONTACTINFO_POSITIONTITLE = new ElementDefImpl( CONTACTINFO, "PositionTitle", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.CONTACTINFO_ROLE = new ElementDefImpl( CONTACTINFO, "Role", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.CONTACTINFO_EMAILLIST = new ElementDefImpl( CONTACTINFO, "EmailList", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		CommonDTD.CONTACTINFO_EMAILLIST.DefineVersionInfo(SifVersion.SIF20, "EmailList", 5, 0); // (Sif 20 alias)
-		CommonDTD.CONTACTINFO_PHONENUMBERLIST = new ElementDefImpl( CONTACTINFO, "PhoneNumberList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		CommonDTD.CONTACTINFO_PHONENUMBERLIST = new ElementDefImpl( CONTACTINFO, "PhoneNumberList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		CommonDTD.CONTACTINFO_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF20, "PhoneNumberList", 6, 0); // (Sif 20 alias)
-		CommonDTD.CONTACTINFO_ADDRESS = new ElementDefImpl( CONTACTINFO, "Address", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.CONTACTINFO_ADDRESS = new ElementDefImpl( CONTACTINFO, "Address", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Contacts> fields (1 entries)
-		CommonDTD.CONTACTS_CONTACT = new ElementDefAlias( CONTACTS, "Contact", "ResourceContact", "LRContact", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		CommonDTD.CONTACTS_CONTACT = new ElementDefAlias( CONTACTS, "Contact", "ResourceContact", "LRContact", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		CommonDTD.CONTACTS_CONTACT.DefineVersionInfo(SifVersion.SIF20, "Contact", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <CountriesOfCitizenship> fields (1 entries)
-		CommonDTD.COUNTRIESOFCITIZENSHIP_COUNTRYOFCITIZENSHIP = new ElementDefAlias( COUNTRIESOFCITIZENSHIP, "CountryOfCitizenship", "~XPathSurrogate{CountryOfCitizenship/@Code=.}", "Country", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.COUNTRIESOFCITIZENSHIP_COUNTRYOFCITIZENSHIP = new ElementDefAlias( COUNTRIESOFCITIZENSHIP, "CountryOfCitizenship", "~XPathSurrogate{CountryOfCitizenship/@Code=.}", "Country", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.COUNTRIESOFCITIZENSHIP_COUNTRYOFCITIZENSHIP.DefineVersionInfo(SifVersion.SIF20, "CountryOfCitizenship", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <CountriesOfResidency> fields (1 entries)
-		CommonDTD.COUNTRIESOFRESIDENCY_COUNTRYOFRESIDENCY = new ElementDefAlias( COUNTRIESOFRESIDENCY, "CountryOfResidency", "~XPathSurrogate{CountryOfResidency/@Code=.}", "Country", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.COUNTRIESOFRESIDENCY_COUNTRYOFRESIDENCY = new ElementDefAlias( COUNTRIESOFRESIDENCY, "CountryOfResidency", "~XPathSurrogate{CountryOfResidency/@Code=.}", "Country", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.COUNTRIESOFRESIDENCY_COUNTRYOFRESIDENCY.DefineVersionInfo(SifVersion.SIF20, "CountryOfResidency", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <Country> fields (0 entries)
@@ -1257,503 +1285,503 @@ namespace OpenADK.Library.us.Common
 		// <CountryOfResidency> fields (0 entries)
 
 		// <Demographics> fields (17 entries)
-		CommonDTD.DEMOGRAPHICS_RACELIST = new ElementDefImpl( DEMOGRAPHICS, "RaceList", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.DEMOGRAPHICS_RACELIST = new ElementDefImpl( DEMOGRAPHICS, "RaceList", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		CommonDTD.DEMOGRAPHICS_RACELIST.DefineVersionInfo(SifVersion.SIF20, "RaceList", 1, 0); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_HISPANICLATINO = new ElementDefImpl( DEMOGRAPHICS, "HispanicLatino", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.DEMOGRAPHICS_GENDER = new ElementDefImpl( DEMOGRAPHICS, "Gender", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.DEMOGRAPHICS_HISPANICLATINO = new ElementDefImpl( DEMOGRAPHICS, "HispanicLatino", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.DEMOGRAPHICS_GENDER = new ElementDefImpl( DEMOGRAPHICS, "Gender", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.DEMOGRAPHICS_GENDER.DefineVersionInfo(SifVersion.SIF20, "Gender", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_BIRTHDATE = new ElementDefImpl( DEMOGRAPHICS, "BirthDate", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
+		CommonDTD.DEMOGRAPHICS_BIRTHDATE = new ElementDefImpl( DEMOGRAPHICS, "BirthDate", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
 		CommonDTD.DEMOGRAPHICS_BIRTHDATE.DefineVersionInfo(SifVersion.SIF20, "BirthDate", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_BIRTHDATEVERIFICATION = new ElementDefImpl( DEMOGRAPHICS, "BirthDateVerification", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.DEMOGRAPHICS_BIRTHDATEVERIFICATION = new ElementDefImpl( DEMOGRAPHICS, "BirthDateVerification", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.DEMOGRAPHICS_BIRTHDATEVERIFICATION.DefineVersionInfo(SifVersion.SIF20, "BirthDateVerification", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_PLACEOFBIRTH = new ElementDefImpl( DEMOGRAPHICS, "PlaceOfBirth", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.DEMOGRAPHICS_PLACEOFBIRTH = new ElementDefImpl( DEMOGRAPHICS, "PlaceOfBirth", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.DEMOGRAPHICS_PLACEOFBIRTH.DefineVersionInfo(SifVersion.SIF20, "PlaceOfBirth", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_COUNTYOFBIRTH = new ElementDefImpl( DEMOGRAPHICS, "CountyOfBirth", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.DEMOGRAPHICS_COUNTYOFBIRTH = new ElementDefImpl( DEMOGRAPHICS, "CountyOfBirth", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.DEMOGRAPHICS_COUNTYOFBIRTH.DefineVersionInfo(SifVersion.SIF20, "CountyOfBirth", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_STATEOFBIRTH = new ElementDefImpl( DEMOGRAPHICS, "StateOfBirth", "~XPathSurrogate{StateOfBirth/@Code=.}", 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.DEMOGRAPHICS_STATEOFBIRTH = new ElementDefImpl( DEMOGRAPHICS, "StateOfBirth", "~XPathSurrogate{StateOfBirth/@Code=.}", 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.DEMOGRAPHICS_STATEOFBIRTH.DefineVersionInfo(SifVersion.SIF20, "StateOfBirth", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_COUNTRYOFBIRTH = new ElementDefImpl( DEMOGRAPHICS, "CountryOfBirth", "~XPathSurrogate{CountryOfBirth/@Code=.}", 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.DEMOGRAPHICS_COUNTRYOFBIRTH = new ElementDefImpl( DEMOGRAPHICS, "CountryOfBirth", "~XPathSurrogate{CountryOfBirth/@Code=.}", 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.DEMOGRAPHICS_COUNTRYOFBIRTH.DefineVersionInfo(SifVersion.SIF20, "CountryOfBirth", 9, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_COUNTRIESOFCITIZENSHIP = new ElementDefImpl( DEMOGRAPHICS, "CountriesOfCitizenship", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.DEMOGRAPHICS_COUNTRIESOFCITIZENSHIP = new ElementDefImpl( DEMOGRAPHICS, "CountriesOfCitizenship", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		CommonDTD.DEMOGRAPHICS_COUNTRIESOFCITIZENSHIP.DefineVersionInfo(SifVersion.SIF20, "CountriesOfCitizenship", 10, 0); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_COUNTRIESOFRESIDENCY = new ElementDefImpl( DEMOGRAPHICS, "CountriesOfResidency", null, 10, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.DEMOGRAPHICS_COUNTRIESOFRESIDENCY = new ElementDefImpl( DEMOGRAPHICS, "CountriesOfResidency", null, 10, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		CommonDTD.DEMOGRAPHICS_COUNTRIESOFRESIDENCY.DefineVersionInfo(SifVersion.SIF20, "CountriesOfResidency", 11, 0); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_COUNTRYARRIVALDATE = new ElementDefImpl( DEMOGRAPHICS, "CountryArrivalDate", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		CommonDTD.DEMOGRAPHICS_COUNTRYARRIVALDATE = new ElementDefImpl( DEMOGRAPHICS, "CountryArrivalDate", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		CommonDTD.DEMOGRAPHICS_COUNTRYARRIVALDATE.DefineVersionInfo(SifVersion.SIF20, "CountryArrivalDate", 12, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_CITIZENSHIPSTATUS = new ElementDefImpl( DEMOGRAPHICS, "CitizenshipStatus", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.DEMOGRAPHICS_CITIZENSHIPSTATUS = new ElementDefImpl( DEMOGRAPHICS, "CitizenshipStatus", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.DEMOGRAPHICS_CITIZENSHIPSTATUS.DefineVersionInfo(SifVersion.SIF15r1, "CitizenshipStatus", 12, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		CommonDTD.DEMOGRAPHICS_CITIZENSHIPSTATUS.DefineVersionInfo(SifVersion.SIF20, "CitizenshipStatus", 13, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_ENGLISHPROFICIENCY = new ElementDefImpl( DEMOGRAPHICS, "EnglishProficiency", null, 12, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.DEMOGRAPHICS_ENGLISHPROFICIENCY = new ElementDefImpl( DEMOGRAPHICS, "EnglishProficiency", null, 12, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		CommonDTD.DEMOGRAPHICS_ENGLISHPROFICIENCY.DefineVersionInfo(SifVersion.SIF15r1, "EnglishProficiency", 13, 0); // (Sif 15r1 alias)
 		CommonDTD.DEMOGRAPHICS_ENGLISHPROFICIENCY.DefineVersionInfo(SifVersion.SIF20, "EnglishProficiency", 14, 0); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_LANGUAGELIST = new ElementDefImpl( DEMOGRAPHICS, "LanguageList", null, 13, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.DEMOGRAPHICS_LANGUAGELIST = new ElementDefImpl( DEMOGRAPHICS, "LanguageList", null, 13, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		CommonDTD.DEMOGRAPHICS_LANGUAGELIST.DefineVersionInfo(SifVersion.SIF15r1, "LanguageList", 14, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		CommonDTD.DEMOGRAPHICS_LANGUAGELIST.DefineVersionInfo(SifVersion.SIF20, "LanguageList", 15, 0); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_DWELLINGARRANGEMENT = new ElementDefImpl( DEMOGRAPHICS, "DwellingArrangement", "~XPathSurrogate{DwellingArrangement=Code}", 14, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.DEMOGRAPHICS_DWELLINGARRANGEMENT = new ElementDefImpl( DEMOGRAPHICS, "DwellingArrangement", "~XPathSurrogate{DwellingArrangement=Code}", 14, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		CommonDTD.DEMOGRAPHICS_DWELLINGARRANGEMENT.DefineVersionInfo(SifVersion.SIF15r1, "~XPathSurrogate{DwellingArrangement=Code}DwellingArrangement", 15, 0); // (Sif 15r1 alias)
 		CommonDTD.DEMOGRAPHICS_DWELLINGARRANGEMENT.DefineVersionInfo(SifVersion.SIF20, "DwellingArrangement", 16, 0); // (Sif 20 alias)
-		CommonDTD.DEMOGRAPHICS_MARITALSTATUS = new ElementDefImpl( DEMOGRAPHICS, "MaritalStatus", null, 15, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.DEMOGRAPHICS_MARITALSTATUS = new ElementDefImpl( DEMOGRAPHICS, "MaritalStatus", null, 15, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.DEMOGRAPHICS_MARITALSTATUS.DefineVersionInfo(SifVersion.SIF15r1, "MaritalStatus", 16, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		CommonDTD.DEMOGRAPHICS_MARITALSTATUS.DefineVersionInfo(SifVersion.SIF20, "MaritalStatus", 17, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <Duration> fields (1 entries)
-		CommonDTD.DURATION_UNITS = new ElementDefImpl( DURATION, "Units", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.DURATION_UNITS = new ElementDefImpl( DURATION, "Units", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <DwellingArrangement> fields (2 entries)
-		CommonDTD.DWELLINGARRANGEMENT_CODE = new ElementDefImpl( DWELLINGARRANGEMENT, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.DWELLINGARRANGEMENT_OTHERCODELIST = new ElementDefImpl( DWELLINGARRANGEMENT, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.DWELLINGARRANGEMENT_CODE = new ElementDefImpl( DWELLINGARRANGEMENT, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.DWELLINGARRANGEMENT_OTHERCODELIST = new ElementDefImpl( DWELLINGARRANGEMENT, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <ItemElectronicId> fields (1 entries)
-		CommonDTD.ELECTRONICID_TYPE = new ElementDefImpl( ELECTRONICID, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ELECTRONICID_TYPE = new ElementDefImpl( ELECTRONICID, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ElectronicIdList> fields (1 entries)
-		CommonDTD.ELECTRONICIDLIST_ELECTRONICID = new ElementDefImpl( ELECTRONICIDLIST, "ElectronicId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ELECTRONICIDLIST_ELECTRONICID = new ElementDefImpl( ELECTRONICIDLIST, "ElectronicId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Email> fields (2 entries)
-		CommonDTD.EMAIL_TYPE = new ElementDefImpl( EMAIL, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.EMAIL_SIF_ACTION = new ElementDefImpl( EMAIL, "SIF_Action", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.EMAIL_TYPE = new ElementDefImpl( EMAIL, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.EMAIL_SIF_ACTION = new ElementDefImpl( EMAIL, "SIF_Action", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <EmailList> fields (1 entries)
-		CommonDTD.EMAILLIST_EMAIL = new ElementDefImpl( EMAILLIST, "Email", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.EMAILLIST_EMAIL = new ElementDefImpl( EMAILLIST, "Email", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <EnglishProficiency> fields (2 entries)
-		CommonDTD.ENGLISHPROFICIENCY_CODE = new ElementDefImpl( ENGLISHPROFICIENCY, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ENGLISHPROFICIENCY_CODE = new ElementDefImpl( ENGLISHPROFICIENCY, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.ENGLISHPROFICIENCY_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.ENGLISHPROFICIENCY_OTHERCODELIST = new ElementDefImpl( ENGLISHPROFICIENCY, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.ENGLISHPROFICIENCY_OTHERCODELIST = new ElementDefImpl( ENGLISHPROFICIENCY, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EntryType> fields (2 entries)
-		CommonDTD.ENTRYTYPE_CODE = new ElementDefImpl( ENTRYTYPE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.ENTRYTYPE_CODE = new ElementDefImpl( ENTRYTYPE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.ENTRYTYPE_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.ENTRYTYPE_OTHERCODELIST = new ElementDefImpl( ENTRYTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.ENTRYTYPE_OTHERCODELIST = new ElementDefImpl( ENTRYTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ExceptionalityCategories> fields (1 entries)
-		CommonDTD.EXCEPTIONALITYCATEGORIES_EXCEPTIONALITYCATEGORY = new ElementDefImpl( EXCEPTIONALITYCATEGORIES, "ExceptionalityCategory", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.EXCEPTIONALITYCATEGORIES_EXCEPTIONALITYCATEGORY = new ElementDefImpl( EXCEPTIONALITYCATEGORIES, "ExceptionalityCategory", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ExceptionalityCategory> fields (4 entries)
 		CommonDTD.EXCEPTIONALITYCATEGORY_CODETYPE = new ElementDefImpl( EXCEPTIONALITYCATEGORY, "CodeType", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		CommonDTD.EXCEPTIONALITYCATEGORY_EXCEPTIONALITYPRIORITY = new ElementDefImpl( EXCEPTIONALITYCATEGORY, "ExceptionalityPriority", "Type", 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.EXCEPTIONALITYCATEGORY_EXCEPTIONALITYPRIORITY = new ElementDefImpl( EXCEPTIONALITYCATEGORY, "ExceptionalityPriority", "Type", 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.EXCEPTIONALITYCATEGORY_EXCEPTIONALITYPRIORITY.DefineVersionInfo(SifVersion.SIF20, "ExceptionalityPriority", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.EXCEPTIONALITYCATEGORY_OTHERCODELIST = new ElementDefImpl( EXCEPTIONALITYCATEGORY, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CommonDTD.EXCEPTIONALITYCATEGORY_CODE = new ElementDefImpl( EXCEPTIONALITYCATEGORY, "Code", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.EXCEPTIONALITYCATEGORY_OTHERCODELIST = new ElementDefImpl( EXCEPTIONALITYCATEGORY, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CommonDTD.EXCEPTIONALITYCATEGORY_CODE = new ElementDefImpl( EXCEPTIONALITYCATEGORY, "Code", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.EXCEPTIONALITYCATEGORY_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <ExitStatus> fields (2 entries)
-		CommonDTD.EXITSTATUS_CODE = new ElementDefImpl( EXITSTATUS, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.EXITSTATUS_CODE = new ElementDefImpl( EXITSTATUS, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.EXITSTATUS_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.EXITSTATUS_OTHERCODELIST = new ElementDefImpl( EXITSTATUS, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.EXITSTATUS_OTHERCODELIST = new ElementDefImpl( EXITSTATUS, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ExitType> fields (2 entries)
-		CommonDTD.EXITTYPE_CODE = new ElementDefImpl( EXITTYPE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.EXITTYPE_CODE = new ElementDefImpl( EXITTYPE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.EXITTYPE_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.EXITTYPE_OTHERCODELIST = new ElementDefImpl( EXITTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.EXITTYPE_OTHERCODELIST = new ElementDefImpl( EXITTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ExtendedParameter> fields (2 entries)
-		CommonDTD.EXTENDEDPARAMETER_SIF_NAME = new ElementDefImpl( EXTENDEDPARAMETER, "SIF_Name", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.EXTENDEDPARAMETER_SIF_VALUE = new ElementDefImpl( EXTENDEDPARAMETER, "SIF_Value", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.EXTENDEDPARAMETER_SIF_NAME = new ElementDefImpl( EXTENDEDPARAMETER, "SIF_Name", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.EXTENDEDPARAMETER_SIF_VALUE = new ElementDefImpl( EXTENDEDPARAMETER, "SIF_Value", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ExtendedParameters> fields (1 entries)
-		CommonDTD.EXTENDEDPARAMETERS_EXTENDEDPARAMETER = new ElementDefImpl( EXTENDEDPARAMETERS, "ExtendedParameter", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		CommonDTD.EXTENDEDPARAMETERS_EXTENDEDPARAMETER = new ElementDefImpl( EXTENDEDPARAMETERS, "ExtendedParameter", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <FrequencyTime> fields (2 entries)
-		CommonDTD.FREQUENCYTIME_CODE = new ElementDefImpl( FREQUENCYTIME, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.FREQUENCYTIME_OTHERCODELIST = new ElementDefImpl( FREQUENCYTIME, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		CommonDTD.FREQUENCYTIME_CODE = new ElementDefImpl( FREQUENCYTIME, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.FREQUENCYTIME_OTHERCODELIST = new ElementDefImpl( FREQUENCYTIME, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <GradeLevel> fields (2 entries)
-		CommonDTD.GRADELEVEL_CODE = new ElementDefImpl( GRADELEVEL, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.GRADELEVEL_CODE = new ElementDefImpl( GRADELEVEL, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.GRADELEVEL_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.GRADELEVEL_OTHERCODELIST = new ElementDefImpl( GRADELEVEL, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.GRADELEVEL_OTHERCODELIST = new ElementDefImpl( GRADELEVEL, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <GradeLevels> fields (1 entries)
-		CommonDTD.GRADELEVELS_GRADELEVEL = new ElementDefImpl( GRADELEVELS, "GradeLevel", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		CommonDTD.GRADELEVELS_GRADELEVEL = new ElementDefImpl( GRADELEVELS, "GradeLevel", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <GridLocation> fields (2 entries)
-		CommonDTD.GRIDLOCATION_LATITUDE = new ElementDefImpl( GRIDLOCATION, "Latitude", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		CommonDTD.GRIDLOCATION_LONGITUDE = new ElementDefImpl( GRIDLOCATION, "Longitude", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		CommonDTD.GRIDLOCATION_LATITUDE = new ElementDefImpl( GRIDLOCATION, "Latitude", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		CommonDTD.GRIDLOCATION_LONGITUDE = new ElementDefImpl( GRIDLOCATION, "Longitude", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <IdentificationInfo> fields (1 entries)
-		CommonDTD.IDENTIFICATIONINFO_CODE = new ElementDefImpl( IDENTIFICATIONINFO, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.IDENTIFICATIONINFO_CODE = new ElementDefImpl( IDENTIFICATIONINFO, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <IdentificationInfoList> fields (1 entries)
-		CommonDTD.IDENTIFICATIONINFOLIST_IDENTIFICATIONINFO = new ElementDefImpl( IDENTIFICATIONINFOLIST, "IdentificationInfo", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.IDENTIFICATIONINFOLIST_IDENTIFICATIONINFO = new ElementDefImpl( IDENTIFICATIONINFOLIST, "IdentificationInfo", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <InstructionalLevel> fields (2 entries)
-		CommonDTD.INSTRUCTIONALLEVEL_CODE = new ElementDefImpl( INSTRUCTIONALLEVEL, "Code", "~XPathSurrogate{.=.}", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.INSTRUCTIONALLEVEL_CODE = new ElementDefImpl( INSTRUCTIONALLEVEL, "Code", "~XPathSurrogate{.=.}", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.INSTRUCTIONALLEVEL_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.INSTRUCTIONALLEVEL_OTHERCODELIST = new ElementDefImpl( INSTRUCTIONALLEVEL, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.INSTRUCTIONALLEVEL_OTHERCODELIST = new ElementDefImpl( INSTRUCTIONALLEVEL, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <JobFunction> fields (2 entries)
-		CommonDTD.JOBFUNCTION_CODE = new ElementDefImpl( JOBFUNCTION, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.JOBFUNCTION_CODE = new ElementDefImpl( JOBFUNCTION, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.JOBFUNCTION_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.JOBFUNCTION_OTHERCODELIST = new ElementDefImpl( JOBFUNCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.JOBFUNCTION_OTHERCODELIST = new ElementDefImpl( JOBFUNCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Language> fields (4 entries)
-		CommonDTD.LANGUAGE_CODE = new ElementDefImpl( LANGUAGE, "Code", "Type", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.LANGUAGE_CODE = new ElementDefImpl( LANGUAGE, "Code", "Type", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.LANGUAGE_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.LANGUAGE_OTHERCODELIST = new ElementDefImpl( LANGUAGE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CommonDTD.LANGUAGE_LANGUAGETYPE = new ElementDefImpl( LANGUAGE, "LanguageType", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.LANGUAGE_DIALECT = new ElementDefImpl( LANGUAGE, "Dialect", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.LANGUAGE_OTHERCODELIST = new ElementDefImpl( LANGUAGE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CommonDTD.LANGUAGE_LANGUAGETYPE = new ElementDefImpl( LANGUAGE, "LanguageType", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.LANGUAGE_DIALECT = new ElementDefImpl( LANGUAGE, "Dialect", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <LanguageList> fields (1 entries)
-		CommonDTD.LANGUAGELIST_LANGUAGE = new ElementDefImpl( LANGUAGELIST, "Language", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.LANGUAGELIST_LANGUAGE = new ElementDefImpl( LANGUAGELIST, "Language", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <LeaInfoLink> fields (1 entries)
-		CommonDTD.LEAINFOLINK_LEAINFOREFID = new ElementDefImpl( LEAINFOLINK, "LEAInfoRefId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.LEAINFOLINK_LEAINFOREFID = new ElementDefImpl( LEAINFOLINK, "LEAInfoRefId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <LearningObjective> fields (0 entries)
 
 		// <LearningObjectives> fields (1 entries)
-		CommonDTD.LEARNINGOBJECTIVES_LEARNINGOBJECTIVE = new ElementDefImpl( LEARNINGOBJECTIVES, "LearningObjective", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.LEARNINGOBJECTIVES_LEARNINGOBJECTIVE = new ElementDefImpl( LEARNINGOBJECTIVES, "LearningObjective", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <LearningStandardItemRefId> fields (0 entries)
 
 		// <LearningStandardItemRefIds> fields (1 entries)
-		CommonDTD.LEARNINGSTANDARDITEMREFIDS_LEARNINGSTANDARDITEMREFID = new ElementDefImpl( LEARNINGSTANDARDITEMREFIDS, "LearningStandardItemRefId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.LEARNINGSTANDARDITEMREFIDS_LEARNINGSTANDARDITEMREFID = new ElementDefImpl( LEARNINGSTANDARDITEMREFIDS, "LearningStandardItemRefId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <LearningStandardItems> fields (1 entries)
-		CommonDTD.LEARNINGSTANDARDITEMS_LEARNINGSTANDARDITEMREFID = new ElementDefImpl( LEARNINGSTANDARDITEMS, "LearningStandardItemRefId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.LEARNINGSTANDARDITEMS_LEARNINGSTANDARDITEMREFID = new ElementDefImpl( LEARNINGSTANDARDITEMS, "LearningStandardItemRefId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <LRContact> fields (4 entries)
-		CommonDTD.LRCONTACT_NAME = new ElementDefImpl( LRCONTACT, "Name", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
-		CommonDTD.LRCONTACT_ADDRESS = new ElementDefImpl( LRCONTACT, "Address", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		CommonDTD.LRCONTACT_PHONENUMBER = new ElementDefImpl( LRCONTACT, "PhoneNumber", "~PhoneNumberSurrogate{}", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		CommonDTD.LRCONTACT_EMAIL = new ElementDefImpl( LRCONTACT, "Email", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.LRCONTACT_NAME = new ElementDefImpl( LRCONTACT, "Name", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
+		CommonDTD.LRCONTACT_ADDRESS = new ElementDefImpl( LRCONTACT, "Address", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		CommonDTD.LRCONTACT_PHONENUMBER = new ElementDefImpl( LRCONTACT, "PhoneNumber", "~PhoneNumberSurrogate{}", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		CommonDTD.LRCONTACT_EMAIL = new ElementDefImpl( LRCONTACT, "Email", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ManagingPublicAgency> fields (1 entries)
-		CommonDTD.MANAGINGPUBLICAGENCY_SIF_REFOBJECT = new ElementDefImpl( MANAGINGPUBLICAGENCY, "SIF_RefObject", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.MANAGINGPUBLICAGENCY_SIF_REFOBJECT = new ElementDefImpl( MANAGINGPUBLICAGENCY, "SIF_RefObject", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ManagingSchool> fields (1 entries)
-		CommonDTD.MANAGINGSCHOOL_SIF_REFOBJECT = new ElementDefImpl( MANAGINGSCHOOL, "SIF_RefObject", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.MANAGINGSCHOOL_SIF_REFOBJECT = new ElementDefImpl( MANAGINGSCHOOL, "SIF_RefObject", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MeetingTime> fields (2 entries)
-		CommonDTD.MEETINGTIME_TIMETABLEDAY = new ElementDefImpl( MEETINGTIME, "TimetableDay", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.MEETINGTIME_TIMETABLEPERIOD = new ElementDefImpl( MEETINGTIME, "TimetablePeriod", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.MEETINGTIME_TIMETABLEDAY = new ElementDefImpl( MEETINGTIME, "TimetableDay", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.MEETINGTIME_TIMETABLEPERIOD = new ElementDefImpl( MEETINGTIME, "TimetablePeriod", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MeetingTimeList> fields (1 entries)
-		CommonDTD.MEETINGTIMELIST_MEETINGTIME = new ElementDefImpl( MEETINGTIMELIST, "MeetingTime", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.MEETINGTIMELIST_MEETINGTIME = new ElementDefImpl( MEETINGTIMELIST, "MeetingTime", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <Name> fields (10 entries)
-		CommonDTD.NAME_TYPE = new ElementDefImpl( NAME, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.NAME_PREFIX = new ElementDefImpl( NAME, "Prefix", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.NAME_TYPE = new ElementDefImpl( NAME, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.NAME_PREFIX = new ElementDefImpl( NAME, "Prefix", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.NAME_PREFIX.DefineVersionInfo(SifVersion.SIF20, "Prefix", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.NAME_SIF_ACTION = new ElementDefImpl( NAME, "SIF_Action", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.NAME_LASTNAME = new ElementDefImpl( NAME, "LastName", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.NAME_SIF_ACTION = new ElementDefImpl( NAME, "SIF_Action", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.NAME_LASTNAME = new ElementDefImpl( NAME, "LastName", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.NAME_LASTNAME.DefineVersionInfo(SifVersion.SIF20, "LastName", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.NAME_FIRSTNAME = new ElementDefImpl( NAME, "FirstName", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.NAME_FIRSTNAME = new ElementDefImpl( NAME, "FirstName", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.NAME_FIRSTNAME.DefineVersionInfo(SifVersion.SIF20, "FirstName", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.NAME_MIDDLENAME = new ElementDefImpl( NAME, "MiddleName", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.NAME_MIDDLENAME = new ElementDefImpl( NAME, "MiddleName", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.NAME_MIDDLENAME.DefineVersionInfo(SifVersion.SIF20, "MiddleName", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.NAME_SUFFIX = new ElementDefImpl( NAME, "Suffix", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.NAME_SUFFIX = new ElementDefImpl( NAME, "Suffix", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.NAME_SUFFIX.DefineVersionInfo(SifVersion.SIF20, "Suffix", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.NAME_PREFERREDNAME = new ElementDefImpl( NAME, "PreferredName", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.NAME_PREFERREDNAME = new ElementDefImpl( NAME, "PreferredName", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.NAME_PREFERREDNAME.DefineVersionInfo(SifVersion.SIF20, "PreferredName", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.NAME_SORTNAME = new ElementDefImpl( NAME, "SortName", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.NAME_SORTNAME = new ElementDefImpl( NAME, "SortName", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.NAME_SORTNAME.DefineVersionInfo(SifVersion.SIF20, "SortName", 9, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.NAME_FULLNAME = new ElementDefImpl( NAME, "FullName", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.NAME_FULLNAME = new ElementDefImpl( NAME, "FullName", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.NAME_FULLNAME.DefineVersionInfo(SifVersion.SIF20, "FullName", 10, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <NameList> fields (1 entries)
 		CommonDTD.NAMELIST_NAME = new ElementDefImpl( NAMELIST, "Name", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
 
 		// <Names> fields (1 entries)
-		CommonDTD.NAMES_NAME = new ElementDefImpl( NAMES, "Name", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		CommonDTD.NAMES_NAME = new ElementDefImpl( NAMES, "Name", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <OrganizationRelationshipType> fields (4 entries)
-		CommonDTD.ORGANIZATIONRELATIONSHIPTYPE_RESIDENCYSTATUS = new ElementDefImpl( ORGANIZATIONRELATIONSHIPTYPE, "ResidencyStatus", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		CommonDTD.ORGANIZATIONRELATIONSHIPTYPE_PROVIDINGINSTRUCTION = new ElementDefImpl( ORGANIZATIONRELATIONSHIPTYPE, "ProvidingInstruction", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		CommonDTD.ORGANIZATIONRELATIONSHIPTYPE_PROVIDINGSERVICES = new ElementDefImpl( ORGANIZATIONRELATIONSHIPTYPE, "ProvidingServices", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		CommonDTD.ORGANIZATIONRELATIONSHIPTYPE_FINANCIALLYRESPONSIBLE = new ElementDefImpl( ORGANIZATIONRELATIONSHIPTYPE, "FinanciallyResponsible", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
+		CommonDTD.ORGANIZATIONRELATIONSHIPTYPE_RESIDENCYSTATUS = new ElementDefImpl( ORGANIZATIONRELATIONSHIPTYPE, "ResidencyStatus", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		CommonDTD.ORGANIZATIONRELATIONSHIPTYPE_PROVIDINGINSTRUCTION = new ElementDefImpl( ORGANIZATIONRELATIONSHIPTYPE, "ProvidingInstruction", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		CommonDTD.ORGANIZATIONRELATIONSHIPTYPE_PROVIDINGSERVICES = new ElementDefImpl( ORGANIZATIONRELATIONSHIPTYPE, "ProvidingServices", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		CommonDTD.ORGANIZATIONRELATIONSHIPTYPE_FINANCIALLYRESPONSIBLE = new ElementDefImpl( ORGANIZATIONRELATIONSHIPTYPE, "FinanciallyResponsible", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
 
 		// <OtherCode> fields (1 entries)
-		CommonDTD.OTHERCODE_CODESET = new ElementDefImpl( OTHERCODE, "Codeset", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.OTHERCODE_CODESET = new ElementDefImpl( OTHERCODE, "Codeset", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <OtherCodeList> fields (1 entries)
-		CommonDTD.OTHERCODELIST_OTHERCODE = new ElementDefImpl( OTHERCODELIST, "OtherCode", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.OTHERCODELIST_OTHERCODE = new ElementDefImpl( OTHERCODELIST, "OtherCode", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <OtherId> fields (1 entries)
-		CommonDTD.OTHERID_TYPE = new ElementDefImpl( OTHERID, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.OTHERID_TYPE = new ElementDefImpl( OTHERID, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <OtherIdList> fields (1 entries)
-		CommonDTD.OTHERIDLIST_OTHERID = new ElementDefImpl( OTHERIDLIST, "OtherId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.OTHERIDLIST_OTHERID = new ElementDefImpl( OTHERIDLIST, "OtherId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <OtherNames> fields (1 entries)
-		CommonDTD.OTHERNAMES_NAME = new ElementDefImpl( OTHERNAMES, "Name", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.OTHERNAMES_NAME = new ElementDefImpl( OTHERNAMES, "Name", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <PartialDateType> fields (0 entries)
 
 		// <PersonInfo> fields (8 entries)
-		CommonDTD.PERSONINFO_LOCALID = new ElementDefImpl( PERSONINFO, "LocalId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.PERSONINFO_OTHERIDLIST = new ElementDefImpl( PERSONINFO, "OtherIdList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.PERSONINFO_NAME = new ElementDefImpl( PERSONINFO, "Name", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.PERSONINFO_OTHERNAMES = new ElementDefImpl( PERSONINFO, "OtherNames", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.PERSONINFO_DEMOGRAPHICS = new ElementDefImpl( PERSONINFO, "Demographics", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.PERSONINFO_ADDRESSLIST = new ElementDefImpl( PERSONINFO, "AddressList", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.PERSONINFO_PHONENUMBERLIST = new ElementDefImpl( PERSONINFO, "PhoneNumberList", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.PERSONINFO_EMAILLIST = new ElementDefImpl( PERSONINFO, "EmailList", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		CommonDTD.PERSONINFO_LOCALID = new ElementDefImpl( PERSONINFO, "LocalId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.PERSONINFO_OTHERIDLIST = new ElementDefImpl( PERSONINFO, "OtherIdList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.PERSONINFO_NAME = new ElementDefImpl( PERSONINFO, "Name", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.PERSONINFO_OTHERNAMES = new ElementDefImpl( PERSONINFO, "OtherNames", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.PERSONINFO_DEMOGRAPHICS = new ElementDefImpl( PERSONINFO, "Demographics", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.PERSONINFO_ADDRESSLIST = new ElementDefImpl( PERSONINFO, "AddressList", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.PERSONINFO_PHONENUMBERLIST = new ElementDefImpl( PERSONINFO, "PhoneNumberList", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.PERSONINFO_EMAILLIST = new ElementDefImpl( PERSONINFO, "EmailList", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <PhoneNumber> fields (6 entries)
 		CommonDTD.PHONENUMBER_FORMAT = new ElementDefImpl( PHONENUMBER, "Format", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		CommonDTD.PHONENUMBER_SIF_ACTION = new ElementDefImpl( PHONENUMBER, "SIF_Action", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.PHONENUMBER_TYPE = new ElementDefImpl( PHONENUMBER, "Type", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.PHONENUMBER_SIF_ACTION = new ElementDefImpl( PHONENUMBER, "SIF_Action", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.PHONENUMBER_TYPE = new ElementDefImpl( PHONENUMBER, "Type", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.PHONENUMBER_TYPE.DefineVersionInfo(SifVersion.SIF20, "Type", 1, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		CommonDTD.PHONENUMBER_NUMBER = new ElementDefImpl( PHONENUMBER, "Number", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.PHONENUMBER_EXTENSION = new ElementDefImpl( PHONENUMBER, "Extension", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.PHONENUMBER_LISTEDSTATUS = new ElementDefImpl( PHONENUMBER, "ListedStatus", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.PHONENUMBER_NUMBER = new ElementDefImpl( PHONENUMBER, "Number", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.PHONENUMBER_EXTENSION = new ElementDefImpl( PHONENUMBER, "Extension", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.PHONENUMBER_LISTEDSTATUS = new ElementDefImpl( PHONENUMBER, "ListedStatus", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <PhoneNumberList> fields (1 entries)
-		CommonDTD.PHONENUMBERLIST_PHONENUMBER = new ElementDefImpl( PHONENUMBERLIST, "PhoneNumber", "~PhoneNumberSurrogate{}", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.PHONENUMBERLIST_PHONENUMBER = new ElementDefImpl( PHONENUMBERLIST, "PhoneNumber", "~PhoneNumberSurrogate{}", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 		CommonDTD.PHONENUMBERLIST_PHONENUMBER.DefineVersionInfo(SifVersion.SIF20, "PhoneNumber", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <PictureSource> fields (1 entries)
-		CommonDTD.PICTURESOURCE_TYPE = new ElementDefImpl( PICTURESOURCE, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.PICTURESOURCE_TYPE = new ElementDefImpl( PICTURESOURCE, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <PlannedAssessmentParticipation> fields (1 entries)
-		CommonDTD.PLANNEDASSESSMENTPARTICIPATION_CODESET = new ElementDefImpl( PLANNEDASSESSMENTPARTICIPATION, "Codeset", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.PLANNEDASSESSMENTPARTICIPATION_CODESET = new ElementDefImpl( PLANNEDASSESSMENTPARTICIPATION, "Codeset", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Program> fields (1 entries)
-		CommonDTD.PROGRAM_TYPE = new ElementDefImpl( PROGRAM, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.PROGRAM_TYPE = new ElementDefImpl( PROGRAM, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ProgramFundingSource> fields (2 entries)
-		CommonDTD.PROGRAMFUNDINGSOURCE_CODE = new ElementDefImpl( PROGRAMFUNDINGSOURCE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.PROGRAMFUNDINGSOURCE_OTHERCODELIST = new ElementDefImpl( PROGRAMFUNDINGSOURCE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.PROGRAMFUNDINGSOURCE_CODE = new ElementDefImpl( PROGRAMFUNDINGSOURCE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.PROGRAMFUNDINGSOURCE_OTHERCODELIST = new ElementDefImpl( PROGRAMFUNDINGSOURCE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ProgramFundingSources> fields (1 entries)
-		CommonDTD.PROGRAMFUNDINGSOURCES_PROGRAMFUNDINGSOURCE = new ElementDefImpl( PROGRAMFUNDINGSOURCES, "ProgramFundingSource", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.PROGRAMFUNDINGSOURCES_PROGRAMFUNDINGSOURCE = new ElementDefImpl( PROGRAMFUNDINGSOURCES, "ProgramFundingSource", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ProgramStatus> fields (2 entries)
-		CommonDTD.PROGRAMSTATUS_CODE = new ElementDefImpl( PROGRAMSTATUS, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.PROGRAMSTATUS_OTHERCODELIST = new ElementDefImpl( PROGRAMSTATUS, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.PROGRAMSTATUS_CODE = new ElementDefImpl( PROGRAMSTATUS, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.PROGRAMSTATUS_OTHERCODELIST = new ElementDefImpl( PROGRAMSTATUS, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ProgramType> fields (2 entries)
-		CommonDTD.PROGRAMTYPE_CODE = new ElementDefImpl( PROGRAMTYPE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.PROGRAMTYPE_OTHERCODELIST = new ElementDefImpl( PROGRAMTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.PROGRAMTYPE_CODE = new ElementDefImpl( PROGRAMTYPE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.PROGRAMTYPE_OTHERCODELIST = new ElementDefImpl( PROGRAMTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Race> fields (4 entries)
 		CommonDTD.RACE_TYPE = new ElementDefImpl( RACE, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		CommonDTD.RACE_CODE = new ElementDefImpl( RACE, "Code", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.RACE_CODE = new ElementDefImpl( RACE, "Code", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.RACE_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.RACE_OTHERCODELIST = new ElementDefImpl( RACE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CommonDTD.RACE_PROPORTION = new ElementDefImpl( RACE, "Proportion", "~ProportionSurrogate{}", 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		CommonDTD.RACE_OTHERCODELIST = new ElementDefImpl( RACE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CommonDTD.RACE_PROPORTION = new ElementDefImpl( RACE, "Proportion", "~ProportionSurrogate{}", 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		CommonDTD.RACE_PROPORTION.DefineVersionInfo(SifVersion.SIF20, "Proportion", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <RaceList> fields (1 entries)
-		CommonDTD.RACELIST_RACE = new ElementDefImpl( RACELIST, "Race", "Ethnicity", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.RACELIST_RACE = new ElementDefImpl( RACELIST, "Race", "Ethnicity", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 		CommonDTD.RACELIST_RACE.DefineVersionInfo(SifVersion.SIF20, "Race", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <Reference> fields (3 entries)
-		CommonDTD.REFERENCE_MIMETYPE = new ElementDefImpl( REFERENCE, "MIMEType", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.REFERENCE_DESCRIPTION = new ElementDefImpl( REFERENCE, "Description", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.REFERENCE_URL = new ElementDefImpl( REFERENCE, "URL", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.REFERENCE_MIMETYPE = new ElementDefImpl( REFERENCE, "MIMEType", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.REFERENCE_DESCRIPTION = new ElementDefImpl( REFERENCE, "Description", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.REFERENCE_URL = new ElementDefImpl( REFERENCE, "URL", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Relationship> fields (2 entries)
-		CommonDTD.RELATIONSHIP_CODE = new ElementDefImpl( RELATIONSHIP, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.RELATIONSHIP_CODE = new ElementDefImpl( RELATIONSHIP, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.RELATIONSHIP_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.RELATIONSHIP_OTHERCODELIST = new ElementDefImpl( RELATIONSHIP, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.RELATIONSHIP_OTHERCODELIST = new ElementDefImpl( RELATIONSHIP, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ResidencyStatus> fields (2 entries)
-		CommonDTD.RESIDENCYSTATUS_CODE = new ElementDefImpl( RESIDENCYSTATUS, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.RESIDENCYSTATUS_OTHERCODELIST = new ElementDefImpl( RESIDENCYSTATUS, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		CommonDTD.RESIDENCYSTATUS_CODE = new ElementDefImpl( RESIDENCYSTATUS, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.RESIDENCYSTATUS_OTHERCODELIST = new ElementDefImpl( RESIDENCYSTATUS, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <SchoolContact> fields (2 entries)
-		CommonDTD.SCHOOLCONTACT_PUBLISHINDIRECTORY = new ElementDefImpl( SCHOOLCONTACT, "PublishInDirectory", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.SCHOOLCONTACT_CONTACTINFO = new ElementDefImpl( SCHOOLCONTACT, "ContactInfo", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		CommonDTD.SCHOOLCONTACT_PUBLISHINDIRECTORY = new ElementDefImpl( SCHOOLCONTACT, "PublishInDirectory", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.SCHOOLCONTACT_CONTACTINFO = new ElementDefImpl( SCHOOLCONTACT, "ContactInfo", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <SchoolContactList> fields (1 entries)
-		CommonDTD.SCHOOLCONTACTLIST_SCHOOLCONTACT = new ElementDefImpl( SCHOOLCONTACTLIST, "SchoolContact", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		CommonDTD.SCHOOLCONTACTLIST_SCHOOLCONTACT = new ElementDefImpl( SCHOOLCONTACTLIST, "SchoolContact", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <Service> fields (4 entries)
-		CommonDTD.SERVICE_CODE = new ElementDefImpl( SERVICE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.SERVICE_CODE = new ElementDefImpl( SERVICE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.SERVICE_CODETYPE = new ElementDefImpl( SERVICE, "CodeType", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
 		CommonDTD.SERVICE_TYPE = new ElementDefImpl( SERVICE, "Type", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		CommonDTD.SERVICE_OTHERCODELIST = new ElementDefImpl( SERVICE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.SERVICE_OTHERCODELIST = new ElementDefImpl( SERVICE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ServiceFundingSource> fields (2 entries)
-		CommonDTD.SERVICEFUNDINGSOURCE_CODE = new ElementDefImpl( SERVICEFUNDINGSOURCE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.SERVICEFUNDINGSOURCE_OTHERCODELIST = new ElementDefImpl( SERVICEFUNDINGSOURCE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.SERVICEFUNDINGSOURCE_CODE = new ElementDefImpl( SERVICEFUNDINGSOURCE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.SERVICEFUNDINGSOURCE_OTHERCODELIST = new ElementDefImpl( SERVICEFUNDINGSOURCE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ServiceFundingSources> fields (1 entries)
-		CommonDTD.SERVICEFUNDINGSOURCES_SERVICEFUNDINGSOURCE = new ElementDefImpl( SERVICEFUNDINGSOURCES, "ServiceFundingSource", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.SERVICEFUNDINGSOURCES_SERVICEFUNDINGSOURCE = new ElementDefImpl( SERVICEFUNDINGSOURCES, "ServiceFundingSource", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ServiceProviderType> fields (2 entries)
-		CommonDTD.SERVICEPROVIDERTYPE_CODE = new ElementDefImpl( SERVICEPROVIDERTYPE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.SERVICEPROVIDERTYPE_OTHERCODELIST = new ElementDefImpl( SERVICEPROVIDERTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.SERVICEPROVIDERTYPE_CODE = new ElementDefImpl( SERVICEPROVIDERTYPE, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.SERVICEPROVIDERTYPE_OTHERCODELIST = new ElementDefImpl( SERVICEPROVIDERTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SoftwareRequirement> fields (4 entries)
-		CommonDTD.SOFTWAREREQUIREMENT_SOFTWARETITLE = new ElementDefImpl( SOFTWAREREQUIREMENT, "SoftwareTitle", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.SOFTWAREREQUIREMENT_VERSION = new ElementDefImpl( SOFTWAREREQUIREMENT, "Version", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.SOFTWAREREQUIREMENT_VENDOR = new ElementDefImpl( SOFTWAREREQUIREMENT, "Vendor", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.SOFTWAREREQUIREMENT_OS = new ElementDefImpl( SOFTWAREREQUIREMENT, "OS", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.SOFTWAREREQUIREMENT_SOFTWARETITLE = new ElementDefImpl( SOFTWAREREQUIREMENT, "SoftwareTitle", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.SOFTWAREREQUIREMENT_VERSION = new ElementDefImpl( SOFTWAREREQUIREMENT, "Version", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.SOFTWAREREQUIREMENT_VENDOR = new ElementDefImpl( SOFTWAREREQUIREMENT, "Vendor", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.SOFTWAREREQUIREMENT_OS = new ElementDefImpl( SOFTWAREREQUIREMENT, "OS", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SoftwareRequirementList> fields (1 entries)
-		CommonDTD.SOFTWAREREQUIREMENTLIST_SOFTWAREREQUIREMENT = new ElementDefImpl( SOFTWAREREQUIREMENTLIST, "SoftwareRequirement", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		CommonDTD.SOFTWAREREQUIREMENTLIST_SOFTWAREREQUIREMENT = new ElementDefImpl( SOFTWAREREQUIREMENTLIST, "SoftwareRequirement", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <SpanGap> fields (6 entries)
-		CommonDTD.SPANGAP_TYPE = new ElementDefImpl( SPANGAP, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.SPANGAP_CODE = new ElementDefImpl( SPANGAP, "Code", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.SPANGAP_NAME = new ElementDefImpl( SPANGAP, "Name", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.SPANGAP_VALUE = new ElementDefImpl( SPANGAP, "Value", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.SPANGAP_STARTDATETIME = new ElementDefImpl( SPANGAP, "StartDateTime", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		CommonDTD.SPANGAP_ENDDATETIME = new ElementDefImpl( SPANGAP, "EndDateTime", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
+		CommonDTD.SPANGAP_TYPE = new ElementDefImpl( SPANGAP, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.SPANGAP_CODE = new ElementDefImpl( SPANGAP, "Code", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.SPANGAP_NAME = new ElementDefImpl( SPANGAP, "Name", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.SPANGAP_VALUE = new ElementDefImpl( SPANGAP, "Value", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.SPANGAP_STARTDATETIME = new ElementDefImpl( SPANGAP, "StartDateTime", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		CommonDTD.SPANGAP_ENDDATETIME = new ElementDefImpl( SPANGAP, "EndDateTime", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
 
 		// <SpanGaps> fields (1 entries)
-		CommonDTD.SPANGAPS_SPANGAP = new ElementDefImpl( SPANGAPS, "SpanGap", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.SPANGAPS_SPANGAP = new ElementDefImpl( SPANGAPS, "SpanGap", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StaffParameters> fields (13 entries)
-		CommonDTD.STAFFPARAMETERS_STATEPROVINCEID = new ElementDefImpl( STAFFPARAMETERS, "StateProvinceId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STAFFPARAMETERS_LOCALID = new ElementDefImpl( STAFFPARAMETERS, "LocalId", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STAFFPARAMETERS_SIF_REFID = new ElementDefImpl( STAFFPARAMETERS, "SIF_RefId", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STAFFPARAMETERS_SSN = new ElementDefImpl( STAFFPARAMETERS, "SSN", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STAFFPARAMETERS_NAMES = new ElementDefImpl( STAFFPARAMETERS, "Names", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STAFFPARAMETERS_ADDRESSES = new ElementDefAlias( STAFFPARAMETERS, "Addresses", null, "AddressList", 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STAFFPARAMETERS_DEMOGRAPHICS = new ElementDefImpl( STAFFPARAMETERS, "Demographics", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STAFFPARAMETERS_CONTACTS = new ElementDefImpl( STAFFPARAMETERS, "Contacts", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STAFFPARAMETERS_EFFECTIVEDATE = new ElementDefImpl( STAFFPARAMETERS, "EffectiveDate", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STAFFPARAMETERS_STARTDATE = new ElementDefImpl( STAFFPARAMETERS, "StartDate", null, 10, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STAFFPARAMETERS_ENDDATE = new ElementDefImpl( STAFFPARAMETERS, "EndDate", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STAFFPARAMETERS_OTHERIDLIST = new ElementDefImpl( STAFFPARAMETERS, "OtherIdList", null, 12, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STAFFPARAMETERS_TIMEELEMENT = new ElementDefImpl( STAFFPARAMETERS, "TimeElement", null, 13, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STAFFPARAMETERS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STAFFPARAMETERS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STAFFPARAMETERS_SIF_METADATA = new ElementDefImpl( STAFFPARAMETERS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.STAFFPARAMETERS_STATEPROVINCEID = new ElementDefImpl( STAFFPARAMETERS, "StateProvinceId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STAFFPARAMETERS_LOCALID = new ElementDefImpl( STAFFPARAMETERS, "LocalId", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STAFFPARAMETERS_SIF_REFID = new ElementDefImpl( STAFFPARAMETERS, "SIF_RefId", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STAFFPARAMETERS_SSN = new ElementDefImpl( STAFFPARAMETERS, "SSN", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STAFFPARAMETERS_NAMES = new ElementDefImpl( STAFFPARAMETERS, "Names", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STAFFPARAMETERS_ADDRESSES = new ElementDefAlias( STAFFPARAMETERS, "Addresses", null, "AddressList", 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STAFFPARAMETERS_DEMOGRAPHICS = new ElementDefImpl( STAFFPARAMETERS, "Demographics", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STAFFPARAMETERS_CONTACTS = new ElementDefImpl( STAFFPARAMETERS, "Contacts", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STAFFPARAMETERS_EFFECTIVEDATE = new ElementDefImpl( STAFFPARAMETERS, "EffectiveDate", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STAFFPARAMETERS_STARTDATE = new ElementDefImpl( STAFFPARAMETERS, "StartDate", null, 10, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STAFFPARAMETERS_ENDDATE = new ElementDefImpl( STAFFPARAMETERS, "EndDate", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STAFFPARAMETERS_OTHERIDLIST = new ElementDefImpl( STAFFPARAMETERS, "OtherIdList", null, 12, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STAFFPARAMETERS_TIMEELEMENT = new ElementDefImpl( STAFFPARAMETERS, "TimeElement", null, 13, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STAFFPARAMETERS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STAFFPARAMETERS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STAFFPARAMETERS_SIF_METADATA = new ElementDefImpl( STAFFPARAMETERS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Street> fields (13 entries)
-		CommonDTD.STREET_LINE1 = new ElementDefImpl( STREET, "Line1", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STREET_LINE2 = new ElementDefImpl( STREET, "Line2", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STREET_LINE3 = new ElementDefImpl( STREET, "Line3", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STREET_COMPLEX = new ElementDefImpl( STREET, "Complex", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STREET_STREETNUMBER = new ElementDefImpl( STREET, "StreetNumber", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STREET_STREETPREFIX = new ElementDefImpl( STREET, "StreetPrefix", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STREET_STREETNAME = new ElementDefImpl( STREET, "StreetName", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STREET_STREETTYPE = new ElementDefImpl( STREET, "StreetType", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STREET_STREETSUFFIX = new ElementDefImpl( STREET, "StreetSuffix", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STREET_APARTMENTTYPE = new ElementDefImpl( STREET, "ApartmentType", "AptType", 10, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.STREET_LINE1 = new ElementDefImpl( STREET, "Line1", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STREET_LINE2 = new ElementDefImpl( STREET, "Line2", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STREET_LINE3 = new ElementDefImpl( STREET, "Line3", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STREET_COMPLEX = new ElementDefImpl( STREET, "Complex", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STREET_STREETNUMBER = new ElementDefImpl( STREET, "StreetNumber", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STREET_STREETPREFIX = new ElementDefImpl( STREET, "StreetPrefix", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STREET_STREETNAME = new ElementDefImpl( STREET, "StreetName", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STREET_STREETTYPE = new ElementDefImpl( STREET, "StreetType", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STREET_STREETSUFFIX = new ElementDefImpl( STREET, "StreetSuffix", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STREET_APARTMENTTYPE = new ElementDefImpl( STREET, "ApartmentType", "AptType", 10, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.STREET_APARTMENTTYPE.DefineVersionInfo(SifVersion.SIF20, "ApartmentType", 10, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.STREET_APARTMENTNUMBERPREFIX = new ElementDefImpl( STREET, "ApartmentNumberPrefix", "AptNumPrefix", 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.STREET_APARTMENTNUMBERPREFIX = new ElementDefImpl( STREET, "ApartmentNumberPrefix", "AptNumPrefix", 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.STREET_APARTMENTNUMBERPREFIX.DefineVersionInfo(SifVersion.SIF20, "ApartmentNumberPrefix", 11, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.STREET_APARTMENTNUMBER = new ElementDefImpl( STREET, "ApartmentNumber", "AptNumber", 12, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.STREET_APARTMENTNUMBER = new ElementDefImpl( STREET, "ApartmentNumber", "AptNumber", 12, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.STREET_APARTMENTNUMBER.DefineVersionInfo(SifVersion.SIF20, "ApartmentNumber", 12, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.STREET_APARTMENTNUMBERSUFFIX = new ElementDefImpl( STREET, "ApartmentNumberSuffix", "AptNumSuffix", 13, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.STREET_APARTMENTNUMBERSUFFIX = new ElementDefImpl( STREET, "ApartmentNumberSuffix", "AptNumSuffix", 13, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.STREET_APARTMENTNUMBERSUFFIX.DefineVersionInfo(SifVersion.SIF20, "ApartmentNumberSuffix", 13, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <StudentLEARelationship> fields (13 entries)
-		CommonDTD.STUDENTLEARELATIONSHIP_REFID = new ElementDefImpl( STUDENTLEARELATIONSHIP, "RefId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTLEARELATIONSHIP_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTLEARELATIONSHIP, "StudentPersonalRefId", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTLEARELATIONSHIP_LEAINFOREFID = new ElementDefImpl( STUDENTLEARELATIONSHIP, "LEAInfoRefId", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTLEARELATIONSHIP_SCHOOLYEAR = new ElementDefImpl( STUDENTLEARELATIONSHIP, "SchoolYear", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.INT );
-		CommonDTD.STUDENTLEARELATIONSHIP_MEMBERSHIPTYPE = new ElementDefImpl( STUDENTLEARELATIONSHIP, "MembershipType", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTLEARELATIONSHIP_LEARELATIONSHIPTYPE = new ElementDefAlias( STUDENTLEARELATIONSHIP, "LEARelationshipType", null, "OrganizationRelationshipType", 6, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		CommonDTD.STUDENTLEARELATIONSHIP_ENTRYDATE = new ElementDefImpl( STUDENTLEARELATIONSHIP, "EntryDate", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STUDENTLEARELATIONSHIP_ENTRYTYPE = new ElementDefImpl( STUDENTLEARELATIONSHIP, "EntryType", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		CommonDTD.STUDENTLEARELATIONSHIP_EXITDATE = new ElementDefImpl( STUDENTLEARELATIONSHIP, "ExitDate", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STUDENTLEARELATIONSHIP_EXITTYPE = new ElementDefImpl( STUDENTLEARELATIONSHIP, "ExitType", null, 10, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		CommonDTD.STUDENTLEARELATIONSHIP_EXITSTATUS = new ElementDefImpl( STUDENTLEARELATIONSHIP, "ExitStatus", null, 11, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		CommonDTD.STUDENTLEARELATIONSHIP_NONRESIDENTATTENDREASON = new ElementDefImpl( STUDENTLEARELATIONSHIP, "NonResidentAttendReason", null, 12, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTLEARELATIONSHIP_GRADELEVEL = new ElementDefImpl( STUDENTLEARELATIONSHIP, "GradeLevel", null, 13, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		STUDENTLEARELATIONSHIP_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTLEARELATIONSHIP, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTLEARELATIONSHIP_SIF_METADATA = new ElementDefImpl( STUDENTLEARELATIONSHIP, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.STUDENTLEARELATIONSHIP_REFID = new ElementDefImpl( STUDENTLEARELATIONSHIP, "RefId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTLEARELATIONSHIP_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTLEARELATIONSHIP, "StudentPersonalRefId", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTLEARELATIONSHIP_LEAINFOREFID = new ElementDefImpl( STUDENTLEARELATIONSHIP, "LEAInfoRefId", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTLEARELATIONSHIP_SCHOOLYEAR = new ElementDefImpl( STUDENTLEARELATIONSHIP, "SchoolYear", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.INT );
+		CommonDTD.STUDENTLEARELATIONSHIP_MEMBERSHIPTYPE = new ElementDefImpl( STUDENTLEARELATIONSHIP, "MembershipType", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTLEARELATIONSHIP_LEARELATIONSHIPTYPE = new ElementDefAlias( STUDENTLEARELATIONSHIP, "LEARelationshipType", null, "OrganizationRelationshipType", 6, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		CommonDTD.STUDENTLEARELATIONSHIP_ENTRYDATE = new ElementDefImpl( STUDENTLEARELATIONSHIP, "EntryDate", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STUDENTLEARELATIONSHIP_ENTRYTYPE = new ElementDefImpl( STUDENTLEARELATIONSHIP, "EntryType", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		CommonDTD.STUDENTLEARELATIONSHIP_EXITDATE = new ElementDefImpl( STUDENTLEARELATIONSHIP, "ExitDate", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STUDENTLEARELATIONSHIP_EXITTYPE = new ElementDefImpl( STUDENTLEARELATIONSHIP, "ExitType", null, 10, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		CommonDTD.STUDENTLEARELATIONSHIP_EXITSTATUS = new ElementDefImpl( STUDENTLEARELATIONSHIP, "ExitStatus", null, 11, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		CommonDTD.STUDENTLEARELATIONSHIP_NONRESIDENTATTENDREASON = new ElementDefImpl( STUDENTLEARELATIONSHIP, "NonResidentAttendReason", null, 12, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTLEARELATIONSHIP_GRADELEVEL = new ElementDefImpl( STUDENTLEARELATIONSHIP, "GradeLevel", null, 13, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		STUDENTLEARELATIONSHIP_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTLEARELATIONSHIP, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTLEARELATIONSHIP_SIF_METADATA = new ElementDefImpl( STUDENTLEARELATIONSHIP, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentParameters> fields (17 entries)
-		CommonDTD.STUDENTPARAMETERS_STATEPROVINCEID = new ElementDefImpl( STUDENTPARAMETERS, "StateProvinceId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARAMETERS_LOCALID = new ElementDefImpl( STUDENTPARAMETERS, "LocalId", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARAMETERS_SIF_REFID = new ElementDefImpl( STUDENTPARAMETERS, "SIF_RefId", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARAMETERS_GRADELEVEL = new ElementDefImpl( STUDENTPARAMETERS, "GradeLevel", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPARAMETERS_SSN = new ElementDefImpl( STUDENTPARAMETERS, "SSN", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARAMETERS_NAMES = new ElementDefImpl( STUDENTPARAMETERS, "Names", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPARAMETERS_ADDRESSES = new ElementDefAlias( STUDENTPARAMETERS, "Addresses", null, "AddressList", 7, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPARAMETERS_DEMOGRAPHICS = new ElementDefImpl( STUDENTPARAMETERS, "Demographics", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPARAMETERS_CONTACTS = new ElementDefAlias( STUDENTPARAMETERS, "Contacts", null, "StudentParametersContacts", 9, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPARAMETERS_EFFECTIVEDATE = new ElementDefImpl( STUDENTPARAMETERS, "EffectiveDate", null, 10, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STUDENTPARAMETERS_STARTDATE = new ElementDefImpl( STUDENTPARAMETERS, "StartDate", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STUDENTPARAMETERS_ENDDATE = new ElementDefImpl( STUDENTPARAMETERS, "EndDate", null, 12, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STUDENTPARAMETERS_GRADUATIONDATE = new ElementDefAlias( STUDENTPARAMETERS, "GraduationDate", null, "PartialDateType", 13, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARAMETERS_SCHOOLATTENDEDNAME = new ElementDefImpl( STUDENTPARAMETERS, "SchoolAttendedName", null, 14, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARAMETERS_SCHOOLATTENDEDLOCATION = new ElementDefImpl( STUDENTPARAMETERS, "SchoolAttendedLocation", null, 15, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARAMETERS_OTHERIDLIST = new ElementDefImpl( STUDENTPARAMETERS, "OtherIdList", null, 16, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPARAMETERS_TIMEELEMENT = new ElementDefImpl( STUDENTPARAMETERS, "TimeElement", null, 17, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTPARAMETERS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPARAMETERS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTPARAMETERS_SIF_METADATA = new ElementDefImpl( STUDENTPARAMETERS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.STUDENTPARAMETERS_STATEPROVINCEID = new ElementDefImpl( STUDENTPARAMETERS, "StateProvinceId", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARAMETERS_LOCALID = new ElementDefImpl( STUDENTPARAMETERS, "LocalId", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARAMETERS_SIF_REFID = new ElementDefImpl( STUDENTPARAMETERS, "SIF_RefId", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARAMETERS_GRADELEVEL = new ElementDefImpl( STUDENTPARAMETERS, "GradeLevel", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPARAMETERS_SSN = new ElementDefImpl( STUDENTPARAMETERS, "SSN", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARAMETERS_NAMES = new ElementDefImpl( STUDENTPARAMETERS, "Names", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPARAMETERS_ADDRESSES = new ElementDefAlias( STUDENTPARAMETERS, "Addresses", null, "AddressList", 7, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPARAMETERS_DEMOGRAPHICS = new ElementDefImpl( STUDENTPARAMETERS, "Demographics", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPARAMETERS_CONTACTS = new ElementDefAlias( STUDENTPARAMETERS, "Contacts", null, "StudentParametersContacts", 9, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPARAMETERS_EFFECTIVEDATE = new ElementDefImpl( STUDENTPARAMETERS, "EffectiveDate", null, 10, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STUDENTPARAMETERS_STARTDATE = new ElementDefImpl( STUDENTPARAMETERS, "StartDate", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STUDENTPARAMETERS_ENDDATE = new ElementDefImpl( STUDENTPARAMETERS, "EndDate", null, 12, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STUDENTPARAMETERS_GRADUATIONDATE = new ElementDefAlias( STUDENTPARAMETERS, "GraduationDate", null, "PartialDateType", 13, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARAMETERS_SCHOOLATTENDEDNAME = new ElementDefImpl( STUDENTPARAMETERS, "SchoolAttendedName", null, 14, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARAMETERS_SCHOOLATTENDEDLOCATION = new ElementDefImpl( STUDENTPARAMETERS, "SchoolAttendedLocation", null, 15, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARAMETERS_OTHERIDLIST = new ElementDefImpl( STUDENTPARAMETERS, "OtherIdList", null, 16, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPARAMETERS_TIMEELEMENT = new ElementDefImpl( STUDENTPARAMETERS, "TimeElement", null, 17, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTPARAMETERS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPARAMETERS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTPARAMETERS_SIF_METADATA = new ElementDefImpl( STUDENTPARAMETERS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentParametersContacts> fields (1 entries)
-		CommonDTD.STUDENTPARAMETERSCONTACTS_CONTACT = new ElementDefImpl( STUDENTPARAMETERSCONTACTS, "Contact", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		CommonDTD.STUDENTPARAMETERSCONTACTS_CONTACT = new ElementDefImpl( STUDENTPARAMETERSCONTACTS, "Contact", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <StudentParticipationDataElement> fields (14 entries)
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PROGRAMTYPE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ProgramType", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PROGRAMFUNDINGSOURCES = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ProgramFundingSources", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_MANAGINGPUBLICAGENCY = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ManagingPublicAgency", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_MANAGINGSCHOOL = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ManagingSchool", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_REFERRALDATE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ReferralDate", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PROGRAMSTATUS = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ProgramStatus", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_GIFTEDELIGIBILITYCRITERIA = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "GiftedEligibilityCriteria", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_EVALUATIONDATE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "EvaluationDate", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_REEVALUATIONDATE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ReevaluationDate", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_EXCEPTIONALITYCATEGORIES = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ExceptionalityCategories", null, 10, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PROGRAMPLANDATE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ProgramPlanDate", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PROGRAMPLANEFFECTIVEDATE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ProgramPlanEffectiveDate", null, 12, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PLANNEDASSESSMENTPARTICIPATION = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "PlannedAssessmentParticipation", null, 13, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_DAYSINPARTICIPATION = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "DaysInParticipation", null, 14, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.INT );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PROGRAMTYPE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ProgramType", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PROGRAMFUNDINGSOURCES = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ProgramFundingSources", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_MANAGINGPUBLICAGENCY = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ManagingPublicAgency", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_MANAGINGSCHOOL = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ManagingSchool", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_REFERRALDATE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ReferralDate", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PROGRAMSTATUS = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ProgramStatus", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_GIFTEDELIGIBILITYCRITERIA = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "GiftedEligibilityCriteria", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_EVALUATIONDATE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "EvaluationDate", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_REEVALUATIONDATE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ReevaluationDate", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_EXCEPTIONALITYCATEGORIES = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ExceptionalityCategories", null, 10, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PROGRAMPLANDATE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ProgramPlanDate", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PROGRAMPLANEFFECTIVEDATE = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "ProgramPlanEffectiveDate", null, 12, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_PLANNEDASSESSMENTPARTICIPATION = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "PlannedAssessmentParticipation", null, 13, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPARTICIPATIONDATAELEMENT_DAYSINPARTICIPATION = new ElementDefImpl( STUDENTPARTICIPATIONDATAELEMENT, "DaysInParticipation", null, 14, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.INT );
 
 		// <StudentParticipationList> fields (1 entries)
-		CommonDTD.STUDENTPARTICIPATIONLIST_STUDENTPARTICIPATIONDATA = new ElementDefAlias( STUDENTPARTICIPATIONLIST, "StudentParticipationData", null, "StudentParticipationDataElement", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		CommonDTD.STUDENTPARTICIPATIONLIST_STUDENTPARTICIPATIONDATA = new ElementDefAlias( STUDENTPARTICIPATIONLIST, "StudentParticipationData", null, "StudentParticipationDataElement", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <StudentPersonalRefId> fields (0 entries)
 
 		// <StudentPlacementData> fields (8 entries)
-		CommonDTD.STUDENTPLACEMENTDATA_SERVICE = new ElementDefImpl( STUDENTPLACEMENTDATA, "Service", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPLACEMENTDATA_SERVICECATEGORY = new ElementDefImpl( STUDENTPLACEMENTDATA, "ServiceCategory", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPLACEMENTDATA_SERVICEFUNDINGSOURCES = new ElementDefImpl( STUDENTPLACEMENTDATA, "ServiceFundingSources", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPLACEMENTDATA_SERVICINGPUBLICAGENCY = new ElementDefImpl( STUDENTPLACEMENTDATA, "ServicingPublicAgency", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPLACEMENTDATA_SCHOOLWHERESERVICEDELIVERED = new ElementDefImpl( STUDENTPLACEMENTDATA, "SchoolWhereServiceDelivered", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPLACEMENTDATA_SERVICEPROVIDERTYPE = new ElementDefImpl( STUDENTPLACEMENTDATA, "ServiceProviderType", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTPLACEMENTDATA_AGENCYTYPE = new ElementDefImpl( STUDENTPLACEMENTDATA, "AgencyType", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.STUDENTPLACEMENTDATA_FREQUENCYTIME = new ElementDefImpl( STUDENTPLACEMENTDATA, "FrequencyTime", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		CommonDTD.STUDENTPLACEMENTDATA_SERVICE = new ElementDefImpl( STUDENTPLACEMENTDATA, "Service", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPLACEMENTDATA_SERVICECATEGORY = new ElementDefImpl( STUDENTPLACEMENTDATA, "ServiceCategory", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPLACEMENTDATA_SERVICEFUNDINGSOURCES = new ElementDefImpl( STUDENTPLACEMENTDATA, "ServiceFundingSources", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPLACEMENTDATA_SERVICINGPUBLICAGENCY = new ElementDefImpl( STUDENTPLACEMENTDATA, "ServicingPublicAgency", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPLACEMENTDATA_SCHOOLWHERESERVICEDELIVERED = new ElementDefImpl( STUDENTPLACEMENTDATA, "SchoolWhereServiceDelivered", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPLACEMENTDATA_SERVICEPROVIDERTYPE = new ElementDefImpl( STUDENTPLACEMENTDATA, "ServiceProviderType", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTPLACEMENTDATA_AGENCYTYPE = new ElementDefImpl( STUDENTPLACEMENTDATA, "AgencyType", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.STUDENTPLACEMENTDATA_FREQUENCYTIME = new ElementDefImpl( STUDENTPLACEMENTDATA, "FrequencyTime", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <StudentPlacementList> fields (1 entries)
-		CommonDTD.STUDENTPLACEMENTLIST_STUDENTPLACEMENTDATA = new ElementDefImpl( STUDENTPLACEMENTLIST, "StudentPlacementData", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		CommonDTD.STUDENTPLACEMENTLIST_STUDENTPLACEMENTDATA = new ElementDefImpl( STUDENTPLACEMENTLIST, "StudentPlacementData", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <StudentRecordExchangeData> fields (5 entries)
-		CommonDTD.STUDENTRECORDEXCHANGEDATA_STUDENTRECORDEXCHANGE = new ElementDefImpl( STUDENTRECORDEXCHANGEDATA, "StudentRecordExchange", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTRECORDEXCHANGEDATA_STUDENTDEMOGRAPHICRECORD = new ElementDefImpl( STUDENTRECORDEXCHANGEDATA, "StudentDemographicRecord", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTRECORDEXCHANGEDATA_STUDENTACADEMICRECORD = new ElementDefImpl( STUDENTRECORDEXCHANGEDATA, "StudentAcademicRecord", null, 3, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTRECORDEXCHANGEDATA_STUDENTSPECIALEDUCATIONRECORD = new ElementDefImpl( STUDENTRECORDEXCHANGEDATA, "StudentSpecialEducationRecord", null, 4, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CommonDTD.STUDENTRECORDEXCHANGEDATA_STUDENTRECORDPACKAGE = new ElementDefImpl( STUDENTRECORDEXCHANGEDATA, "StudentRecordPackage", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		CommonDTD.STUDENTRECORDEXCHANGEDATA_STUDENTRECORDEXCHANGE = new ElementDefImpl( STUDENTRECORDEXCHANGEDATA, "StudentRecordExchange", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTRECORDEXCHANGEDATA_STUDENTDEMOGRAPHICRECORD = new ElementDefImpl( STUDENTRECORDEXCHANGEDATA, "StudentDemographicRecord", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTRECORDEXCHANGEDATA_STUDENTACADEMICRECORD = new ElementDefImpl( STUDENTRECORDEXCHANGEDATA, "StudentAcademicRecord", null, 3, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTRECORDEXCHANGEDATA_STUDENTSPECIALEDUCATIONRECORD = new ElementDefImpl( STUDENTRECORDEXCHANGEDATA, "StudentSpecialEducationRecord", null, 4, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CommonDTD.STUDENTRECORDEXCHANGEDATA_STUDENTRECORDPACKAGE = new ElementDefImpl( STUDENTRECORDEXCHANGEDATA, "StudentRecordPackage", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <StudentRecordExchangeDataList> fields (1 entries)
-		CommonDTD.STUDENTRECORDEXCHANGEDATALIST_STUDENTRECORDEXCHANGEDATA = new ElementDefImpl( STUDENTRECORDEXCHANGEDATALIST, "StudentRecordExchangeData", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		CommonDTD.STUDENTRECORDEXCHANGEDATALIST_STUDENTRECORDEXCHANGEDATA = new ElementDefImpl( STUDENTRECORDEXCHANGEDATALIST, "StudentRecordExchangeData", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <Students> fields (1 entries)
-		CommonDTD.STUDENTS_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTS, "StudentPersonalRefId", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.STUDENTS_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTS, "StudentPersonalRefId", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SubjectArea> fields (2 entries)
-		CommonDTD.SUBJECTAREA_CODE = new ElementDefImpl( SUBJECTAREA, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.SUBJECTAREA_CODE = new ElementDefImpl( SUBJECTAREA, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.SUBJECTAREA_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.SUBJECTAREA_OTHERCODELIST = new ElementDefImpl( SUBJECTAREA, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.SUBJECTAREA_OTHERCODELIST = new ElementDefImpl( SUBJECTAREA, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SubjectAreaList> fields (1 entries)
-		CommonDTD.SUBJECTAREALIST_SUBJECTAREA = new ElementDefImpl( SUBJECTAREALIST, "SubjectArea", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		CommonDTD.SUBJECTAREALIST_SUBJECTAREA = new ElementDefImpl( SUBJECTAREALIST, "SubjectArea", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SubjectAreas> fields (1 entries)
-		CommonDTD.SUBJECTAREAS_SUBJECTAREA = new ElementDefImpl( SUBJECTAREAS, "SubjectArea", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.SUBJECTAREAS_SUBJECTAREA = new ElementDefImpl( SUBJECTAREAS, "SubjectArea", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TermSpan> fields (2 entries)
-		CommonDTD.TERMSPAN_CODE = new ElementDefImpl( TERMSPAN, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.TERMSPAN_CODE = new ElementDefImpl( TERMSPAN, "Code", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		CommonDTD.TERMSPAN_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		CommonDTD.TERMSPAN_OTHERCODELIST = new ElementDefImpl( TERMSPAN, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.TERMSPAN_OTHERCODELIST = new ElementDefImpl( TERMSPAN, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TextData> fields (3 entries)
-		CommonDTD.TEXTDATA_MIMETYPE = new ElementDefImpl( TEXTDATA, "MIMEType", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.TEXTDATA_FILENAME = new ElementDefImpl( TEXTDATA, "FileName", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.TEXTDATA_DESCRIPTION = new ElementDefImpl( TEXTDATA, "Description", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		CommonDTD.TEXTDATA_MIMETYPE = new ElementDefImpl( TEXTDATA, "MIMEType", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.TEXTDATA_FILENAME = new ElementDefImpl( TEXTDATA, "FileName", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.TEXTDATA_DESCRIPTION = new ElementDefImpl( TEXTDATA, "Description", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <TimeElement> fields (8 entries)
-		CommonDTD.TIMEELEMENT_TYPE = new ElementDefImpl( TIMEELEMENT, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.TIMEELEMENT_CODE = new ElementDefImpl( TIMEELEMENT, "Code", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.TIMEELEMENT_NAME = new ElementDefImpl( TIMEELEMENT, "Name", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.TIMEELEMENT_VALUE = new ElementDefImpl( TIMEELEMENT, "Value", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		CommonDTD.TIMEELEMENT_STARTDATETIME = new ElementDefImpl( TIMEELEMENT, "StartDateTime", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		CommonDTD.TIMEELEMENT_ENDDATETIME = new ElementDefImpl( TIMEELEMENT, "EndDateTime", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		CommonDTD.TIMEELEMENT_SPANGAPS = new ElementDefImpl( TIMEELEMENT, "SpanGaps", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CommonDTD.TIMEELEMENT_ISCURRENT = new ElementDefImpl( TIMEELEMENT, "IsCurrent", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
+		CommonDTD.TIMEELEMENT_TYPE = new ElementDefImpl( TIMEELEMENT, "Type", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.TIMEELEMENT_CODE = new ElementDefImpl( TIMEELEMENT, "Code", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.TIMEELEMENT_NAME = new ElementDefImpl( TIMEELEMENT, "Name", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.TIMEELEMENT_VALUE = new ElementDefImpl( TIMEELEMENT, "Value", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		CommonDTD.TIMEELEMENT_STARTDATETIME = new ElementDefImpl( TIMEELEMENT, "StartDateTime", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		CommonDTD.TIMEELEMENT_ENDDATETIME = new ElementDefImpl( TIMEELEMENT, "EndDateTime", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		CommonDTD.TIMEELEMENT_SPANGAPS = new ElementDefImpl( TIMEELEMENT, "SpanGaps", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CommonDTD.TIMEELEMENT_ISCURRENT = new ElementDefImpl( TIMEELEMENT, "IsCurrent", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
 
 		// <TimeElements> fields (1 entries)
-		CommonDTD.TIMEELEMENTS_TIMEELEMENT = new ElementDefImpl( TIMEELEMENTS, "TimeElement", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		CommonDTD.TIMEELEMENTS_TIMEELEMENT = new ElementDefImpl( TIMEELEMENTS, "TimeElement", null, 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd
@@ -2017,6 +2045,14 @@ namespace OpenADK.Library.us.Common
 		dictionary["Demographics_StateOfBirth"] = CommonDTD.DEMOGRAPHICS_STATEOFBIRTH ;
 		dictionary[ "OtherIdList" ] = OTHERIDLIST;
 		dictionary["OtherIdList_OtherId"] = CommonDTD.OTHERIDLIST_OTHERID ;
+		dictionary[ "AbstractContentElementType" ] = ABSTRACTCONTENTELEMENTTYPE;
+		dictionary["AbstractContentElementType_BinaryData"] = CommonDTD.ABSTRACTCONTENTELEMENTTYPE_BINARYDATA ;
+		dictionary["AbstractContentElementType_Description"] = CommonDTD.ABSTRACTCONTENTELEMENTTYPE_DESCRIPTION ;
+		dictionary["AbstractContentElementType_FileName"] = CommonDTD.ABSTRACTCONTENTELEMENTTYPE_FILENAME ;
+		dictionary["AbstractContentElementType_MIMEType"] = CommonDTD.ABSTRACTCONTENTELEMENTTYPE_MIMETYPE ;
+		dictionary["AbstractContentElementType_Reference"] = CommonDTD.ABSTRACTCONTENTELEMENTTYPE_REFERENCE ;
+		dictionary["AbstractContentElementType_TextData"] = CommonDTD.ABSTRACTCONTENTELEMENTTYPE_TEXTDATA ;
+		dictionary["AbstractContentElementType_XMLData"] = CommonDTD.ABSTRACTCONTENTELEMENTTYPE_XMLDATA ;
 		dictionary[ "Students" ] = STUDENTS;
 		dictionary["Students_StudentPersonalRefId"] = CommonDTD.STUDENTS_STUDENTPERSONALREFID ;
 		dictionary[ "IdentificationInfo" ] = IDENTIFICATIONINFO;

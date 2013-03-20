@@ -4,6 +4,7 @@
 //
 
 using System;
+using OpenADK.Library;
 
 namespace Edustructures.SifWorks.Log
 {

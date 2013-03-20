@@ -23,6 +23,8 @@
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -35,10 +37,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -77,8 +77,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sdo\Assessment\Assessment.cs" />
     <Compile Include="sdo\Assessment\AssessmentAdministration.cs" />
-    <Compile Include="sdo\Assessment\AssessmentDescriptor.cs" />
-    <Compile Include="sdo\Assessment\AssessmentDescriptors.cs" />
     <Compile Include="sdo\Assessment\AssessmentDescriptorType.cs" />
     <Compile Include="sdo\Assessment\AssessmentDTD.cs" />
     <Compile Include="sdo\Assessment\AssessmentForm.cs" />
@@ -89,7 +87,6 @@
     <Compile Include="sdo\Assessment\AssessmentSubTest.cs" />
     <Compile Include="sdo\Assessment\AssessmentSubTestRefId.cs" />
     <Compile Include="sdo\Assessment\AssessmentSubTestRefIds.cs" />
-    <Compile Include="sdo\Assessment\AssessmentType.cs" />
     <Compile Include="sdo\Assessment\AUCodeSetsAssessmentTypeType.cs" />
     <Compile Include="sdo\Assessment\Choice.cs" />
     <Compile Include="sdo\Assessment\CutScores.cs" />
@@ -101,7 +98,6 @@
     <Compile Include="sdo\Assessment\PerformanceLevels.cs" />
     <Compile Include="sdo\Assessment\ResponseChoices.cs" />
     <Compile Include="sdo\Assessment\ResponseStatus.cs" />
-    <Compile Include="sdo\Assessment\ResponseType.cs" />
     <Compile Include="sdo\Assessment\Score.cs" />
     <Compile Include="sdo\Assessment\ScoreRange.cs" />
     <Compile Include="sdo\Assessment\Scores.cs" />
@@ -117,6 +113,9 @@
     <Compile Include="sdo\Common\AddressList.cs" />
     <Compile Include="sdo\Common\AddressRoleType.cs" />
     <Compile Include="sdo\Common\AddressType.cs" />
+    <Compile Include="sdo\Common\AssessmentDescriptor.cs" />
+    <Compile Include="sdo\Common\AssessmentDescriptors.cs" />
+    <Compile Include="sdo\Common\AssessmentType.cs" />
     <Compile Include="sdo\Common\AttendanceCode.cs" />
     <Compile Include="sdo\Common\AttendanceCodeType.cs" />
     <Compile Include="sdo\Common\AU025AddressType.cs" />
@@ -127,6 +126,7 @@
     <Compile Include="sdo\Common\AUCodeSetsACStrandType.cs" />
     <Compile Include="sdo\Common\AUCodeSetsAssessmentReportingMethodType.cs" />
     <Compile Include="sdo\Common\AUCodeSetsEmploymentTypeType.cs" />
+    <Compile Include="sdo\Common\AUCodeSetsFFPOSStatusCodeType.cs" />
     <Compile Include="sdo\Common\AUCodeSetsMaritalStatusAIHWType.cs" />
     <Compile Include="sdo\Common\AUCodeSetsNonSchoolEducationType.cs" />
     <Compile Include="sdo\Common\AUCodeSetsSchoolEducationLevelTypeType.cs" />
@@ -142,6 +142,8 @@
     <Compile Include="sdo\Common\Campus.cs" />
     <Compile Include="sdo\Common\CampusAUSchoolLevelType.cs" />
     <Compile Include="sdo\Common\Codeset.cs" />
+    <Compile Include="sdo\Common\CommentList.cs" />
+    <Compile Include="sdo\Common\CommentType.cs" />
     <Compile Include="sdo\Common\CommonDTD.cs" />
     <Compile Include="sdo\Common\ContactInfo.cs" />
     <Compile Include="sdo\Common\ContactName.cs" />
@@ -194,28 +196,37 @@
     <Compile Include="sdo\Common\PictureSourceType.cs" />
     <Compile Include="sdo\Common\PrincipalInfo.cs" />
     <Compile Include="sdo\Common\Reference.cs" />
+    <Compile Include="sdo\Common\RefIdObject.cs" />
     <Compile Include="sdo\Common\Relationship.cs" />
     <Compile Include="sdo\Common\Religion.cs" />
     <Compile Include="sdo\Common\ReligionType.cs" />
     <Compile Include="sdo\Common\ReligiousEvent.cs" />
     <Compile Include="sdo\Common\ReligiousEventList.cs" />
+    <Compile Include="sdo\Common\ResponseType.cs" />
     <Compile Include="sdo\Common\SchoolContact.cs" />
     <Compile Include="sdo\Common\SchoolContactList.cs" />
     <Compile Include="sdo\Common\SessionType.cs" />
     <Compile Include="sdo\Common\Sex.cs" />
     <Compile Include="sdo\Common\SIF_RefObject.cs" />
+    <Compile Include="sdo\Common\SpatialUnitType.cs" />
     <Compile Include="sdo\Common\StartCode.cs" />
     <Compile Include="sdo\Common\StateTerritoryCodeType.cs" />
+    <Compile Include="sdo\Common\StatisticalArea.cs" />
+    <Compile Include="sdo\Common\StatisticalAreaList.cs" />
     <Compile Include="sdo\Common\Street.cs" />
     <Compile Include="sdo\Common\SubjectArea.cs" />
     <Compile Include="sdo\Common\SubjectAreaList.cs" />
     <Compile Include="sdo\Common\TextData.cs" />
+    <Compile Include="sdo\Common\TimeUnitEnum.cs" />
     <Compile Include="sdo\Common\Topics.cs" />
     <Compile Include="sdo\Common\VisaSubClassType.cs" />
     <Compile Include="sdo\Common\Year.cs" />
     <Compile Include="sdo\Common\YearLevel.cs" />
     <Compile Include="sdo\Common\YearLevelCode.cs" />
     <Compile Include="sdo\Common\YearLevels.cs" />
+    <Compile Include="sdo\Common\YesNoLower.cs" />
+    <Compile Include="sdo\Common\YesNoUnkNotProvided.cs" />
+    <Compile Include="sdo\Common\YNLower.cs" />
     <Compile Include="sdo\Datamodel\Created.cs" />
     <Compile Include="sdo\Datamodel\Creator.cs" />
     <Compile Include="sdo\Datamodel\Creators.cs" />
@@ -380,6 +391,127 @@
     <Compile Include="sdo\School\TimeTablePeriod.cs" />
     <Compile Include="sdo\School\TimeTablePeriodList.cs" />
     <Compile Include="sdo\School\TimeTableSubject.cs" />
+    <Compile Include="sdo\Sif3assessment\Activity.cs" />
+    <Compile Include="sdo\Sif3assessment\ActivityEvaluation.cs" />
+    <Compile Include="sdo\Sif3assessment\ActivityTime.cs" />
+    <Compile Include="sdo\Sif3assessment\AdministrationAssessment.cs" />
+    <Compile Include="sdo\Sif3assessment\AdministrationAssessments.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentAssetRefId.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentAssetRefIds.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentIdentifier.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentIdentifiers.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentIdType.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentItemAssetRefId.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentItemAssetRefIds.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentItemBank.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentItemBankList.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentItemPlatform.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentItemPlatformList.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentPlatform.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentPlatformList.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentPlatformType.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentSection.cs" />
+    <Compile Include="sdo\Sif3assessment\AssessmentSectionList.cs" />
+    <Compile Include="sdo\Sif3assessment\AssetIdentifier.cs" />
+    <Compile Include="sdo\Sif3assessment\AssetIdentifierList.cs" />
+    <Compile Include="sdo\Sif3assessment\AssetIdType.cs" />
+    <Compile Include="sdo\Sif3assessment\AssetLearningStandardList.cs" />
+    <Compile Include="sdo\Sif3assessment\AssetType.cs" />
+    <Compile Include="sdo\Sif3assessment\AssociationType.cs" />
+    <Compile Include="sdo\Sif3assessment\DerivedValue.cs" />
+    <Compile Include="sdo\Sif3assessment\Duration.cs" />
+    <Compile Include="sdo\Sif3assessment\EnrollmentStatus.cs" />
+    <Compile Include="sdo\Sif3assessment\EssentialMaterial.cs" />
+    <Compile Include="sdo\Sif3assessment\EssentialMaterialList.cs" />
+    <Compile Include="sdo\Sif3assessment\EvaluationType.cs" />
+    <Compile Include="sdo\Sif3assessment\Feedback.cs" />
+    <Compile Include="sdo\Sif3assessment\FeedbackItem.cs" />
+    <Compile Include="sdo\Sif3assessment\FeedbackItemList.cs" />
+    <Compile Include="sdo\Sif3assessment\FeedbackList.cs" />
+    <Compile Include="sdo\Sif3assessment\FormAccommodation.cs" />
+    <Compile Include="sdo\Sif3assessment\FormAccommodationList.cs" />
+    <Compile Include="sdo\Sif3assessment\FormAccommodationType.cs" />
+    <Compile Include="sdo\Sif3assessment\FormIdentifier.cs" />
+    <Compile Include="sdo\Sif3assessment\FormIdentifierList.cs" />
+    <Compile Include="sdo\Sif3assessment\GraduationAwardEnum.cs" />
+    <Compile Include="sdo\Sif3assessment\GraduationOnTimeEnum.cs" />
+    <Compile Include="sdo\Sif3assessment\ItemAid.cs" />
+    <Compile Include="sdo\Sif3assessment\ItemAidList.cs" />
+    <Compile Include="sdo\Sif3assessment\ItemList.cs" />
+    <Compile Include="sdo\Sif3assessment\ItemRubricId.cs" />
+    <Compile Include="sdo\Sif3assessment\ItemRubricIds.cs" />
+    <Compile Include="sdo\Sif3assessment\LearningObjective.cs" />
+    <Compile Include="sdo\Sif3assessment\LearningObjectiveList.cs" />
+    <Compile Include="sdo\Sif3assessment\LearningResourceList.cs" />
+    <Compile Include="sdo\Sif3assessment\LearningResourceRefId.cs" />
+    <Compile Include="sdo\Sif3assessment\LearningStandardList.cs" />
+    <Compile Include="sdo\Sif3assessment\PassFailEnum.cs" />
+    <Compile Include="sdo\Sif3assessment\ResponseCorrectnessEnum.cs" />
+    <Compile Include="sdo\Sif3assessment\RubricIdentifier.cs" />
+    <Compile Include="sdo\Sif3assessment\RubricIdentifiers.cs" />
+    <Compile Include="sdo\Sif3assessment\ScoreComment.cs" />
+    <Compile Include="sdo\Sif3assessment\ScoreCommentList.cs" />
+    <Compile Include="sdo\Sif3assessment\ScoreDescriptionList.cs" />
+    <Compile Include="sdo\Sif3assessment\ScoreList.cs" />
+    <Compile Include="sdo\Sif3assessment\ScoreReportingType.cs" />
+    <Compile Include="sdo\Sif3assessment\ScoreTableIdentifier.cs" />
+    <Compile Include="sdo\Sif3assessment\ScoreTableIdentifiers.cs" />
+    <Compile Include="sdo\Sif3assessment\ScoreValue.cs" />
+    <Compile Include="sdo\Sif3assessment\ScoreValueList.cs" />
+    <Compile Include="sdo\Sif3assessment\SectionAsset.cs" />
+    <Compile Include="sdo\Sif3assessment\SectionAssets.cs" />
+    <Compile Include="sdo\Sif3assessment\SectionIdentifier.cs" />
+    <Compile Include="sdo\Sif3assessment\SectionIdentifiers.cs" />
+    <Compile Include="sdo\Sif3assessment\SectionItem.cs" />
+    <Compile Include="sdo\Sif3assessment\SectionItemList.cs" />
+    <Compile Include="sdo\Sif3assessment\SectionItemSequenceType.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3Assessment.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentAdministration.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentAsset.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3assessmentDTD.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentForm.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentItem.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentItemAssociation.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentItemList.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentRegistration.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentRubric.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentScoreTable.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentSection.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentSession.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentStaffList.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentStudentSnapshot.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentSubTest.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentSubTestRefId.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3AssessmentSubTestRefIds.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3Choice.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3HomeEnrollment.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3Homeroom.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3HomeroomRefObjEnum.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3Item.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3Organization.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3Organizations.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3ResponseChoices.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3Score.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3StaffPersonalRefId.cs" />
+    <Compile Include="sdo\Sif3assessment\Sif3StudentResponseSet.cs" />
+    <Compile Include="sdo\Sif3assessment\SoftwareRequirement.cs" />
+    <Compile Include="sdo\Sif3assessment\SoftwareRequirementList.cs" />
+    <Compile Include="sdo\Sif3assessment\SourceObject.cs" />
+    <Compile Include="sdo\Sif3assessment\SourceObjectList.cs" />
+    <Compile Include="sdo\Sif3assessment\SourceObjectRefObjEnum.cs" />
+    <Compile Include="sdo\Sif3assessment\StudentSpecialEvent.cs" />
+    <Compile Include="sdo\Sif3assessment\StudentSpecialEventList.cs" />
+    <Compile Include="sdo\Sif3assessment\SubTestIdentifier.cs" />
+    <Compile Include="sdo\Sif3assessment\SubTestIdentifiers.cs" />
+    <Compile Include="sdo\Sif3assessment\TechnicalRequirement.cs" />
+    <Compile Include="sdo\Sif3assessment\TechnicalRequirementList.cs" />
+    <Compile Include="sdo\Sif3assessment\TestingStatus.cs" />
+    <Compile Include="sdo\Sif3assessment\TestingStatusList.cs" />
+    <Compile Include="sdo\Sif3assessment\TraitScore.cs" />
+    <Compile Include="sdo\Sif3assessment\TraitScoreList.cs" />
+    <Compile Include="sdo\Sif3assessment\UnusualEvent.cs" />
+    <Compile Include="sdo\Sif3assessment\UnusualEventActionEnum.cs" />
+    <Compile Include="sdo\Sif3assessment\UnusualEventsList.cs" />
     <Compile Include="sdo\Student\ActivityInfo.cs" />
     <Compile Include="sdo\Student\ActivityInvolvementCodeType.cs" />
     <Compile Include="sdo\Student\ActivityType.cs" />

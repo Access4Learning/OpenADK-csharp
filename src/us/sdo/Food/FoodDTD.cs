@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Food
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -682,362 +682,362 @@ namespace OpenADK.Library.us.Food
 	{
 		//  Objects defined by this SDO Library...
 
-		AGENCIES = new ElementDefImpl( null, "Agencies", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		AGENCY = new ElementDefImpl( null, "Agency", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		COUNT = new ElementDefImpl( null, "Count", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		COUNTS = new ElementDefImpl( null, "Counts", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CUSTOMER = new ElementDefImpl( null, "Customer", "FSCustomerId", 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		AGENCIES = new ElementDefImpl( null, "Agencies", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		AGENCY = new ElementDefImpl( null, "Agency", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		COUNT = new ElementDefImpl( null, "Count", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		COUNTS = new ElementDefImpl( null, "Counts", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CUSTOMER = new ElementDefImpl( null, "Customer", "FSCustomerId", 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		CUSTOMER.DefineVersionInfo(SifVersion.SIF20, "Customer", 0, (0)); // (Sif 20 alias)
-		EARNEDSTATUS = new ElementDefImpl( null, "EarnedStatus", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEITEM = new ElementDefImpl( null, "FoodserviceItem", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEITEMPORTION = new ElementDefImpl( null, "FoodserviceItemPortion", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEITEMSALES = new ElementDefImpl( null, "FoodserviceItemSales", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEITEMUNIT = new ElementDefImpl( null, "FoodserviceItemUnit", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEMEALPRICES = new ElementDefImpl( null, "FoodserviceMealPrices", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEMENUPLAN = new ElementDefImpl( null, "FoodserviceMenuPlan", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICEMILKSALES = new ElementDefImpl( null, "FoodserviceMilkSales", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICEPURCHASETRANSACTION = new ElementDefImpl( null, "FoodservicePurchaseTransaction", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICEREIMBURSEMENTRATES = new ElementDefImpl( null, "FoodserviceReimbursementRates", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICESALES = new ElementDefImpl( null, "FoodserviceSales", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICESTAFFENROLLMENTCOUNT = new ElementDefImpl( null, "FoodserviceStaffEnrollmentCount", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICESTAFFMEALCOUNTS = new ElementDefImpl( null, "FoodserviceStaffMealCounts", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICESTUDENTENROLLMENTCOUNT = new ElementDefImpl( null, "FoodserviceStudentEnrollmentCount", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICESTUDENTMEALCOUNTS = new ElementDefImpl( null, "FoodserviceStudentMealCounts", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICETRANSACTION = new ElementDefImpl( null, "FoodserviceTransaction", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICETRANSACTIONDETAILS = new ElementDefImpl( null, "FoodserviceTransactionDetails", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICETRANSACTIONPAYMETHOD = new ElementDefImpl( null, "FoodserviceTransactionPayMethod", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FSAMOUNT = new ElementDefImpl( null, "FSAmount", "AmountEx", 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		EARNEDSTATUS = new ElementDefImpl( null, "EarnedStatus", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEITEM = new ElementDefImpl( null, "FoodserviceItem", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEITEMPORTION = new ElementDefImpl( null, "FoodserviceItemPortion", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEITEMSALES = new ElementDefImpl( null, "FoodserviceItemSales", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEITEMUNIT = new ElementDefImpl( null, "FoodserviceItemUnit", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEMEALPRICES = new ElementDefImpl( null, "FoodserviceMealPrices", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEMENUPLAN = new ElementDefImpl( null, "FoodserviceMenuPlan", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICEMILKSALES = new ElementDefImpl( null, "FoodserviceMilkSales", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICEPURCHASETRANSACTION = new ElementDefImpl( null, "FoodservicePurchaseTransaction", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICEREIMBURSEMENTRATES = new ElementDefImpl( null, "FoodserviceReimbursementRates", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICESALES = new ElementDefImpl( null, "FoodserviceSales", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICESTAFFENROLLMENTCOUNT = new ElementDefImpl( null, "FoodserviceStaffEnrollmentCount", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICESTAFFMEALCOUNTS = new ElementDefImpl( null, "FoodserviceStaffMealCounts", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICESTUDENTENROLLMENTCOUNT = new ElementDefImpl( null, "FoodserviceStudentEnrollmentCount", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICESTUDENTMEALCOUNTS = new ElementDefImpl( null, "FoodserviceStudentMealCounts", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICETRANSACTION = new ElementDefImpl( null, "FoodserviceTransaction", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICETRANSACTIONDETAILS = new ElementDefImpl( null, "FoodserviceTransactionDetails", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICETRANSACTIONPAYMETHOD = new ElementDefImpl( null, "FoodserviceTransactionPayMethod", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FSAMOUNT = new ElementDefImpl( null, "FSAmount", "AmountEx", 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		FSAMOUNT.DefineVersionInfo(SifVersion.SIF20, "Amount", 0, (0)); // (Sif 20 alias)
-		FSAMOUNTS = new ElementDefImpl( null, "FSAmounts", "Amounts", 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		HISTORICALMEALSTATUS = new ElementDefImpl( null, "HistoricalMealStatus", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ITEMQUANTITIES = new ElementDefImpl( null, "ItemQuantities", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		ITEMQUANTITY = new ElementDefImpl( null, "ItemQuantity", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		MEALSTATUS = new ElementDefImpl( null, "MealStatus", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		MENUPLANQUANTITIES = new ElementDefImpl( null, "MenuPlanQuantities", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MENUPLANQUANTITY = new ElementDefImpl( null, "MenuPlanQuantity", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		PRICE = new ElementDefImpl( null, "Price", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		PRICES = new ElementDefImpl( null, "Prices", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		PURCHASEQUANTITIES = new ElementDefImpl( null, "PurchaseQuantities", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		PURCHASEQUANTITY = new ElementDefImpl( null, "PurchaseQuantity", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		RATE = new ElementDefImpl( null, "Rate", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		RATES = new ElementDefImpl( null, "Rates", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		SALEQUANTITIES = new ElementDefImpl( null, "SaleQuantities", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SALEQUANTITY = new ElementDefImpl( null, "SaleQuantity", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SALESAMOUNT = new ElementDefImpl( null, "SalesAmount", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		SALESAMOUNTS = new ElementDefImpl( null, "SalesAmounts", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		STAFFMEAL = new ElementDefImpl( null, "StaffMeal", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTMEAL = new ElementDefImpl( null, "StudentMeal", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		TRANSACTIONPAYMETHOD = new ElementDefImpl( null, "TransactionPayMethod", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		TRANSACTIONPAYMETHODS = new ElementDefImpl( null, "TransactionPayMethods", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		TRANSACTIONTYPE = new ElementDefImpl( null, "TransactionType", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		TRANSACTIONTYPES = new ElementDefImpl( null, "TransactionTypes", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		FSAMOUNTS = new ElementDefImpl( null, "FSAmounts", "Amounts", 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		HISTORICALMEALSTATUS = new ElementDefImpl( null, "HistoricalMealStatus", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ITEMQUANTITIES = new ElementDefImpl( null, "ItemQuantities", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		ITEMQUANTITY = new ElementDefImpl( null, "ItemQuantity", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		MEALSTATUS = new ElementDefImpl( null, "MealStatus", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		MENUPLANQUANTITIES = new ElementDefImpl( null, "MenuPlanQuantities", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MENUPLANQUANTITY = new ElementDefImpl( null, "MenuPlanQuantity", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		PRICE = new ElementDefImpl( null, "Price", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		PRICES = new ElementDefImpl( null, "Prices", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		PURCHASEQUANTITIES = new ElementDefImpl( null, "PurchaseQuantities", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		PURCHASEQUANTITY = new ElementDefImpl( null, "PurchaseQuantity", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		RATE = new ElementDefImpl( null, "Rate", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		RATES = new ElementDefImpl( null, "Rates", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		SALEQUANTITIES = new ElementDefImpl( null, "SaleQuantities", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SALEQUANTITY = new ElementDefImpl( null, "SaleQuantity", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SALESAMOUNT = new ElementDefImpl( null, "SalesAmount", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		SALESAMOUNTS = new ElementDefImpl( null, "SalesAmounts", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		STAFFMEAL = new ElementDefImpl( null, "StaffMeal", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTMEAL = new ElementDefImpl( null, "StudentMeal", null, 0, SifDtd.FOOD, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		TRANSACTIONPAYMETHOD = new ElementDefImpl( null, "TransactionPayMethod", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		TRANSACTIONPAYMETHODS = new ElementDefImpl( null, "TransactionPayMethods", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		TRANSACTIONTYPE = new ElementDefImpl( null, "TransactionType", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		TRANSACTIONTYPES = new ElementDefImpl( null, "TransactionTypes", null, 0, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 
 
 		// <Agencies> fields (1 entries)
-		FoodDTD.AGENCIES_AGENCY = new ElementDefImpl( AGENCIES, "Agency", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.AGENCIES_AGENCY = new ElementDefImpl( AGENCIES, "Agency", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Agency> fields (3 entries)
-		FoodDTD.AGENCY_TYPE = new ElementDefImpl( AGENCY, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.AGENCY_NAME = new ElementDefImpl( AGENCY, "Name", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.AGENCY_TYPE = new ElementDefImpl( AGENCY, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.AGENCY_NAME = new ElementDefImpl( AGENCY, "Name", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		FoodDTD.AGENCY_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		FoodDTD.AGENCY_RATES = new ElementDefImpl( AGENCY, "Rates", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.AGENCY_RATES = new ElementDefImpl( AGENCY, "Rates", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.AGENCY_RATES.DefineVersionInfo(SifVersion.SIF20, "Rates", 3, 0); // (Sif 20 alias)
 
 		// <Count> fields (6 entries)
-		FoodDTD.COUNT_MEALSTATUS = new ElementDefImpl( COUNT, "MealStatus", null, 1, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FoodDTD.COUNT_EARNEDSTATUS = new ElementDefImpl( COUNT, "EarnedStatus", null, 2, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FoodDTD.COUNT_MEALTYPE = new ElementDefImpl( COUNT, "MealType", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.COUNT_AMOUNT = new ElementDefAlias( COUNT, "Amount", null, "FSAmount", 4, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		FoodDTD.COUNT_TAX = new ElementDefAlias( COUNT, "Tax", null, "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		FoodDTD.COUNT_VALUE = new ElementDefImpl( COUNT, "Value", null, 6, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FoodDTD.COUNT_MEALSTATUS = new ElementDefImpl( COUNT, "MealStatus", null, 1, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FoodDTD.COUNT_EARNEDSTATUS = new ElementDefImpl( COUNT, "EarnedStatus", null, 2, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FoodDTD.COUNT_MEALTYPE = new ElementDefImpl( COUNT, "MealType", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.COUNT_AMOUNT = new ElementDefAlias( COUNT, "Amount", null, "FSAmount", 4, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		FoodDTD.COUNT_TAX = new ElementDefAlias( COUNT, "Tax", null, "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		FoodDTD.COUNT_VALUE = new ElementDefImpl( COUNT, "Value", null, 6, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <Counts> fields (1 entries)
-		FoodDTD.COUNTS_COUNT = new ElementDefImpl( COUNTS, "Count", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.COUNTS_COUNT = new ElementDefImpl( COUNTS, "Count", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FSCustomerId> fields (4 entries)
-		FoodDTD.CUSTOMER_SIF_REFID = new ElementDefImpl( CUSTOMER, "SIF_RefId", "Value", 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.CUSTOMER_SIF_REFID = new ElementDefImpl( CUSTOMER, "SIF_RefId", "Value", 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		FoodDTD.CUSTOMER_SIF_REFID.DefineVersionInfo(SifVersion.SIF20, "SIF_RefId", 1, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		FoodDTD.CUSTOMER_SIF_REFOBJECT = new ElementDefImpl( CUSTOMER, "SIF_RefObject", "Type", 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.CUSTOMER_SIF_REFOBJECT = new ElementDefImpl( CUSTOMER, "SIF_RefObject", "Type", 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		FoodDTD.CUSTOMER_SIF_REFOBJECT.DefineVersionInfo(SifVersion.SIF20, "SIF_RefObject", 2, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		FoodDTD.CUSTOMER_MEALSTATUS = new ElementDefImpl( CUSTOMER, "MealStatus", null, 3, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		FoodDTD.CUSTOMER_EARNEDSTATUS = new ElementDefImpl( CUSTOMER, "EarnedStatus", null, 4, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.CUSTOMER_MEALSTATUS = new ElementDefImpl( CUSTOMER, "MealStatus", null, 3, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		FoodDTD.CUSTOMER_EARNEDSTATUS = new ElementDefImpl( CUSTOMER, "EarnedStatus", null, 4, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <EarnedStatus> fields (3 entries)
-		FoodDTD.EARNEDSTATUS_TYPE = new ElementDefImpl( EARNEDSTATUS, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.EARNEDSTATUS_STARTDATE = new ElementDefImpl( EARNEDSTATUS, "StartDate", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.EARNEDSTATUS_ENDDATE = new ElementDefImpl( EARNEDSTATUS, "EndDate", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		FoodDTD.EARNEDSTATUS_TYPE = new ElementDefImpl( EARNEDSTATUS, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.EARNEDSTATUS_STARTDATE = new ElementDefImpl( EARNEDSTATUS, "StartDate", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.EARNEDSTATUS_ENDDATE = new ElementDefImpl( EARNEDSTATUS, "EndDate", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 
 		// <FoodserviceItem> fields (5 entries)
-		FoodDTD.FOODSERVICEITEM_REFID = new ElementDefImpl( FOODSERVICEITEM, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEM_LOCALID = new ElementDefImpl( FOODSERVICEITEM, "LocalId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEM_DESCRIPTION = new ElementDefImpl( FOODSERVICEITEM, "Description", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEM_ELECTRONICIDLIST = new ElementDefImpl( FOODSERVICEITEM, "ElectronicIdList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICEITEM_REFID = new ElementDefImpl( FOODSERVICEITEM, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEM_LOCALID = new ElementDefImpl( FOODSERVICEITEM, "LocalId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEM_DESCRIPTION = new ElementDefImpl( FOODSERVICEITEM, "Description", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEM_ELECTRONICIDLIST = new ElementDefImpl( FOODSERVICEITEM, "ElectronicIdList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.FOODSERVICEITEM_ELECTRONICIDLIST.DefineVersionInfo(SifVersion.SIF20, "ElectronicIdList", 4, 0); // (Sif 20 alias)
-		FoodDTD.FOODSERVICEITEM_ITEMCATEGORY = new ElementDefImpl( FOODSERVICEITEM, "ItemCategory", null, 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FOODSERVICEITEM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEITEM, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEITEM_SIF_METADATA = new ElementDefImpl( FOODSERVICEITEM, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICEITEM_ITEMCATEGORY = new ElementDefImpl( FOODSERVICEITEM, "ItemCategory", null, 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FOODSERVICEITEM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEITEM, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEITEM_SIF_METADATA = new ElementDefImpl( FOODSERVICEITEM, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceItemPortion> fields (5 entries)
-		FoodDTD.FOODSERVICEITEMPORTION_REFID = new ElementDefImpl( FOODSERVICEITEMPORTION, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEMPORTION_FOODSERVICEITEMUNITREFID = new ElementDefImpl( FOODSERVICEITEMPORTION, "FoodserviceItemUnitRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEMPORTION_ITEMPORTIONQUANTITY = new ElementDefImpl( FOODSERVICEITEMPORTION, "ItemPortionQuantity", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		FoodDTD.FOODSERVICEITEMPORTION_ITEMPORTIONTYPE = new ElementDefImpl( FOODSERVICEITEMPORTION, "ItemPortionType", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEMPORTION_DESCRIPTION = new ElementDefImpl( FOODSERVICEITEMPORTION, "Description", null, 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FOODSERVICEITEMPORTION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEITEMPORTION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEITEMPORTION_SIF_METADATA = new ElementDefImpl( FOODSERVICEITEMPORTION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICEITEMPORTION_REFID = new ElementDefImpl( FOODSERVICEITEMPORTION, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEMPORTION_FOODSERVICEITEMUNITREFID = new ElementDefImpl( FOODSERVICEITEMPORTION, "FoodserviceItemUnitRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEMPORTION_ITEMPORTIONQUANTITY = new ElementDefImpl( FOODSERVICEITEMPORTION, "ItemPortionQuantity", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		FoodDTD.FOODSERVICEITEMPORTION_ITEMPORTIONTYPE = new ElementDefImpl( FOODSERVICEITEMPORTION, "ItemPortionType", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEMPORTION_DESCRIPTION = new ElementDefImpl( FOODSERVICEITEMPORTION, "Description", null, 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FOODSERVICEITEMPORTION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEITEMPORTION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEITEMPORTION_SIF_METADATA = new ElementDefImpl( FOODSERVICEITEMPORTION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceItemSales> fields (5 entries)
-		FoodDTD.FOODSERVICEITEMSALES_REFID = new ElementDefImpl( FOODSERVICEITEMSALES, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEMSALES_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICEITEMSALES, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEMSALES_DATE = new ElementDefImpl( FOODSERVICEITEMSALES, "Date", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICEITEMSALES_PROGRAM = new ElementDefImpl( FOODSERVICEITEMSALES, "Program", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEMSALES_ITEMQUANTITIES = new ElementDefImpl( FOODSERVICEITEMSALES, "ItemQuantities", null, 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICEITEMSALES_REFID = new ElementDefImpl( FOODSERVICEITEMSALES, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEMSALES_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICEITEMSALES, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEMSALES_DATE = new ElementDefImpl( FOODSERVICEITEMSALES, "Date", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICEITEMSALES_PROGRAM = new ElementDefImpl( FOODSERVICEITEMSALES, "Program", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEMSALES_ITEMQUANTITIES = new ElementDefImpl( FOODSERVICEITEMSALES, "ItemQuantities", null, 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.FOODSERVICEITEMSALES_ITEMQUANTITIES.DefineVersionInfo(SifVersion.SIF20, "ItemQuantities", 5, 0); // (Sif 20 alias)
-		FOODSERVICEITEMSALES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEITEMSALES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEITEMSALES_SIF_METADATA = new ElementDefImpl( FOODSERVICEITEMSALES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FOODSERVICEITEMSALES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEITEMSALES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEITEMSALES_SIF_METADATA = new ElementDefImpl( FOODSERVICEITEMSALES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceItemUnit> fields (5 entries)
-		FoodDTD.FOODSERVICEITEMUNIT_REFID = new ElementDefImpl( FOODSERVICEITEMUNIT, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEMUNIT_FOODSERVICEITEMREFID = new ElementDefImpl( FOODSERVICEITEMUNIT, "FoodserviceItemRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEMUNIT_DESCRIPTION = new ElementDefImpl( FOODSERVICEITEMUNIT, "Description", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEMUNIT_REFID = new ElementDefImpl( FOODSERVICEITEMUNIT, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEMUNIT_FOODSERVICEITEMREFID = new ElementDefImpl( FOODSERVICEITEMUNIT, "FoodserviceItemRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEMUNIT_DESCRIPTION = new ElementDefImpl( FOODSERVICEITEMUNIT, "Description", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		FoodDTD.FOODSERVICEITEMUNIT_DESCRIPTION.DefineVersionInfo(SifVersion.SIF20, "Description", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		FoodDTD.FOODSERVICEITEMUNIT_MEASUREDESCRIPTIONCODE = new ElementDefImpl( FOODSERVICEITEMUNIT, "MeasureDescriptionCode", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEITEMUNIT_GRAMWEIGHT = new ElementDefImpl( FOODSERVICEITEMUNIT, "GramWeight", null, 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		FOODSERVICEITEMUNIT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEITEMUNIT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEITEMUNIT_SIF_METADATA = new ElementDefImpl( FOODSERVICEITEMUNIT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICEITEMUNIT_MEASUREDESCRIPTIONCODE = new ElementDefImpl( FOODSERVICEITEMUNIT, "MeasureDescriptionCode", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEITEMUNIT_GRAMWEIGHT = new ElementDefImpl( FOODSERVICEITEMUNIT, "GramWeight", null, 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		FOODSERVICEITEMUNIT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEITEMUNIT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEITEMUNIT_SIF_METADATA = new ElementDefImpl( FOODSERVICEITEMUNIT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceMealPrices> fields (4 entries)
-		FoodDTD.FOODSERVICEMEALPRICES_REFID = new ElementDefImpl( FOODSERVICEMEALPRICES, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMEALPRICES_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICEMEALPRICES, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMEALPRICES_PROGRAM = new ElementDefImpl( FOODSERVICEMEALPRICES, "Program", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMEALPRICES_PRICES = new ElementDefImpl( FOODSERVICEMEALPRICES, "Prices", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICEMEALPRICES_REFID = new ElementDefImpl( FOODSERVICEMEALPRICES, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMEALPRICES_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICEMEALPRICES, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMEALPRICES_PROGRAM = new ElementDefImpl( FOODSERVICEMEALPRICES, "Program", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMEALPRICES_PRICES = new ElementDefImpl( FOODSERVICEMEALPRICES, "Prices", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.FOODSERVICEMEALPRICES_PRICES.DefineVersionInfo(SifVersion.SIF20, "Prices", 4, 0); // (Sif 20 alias)
-		FOODSERVICEMEALPRICES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEMEALPRICES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEMEALPRICES_SIF_METADATA = new ElementDefImpl( FOODSERVICEMEALPRICES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FOODSERVICEMEALPRICES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEMEALPRICES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEMEALPRICES_SIF_METADATA = new ElementDefImpl( FOODSERVICEMEALPRICES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceMenuPlan> fields (8 entries)
-		FoodDTD.FOODSERVICEMENUPLAN_REFID = new ElementDefImpl( FOODSERVICEMENUPLAN, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMENUPLAN_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICEMENUPLAN, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMENUPLAN_GRADELEVELS = new ElementDefImpl( FOODSERVICEMENUPLAN, "GradeLevels", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FoodDTD.FOODSERVICEMENUPLAN_MENUPLANDATE = new ElementDefImpl( FOODSERVICEMENUPLAN, "MenuPlanDate", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICEMENUPLAN_PROGRAM = new ElementDefImpl( FOODSERVICEMENUPLAN, "Program", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMENUPLAN_DESCRIPTION = new ElementDefImpl( FOODSERVICEMENUPLAN, "Description", null, 6, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMENUPLAN_PROJECTEDPARTICIPATION = new ElementDefImpl( FOODSERVICEMENUPLAN, "ProjectedParticipation", null, 7, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMENUPLAN_MENUPLANQUANTITIES = new ElementDefImpl( FOODSERVICEMENUPLAN, "MenuPlanQuantities", null, 8, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICEMENUPLAN_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEMENUPLAN, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEMENUPLAN_SIF_METADATA = new ElementDefImpl( FOODSERVICEMENUPLAN, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICEMENUPLAN_REFID = new ElementDefImpl( FOODSERVICEMENUPLAN, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMENUPLAN_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICEMENUPLAN, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMENUPLAN_GRADELEVELS = new ElementDefImpl( FOODSERVICEMENUPLAN, "GradeLevels", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FoodDTD.FOODSERVICEMENUPLAN_MENUPLANDATE = new ElementDefImpl( FOODSERVICEMENUPLAN, "MenuPlanDate", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICEMENUPLAN_PROGRAM = new ElementDefImpl( FOODSERVICEMENUPLAN, "Program", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMENUPLAN_DESCRIPTION = new ElementDefImpl( FOODSERVICEMENUPLAN, "Description", null, 6, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMENUPLAN_PROJECTEDPARTICIPATION = new ElementDefImpl( FOODSERVICEMENUPLAN, "ProjectedParticipation", null, 7, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMENUPLAN_MENUPLANQUANTITIES = new ElementDefImpl( FOODSERVICEMENUPLAN, "MenuPlanQuantities", null, 8, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICEMENUPLAN_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEMENUPLAN, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEMENUPLAN_SIF_METADATA = new ElementDefImpl( FOODSERVICEMENUPLAN, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceMilkSales> fields (5 entries)
-		FoodDTD.FOODSERVICEMILKSALES_REFID = new ElementDefImpl( FOODSERVICEMILKSALES, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMILKSALES_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICEMILKSALES, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMILKSALES_DATE = new ElementDefImpl( FOODSERVICEMILKSALES, "Date", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICEMILKSALES_PROGRAM = new ElementDefImpl( FOODSERVICEMILKSALES, "Program", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEMILKSALES_SALEQUANTITIES = new ElementDefImpl( FOODSERVICEMILKSALES, "SaleQuantities", null, 5, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICEMILKSALES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEMILKSALES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEMILKSALES_SIF_METADATA = new ElementDefImpl( FOODSERVICEMILKSALES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICEMILKSALES_REFID = new ElementDefImpl( FOODSERVICEMILKSALES, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMILKSALES_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICEMILKSALES, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMILKSALES_DATE = new ElementDefImpl( FOODSERVICEMILKSALES, "Date", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICEMILKSALES_PROGRAM = new ElementDefImpl( FOODSERVICEMILKSALES, "Program", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEMILKSALES_SALEQUANTITIES = new ElementDefImpl( FOODSERVICEMILKSALES, "SaleQuantities", null, 5, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICEMILKSALES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEMILKSALES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEMILKSALES_SIF_METADATA = new ElementDefImpl( FOODSERVICEMILKSALES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodservicePurchaseTransaction> fields (3 entries)
-		FoodDTD.FOODSERVICEPURCHASETRANSACTION_REFID = new ElementDefImpl( FOODSERVICEPURCHASETRANSACTION, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEPURCHASETRANSACTION_FOODSERVICETRANSACTIONREFID = new ElementDefImpl( FOODSERVICEPURCHASETRANSACTION, "FoodserviceTransactionRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEPURCHASETRANSACTION_PURCHASEQUANTITIES = new ElementDefImpl( FOODSERVICEPURCHASETRANSACTION, "PurchaseQuantities", null, 3, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICEPURCHASETRANSACTION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEPURCHASETRANSACTION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEPURCHASETRANSACTION_SIF_METADATA = new ElementDefImpl( FOODSERVICEPURCHASETRANSACTION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICEPURCHASETRANSACTION_REFID = new ElementDefImpl( FOODSERVICEPURCHASETRANSACTION, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEPURCHASETRANSACTION_FOODSERVICETRANSACTIONREFID = new ElementDefImpl( FOODSERVICEPURCHASETRANSACTION, "FoodserviceTransactionRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEPURCHASETRANSACTION_PURCHASEQUANTITIES = new ElementDefImpl( FOODSERVICEPURCHASETRANSACTION, "PurchaseQuantities", null, 3, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICEPURCHASETRANSACTION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEPURCHASETRANSACTION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEPURCHASETRANSACTION_SIF_METADATA = new ElementDefImpl( FOODSERVICEPURCHASETRANSACTION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceReimbursementRates> fields (6 entries)
-		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_REFID = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_STARTDATE = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "StartDate", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_ENDDATE = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "EndDate", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_PROGRAM = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "Program", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_AGENCIES = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "Agencies", null, 6, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEREIMBURSEMENTRATES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICEREIMBURSEMENTRATES_SIF_METADATA = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_REFID = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_STARTDATE = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "StartDate", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_ENDDATE = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "EndDate", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_PROGRAM = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "Program", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICEREIMBURSEMENTRATES_AGENCIES = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "Agencies", null, 6, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEREIMBURSEMENTRATES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICEREIMBURSEMENTRATES_SIF_METADATA = new ElementDefImpl( FOODSERVICEREIMBURSEMENTRATES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceSales> fields (5 entries)
-		FoodDTD.FOODSERVICESALES_REFID = new ElementDefImpl( FOODSERVICESALES, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESALES_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICESALES, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESALES_DATE = new ElementDefImpl( FOODSERVICESALES, "Date", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICESALES_PROGRAM = new ElementDefImpl( FOODSERVICESALES, "Program", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESALES_SALESAMOUNTS = new ElementDefImpl( FOODSERVICESALES, "SalesAmounts", null, 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICESALES_REFID = new ElementDefImpl( FOODSERVICESALES, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESALES_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICESALES, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESALES_DATE = new ElementDefImpl( FOODSERVICESALES, "Date", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICESALES_PROGRAM = new ElementDefImpl( FOODSERVICESALES, "Program", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESALES_SALESAMOUNTS = new ElementDefImpl( FOODSERVICESALES, "SalesAmounts", null, 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.FOODSERVICESALES_SALESAMOUNTS.DefineVersionInfo(SifVersion.SIF20, "SalesAmounts", 5, 0); // (Sif 20 alias)
-		FOODSERVICESALES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICESALES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICESALES_SIF_METADATA = new ElementDefImpl( FOODSERVICESALES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FOODSERVICESALES_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICESALES, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICESALES_SIF_METADATA = new ElementDefImpl( FOODSERVICESALES, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceStaffEnrollmentCount> fields (4 entries)
-		FoodDTD.FOODSERVICESTAFFENROLLMENTCOUNT_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "SchoolInfoRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESTAFFENROLLMENTCOUNT_DATE = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "Date", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICESTAFFENROLLMENTCOUNT_PROGRAM = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "Program", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESTAFFENROLLMENTCOUNT_COUNTS = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "Counts", null, 4, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICESTAFFENROLLMENTCOUNT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICESTAFFENROLLMENTCOUNT_SIF_METADATA = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICESTAFFENROLLMENTCOUNT_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "SchoolInfoRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESTAFFENROLLMENTCOUNT_DATE = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "Date", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICESTAFFENROLLMENTCOUNT_PROGRAM = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "Program", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESTAFFENROLLMENTCOUNT_COUNTS = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "Counts", null, 4, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICESTAFFENROLLMENTCOUNT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICESTAFFENROLLMENTCOUNT_SIF_METADATA = new ElementDefImpl( FOODSERVICESTAFFENROLLMENTCOUNT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceStaffMealCounts> fields (5 entries)
-		FoodDTD.FOODSERVICESTAFFMEALCOUNTS_REFID = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESTAFFMEALCOUNTS_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESTAFFMEALCOUNTS_DATE = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "Date", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICESTAFFMEALCOUNTS_PROGRAM = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "Program", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESTAFFMEALCOUNTS_COUNTS = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "Counts", null, 5, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICESTAFFMEALCOUNTS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICESTAFFMEALCOUNTS_SIF_METADATA = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICESTAFFMEALCOUNTS_REFID = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESTAFFMEALCOUNTS_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESTAFFMEALCOUNTS_DATE = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "Date", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICESTAFFMEALCOUNTS_PROGRAM = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "Program", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESTAFFMEALCOUNTS_COUNTS = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "Counts", null, 5, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICESTAFFMEALCOUNTS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICESTAFFMEALCOUNTS_SIF_METADATA = new ElementDefImpl( FOODSERVICESTAFFMEALCOUNTS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceStudentEnrollmentCount> fields (4 entries)
-		FoodDTD.FOODSERVICESTUDENTENROLLMENTCOUNT_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "SchoolInfoRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESTUDENTENROLLMENTCOUNT_DATE = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "Date", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICESTUDENTENROLLMENTCOUNT_PROGRAM = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "Program", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESTUDENTENROLLMENTCOUNT_COUNTS = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "Counts", null, 4, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICESTUDENTENROLLMENTCOUNT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICESTUDENTENROLLMENTCOUNT_SIF_METADATA = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICESTUDENTENROLLMENTCOUNT_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "SchoolInfoRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESTUDENTENROLLMENTCOUNT_DATE = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "Date", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICESTUDENTENROLLMENTCOUNT_PROGRAM = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "Program", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESTUDENTENROLLMENTCOUNT_COUNTS = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "Counts", null, 4, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICESTUDENTENROLLMENTCOUNT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICESTUDENTENROLLMENTCOUNT_SIF_METADATA = new ElementDefImpl( FOODSERVICESTUDENTENROLLMENTCOUNT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceStudentMealCounts> fields (5 entries)
-		FoodDTD.FOODSERVICESTUDENTMEALCOUNTS_REFID = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESTUDENTMEALCOUNTS_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESTUDENTMEALCOUNTS_DATE = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "Date", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICESTUDENTMEALCOUNTS_PROGRAM = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "Program", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICESTUDENTMEALCOUNTS_COUNTS = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "Counts", null, 5, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FOODSERVICESTUDENTMEALCOUNTS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICESTUDENTMEALCOUNTS_SIF_METADATA = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICESTUDENTMEALCOUNTS_REFID = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESTUDENTMEALCOUNTS_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESTUDENTMEALCOUNTS_DATE = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "Date", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICESTUDENTMEALCOUNTS_PROGRAM = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "Program", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICESTUDENTMEALCOUNTS_COUNTS = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "Counts", null, 5, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FOODSERVICESTUDENTMEALCOUNTS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICESTUDENTMEALCOUNTS_SIF_METADATA = new ElementDefImpl( FOODSERVICESTUDENTMEALCOUNTS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceTransaction> fields (12 entries)
-		FoodDTD.FOODSERVICETRANSACTION_REFID = new ElementDefImpl( FOODSERVICETRANSACTION, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICETRANSACTION_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICETRANSACTION, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICETRANSACTION_PROGRAM = new ElementDefImpl( FOODSERVICETRANSACTION, "Program", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICETRANSACTION_TRANSACTIONDATE = new ElementDefImpl( FOODSERVICETRANSACTION, "TransactionDate", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.FOODSERVICETRANSACTION_TRANSACTIONTIME = new ElementDefImpl( FOODSERVICETRANSACTION, "TransactionTime", "~SIFTimeSurrogate{}", 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.TIME );
+		FoodDTD.FOODSERVICETRANSACTION_REFID = new ElementDefImpl( FOODSERVICETRANSACTION, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICETRANSACTION_SCHOOLINFOREFID = new ElementDefImpl( FOODSERVICETRANSACTION, "SchoolInfoRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICETRANSACTION_PROGRAM = new ElementDefImpl( FOODSERVICETRANSACTION, "Program", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICETRANSACTION_TRANSACTIONDATE = new ElementDefImpl( FOODSERVICETRANSACTION, "TransactionDate", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.FOODSERVICETRANSACTION_TRANSACTIONTIME = new ElementDefImpl( FOODSERVICETRANSACTION, "TransactionTime", "~SIFTimeSurrogate{}", 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.TIME );
 		FoodDTD.FOODSERVICETRANSACTION_TRANSACTIONTIME.DefineVersionInfo(SifVersion.SIF20, "TransactionTime", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		FoodDTD.FOODSERVICETRANSACTION_TRANSACTIONTYPES = new ElementDefImpl( FOODSERVICETRANSACTION, "TransactionTypes", null, 6, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICETRANSACTION_TRANSACTIONTYPES = new ElementDefImpl( FOODSERVICETRANSACTION, "TransactionTypes", null, 6, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.FOODSERVICETRANSACTION_TRANSACTIONTYPES.DefineVersionInfo(SifVersion.SIF20, "TransactionTypes", 6, 0); // (Sif 20 alias)
-		FoodDTD.FOODSERVICETRANSACTION_CUSTOMER = new ElementDefImpl( FOODSERVICETRANSACTION, "Customer", "FSCustomerId", 7, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICETRANSACTION_CUSTOMER = new ElementDefImpl( FOODSERVICETRANSACTION, "Customer", "FSCustomerId", 7, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.FOODSERVICETRANSACTION_CUSTOMER.DefineVersionInfo(SifVersion.SIF20, "Customer", 7, 0); // (Sif 20 alias)
 		FoodDTD.FOODSERVICETRANSACTION_FSAMOUNT = new ElementDefImpl( FOODSERVICETRANSACTION, "FSAmount", "AmountEx", 8, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.DECIMAL );
-		FoodDTD.FOODSERVICETRANSACTION_AMOUNT = new ElementDefAlias( FOODSERVICETRANSACTION, "Amount", null, "FSAmount", 8, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		FoodDTD.FOODSERVICETRANSACTION_TAX = new ElementDefAlias( FOODSERVICETRANSACTION, "Tax", null, "MonetaryAmount", 9, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		FoodDTD.FOODSERVICETRANSACTION_DESCRIPTION = new ElementDefImpl( FOODSERVICETRANSACTION, "Description", null, 10, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICETRANSACTION_VOIDED = new ElementDefImpl( FOODSERVICETRANSACTION, "Voided", null, 11, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FOODSERVICETRANSACTION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICETRANSACTION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICETRANSACTION_SIF_METADATA = new ElementDefImpl( FOODSERVICETRANSACTION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICETRANSACTION_AMOUNT = new ElementDefAlias( FOODSERVICETRANSACTION, "Amount", null, "FSAmount", 8, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		FoodDTD.FOODSERVICETRANSACTION_TAX = new ElementDefAlias( FOODSERVICETRANSACTION, "Tax", null, "MonetaryAmount", 9, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		FoodDTD.FOODSERVICETRANSACTION_DESCRIPTION = new ElementDefImpl( FOODSERVICETRANSACTION, "Description", null, 10, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICETRANSACTION_VOIDED = new ElementDefImpl( FOODSERVICETRANSACTION, "Voided", null, 11, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FOODSERVICETRANSACTION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICETRANSACTION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICETRANSACTION_SIF_METADATA = new ElementDefImpl( FOODSERVICETRANSACTION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceTransactionDetails> fields (4 entries)
-		FoodDTD.FOODSERVICETRANSACTIONDETAILS_REFID = new ElementDefImpl( FOODSERVICETRANSACTIONDETAILS, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICETRANSACTIONDETAILS_FOODSERVICETRANSACTIONREFID = new ElementDefImpl( FOODSERVICETRANSACTIONDETAILS, "FoodserviceTransactionRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICETRANSACTIONDETAILS_AMOUNTS = new ElementDefAlias( FOODSERVICETRANSACTIONDETAILS, "Amounts", null, "FSAmounts", 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICETRANSACTIONDETAILS_REFID = new ElementDefImpl( FOODSERVICETRANSACTIONDETAILS, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICETRANSACTIONDETAILS_FOODSERVICETRANSACTIONREFID = new ElementDefImpl( FOODSERVICETRANSACTIONDETAILS, "FoodserviceTransactionRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICETRANSACTIONDETAILS_AMOUNTS = new ElementDefAlias( FOODSERVICETRANSACTIONDETAILS, "Amounts", null, "FSAmounts", 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.FOODSERVICETRANSACTIONDETAILS_AMOUNTS.DefineVersionInfo(SifVersion.SIF20, "Amounts", 3, 0); // (Sif 20 alias)
-		FoodDTD.FOODSERVICETRANSACTIONDETAILS_DESCRIPTION = new ElementDefImpl( FOODSERVICETRANSACTIONDETAILS, "Description", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FOODSERVICETRANSACTIONDETAILS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICETRANSACTIONDETAILS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICETRANSACTIONDETAILS_SIF_METADATA = new ElementDefImpl( FOODSERVICETRANSACTIONDETAILS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICETRANSACTIONDETAILS_DESCRIPTION = new ElementDefImpl( FOODSERVICETRANSACTIONDETAILS, "Description", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FOODSERVICETRANSACTIONDETAILS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICETRANSACTIONDETAILS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICETRANSACTIONDETAILS_SIF_METADATA = new ElementDefImpl( FOODSERVICETRANSACTIONDETAILS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FoodserviceTransactionPayMethod> fields (3 entries)
-		FoodDTD.FOODSERVICETRANSACTIONPAYMETHOD_REFID = new ElementDefImpl( FOODSERVICETRANSACTIONPAYMETHOD, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICETRANSACTIONPAYMETHOD_FOODSERVICETRANSACTIONREFID = new ElementDefImpl( FOODSERVICETRANSACTIONPAYMETHOD, "FoodserviceTransactionRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FOODSERVICETRANSACTIONPAYMETHOD_TRANSACTIONPAYMETHODS = new ElementDefImpl( FOODSERVICETRANSACTIONPAYMETHOD, "TransactionPayMethods", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.FOODSERVICETRANSACTIONPAYMETHOD_REFID = new ElementDefImpl( FOODSERVICETRANSACTIONPAYMETHOD, "RefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICETRANSACTIONPAYMETHOD_FOODSERVICETRANSACTIONREFID = new ElementDefImpl( FOODSERVICETRANSACTIONPAYMETHOD, "FoodserviceTransactionRefId", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FOODSERVICETRANSACTIONPAYMETHOD_TRANSACTIONPAYMETHODS = new ElementDefImpl( FOODSERVICETRANSACTIONPAYMETHOD, "TransactionPayMethods", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.FOODSERVICETRANSACTIONPAYMETHOD_TRANSACTIONPAYMETHODS.DefineVersionInfo(SifVersion.SIF20, "TransactionPayMethods", 3, 0); // (Sif 20 alias)
-		FOODSERVICETRANSACTIONPAYMETHOD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICETRANSACTIONPAYMETHOD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FOODSERVICETRANSACTIONPAYMETHOD_SIF_METADATA = new ElementDefImpl( FOODSERVICETRANSACTIONPAYMETHOD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FOODSERVICETRANSACTIONPAYMETHOD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FOODSERVICETRANSACTIONPAYMETHOD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FOODSERVICETRANSACTIONPAYMETHOD_SIF_METADATA = new ElementDefImpl( FOODSERVICETRANSACTIONPAYMETHOD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AmountEx> fields (3 entries)
-		FoodDTD.FSAMOUNT_TYPE = new ElementDefImpl( FSAMOUNT, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.FSAMOUNT_CREDITS = new ElementDefImpl( FSAMOUNT, "Credits", "Quantity", 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FoodDTD.FSAMOUNT_TYPE = new ElementDefImpl( FSAMOUNT, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.FSAMOUNT_CREDITS = new ElementDefImpl( FSAMOUNT, "Credits", "Quantity", 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		FoodDTD.FSAMOUNT_CREDITS.DefineVersionInfo(SifVersion.SIF20, "Credits", 2, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		FoodDTD.FSAMOUNT_CURRENCY = new ElementDefImpl( FSAMOUNT, "Currency", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.FSAMOUNT_CURRENCY = new ElementDefImpl( FSAMOUNT, "Currency", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Amounts> fields (1 entries)
-		FoodDTD.FSAMOUNTS_AMOUNT = new ElementDefAlias( FSAMOUNTS, "Amount", "AmountEx", "FSAmount", 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FoodDTD.FSAMOUNTS_AMOUNT = new ElementDefAlias( FSAMOUNTS, "Amount", "AmountEx", "FSAmount", 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		FoodDTD.FSAMOUNTS_AMOUNT.DefineVersionInfo(SifVersion.SIF20, "Amount", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <HistoricalMealStatus> fields (1 entries)
-		FoodDTD.HISTORICALMEALSTATUS_MEALSTATUS = new ElementDefImpl( HISTORICALMEALSTATUS, "MealStatus", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.HISTORICALMEALSTATUS_MEALSTATUS = new ElementDefImpl( HISTORICALMEALSTATUS, "MealStatus", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ItemQuantities> fields (1 entries)
-		FoodDTD.ITEMQUANTITIES_ITEMQUANTITY = new ElementDefImpl( ITEMQUANTITIES, "ItemQuantity", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.ITEMQUANTITIES_ITEMQUANTITY = new ElementDefImpl( ITEMQUANTITIES, "ItemQuantity", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <ItemQuantity> fields (5 entries)
-		FoodDTD.ITEMQUANTITY_FOODSERVICEITEMPORTIONREFID = new ElementDefImpl( ITEMQUANTITY, "FoodserviceItemPortionRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.ITEMQUANTITY_VALUE = new ElementDefImpl( ITEMQUANTITY, "Value", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FoodDTD.ITEMQUANTITY_FOODSERVICEITEMPORTIONREFID = new ElementDefImpl( ITEMQUANTITY, "FoodserviceItemPortionRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.ITEMQUANTITY_VALUE = new ElementDefImpl( ITEMQUANTITY, "Value", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		FoodDTD.ITEMQUANTITY_VALUE.DefineVersionInfo(SifVersion.SIF20, "Value", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		FoodDTD.ITEMQUANTITY_MEALTYPE = new ElementDefImpl( ITEMQUANTITY, "MealType", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.ITEMQUANTITY_GRADELEVELS = new ElementDefImpl( ITEMQUANTITY, "GradeLevels", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		FoodDTD.ITEMQUANTITY_COST = new ElementDefAlias( ITEMQUANTITY, "Cost", null, "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FoodDTD.ITEMQUANTITY_MEALTYPE = new ElementDefImpl( ITEMQUANTITY, "MealType", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.ITEMQUANTITY_GRADELEVELS = new ElementDefImpl( ITEMQUANTITY, "GradeLevels", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		FoodDTD.ITEMQUANTITY_COST = new ElementDefAlias( ITEMQUANTITY, "Cost", null, "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <MealStatus> fields (4 entries)
-		FoodDTD.MEALSTATUS_TYPE = new ElementDefImpl( MEALSTATUS, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.MEALSTATUS_STARTDATE = new ElementDefImpl( MEALSTATUS, "StartDate", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.MEALSTATUS_ENDDATE = new ElementDefImpl( MEALSTATUS, "EndDate", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.MEALSTATUS_SCHOOLYEAR = new ElementDefImpl( MEALSTATUS, "SchoolYear", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
+		FoodDTD.MEALSTATUS_TYPE = new ElementDefImpl( MEALSTATUS, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.MEALSTATUS_STARTDATE = new ElementDefImpl( MEALSTATUS, "StartDate", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.MEALSTATUS_ENDDATE = new ElementDefImpl( MEALSTATUS, "EndDate", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.MEALSTATUS_SCHOOLYEAR = new ElementDefImpl( MEALSTATUS, "SchoolYear", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
 
 		// <MenuPlanQuantities> fields (1 entries)
-		FoodDTD.MENUPLANQUANTITIES_MENUPLANQUANTITY = new ElementDefImpl( MENUPLANQUANTITIES, "MenuPlanQuantity", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.MENUPLANQUANTITIES_MENUPLANQUANTITY = new ElementDefImpl( MENUPLANQUANTITIES, "MenuPlanQuantity", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MenuPlanQuantity> fields (2 entries)
-		FoodDTD.MENUPLANQUANTITY_FOODSERVICEITEMPORTIONREFID = new ElementDefImpl( MENUPLANQUANTITY, "FoodserviceItemPortionRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.MENUPLANQUANTITY_MENUCATEGORY = new ElementDefImpl( MENUPLANQUANTITY, "MenuCategory", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.MENUPLANQUANTITY_FOODSERVICEITEMPORTIONREFID = new ElementDefImpl( MENUPLANQUANTITY, "FoodserviceItemPortionRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.MENUPLANQUANTITY_MENUCATEGORY = new ElementDefImpl( MENUPLANQUANTITY, "MenuCategory", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Price> fields (4 entries)
-		FoodDTD.PRICE_VALUE = new ElementDefImpl( PRICE, "Value", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FoodDTD.PRICE_VALUE = new ElementDefImpl( PRICE, "Value", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		FoodDTD.PRICE_VALUE.DefineVersionInfo(SifVersion.SIF20, "Value", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		FoodDTD.PRICE_MEALSTATUS = new ElementDefImpl( PRICE, "MealStatus", null, 2, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.PRICE_MEALSTATUS = new ElementDefImpl( PRICE, "MealStatus", null, 2, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.PRICE_MEALSTATUS.DefineVersionInfo(SifVersion.SIF20, "MealStatus", 2, 0); // (Sif 20 alias)
-		FoodDTD.PRICE_MEALTYPE = new ElementDefImpl( PRICE, "MealType", "~XPathSurrogate{MealType/@Type=.}", 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.PRICE_MEALTYPE = new ElementDefImpl( PRICE, "MealType", "~XPathSurrogate{MealType/@Type=.}", 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		FoodDTD.PRICE_MEALTYPE.DefineVersionInfo(SifVersion.SIF20, "MealType", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		FoodDTD.PRICE_GRADELEVELS = new ElementDefImpl( PRICE, "GradeLevels", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.PRICE_GRADELEVELS = new ElementDefImpl( PRICE, "GradeLevels", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.PRICE_GRADELEVELS.DefineVersionInfo(SifVersion.SIF20, "GradeLevels", 4, 0); // (Sif 20 alias)
 
 		// <Prices> fields (1 entries)
-		FoodDTD.PRICES_PRICE = new ElementDefImpl( PRICES, "Price", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.PRICES_PRICE = new ElementDefImpl( PRICES, "Price", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <PurchaseQuantities> fields (1 entries)
-		FoodDTD.PURCHASEQUANTITIES_PURCHASEQUANTITY = new ElementDefImpl( PURCHASEQUANTITIES, "PurchaseQuantity", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.PURCHASEQUANTITIES_PURCHASEQUANTITY = new ElementDefImpl( PURCHASEQUANTITIES, "PurchaseQuantity", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <PurchaseQuantity> fields (4 entries)
-		FoodDTD.PURCHASEQUANTITY_FOODSERVICEITEMPORTIONREFID = new ElementDefImpl( PURCHASEQUANTITY, "FoodserviceItemPortionRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.PURCHASEQUANTITY_EARNED = new ElementDefImpl( PURCHASEQUANTITY, "Earned", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.PURCHASEQUANTITY_MEALTYPE = new ElementDefImpl( PURCHASEQUANTITY, "MealType", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.PURCHASEQUANTITY_VALUE = new ElementDefImpl( PURCHASEQUANTITY, "Value", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FoodDTD.PURCHASEQUANTITY_FOODSERVICEITEMPORTIONREFID = new ElementDefImpl( PURCHASEQUANTITY, "FoodserviceItemPortionRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.PURCHASEQUANTITY_EARNED = new ElementDefImpl( PURCHASEQUANTITY, "Earned", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.PURCHASEQUANTITY_MEALTYPE = new ElementDefImpl( PURCHASEQUANTITY, "MealType", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.PURCHASEQUANTITY_VALUE = new ElementDefImpl( PURCHASEQUANTITY, "Value", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <Rate> fields (3 entries)
-		FoodDTD.RATE_SEVERENEED = new ElementDefImpl( RATE, "SevereNeed", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.RATE_VALUE = new ElementDefImpl( RATE, "Value", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.RATE_SEVERENEED = new ElementDefImpl( RATE, "SevereNeed", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.RATE_VALUE = new ElementDefImpl( RATE, "Value", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		FoodDTD.RATE_VALUE.DefineVersionInfo(SifVersion.SIF20, "Value", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		FoodDTD.RATE_MEALSTATUS = new ElementDefImpl( RATE, "MealStatus", null, 3, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.RATE_MEALSTATUS = new ElementDefImpl( RATE, "MealStatus", null, 3, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.RATE_MEALSTATUS.DefineVersionInfo(SifVersion.SIF20, "MealStatus", 3, 0); // (Sif 20 alias)
 
 		// <Rates> fields (1 entries)
-		FoodDTD.RATES_RATE = new ElementDefImpl( RATES, "Rate", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.RATES_RATE = new ElementDefImpl( RATES, "Rate", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <SaleQuantities> fields (1 entries)
-		FoodDTD.SALEQUANTITIES_SALEQUANTITY = new ElementDefImpl( SALEQUANTITIES, "SaleQuantity", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		FoodDTD.SALEQUANTITIES_SALEQUANTITY = new ElementDefImpl( SALEQUANTITIES, "SaleQuantity", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SaleQuantity> fields (4 entries)
-		FoodDTD.SALEQUANTITY_VALUE = new ElementDefImpl( SALEQUANTITY, "Value", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		FoodDTD.SALEQUANTITY_MEALSTATUS = new ElementDefImpl( SALEQUANTITY, "MealStatus", null, 2, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FoodDTD.SALEQUANTITY_SALEUNIT = new ElementDefImpl( SALEQUANTITY, "SaleUnit", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.SALEQUANTITY_CHARGETOCHILD = new ElementDefAlias( SALEQUANTITY, "ChargeToChild", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FoodDTD.SALEQUANTITY_VALUE = new ElementDefImpl( SALEQUANTITY, "Value", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		FoodDTD.SALEQUANTITY_MEALSTATUS = new ElementDefImpl( SALEQUANTITY, "MealStatus", null, 2, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FoodDTD.SALEQUANTITY_SALEUNIT = new ElementDefImpl( SALEQUANTITY, "SaleUnit", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.SALEQUANTITY_CHARGETOCHILD = new ElementDefAlias( SALEQUANTITY, "ChargeToChild", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <SalesAmount> fields (3 entries)
-		FoodDTD.SALESAMOUNT_TYPE = new ElementDefImpl( SALESAMOUNT, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.SALESAMOUNT_ACCOUNTTYPE = new ElementDefImpl( SALESAMOUNT, "AccountType", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.SALESAMOUNT_CURRENCY = new ElementDefImpl( SALESAMOUNT, "Currency", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.SALESAMOUNT_TYPE = new ElementDefImpl( SALESAMOUNT, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.SALESAMOUNT_ACCOUNTTYPE = new ElementDefImpl( SALESAMOUNT, "AccountType", null, 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.SALESAMOUNT_CURRENCY = new ElementDefImpl( SALESAMOUNT, "Currency", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SalesAmounts> fields (1 entries)
-		FoodDTD.SALESAMOUNTS_SALESAMOUNT = new ElementDefImpl( SALESAMOUNTS, "SalesAmount", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FoodDTD.SALESAMOUNTS_SALESAMOUNT = new ElementDefImpl( SALESAMOUNTS, "SalesAmount", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <StaffMeal> fields (5 entries)
-		FoodDTD.STAFFMEAL_STAFFPERSONALREFID = new ElementDefImpl( STAFFMEAL, "StaffPersonalRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.STAFFMEAL_EARNEDSTATUS = new ElementDefImpl( STAFFMEAL, "EarnedStatus", null, 2, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		FoodDTD.STAFFMEAL_LASTBREAKFASTDATE = new ElementDefImpl( STAFFMEAL, "LastBreakfastDate", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.STAFFMEAL_LASTLUNCHDATE = new ElementDefImpl( STAFFMEAL, "LastLunchDate", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		FoodDTD.STAFFMEAL_AMOUNTS = new ElementDefAlias( STAFFMEAL, "Amounts", null, "FSAmounts", 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.STAFFMEAL_STAFFPERSONALREFID = new ElementDefImpl( STAFFMEAL, "StaffPersonalRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.STAFFMEAL_EARNEDSTATUS = new ElementDefImpl( STAFFMEAL, "EarnedStatus", null, 2, SifDtd.FOOD, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		FoodDTD.STAFFMEAL_LASTBREAKFASTDATE = new ElementDefImpl( STAFFMEAL, "LastBreakfastDate", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.STAFFMEAL_LASTLUNCHDATE = new ElementDefImpl( STAFFMEAL, "LastLunchDate", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		FoodDTD.STAFFMEAL_AMOUNTS = new ElementDefAlias( STAFFMEAL, "Amounts", null, "FSAmounts", 5, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.STAFFMEAL_AMOUNTS.DefineVersionInfo(SifVersion.SIF20, "Amounts", 5, 0); // (Sif 20 alias)
-		STAFFMEAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STAFFMEAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STAFFMEAL_SIF_METADATA = new ElementDefImpl( STAFFMEAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		STAFFMEAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STAFFMEAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STAFFMEAL_SIF_METADATA = new ElementDefImpl( STAFFMEAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentMeal> fields (12 entries)
-		FoodDTD.STUDENTMEAL_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTMEAL, "StudentPersonalRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.STUDENTMEAL_MEALSTATUS = new ElementDefImpl( STUDENTMEAL, "MealStatus", null, 2, SifDtd.FOOD, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		FoodDTD.STUDENTMEAL_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTMEAL, "StudentPersonalRefId", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.STUDENTMEAL_MEALSTATUS = new ElementDefImpl( STUDENTMEAL, "MealStatus", null, 2, SifDtd.FOOD, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		FoodDTD.STUDENTMEAL_SCHOOLYEAR = new ElementDefImpl( STUDENTMEAL, "SchoolYear", null, 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.INT );
-		FoodDTD.STUDENTMEAL_HISTORICALMEALSTATUS = new ElementDefImpl( STUDENTMEAL, "HistoricalMealStatus", null, 3, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FoodDTD.STUDENTMEAL_LASTBREAKFASTDATE = new ElementDefImpl( STUDENTMEAL, "LastBreakfastDate", "LastBrkDate", 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
+		FoodDTD.STUDENTMEAL_HISTORICALMEALSTATUS = new ElementDefImpl( STUDENTMEAL, "HistoricalMealStatus", null, 3, SifDtd.FOOD, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FoodDTD.STUDENTMEAL_LASTBREAKFASTDATE = new ElementDefImpl( STUDENTMEAL, "LastBreakfastDate", "LastBrkDate", 3, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
 		FoodDTD.STUDENTMEAL_LASTBREAKFASTDATE.DefineVersionInfo(SifVersion.SIF15r1, "LastBreakfastDate", 9, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		FoodDTD.STUDENTMEAL_LASTBREAKFASTDATE.DefineVersionInfo(SifVersion.SIF20, "LastBreakfastDate", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		FoodDTD.STUDENTMEAL_LASTLUNCHDATE = new ElementDefImpl( STUDENTMEAL, "LastLunchDate", "LastLunDate", 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
+		FoodDTD.STUDENTMEAL_LASTLUNCHDATE = new ElementDefImpl( STUDENTMEAL, "LastLunchDate", "LastLunDate", 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
 		FoodDTD.STUDENTMEAL_LASTLUNCHDATE.DefineVersionInfo(SifVersion.SIF15r1, "LastLunchDate", 10, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		FoodDTD.STUDENTMEAL_LASTLUNCHDATE.DefineVersionInfo(SifVersion.SIF20, "LastLunchDate", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 		FoodDTD.STUDENTMEAL_LASTBRKDATE = new ElementDefImpl( STUDENTMEAL, "LastBrkDate", null, 4, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.DATE );
@@ -1048,23 +1048,23 @@ namespace OpenADK.Library.us.Food
 		FoodDTD.STUDENTMEAL_BRKCREDITS.DefineVersionInfo(SifVersion.SIF15r1, "BrkCredits", 7, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		FoodDTD.STUDENTMEAL_LUNCREDITS = new ElementDefImpl( STUDENTMEAL, "LunCredits", null, 7, SifDtd.FOOD, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
 		FoodDTD.STUDENTMEAL_LUNCREDITS.DefineVersionInfo(SifVersion.SIF15r1, "LunCredits", 8, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
-		FoodDTD.STUDENTMEAL_AMOUNTS = new ElementDefAlias( STUDENTMEAL, "Amounts", null, "FSAmounts", 11, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.STUDENTMEAL_AMOUNTS = new ElementDefAlias( STUDENTMEAL, "Amounts", null, "FSAmounts", 11, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.STUDENTMEAL_AMOUNTS.DefineVersionInfo(SifVersion.SIF20, "Amounts", 6, 0); // (Sif 20 alias)
-		STUDENTMEAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTMEAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTMEAL_SIF_METADATA = new ElementDefImpl( STUDENTMEAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		STUDENTMEAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTMEAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTMEAL_SIF_METADATA = new ElementDefImpl( STUDENTMEAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TransactionPayMethod> fields (2 entries)
-		FoodDTD.TRANSACTIONPAYMETHOD_TYPE = new ElementDefImpl( TRANSACTIONPAYMETHOD, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FoodDTD.TRANSACTIONPAYMETHOD_AMOUNTS = new ElementDefAlias( TRANSACTIONPAYMETHOD, "Amounts", null, "FSAmounts", 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE|ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.TRANSACTIONPAYMETHOD_TYPE = new ElementDefImpl( TRANSACTIONPAYMETHOD, "Type", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FoodDTD.TRANSACTIONPAYMETHOD_AMOUNTS = new ElementDefAlias( TRANSACTIONPAYMETHOD, "Amounts", null, "FSAmounts", 2, SifDtd.FOOD, "us", (ElementDefImpl.FD_COLLAPSE|ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FoodDTD.TRANSACTIONPAYMETHOD_AMOUNTS.DefineVersionInfo(SifVersion.SIF20, "Amounts", 2, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <TransactionPayMethods> fields (1 entries)
-		FoodDTD.TRANSACTIONPAYMETHODS_TRANSACTIONPAYMETHOD = new ElementDefImpl( TRANSACTIONPAYMETHODS, "TransactionPayMethod", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FoodDTD.TRANSACTIONPAYMETHODS_TRANSACTIONPAYMETHOD = new ElementDefImpl( TRANSACTIONPAYMETHODS, "TransactionPayMethod", null, 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <TransactionType> fields (0 entries)
 
 		// <TransactionTypes> fields (1 entries)
-		FoodDTD.TRANSACTIONTYPES_TRANSACTIONTYPE = new ElementDefImpl( TRANSACTIONTYPES, "TransactionType", "~XPathSurrogate{TransactionType/@Type=.}", 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		FoodDTD.TRANSACTIONTYPES_TRANSACTIONTYPE = new ElementDefImpl( TRANSACTIONTYPES, "TransactionType", "~XPathSurrogate{TransactionType/@Type=.}", 1, SifDtd.FOOD, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		FoodDTD.TRANSACTIONTYPES_TRANSACTIONTYPE.DefineVersionInfo(SifVersion.SIF20, "TransactionType", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 	}
 
