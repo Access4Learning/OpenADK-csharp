@@ -20,7 +20,7 @@ namespace OpenADK.Library.uk.Catering
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -172,61 +172,61 @@ namespace OpenADK.Library.uk.Catering
 	{
 		//  Objects defined by this SDO Library...
 
-		DIETARYPREFERENCE = new ElementDefImpl( null, "DietaryPreference", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		DIETARYPREFERENCELIST = new ElementDefImpl( null, "DietaryPreferenceList", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		MEAL = new ElementDefImpl( null, "Meal", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		MEALS = new ElementDefImpl( null, "Meals", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		PERSONDIETARYPREFERENCE = new ElementDefImpl( null, "PersonDietaryPreference", null, 0, SifDtd.CATERING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		SCHOOLMEALSTATUS = new ElementDefImpl( null, "SchoolMealStatus", null, 0, SifDtd.CATERING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		SCHOOLMEALSTATUSTIER = new ElementDefImpl( null, "SchoolMealStatusTier", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		WEEKLYMEALPATTERN = new ElementDefImpl( null, "WeeklyMealPattern", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		WEEKLYMEALPATTERNLIST = new ElementDefImpl( null, "WeeklyMealPatternList", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		DIETARYPREFERENCE = new ElementDefImpl( null, "DietaryPreference", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		DIETARYPREFERENCELIST = new ElementDefImpl( null, "DietaryPreferenceList", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		MEAL = new ElementDefImpl( null, "Meal", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		MEALS = new ElementDefImpl( null, "Meals", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		PERSONDIETARYPREFERENCE = new ElementDefImpl( null, "PersonDietaryPreference", null, 0, SifDtd.CATERING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		SCHOOLMEALSTATUS = new ElementDefImpl( null, "SchoolMealStatus", null, 0, SifDtd.CATERING, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		SCHOOLMEALSTATUSTIER = new ElementDefImpl( null, "SchoolMealStatusTier", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		WEEKLYMEALPATTERN = new ElementDefImpl( null, "WeeklyMealPattern", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		WEEKLYMEALPATTERNLIST = new ElementDefImpl( null, "WeeklyMealPatternList", null, 0, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 
 		// <DietaryPreference> fields (4 entries)
-		CateringDTD.DIETARYPREFERENCE_PREFERENCETYPE = new ElementDefImpl( DIETARYPREFERENCE, "PreferenceType", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.DIETARYPREFERENCE_MEALCOMPONENT = new ElementDefImpl( DIETARYPREFERENCE, "MealComponent", null, 2, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.DIETARYPREFERENCE_NOTE = new ElementDefImpl( DIETARYPREFERENCE, "Note", null, 3, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.DIETARYPREFERENCE_MEALEFFECT = new ElementDefImpl( DIETARYPREFERENCE, "MealEffect", null, 4, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		CateringDTD.DIETARYPREFERENCE_PREFERENCETYPE = new ElementDefImpl( DIETARYPREFERENCE, "PreferenceType", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.DIETARYPREFERENCE_MEALCOMPONENT = new ElementDefImpl( DIETARYPREFERENCE, "MealComponent", null, 2, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.DIETARYPREFERENCE_NOTE = new ElementDefImpl( DIETARYPREFERENCE, "Note", null, 3, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.DIETARYPREFERENCE_MEALEFFECT = new ElementDefImpl( DIETARYPREFERENCE, "MealEffect", null, 4, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <DietaryPreferenceList> fields (1 entries)
-		CateringDTD.DIETARYPREFERENCELIST_DIETARYPREFERENCE = new ElementDefImpl( DIETARYPREFERENCELIST, "DietaryPreference", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		CateringDTD.DIETARYPREFERENCELIST_DIETARYPREFERENCE = new ElementDefImpl( DIETARYPREFERENCELIST, "DietaryPreference", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <Meal> fields (3 entries)
-		CateringDTD.MEAL_DAY = new ElementDefImpl( MEAL, "Day", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.MEAL_MEALTIME = new ElementDefImpl( MEAL, "MealTime", null, 2, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.MEAL_MEALTYPE = new ElementDefImpl( MEAL, "MealType", null, 3, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		CateringDTD.MEAL_DAY = new ElementDefImpl( MEAL, "Day", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.MEAL_MEALTIME = new ElementDefImpl( MEAL, "MealTime", null, 2, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.MEAL_MEALTYPE = new ElementDefImpl( MEAL, "MealType", null, 3, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Meals> fields (1 entries)
-		CateringDTD.MEALS_MEAL = new ElementDefImpl( MEALS, "Meal", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		CateringDTD.MEALS_MEAL = new ElementDefImpl( MEALS, "Meal", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <PersonDietaryPreference> fields (4 entries)
-		CateringDTD.PERSONDIETARYPREFERENCE_REFID = new ElementDefImpl( PERSONDIETARYPREFERENCE, "RefId", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.PERSONDIETARYPREFERENCE_PERSONREFID = new ElementDefImpl( PERSONDIETARYPREFERENCE, "PersonRefId", null, 2, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.PERSONDIETARYPREFERENCE_WEEKLYMEALPATTERNLIST = new ElementDefImpl( PERSONDIETARYPREFERENCE, "WeeklyMealPatternList", null, 3, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		CateringDTD.PERSONDIETARYPREFERENCE_DIETARYPREFERENCELIST = new ElementDefImpl( PERSONDIETARYPREFERENCE, "DietaryPreferenceList", null, 4, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		PERSONDIETARYPREFERENCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PERSONDIETARYPREFERENCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		PERSONDIETARYPREFERENCE_SIF_METADATA = new ElementDefImpl( PERSONDIETARYPREFERENCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		CateringDTD.PERSONDIETARYPREFERENCE_REFID = new ElementDefImpl( PERSONDIETARYPREFERENCE, "RefId", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.PERSONDIETARYPREFERENCE_PERSONREFID = new ElementDefImpl( PERSONDIETARYPREFERENCE, "PersonRefId", null, 2, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.PERSONDIETARYPREFERENCE_WEEKLYMEALPATTERNLIST = new ElementDefImpl( PERSONDIETARYPREFERENCE, "WeeklyMealPatternList", null, 3, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		CateringDTD.PERSONDIETARYPREFERENCE_DIETARYPREFERENCELIST = new ElementDefImpl( PERSONDIETARYPREFERENCE, "DietaryPreferenceList", null, 4, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		PERSONDIETARYPREFERENCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PERSONDIETARYPREFERENCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		PERSONDIETARYPREFERENCE_SIF_METADATA = new ElementDefImpl( PERSONDIETARYPREFERENCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SchoolMealStatus> fields (5 entries)
-		CateringDTD.SCHOOLMEALSTATUS_REFID = new ElementDefImpl( SCHOOLMEALSTATUS, "RefId", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.SCHOOLMEALSTATUS_SCHOOLINFOREFID = new ElementDefImpl( SCHOOLMEALSTATUS, "SchoolInfoRefId", null, 2, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.SCHOOLMEALSTATUS_SCHOOLMEALSTATUSDATE = new ElementDefImpl( SCHOOLMEALSTATUS, "SchoolMealStatusDate", null, 3, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		CateringDTD.SCHOOLMEALSTATUS_SCHOOLMEALSTATUSDATESESSION = new ElementDefImpl( SCHOOLMEALSTATUS, "SchoolMealStatusDateSession", null, 4, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.SCHOOLMEALSTATUS_SCHOOLMEALSTATUSTIER = new ElementDefImpl( SCHOOLMEALSTATUS, "SchoolMealStatusTier", null, 5, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SCHOOLMEALSTATUS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLMEALSTATUS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SCHOOLMEALSTATUS_SIF_METADATA = new ElementDefImpl( SCHOOLMEALSTATUS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		CateringDTD.SCHOOLMEALSTATUS_REFID = new ElementDefImpl( SCHOOLMEALSTATUS, "RefId", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.SCHOOLMEALSTATUS_SCHOOLINFOREFID = new ElementDefImpl( SCHOOLMEALSTATUS, "SchoolInfoRefId", null, 2, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.SCHOOLMEALSTATUS_SCHOOLMEALSTATUSDATE = new ElementDefImpl( SCHOOLMEALSTATUS, "SchoolMealStatusDate", null, 3, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		CateringDTD.SCHOOLMEALSTATUS_SCHOOLMEALSTATUSDATESESSION = new ElementDefImpl( SCHOOLMEALSTATUS, "SchoolMealStatusDateSession", null, 4, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.SCHOOLMEALSTATUS_SCHOOLMEALSTATUSTIER = new ElementDefImpl( SCHOOLMEALSTATUS, "SchoolMealStatusTier", null, 5, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SCHOOLMEALSTATUS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLMEALSTATUS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SCHOOLMEALSTATUS_SIF_METADATA = new ElementDefImpl( SCHOOLMEALSTATUS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SchoolMealStatusTier> fields (0 entries)
 
 		// <WeeklyMealPattern> fields (4 entries)
-		CateringDTD.WEEKLYMEALPATTERN_STARTDATE = new ElementDefImpl( WEEKLYMEALPATTERN, "StartDate", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		CateringDTD.WEEKLYMEALPATTERN_ENDDATE = new ElementDefImpl( WEEKLYMEALPATTERN, "EndDate", null, 2, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		CateringDTD.WEEKLYMEALPATTERN_NOTE = new ElementDefImpl( WEEKLYMEALPATTERN, "Note", null, 3, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		CateringDTD.WEEKLYMEALPATTERN_MEALS = new ElementDefImpl( WEEKLYMEALPATTERN, "Meals", null, 4, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		CateringDTD.WEEKLYMEALPATTERN_STARTDATE = new ElementDefImpl( WEEKLYMEALPATTERN, "StartDate", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		CateringDTD.WEEKLYMEALPATTERN_ENDDATE = new ElementDefImpl( WEEKLYMEALPATTERN, "EndDate", null, 2, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		CateringDTD.WEEKLYMEALPATTERN_NOTE = new ElementDefImpl( WEEKLYMEALPATTERN, "Note", null, 3, SifDtd.CATERING, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		CateringDTD.WEEKLYMEALPATTERN_MEALS = new ElementDefImpl( WEEKLYMEALPATTERN, "Meals", null, 4, SifDtd.CATERING, "uk", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <WeeklyMealPatternList> fields (1 entries)
-		CateringDTD.WEEKLYMEALPATTERNLIST_WEEKLYMEALPATTERN = new ElementDefImpl( WEEKLYMEALPATTERNLIST, "WeeklyMealPattern", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		CateringDTD.WEEKLYMEALPATTERNLIST_WEEKLYMEALPATTERN = new ElementDefImpl( WEEKLYMEALPATTERNLIST, "WeeklyMealPattern", null, 1, SifDtd.CATERING, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

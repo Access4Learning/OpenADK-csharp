@@ -64,10 +64,10 @@ namespace OpenADK.Library.us
 	Library = 0x00000200,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	Gradebook = 0x00000400,
+	Student = 0x00000400,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	Student = 0x00000800,
+	Gradebook = 0x00000800,
 
 	/// <summary>Identifies the Infrastructure Sdo library</summary>
 	Infrastructure = 0x000001000,
@@ -76,6 +76,9 @@ namespace OpenADK.Library.us
 	Instr = 0x000002000,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	Hrfin = 0x000004000,
+	Energymanagement = 0x000004000,
+
+	/// <summary>Identifies the null Sdo library</summary>
+	Hrfin = 0x000008000,
 
 }}

@@ -20,7 +20,7 @@ namespace OpenADK.Library.au.School
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -242,7 +242,7 @@ namespace OpenADK.Library.au.School
 	/** Defines the &lt;SchoolGroup&gt; element as a child of &lt;SchoolGroupList&gt; */
 	public static IElementDef SCHOOLGROUPLIST_SCHOOLGROUP = null;
 
-	// Field elements of SCHOOLINFO (37 fields)
+	// Field elements of SCHOOLINFO (38 fields)
 	/** Defines the RefId attribute as a child of &lt;SchoolInfo&gt; */
 	public static IElementDef SCHOOLINFO_REFID = null;
 	/** Defines the &lt;LocalId&gt; element as a child of &lt;SchoolInfo&gt; */
@@ -251,6 +251,8 @@ namespace OpenADK.Library.au.School
 	public static IElementDef SCHOOLINFO_STATEPROVINCEID = null;
 	/** Defines the &lt;CommonwealthId&gt; element as a child of &lt;SchoolInfo&gt; */
 	public static IElementDef SCHOOLINFO_COMMONWEALTHID = null;
+	/** Defines the &lt;OtherIdList&gt; element as a child of &lt;SchoolInfo&gt; */
+	public static IElementDef SCHOOLINFO_OTHERIDLIST = null;
 	/** Defines the &lt;SchoolName&gt; element as a child of &lt;SchoolInfo&gt; */
 	public static IElementDef SCHOOLINFO_SCHOOLNAME = null;
 	/** Defines the &lt;LEAInfoRefId&gt; element as a child of &lt;SchoolInfo&gt; */
@@ -522,281 +524,315 @@ namespace OpenADK.Library.au.School
 	{
 		//  Objects defined by this SDO Library...
 
-		ACADEMICYEAR = new ElementDefImpl( null, "AcademicYear", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ACADEMICYEARRANGE = new ElementDefImpl( null, "AcademicYearRange", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		END = new ElementDefImpl( null, "End", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		PERSONPICTURE = new ElementDefImpl( null, "PersonPicture", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		PROGRAM = new ElementDefImpl( null, "Program", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		RESOURCEREPORTCOLUMN = new ElementDefImpl( null, "ResourceReportColumn", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		RESOURCEREPORTCOLUMNLIST = new ElementDefImpl( null, "ResourceReportColumnList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		RESOURCEREPORTLINE = new ElementDefImpl( null, "ResourceReportLine", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		RESOURCEREPORTLINELIST = new ElementDefImpl( null, "ResourceReportLineList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		RESOURCEREPORTLINE_SIF_REFIDTYPE = new ElementDefImpl( null, "ResourceReportLine_SIF_RefIDType", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		RESOURCEUSAGE = new ElementDefImpl( null, "ResourceUsage", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF25, SifVersion.SIF25 );
-		RESOURCEUSAGECONTENTTYPE = new ElementDefImpl( null, "ResourceUsageContentType", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		SCHOOLFOCUS = new ElementDefImpl( null, "SchoolFocus", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SCHOOLFOCUSLIST = new ElementDefImpl( null, "SchoolFocusList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SCHOOLGROUP = new ElementDefImpl( null, "SchoolGroup", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SCHOOLGROUPLIST = new ElementDefImpl( null, "SchoolGroupList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SCHOOLINFO = new ElementDefImpl( null, "SchoolInfo", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		SCHOOLPROGRAMLIST = new ElementDefImpl( null, "SchoolProgramList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SCHOOLPROGRAMS = new ElementDefImpl( null, "SchoolPrograms", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		SESSIONINFO = new ElementDefImpl( null, "SessionInfo", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		START = new ElementDefImpl( null, "Start", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TIMETABLE = new ElementDefImpl( null, "TimeTable", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		TIMETABLECELL = new ElementDefImpl( null, "TimeTableCell", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		TIMETABLEDAY = new ElementDefImpl( null, "TimeTableDay", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TIMETABLEDAYLIST = new ElementDefImpl( null, "TimeTableDayList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TIMETABLEPERIOD = new ElementDefImpl( null, "TimeTablePeriod", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TIMETABLEPERIODLIST = new ElementDefImpl( null, "TimeTablePeriodList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TIMETABLESUBJECT = new ElementDefImpl( null, "TimeTableSubject", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
+		ACADEMICYEAR = new ElementDefImpl( null, "AcademicYear", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ACADEMICYEARRANGE = new ElementDefImpl( null, "AcademicYearRange", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		END = new ElementDefImpl( null, "End", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		PERSONPICTURE = new ElementDefImpl( null, "PersonPicture", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		PROGRAM = new ElementDefImpl( null, "Program", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		RESOURCEREPORTCOLUMN = new ElementDefImpl( null, "ResourceReportColumn", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		RESOURCEREPORTCOLUMNLIST = new ElementDefImpl( null, "ResourceReportColumnList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		RESOURCEREPORTLINE = new ElementDefImpl( null, "ResourceReportLine", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		RESOURCEREPORTLINELIST = new ElementDefImpl( null, "ResourceReportLineList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		RESOURCEREPORTLINE_SIF_REFIDTYPE = new ElementDefImpl( null, "ResourceReportLine_SIF_RefIDType", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		RESOURCEUSAGE = new ElementDefImpl( null, "ResourceUsage", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF25, SifVersion.SIF26 );
+		RESOURCEUSAGECONTENTTYPE = new ElementDefImpl( null, "ResourceUsageContentType", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		SCHOOLFOCUS = new ElementDefImpl( null, "SchoolFocus", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SCHOOLFOCUSLIST = new ElementDefImpl( null, "SchoolFocusList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SCHOOLGROUP = new ElementDefImpl( null, "SchoolGroup", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SCHOOLGROUPLIST = new ElementDefImpl( null, "SchoolGroupList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SCHOOLINFO = new ElementDefImpl( null, "SchoolInfo", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		SCHOOLPROGRAMLIST = new ElementDefImpl( null, "SchoolProgramList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SCHOOLPROGRAMS = new ElementDefImpl( null, "SchoolPrograms", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		SESSIONINFO = new ElementDefImpl( null, "SessionInfo", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		START = new ElementDefImpl( null, "Start", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TIMETABLE = new ElementDefImpl( null, "TimeTable", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		TIMETABLECELL = new ElementDefImpl( null, "TimeTableCell", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		TIMETABLEDAY = new ElementDefImpl( null, "TimeTableDay", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TIMETABLEDAYLIST = new ElementDefImpl( null, "TimeTableDayList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TIMETABLEPERIOD = new ElementDefImpl( null, "TimeTablePeriod", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TIMETABLEPERIODLIST = new ElementDefImpl( null, "TimeTablePeriodList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TIMETABLESUBJECT = new ElementDefImpl( null, "TimeTableSubject", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
 
 
 		// <AcademicYear> fields (2 entries)
-		SchoolDTD.ACADEMICYEAR_CODE = new ElementDefImpl( ACADEMICYEAR, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.ACADEMICYEAR_OTHERCODELIST = new ElementDefImpl( ACADEMICYEAR, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.ACADEMICYEAR_CODE = new ElementDefImpl( ACADEMICYEAR, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.ACADEMICYEAR_OTHERCODELIST = new ElementDefImpl( ACADEMICYEAR, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <AcademicYearRange> fields (2 entries)
-		SchoolDTD.ACADEMICYEARRANGE_START = new ElementDefImpl( ACADEMICYEARRANGE, "Start", null, 1, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SchoolDTD.ACADEMICYEARRANGE_END = new ElementDefImpl( ACADEMICYEARRANGE, "End", null, 2, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.ACADEMICYEARRANGE_START = new ElementDefImpl( ACADEMICYEARRANGE, "Start", null, 1, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SchoolDTD.ACADEMICYEARRANGE_END = new ElementDefImpl( ACADEMICYEARRANGE, "End", null, 2, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <End> fields (2 entries)
-		SchoolDTD.END_CODE = new ElementDefImpl( END, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.END_OTHERCODELIST = new ElementDefImpl( END, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.END_CODE = new ElementDefImpl( END, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.END_OTHERCODELIST = new ElementDefImpl( END, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <PersonPicture> fields (5 entries)
-		SchoolDTD.PERSONPICTURE_REFID = new ElementDefImpl( PERSONPICTURE, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.PERSONPICTURE_PARENTOBJECTREFID = new ElementDefImpl( PERSONPICTURE, "ParentObjectRefId", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.PERSONPICTURE_SCHOOLYEAR = new ElementDefImpl( PERSONPICTURE, "SchoolYear", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		SchoolDTD.PERSONPICTURE_PICTURESOURCE = new ElementDefImpl( PERSONPICTURE, "PictureSource", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.PERSONPICTURE_OKTOPUBLISH = new ElementDefImpl( PERSONPICTURE, "OKToPublish", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		PERSONPICTURE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PERSONPICTURE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		PERSONPICTURE_SIF_METADATA = new ElementDefImpl( PERSONPICTURE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SchoolDTD.PERSONPICTURE_REFID = new ElementDefImpl( PERSONPICTURE, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.PERSONPICTURE_PARENTOBJECTREFID = new ElementDefImpl( PERSONPICTURE, "ParentObjectRefId", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.PERSONPICTURE_SCHOOLYEAR = new ElementDefImpl( PERSONPICTURE, "SchoolYear", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		SchoolDTD.PERSONPICTURE_PICTURESOURCE = new ElementDefImpl( PERSONPICTURE, "PictureSource", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.PERSONPICTURE_OKTOPUBLISH = new ElementDefImpl( PERSONPICTURE, "OKToPublish", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		PERSONPICTURE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PERSONPICTURE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		PERSONPICTURE_SIF_METADATA = new ElementDefImpl( PERSONPICTURE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Program> fields (3 entries)
-		SchoolDTD.PROGRAM_CATEGORY = new ElementDefImpl( PROGRAM, "Category", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.PROGRAM_TYPE = new ElementDefImpl( PROGRAM, "Type", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.PROGRAM_OTHERCODELIST = new ElementDefImpl( PROGRAM, "OtherCodeList", null, 3, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.PROGRAM_CATEGORY = new ElementDefImpl( PROGRAM, "Category", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.PROGRAM_TYPE = new ElementDefImpl( PROGRAM, "Type", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.PROGRAM_OTHERCODELIST = new ElementDefImpl( PROGRAM, "OtherCodeList", null, 3, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <ResourceReportColumn> fields (3 entries)
-		SchoolDTD.RESOURCEREPORTCOLUMN_COLUMNNAME = new ElementDefImpl( RESOURCEREPORTCOLUMN, "ColumnName", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.RESOURCEREPORTCOLUMN_COLUMNDESCRIPTION = new ElementDefImpl( RESOURCEREPORTCOLUMN, "ColumnDescription", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.RESOURCEREPORTCOLUMN_COLUMNDELIMITER = new ElementDefImpl( RESOURCEREPORTCOLUMN, "ColumnDelimiter", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.RESOURCEREPORTCOLUMN_COLUMNNAME = new ElementDefImpl( RESOURCEREPORTCOLUMN, "ColumnName", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.RESOURCEREPORTCOLUMN_COLUMNDESCRIPTION = new ElementDefImpl( RESOURCEREPORTCOLUMN, "ColumnDescription", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.RESOURCEREPORTCOLUMN_COLUMNDELIMITER = new ElementDefImpl( RESOURCEREPORTCOLUMN, "ColumnDelimiter", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ResourceReportColumnList> fields (1 entries)
-		SchoolDTD.RESOURCEREPORTCOLUMNLIST_RESOURCEREPORTCOLUMN = new ElementDefImpl( RESOURCEREPORTCOLUMNLIST, "ResourceReportColumn", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF25, SifVersion.SIF25 );
+		SchoolDTD.RESOURCEREPORTCOLUMNLIST_RESOURCEREPORTCOLUMN = new ElementDefImpl( RESOURCEREPORTCOLUMNLIST, "ResourceReportColumn", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF25, SifVersion.SIF26 );
 
 		// <ResourceReportLine> fields (5 entries)
-		SchoolDTD.RESOURCEREPORTLINE_SIF_REFID = new ElementDefAlias( RESOURCEREPORTLINE, "SIF_RefID", null, "ResourceReportLine_SIF_RefIDType", 1, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.RESOURCEREPORTLINE_STARTDATE = new ElementDefImpl( RESOURCEREPORTLINE, "StartDate", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.DATE );
-		SchoolDTD.RESOURCEREPORTLINE_ENDDATE = new ElementDefImpl( RESOURCEREPORTLINE, "EndDate", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.DATE );
-		SchoolDTD.RESOURCEREPORTLINE_CURRENTCOST = new ElementDefAlias( RESOURCEREPORTLINE, "CurrentCost", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		SchoolDTD.RESOURCEREPORTLINE_REPORTROW = new ElementDefImpl( RESOURCEREPORTLINE, "ReportRow", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.RESOURCEREPORTLINE_SIF_REFID = new ElementDefAlias( RESOURCEREPORTLINE, "SIF_RefID", null, "ResourceReportLine_SIF_RefIDType", 1, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.RESOURCEREPORTLINE_STARTDATE = new ElementDefImpl( RESOURCEREPORTLINE, "StartDate", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.DATE );
+		SchoolDTD.RESOURCEREPORTLINE_ENDDATE = new ElementDefImpl( RESOURCEREPORTLINE, "EndDate", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.DATE );
+		SchoolDTD.RESOURCEREPORTLINE_CURRENTCOST = new ElementDefAlias( RESOURCEREPORTLINE, "CurrentCost", null, "MonetaryAmount", 4, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		SchoolDTD.RESOURCEREPORTLINE_REPORTROW = new ElementDefImpl( RESOURCEREPORTLINE, "ReportRow", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ResourceReportLineList> fields (1 entries)
-		SchoolDTD.RESOURCEREPORTLINELIST_RESOURCEREPORTLINE = new ElementDefImpl( RESOURCEREPORTLINELIST, "ResourceReportLine", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF25, SifVersion.SIF25 );
+		SchoolDTD.RESOURCEREPORTLINELIST_RESOURCEREPORTLINE = new ElementDefImpl( RESOURCEREPORTLINELIST, "ResourceReportLine", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF25, SifVersion.SIF26 );
 
 		// <ResourceReportLine_SIF_RefIDType> fields (1 entries)
-		SchoolDTD.RESOURCEREPORTLINE_SIF_REFIDTYPE_SIF_REFOBJECT = new ElementDefImpl( RESOURCEREPORTLINE_SIF_REFIDTYPE, "SIF_RefObject", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.RESOURCEREPORTLINE_SIF_REFIDTYPE_SIF_REFOBJECT = new ElementDefImpl( RESOURCEREPORTLINE_SIF_REFIDTYPE, "SIF_RefObject", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ResourceUsage> fields (5 entries)
-		SchoolDTD.RESOURCEUSAGE_REFID = new ElementDefImpl( RESOURCEUSAGE, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.RESOURCEUSAGE_SCHOOLINFOREFID = new ElementDefImpl( RESOURCEUSAGE, "SchoolInfoRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.RESOURCEUSAGE_RESOURCEUSAGECONTENTTYPE = new ElementDefImpl( RESOURCEUSAGE, "ResourceUsageContentType", null, 3, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		SchoolDTD.RESOURCEUSAGE_RESOURCEREPORTCOLUMNLIST = new ElementDefImpl( RESOURCEUSAGE, "ResourceReportColumnList", null, 4, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		SchoolDTD.RESOURCEUSAGE_RESOURCEREPORTLINELIST = new ElementDefImpl( RESOURCEUSAGE, "ResourceReportLineList", null, 5, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		RESOURCEUSAGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( RESOURCEUSAGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		RESOURCEUSAGE_SIF_METADATA = new ElementDefImpl( RESOURCEUSAGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SchoolDTD.RESOURCEUSAGE_REFID = new ElementDefImpl( RESOURCEUSAGE, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.RESOURCEUSAGE_SCHOOLINFOREFID = new ElementDefImpl( RESOURCEUSAGE, "SchoolInfoRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.RESOURCEUSAGE_RESOURCEUSAGECONTENTTYPE = new ElementDefImpl( RESOURCEUSAGE, "ResourceUsageContentType", null, 3, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		SchoolDTD.RESOURCEUSAGE_RESOURCEREPORTCOLUMNLIST = new ElementDefImpl( RESOURCEUSAGE, "ResourceReportColumnList", null, 4, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		SchoolDTD.RESOURCEUSAGE_RESOURCEREPORTLINELIST = new ElementDefImpl( RESOURCEUSAGE, "ResourceReportLineList", null, 5, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		RESOURCEUSAGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( RESOURCEUSAGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		RESOURCEUSAGE_SIF_METADATA = new ElementDefImpl( RESOURCEUSAGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ResourceUsageContentType> fields (2 entries)
-		SchoolDTD.RESOURCEUSAGECONTENTTYPE_CODE = new ElementDefImpl( RESOURCEUSAGECONTENTTYPE, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.RESOURCEUSAGECONTENTTYPE_LOCALDESCRIPTION = new ElementDefImpl( RESOURCEUSAGECONTENTTYPE, "LocalDescription", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.RESOURCEUSAGECONTENTTYPE_CODE = new ElementDefImpl( RESOURCEUSAGECONTENTTYPE, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.RESOURCEUSAGECONTENTTYPE_LOCALDESCRIPTION = new ElementDefImpl( RESOURCEUSAGECONTENTTYPE, "LocalDescription", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SchoolFocus> fields (0 entries)
 
 		// <SchoolFocusList> fields (1 entries)
-		SchoolDTD.SCHOOLFOCUSLIST_SCHOOLFOCUS = new ElementDefImpl( SCHOOLFOCUSLIST, "SchoolFocus", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLFOCUSLIST_SCHOOLFOCUS = new ElementDefImpl( SCHOOLFOCUSLIST, "SchoolFocus", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SchoolGroup> fields (0 entries)
 
 		// <SchoolGroupList> fields (1 entries)
-		SchoolDTD.SCHOOLGROUPLIST_SCHOOLGROUP = new ElementDefImpl( SCHOOLGROUPLIST, "SchoolGroup", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLGROUPLIST_SCHOOLGROUP = new ElementDefImpl( SCHOOLGROUPLIST, "SchoolGroup", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
-		// <SchoolInfo> fields (37 entries)
-		SchoolDTD.SCHOOLINFO_REFID = new ElementDefImpl( SCHOOLINFO, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_LOCALID = new ElementDefImpl( SCHOOLINFO, "LocalId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_STATEPROVINCEID = new ElementDefImpl( SCHOOLINFO, "StateProvinceId", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_COMMONWEALTHID = new ElementDefImpl( SCHOOLINFO, "CommonwealthId", null, 4, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_SCHOOLNAME = new ElementDefImpl( SCHOOLINFO, "SchoolName", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_LEAINFOREFID = new ElementDefImpl( SCHOOLINFO, "LEAInfoRefId", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_OTHERLEA = new ElementDefImpl( SCHOOLINFO, "OtherLEA", null, 7, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_SCHOOLDISTRICT = new ElementDefImpl( SCHOOLINFO, "SchoolDistrict", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_SCHOOLDISTRICTLOCALID = new ElementDefImpl( SCHOOLINFO, "SchoolDistrictLocalId", null, 9, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_SCHOOLTYPE = new ElementDefImpl( SCHOOLINFO, "SchoolType", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_SCHOOLFOCUSLIST = new ElementDefImpl( SCHOOLINFO, "SchoolFocusList", null, 11, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SchoolDTD.SCHOOLINFO_SCHOOLURL = new ElementDefImpl( SCHOOLINFO, "SchoolURL", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLINFO_PRINCIPALINFO = new ElementDefImpl( SCHOOLINFO, "PrincipalInfo", null, 13, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		// <SchoolInfo> fields (38 entries)
+		SchoolDTD.SCHOOLINFO_REFID = new ElementDefImpl( SCHOOLINFO, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_LOCALID = new ElementDefImpl( SCHOOLINFO, "LocalId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_STATEPROVINCEID = new ElementDefImpl( SCHOOLINFO, "StateProvinceId", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_COMMONWEALTHID = new ElementDefImpl( SCHOOLINFO, "CommonwealthId", null, 4, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_OTHERIDLIST = new ElementDefImpl( SCHOOLINFO, "OtherIdList", null, 5, SifDtd.COMMON, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		SchoolDTD.SCHOOLINFO_SCHOOLNAME = new ElementDefImpl( SCHOOLINFO, "SchoolName", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_SCHOOLNAME.DefineVersionInfo(SifVersion.SIF26, "SchoolName", 6, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_LEAINFOREFID = new ElementDefImpl( SCHOOLINFO, "LEAInfoRefId", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_LEAINFOREFID.DefineVersionInfo(SifVersion.SIF26, "LEAInfoRefId", 7, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_OTHERLEA = new ElementDefImpl( SCHOOLINFO, "OtherLEA", null, 7, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_OTHERLEA.DefineVersionInfo(SifVersion.SIF26, "OtherLEA", 8, 0); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLDISTRICT = new ElementDefImpl( SCHOOLINFO, "SchoolDistrict", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_SCHOOLDISTRICT.DefineVersionInfo(SifVersion.SIF26, "SchoolDistrict", 9, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLDISTRICTLOCALID = new ElementDefImpl( SCHOOLINFO, "SchoolDistrictLocalId", null, 9, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_SCHOOLDISTRICTLOCALID.DefineVersionInfo(SifVersion.SIF26, "SchoolDistrictLocalId", 10, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLTYPE = new ElementDefImpl( SCHOOLINFO, "SchoolType", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_SCHOOLTYPE.DefineVersionInfo(SifVersion.SIF26, "SchoolType", 11, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLFOCUSLIST = new ElementDefImpl( SCHOOLINFO, "SchoolFocusList", null, 11, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SchoolDTD.SCHOOLINFO_SCHOOLFOCUSLIST.DefineVersionInfo(SifVersion.SIF26, "SchoolFocusList", 12, 0); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLURL = new ElementDefImpl( SCHOOLINFO, "SchoolURL", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_SCHOOLURL.DefineVersionInfo(SifVersion.SIF26, "SchoolURL", 13, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_PRINCIPALINFO = new ElementDefImpl( SCHOOLINFO, "PrincipalInfo", null, 13, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		SchoolDTD.SCHOOLINFO_PRINCIPALINFO.DefineVersionInfo(SifVersion.SIF25, "PrincipalInfo", 14, 0); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_SCHOOLEMAILLIST = new ElementDefAlias( SCHOOLINFO, "SchoolEmailList", null, "EmailList", 13, SifDtd.COMMON, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		SchoolDTD.SCHOOLINFO_SCHOOLCONTACTLIST = new ElementDefImpl( SCHOOLINFO, "SchoolContactList", null, 14, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.SCHOOLINFO_PRINCIPALINFO.DefineVersionInfo(SifVersion.SIF26, "PrincipalInfo", 15, 0); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLEMAILLIST = new ElementDefAlias( SCHOOLINFO, "SchoolEmailList", null, "EmailList", 13, SifDtd.COMMON, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		SchoolDTD.SCHOOLINFO_SCHOOLEMAILLIST.DefineVersionInfo(SifVersion.SIF26, "SchoolEmailList", 14, 0); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLCONTACTLIST = new ElementDefImpl( SCHOOLINFO, "SchoolContactList", null, 14, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		SchoolDTD.SCHOOLINFO_SCHOOLCONTACTLIST.DefineVersionInfo(SifVersion.SIF25, "SchoolContactList", 15, 0); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_ADDRESSLIST = new ElementDefImpl( SCHOOLINFO, "AddressList", null, 15, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.SCHOOLINFO_SCHOOLCONTACTLIST.DefineVersionInfo(SifVersion.SIF26, "SchoolContactList", 16, 0); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_ADDRESSLIST = new ElementDefImpl( SCHOOLINFO, "AddressList", null, 15, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		SchoolDTD.SCHOOLINFO_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF25, "AddressList", 16, 0); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_PHONENUMBERLIST = new ElementDefImpl( SCHOOLINFO, "PhoneNumberList", null, 16, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.SCHOOLINFO_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF26, "AddressList", 17, 0); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_PHONENUMBERLIST = new ElementDefImpl( SCHOOLINFO, "PhoneNumberList", null, 16, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		SchoolDTD.SCHOOLINFO_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF25, "PhoneNumberList", 17, 0); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_SESSIONTYPE = new ElementDefImpl( SCHOOLINFO, "SessionType", null, 17, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF26, "PhoneNumberList", 18, 0); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SESSIONTYPE = new ElementDefImpl( SCHOOLINFO, "SessionType", null, 17, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_SESSIONTYPE.DefineVersionInfo(SifVersion.SIF25, "SessionType", 18, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_YEARLEVELS = new ElementDefImpl( SCHOOLINFO, "YearLevels", null, 18, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.SCHOOLINFO_SESSIONTYPE.DefineVersionInfo(SifVersion.SIF26, "SessionType", 19, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_YEARLEVELS = new ElementDefImpl( SCHOOLINFO, "YearLevels", null, 18, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		SchoolDTD.SCHOOLINFO_YEARLEVELS.DefineVersionInfo(SifVersion.SIF25, "YearLevels", 19, 0); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_ARIA = new ElementDefImpl( SCHOOLINFO, "ARIA", null, 19, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		SchoolDTD.SCHOOLINFO_YEARLEVELS.DefineVersionInfo(SifVersion.SIF26, "YearLevels", 20, 0); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_ARIA = new ElementDefImpl( SCHOOLINFO, "ARIA", null, 19, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		SchoolDTD.SCHOOLINFO_ARIA.DefineVersionInfo(SifVersion.SIF25, "ARIA", 20, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_OPERATIONALSTATUS = new ElementDefImpl( SCHOOLINFO, "OperationalStatus", null, 20, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_ARIA.DefineVersionInfo(SifVersion.SIF26, "ARIA", 21, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_OPERATIONALSTATUS = new ElementDefImpl( SCHOOLINFO, "OperationalStatus", null, 20, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_OPERATIONALSTATUS.DefineVersionInfo(SifVersion.SIF25, "OperationalStatus", 21, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_FEDERALELECTORATE = new ElementDefImpl( SCHOOLINFO, "FederalElectorate", null, 21, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_OPERATIONALSTATUS.DefineVersionInfo(SifVersion.SIF26, "OperationalStatus", 22, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_FEDERALELECTORATE = new ElementDefImpl( SCHOOLINFO, "FederalElectorate", null, 21, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_FEDERALELECTORATE.DefineVersionInfo(SifVersion.SIF25, "FederalElectorate", 22, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_CAMPUS = new ElementDefImpl( SCHOOLINFO, "Campus", null, 22, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.SCHOOLINFO_FEDERALELECTORATE.DefineVersionInfo(SifVersion.SIF26, "FederalElectorate", 23, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_CAMPUS = new ElementDefImpl( SCHOOLINFO, "Campus", null, 22, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		SchoolDTD.SCHOOLINFO_CAMPUS.DefineVersionInfo(SifVersion.SIF25, "Campus", 23, 0); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_SCHOOLSECTOR = new ElementDefImpl( SCHOOLINFO, "SchoolSector", null, 23, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_CAMPUS.DefineVersionInfo(SifVersion.SIF26, "Campus", 24, 0); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLSECTOR = new ElementDefImpl( SCHOOLINFO, "SchoolSector", null, 23, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_SCHOOLSECTOR.DefineVersionInfo(SifVersion.SIF25, "SchoolSector", 24, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_INDEPENDENTSCHOOL = new ElementDefImpl( SCHOOLINFO, "IndependentSchool", null, 24, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_SCHOOLSECTOR.DefineVersionInfo(SifVersion.SIF26, "SchoolSector", 25, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_INDEPENDENTSCHOOL = new ElementDefImpl( SCHOOLINFO, "IndependentSchool", null, 24, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_INDEPENDENTSCHOOL.DefineVersionInfo(SifVersion.SIF25, "IndependentSchool", 25, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_NONGOVSYSTEMICSTATUS = new ElementDefImpl( SCHOOLINFO, "NonGovSystemicStatus", null, 25, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_INDEPENDENTSCHOOL.DefineVersionInfo(SifVersion.SIF26, "IndependentSchool", 26, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_NONGOVSYSTEMICSTATUS = new ElementDefImpl( SCHOOLINFO, "NonGovSystemicStatus", null, 25, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_NONGOVSYSTEMICSTATUS.DefineVersionInfo(SifVersion.SIF25, "NonGovSystemicStatus", 26, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_SYSTEM = new ElementDefImpl( SCHOOLINFO, "System", null, 26, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_NONGOVSYSTEMICSTATUS.DefineVersionInfo(SifVersion.SIF26, "NonGovSystemicStatus", 27, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SYSTEM = new ElementDefImpl( SCHOOLINFO, "System", null, 26, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_SYSTEM.DefineVersionInfo(SifVersion.SIF25, "System", 27, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_RELIGIOUSAFFILIATION = new ElementDefImpl( SCHOOLINFO, "ReligiousAffiliation", null, 27, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_SYSTEM.DefineVersionInfo(SifVersion.SIF26, "System", 28, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_RELIGIOUSAFFILIATION = new ElementDefImpl( SCHOOLINFO, "ReligiousAffiliation", null, 27, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_RELIGIOUSAFFILIATION.DefineVersionInfo(SifVersion.SIF25, "ReligiousAffiliation", 28, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_SCHOOLGEOGRAPHICLOCATION = new ElementDefImpl( SCHOOLINFO, "SchoolGeographicLocation", null, 28, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_RELIGIOUSAFFILIATION.DefineVersionInfo(SifVersion.SIF26, "ReligiousAffiliation", 29, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLGEOGRAPHICLOCATION = new ElementDefImpl( SCHOOLINFO, "SchoolGeographicLocation", null, 28, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_SCHOOLGEOGRAPHICLOCATION.DefineVersionInfo(SifVersion.SIF25, "SchoolGeographicLocation", 29, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_LOCALGOVERNMENTAREA = new ElementDefImpl( SCHOOLINFO, "LocalGovernmentArea", null, 29, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_SCHOOLGEOGRAPHICLOCATION.DefineVersionInfo(SifVersion.SIF26, "SchoolGeographicLocation", 30, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_LOCALGOVERNMENTAREA = new ElementDefImpl( SCHOOLINFO, "LocalGovernmentArea", null, 29, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_LOCALGOVERNMENTAREA.DefineVersionInfo(SifVersion.SIF25, "LocalGovernmentArea", 30, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_JURISDICTIONLOWERHOUSE = new ElementDefImpl( SCHOOLINFO, "JurisdictionLowerHouse", null, 30, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_LOCALGOVERNMENTAREA.DefineVersionInfo(SifVersion.SIF26, "LocalGovernmentArea", 31, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_JURISDICTIONLOWERHOUSE = new ElementDefImpl( SCHOOLINFO, "JurisdictionLowerHouse", null, 30, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_JURISDICTIONLOWERHOUSE.DefineVersionInfo(SifVersion.SIF25, "JurisdictionLowerHouse", 31, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_SLA = new ElementDefImpl( SCHOOLINFO, "SLA", null, 31, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_JURISDICTIONLOWERHOUSE.DefineVersionInfo(SifVersion.SIF26, "JurisdictionLowerHouse", 32, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SLA = new ElementDefImpl( SCHOOLINFO, "SLA", null, 31, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_SLA.DefineVersionInfo(SifVersion.SIF25, "SLA", 32, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_SCHOOLCOEDSTATUS = new ElementDefImpl( SCHOOLINFO, "SchoolCoEdStatus", null, 32, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_SLA.DefineVersionInfo(SifVersion.SIF26, "SLA", 33, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLCOEDSTATUS = new ElementDefImpl( SCHOOLINFO, "SchoolCoEdStatus", null, 32, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_SCHOOLCOEDSTATUS.DefineVersionInfo(SifVersion.SIF25, "SchoolCoEdStatus", 33, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_BOARDINGSCHOOLSTATUS = new ElementDefImpl( SCHOOLINFO, "BoardingSchoolStatus", null, 33, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLINFO_SCHOOLCOEDSTATUS.DefineVersionInfo(SifVersion.SIF26, "SchoolCoEdStatus", 34, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_BOARDINGSCHOOLSTATUS = new ElementDefImpl( SCHOOLINFO, "BoardingSchoolStatus", null, 33, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.SCHOOLINFO_BOARDINGSCHOOLSTATUS.DefineVersionInfo(SifVersion.SIF25, "BoardingSchoolStatus", 34, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_ENTITY_OPEN = new ElementDefImpl( SCHOOLINFO, "Entity_Open", null, 34, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
+		SchoolDTD.SCHOOLINFO_BOARDINGSCHOOLSTATUS.DefineVersionInfo(SifVersion.SIF26, "BoardingSchoolStatus", 35, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_ENTITY_OPEN = new ElementDefImpl( SCHOOLINFO, "Entity_Open", null, 34, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
 		SchoolDTD.SCHOOLINFO_ENTITY_OPEN.DefineVersionInfo(SifVersion.SIF25, "Entity_Open", 35, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_ENTITY_CLOSE = new ElementDefImpl( SCHOOLINFO, "Entity_Close", null, 35, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
+		SchoolDTD.SCHOOLINFO_ENTITY_OPEN.DefineVersionInfo(SifVersion.SIF26, "Entity_Open", 36, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_ENTITY_CLOSE = new ElementDefImpl( SCHOOLINFO, "Entity_Close", null, 35, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
 		SchoolDTD.SCHOOLINFO_ENTITY_CLOSE.DefineVersionInfo(SifVersion.SIF25, "Entity_Close", 36, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.SCHOOLINFO_SCHOOLGROUPLIST = new ElementDefImpl( SCHOOLINFO, "SchoolGroupList", null, 36, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.SCHOOLINFO_ENTITY_CLOSE.DefineVersionInfo(SifVersion.SIF26, "Entity_Close", 37, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		SchoolDTD.SCHOOLINFO_SCHOOLGROUPLIST = new ElementDefImpl( SCHOOLINFO, "SchoolGroupList", null, 36, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		SchoolDTD.SCHOOLINFO_SCHOOLGROUPLIST.DefineVersionInfo(SifVersion.SIF25, "SchoolGroupList", 37, 0); // (Sif 25 alias)
-		SCHOOLINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SCHOOLINFO_SIF_METADATA = new ElementDefImpl( SCHOOLINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SchoolDTD.SCHOOLINFO_SCHOOLGROUPLIST.DefineVersionInfo(SifVersion.SIF26, "SchoolGroupList", 38, 0); // (Sif 26 alias)
+		SCHOOLINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SCHOOLINFO_SIF_METADATA = new ElementDefImpl( SCHOOLINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SchoolProgramList> fields (1 entries)
-		SchoolDTD.SCHOOLPROGRAMLIST_PROGRAM = new ElementDefImpl( SCHOOLPROGRAMLIST, "Program", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.SCHOOLPROGRAMLIST_PROGRAM = new ElementDefImpl( SCHOOLPROGRAMLIST, "Program", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <SchoolPrograms> fields (4 entries)
-		SchoolDTD.SCHOOLPROGRAMS_REFID = new ElementDefImpl( SCHOOLPROGRAMS, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLPROGRAMS_SCHOOLINFOREFID = new ElementDefImpl( SCHOOLPROGRAMS, "SchoolInfoRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SCHOOLPROGRAMS_SCHOOLYEAR = new ElementDefImpl( SCHOOLPROGRAMS, "SchoolYear", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		SchoolDTD.SCHOOLPROGRAMS_SCHOOLPROGRAMLIST = new ElementDefImpl( SCHOOLPROGRAMS, "SchoolProgramList", null, 4, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SCHOOLPROGRAMS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLPROGRAMS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SCHOOLPROGRAMS_SIF_METADATA = new ElementDefImpl( SCHOOLPROGRAMS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SchoolDTD.SCHOOLPROGRAMS_REFID = new ElementDefImpl( SCHOOLPROGRAMS, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLPROGRAMS_SCHOOLINFOREFID = new ElementDefImpl( SCHOOLPROGRAMS, "SchoolInfoRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLPROGRAMS_SCHOOLYEAR = new ElementDefImpl( SCHOOLPROGRAMS, "SchoolYear", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		SchoolDTD.SCHOOLPROGRAMS_SCHOOLPROGRAMLIST = new ElementDefImpl( SCHOOLPROGRAMS, "SchoolProgramList", null, 4, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SCHOOLPROGRAMS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLPROGRAMS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SCHOOLPROGRAMS_SIF_METADATA = new ElementDefImpl( SCHOOLPROGRAMS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SessionInfo> fields (16 entries)
-		SchoolDTD.SESSIONINFO_REFID = new ElementDefImpl( SESSIONINFO, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_SCHOOLINFOREFID = new ElementDefImpl( SESSIONINFO, "SchoolInfoRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_TIMETABLECELLREFID = new ElementDefImpl( SESSIONINFO, "TimeTableCellRefId", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_SCHOOLYEAR = new ElementDefImpl( SESSIONINFO, "SchoolYear", null, 4, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		SchoolDTD.SESSIONINFO_LOCALID = new ElementDefImpl( SESSIONINFO, "LocalId", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_TIMETABLESUBJECTLOCALID = new ElementDefImpl( SESSIONINFO, "TimeTableSubjectLocalId", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_TEACHINGGROUPLOCALID = new ElementDefImpl( SESSIONINFO, "TeachingGroupLocalId", null, 7, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_SCHOOLLOCALID = new ElementDefImpl( SESSIONINFO, "SchoolLocalId", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_STAFFPERSONALLOCALID = new ElementDefImpl( SESSIONINFO, "StaffPersonalLocalId", null, 9, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_ROOMNUMBER = new ElementDefImpl( SESSIONINFO, "RoomNumber", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_DAYID = new ElementDefImpl( SESSIONINFO, "DayId", null, 11, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_PERIODID = new ElementDefImpl( SESSIONINFO, "PeriodId", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.SESSIONINFO_SESSIONDATE = new ElementDefImpl( SESSIONINFO, "SessionDate", null, 13, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		SchoolDTD.SESSIONINFO_STARTTIME = new ElementDefImpl( SESSIONINFO, "StartTime", null, 14, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.TIME );
-		SchoolDTD.SESSIONINFO_FINISHTIME = new ElementDefImpl( SESSIONINFO, "FinishTime", null, 15, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.TIME );
-		SchoolDTD.SESSIONINFO_ROLLMARKED = new ElementDefImpl( SESSIONINFO, "RollMarked", null, 16, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SESSIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SESSIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SESSIONINFO_SIF_METADATA = new ElementDefImpl( SESSIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SchoolDTD.SESSIONINFO_REFID = new ElementDefImpl( SESSIONINFO, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_SCHOOLINFOREFID = new ElementDefImpl( SESSIONINFO, "SchoolInfoRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_TIMETABLECELLREFID = new ElementDefImpl( SESSIONINFO, "TimeTableCellRefId", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_SCHOOLYEAR = new ElementDefImpl( SESSIONINFO, "SchoolYear", null, 4, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		SchoolDTD.SESSIONINFO_LOCALID = new ElementDefImpl( SESSIONINFO, "LocalId", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_TIMETABLESUBJECTLOCALID = new ElementDefImpl( SESSIONINFO, "TimeTableSubjectLocalId", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_TEACHINGGROUPLOCALID = new ElementDefImpl( SESSIONINFO, "TeachingGroupLocalId", null, 7, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_SCHOOLLOCALID = new ElementDefImpl( SESSIONINFO, "SchoolLocalId", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_STAFFPERSONALLOCALID = new ElementDefImpl( SESSIONINFO, "StaffPersonalLocalId", null, 9, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_ROOMNUMBER = new ElementDefImpl( SESSIONINFO, "RoomNumber", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_DAYID = new ElementDefImpl( SESSIONINFO, "DayId", null, 11, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_PERIODID = new ElementDefImpl( SESSIONINFO, "PeriodId", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SESSIONINFO_SESSIONDATE = new ElementDefImpl( SESSIONINFO, "SessionDate", null, 13, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		SchoolDTD.SESSIONINFO_STARTTIME = new ElementDefImpl( SESSIONINFO, "StartTime", null, 14, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.TIME );
+		SchoolDTD.SESSIONINFO_FINISHTIME = new ElementDefImpl( SESSIONINFO, "FinishTime", null, 15, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.TIME );
+		SchoolDTD.SESSIONINFO_ROLLMARKED = new ElementDefImpl( SESSIONINFO, "RollMarked", null, 16, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SESSIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SESSIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SESSIONINFO_SIF_METADATA = new ElementDefImpl( SESSIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Start> fields (2 entries)
-		SchoolDTD.START_CODE = new ElementDefImpl( START, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.START_OTHERCODELIST = new ElementDefImpl( START, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.START_CODE = new ElementDefImpl( START, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.START_OTHERCODELIST = new ElementDefImpl( START, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <TimeTable> fields (14 entries)
-		SchoolDTD.TIMETABLE_REFID = new ElementDefImpl( TIMETABLE, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLE_SCHOOLINFOREFID = new ElementDefImpl( TIMETABLE, "SchoolInfoRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLE_SCHOOLYEAR = new ElementDefImpl( TIMETABLE, "SchoolYear", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		SchoolDTD.TIMETABLE_LOCALID = new ElementDefImpl( TIMETABLE, "LocalId", null, 4, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLE_TITLE = new ElementDefImpl( TIMETABLE, "Title", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLE_DAYSPERCYCLE = new ElementDefImpl( TIMETABLE, "DaysPerCycle", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		SchoolDTD.TIMETABLE_PERIODSPERDAY = new ElementDefImpl( TIMETABLE, "PeriodsPerDay", null, 7, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		SchoolDTD.TIMETABLE_TEACHINGPERIODSPERDAY = new ElementDefImpl( TIMETABLE, "TeachingPeriodsPerDay", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		SchoolDTD.TIMETABLE_SCHOOLLOCALID = new ElementDefImpl( TIMETABLE, "SchoolLocalId", null, 9, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLE_SCHOOLNAME = new ElementDefImpl( TIMETABLE, "SchoolName", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLE_TIMETABLECREATIONDATE = new ElementDefImpl( TIMETABLE, "TimeTableCreationDate", null, 11, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		SchoolDTD.TIMETABLE_STARTDATE = new ElementDefImpl( TIMETABLE, "StartDate", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		SchoolDTD.TIMETABLE_ENDDATE = new ElementDefImpl( TIMETABLE, "EndDate", null, 13, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		SchoolDTD.TIMETABLE_TIMETABLEDAYLIST = new ElementDefImpl( TIMETABLE, "TimeTableDayList", null, 14, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TIMETABLE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TIMETABLE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		TIMETABLE_SIF_METADATA = new ElementDefImpl( TIMETABLE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SchoolDTD.TIMETABLE_REFID = new ElementDefImpl( TIMETABLE, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLE_SCHOOLINFOREFID = new ElementDefImpl( TIMETABLE, "SchoolInfoRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLE_SCHOOLYEAR = new ElementDefImpl( TIMETABLE, "SchoolYear", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		SchoolDTD.TIMETABLE_LOCALID = new ElementDefImpl( TIMETABLE, "LocalId", null, 4, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLE_TITLE = new ElementDefImpl( TIMETABLE, "Title", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLE_DAYSPERCYCLE = new ElementDefImpl( TIMETABLE, "DaysPerCycle", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		SchoolDTD.TIMETABLE_PERIODSPERDAY = new ElementDefImpl( TIMETABLE, "PeriodsPerDay", null, 7, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		SchoolDTD.TIMETABLE_TEACHINGPERIODSPERDAY = new ElementDefImpl( TIMETABLE, "TeachingPeriodsPerDay", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		SchoolDTD.TIMETABLE_SCHOOLLOCALID = new ElementDefImpl( TIMETABLE, "SchoolLocalId", null, 9, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLE_SCHOOLNAME = new ElementDefImpl( TIMETABLE, "SchoolName", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLE_TIMETABLECREATIONDATE = new ElementDefImpl( TIMETABLE, "TimeTableCreationDate", null, 11, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		SchoolDTD.TIMETABLE_STARTDATE = new ElementDefImpl( TIMETABLE, "StartDate", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		SchoolDTD.TIMETABLE_ENDDATE = new ElementDefImpl( TIMETABLE, "EndDate", null, 13, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		SchoolDTD.TIMETABLE_TIMETABLEDAYLIST = new ElementDefImpl( TIMETABLE, "TimeTableDayList", null, 14, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TIMETABLE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TIMETABLE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		TIMETABLE_SIF_METADATA = new ElementDefImpl( TIMETABLE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TimeTableCell> fields (16 entries)
-		SchoolDTD.TIMETABLECELL_REFID = new ElementDefImpl( TIMETABLECELL, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_TIMETABLEREFID = new ElementDefImpl( TIMETABLECELL, "TimeTableRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_TIMETABLESUBJECTREFID = new ElementDefImpl( TIMETABLECELL, "TimeTableSubjectRefId", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_TEACHINGGROUPREFID = new ElementDefImpl( TIMETABLECELL, "TeachingGroupRefId", null, 4, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_ROOMINFOREFID = new ElementDefImpl( TIMETABLECELL, "RoomInfoRefId", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_STAFFPERSONALREFID = new ElementDefImpl( TIMETABLECELL, "StaffPersonalRefId", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_REFID = new ElementDefImpl( TIMETABLECELL, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_TIMETABLEREFID = new ElementDefImpl( TIMETABLECELL, "TimeTableRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_TIMETABLESUBJECTREFID = new ElementDefImpl( TIMETABLECELL, "TimeTableSubjectRefId", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_TEACHINGGROUPREFID = new ElementDefImpl( TIMETABLECELL, "TeachingGroupRefId", null, 4, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_ROOMINFOREFID = new ElementDefImpl( TIMETABLECELL, "RoomInfoRefId", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_STAFFPERSONALREFID = new ElementDefImpl( TIMETABLECELL, "StaffPersonalRefId", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.TIMETABLECELL_STAFFPERSONALREFID.DefineVersionInfo(SifVersion.SIF25, "StaffPersonalRefId", 6, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.TIMETABLECELL_TIMETABLELOCALID = new ElementDefImpl( TIMETABLECELL, "TimeTableLocalId", null, 7, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_SUBJECTLOCALID = new ElementDefImpl( TIMETABLECELL, "SubjectLocalId", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_TEACHINGGROUPLOCALID = new ElementDefImpl( TIMETABLECELL, "TeachingGroupLocalId", null, 9, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_ROOMNUMBER = new ElementDefImpl( TIMETABLECELL, "RoomNumber", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_TIMETABLELOCALID = new ElementDefImpl( TIMETABLECELL, "TimeTableLocalId", null, 7, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_SUBJECTLOCALID = new ElementDefImpl( TIMETABLECELL, "SubjectLocalId", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_TEACHINGGROUPLOCALID = new ElementDefImpl( TIMETABLECELL, "TeachingGroupLocalId", null, 9, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_ROOMNUMBER = new ElementDefImpl( TIMETABLECELL, "RoomNumber", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.TIMETABLECELL_ROOMNUMBER.DefineVersionInfo(SifVersion.SIF25, "RoomNumber", 10, (ElementDefImpl.FD_FIELD)); // (Sif 25 alias)
-		SchoolDTD.TIMETABLECELL_STAFFLOCALID = new ElementDefImpl( TIMETABLECELL, "StaffLocalId", null, 11, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_DAYID = new ElementDefImpl( TIMETABLECELL, "DayId", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_PERIODID = new ElementDefImpl( TIMETABLECELL, "PeriodId", null, 13, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_CELLTYPE = new ElementDefImpl( TIMETABLECELL, "CellType", null, 14, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_SCHOOLINFOREFID = new ElementDefImpl( TIMETABLECELL, "SchoolInfoRefId", null, 15, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLECELL_SCHOOLLOCALID = new ElementDefImpl( TIMETABLECELL, "SchoolLocalId", null, 16, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		TIMETABLECELL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TIMETABLECELL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		TIMETABLECELL_SIF_METADATA = new ElementDefImpl( TIMETABLECELL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SchoolDTD.TIMETABLECELL_STAFFLOCALID = new ElementDefImpl( TIMETABLECELL, "StaffLocalId", null, 11, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_DAYID = new ElementDefImpl( TIMETABLECELL, "DayId", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_PERIODID = new ElementDefImpl( TIMETABLECELL, "PeriodId", null, 13, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_CELLTYPE = new ElementDefImpl( TIMETABLECELL, "CellType", null, 14, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_SCHOOLINFOREFID = new ElementDefImpl( TIMETABLECELL, "SchoolInfoRefId", null, 15, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLECELL_SCHOOLLOCALID = new ElementDefImpl( TIMETABLECELL, "SchoolLocalId", null, 16, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		TIMETABLECELL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TIMETABLECELL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		TIMETABLECELL_SIF_METADATA = new ElementDefImpl( TIMETABLECELL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TimeTableDay> fields (3 entries)
-		SchoolDTD.TIMETABLEDAY_DAYID = new ElementDefImpl( TIMETABLEDAY, "DayId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLEDAY_DAYTITLE = new ElementDefImpl( TIMETABLEDAY, "DayTitle", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLEDAY_TIMETABLEPERIODLIST = new ElementDefImpl( TIMETABLEDAY, "TimeTablePeriodList", null, 3, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.TIMETABLEDAY_DAYID = new ElementDefImpl( TIMETABLEDAY, "DayId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLEDAY_DAYTITLE = new ElementDefImpl( TIMETABLEDAY, "DayTitle", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLEDAY_TIMETABLEPERIODLIST = new ElementDefImpl( TIMETABLEDAY, "TimeTablePeriodList", null, 3, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <TimeTableDayList> fields (1 entries)
-		SchoolDTD.TIMETABLEDAYLIST_TIMETABLEDAY = new ElementDefImpl( TIMETABLEDAYLIST, "TimeTableDay", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.TIMETABLEDAYLIST_TIMETABLEDAY = new ElementDefImpl( TIMETABLEDAYLIST, "TimeTableDay", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <TimeTablePeriod> fields (2 entries)
-		SchoolDTD.TIMETABLEPERIOD_PERIODID = new ElementDefImpl( TIMETABLEPERIOD, "PeriodId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLEPERIOD_PERIODTITLE = new ElementDefImpl( TIMETABLEPERIOD, "PeriodTitle", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLEPERIOD_PERIODID = new ElementDefImpl( TIMETABLEPERIOD, "PeriodId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLEPERIOD_PERIODTITLE = new ElementDefImpl( TIMETABLEPERIOD, "PeriodTitle", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <TimeTablePeriodList> fields (1 entries)
-		SchoolDTD.TIMETABLEPERIODLIST_TIMETABLEPERIOD = new ElementDefImpl( TIMETABLEPERIODLIST, "TimeTablePeriod", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		SchoolDTD.TIMETABLEPERIODLIST_TIMETABLEPERIOD = new ElementDefImpl( TIMETABLEPERIODLIST, "TimeTablePeriod", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <TimeTableSubject> fields (17 entries)
-		SchoolDTD.TIMETABLESUBJECT_REFID = new ElementDefImpl( TIMETABLESUBJECT, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLESUBJECT_SUBJECTLOCALID = new ElementDefImpl( TIMETABLESUBJECT, "SubjectLocalId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLESUBJECT_ACADEMICYEAR = new ElementDefImpl( TIMETABLESUBJECT, "AcademicYear", null, 3, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SchoolDTD.TIMETABLESUBJECT_ACADEMICYEARRANGE = new ElementDefImpl( TIMETABLESUBJECT, "AcademicYearRange", null, 4, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SchoolDTD.TIMETABLESUBJECT_COURSELOCALID = new ElementDefImpl( TIMETABLESUBJECT, "CourseLocalId", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLESUBJECT_SCHOOLCOURSEINFOREFID = new ElementDefImpl( TIMETABLESUBJECT, "SchoolCourseInfoRefId", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLESUBJECT_FACULTY = new ElementDefImpl( TIMETABLESUBJECT, "Faculty", null, 7, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLESUBJECT_SUBJECTSHORTNAME = new ElementDefImpl( TIMETABLESUBJECT, "SubjectShortName", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLESUBJECT_SUBJECTLONGNAME = new ElementDefImpl( TIMETABLESUBJECT, "SubjectLongName", null, 9, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLESUBJECT_SUBJECTTYPE = new ElementDefImpl( TIMETABLESUBJECT, "SubjectType", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLESUBJECT_PROPOSEDMAXCLASSSIZE = new ElementDefImpl( TIMETABLESUBJECT, "ProposedMaxClassSize", null, 11, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		SchoolDTD.TIMETABLESUBJECT_PROPOSEDMINCLASSSIZE = new ElementDefImpl( TIMETABLESUBJECT, "ProposedMinClassSize", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		SchoolDTD.TIMETABLESUBJECT_SCHOOLINFOREFID = new ElementDefImpl( TIMETABLESUBJECT, "SchoolInfoRefId", null, 13, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLESUBJECT_SCHOOLLOCALID = new ElementDefImpl( TIMETABLESUBJECT, "SchoolLocalId", null, 14, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		SchoolDTD.TIMETABLESUBJECT_SEMESTER = new ElementDefImpl( TIMETABLESUBJECT, "Semester", null, 15, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		SchoolDTD.TIMETABLESUBJECT_SCHOOLYEAR = new ElementDefImpl( TIMETABLESUBJECT, "SchoolYear", null, 16, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		SchoolDTD.TIMETABLESUBJECT_OTHERCODELIST = new ElementDefImpl( TIMETABLESUBJECT, "OtherCodeList", null, 17, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TIMETABLESUBJECT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TIMETABLESUBJECT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		TIMETABLESUBJECT_SIF_METADATA = new ElementDefImpl( TIMETABLESUBJECT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SchoolDTD.TIMETABLESUBJECT_REFID = new ElementDefImpl( TIMETABLESUBJECT, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLESUBJECT_SUBJECTLOCALID = new ElementDefImpl( TIMETABLESUBJECT, "SubjectLocalId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLESUBJECT_ACADEMICYEAR = new ElementDefImpl( TIMETABLESUBJECT, "AcademicYear", null, 3, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SchoolDTD.TIMETABLESUBJECT_ACADEMICYEARRANGE = new ElementDefImpl( TIMETABLESUBJECT, "AcademicYearRange", null, 4, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SchoolDTD.TIMETABLESUBJECT_COURSELOCALID = new ElementDefImpl( TIMETABLESUBJECT, "CourseLocalId", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLESUBJECT_SCHOOLCOURSEINFOREFID = new ElementDefImpl( TIMETABLESUBJECT, "SchoolCourseInfoRefId", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLESUBJECT_FACULTY = new ElementDefImpl( TIMETABLESUBJECT, "Faculty", null, 7, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLESUBJECT_SUBJECTSHORTNAME = new ElementDefImpl( TIMETABLESUBJECT, "SubjectShortName", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLESUBJECT_SUBJECTLONGNAME = new ElementDefImpl( TIMETABLESUBJECT, "SubjectLongName", null, 9, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLESUBJECT_SUBJECTTYPE = new ElementDefImpl( TIMETABLESUBJECT, "SubjectType", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLESUBJECT_PROPOSEDMAXCLASSSIZE = new ElementDefImpl( TIMETABLESUBJECT, "ProposedMaxClassSize", null, 11, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		SchoolDTD.TIMETABLESUBJECT_PROPOSEDMINCLASSSIZE = new ElementDefImpl( TIMETABLESUBJECT, "ProposedMinClassSize", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		SchoolDTD.TIMETABLESUBJECT_SCHOOLINFOREFID = new ElementDefImpl( TIMETABLESUBJECT, "SchoolInfoRefId", null, 13, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLESUBJECT_SCHOOLLOCALID = new ElementDefImpl( TIMETABLESUBJECT, "SchoolLocalId", null, 14, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.TIMETABLESUBJECT_SEMESTER = new ElementDefImpl( TIMETABLESUBJECT, "Semester", null, 15, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		SchoolDTD.TIMETABLESUBJECT_SCHOOLYEAR = new ElementDefImpl( TIMETABLESUBJECT, "SchoolYear", null, 16, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		SchoolDTD.TIMETABLESUBJECT_OTHERCODELIST = new ElementDefImpl( TIMETABLESUBJECT, "OtherCodeList", null, 17, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TIMETABLESUBJECT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TIMETABLESUBJECT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		TIMETABLESUBJECT_SIF_METADATA = new ElementDefImpl( TIMETABLESUBJECT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd
@@ -879,6 +915,7 @@ namespace OpenADK.Library.au.School
 		dictionary["SchoolInfo_LocalId"] = SchoolDTD.SCHOOLINFO_LOCALID ;
 		dictionary["SchoolInfo_NonGovSystemicStatus"] = SchoolDTD.SCHOOLINFO_NONGOVSYSTEMICSTATUS ;
 		dictionary["SchoolInfo_OperationalStatus"] = SchoolDTD.SCHOOLINFO_OPERATIONALSTATUS ;
+		dictionary["SchoolInfo_OtherIdList"] = SchoolDTD.SCHOOLINFO_OTHERIDLIST ;
 		dictionary["SchoolInfo_OtherLEA"] = SchoolDTD.SCHOOLINFO_OTHERLEA ;
 		dictionary["SchoolInfo_PhoneNumberList"] = SchoolDTD.SCHOOLINFO_PHONENUMBERLIST ;
 		dictionary["SchoolInfo_PrincipalInfo"] = SchoolDTD.SCHOOLINFO_PRINCIPALINFO ;

@@ -20,7 +20,7 @@ namespace OpenADK.Library.uk.Datamodel
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -224,93 +224,93 @@ namespace OpenADK.Library.uk.Datamodel
 	{
 		//  Objects defined by this SDO Library...
 
-		CREATED = new ElementDefImpl( null, "Created", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CREATOR = new ElementDefImpl( null, "Creator", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CREATORS = new ElementDefImpl( null, "Creators", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FEEFORUSE = new ElementDefImpl( null, "FeeForUse", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FEESFORUSE = new ElementDefImpl( null, "FeesForUse", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		LIFECYCLE = new ElementDefImpl( null, "LifeCycle", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MODIFICATIONHISTORY = new ElementDefImpl( null, "ModificationHistory", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MODIFIED = new ElementDefImpl( null, "Modified", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		RIGHTSELEMENT = new ElementDefImpl( null, "RightsElement", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		RIGHTSELEMENTS = new ElementDefImpl( null, "RightsElements", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_METADATA = new ElementDefImpl( null, "SIF_Metadata", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SPANGAP = new ElementDefImpl( null, "SpanGap", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SPANGAPS = new ElementDefImpl( null, "SpanGaps", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		TIMEELEMENT = new ElementDefImpl( null, "TimeElement", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		TIMEELEMENTS = new ElementDefImpl( null, "TimeElements", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		CREATED = new ElementDefImpl( null, "Created", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CREATOR = new ElementDefImpl( null, "Creator", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CREATORS = new ElementDefImpl( null, "Creators", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FEEFORUSE = new ElementDefImpl( null, "FeeForUse", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FEESFORUSE = new ElementDefImpl( null, "FeesForUse", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		LIFECYCLE = new ElementDefImpl( null, "LifeCycle", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MODIFICATIONHISTORY = new ElementDefImpl( null, "ModificationHistory", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MODIFIED = new ElementDefImpl( null, "Modified", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		RIGHTSELEMENT = new ElementDefImpl( null, "RightsElement", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		RIGHTSELEMENTS = new ElementDefImpl( null, "RightsElements", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_METADATA = new ElementDefImpl( null, "SIF_Metadata", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SPANGAP = new ElementDefImpl( null, "SpanGap", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SPANGAPS = new ElementDefImpl( null, "SpanGaps", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		TIMEELEMENT = new ElementDefImpl( null, "TimeElement", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		TIMEELEMENTS = new ElementDefImpl( null, "TimeElements", null, 0, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 
 		// <Created> fields (2 entries)
-		DatamodelDTD.CREATED_DATETIME = new ElementDefImpl( CREATED, "DateTime", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		DatamodelDTD.CREATED_CREATORS = new ElementDefImpl( CREATED, "Creators", null, 2, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.CREATED_DATETIME = new ElementDefImpl( CREATED, "DateTime", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		DatamodelDTD.CREATED_CREATORS = new ElementDefImpl( CREATED, "Creators", null, 2, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Creator> fields (2 entries)
-		DatamodelDTD.CREATOR_NAME = new ElementDefImpl( CREATOR, "Name", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.CREATOR_ID = new ElementDefImpl( CREATOR, "ID", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.CREATOR_NAME = new ElementDefImpl( CREATOR, "Name", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.CREATOR_ID = new ElementDefImpl( CREATOR, "ID", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Creators> fields (1 entries)
-		DatamodelDTD.CREATORS_CREATOR = new ElementDefImpl( CREATORS, "Creator", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.CREATORS_CREATOR = new ElementDefImpl( CREATORS, "Creator", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FeeForUse> fields (4 entries)
-		DatamodelDTD.FEEFORUSE_USETYPE = new ElementDefImpl( FEEFORUSE, "UseType", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.FEEFORUSE_METERINGTYPE = new ElementDefImpl( FEEFORUSE, "MeteringType", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.FEEFORUSE_METERINGURL = new ElementDefImpl( FEEFORUSE, "MeteringURL", null, 3, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.FEEFORUSE_PERUSECHARGE = new ElementDefAlias( FEEFORUSE, "PerUseCharge", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		DatamodelDTD.FEEFORUSE_USETYPE = new ElementDefImpl( FEEFORUSE, "UseType", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.FEEFORUSE_METERINGTYPE = new ElementDefImpl( FEEFORUSE, "MeteringType", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.FEEFORUSE_METERINGURL = new ElementDefImpl( FEEFORUSE, "MeteringURL", null, 3, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.FEEFORUSE_PERUSECHARGE = new ElementDefAlias( FEEFORUSE, "PerUseCharge", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <FeesForUse> fields (1 entries)
-		DatamodelDTD.FEESFORUSE_FEEFORUSE = new ElementDefImpl( FEESFORUSE, "FeeForUse", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.FEESFORUSE_FEEFORUSE = new ElementDefImpl( FEESFORUSE, "FeeForUse", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <LifeCycle> fields (3 entries)
-		DatamodelDTD.LIFECYCLE_CREATED = new ElementDefImpl( LIFECYCLE, "Created", null, 1, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.LIFECYCLE_MODIFICATIONHISTORY = new ElementDefImpl( LIFECYCLE, "ModificationHistory", null, 2, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.LIFECYCLE_TIMEELEMENTS = new ElementDefImpl( LIFECYCLE, "TimeElements", null, 3, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.LIFECYCLE_CREATED = new ElementDefImpl( LIFECYCLE, "Created", null, 1, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.LIFECYCLE_MODIFICATIONHISTORY = new ElementDefImpl( LIFECYCLE, "ModificationHistory", null, 2, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.LIFECYCLE_TIMEELEMENTS = new ElementDefImpl( LIFECYCLE, "TimeElements", null, 3, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ModificationHistory> fields (1 entries)
-		DatamodelDTD.MODIFICATIONHISTORY_MODIFIED = new ElementDefImpl( MODIFICATIONHISTORY, "Modified", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.MODIFICATIONHISTORY_MODIFIED = new ElementDefImpl( MODIFICATIONHISTORY, "Modified", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Modified> fields (3 entries)
-		DatamodelDTD.MODIFIED_BY = new ElementDefImpl( MODIFIED, "By", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.MODIFIED_DATETIME = new ElementDefImpl( MODIFIED, "DateTime", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		DatamodelDTD.MODIFIED_DESCRIPTION = new ElementDefImpl( MODIFIED, "Description", null, 3, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.MODIFIED_BY = new ElementDefImpl( MODIFIED, "By", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.MODIFIED_DATETIME = new ElementDefImpl( MODIFIED, "DateTime", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		DatamodelDTD.MODIFIED_DESCRIPTION = new ElementDefImpl( MODIFIED, "Description", null, 3, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RightsElement> fields (4 entries)
-		DatamodelDTD.RIGHTSELEMENT_COST = new ElementDefImpl( RIGHTSELEMENT, "Cost", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		DatamodelDTD.RIGHTSELEMENT_FEESFORUSE = new ElementDefImpl( RIGHTSELEMENT, "FeesForUse", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.RIGHTSELEMENT_COPYRIGHTSTATEMENT = new ElementDefImpl( RIGHTSELEMENT, "CopyrightStatement", null, 3, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.RIGHTSELEMENT_TERMSOFUSE = new ElementDefImpl( RIGHTSELEMENT, "TermsOfUse", null, 4, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		DatamodelDTD.RIGHTSELEMENT_COST = new ElementDefImpl( RIGHTSELEMENT, "Cost", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		DatamodelDTD.RIGHTSELEMENT_FEESFORUSE = new ElementDefImpl( RIGHTSELEMENT, "FeesForUse", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.RIGHTSELEMENT_COPYRIGHTSTATEMENT = new ElementDefImpl( RIGHTSELEMENT, "CopyrightStatement", null, 3, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.RIGHTSELEMENT_TERMSOFUSE = new ElementDefImpl( RIGHTSELEMENT, "TermsOfUse", null, 4, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RightsElements> fields (1 entries)
-		DatamodelDTD.RIGHTSELEMENTS_RIGHTSELEMENT = new ElementDefImpl( RIGHTSELEMENTS, "RightsElement", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.RIGHTSELEMENTS_RIGHTSELEMENT = new ElementDefImpl( RIGHTSELEMENTS, "RightsElement", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Metadata> fields (3 entries)
-		DatamodelDTD.SIF_METADATA_TIMEELEMENTS = new ElementDefImpl( SIF_METADATA, "TimeElements", null, 1, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.SIF_METADATA_LIFECYCLE = new ElementDefImpl( SIF_METADATA, "LifeCycle", null, 2, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.SIF_METADATA_RIGHTSELEMENTS = new ElementDefImpl( SIF_METADATA, "RightsElements", null, 3, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.SIF_METADATA_TIMEELEMENTS = new ElementDefImpl( SIF_METADATA, "TimeElements", null, 1, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.SIF_METADATA_LIFECYCLE = new ElementDefImpl( SIF_METADATA, "LifeCycle", null, 2, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.SIF_METADATA_RIGHTSELEMENTS = new ElementDefImpl( SIF_METADATA, "RightsElements", null, 3, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SpanGap> fields (6 entries)
-		DatamodelDTD.SPANGAP_TYPE = new ElementDefImpl( SPANGAP, "Type", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SPANGAP_CODE = new ElementDefImpl( SPANGAP, "Code", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SPANGAP_NAME = new ElementDefImpl( SPANGAP, "Name", null, 3, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SPANGAP_VALUE = new ElementDefImpl( SPANGAP, "Value", null, 4, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.SPANGAP_STARTDATETIME = new ElementDefImpl( SPANGAP, "StartDateTime", null, 5, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		DatamodelDTD.SPANGAP_ENDDATETIME = new ElementDefImpl( SPANGAP, "EndDateTime", null, 6, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
+		DatamodelDTD.SPANGAP_TYPE = new ElementDefImpl( SPANGAP, "Type", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SPANGAP_CODE = new ElementDefImpl( SPANGAP, "Code", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SPANGAP_NAME = new ElementDefImpl( SPANGAP, "Name", null, 3, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SPANGAP_VALUE = new ElementDefImpl( SPANGAP, "Value", null, 4, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.SPANGAP_STARTDATETIME = new ElementDefImpl( SPANGAP, "StartDateTime", null, 5, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		DatamodelDTD.SPANGAP_ENDDATETIME = new ElementDefImpl( SPANGAP, "EndDateTime", null, 6, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
 
 		// <SpanGaps> fields (1 entries)
-		DatamodelDTD.SPANGAPS_SPANGAP = new ElementDefImpl( SPANGAPS, "SpanGap", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.SPANGAPS_SPANGAP = new ElementDefImpl( SPANGAPS, "SpanGap", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TimeElement> fields (8 entries)
-		DatamodelDTD.TIMEELEMENT_TYPE = new ElementDefImpl( TIMEELEMENT, "Type", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.TIMEELEMENT_CODE = new ElementDefImpl( TIMEELEMENT, "Code", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.TIMEELEMENT_NAME = new ElementDefImpl( TIMEELEMENT, "Name", null, 3, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.TIMEELEMENT_VALUE = new ElementDefImpl( TIMEELEMENT, "Value", null, 4, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		DatamodelDTD.TIMEELEMENT_STARTDATETIME = new ElementDefImpl( TIMEELEMENT, "StartDateTime", null, 5, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		DatamodelDTD.TIMEELEMENT_ENDDATETIME = new ElementDefImpl( TIMEELEMENT, "EndDateTime", null, 6, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		DatamodelDTD.TIMEELEMENT_SPANGAPS = new ElementDefImpl( TIMEELEMENT, "SpanGaps", null, 7, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DatamodelDTD.TIMEELEMENT_ISCURRENT = new ElementDefImpl( TIMEELEMENT, "IsCurrent", null, 8, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
+		DatamodelDTD.TIMEELEMENT_TYPE = new ElementDefImpl( TIMEELEMENT, "Type", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.TIMEELEMENT_CODE = new ElementDefImpl( TIMEELEMENT, "Code", null, 2, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.TIMEELEMENT_NAME = new ElementDefImpl( TIMEELEMENT, "Name", null, 3, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.TIMEELEMENT_VALUE = new ElementDefImpl( TIMEELEMENT, "Value", null, 4, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		DatamodelDTD.TIMEELEMENT_STARTDATETIME = new ElementDefImpl( TIMEELEMENT, "StartDateTime", null, 5, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		DatamodelDTD.TIMEELEMENT_ENDDATETIME = new ElementDefImpl( TIMEELEMENT, "EndDateTime", null, 6, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		DatamodelDTD.TIMEELEMENT_SPANGAPS = new ElementDefImpl( TIMEELEMENT, "SpanGaps", null, 7, SifDtd.DATAMODEL, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DatamodelDTD.TIMEELEMENT_ISCURRENT = new ElementDefImpl( TIMEELEMENT, "IsCurrent", null, 8, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
 
 		// <TimeElements> fields (1 entries)
-		DatamodelDTD.TIMEELEMENTS_TIMEELEMENT = new ElementDefImpl( TIMEELEMENTS, "TimeElement", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		DatamodelDTD.TIMEELEMENTS_TIMEELEMENT = new ElementDefImpl( TIMEELEMENTS, "TimeElement", null, 1, SifDtd.DATAMODEL, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

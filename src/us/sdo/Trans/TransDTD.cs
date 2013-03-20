@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Trans
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -433,253 +433,253 @@ namespace OpenADK.Library.us.Trans
 		//  Objects defined by this SDO Library...
 
 		BUS = new ElementDefImpl( null, "Bus", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF11 );
-		BUSDRIVER = new ElementDefImpl( null, "BusDriver", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		BUSEQUIPMENT = new ElementDefImpl( null, "BusEquipment", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		BUSINFO = new ElementDefImpl( null, "BusInfo", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		BUSPOSITIONINFO = new ElementDefImpl( null, "BusPositionInfo", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		BUSROUTEDETAIL = new ElementDefImpl( null, "BusRouteDetail", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		BUSROUTEINFO = new ElementDefImpl( null, "BusRouteInfo", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		BUSSTAFF = new ElementDefImpl( null, "BusStaff", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		BUSSTAFFLIST = new ElementDefImpl( null, "BusStaffList", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		BUSDRIVER = new ElementDefImpl( null, "BusDriver", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		BUSEQUIPMENT = new ElementDefImpl( null, "BusEquipment", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		BUSINFO = new ElementDefImpl( null, "BusInfo", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		BUSPOSITIONINFO = new ElementDefImpl( null, "BusPositionInfo", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		BUSROUTEDETAIL = new ElementDefImpl( null, "BusRouteDetail", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		BUSROUTEINFO = new ElementDefImpl( null, "BusRouteInfo", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		BUSSTAFF = new ElementDefImpl( null, "BusStaff", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		BUSSTAFFLIST = new ElementDefImpl( null, "BusStaffList", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 		BUSSTOP = new ElementDefImpl( null, "BusStop", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF11 );
-		BUSSTOPINFO = new ElementDefImpl( null, "BusStopInfo", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		DESTINATIONPOINT = new ElementDefImpl( null, "DestinationPoint", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		DISEMBARKBUSROUTEDETAIL = new ElementDefImpl( null, "DisembarkBusRouteDetail", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		DISTANCE = new ElementDefImpl( null, "Distance", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EMBARKBUSROUTEDETAIL = new ElementDefImpl( null, "EmbarkBusRouteDetail", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		EMPLINK = new ElementDefImpl( null, "EmpLink", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		EQUIPMENT = new ElementDefImpl( null, "Equipment", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		EQUIPMENTLIST = new ElementDefImpl( null, "EquipmentList", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		HOMEBUSROUTEDETAIL = new ElementDefImpl( null, "HomeBusRouteDetail", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		BUSSTOPINFO = new ElementDefImpl( null, "BusStopInfo", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		DESTINATIONPOINT = new ElementDefImpl( null, "DestinationPoint", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		DISEMBARKBUSROUTEDETAIL = new ElementDefImpl( null, "DisembarkBusRouteDetail", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		DISTANCE = new ElementDefImpl( null, "Distance", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EMBARKBUSROUTEDETAIL = new ElementDefImpl( null, "EmbarkBusRouteDetail", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		EMPLINK = new ElementDefImpl( null, "EmpLink", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		EQUIPMENT = new ElementDefImpl( null, "Equipment", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		EQUIPMENTLIST = new ElementDefImpl( null, "EquipmentList", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		HOMEBUSROUTEDETAIL = new ElementDefImpl( null, "HomeBusRouteDetail", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		HOMEBUSROUTEDETAIL.DefineVersionInfo(SifVersion.SIF15r1, "~HomeBusRouteDetail/@BusRouteDetailRefId", 0, (0)); // (Sif 15r1 alias)
-		ODOMETER = new ElementDefImpl( null, "Odometer", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		ORIGINPOINT = new ElementDefImpl( null, "OriginPoint", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		ROUTESTATUS = new ElementDefImpl( null, "RouteStatus", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		SCHOOLBUSROUTEDETAIL = new ElementDefImpl( null, "SchoolBusRouteDetail", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		SPEEDOMETER = new ElementDefImpl( null, "Speedometer", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		STUDENTTRANSPORTINFO = new ElementDefImpl( null, "StudentTransportInfo", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		TELEMETRY = new ElementDefImpl( null, "Telemetry", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		TELEMETRYLIST = new ElementDefImpl( null, "TelemetryList", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		TRANSFERPOINT = new ElementDefImpl( null, "TransferPoint", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		TRANSFERPOINTS = new ElementDefImpl( null, "TransferPoints", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		TRANSSTUDENT = new ElementDefImpl( null, "TransStudent", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		TRANSSTUDENTS = new ElementDefImpl( null, "TransStudents", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		ODOMETER = new ElementDefImpl( null, "Odometer", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		ORIGINPOINT = new ElementDefImpl( null, "OriginPoint", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		ROUTESTATUS = new ElementDefImpl( null, "RouteStatus", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		SCHOOLBUSROUTEDETAIL = new ElementDefImpl( null, "SchoolBusRouteDetail", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		SPEEDOMETER = new ElementDefImpl( null, "Speedometer", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		STUDENTTRANSPORTINFO = new ElementDefImpl( null, "StudentTransportInfo", null, 0, SifDtd.TRANS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		TELEMETRY = new ElementDefImpl( null, "Telemetry", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		TELEMETRYLIST = new ElementDefImpl( null, "TelemetryList", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		TRANSFERPOINT = new ElementDefImpl( null, "TransferPoint", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		TRANSFERPOINTS = new ElementDefImpl( null, "TransferPoints", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		TRANSSTUDENT = new ElementDefImpl( null, "TransStudent", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		TRANSSTUDENTS = new ElementDefImpl( null, "TransStudents", null, 0, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 
 
 		// <Bus> fields (1 entries)
 		TransDTD.BUS_BUSINFOREFID = new ElementDefImpl( BUS, "BusInfoRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF11, SifTypeConverters.STRING );
 
 		// <BusDriver> fields (3 entries)
-		TransDTD.BUSDRIVER_STATUS = new ElementDefImpl( BUSDRIVER, "Status", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.BUSDRIVER_STATUS = new ElementDefImpl( BUSDRIVER, "Status", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.BUSDRIVER_STATUS.DefineVersionInfo(SifVersion.SIF20, "Status", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.BUSDRIVER_NAME = new ElementDefImpl( BUSDRIVER, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		TransDTD.BUSDRIVER_NAME = new ElementDefImpl( BUSDRIVER, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		TransDTD.BUSDRIVER_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 1, 0); // (Sif 20 alias)
-		TransDTD.BUSDRIVER_EMPLOYEEPERSONALREFID = new ElementDefImpl( BUSDRIVER, "EmployeePersonalRefId", "~XPathSurrogate{EmpLink/@EmployeePersonalRefId=.}EmpLink", 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.BUSDRIVER_EMPLOYEEPERSONALREFID = new ElementDefImpl( BUSDRIVER, "EmployeePersonalRefId", "~XPathSurrogate{EmpLink/@EmployeePersonalRefId=.}EmpLink", 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.BUSDRIVER_EMPLOYEEPERSONALREFID.DefineVersionInfo(SifVersion.SIF20, "EmployeePersonalRefId", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <BusEquipment> fields (2 entries)
-		TransDTD.BUSEQUIPMENT_REFID = new ElementDefImpl( BUSEQUIPMENT, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSEQUIPMENT_DESCRIPTION = new ElementDefImpl( BUSEQUIPMENT, "Description", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		BUSEQUIPMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSEQUIPMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		BUSEQUIPMENT_SIF_METADATA = new ElementDefImpl( BUSEQUIPMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		TransDTD.BUSEQUIPMENT_REFID = new ElementDefImpl( BUSEQUIPMENT, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSEQUIPMENT_DESCRIPTION = new ElementDefImpl( BUSEQUIPMENT, "Description", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		BUSEQUIPMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSEQUIPMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		BUSEQUIPMENT_SIF_METADATA = new ElementDefImpl( BUSEQUIPMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <BusInfo> fields (8 entries)
-		TransDTD.BUSINFO_REFID = new ElementDefImpl( BUSINFO, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSINFO_VEHICLENUMBER = new ElementDefImpl( BUSINFO, "VehicleNumber", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.BUSINFO_REFID = new ElementDefImpl( BUSINFO, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSINFO_VEHICLENUMBER = new ElementDefImpl( BUSINFO, "VehicleNumber", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.BUSINFO_VEHICLENUMBER.DefineVersionInfo(SifVersion.SIF20, "VehicleNumber", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.BUSINFO_SEATINGCAPACITY = new ElementDefImpl( BUSINFO, "SeatingCapacity", null, 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
-		TransDTD.BUSINFO_CONTRACTOR = new ElementDefImpl( BUSINFO, "Contractor", null, 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSINFO_EQUIPMENTLIST = new ElementDefImpl( BUSINFO, "EquipmentList", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		TransDTD.BUSINFO_SEATINGCAPACITY = new ElementDefImpl( BUSINFO, "SeatingCapacity", null, 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
+		TransDTD.BUSINFO_CONTRACTOR = new ElementDefImpl( BUSINFO, "Contractor", null, 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSINFO_EQUIPMENTLIST = new ElementDefImpl( BUSINFO, "EquipmentList", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		TransDTD.BUSINFO_EQUIPMENTLIST.DefineVersionInfo(SifVersion.SIF20, "EquipmentList", 5, 0); // (Sif 20 alias)
-		TransDTD.BUSINFO_MANUFACTUREYEAR = new ElementDefImpl( BUSINFO, "ManufactureYear", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.INT );
-		TransDTD.BUSINFO_VEHICLEIDENTIFICATIONNUMBER = new ElementDefImpl( BUSINFO, "VehicleIdentificationNumber", null, 7, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSINFO_LICENSEPLATENUMBER = new ElementDefImpl( BUSINFO, "LicensePlateNumber", null, 8, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
-		BUSINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		BUSINFO_SIF_METADATA = new ElementDefImpl( BUSINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		TransDTD.BUSINFO_MANUFACTUREYEAR = new ElementDefImpl( BUSINFO, "ManufactureYear", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.INT );
+		TransDTD.BUSINFO_VEHICLEIDENTIFICATIONNUMBER = new ElementDefImpl( BUSINFO, "VehicleIdentificationNumber", null, 7, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSINFO_LICENSEPLATENUMBER = new ElementDefImpl( BUSINFO, "LicensePlateNumber", null, 8, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
+		BUSINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		BUSINFO_SIF_METADATA = new ElementDefImpl( BUSINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <BusPositionInfo> fields (13 entries)
-		TransDTD.BUSPOSITIONINFO_BUSINFOREFID = new ElementDefImpl( BUSPOSITIONINFO, "BusInfoRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSPOSITIONINFO_DATE = new ElementDefImpl( BUSPOSITIONINFO, "Date", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		TransDTD.BUSPOSITIONINFO_BUSINFOREFID = new ElementDefImpl( BUSPOSITIONINFO, "BusInfoRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSPOSITIONINFO_DATE = new ElementDefImpl( BUSPOSITIONINFO, "Date", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		TransDTD.BUSPOSITIONINFO_DATE.DefineVersionInfo(SifVersion.SIF20, "Date", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.BUSPOSITIONINFO_TIME = new ElementDefImpl( BUSPOSITIONINFO, "Time", "~SIFTimeSurrogate{}", 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.TIME );
+		TransDTD.BUSPOSITIONINFO_TIME = new ElementDefImpl( BUSPOSITIONINFO, "Time", "~SIFTimeSurrogate{}", 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.TIME );
 		TransDTD.BUSPOSITIONINFO_TIME.DefineVersionInfo(SifVersion.SIF20, "Time", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.BUSPOSITIONINFO_GRIDLOCATION = new ElementDefImpl( BUSPOSITIONINFO, "GridLocation", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		TransDTD.BUSPOSITIONINFO_GRIDLOCATION = new ElementDefImpl( BUSPOSITIONINFO, "GridLocation", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		TransDTD.BUSPOSITIONINFO_GRIDLOCATION.DefineVersionInfo(SifVersion.SIF20, "GridLocation", 4, 0); // (Sif 20 alias)
-		TransDTD.BUSPOSITIONINFO_TELEMATICSID = new ElementDefImpl( BUSPOSITIONINFO, "TelematicsId", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSPOSITIONINFO_TELEMETRYLIST = new ElementDefImpl( BUSPOSITIONINFO, "TelemetryList", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		TransDTD.BUSPOSITIONINFO_TELEMATICSID = new ElementDefImpl( BUSPOSITIONINFO, "TelematicsId", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSPOSITIONINFO_TELEMETRYLIST = new ElementDefImpl( BUSPOSITIONINFO, "TelemetryList", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		TransDTD.BUSPOSITIONINFO_TELEMETRYLIST.DefineVersionInfo(SifVersion.SIF20, "TelemetryList", 6, 0); // (Sif 20 alias)
-		TransDTD.BUSPOSITIONINFO_BUSDRIVER = new ElementDefImpl( BUSPOSITIONINFO, "BusDriver", null, 7, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		TransDTD.BUSPOSITIONINFO_BUSSTAFFLIST = new ElementDefImpl( BUSPOSITIONINFO, "BusStaffList", null, 8, SifDtd.TRANS, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		TransDTD.BUSPOSITIONINFO_BUSDRIVER = new ElementDefImpl( BUSPOSITIONINFO, "BusDriver", null, 7, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		TransDTD.BUSPOSITIONINFO_BUSSTAFFLIST = new ElementDefImpl( BUSPOSITIONINFO, "BusStaffList", null, 8, SifDtd.TRANS, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		TransDTD.BUSPOSITIONINFO_BUSSTAFFLIST.DefineVersionInfo(SifVersion.SIF20, "BusStaffList", 8, 0); // (Sif 20 alias)
-		TransDTD.BUSPOSITIONINFO_ROUTESTATUS = new ElementDefImpl( BUSPOSITIONINFO, "RouteStatus", null, 9, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		TransDTD.BUSPOSITIONINFO_ROUTESTATUS = new ElementDefImpl( BUSPOSITIONINFO, "RouteStatus", null, 9, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		TransDTD.BUSPOSITIONINFO_ROUTESTATUS.DefineVersionInfo(SifVersion.SIF20, "RouteStatus", 9, 0); // (Sif 20 alias)
-		TransDTD.BUSPOSITIONINFO_OTHERSTATUS = new ElementDefImpl( BUSPOSITIONINFO, "OtherStatus", null, 10, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.BUSPOSITIONINFO_OTHERSTATUS = new ElementDefImpl( BUSPOSITIONINFO, "OtherStatus", null, 10, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.BUSPOSITIONINFO_OTHERSTATUS.DefineVersionInfo(SifVersion.SIF20, "OtherStatus", 10, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.BUSPOSITIONINFO_ODOMETER = new ElementDefImpl( BUSPOSITIONINFO, "Odometer", null, 11, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		TransDTD.BUSPOSITIONINFO_SPEEDOMETER = new ElementDefImpl( BUSPOSITIONINFO, "Speedometer", null, 12, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		TransDTD.BUSPOSITIONINFO_STUDENTS = new ElementDefAlias( BUSPOSITIONINFO, "Students", null, "TransStudents", 13, SifDtd.TRANS, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		TransDTD.BUSPOSITIONINFO_ODOMETER = new ElementDefImpl( BUSPOSITIONINFO, "Odometer", null, 11, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		TransDTD.BUSPOSITIONINFO_SPEEDOMETER = new ElementDefImpl( BUSPOSITIONINFO, "Speedometer", null, 12, SifDtd.TRANS, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		TransDTD.BUSPOSITIONINFO_STUDENTS = new ElementDefAlias( BUSPOSITIONINFO, "Students", null, "TransStudents", 13, SifDtd.TRANS, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		TransDTD.BUSPOSITIONINFO_STUDENTS.DefineVersionInfo(SifVersion.SIF20, "Students", 13, 0); // (Sif 20 alias)
-		BUSPOSITIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSPOSITIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		BUSPOSITIONINFO_SIF_METADATA = new ElementDefImpl( BUSPOSITIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		BUSPOSITIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSPOSITIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		BUSPOSITIONINFO_SIF_METADATA = new ElementDefImpl( BUSPOSITIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <BusRouteDetail> fields (4 entries)
-		TransDTD.BUSROUTEDETAIL_REFID = new ElementDefImpl( BUSROUTEDETAIL, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSROUTEDETAIL_BUSROUTEINFOREFID = new ElementDefImpl( BUSROUTEDETAIL, "BusRouteInfoRefId", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSROUTEDETAIL_BUSSTOPINFOREFID = new ElementDefImpl( BUSROUTEDETAIL, "BusStopInfoRefId", "~XPathSurrogate{BusStop/@BusStopInfoRefId=.}BusStop", 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.BUSROUTEDETAIL_REFID = new ElementDefImpl( BUSROUTEDETAIL, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSROUTEDETAIL_BUSROUTEINFOREFID = new ElementDefImpl( BUSROUTEDETAIL, "BusRouteInfoRefId", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSROUTEDETAIL_BUSSTOPINFOREFID = new ElementDefImpl( BUSROUTEDETAIL, "BusStopInfoRefId", "~XPathSurrogate{BusStop/@BusStopInfoRefId=.}BusStop", 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.BUSROUTEDETAIL_BUSSTOPINFOREFID.DefineVersionInfo(SifVersion.SIF20, "BusStopInfoRefId", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.BUSROUTEDETAIL_ARRIVALTIME = new ElementDefImpl( BUSROUTEDETAIL, "ArrivalTime", "~SIFTimeSurrogate{}", 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.TIME );
+		TransDTD.BUSROUTEDETAIL_ARRIVALTIME = new ElementDefImpl( BUSROUTEDETAIL, "ArrivalTime", "~SIFTimeSurrogate{}", 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.TIME );
 		TransDTD.BUSROUTEDETAIL_ARRIVALTIME.DefineVersionInfo(SifVersion.SIF20, "ArrivalTime", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		BUSROUTEDETAIL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSROUTEDETAIL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		BUSROUTEDETAIL_SIF_METADATA = new ElementDefImpl( BUSROUTEDETAIL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		BUSROUTEDETAIL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSROUTEDETAIL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		BUSROUTEDETAIL_SIF_METADATA = new ElementDefImpl( BUSROUTEDETAIL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <BusRouteInfo> fields (11 entries)
-		TransDTD.BUSROUTEINFO_REFID = new ElementDefImpl( BUSROUTEINFO, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSROUTEINFO_BUSINFOREFID = new ElementDefImpl( BUSROUTEINFO, "BusInfoRefId", "~XPathSurrogate{Bus/@BusInfoRefId=.}Bus", 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.BUSROUTEINFO_REFID = new ElementDefImpl( BUSROUTEINFO, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSROUTEINFO_BUSINFOREFID = new ElementDefImpl( BUSROUTEINFO, "BusInfoRefId", "~XPathSurrogate{Bus/@BusInfoRefId=.}Bus", 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.BUSROUTEINFO_BUSINFOREFID.DefineVersionInfo(SifVersion.SIF20, "BusInfoRefId", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.BUSROUTEINFO_ROUTENUMBER = new ElementDefImpl( BUSROUTEINFO, "RouteNumber", null, 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSROUTEINFO_ROUTETYPE = new ElementDefImpl( BUSROUTEINFO, "RouteType", null, 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSROUTEINFO_MAXIMUMLOAD = new ElementDefImpl( BUSROUTEINFO, "MaximumLoad", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
-		TransDTD.BUSROUTEINFO_DESCRIPTION = new ElementDefImpl( BUSROUTEINFO, "Description", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSROUTEINFO_NAME = new ElementDefImpl( BUSROUTEINFO, "Name", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		TransDTD.BUSROUTEINFO_ROUTEDURATIONLOADED = new ElementDefImpl( BUSROUTEINFO, "RouteDurationLoaded", "~RouteElementSurrogate{}RouteDuration", 8, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DURATION );
+		TransDTD.BUSROUTEINFO_ROUTENUMBER = new ElementDefImpl( BUSROUTEINFO, "RouteNumber", null, 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSROUTEINFO_ROUTETYPE = new ElementDefImpl( BUSROUTEINFO, "RouteType", null, 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSROUTEINFO_MAXIMUMLOAD = new ElementDefImpl( BUSROUTEINFO, "MaximumLoad", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
+		TransDTD.BUSROUTEINFO_DESCRIPTION = new ElementDefImpl( BUSROUTEINFO, "Description", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSROUTEINFO_NAME = new ElementDefImpl( BUSROUTEINFO, "Name", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		TransDTD.BUSROUTEINFO_ROUTEDURATIONLOADED = new ElementDefImpl( BUSROUTEINFO, "RouteDurationLoaded", "~RouteElementSurrogate{}RouteDuration", 8, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DURATION );
 		TransDTD.BUSROUTEINFO_ROUTEDURATIONLOADED.DefineVersionInfo(SifVersion.SIF20, "RouteDurationLoaded", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.BUSROUTEINFO_ROUTEDURATIONTOTAL = new ElementDefImpl( BUSROUTEINFO, "RouteDurationTotal", "~RouteElementSurrogate{}RouteDuration", 9, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DURATION );
+		TransDTD.BUSROUTEINFO_ROUTEDURATIONTOTAL = new ElementDefImpl( BUSROUTEINFO, "RouteDurationTotal", "~RouteElementSurrogate{}RouteDuration", 9, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DURATION );
 		TransDTD.BUSROUTEINFO_ROUTEDURATIONTOTAL.DefineVersionInfo(SifVersion.SIF20, "RouteDurationTotal", 9, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.BUSROUTEINFO_ROUTEDISTANCELOADED = new ElementDefAlias( BUSROUTEINFO, "RouteDistanceLoaded", "~RouteElementSurrogate{}RouteDistance", "Distance", 10, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		TransDTD.BUSROUTEINFO_ROUTEDISTANCELOADED = new ElementDefAlias( BUSROUTEINFO, "RouteDistanceLoaded", "~RouteElementSurrogate{}RouteDistance", "Distance", 10, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		TransDTD.BUSROUTEINFO_ROUTEDISTANCELOADED.DefineVersionInfo(SifVersion.SIF20, "RouteDistanceLoaded", 10, 0); // (Sif 20 alias)
-		TransDTD.BUSROUTEINFO_ROUTEDISTANCETOTAL = new ElementDefAlias( BUSROUTEINFO, "RouteDistanceTotal", "~RouteElementSurrogate{}RouteDistance", "Distance", 11, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		TransDTD.BUSROUTEINFO_ROUTEDISTANCETOTAL = new ElementDefAlias( BUSROUTEINFO, "RouteDistanceTotal", "~RouteElementSurrogate{}RouteDistance", "Distance", 11, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		TransDTD.BUSROUTEINFO_ROUTEDISTANCETOTAL.DefineVersionInfo(SifVersion.SIF20, "RouteDistanceTotal", 11, 0); // (Sif 20 alias)
-		BUSROUTEINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSROUTEINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		BUSROUTEINFO_SIF_METADATA = new ElementDefImpl( BUSROUTEINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		BUSROUTEINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSROUTEINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		BUSROUTEINFO_SIF_METADATA = new ElementDefImpl( BUSROUTEINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <BusStaff> fields (3 entries)
-		TransDTD.BUSSTAFF_STATUS = new ElementDefImpl( BUSSTAFF, "Status", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.BUSSTAFF_STATUS = new ElementDefImpl( BUSSTAFF, "Status", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.BUSSTAFF_STATUS.DefineVersionInfo(SifVersion.SIF20, "Status", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.BUSSTAFF_NAME = new ElementDefImpl( BUSSTAFF, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		TransDTD.BUSSTAFF_NAME = new ElementDefImpl( BUSSTAFF, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		TransDTD.BUSSTAFF_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 1, 0); // (Sif 20 alias)
-		TransDTD.BUSSTAFF_EMPLOYEEPERSONALREFID = new ElementDefImpl( BUSSTAFF, "EmployeePersonalRefId", "~XPathSurrogate{EmpLink/EmployeePersonalRefId=.}EmpLink", 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.BUSSTAFF_EMPLOYEEPERSONALREFID = new ElementDefImpl( BUSSTAFF, "EmployeePersonalRefId", "~XPathSurrogate{EmpLink/EmployeePersonalRefId=.}EmpLink", 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.BUSSTAFF_EMPLOYEEPERSONALREFID.DefineVersionInfo(SifVersion.SIF20, "EmployeePersonalRefId", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <BusStaffList> fields (1 entries)
-		TransDTD.BUSSTAFFLIST_BUSSTAFF = new ElementDefImpl( BUSSTAFFLIST, "BusStaff", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		TransDTD.BUSSTAFFLIST_BUSSTAFF = new ElementDefImpl( BUSSTAFFLIST, "BusStaff", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <BusStop> fields (1 entries)
 		TransDTD.BUSSTOP_BUSSTOPINFOREFID = new ElementDefImpl( BUSSTOP, "BusStopInfoRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF11, SifTypeConverters.STRING );
 
 		// <BusStopInfo> fields (3 entries)
-		TransDTD.BUSSTOPINFO_REFID = new ElementDefImpl( BUSSTOPINFO, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSSTOPINFO_DESCRIPTION = new ElementDefImpl( BUSSTOPINFO, "Description", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.BUSSTOPINFO_GRIDLOCATION = new ElementDefImpl( BUSSTOPINFO, "GridLocation", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		BUSSTOPINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSSTOPINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		BUSSTOPINFO_SIF_METADATA = new ElementDefImpl( BUSSTOPINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		TransDTD.BUSSTOPINFO_REFID = new ElementDefImpl( BUSSTOPINFO, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSSTOPINFO_DESCRIPTION = new ElementDefImpl( BUSSTOPINFO, "Description", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.BUSSTOPINFO_GRIDLOCATION = new ElementDefImpl( BUSSTOPINFO, "GridLocation", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		BUSSTOPINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BUSSTOPINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		BUSSTOPINFO_SIF_METADATA = new ElementDefImpl( BUSSTOPINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <DestinationPoint> fields (6 entries)
-		TransDTD.DESTINATIONPOINT_BUSROUTEDETAILREFID = new ElementDefImpl( DESTINATIONPOINT, "BusRouteDetailRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.DESTINATIONPOINT_ARRIVALTIME = new ElementDefImpl( DESTINATIONPOINT, "ArrivalTime", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.TIME );
-		TransDTD.DESTINATIONPOINT_ROUTENUMBER = new ElementDefImpl( DESTINATIONPOINT, "RouteNumber", null, 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.DESTINATIONPOINT_ROUTEDESCRIPTION = new ElementDefImpl( DESTINATIONPOINT, "RouteDescription", null, 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.DESTINATIONPOINT_VEHICLENUMBER = new ElementDefImpl( DESTINATIONPOINT, "VehicleNumber", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.DESTINATIONPOINT_BUSSTOPDESCRIPTION = new ElementDefImpl( DESTINATIONPOINT, "BusStopDescription", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.DESTINATIONPOINT_BUSROUTEDETAILREFID = new ElementDefImpl( DESTINATIONPOINT, "BusRouteDetailRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.DESTINATIONPOINT_ARRIVALTIME = new ElementDefImpl( DESTINATIONPOINT, "ArrivalTime", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.TIME );
+		TransDTD.DESTINATIONPOINT_ROUTENUMBER = new ElementDefImpl( DESTINATIONPOINT, "RouteNumber", null, 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.DESTINATIONPOINT_ROUTEDESCRIPTION = new ElementDefImpl( DESTINATIONPOINT, "RouteDescription", null, 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.DESTINATIONPOINT_VEHICLENUMBER = new ElementDefImpl( DESTINATIONPOINT, "VehicleNumber", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.DESTINATIONPOINT_BUSSTOPDESCRIPTION = new ElementDefImpl( DESTINATIONPOINT, "BusStopDescription", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <DisembarkBusRouteDetail> fields (1 entries)
-		TransDTD.DISEMBARKBUSROUTEDETAIL_SIF_REFOBJECT = new ElementDefImpl( DISEMBARKBUSROUTEDETAIL, "SIF_RefObject", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.DISEMBARKBUSROUTEDETAIL_SIF_REFOBJECT = new ElementDefImpl( DISEMBARKBUSROUTEDETAIL, "SIF_RefObject", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Distance> fields (1 entries)
-		TransDTD.DISTANCE_UNIT = new ElementDefImpl( DISTANCE, "Unit", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.DISTANCE_UNIT = new ElementDefImpl( DISTANCE, "Unit", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <EmbarkBusRouteDetail> fields (1 entries)
-		TransDTD.EMBARKBUSROUTEDETAIL_SIF_REFOBJECT = new ElementDefImpl( EMBARKBUSROUTEDETAIL, "SIF_RefObject", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.EMBARKBUSROUTEDETAIL_SIF_REFOBJECT = new ElementDefImpl( EMBARKBUSROUTEDETAIL, "SIF_RefObject", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <EmpLink> fields (1 entries)
-		TransDTD.EMPLINK_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLINK, "EmployeePersonalRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.EMPLINK_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLINK, "EmployeePersonalRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Equipment> fields (2 entries)
-		TransDTD.EQUIPMENT_BUSEQUIPMENTREFID = new ElementDefImpl( EQUIPMENT, "BusEquipmentRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.EQUIPMENT_BUSEQUIPMENTREFID = new ElementDefImpl( EQUIPMENT, "BusEquipmentRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.EQUIPMENT_BUSEQUIPMENTREFID.DefineVersionInfo(SifVersion.SIF20, "BusEquipmentRefId", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.EQUIPMENT_COUNT = new ElementDefImpl( EQUIPMENT, "Count", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.EQUIPMENT_COUNT = new ElementDefImpl( EQUIPMENT, "Count", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.EQUIPMENT_COUNT.DefineVersionInfo(SifVersion.SIF20, "Count", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <EquipmentList> fields (1 entries)
-		TransDTD.EQUIPMENTLIST_EQUIPMENT = new ElementDefImpl( EQUIPMENTLIST, "Equipment", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		TransDTD.EQUIPMENTLIST_EQUIPMENT = new ElementDefImpl( EQUIPMENTLIST, "Equipment", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <HomeBusRouteDetail> fields (1 entries)
-		TransDTD.HOMEBUSROUTEDETAIL_SIF_REFOBJECT = new ElementDefImpl( HOMEBUSROUTEDETAIL, "SIF_RefObject", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.HOMEBUSROUTEDETAIL_SIF_REFOBJECT = new ElementDefImpl( HOMEBUSROUTEDETAIL, "SIF_RefObject", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Odometer> fields (1 entries)
-		TransDTD.ODOMETER_UNIT = new ElementDefImpl( ODOMETER, "Unit", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.ODOMETER_UNIT = new ElementDefImpl( ODOMETER, "Unit", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <OriginPoint> fields (6 entries)
-		TransDTD.ORIGINPOINT_BUSROUTEDETAILREFID = new ElementDefImpl( ORIGINPOINT, "BusRouteDetailRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.ORIGINPOINT_ARRIVALTIME = new ElementDefImpl( ORIGINPOINT, "ArrivalTime", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.TIME );
-		TransDTD.ORIGINPOINT_ROUTENUMBER = new ElementDefImpl( ORIGINPOINT, "RouteNumber", null, 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.ORIGINPOINT_ROUTEDESCRIPTION = new ElementDefImpl( ORIGINPOINT, "RouteDescription", null, 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.ORIGINPOINT_VEHICLENUMBER = new ElementDefImpl( ORIGINPOINT, "VehicleNumber", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.ORIGINPOINT_BUSSTOPDESCRIPTION = new ElementDefImpl( ORIGINPOINT, "BusStopDescription", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.ORIGINPOINT_BUSROUTEDETAILREFID = new ElementDefImpl( ORIGINPOINT, "BusRouteDetailRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.ORIGINPOINT_ARRIVALTIME = new ElementDefImpl( ORIGINPOINT, "ArrivalTime", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.TIME );
+		TransDTD.ORIGINPOINT_ROUTENUMBER = new ElementDefImpl( ORIGINPOINT, "RouteNumber", null, 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.ORIGINPOINT_ROUTEDESCRIPTION = new ElementDefImpl( ORIGINPOINT, "RouteDescription", null, 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.ORIGINPOINT_VEHICLENUMBER = new ElementDefImpl( ORIGINPOINT, "VehicleNumber", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.ORIGINPOINT_BUSSTOPDESCRIPTION = new ElementDefImpl( ORIGINPOINT, "BusStopDescription", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RouteStatus> fields (2 entries)
-		TransDTD.ROUTESTATUS_STATUS = new ElementDefImpl( ROUTESTATUS, "Status", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.ROUTESTATUS_STATUS = new ElementDefImpl( ROUTESTATUS, "Status", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.ROUTESTATUS_STATUS.DefineVersionInfo(SifVersion.SIF20, "Status", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.ROUTESTATUS_BUSROUTEINFOREFID = new ElementDefImpl( ROUTESTATUS, "BusRouteInfoRefId", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.ROUTESTATUS_BUSROUTEINFOREFID = new ElementDefImpl( ROUTESTATUS, "BusRouteInfoRefId", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.ROUTESTATUS_BUSROUTEINFOREFID.DefineVersionInfo(SifVersion.SIF20, "BusRouteInfoRefId", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <SchoolBusRouteDetail> fields (1 entries)
-		TransDTD.SCHOOLBUSROUTEDETAIL_SIF_REFOBJECT = new ElementDefImpl( SCHOOLBUSROUTEDETAIL, "SIF_RefObject", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.SCHOOLBUSROUTEDETAIL_SIF_REFOBJECT = new ElementDefImpl( SCHOOLBUSROUTEDETAIL, "SIF_RefObject", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Speedometer> fields (1 entries)
-		TransDTD.SPEEDOMETER_UNIT = new ElementDefImpl( SPEEDOMETER, "Unit", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.SPEEDOMETER_UNIT = new ElementDefImpl( SPEEDOMETER, "Unit", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <StudentTransportInfo> fields (17 entries)
-		TransDTD.STUDENTTRANSPORTINFO_REFID = new ElementDefImpl( STUDENTTRANSPORTINFO, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.STUDENTTRANSPORTINFO_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTTRANSPORTINFO, "StudentPersonalRefId", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.STUDENTTRANSPORTINFO_TYPE = new ElementDefImpl( STUDENTTRANSPORTINFO, "Type", null, 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.STUDENTTRANSPORTINFO_DAYOFWEEK = new ElementDefImpl( STUDENTTRANSPORTINFO, "DayOfWeek", null, 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.STUDENTTRANSPORTINFO_SCHOOLINFOREFID = new ElementDefImpl( STUDENTTRANSPORTINFO, "SchoolInfoRefId", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.STUDENTTRANSPORTINFO_ELIGIBILITY = new ElementDefImpl( STUDENTTRANSPORTINFO, "Eligibility", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		TransDTD.STUDENTTRANSPORTINFO_HOMEBUSROUTEDETAIL = new ElementDefImpl( STUDENTTRANSPORTINFO, "HomeBusRouteDetail", "~XPathSurrogate{HomeBusRouteDetail/@BusRouteDetailRefId=.}", 7, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_REFID = new ElementDefImpl( STUDENTTRANSPORTINFO, "RefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTTRANSPORTINFO, "StudentPersonalRefId", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_TYPE = new ElementDefImpl( STUDENTTRANSPORTINFO, "Type", null, 3, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_DAYOFWEEK = new ElementDefImpl( STUDENTTRANSPORTINFO, "DayOfWeek", null, 4, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_SCHOOLINFOREFID = new ElementDefImpl( STUDENTTRANSPORTINFO, "SchoolInfoRefId", null, 5, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_ELIGIBILITY = new ElementDefImpl( STUDENTTRANSPORTINFO, "Eligibility", null, 6, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_HOMEBUSROUTEDETAIL = new ElementDefImpl( STUDENTTRANSPORTINFO, "HomeBusRouteDetail", "~XPathSurrogate{HomeBusRouteDetail/@BusRouteDetailRefId=.}", 7, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.STUDENTTRANSPORTINFO_HOMEBUSROUTEDETAIL.DefineVersionInfo(SifVersion.SIF20, "HomeBusRouteDetail", 7, 0); // (Sif 20 alias)
 		TransDTD.STUDENTTRANSPORTINFO_HOMEBUSROUTEDETAIL.DefineVersionInfo(SifVersion.SIF22, "HomeBusRouteDetail", 11, 0); // (Sif 22 alias)
-		TransDTD.STUDENTTRANSPORTINFO_HOMETOSCHOOLDISTANCE = new ElementDefAlias( STUDENTTRANSPORTINFO, "HomeToSchoolDistance", null, "Distance", 7, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		TransDTD.STUDENTTRANSPORTINFO_TRANSFERPOINTS = new ElementDefImpl( STUDENTTRANSPORTINFO, "TransferPoints", null, 8, SifDtd.TRANS, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		TransDTD.STUDENTTRANSPORTINFO_HOMETOSCHOOLDISTANCE = new ElementDefAlias( STUDENTTRANSPORTINFO, "HomeToSchoolDistance", null, "Distance", 7, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		TransDTD.STUDENTTRANSPORTINFO_TRANSFERPOINTS = new ElementDefImpl( STUDENTTRANSPORTINFO, "TransferPoints", null, 8, SifDtd.TRANS, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		TransDTD.STUDENTTRANSPORTINFO_TRANSFERPOINTS.DefineVersionInfo(SifVersion.SIF20, "TransferPoints", 8, 0); // (Sif 20 alias)
 		TransDTD.STUDENTTRANSPORTINFO_TRANSFERPOINTS.DefineVersionInfo(SifVersion.SIF22, "TransferPoints", 12, 0); // (Sif 22 alias)
-		TransDTD.STUDENTTRANSPORTINFO_WALKTOSTOPDISTANCE = new ElementDefAlias( STUDENTTRANSPORTINFO, "WalkToStopDistance", null, "Distance", 8, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		TransDTD.STUDENTTRANSPORTINFO_SCHOOLBUSROUTEDETAIL = new ElementDefImpl( STUDENTTRANSPORTINFO, "SchoolBusRouteDetail", "~XPathSurrogate{SchoolBusRouteDetail/@BusRouteDetailRefId=.}", 9, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_WALKTOSTOPDISTANCE = new ElementDefAlias( STUDENTTRANSPORTINFO, "WalkToStopDistance", null, "Distance", 8, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		TransDTD.STUDENTTRANSPORTINFO_SCHOOLBUSROUTEDETAIL = new ElementDefImpl( STUDENTTRANSPORTINFO, "SchoolBusRouteDetail", "~XPathSurrogate{SchoolBusRouteDetail/@BusRouteDetailRefId=.}", 9, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.STUDENTTRANSPORTINFO_SCHOOLBUSROUTEDETAIL.DefineVersionInfo(SifVersion.SIF20, "SchoolBusRouteDetail", 9, 0); // (Sif 20 alias)
 		TransDTD.STUDENTTRANSPORTINFO_SCHOOLBUSROUTEDETAIL.DefineVersionInfo(SifVersion.SIF22, "SchoolBusRouteDetail", 13, 0); // (Sif 22 alias)
-		TransDTD.STUDENTTRANSPORTINFO_STOPTOSCHOOLDISTANCE = new ElementDefAlias( STUDENTTRANSPORTINFO, "StopToSchoolDistance", null, "Distance", 9, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		TransDTD.STUDENTTRANSPORTINFO_STATEAIDQUALIFICATION = new ElementDefImpl( STUDENTTRANSPORTINFO, "StateAidQualification", null, 10, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_STOPTOSCHOOLDISTANCE = new ElementDefAlias( STUDENTTRANSPORTINFO, "StopToSchoolDistance", null, "Distance", 9, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		TransDTD.STUDENTTRANSPORTINFO_STATEAIDQUALIFICATION = new ElementDefImpl( STUDENTTRANSPORTINFO, "StateAidQualification", null, 10, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.STUDENTTRANSPORTINFO_STATEAIDQUALIFICATION.DefineVersionInfo(SifVersion.SIF22, "StateAidQualification", 15, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		TransDTD.STUDENTTRANSPORTINFO_ORIGINPOINT = new ElementDefImpl( STUDENTTRANSPORTINFO, "OriginPoint", null, 10, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		TransDTD.STUDENTTRANSPORTINFO_TRANSPORTATIONSTATUS = new ElementDefImpl( STUDENTTRANSPORTINFO, "TransportationStatus", null, 11, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_ORIGINPOINT = new ElementDefImpl( STUDENTTRANSPORTINFO, "OriginPoint", null, 10, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		TransDTD.STUDENTTRANSPORTINFO_TRANSPORTATIONSTATUS = new ElementDefImpl( STUDENTTRANSPORTINFO, "TransportationStatus", null, 11, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.STUDENTTRANSPORTINFO_TRANSPORTATIONSTATUS.DefineVersionInfo(SifVersion.SIF22, "TransportationStatus", 16, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		TransDTD.STUDENTTRANSPORTINFO_PUBLICEXPENSE = new ElementDefImpl( STUDENTTRANSPORTINFO, "PublicExpense", null, 12, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.STUDENTTRANSPORTINFO_PUBLICEXPENSE = new ElementDefImpl( STUDENTTRANSPORTINFO, "PublicExpense", null, 12, SifDtd.TRANS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.STUDENTTRANSPORTINFO_PUBLICEXPENSE.DefineVersionInfo(SifVersion.SIF22, "PublicExpense", 17, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		TransDTD.STUDENTTRANSPORTINFO_DESTINATIONPOINT = new ElementDefImpl( STUDENTTRANSPORTINFO, "DestinationPoint", null, 14, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		STUDENTTRANSPORTINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTTRANSPORTINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTTRANSPORTINFO_SIF_METADATA = new ElementDefImpl( STUDENTTRANSPORTINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		TransDTD.STUDENTTRANSPORTINFO_DESTINATIONPOINT = new ElementDefImpl( STUDENTTRANSPORTINFO, "DestinationPoint", null, 14, SifDtd.TRANS, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		STUDENTTRANSPORTINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTTRANSPORTINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTTRANSPORTINFO_SIF_METADATA = new ElementDefImpl( STUDENTTRANSPORTINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Telemetry> fields (0 entries)
 
 		// <TelemetryList> fields (1 entries)
-		TransDTD.TELEMETRYLIST_TELEMETRY = new ElementDefImpl( TELEMETRYLIST, "Telemetry", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.TELEMETRYLIST_TELEMETRY = new ElementDefImpl( TELEMETRYLIST, "Telemetry", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <TransferPoint> fields (2 entries)
-		TransDTD.TRANSFERPOINT_EMBARKBUSROUTEDETAIL = new ElementDefImpl( TRANSFERPOINT, "EmbarkBusRouteDetail", "~XPathSurrogate{@EmbarkBusRouteDetailRefId=.}", 1, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.TRANSFERPOINT_EMBARKBUSROUTEDETAIL = new ElementDefImpl( TRANSFERPOINT, "EmbarkBusRouteDetail", "~XPathSurrogate{@EmbarkBusRouteDetailRefId=.}", 1, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.TRANSFERPOINT_EMBARKBUSROUTEDETAIL.DefineVersionInfo(SifVersion.SIF20, "EmbarkBusRouteDetail", 1, 0); // (Sif 20 alias)
-		TransDTD.TRANSFERPOINT_DISEMBARKBUSROUTEDETAIL = new ElementDefImpl( TRANSFERPOINT, "DisembarkBusRouteDetail", "~XPathSurrogate{@DisembarkBusRouteDetailRefId=.}", 2, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.TRANSFERPOINT_DISEMBARKBUSROUTEDETAIL = new ElementDefImpl( TRANSFERPOINT, "DisembarkBusRouteDetail", "~XPathSurrogate{@DisembarkBusRouteDetailRefId=.}", 2, SifDtd.TRANS, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.TRANSFERPOINT_DISEMBARKBUSROUTEDETAIL.DefineVersionInfo(SifVersion.SIF20, "DisembarkBusRouteDetail", 2, 0); // (Sif 20 alias)
 
 		// <TransferPoints> fields (1 entries)
-		TransDTD.TRANSFERPOINTS_TRANSFERPOINT = new ElementDefImpl( TRANSFERPOINTS, "TransferPoint", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		TransDTD.TRANSFERPOINTS_TRANSFERPOINT = new ElementDefImpl( TRANSFERPOINTS, "TransferPoint", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <TransStudent> fields (2 entries)
-		TransDTD.TRANSSTUDENT_STUDENTPERSONALREFID = new ElementDefImpl( TRANSSTUDENT, "StudentPersonalRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.TRANSSTUDENT_STUDENTPERSONALREFID = new ElementDefImpl( TRANSSTUDENT, "StudentPersonalRefId", null, 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.TRANSSTUDENT_STUDENTPERSONALREFID.DefineVersionInfo(SifVersion.SIF20, "StudentPersonalRefId", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		TransDTD.TRANSSTUDENT_STATUS = new ElementDefImpl( TRANSSTUDENT, "Status", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		TransDTD.TRANSSTUDENT_STATUS = new ElementDefImpl( TRANSSTUDENT, "Status", null, 2, SifDtd.TRANS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		TransDTD.TRANSSTUDENT_STATUS.DefineVersionInfo(SifVersion.SIF20, "Status", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <TransStudents> fields (1 entries)
-		TransDTD.TRANSSTUDENTS_STUDENT = new ElementDefAlias( TRANSSTUDENTS, "Student", null, "TransStudent", 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		TransDTD.TRANSSTUDENTS_STUDENT = new ElementDefAlias( TRANSSTUDENTS, "Student", null, "TransStudent", 1, SifDtd.TRANS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

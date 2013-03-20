@@ -20,7 +20,7 @@ namespace OpenADK.Library.uk.Workforce
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -132,37 +132,37 @@ namespace OpenADK.Library.uk.Workforce
 	{
 		//  Objects defined by this SDO Library...
 
-		CURRENTASSIGNMENT = new ElementDefImpl( null, "CurrentAssignment", null, 0, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CURRENTASSIGNMENTLIST = new ElementDefImpl( null, "CurrentAssignmentList", null, 0, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		POST = new ElementDefImpl( null, "Post", null, 0, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		POSTS = new ElementDefImpl( null, "Posts", null, 0, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		WORKFORCEPERSONAL = new ElementDefImpl( null, "WorkforcePersonal", null, 0, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
+		CURRENTASSIGNMENT = new ElementDefImpl( null, "CurrentAssignment", null, 0, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CURRENTASSIGNMENTLIST = new ElementDefImpl( null, "CurrentAssignmentList", null, 0, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		POST = new ElementDefImpl( null, "Post", null, 0, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		POSTS = new ElementDefImpl( null, "Posts", null, 0, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		WORKFORCEPERSONAL = new ElementDefImpl( null, "WorkforcePersonal", null, 0, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
 
 
 		// <CurrentAssignment> fields (3 entries)
-		WorkforceDTD.CURRENTASSIGNMENT_LAID = new ElementDefImpl( CURRENTASSIGNMENT, "LAId", null, 1, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		WorkforceDTD.CURRENTASSIGNMENT_ESTABLISHMENTID = new ElementDefImpl( CURRENTASSIGNMENT, "EstablishmentId", null, 2, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		WorkforceDTD.CURRENTASSIGNMENT_POSTS = new ElementDefImpl( CURRENTASSIGNMENT, "Posts", null, 3, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		WorkforceDTD.CURRENTASSIGNMENT_LAID = new ElementDefImpl( CURRENTASSIGNMENT, "LAId", null, 1, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		WorkforceDTD.CURRENTASSIGNMENT_ESTABLISHMENTID = new ElementDefImpl( CURRENTASSIGNMENT, "EstablishmentId", null, 2, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		WorkforceDTD.CURRENTASSIGNMENT_POSTS = new ElementDefImpl( CURRENTASSIGNMENT, "Posts", null, 3, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <CurrentAssignmentList> fields (1 entries)
-		WorkforceDTD.CURRENTASSIGNMENTLIST_CURRENTASSIGNMENT = new ElementDefImpl( CURRENTASSIGNMENTLIST, "CurrentAssignment", null, 1, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		WorkforceDTD.CURRENTASSIGNMENTLIST_CURRENTASSIGNMENT = new ElementDefImpl( CURRENTASSIGNMENTLIST, "CurrentAssignment", null, 1, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Post> fields (0 entries)
 
 		// <Posts> fields (1 entries)
-		WorkforceDTD.POSTS_POST = new ElementDefImpl( POSTS, "Post", null, 1, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		WorkforceDTD.POSTS_POST = new ElementDefImpl( POSTS, "Post", null, 1, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <WorkforcePersonal> fields (8 entries)
-		WorkforceDTD.WORKFORCEPERSONAL_REFID = new ElementDefImpl( WORKFORCEPERSONAL, "RefId", null, 1, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		WorkforceDTD.WORKFORCEPERSONAL_LOCALID = new ElementDefImpl( WORKFORCEPERSONAL, "LocalId", null, 2, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		WorkforceDTD.WORKFORCEPERSONAL_ALERTMSGLIST = new ElementDefImpl( WORKFORCEPERSONAL, "AlertMsgList", null, 3, SifDtd.COMMON, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		WorkforceDTD.WORKFORCEPERSONAL_MEDICALALERTMSGLIST = new ElementDefImpl( WORKFORCEPERSONAL, "MedicalAlertMsgList", null, 4, SifDtd.COMMON, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		WorkforceDTD.WORKFORCEPERSONAL_PERSONALINFORMATION = new ElementDefImpl( WORKFORCEPERSONAL, "PersonalInformation", null, 5, SifDtd.COMMON, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		WorkforceDTD.WORKFORCEPERSONAL_TEACHERNUMBER = new ElementDefImpl( WORKFORCEPERSONAL, "TeacherNumber", null, 6, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		WorkforceDTD.WORKFORCEPERSONAL_NINUMBER = new ElementDefImpl( WORKFORCEPERSONAL, "NINumber", null, 7, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		WorkforceDTD.WORKFORCEPERSONAL_CURRENTASSIGNMENTLIST = new ElementDefImpl( WORKFORCEPERSONAL, "CurrentAssignmentList", null, 8, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		WORKFORCEPERSONAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( WORKFORCEPERSONAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		WORKFORCEPERSONAL_SIF_METADATA = new ElementDefImpl( WORKFORCEPERSONAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		WorkforceDTD.WORKFORCEPERSONAL_REFID = new ElementDefImpl( WORKFORCEPERSONAL, "RefId", null, 1, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		WorkforceDTD.WORKFORCEPERSONAL_LOCALID = new ElementDefImpl( WORKFORCEPERSONAL, "LocalId", null, 2, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		WorkforceDTD.WORKFORCEPERSONAL_ALERTMSGLIST = new ElementDefImpl( WORKFORCEPERSONAL, "AlertMsgList", null, 3, SifDtd.COMMON, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		WorkforceDTD.WORKFORCEPERSONAL_MEDICALALERTMSGLIST = new ElementDefImpl( WORKFORCEPERSONAL, "MedicalAlertMsgList", null, 4, SifDtd.COMMON, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		WorkforceDTD.WORKFORCEPERSONAL_PERSONALINFORMATION = new ElementDefImpl( WORKFORCEPERSONAL, "PersonalInformation", null, 5, SifDtd.COMMON, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		WorkforceDTD.WORKFORCEPERSONAL_TEACHERNUMBER = new ElementDefImpl( WORKFORCEPERSONAL, "TeacherNumber", null, 6, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		WorkforceDTD.WORKFORCEPERSONAL_NINUMBER = new ElementDefImpl( WORKFORCEPERSONAL, "NINumber", null, 7, SifDtd.WORKFORCE, "uk", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		WorkforceDTD.WORKFORCEPERSONAL_CURRENTASSIGNMENTLIST = new ElementDefImpl( WORKFORCEPERSONAL, "CurrentAssignmentList", null, 8, SifDtd.WORKFORCE, "uk", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		WORKFORCEPERSONAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( WORKFORCEPERSONAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		WORKFORCEPERSONAL_SIF_METADATA = new ElementDefImpl( WORKFORCEPERSONAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "uk", (0), SifVersion.SIF20, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

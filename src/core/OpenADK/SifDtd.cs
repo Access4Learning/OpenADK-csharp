@@ -96,6 +96,13 @@ namespace OpenADK.Library
             }
         }
 
+        internal static IDictionary<String, IElementDef> sElementDefs = new Dictionary<String, IElementDef>(504);
+        static SifDtd()
+        {
+            sElementDefs["SIF_Message"] = SIF_MESSAGE;
+            sElementDefs["SIF_Message_Version"] = SIF_MESSAGE_VERSION;
+        }
+
         /**
          *  Returns the package name for all classes in this data model
          */

@@ -20,7 +20,7 @@ namespace OpenADK.Library.au.Reporting
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -240,98 +240,98 @@ namespace OpenADK.Library.au.Reporting
 	{
 		//  Objects defined by this SDO Library...
 
-		RECEIVINGAUTHORITY = new ElementDefImpl( null, "ReceivingAuthority", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		REPORTAUTHORITYINFO = new ElementDefImpl( null, "ReportAuthorityInfo", null, 0, SifDtd.REPORTING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		REPORTDATA = new ElementDefImpl( null, "ReportData", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		REPORTDEFINITIONSOURCE = new ElementDefImpl( null, "ReportDefinitionSource", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		REPORTFORMAT = new ElementDefImpl( null, "ReportFormat", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		REPORTFORMATLIST = new ElementDefImpl( null, "ReportFormatList", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		REPORTINFO = new ElementDefImpl( null, "ReportInfo", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		REPORTINGPERIOD = new ElementDefImpl( null, "ReportingPeriod", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		REPORTMANIFEST = new ElementDefImpl( null, "ReportManifest", null, 0, SifDtd.REPORTING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		REPORTSUBMITTERINFO = new ElementDefImpl( null, "ReportSubmitterInfo", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SIF_QUERYGROUP = new ElementDefImpl( null, "SIF_QueryGroup", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SIF_REPORTOBJECT = new ElementDefImpl( null, "SIF_ReportObject", null, 0, SifDtd.REPORTING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
+		RECEIVINGAUTHORITY = new ElementDefImpl( null, "ReceivingAuthority", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		REPORTAUTHORITYINFO = new ElementDefImpl( null, "ReportAuthorityInfo", null, 0, SifDtd.REPORTING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		REPORTDATA = new ElementDefImpl( null, "ReportData", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		REPORTDEFINITIONSOURCE = new ElementDefImpl( null, "ReportDefinitionSource", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		REPORTFORMAT = new ElementDefImpl( null, "ReportFormat", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		REPORTFORMATLIST = new ElementDefImpl( null, "ReportFormatList", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		REPORTINFO = new ElementDefImpl( null, "ReportInfo", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		REPORTINGPERIOD = new ElementDefImpl( null, "ReportingPeriod", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		REPORTMANIFEST = new ElementDefImpl( null, "ReportManifest", null, 0, SifDtd.REPORTING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		REPORTSUBMITTERINFO = new ElementDefImpl( null, "ReportSubmitterInfo", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SIF_QUERYGROUP = new ElementDefImpl( null, "SIF_QueryGroup", null, 0, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SIF_REPORTOBJECT = new ElementDefImpl( null, "SIF_ReportObject", null, 0, SifDtd.REPORTING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
 
 
 		// <ReceivingAuthority> fields (1 entries)
-		ReportingDTD.RECEIVINGAUTHORITY_SIF_REFOBJECT = new ElementDefImpl( RECEIVINGAUTHORITY, "SIF_RefObject", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		ReportingDTD.RECEIVINGAUTHORITY_SIF_REFOBJECT = new ElementDefImpl( RECEIVINGAUTHORITY, "SIF_RefObject", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ReportAuthorityInfo> fields (8 entries)
-		ReportingDTD.REPORTAUTHORITYINFO_REFID = new ElementDefImpl( REPORTAUTHORITYINFO, "RefId", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTAUTHORITYINFO_AUTHORITYNAME = new ElementDefImpl( REPORTAUTHORITYINFO, "AuthorityName", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTAUTHORITYINFO_AUTHORITYID = new ElementDefImpl( REPORTAUTHORITYINFO, "AuthorityId", null, 3, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTAUTHORITYINFO_AUTHORITYDEPARTMENT = new ElementDefImpl( REPORTAUTHORITYINFO, "AuthorityDepartment", null, 4, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTAUTHORITYINFO_AUTHORITYLEVEL = new ElementDefImpl( REPORTAUTHORITYINFO, "AuthorityLevel", null, 5, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTAUTHORITYINFO_CONTACTINFO = new ElementDefImpl( REPORTAUTHORITYINFO, "ContactInfo", null, 6, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ReportingDTD.REPORTAUTHORITYINFO_ADDRESS = new ElementDefImpl( REPORTAUTHORITYINFO, "Address", null, 7, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ReportingDTD.REPORTAUTHORITYINFO_PHONENUMBER = new ElementDefImpl( REPORTAUTHORITYINFO, "PhoneNumber", null, 8, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		REPORTAUTHORITYINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( REPORTAUTHORITYINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		REPORTAUTHORITYINFO_SIF_METADATA = new ElementDefImpl( REPORTAUTHORITYINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		ReportingDTD.REPORTAUTHORITYINFO_REFID = new ElementDefImpl( REPORTAUTHORITYINFO, "RefId", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTAUTHORITYINFO_AUTHORITYNAME = new ElementDefImpl( REPORTAUTHORITYINFO, "AuthorityName", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTAUTHORITYINFO_AUTHORITYID = new ElementDefImpl( REPORTAUTHORITYINFO, "AuthorityId", null, 3, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTAUTHORITYINFO_AUTHORITYDEPARTMENT = new ElementDefImpl( REPORTAUTHORITYINFO, "AuthorityDepartment", null, 4, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTAUTHORITYINFO_AUTHORITYLEVEL = new ElementDefImpl( REPORTAUTHORITYINFO, "AuthorityLevel", null, 5, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTAUTHORITYINFO_CONTACTINFO = new ElementDefImpl( REPORTAUTHORITYINFO, "ContactInfo", null, 6, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ReportingDTD.REPORTAUTHORITYINFO_ADDRESS = new ElementDefImpl( REPORTAUTHORITYINFO, "Address", null, 7, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ReportingDTD.REPORTAUTHORITYINFO_PHONENUMBER = new ElementDefImpl( REPORTAUTHORITYINFO, "PhoneNumber", null, 8, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		REPORTAUTHORITYINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( REPORTAUTHORITYINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		REPORTAUTHORITYINFO_SIF_METADATA = new ElementDefImpl( REPORTAUTHORITYINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ReportData> fields (0 entries)
 
 		// <ReportDefinitionSource> fields (2 entries)
-		ReportingDTD.REPORTDEFINITIONSOURCE_TYPE = new ElementDefImpl( REPORTDEFINITIONSOURCE, "Type", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTDEFINITIONSOURCE_QUERYLANGUAGE = new ElementDefImpl( REPORTDEFINITIONSOURCE, "QueryLanguage", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		ReportingDTD.REPORTDEFINITIONSOURCE_TYPE = new ElementDefImpl( REPORTDEFINITIONSOURCE, "Type", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTDEFINITIONSOURCE_QUERYLANGUAGE = new ElementDefImpl( REPORTDEFINITIONSOURCE, "QueryLanguage", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ReportFormat> fields (2 entries)
-		ReportingDTD.REPORTFORMAT_TYPE = new ElementDefImpl( REPORTFORMAT, "Type", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTFORMAT_CONTENTTYPE = new ElementDefImpl( REPORTFORMAT, "ContentType", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		ReportingDTD.REPORTFORMAT_TYPE = new ElementDefImpl( REPORTFORMAT, "Type", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTFORMAT_CONTENTTYPE = new ElementDefImpl( REPORTFORMAT, "ContentType", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ReportFormatList> fields (1 entries)
-		ReportingDTD.REPORTFORMATLIST_REPORTFORMAT = new ElementDefImpl( REPORTFORMATLIST, "ReportFormat", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		ReportingDTD.REPORTFORMATLIST_REPORTFORMAT = new ElementDefImpl( REPORTFORMATLIST, "ReportFormat", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ReportInfo> fields (6 entries)
-		ReportingDTD.REPORTINFO_REPORTMANIFESTREFID = new ElementDefImpl( REPORTINFO, "ReportManifestRefId", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTINFO_CALCULATIONDATE = new ElementDefImpl( REPORTINFO, "CalculationDate", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		ReportingDTD.REPORTINFO_SUBMISSIONNUMBER = new ElementDefImpl( REPORTINFO, "SubmissionNumber", null, 3, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		ReportingDTD.REPORTINFO_SUBMISSIONREASON = new ElementDefImpl( REPORTINFO, "SubmissionReason", null, 4, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTINFO_REPORTSUBMITTERINFO = new ElementDefImpl( REPORTINFO, "ReportSubmitterInfo", null, 5, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ReportingDTD.REPORTINFO_DESCRIPTION = new ElementDefImpl( REPORTINFO, "Description", null, 6, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		ReportingDTD.REPORTINFO_REPORTMANIFESTREFID = new ElementDefImpl( REPORTINFO, "ReportManifestRefId", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTINFO_CALCULATIONDATE = new ElementDefImpl( REPORTINFO, "CalculationDate", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		ReportingDTD.REPORTINFO_SUBMISSIONNUMBER = new ElementDefImpl( REPORTINFO, "SubmissionNumber", null, 3, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		ReportingDTD.REPORTINFO_SUBMISSIONREASON = new ElementDefImpl( REPORTINFO, "SubmissionReason", null, 4, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTINFO_REPORTSUBMITTERINFO = new ElementDefImpl( REPORTINFO, "ReportSubmitterInfo", null, 5, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ReportingDTD.REPORTINFO_DESCRIPTION = new ElementDefImpl( REPORTINFO, "Description", null, 6, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ReportingPeriod> fields (5 entries)
-		ReportingDTD.REPORTINGPERIOD_BEGINREPORTDATE = new ElementDefImpl( REPORTINGPERIOD, "BeginReportDate", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		ReportingDTD.REPORTINGPERIOD_ENDREPORTDATE = new ElementDefImpl( REPORTINGPERIOD, "EndReportDate", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		ReportingDTD.REPORTINGPERIOD_BEGINSUBMITDATE = new ElementDefImpl( REPORTINGPERIOD, "BeginSubmitDate", null, 3, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		ReportingDTD.REPORTINGPERIOD_ENDSUBMITDATE = new ElementDefImpl( REPORTINGPERIOD, "EndSubmitDate", null, 4, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		ReportingDTD.REPORTINGPERIOD_DUEDATE = new ElementDefImpl( REPORTINGPERIOD, "DueDate", null, 5, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
+		ReportingDTD.REPORTINGPERIOD_BEGINREPORTDATE = new ElementDefImpl( REPORTINGPERIOD, "BeginReportDate", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		ReportingDTD.REPORTINGPERIOD_ENDREPORTDATE = new ElementDefImpl( REPORTINGPERIOD, "EndReportDate", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		ReportingDTD.REPORTINGPERIOD_BEGINSUBMITDATE = new ElementDefImpl( REPORTINGPERIOD, "BeginSubmitDate", null, 3, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		ReportingDTD.REPORTINGPERIOD_ENDSUBMITDATE = new ElementDefImpl( REPORTINGPERIOD, "EndSubmitDate", null, 4, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		ReportingDTD.REPORTINGPERIOD_DUEDATE = new ElementDefImpl( REPORTINGPERIOD, "DueDate", null, 5, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
 
 		// <ReportManifest> fields (12 entries)
-		ReportingDTD.REPORTMANIFEST_REFID = new ElementDefImpl( REPORTMANIFEST, "RefId", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTMANIFEST_REPORTAUTHORITYINFOREFID = new ElementDefImpl( REPORTMANIFEST, "ReportAuthorityInfoRefId", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTMANIFEST_SIF_VERSION = new ElementDefImpl( REPORTMANIFEST, "SIF_Version", null, 3, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTMANIFEST_SIF_MAXBUFFERSIZE = new ElementDefImpl( REPORTMANIFEST, "SIF_MaxBufferSize", null, 4, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		ReportingDTD.REPORTMANIFEST_RECEIVINGAUTHORITY = new ElementDefImpl( REPORTMANIFEST, "ReceivingAuthority", null, 5, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTMANIFEST_REPORTNAME = new ElementDefImpl( REPORTMANIFEST, "ReportName", null, 6, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTMANIFEST_DESCRIPTION = new ElementDefImpl( REPORTMANIFEST, "Description", null, 7, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTMANIFEST_REPORTINGPERIOD = new ElementDefImpl( REPORTMANIFEST, "ReportingPeriod", null, 8, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ReportingDTD.REPORTMANIFEST_REPORTDEFINITIONSOURCE = new ElementDefImpl( REPORTMANIFEST, "ReportDefinitionSource", null, 9, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTMANIFEST_REPORTFORMATLIST = new ElementDefImpl( REPORTMANIFEST, "ReportFormatList", null, 10, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ReportingDTD.REPORTMANIFEST_SIF_QUERYGROUP = new ElementDefImpl( REPORTMANIFEST, "SIF_QueryGroup", null, 11, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ReportingDTD.REPORTMANIFEST_SIF_EXTENDEDQUERY = new ElementDefImpl( REPORTMANIFEST, "SIF_ExtendedQuery", null, 12, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		REPORTMANIFEST_SIF_EXTENDEDELEMENTS = new ElementDefImpl( REPORTMANIFEST, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		REPORTMANIFEST_SIF_METADATA = new ElementDefImpl( REPORTMANIFEST, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		ReportingDTD.REPORTMANIFEST_REFID = new ElementDefImpl( REPORTMANIFEST, "RefId", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTMANIFEST_REPORTAUTHORITYINFOREFID = new ElementDefImpl( REPORTMANIFEST, "ReportAuthorityInfoRefId", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTMANIFEST_SIF_VERSION = new ElementDefImpl( REPORTMANIFEST, "SIF_Version", null, 3, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTMANIFEST_SIF_MAXBUFFERSIZE = new ElementDefImpl( REPORTMANIFEST, "SIF_MaxBufferSize", null, 4, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		ReportingDTD.REPORTMANIFEST_RECEIVINGAUTHORITY = new ElementDefImpl( REPORTMANIFEST, "ReceivingAuthority", null, 5, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTMANIFEST_REPORTNAME = new ElementDefImpl( REPORTMANIFEST, "ReportName", null, 6, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTMANIFEST_DESCRIPTION = new ElementDefImpl( REPORTMANIFEST, "Description", null, 7, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTMANIFEST_REPORTINGPERIOD = new ElementDefImpl( REPORTMANIFEST, "ReportingPeriod", null, 8, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ReportingDTD.REPORTMANIFEST_REPORTDEFINITIONSOURCE = new ElementDefImpl( REPORTMANIFEST, "ReportDefinitionSource", null, 9, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTMANIFEST_REPORTFORMATLIST = new ElementDefImpl( REPORTMANIFEST, "ReportFormatList", null, 10, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ReportingDTD.REPORTMANIFEST_SIF_QUERYGROUP = new ElementDefImpl( REPORTMANIFEST, "SIF_QueryGroup", null, 11, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ReportingDTD.REPORTMANIFEST_SIF_EXTENDEDQUERY = new ElementDefImpl( REPORTMANIFEST, "SIF_ExtendedQuery", null, 12, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		REPORTMANIFEST_SIF_EXTENDEDELEMENTS = new ElementDefImpl( REPORTMANIFEST, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		REPORTMANIFEST_SIF_METADATA = new ElementDefImpl( REPORTMANIFEST, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ReportSubmitterInfo> fields (7 entries)
-		ReportingDTD.REPORTSUBMITTERINFO_SIF_REFID = new ElementDefImpl( REPORTSUBMITTERINFO, "SIF_RefId", null, 1, SifDtd.GLOBAL, null, 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTSUBMITTERINFO_SUBMITTERNAME = new ElementDefImpl( REPORTSUBMITTERINFO, "SubmitterName", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTSUBMITTERINFO_SUBMITTERDEPARTMENT = new ElementDefImpl( REPORTSUBMITTERINFO, "SubmitterDepartment", null, 3, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.REPORTSUBMITTERINFO_CONTACTINFO = new ElementDefImpl( REPORTSUBMITTERINFO, "ContactInfo", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ReportingDTD.REPORTSUBMITTERINFO_ADDRESS = new ElementDefImpl( REPORTSUBMITTERINFO, "Address", null, 5, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ReportingDTD.REPORTSUBMITTERINFO_PHONENUMBER = new ElementDefImpl( REPORTSUBMITTERINFO, "PhoneNumber", null, 6, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ReportingDTD.REPORTSUBMITTERINFO_SUBMITTERNOTES = new ElementDefImpl( REPORTSUBMITTERINFO, "SubmitterNotes", null, 7, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		ReportingDTD.REPORTSUBMITTERINFO_SIF_REFID = new ElementDefImpl( REPORTSUBMITTERINFO, "SIF_RefId", null, 1, SifDtd.REPORTING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ReportingDTD.REPORTSUBMITTERINFO_SUBMITTERNAME = new ElementDefImpl( REPORTSUBMITTERINFO, "SubmitterName", null, 2, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTSUBMITTERINFO_SUBMITTERDEPARTMENT = new ElementDefImpl( REPORTSUBMITTERINFO, "SubmitterDepartment", null, 3, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.REPORTSUBMITTERINFO_CONTACTINFO = new ElementDefImpl( REPORTSUBMITTERINFO, "ContactInfo", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ReportingDTD.REPORTSUBMITTERINFO_ADDRESS = new ElementDefImpl( REPORTSUBMITTERINFO, "Address", null, 5, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ReportingDTD.REPORTSUBMITTERINFO_PHONENUMBER = new ElementDefImpl( REPORTSUBMITTERINFO, "PhoneNumber", null, 6, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ReportingDTD.REPORTSUBMITTERINFO_SUBMITTERNOTES = new ElementDefImpl( REPORTSUBMITTERINFO, "SubmitterNotes", null, 7, SifDtd.REPORTING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_QueryGroup> fields (1 entries)
-		ReportingDTD.SIF_QUERYGROUP_SIF_QUERY = new ElementDefImpl( SIF_QUERYGROUP, "SIF_Query", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		ReportingDTD.SIF_QUERYGROUP_SIF_QUERY = new ElementDefImpl( SIF_QUERYGROUP, "SIF_Query", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <SIF_ReportObject> fields (4 entries)
-		ReportingDTD.SIF_REPORTOBJECT_REFID = new ElementDefImpl( SIF_REPORTOBJECT, "RefId", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.SIF_REPORTOBJECT_REPORTINFO = new ElementDefImpl( SIF_REPORTOBJECT, "ReportInfo", null, 2, SifDtd.REPORTING, "au", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ReportingDTD.SIF_REPORTOBJECT_REPORTDATA = new ElementDefImpl( SIF_REPORTOBJECT, "ReportData", null, 3, SifDtd.REPORTING, "au", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		ReportingDTD.SIF_REPORTOBJECT_SIF_EXTENDEDQUERYRESULTS = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_ExtendedQueryResults", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_REPORTOBJECT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SIF_REPORTOBJECT_SIF_METADATA = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		ReportingDTD.SIF_REPORTOBJECT_REFID = new ElementDefImpl( SIF_REPORTOBJECT, "RefId", null, 1, SifDtd.REPORTING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.SIF_REPORTOBJECT_REPORTINFO = new ElementDefImpl( SIF_REPORTOBJECT, "ReportInfo", null, 2, SifDtd.REPORTING, "au", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ReportingDTD.SIF_REPORTOBJECT_REPORTDATA = new ElementDefImpl( SIF_REPORTOBJECT, "ReportData", null, 3, SifDtd.REPORTING, "au", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		ReportingDTD.SIF_REPORTOBJECT_SIF_EXTENDEDQUERYRESULTS = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_ExtendedQueryResults", null, 4, SifDtd.REPORTING, "au", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_REPORTOBJECT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SIF_REPORTOBJECT_SIF_METADATA = new ElementDefImpl( SIF_REPORTOBJECT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

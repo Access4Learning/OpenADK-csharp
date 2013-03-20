@@ -31,6 +31,9 @@
     </SccProvider>
     <SignAssembly>false</SignAssembly>
     <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -43,11 +46,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -139,9 +139,21 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OpenADK\Infra\SIFNodeType.cs" />
+    <Compile Include="OpenADK\Infra\SIFProtocols.cs" />
+    <Compile Include="OpenADK\Infra\SIF_Body.cs" />
+    <Compile Include="OpenADK\Infra\SIF_CancelRequests.cs" />
+    <Compile Include="OpenADK\Infra\SIF_NotificationType.cs" />
+    <Compile Include="OpenADK\Infra\SIF_RequestMsgId.cs" />
+    <Compile Include="OpenADK\Infra\SIF_RequestMsgIds.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ServiceInput.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ServiceNotify.cs" />
+    <Compile Include="OpenADK\Infra\SIF_ServiceOutput.cs" />
     <Compile Include="OpenADK\IntrinsicLibraryType.cs" />
     <Compile Include="OpenADK\ISifDtd.cs" />
+    <Compile Include="OpenADK\Log\LogLevel.cs" />
     <Compile Include="OpenADK\SifDtd.cs" />
+    <Compile Include="OpenADK\Tools\Metadata\AdkMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -946,9 +958,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OpenADK\Tools\Metadata\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>

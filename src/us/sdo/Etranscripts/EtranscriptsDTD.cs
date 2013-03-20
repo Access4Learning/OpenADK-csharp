@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Etranscripts
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -372,13 +372,15 @@ namespace OpenADK.Library.us.Etranscripts
 	/** Defines the &lt;LEAName&gt; element as a child of &lt;LEAInfoData&gt; */
 	public static IElementDef LEAINFODATA_LEANAME = null;
 
-	// Field elements of MARKDATA (5 fields)
+	// Field elements of MARKDATA (6 fields)
 	/** Defines the MarkValueInfoDataRefId attribute as a child of &lt;MarkData&gt; */
 	public static IElementDef MARKDATA_MARKVALUEINFODATAREFID = null;
 	/** Defines the &lt;Percentage&gt; element as a child of &lt;MarkData&gt; */
 	public static IElementDef MARKDATA_PERCENTAGE = null;
 	/** Defines the &lt;Numeric&gt; element as a child of &lt;MarkData&gt; */
 	public static IElementDef MARKDATA_NUMERIC = null;
+	/** Defines the &lt;NumericAsDecimal&gt; element as a child of &lt;MarkData&gt; */
+	public static IElementDef MARKDATA_NUMERICASDECIMAL = null;
 	/** Defines the &lt;Letter&gt; element as a child of &lt;MarkData&gt; */
 	public static IElementDef MARKDATA_LETTER = null;
 	/** Defines the &lt;Narrative&gt; element as a child of &lt;MarkData&gt; */
@@ -832,452 +834,455 @@ namespace OpenADK.Library.us.Etranscripts
 	{
 		//  Objects defined by this SDO Library...
 
-		ACADEMICFOCI = new ElementDefImpl( null, "AcademicFoci", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		ACADEMICFOCUS = new ElementDefImpl( null, "AcademicFocus", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		ACADEMICPERFORMANCEHISTORY = new ElementDefImpl( null, "AcademicPerformanceHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ACADEMICPERFORMANCESUMMARY = new ElementDefImpl( null, "AcademicPerformanceSummary", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ACADEMICSUBJECT = new ElementDefImpl( null, "AcademicSubject", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		ACADEMICSUBJECTS = new ElementDefImpl( null, "AcademicSubjects", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		ACTIVITYAWARD = new ElementDefImpl( null, "ActivityAward", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ACTIVITYAWARDHISTORY = new ElementDefImpl( null, "ActivityAwardHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ADDITIONALGRADUATIONREQUIREMENTPERFORMANCEHISTORY = new ElementDefImpl( null, "AdditionalGraduationRequirementPerformanceHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ADVISOR = new ElementDefImpl( null, "Advisor", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ASSESSMENTHISTORY = new ElementDefImpl( null, "AssessmentHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ASSESSMENTPERFORMANCEHISTORY = new ElementDefImpl( null, "AssessmentPerformanceHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		COUNSELOR = new ElementDefImpl( null, "Counselor", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		COURSE = new ElementDefImpl( null, "Course", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		COURSEHISTORY = new ElementDefImpl( null, "CourseHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		COURSES = new ElementDefImpl( null, "Courses", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CURRENTCOURSEACTIVITY = new ElementDefImpl( null, "CurrentCourseActivity", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DEMOGRAPHICSDATA = new ElementDefImpl( null, "DemographicsData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ENROLLMENTHISTORY = new ElementDefImpl( null, "EnrollmentHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ENROLLMENTHISTORYEXITTYPE = new ElementDefImpl( null, "EnrollmentHistoryExitType", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LEAINFODATA = new ElementDefImpl( null, "LEAInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MARKDATA = new ElementDefImpl( null, "MarkData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MARKINGPERIOD = new ElementDefImpl( null, "MarkingPeriod", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MARKINGPERIODS = new ElementDefImpl( null, "MarkingPeriods", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MARKINGSYSTEMS = new ElementDefImpl( null, "MarkingSystems", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MARKVALUEINFODATA = new ElementDefImpl( null, "MarkValueInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		OTHERRECORDS = new ElementDefImpl( null, "OtherRecords", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		PARENTGUARDIAN = new ElementDefImpl( null, "ParentGuardian", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		RECORDS = new ElementDefImpl( null, "Records", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		REQUIREMENT = new ElementDefImpl( null, "Requirement", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SCHOOLATTENDANCEHISTORY = new ElementDefImpl( null, "SchoolAttendanceHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SCHOOLATTENDED = new ElementDefImpl( null, "SchoolAttended", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SCHOOLCOURSEINFODATA = new ElementDefImpl( null, "SchoolCourseInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SCHOOLINFODATA = new ElementDefImpl( null, "SchoolInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SECTIONINFODATA = new ElementDefImpl( null, "SectionInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STAFFPERSONALDATA = new ElementDefImpl( null, "StaffPersonalData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTACADEMICRECORD = new ElementDefImpl( null, "StudentAcademicRecord", null, 0, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTCONTACTSSUMMARY = new ElementDefImpl( null, "StudentContactsSummary", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTDEMOGRAPHICRECORD = new ElementDefImpl( null, "StudentDemographicRecord", null, 0, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTPARTICIPATIONDATA = new ElementDefImpl( null, "StudentParticipationData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTPERSONALDATA = new ElementDefImpl( null, "StudentPersonalData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTRECORDEXCHANGE = new ElementDefImpl( null, "StudentRecordExchange", null, 0, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTRECORDPACKAGE = new ElementDefImpl( null, "StudentRecordPackage", null, 0, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTRECORDPACKAGEREFID = new ElementDefImpl( null, "StudentRecordPackageRefId", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTSCHOOLENROLLMENTDATA = new ElementDefImpl( null, "StudentSchoolEnrollmentData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTSCHOOLENROLLMENTHISTORY = new ElementDefImpl( null, "StudentSchoolEnrollmentHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTSCHOOLRELATIONSHIP = new ElementDefImpl( null, "StudentSchoolRelationship", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTSPECIALEDUCATIONRECORD = new ElementDefImpl( null, "StudentSpecialEducationRecord", null, 0, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		TERM = new ElementDefImpl( null, "Term", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		TERMINFODATA = new ElementDefImpl( null, "TermInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		TERMPERFORMANCE = new ElementDefImpl( null, "TermPerformance", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		ACADEMICFOCI = new ElementDefImpl( null, "AcademicFoci", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		ACADEMICFOCUS = new ElementDefImpl( null, "AcademicFocus", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		ACADEMICPERFORMANCEHISTORY = new ElementDefImpl( null, "AcademicPerformanceHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ACADEMICPERFORMANCESUMMARY = new ElementDefImpl( null, "AcademicPerformanceSummary", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ACADEMICSUBJECT = new ElementDefImpl( null, "AcademicSubject", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		ACADEMICSUBJECTS = new ElementDefImpl( null, "AcademicSubjects", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		ACTIVITYAWARD = new ElementDefImpl( null, "ActivityAward", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ACTIVITYAWARDHISTORY = new ElementDefImpl( null, "ActivityAwardHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ADDITIONALGRADUATIONREQUIREMENTPERFORMANCEHISTORY = new ElementDefImpl( null, "AdditionalGraduationRequirementPerformanceHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ADVISOR = new ElementDefImpl( null, "Advisor", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ASSESSMENTHISTORY = new ElementDefImpl( null, "AssessmentHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ASSESSMENTPERFORMANCEHISTORY = new ElementDefImpl( null, "AssessmentPerformanceHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		COUNSELOR = new ElementDefImpl( null, "Counselor", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		COURSE = new ElementDefImpl( null, "Course", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		COURSEHISTORY = new ElementDefImpl( null, "CourseHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		COURSES = new ElementDefImpl( null, "Courses", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CURRENTCOURSEACTIVITY = new ElementDefImpl( null, "CurrentCourseActivity", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DEMOGRAPHICSDATA = new ElementDefImpl( null, "DemographicsData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ENROLLMENTHISTORY = new ElementDefImpl( null, "EnrollmentHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ENROLLMENTHISTORYEXITTYPE = new ElementDefImpl( null, "EnrollmentHistoryExitType", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LEAINFODATA = new ElementDefImpl( null, "LEAInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MARKDATA = new ElementDefImpl( null, "MarkData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MARKINGPERIOD = new ElementDefImpl( null, "MarkingPeriod", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MARKINGPERIODS = new ElementDefImpl( null, "MarkingPeriods", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MARKINGSYSTEMS = new ElementDefImpl( null, "MarkingSystems", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MARKVALUEINFODATA = new ElementDefImpl( null, "MarkValueInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		OTHERRECORDS = new ElementDefImpl( null, "OtherRecords", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		PARENTGUARDIAN = new ElementDefImpl( null, "ParentGuardian", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		RECORDS = new ElementDefImpl( null, "Records", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		REQUIREMENT = new ElementDefImpl( null, "Requirement", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SCHOOLATTENDANCEHISTORY = new ElementDefImpl( null, "SchoolAttendanceHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SCHOOLATTENDED = new ElementDefImpl( null, "SchoolAttended", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SCHOOLCOURSEINFODATA = new ElementDefImpl( null, "SchoolCourseInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SCHOOLINFODATA = new ElementDefImpl( null, "SchoolInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SECTIONINFODATA = new ElementDefImpl( null, "SectionInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STAFFPERSONALDATA = new ElementDefImpl( null, "StaffPersonalData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTACADEMICRECORD = new ElementDefImpl( null, "StudentAcademicRecord", null, 0, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTCONTACTSSUMMARY = new ElementDefImpl( null, "StudentContactsSummary", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTDEMOGRAPHICRECORD = new ElementDefImpl( null, "StudentDemographicRecord", null, 0, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTPARTICIPATIONDATA = new ElementDefImpl( null, "StudentParticipationData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTPERSONALDATA = new ElementDefImpl( null, "StudentPersonalData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTRECORDEXCHANGE = new ElementDefImpl( null, "StudentRecordExchange", null, 0, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTRECORDPACKAGE = new ElementDefImpl( null, "StudentRecordPackage", null, 0, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTRECORDPACKAGEREFID = new ElementDefImpl( null, "StudentRecordPackageRefId", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTSCHOOLENROLLMENTDATA = new ElementDefImpl( null, "StudentSchoolEnrollmentData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTSCHOOLENROLLMENTHISTORY = new ElementDefImpl( null, "StudentSchoolEnrollmentHistory", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTSCHOOLRELATIONSHIP = new ElementDefImpl( null, "StudentSchoolRelationship", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTSPECIALEDUCATIONRECORD = new ElementDefImpl( null, "StudentSpecialEducationRecord", null, 0, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		TERM = new ElementDefImpl( null, "Term", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		TERMINFODATA = new ElementDefImpl( null, "TermInfoData", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		TERMPERFORMANCE = new ElementDefImpl( null, "TermPerformance", null, 0, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 
 		// <AcademicFoci> fields (1 entries)
-		EtranscriptsDTD.ACADEMICFOCI_ACADEMICFOCUS = new ElementDefImpl( ACADEMICFOCI, "AcademicFocus", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF22, SifVersion.SIF25 );
+		EtranscriptsDTD.ACADEMICFOCI_ACADEMICFOCUS = new ElementDefImpl( ACADEMICFOCI, "AcademicFocus", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF22, SifVersion.SIF26 );
 
 		// <AcademicFocus> fields (3 entries)
-		EtranscriptsDTD.ACADEMICFOCUS_CODE = new ElementDefImpl( ACADEMICFOCUS, "Code", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACADEMICFOCUS_OTHERCODELIST = new ElementDefImpl( ACADEMICFOCUS, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		EtranscriptsDTD.ACADEMICFOCUS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ACADEMICFOCUS, "SIF_ExtendedElements", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.ACADEMICFOCUS_CODE = new ElementDefImpl( ACADEMICFOCUS, "Code", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACADEMICFOCUS_OTHERCODELIST = new ElementDefImpl( ACADEMICFOCUS, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		EtranscriptsDTD.ACADEMICFOCUS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ACADEMICFOCUS, "SIF_ExtendedElements", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <AcademicPerformanceHistory> fields (1 entries)
-		EtranscriptsDTD.ACADEMICPERFORMANCEHISTORY_TERMPERFORMANCE = new ElementDefImpl( ACADEMICPERFORMANCEHISTORY, "TermPerformance", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.ACADEMICPERFORMANCEHISTORY_TERMPERFORMANCE = new ElementDefImpl( ACADEMICPERFORMANCEHISTORY, "TermPerformance", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AcademicPerformanceSummary> fields (15 entries)
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_TOTALCREDITSATTEMPTED = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "TotalCreditsAttempted", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_TOTALCREDITSEARNED = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "TotalCreditsEarned", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CUMULATIVEGPACREDITSEARNED = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "CumulativeGPACreditsEarned", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CUMULATIVEGRADEPOINTS = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "CumulativeGradePoints", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CUMULATIVEGPA = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "CumulativeGPA", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_GPATYPE = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "GPAType", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CLASSRANK = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "ClassRank", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CLASSTOTALNUMBER = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "ClassTotalNumber", null, 8, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CLASSRANKINGDATE = new ElementDefAlias( ACADEMICPERFORMANCESUMMARY, "ClassRankingDate", null, "PartialDateType", 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_PROJECTEDGRADUATIONDATE = new ElementDefAlias( ACADEMICPERFORMANCESUMMARY, "ProjectedGraduationDate", null, "PartialDateType", 10, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_GRADUATIONDATE = new ElementDefAlias( ACADEMICPERFORMANCESUMMARY, "GraduationDate", null, "PartialDateType", 11, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_GRADUATIONDIPLOMATYPE = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "GraduationDiplomaType", null, 12, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_ACADEMICTRACK = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "AcademicTrack", null, 13, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_ACADEMICFOCI = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "AcademicFoci", null, 14, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_ACADEMICSUBJECTS = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "AcademicSubjects", null, 15, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_TOTALCREDITSATTEMPTED = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "TotalCreditsAttempted", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_TOTALCREDITSEARNED = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "TotalCreditsEarned", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CUMULATIVEGPACREDITSEARNED = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "CumulativeGPACreditsEarned", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CUMULATIVEGRADEPOINTS = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "CumulativeGradePoints", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CUMULATIVEGPA = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "CumulativeGPA", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_GPATYPE = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "GPAType", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CLASSRANK = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "ClassRank", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CLASSTOTALNUMBER = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "ClassTotalNumber", null, 8, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_CLASSRANKINGDATE = new ElementDefAlias( ACADEMICPERFORMANCESUMMARY, "ClassRankingDate", null, "PartialDateType", 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_PROJECTEDGRADUATIONDATE = new ElementDefAlias( ACADEMICPERFORMANCESUMMARY, "ProjectedGraduationDate", null, "PartialDateType", 10, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_GRADUATIONDATE = new ElementDefAlias( ACADEMICPERFORMANCESUMMARY, "GraduationDate", null, "PartialDateType", 11, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_GRADUATIONDIPLOMATYPE = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "GraduationDiplomaType", null, 12, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_ACADEMICTRACK = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "AcademicTrack", null, 13, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_ACADEMICFOCI = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "AcademicFoci", null, 14, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		EtranscriptsDTD.ACADEMICPERFORMANCESUMMARY_ACADEMICSUBJECTS = new ElementDefImpl( ACADEMICPERFORMANCESUMMARY, "AcademicSubjects", null, 15, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
 
 		// <AcademicSubject> fields (3 entries)
-		EtranscriptsDTD.ACADEMICSUBJECT_CODE = new ElementDefImpl( ACADEMICSUBJECT, "Code", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACADEMICSUBJECT_OTHERCODELIST = new ElementDefImpl( ACADEMICSUBJECT, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		EtranscriptsDTD.ACADEMICSUBJECT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ACADEMICSUBJECT, "SIF_ExtendedElements", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.ACADEMICSUBJECT_CODE = new ElementDefImpl( ACADEMICSUBJECT, "Code", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF22, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACADEMICSUBJECT_OTHERCODELIST = new ElementDefImpl( ACADEMICSUBJECT, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		EtranscriptsDTD.ACADEMICSUBJECT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ACADEMICSUBJECT, "SIF_ExtendedElements", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <AcademicSubjects> fields (1 entries)
-		EtranscriptsDTD.ACADEMICSUBJECTS_ACADEMICSUBJECT = new ElementDefImpl( ACADEMICSUBJECTS, "AcademicSubject", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF22, SifVersion.SIF25 );
+		EtranscriptsDTD.ACADEMICSUBJECTS_ACADEMICSUBJECT = new ElementDefImpl( ACADEMICSUBJECTS, "AcademicSubject", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF22, SifVersion.SIF26 );
 
 		// <ActivityAward> fields (10 entries)
-		EtranscriptsDTD.ACTIVITYAWARD_NAME = new ElementDefImpl( ACTIVITYAWARD, "Name", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACTIVITYAWARD_INVOLVEMENTCODE = new ElementDefImpl( ACTIVITYAWARD, "InvolvementCode", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACTIVITYAWARD_INVOLVEMENTBEGINNINGDATE = new ElementDefAlias( ACTIVITYAWARD, "InvolvementBeginningDate", null, "PartialDateType", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACTIVITYAWARD_INVOLVEMENTENDINGDATE = new ElementDefAlias( ACTIVITYAWARD, "InvolvementEndingDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACTIVITYAWARD_INVOLVEMENTAMOUNT = new ElementDefImpl( ACTIVITYAWARD, "InvolvementAmount", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACTIVITYAWARD_HONORSINFORMATIONCODE = new ElementDefImpl( ACTIVITYAWARD, "HonorsInformationCode", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACTIVITYAWARD_HONORSDESCRIPTION = new ElementDefImpl( ACTIVITYAWARD, "HonorsDescription", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACTIVITYAWARD_DIPLOMACREDENTIALHONORSCODE = new ElementDefImpl( ACTIVITYAWARD, "DiplomaCredentialHonorsCode", null, 8, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACTIVITYAWARD_DIPLOMACREDENTIALHONORSDESCRIPTION = new ElementDefImpl( ACTIVITYAWARD, "DiplomaCredentialHonorsDescription", null, 9, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ACTIVITYAWARD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ACTIVITYAWARD, "SIF_ExtendedElements", null, 10, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.ACTIVITYAWARD_NAME = new ElementDefImpl( ACTIVITYAWARD, "Name", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACTIVITYAWARD_INVOLVEMENTCODE = new ElementDefImpl( ACTIVITYAWARD, "InvolvementCode", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACTIVITYAWARD_INVOLVEMENTBEGINNINGDATE = new ElementDefAlias( ACTIVITYAWARD, "InvolvementBeginningDate", null, "PartialDateType", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACTIVITYAWARD_INVOLVEMENTENDINGDATE = new ElementDefAlias( ACTIVITYAWARD, "InvolvementEndingDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACTIVITYAWARD_INVOLVEMENTAMOUNT = new ElementDefImpl( ACTIVITYAWARD, "InvolvementAmount", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACTIVITYAWARD_HONORSINFORMATIONCODE = new ElementDefImpl( ACTIVITYAWARD, "HonorsInformationCode", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACTIVITYAWARD_HONORSDESCRIPTION = new ElementDefImpl( ACTIVITYAWARD, "HonorsDescription", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACTIVITYAWARD_DIPLOMACREDENTIALHONORSCODE = new ElementDefImpl( ACTIVITYAWARD, "DiplomaCredentialHonorsCode", null, 8, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACTIVITYAWARD_DIPLOMACREDENTIALHONORSDESCRIPTION = new ElementDefImpl( ACTIVITYAWARD, "DiplomaCredentialHonorsDescription", null, 9, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ACTIVITYAWARD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ACTIVITYAWARD, "SIF_ExtendedElements", null, 10, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <ActivityAwardHistory> fields (1 entries)
-		EtranscriptsDTD.ACTIVITYAWARDHISTORY_ACTIVITYAWARD = new ElementDefImpl( ACTIVITYAWARDHISTORY, "ActivityAward", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.ACTIVITYAWARDHISTORY_ACTIVITYAWARD = new ElementDefImpl( ACTIVITYAWARDHISTORY, "ActivityAward", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AdditionalGraduationRequirementPerformanceHistory> fields (1 entries)
-		EtranscriptsDTD.ADDITIONALGRADUATIONREQUIREMENTPERFORMANCEHISTORY_REQUIREMENT = new ElementDefImpl( ADDITIONALGRADUATIONREQUIREMENTPERFORMANCEHISTORY, "Requirement", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.ADDITIONALGRADUATIONREQUIREMENTPERFORMANCEHISTORY_REQUIREMENT = new ElementDefImpl( ADDITIONALGRADUATIONREQUIREMENTPERFORMANCEHISTORY, "Requirement", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Advisor> fields (1 entries)
-		EtranscriptsDTD.ADVISOR_STAFFPERSONALDATA = new ElementDefImpl( ADVISOR, "StaffPersonalData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.ADVISOR_STAFFPERSONALDATA = new ElementDefImpl( ADVISOR, "StaffPersonalData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AssessmentHistory> fields (9 entries)
-		EtranscriptsDTD.ASSESSMENTHISTORY_NAME = new ElementDefImpl( ASSESSMENTHISTORY, "Name", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ASSESSMENTHISTORY_ADMINISTRATIONDATE = new ElementDefAlias( ASSESSMENTHISTORY, "AdministrationDate", null, "PartialDateType", 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ASSESSMENTHISTORY_FORM = new ElementDefImpl( ASSESSMENTHISTORY, "Form", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ASSESSMENTHISTORY_LEVEL = new ElementDefImpl( ASSESSMENTHISTORY, "Level", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ASSESSMENTHISTORY_STUDENTGRADELEVELWHENASSESSED = new ElementDefAlias( ASSESSMENTHISTORY, "StudentGradeLevelWhenAssessed", null, "GradeLevel", 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.ASSESSMENTHISTORY_SUBTESTCATEGORY = new ElementDefImpl( ASSESSMENTHISTORY, "SubtestCategory", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ASSESSMENTHISTORY_TESTSCORETYPE = new ElementDefImpl( ASSESSMENTHISTORY, "TestScoreType", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ASSESSMENTHISTORY_TESTSCORE = new ElementDefImpl( ASSESSMENTHISTORY, "TestScore", null, 8, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ASSESSMENTHISTORY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTHISTORY, "SIF_ExtendedElements", null, 9, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.ASSESSMENTHISTORY_NAME = new ElementDefImpl( ASSESSMENTHISTORY, "Name", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ASSESSMENTHISTORY_ADMINISTRATIONDATE = new ElementDefAlias( ASSESSMENTHISTORY, "AdministrationDate", null, "PartialDateType", 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ASSESSMENTHISTORY_FORM = new ElementDefImpl( ASSESSMENTHISTORY, "Form", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ASSESSMENTHISTORY_LEVEL = new ElementDefImpl( ASSESSMENTHISTORY, "Level", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ASSESSMENTHISTORY_STUDENTGRADELEVELWHENASSESSED = new ElementDefAlias( ASSESSMENTHISTORY, "StudentGradeLevelWhenAssessed", null, "GradeLevel", 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.ASSESSMENTHISTORY_SUBTESTCATEGORY = new ElementDefImpl( ASSESSMENTHISTORY, "SubtestCategory", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ASSESSMENTHISTORY_TESTSCORETYPE = new ElementDefImpl( ASSESSMENTHISTORY, "TestScoreType", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ASSESSMENTHISTORY_TESTSCORE = new ElementDefImpl( ASSESSMENTHISTORY, "TestScore", null, 8, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ASSESSMENTHISTORY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTHISTORY, "SIF_ExtendedElements", null, 9, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <AssessmentPerformanceHistory> fields (1 entries)
-		EtranscriptsDTD.ASSESSMENTPERFORMANCEHISTORY_ASSESSMENT = new ElementDefAlias( ASSESSMENTPERFORMANCEHISTORY, "Assessment", null, "AssessmentHistory", 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.ASSESSMENTPERFORMANCEHISTORY_ASSESSMENT = new ElementDefAlias( ASSESSMENTPERFORMANCEHISTORY, "Assessment", null, "AssessmentHistory", 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Counselor> fields (1 entries)
-		EtranscriptsDTD.COUNSELOR_STAFFPERSONALDATA = new ElementDefImpl( COUNSELOR, "StaffPersonalData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.COUNSELOR_STAFFPERSONALDATA = new ElementDefImpl( COUNSELOR, "StaffPersonalData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Course> fields (8 entries)
-		EtranscriptsDTD.COURSE_SCHOOLATTENDEDREFID = new ElementDefImpl( COURSE, "SchoolAttendedRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.COURSE_SCHOOLCOURSEINFODATA = new ElementDefImpl( COURSE, "SchoolCourseInfoData", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.COURSE_STARTDATE = new ElementDefAlias( COURSE, "StartDate", null, "PartialDateType", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.COURSE_ENDDATE = new ElementDefAlias( COURSE, "EndDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.COURSE_MARKINGPERIOD = new ElementDefImpl( COURSE, "MarkingPeriod", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.COURSE_MARKINGPERIODS = new ElementDefImpl( COURSE, "MarkingPeriods", null, 6, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.COURSE_SECTIONINFODATA = new ElementDefImpl( COURSE, "SectionInfoData", null, 7, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EtranscriptsDTD.COURSE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( COURSE, "SIF_ExtendedElements", null, 8, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.COURSE_SCHOOLATTENDEDREFID = new ElementDefImpl( COURSE, "SchoolAttendedRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.COURSE_SCHOOLCOURSEINFODATA = new ElementDefImpl( COURSE, "SchoolCourseInfoData", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.COURSE_STARTDATE = new ElementDefAlias( COURSE, "StartDate", null, "PartialDateType", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.COURSE_ENDDATE = new ElementDefAlias( COURSE, "EndDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.COURSE_MARKINGPERIOD = new ElementDefImpl( COURSE, "MarkingPeriod", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.COURSE_MARKINGPERIODS = new ElementDefImpl( COURSE, "MarkingPeriods", null, 6, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.COURSE_SECTIONINFODATA = new ElementDefImpl( COURSE, "SectionInfoData", null, 7, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EtranscriptsDTD.COURSE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( COURSE, "SIF_ExtendedElements", null, 8, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <CourseHistory> fields (1 entries)
-		EtranscriptsDTD.COURSEHISTORY_TERM = new ElementDefImpl( COURSEHISTORY, "Term", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.COURSEHISTORY_TERM = new ElementDefImpl( COURSEHISTORY, "Term", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Courses> fields (1 entries)
-		EtranscriptsDTD.COURSES_COURSE = new ElementDefImpl( COURSES, "Course", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.COURSES_COURSE = new ElementDefImpl( COURSES, "Course", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <CurrentCourseActivity> fields (2 entries)
-		EtranscriptsDTD.CURRENTCOURSEACTIVITY_TERMINFODATA = new ElementDefImpl( CURRENTCOURSEACTIVITY, "TermInfoData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.CURRENTCOURSEACTIVITY_COURSES = new ElementDefImpl( CURRENTCOURSEACTIVITY, "Courses", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.CURRENTCOURSEACTIVITY_TERMINFODATA = new ElementDefImpl( CURRENTCOURSEACTIVITY, "TermInfoData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.CURRENTCOURSEACTIVITY_COURSES = new ElementDefImpl( CURRENTCOURSEACTIVITY, "Courses", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <DemographicsData> fields (8 entries)
-		EtranscriptsDTD.DEMOGRAPHICSDATA_RACELIST = new ElementDefImpl( DEMOGRAPHICSDATA, "RaceList", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.DEMOGRAPHICSDATA_GENDER = new ElementDefImpl( DEMOGRAPHICSDATA, "Gender", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.DEMOGRAPHICSDATA_BIRTHDATE = new ElementDefImpl( DEMOGRAPHICSDATA, "BirthDate", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		EtranscriptsDTD.DEMOGRAPHICSDATA_ENGLISHPROFICIENCY = new ElementDefImpl( DEMOGRAPHICSDATA, "EnglishProficiency", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
-		EtranscriptsDTD.DEMOGRAPHICSDATA_LANGUAGELIST = new ElementDefImpl( DEMOGRAPHICSDATA, "LanguageList", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF25 );
-		EtranscriptsDTD.DEMOGRAPHICSDATA_HISPANICLATINO = new ElementDefImpl( DEMOGRAPHICSDATA, "HispanicLatino", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.DEMOGRAPHICSDATA_COUNTRYOFBIRTH = new ElementDefAlias( DEMOGRAPHICSDATA, "CountryOfBirth", null, "Country", 7, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.DEMOGRAPHICSDATA_DWELLINGARRANGEMENT = new ElementDefImpl( DEMOGRAPHICSDATA, "DwellingArrangement", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.DEMOGRAPHICSDATA_RACELIST = new ElementDefImpl( DEMOGRAPHICSDATA, "RaceList", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.DEMOGRAPHICSDATA_GENDER = new ElementDefImpl( DEMOGRAPHICSDATA, "Gender", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.DEMOGRAPHICSDATA_BIRTHDATE = new ElementDefImpl( DEMOGRAPHICSDATA, "BirthDate", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		EtranscriptsDTD.DEMOGRAPHICSDATA_ENGLISHPROFICIENCY = new ElementDefImpl( DEMOGRAPHICSDATA, "EnglishProficiency", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
+		EtranscriptsDTD.DEMOGRAPHICSDATA_LANGUAGELIST = new ElementDefImpl( DEMOGRAPHICSDATA, "LanguageList", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF21, SifVersion.SIF26 );
+		EtranscriptsDTD.DEMOGRAPHICSDATA_HISPANICLATINO = new ElementDefImpl( DEMOGRAPHICSDATA, "HispanicLatino", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.DEMOGRAPHICSDATA_COUNTRYOFBIRTH = new ElementDefAlias( DEMOGRAPHICSDATA, "CountryOfBirth", null, "Country", 7, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.DEMOGRAPHICSDATA_DWELLINGARRANGEMENT = new ElementDefImpl( DEMOGRAPHICSDATA, "DwellingArrangement", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <EnrollmentHistory> fields (1 entries)
-		EtranscriptsDTD.ENROLLMENTHISTORY_STUDENTSCHOOLENROLLMENTDATA = new ElementDefAlias( ENROLLMENTHISTORY, "StudentSchoolEnrollmentData", null, "StudentSchoolEnrollmentHistory", 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.ENROLLMENTHISTORY_STUDENTSCHOOLENROLLMENTDATA = new ElementDefAlias( ENROLLMENTHISTORY, "StudentSchoolEnrollmentData", null, "StudentSchoolEnrollmentHistory", 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EnrollmentHistoryExitType> fields (2 entries)
-		EtranscriptsDTD.ENROLLMENTHISTORYEXITTYPE_CODE = new ElementDefImpl( ENROLLMENTHISTORYEXITTYPE, "Code", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.ENROLLMENTHISTORYEXITTYPE_OTHERCODELIST = new ElementDefImpl( ENROLLMENTHISTORYEXITTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.ENROLLMENTHISTORYEXITTYPE_CODE = new ElementDefImpl( ENROLLMENTHISTORYEXITTYPE, "Code", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.ENROLLMENTHISTORYEXITTYPE_OTHERCODELIST = new ElementDefImpl( ENROLLMENTHISTORYEXITTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <LEAInfoData> fields (4 entries)
-		EtranscriptsDTD.LEAINFODATA_LOCALID = new ElementDefImpl( LEAINFODATA, "LocalId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.LEAINFODATA_STATEPROVINCEID = new ElementDefImpl( LEAINFODATA, "StateProvinceId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.LEAINFODATA_NCESID = new ElementDefImpl( LEAINFODATA, "NCESId", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.LEAINFODATA_LEANAME = new ElementDefImpl( LEAINFODATA, "LEAName", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.LEAINFODATA_LOCALID = new ElementDefImpl( LEAINFODATA, "LocalId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.LEAINFODATA_STATEPROVINCEID = new ElementDefImpl( LEAINFODATA, "StateProvinceId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.LEAINFODATA_NCESID = new ElementDefImpl( LEAINFODATA, "NCESId", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.LEAINFODATA_LEANAME = new ElementDefImpl( LEAINFODATA, "LEAName", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
-		// <MarkData> fields (5 entries)
-		EtranscriptsDTD.MARKDATA_MARKVALUEINFODATAREFID = new ElementDefImpl( MARKDATA, "MarkValueInfoDataRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.MARKDATA_PERCENTAGE = new ElementDefImpl( MARKDATA, "Percentage", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.MARKDATA_NUMERIC = new ElementDefImpl( MARKDATA, "Numeric", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		EtranscriptsDTD.MARKDATA_LETTER = new ElementDefImpl( MARKDATA, "Letter", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.MARKDATA_NARRATIVE = new ElementDefImpl( MARKDATA, "Narrative", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		// <MarkData> fields (6 entries)
+		EtranscriptsDTD.MARKDATA_MARKVALUEINFODATAREFID = new ElementDefImpl( MARKDATA, "MarkValueInfoDataRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.MARKDATA_PERCENTAGE = new ElementDefImpl( MARKDATA, "Percentage", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.MARKDATA_NUMERIC = new ElementDefImpl( MARKDATA, "Numeric", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		EtranscriptsDTD.MARKDATA_NUMERICASDECIMAL = new ElementDefImpl( MARKDATA, "NumericAsDecimal", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.MARKDATA_LETTER = new ElementDefImpl( MARKDATA, "Letter", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.MARKDATA_LETTER.DefineVersionInfo(SifVersion.SIF26, "Letter", 5, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		EtranscriptsDTD.MARKDATA_NARRATIVE = new ElementDefImpl( MARKDATA, "Narrative", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.MARKDATA_NARRATIVE.DefineVersionInfo(SifVersion.SIF26, "Narrative", 6, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
 
 		// <MarkingPeriod> fields (10 entries)
-		EtranscriptsDTD.MARKINGPERIOD_TERMINFODATA = new ElementDefImpl( MARKINGPERIOD, "TermInfoData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.MARKINGPERIOD_GRADELEVELWHENTAKEN = new ElementDefAlias( MARKINGPERIOD, "GradeLevelWhenTaken", null, "GradeLevel", 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.MARKINGPERIOD_MARKDATA = new ElementDefImpl( MARKINGPERIOD, "MarkData", null, 3, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.MARKINGPERIOD_COURSECREDITSATTEMPTED = new ElementDefImpl( MARKINGPERIOD, "CourseCreditsAttempted", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.MARKINGPERIOD_COURSECREDITSEARNED = new ElementDefImpl( MARKINGPERIOD, "CourseCreditsEarned", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.MARKINGPERIOD_CREDITTYPE = new ElementDefImpl( MARKINGPERIOD, "CreditType", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.MARKINGPERIOD_DAYSABSENT = new ElementDefImpl( MARKINGPERIOD, "DaysAbsent", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.MARKINGPERIOD_TERMINFODATA = new ElementDefImpl( MARKINGPERIOD, "TermInfoData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.MARKINGPERIOD_GRADELEVELWHENTAKEN = new ElementDefAlias( MARKINGPERIOD, "GradeLevelWhenTaken", null, "GradeLevel", 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.MARKINGPERIOD_MARKDATA = new ElementDefImpl( MARKINGPERIOD, "MarkData", null, 3, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.MARKINGPERIOD_COURSECREDITSATTEMPTED = new ElementDefImpl( MARKINGPERIOD, "CourseCreditsAttempted", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.MARKINGPERIOD_COURSECREDITSEARNED = new ElementDefImpl( MARKINGPERIOD, "CourseCreditsEarned", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.MARKINGPERIOD_CREDITTYPE = new ElementDefImpl( MARKINGPERIOD, "CreditType", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.MARKINGPERIOD_DAYSABSENT = new ElementDefImpl( MARKINGPERIOD, "DaysAbsent", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		EtranscriptsDTD.MARKINGPERIOD_DAYSABSENT.DefineVersionInfo(SifVersion.SIF24, "DaysAbsent", 8, (ElementDefImpl.FD_FIELD)); // (Sif 24 alias)
-		EtranscriptsDTD.MARKINGPERIOD_DAYSPRESENT = new ElementDefImpl( MARKINGPERIOD, "DaysPresent", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.MARKINGPERIOD_DAYSPRESENT = new ElementDefImpl( MARKINGPERIOD, "DaysPresent", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		EtranscriptsDTD.MARKINGPERIOD_DAYSPRESENT.DefineVersionInfo(SifVersion.SIF24, "DaysPresent", 9, (ElementDefImpl.FD_FIELD)); // (Sif 24 alias)
-		EtranscriptsDTD.MARKINGPERIOD_EXCESSIVEABSENCEINDICATOR = new ElementDefImpl( MARKINGPERIOD, "ExcessiveAbsenceIndicator", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		EtranscriptsDTD.MARKINGPERIOD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( MARKINGPERIOD, "SIF_ExtendedElements", null, 10, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.MARKINGPERIOD_EXCESSIVEABSENCEINDICATOR = new ElementDefImpl( MARKINGPERIOD, "ExcessiveAbsenceIndicator", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		EtranscriptsDTD.MARKINGPERIOD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( MARKINGPERIOD, "SIF_ExtendedElements", null, 10, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <MarkingPeriods> fields (1 entries)
-		EtranscriptsDTD.MARKINGPERIODS_MARKINGPERIOD = new ElementDefImpl( MARKINGPERIODS, "MarkingPeriod", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.MARKINGPERIODS_MARKINGPERIOD = new ElementDefImpl( MARKINGPERIODS, "MarkingPeriod", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <MarkingSystems> fields (1 entries)
-		EtranscriptsDTD.MARKINGSYSTEMS_MARKVALUEINFODATA = new ElementDefImpl( MARKINGSYSTEMS, "MarkValueInfoData", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.MARKINGSYSTEMS_MARKVALUEINFODATA = new ElementDefImpl( MARKINGSYSTEMS, "MarkValueInfoData", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <MarkValueInfoData> fields (7 entries)
-		EtranscriptsDTD.MARKVALUEINFODATA_REFID = new ElementDefImpl( MARKVALUEINFODATA, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.MARKVALUEINFODATA_NAME = new ElementDefImpl( MARKVALUEINFODATA, "Name", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.MARKVALUEINFODATA_PERCENTAGE = new ElementDefImpl( MARKVALUEINFODATA, "Percentage", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.MARKVALUEINFODATA_NUMERIC = new ElementDefImpl( MARKVALUEINFODATA, "Numeric", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		EtranscriptsDTD.MARKVALUEINFODATA_LETTER = new ElementDefImpl( MARKVALUEINFODATA, "Letter", null, 5, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.MARKVALUEINFODATA_NARRATIVE = new ElementDefImpl( MARKVALUEINFODATA, "Narrative", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.MARKVALUEINFODATA_SIF_EXTENDEDELEMENTS = new ElementDefImpl( MARKVALUEINFODATA, "SIF_ExtendedElements", null, 7, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.MARKVALUEINFODATA_REFID = new ElementDefImpl( MARKVALUEINFODATA, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.MARKVALUEINFODATA_NAME = new ElementDefImpl( MARKVALUEINFODATA, "Name", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.MARKVALUEINFODATA_PERCENTAGE = new ElementDefImpl( MARKVALUEINFODATA, "Percentage", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.MARKVALUEINFODATA_NUMERIC = new ElementDefImpl( MARKVALUEINFODATA, "Numeric", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		EtranscriptsDTD.MARKVALUEINFODATA_LETTER = new ElementDefImpl( MARKVALUEINFODATA, "Letter", null, 5, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.MARKVALUEINFODATA_NARRATIVE = new ElementDefImpl( MARKVALUEINFODATA, "Narrative", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.MARKVALUEINFODATA_SIF_EXTENDEDELEMENTS = new ElementDefImpl( MARKVALUEINFODATA, "SIF_ExtendedElements", null, 7, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <OtherRecords> fields (1 entries)
-		EtranscriptsDTD.OTHERRECORDS_STUDENTRECORDPACKAGEREFID = new ElementDefImpl( OTHERRECORDS, "StudentRecordPackageRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.OTHERRECORDS_STUDENTRECORDPACKAGEREFID = new ElementDefImpl( OTHERRECORDS, "StudentRecordPackageRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ParentGuardian> fields (3 entries)
-		EtranscriptsDTD.PARENTGUARDIAN_NAME = new ElementDefImpl( PARENTGUARDIAN, "Name", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.PARENTGUARDIAN_PHONENUMBERLIST = new ElementDefImpl( PARENTGUARDIAN, "PhoneNumberList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.PARENTGUARDIAN_ADDRESSLIST = new ElementDefImpl( PARENTGUARDIAN, "AddressList", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.PARENTGUARDIAN_NAME = new ElementDefImpl( PARENTGUARDIAN, "Name", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.PARENTGUARDIAN_PHONENUMBERLIST = new ElementDefImpl( PARENTGUARDIAN, "PhoneNumberList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.PARENTGUARDIAN_ADDRESSLIST = new ElementDefImpl( PARENTGUARDIAN, "AddressList", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Records> fields (4 entries)
-		EtranscriptsDTD.RECORDS_STUDENTDEMOGRAPHICRECORDREFID = new ElementDefImpl( RECORDS, "StudentDemographicRecordRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.RECORDS_STUDENTACADEMICRECORDREFID = new ElementDefImpl( RECORDS, "StudentAcademicRecordRefId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.RECORDS_STUDENTSPECIALEDUCATIONRECORDREFID = new ElementDefImpl( RECORDS, "StudentSpecialEducationRecordRefId", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.RECORDS_OTHERRECORDS = new ElementDefImpl( RECORDS, "OtherRecords", null, 4, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.RECORDS_STUDENTDEMOGRAPHICRECORDREFID = new ElementDefImpl( RECORDS, "StudentDemographicRecordRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.RECORDS_STUDENTACADEMICRECORDREFID = new ElementDefImpl( RECORDS, "StudentAcademicRecordRefId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.RECORDS_STUDENTSPECIALEDUCATIONRECORDREFID = new ElementDefImpl( RECORDS, "StudentSpecialEducationRecordRefId", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.RECORDS_OTHERRECORDS = new ElementDefImpl( RECORDS, "OtherRecords", null, 4, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Requirement> fields (5 entries)
-		EtranscriptsDTD.REQUIREMENT_NAME = new ElementDefImpl( REQUIREMENT, "Name", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.REQUIREMENT_METHOD = new ElementDefImpl( REQUIREMENT, "Method", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.REQUIREMENT_STATUS = new ElementDefImpl( REQUIREMENT, "Status", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.REQUIREMENT_STATUSDETERMINATIONDATE = new ElementDefAlias( REQUIREMENT, "StatusDeterminationDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.REQUIREMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( REQUIREMENT, "SIF_ExtendedElements", null, 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.REQUIREMENT_NAME = new ElementDefImpl( REQUIREMENT, "Name", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.REQUIREMENT_METHOD = new ElementDefImpl( REQUIREMENT, "Method", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.REQUIREMENT_STATUS = new ElementDefImpl( REQUIREMENT, "Status", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.REQUIREMENT_STATUSDETERMINATIONDATE = new ElementDefAlias( REQUIREMENT, "StatusDeterminationDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.REQUIREMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( REQUIREMENT, "SIF_ExtendedElements", null, 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <SchoolAttendanceHistory> fields (1 entries)
-		EtranscriptsDTD.SCHOOLATTENDANCEHISTORY_SCHOOLATTENDED = new ElementDefImpl( SCHOOLATTENDANCEHISTORY, "SchoolAttended", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.SCHOOLATTENDANCEHISTORY_SCHOOLATTENDED = new ElementDefImpl( SCHOOLATTENDANCEHISTORY, "SchoolAttended", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SchoolAttended> fields (6 entries)
-		EtranscriptsDTD.SCHOOLATTENDED_REFID = new ElementDefImpl( SCHOOLATTENDED, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLATTENDED_LEAINFODATA = new ElementDefImpl( SCHOOLATTENDED, "LEAInfoData", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.SCHOOLATTENDED_SCHOOLINFODATA = new ElementDefImpl( SCHOOLATTENDED, "SchoolInfoData", null, 3, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.SCHOOLATTENDED_ACCREDITINGBODY = new ElementDefImpl( SCHOOLATTENDED, "AccreditingBody", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLATTENDED_MARKINGSYSTEMS = new ElementDefImpl( SCHOOLATTENDED, "MarkingSystems", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.SCHOOLATTENDED_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLATTENDED, "SIF_ExtendedElements", null, 6, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.SCHOOLATTENDED_REFID = new ElementDefImpl( SCHOOLATTENDED, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLATTENDED_LEAINFODATA = new ElementDefImpl( SCHOOLATTENDED, "LEAInfoData", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.SCHOOLATTENDED_SCHOOLINFODATA = new ElementDefImpl( SCHOOLATTENDED, "SchoolInfoData", null, 3, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.SCHOOLATTENDED_ACCREDITINGBODY = new ElementDefImpl( SCHOOLATTENDED, "AccreditingBody", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLATTENDED_MARKINGSYSTEMS = new ElementDefImpl( SCHOOLATTENDED, "MarkingSystems", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.SCHOOLATTENDED_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLATTENDED, "SIF_ExtendedElements", null, 6, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <SchoolCourseInfoData> fields (11 entries)
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_COURSECODE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "CourseCode", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_STATECOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "StateCourseCode", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_DISTRICTCOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "DistrictCourseCode", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_NATIONALCOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "NationalCourseCode", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_SUBJECTAREALIST = new ElementDefImpl( SCHOOLCOURSEINFODATA, "SubjectAreaList", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_COURSETITLE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "CourseTitle", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_DESCRIPTION = new ElementDefImpl( SCHOOLCOURSEINFODATA, "Description", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_INSTRUCTIONALLEVEL = new ElementDefImpl( SCHOOLCOURSEINFODATA, "InstructionalLevel", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_COREACADEMICCOURSE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "CoreAcademicCourse", null, 9, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_GRADUATIONREQUIREMENT = new ElementDefImpl( SCHOOLCOURSEINFODATA, "GraduationRequirement", null, 10, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLCOURSEINFODATA_DEPARTMENT = new ElementDefImpl( SCHOOLCOURSEINFODATA, "Department", null, 11, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_COURSECODE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "CourseCode", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_STATECOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "StateCourseCode", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_DISTRICTCOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "DistrictCourseCode", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_NATIONALCOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "NationalCourseCode", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_SUBJECTAREALIST = new ElementDefImpl( SCHOOLCOURSEINFODATA, "SubjectAreaList", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_COURSETITLE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "CourseTitle", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_DESCRIPTION = new ElementDefImpl( SCHOOLCOURSEINFODATA, "Description", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_INSTRUCTIONALLEVEL = new ElementDefImpl( SCHOOLCOURSEINFODATA, "InstructionalLevel", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_COREACADEMICCOURSE = new ElementDefImpl( SCHOOLCOURSEINFODATA, "CoreAcademicCourse", null, 9, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_GRADUATIONREQUIREMENT = new ElementDefImpl( SCHOOLCOURSEINFODATA, "GraduationRequirement", null, 10, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLCOURSEINFODATA_DEPARTMENT = new ElementDefImpl( SCHOOLCOURSEINFODATA, "Department", null, 11, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SchoolInfoData> fields (10 entries)
-		EtranscriptsDTD.SCHOOLINFODATA_LOCALID = new ElementDefImpl( SCHOOLINFODATA, "LocalId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLINFODATA_STATEPROVINCEID = new ElementDefImpl( SCHOOLINFODATA, "StateProvinceId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLINFODATA_NCESID = new ElementDefImpl( SCHOOLINFODATA, "NCESId", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLINFODATA_SCHOOLNAME = new ElementDefImpl( SCHOOLINFODATA, "SchoolName", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLINFODATA_SCHOOLURL = new ElementDefImpl( SCHOOLINFODATA, "SchoolURL", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.SCHOOLINFODATA_SCHOOLCONTACTLIST = new ElementDefImpl( SCHOOLINFODATA, "SchoolContactList", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.SCHOOLINFODATA_ADDRESSLIST = new ElementDefImpl( SCHOOLINFODATA, "AddressList", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.SCHOOLINFODATA_PHONENUMBERLIST = new ElementDefImpl( SCHOOLINFODATA, "PhoneNumberList", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.SCHOOLINFODATA_IDENTIFICATIONINFOLIST = new ElementDefImpl( SCHOOLINFODATA, "IdentificationInfoList", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		EtranscriptsDTD.SCHOOLINFODATA_GRADELEVELS = new ElementDefImpl( SCHOOLINFODATA, "GradeLevels", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.SCHOOLINFODATA_LOCALID = new ElementDefImpl( SCHOOLINFODATA, "LocalId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLINFODATA_STATEPROVINCEID = new ElementDefImpl( SCHOOLINFODATA, "StateProvinceId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLINFODATA_NCESID = new ElementDefImpl( SCHOOLINFODATA, "NCESId", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLINFODATA_SCHOOLNAME = new ElementDefImpl( SCHOOLINFODATA, "SchoolName", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLINFODATA_SCHOOLURL = new ElementDefImpl( SCHOOLINFODATA, "SchoolURL", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.SCHOOLINFODATA_SCHOOLCONTACTLIST = new ElementDefImpl( SCHOOLINFODATA, "SchoolContactList", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.SCHOOLINFODATA_ADDRESSLIST = new ElementDefImpl( SCHOOLINFODATA, "AddressList", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.SCHOOLINFODATA_PHONENUMBERLIST = new ElementDefImpl( SCHOOLINFODATA, "PhoneNumberList", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.SCHOOLINFODATA_IDENTIFICATIONINFOLIST = new ElementDefImpl( SCHOOLINFODATA, "IdentificationInfoList", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		EtranscriptsDTD.SCHOOLINFODATA_GRADELEVELS = new ElementDefImpl( SCHOOLINFODATA, "GradeLevels", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 		EtranscriptsDTD.SCHOOLINFODATA_GRADELEVELS.DefineVersionInfo(SifVersion.SIF22, "GradeLevels", 10, 0); // (Sif 22 alias)
 
 		// <SectionInfoData> fields (1 entries)
-		EtranscriptsDTD.SECTIONINFODATA_MEDIUMOFINSTRUCTION = new ElementDefImpl( SECTIONINFODATA, "MediumOfInstruction", null, 1, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.SECTIONINFODATA_MEDIUMOFINSTRUCTION = new ElementDefImpl( SECTIONINFODATA, "MediumOfInstruction", null, 1, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <StaffPersonalData> fields (4 entries)
-		EtranscriptsDTD.STAFFPERSONALDATA_NAME = new ElementDefImpl( STAFFPERSONALDATA, "Name", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STAFFPERSONALDATA_TITLE = new ElementDefImpl( STAFFPERSONALDATA, "Title", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STAFFPERSONALDATA_ADDRESSLIST = new ElementDefImpl( STAFFPERSONALDATA, "AddressList", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STAFFPERSONALDATA_PHONENUMBERLIST = new ElementDefImpl( STAFFPERSONALDATA, "PhoneNumberList", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STAFFPERSONALDATA_NAME = new ElementDefImpl( STAFFPERSONALDATA, "Name", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STAFFPERSONALDATA_TITLE = new ElementDefImpl( STAFFPERSONALDATA, "Title", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STAFFPERSONALDATA_ADDRESSLIST = new ElementDefImpl( STAFFPERSONALDATA, "AddressList", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STAFFPERSONALDATA_PHONENUMBERLIST = new ElementDefImpl( STAFFPERSONALDATA, "PhoneNumberList", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentAcademicRecord> fields (15 entries)
-		EtranscriptsDTD.STUDENTACADEMICRECORD_REFID = new ElementDefImpl( STUDENTACADEMICRECORD, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_SIF_REFID = new ElementDefImpl( STUDENTACADEMICRECORD, "SIF_RefId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_SIF_REFOBJECT = new ElementDefImpl( STUDENTACADEMICRECORD, "SIF_RefObject", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_REPORTINGDATE = new ElementDefImpl( STUDENTACADEMICRECORD, "ReportingDate", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_STUDENTSCHOOLENROLLMENTDATA = new ElementDefImpl( STUDENTACADEMICRECORD, "StudentSchoolEnrollmentData", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_DISTRICTENTRYDATE = new ElementDefAlias( STUDENTACADEMICRECORD, "DistrictEntryDate", null, "PartialDateType", 6, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_SCHOOLATTENDANCEHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "SchoolAttendanceHistory", null, 7, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_ENROLLMENTHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "EnrollmentHistory", null, 8, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_CURRENTCOURSEACTIVITY = new ElementDefImpl( STUDENTACADEMICRECORD, "CurrentCourseActivity", null, 9, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_COURSEHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "CourseHistory", null, 10, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_ACADEMICPERFORMANCEHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "AcademicPerformanceHistory", null, 11, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_ACADEMICPERFORMANCESUMMARY = new ElementDefImpl( STUDENTACADEMICRECORD, "AcademicPerformanceSummary", null, 12, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_ASSESSMENTPERFORMANCEHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "AssessmentPerformanceHistory", null, 13, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_ADDITIONALGRADUATIONREQUIREMENTPERFORMANCEHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "AdditionalGraduationRequirementPerformanceHistory", null, 14, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTACADEMICRECORD_ACTIVITYAWARDHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "ActivityAwardHistory", null, 15, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTACADEMICRECORD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTACADEMICRECORD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTACADEMICRECORD_SIF_METADATA = new ElementDefImpl( STUDENTACADEMICRECORD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_REFID = new ElementDefImpl( STUDENTACADEMICRECORD, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_SIF_REFID = new ElementDefImpl( STUDENTACADEMICRECORD, "SIF_RefId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_SIF_REFOBJECT = new ElementDefImpl( STUDENTACADEMICRECORD, "SIF_RefObject", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_REPORTINGDATE = new ElementDefImpl( STUDENTACADEMICRECORD, "ReportingDate", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_STUDENTSCHOOLENROLLMENTDATA = new ElementDefImpl( STUDENTACADEMICRECORD, "StudentSchoolEnrollmentData", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_DISTRICTENTRYDATE = new ElementDefAlias( STUDENTACADEMICRECORD, "DistrictEntryDate", null, "PartialDateType", 6, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_SCHOOLATTENDANCEHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "SchoolAttendanceHistory", null, 7, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_ENROLLMENTHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "EnrollmentHistory", null, 8, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_CURRENTCOURSEACTIVITY = new ElementDefImpl( STUDENTACADEMICRECORD, "CurrentCourseActivity", null, 9, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_COURSEHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "CourseHistory", null, 10, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_ACADEMICPERFORMANCEHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "AcademicPerformanceHistory", null, 11, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_ACADEMICPERFORMANCESUMMARY = new ElementDefImpl( STUDENTACADEMICRECORD, "AcademicPerformanceSummary", null, 12, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_ASSESSMENTPERFORMANCEHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "AssessmentPerformanceHistory", null, 13, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_ADDITIONALGRADUATIONREQUIREMENTPERFORMANCEHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "AdditionalGraduationRequirementPerformanceHistory", null, 14, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTACADEMICRECORD_ACTIVITYAWARDHISTORY = new ElementDefImpl( STUDENTACADEMICRECORD, "ActivityAwardHistory", null, 15, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTACADEMICRECORD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTACADEMICRECORD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTACADEMICRECORD_SIF_METADATA = new ElementDefImpl( STUDENTACADEMICRECORD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentContactsSummary> fields (2 entries)
-		EtranscriptsDTD.STUDENTCONTACTSSUMMARY_PARENTGUARDIAN1 = new ElementDefAlias( STUDENTCONTACTSSUMMARY, "ParentGuardian1", null, "ParentGuardian", 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTCONTACTSSUMMARY_PARENTGUARDIAN2 = new ElementDefAlias( STUDENTCONTACTSSUMMARY, "ParentGuardian2", null, "ParentGuardian", 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTCONTACTSSUMMARY_PARENTGUARDIAN1 = new ElementDefAlias( STUDENTCONTACTSSUMMARY, "ParentGuardian1", null, "ParentGuardian", 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTCONTACTSSUMMARY_PARENTGUARDIAN2 = new ElementDefAlias( STUDENTCONTACTSSUMMARY, "ParentGuardian2", null, "ParentGuardian", 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentDemographicRecord> fields (6 entries)
-		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_REFID = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_SIF_REFID = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "SIF_RefId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_SIF_REFOBJECT = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "SIF_RefObject", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_REPORTINGDATE = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "ReportingDate", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_STUDENTPERSONALDATA = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "StudentPersonalData", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_STUDENTCONTACTSSUMMARY = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "StudentContactsSummary", null, 6, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTDEMOGRAPHICRECORD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTDEMOGRAPHICRECORD_SIF_METADATA = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_REFID = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_SIF_REFID = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "SIF_RefId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_SIF_REFOBJECT = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "SIF_RefObject", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_REPORTINGDATE = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "ReportingDate", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_STUDENTPERSONALDATA = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "StudentPersonalData", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTDEMOGRAPHICRECORD_STUDENTCONTACTSSUMMARY = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "StudentContactsSummary", null, 6, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTDEMOGRAPHICRECORD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTDEMOGRAPHICRECORD_SIF_METADATA = new ElementDefImpl( STUDENTDEMOGRAPHICRECORD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentParticipationData> fields (12 entries)
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_PROGRAMTYPE = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "ProgramType", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_LEAINFODATA = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "LEAInfoData", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_SCHOOLINFODATA = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "SchoolInfoData", null, 3, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_REFERRALDATE = new ElementDefAlias( STUDENTPARTICIPATIONDATA, "ReferralDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_PROGRAMSTATUS = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "ProgramStatus", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_EVALUATIONDATE = new ElementDefAlias( STUDENTPARTICIPATIONDATA, "EvaluationDate", null, "PartialDateType", 6, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_REEVALUATIONDATE = new ElementDefAlias( STUDENTPARTICIPATIONDATA, "ReevaluationDate", null, "PartialDateType", 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_EXCEPTIONALITYCATEGORIES = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "ExceptionalityCategories", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_PROGRAMPLANDATE = new ElementDefAlias( STUDENTPARTICIPATIONDATA, "ProgramPlanDate", null, "PartialDateType", 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_PROGRAMPLANEFFECTIVEDATE = new ElementDefAlias( STUDENTPARTICIPATIONDATA, "ProgramPlanEffectiveDate", null, "PartialDateType", 10, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_PLANNEDASSESSMENTPARTICIPATION = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "PlannedAssessmentParticipation", null, 11, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_STUDENTSPECIALEDUCATIONFTE = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "StudentSpecialEducationFTE", null, 12, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_PROGRAMTYPE = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "ProgramType", null, 1, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_LEAINFODATA = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "LEAInfoData", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_SCHOOLINFODATA = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "SchoolInfoData", null, 3, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_REFERRALDATE = new ElementDefAlias( STUDENTPARTICIPATIONDATA, "ReferralDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_PROGRAMSTATUS = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "ProgramStatus", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_EVALUATIONDATE = new ElementDefAlias( STUDENTPARTICIPATIONDATA, "EvaluationDate", null, "PartialDateType", 6, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_REEVALUATIONDATE = new ElementDefAlias( STUDENTPARTICIPATIONDATA, "ReevaluationDate", null, "PartialDateType", 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_EXCEPTIONALITYCATEGORIES = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "ExceptionalityCategories", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_PROGRAMPLANDATE = new ElementDefAlias( STUDENTPARTICIPATIONDATA, "ProgramPlanDate", null, "PartialDateType", 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_PROGRAMPLANEFFECTIVEDATE = new ElementDefAlias( STUDENTPARTICIPATIONDATA, "ProgramPlanEffectiveDate", null, "PartialDateType", 10, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_PLANNEDASSESSMENTPARTICIPATION = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "PlannedAssessmentParticipation", null, 11, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPARTICIPATIONDATA_STUDENTSPECIALEDUCATIONFTE = new ElementDefImpl( STUDENTPARTICIPATIONDATA, "StudentSpecialEducationFTE", null, 12, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <StudentPersonalData> fields (20 entries)
-		EtranscriptsDTD.STUDENTPERSONALDATA_LOCALID = new ElementDefImpl( STUDENTPERSONALDATA, "LocalId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTPERSONALDATA_STATEPROVINCEID = new ElementDefImpl( STUDENTPERSONALDATA, "StateProvinceId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTPERSONALDATA_SSN = new ElementDefImpl( STUDENTPERSONALDATA, "SSN", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTPERSONALDATA_NAME = new ElementDefImpl( STUDENTPERSONALDATA, "Name", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTPERSONALDATA_LOCALID = new ElementDefImpl( STUDENTPERSONALDATA, "LocalId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_STATEPROVINCEID = new ElementDefImpl( STUDENTPERSONALDATA, "StateProvinceId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_SSN = new ElementDefImpl( STUDENTPERSONALDATA, "SSN", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_NAME = new ElementDefImpl( STUDENTPERSONALDATA, "Name", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 		EtranscriptsDTD.STUDENTPERSONALDATA_NAME.DefineVersionInfo(SifVersion.SIF22, "Name", 5, 0); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_OTHERIDLIST = new ElementDefImpl( STUDENTPERSONALDATA, "OtherIdList", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTPERSONALDATA_OTHERNAMES = new ElementDefImpl( STUDENTPERSONALDATA, "OtherNames", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTPERSONALDATA_OTHERIDLIST = new ElementDefImpl( STUDENTPERSONALDATA, "OtherIdList", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF22, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTPERSONALDATA_OTHERNAMES = new ElementDefImpl( STUDENTPERSONALDATA, "OtherNames", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 		EtranscriptsDTD.STUDENTPERSONALDATA_OTHERNAMES.DefineVersionInfo(SifVersion.SIF22, "OtherNames", 6, 0); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_DEMOGRAPHICSDATA = new ElementDefImpl( STUDENTPERSONALDATA, "DemographicsData", null, 6, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTPERSONALDATA_DEMOGRAPHICSDATA = new ElementDefImpl( STUDENTPERSONALDATA, "DemographicsData", null, 6, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 		EtranscriptsDTD.STUDENTPERSONALDATA_DEMOGRAPHICSDATA.DefineVersionInfo(SifVersion.SIF22, "DemographicsData", 7, 0); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_ADDRESSLIST = new ElementDefImpl( STUDENTPERSONALDATA, "AddressList", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTPERSONALDATA_ADDRESSLIST = new ElementDefImpl( STUDENTPERSONALDATA, "AddressList", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 		EtranscriptsDTD.STUDENTPERSONALDATA_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF22, "AddressList", 8, 0); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_PHONENUMBERLIST = new ElementDefImpl( STUDENTPERSONALDATA, "PhoneNumberList", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTPERSONALDATA_PHONENUMBERLIST = new ElementDefImpl( STUDENTPERSONALDATA, "PhoneNumberList", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 		EtranscriptsDTD.STUDENTPERSONALDATA_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF22, "PhoneNumberList", 9, 0); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_IDEA = new ElementDefImpl( STUDENTPERSONALDATA, "IDEA", null, 9, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_IDEA = new ElementDefImpl( STUDENTPERSONALDATA, "IDEA", null, 9, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_IDEA.DefineVersionInfo(SifVersion.SIF22, "IDEA", 10, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_MIGRANT = new ElementDefImpl( STUDENTPERSONALDATA, "Migrant", null, 10, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_MIGRANT = new ElementDefImpl( STUDENTPERSONALDATA, "Migrant", null, 10, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_MIGRANT.DefineVersionInfo(SifVersion.SIF22, "Migrant", 11, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_TITLE1 = new ElementDefImpl( STUDENTPERSONALDATA, "Title1", null, 11, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_TITLE1 = new ElementDefImpl( STUDENTPERSONALDATA, "Title1", null, 11, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_TITLE1.DefineVersionInfo(SifVersion.SIF22, "Title1", 12, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_GIFTEDTALENTED = new ElementDefImpl( STUDENTPERSONALDATA, "GiftedTalented", null, 12, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_GIFTEDTALENTED = new ElementDefImpl( STUDENTPERSONALDATA, "GiftedTalented", null, 12, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_GIFTEDTALENTED.DefineVersionInfo(SifVersion.SIF22, "GiftedTalented", 13, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_ECONOMICDISADVANTAGE = new ElementDefImpl( STUDENTPERSONALDATA, "EconomicDisadvantage", null, 13, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_ECONOMICDISADVANTAGE = new ElementDefImpl( STUDENTPERSONALDATA, "EconomicDisadvantage", null, 13, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_ECONOMICDISADVANTAGE.DefineVersionInfo(SifVersion.SIF22, "EconomicDisadvantage", 14, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_ELL = new ElementDefImpl( STUDENTPERSONALDATA, "ELL", null, 14, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_ELL = new ElementDefImpl( STUDENTPERSONALDATA, "ELL", null, 14, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_ELL.DefineVersionInfo(SifVersion.SIF22, "ELL", 15, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_HOMELESS = new ElementDefImpl( STUDENTPERSONALDATA, "Homeless", null, 15, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_HOMELESS = new ElementDefImpl( STUDENTPERSONALDATA, "Homeless", null, 15, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_HOMELESS.DefineVersionInfo(SifVersion.SIF22, "Homeless", 16, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_SECTION504 = new ElementDefImpl( STUDENTPERSONALDATA, "Section504", null, 16, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_SECTION504 = new ElementDefImpl( STUDENTPERSONALDATA, "Section504", null, 16, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_SECTION504.DefineVersionInfo(SifVersion.SIF22, "Section504", 17, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_VOCATIONALCONCENTRATOR = new ElementDefImpl( STUDENTPERSONALDATA, "VocationalConcentrator", null, 17, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_VOCATIONALCONCENTRATOR = new ElementDefImpl( STUDENTPERSONALDATA, "VocationalConcentrator", null, 17, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_VOCATIONALCONCENTRATOR.DefineVersionInfo(SifVersion.SIF22, "VocationalConcentrator", 18, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_IMMIGRANT = new ElementDefImpl( STUDENTPERSONALDATA, "Immigrant", null, 18, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_IMMIGRANT = new ElementDefImpl( STUDENTPERSONALDATA, "Immigrant", null, 18, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_IMMIGRANT.DefineVersionInfo(SifVersion.SIF22, "Immigrant", 19, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
-		EtranscriptsDTD.STUDENTPERSONALDATA_NEGLECTEDDELINQUENT = new ElementDefImpl( STUDENTPERSONALDATA, "NeglectedDelinquent", null, 19, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTPERSONALDATA_NEGLECTEDDELINQUENT = new ElementDefImpl( STUDENTPERSONALDATA, "NeglectedDelinquent", null, 19, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		EtranscriptsDTD.STUDENTPERSONALDATA_NEGLECTEDDELINQUENT.DefineVersionInfo(SifVersion.SIF22, "NeglectedDelinquent", 20, (ElementDefImpl.FD_FIELD)); // (Sif 22 alias)
 
 		// <StudentRecordExchange> fields (5 entries)
-		EtranscriptsDTD.STUDENTRECORDEXCHANGE_REFID = new ElementDefImpl( STUDENTRECORDEXCHANGE, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTRECORDEXCHANGE_STATEPROVINCEID = new ElementDefImpl( STUDENTRECORDEXCHANGE, "StateProvinceId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTRECORDEXCHANGE_LOCALID = new ElementDefImpl( STUDENTRECORDEXCHANGE, "LocalId", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTRECORDEXCHANGE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTRECORDEXCHANGE, "StudentPersonalRefId", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTRECORDEXCHANGE_RECORDS = new ElementDefImpl( STUDENTRECORDEXCHANGE, "Records", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTRECORDEXCHANGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTRECORDEXCHANGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTRECORDEXCHANGE_SIF_METADATA = new ElementDefImpl( STUDENTRECORDEXCHANGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTRECORDEXCHANGE_REFID = new ElementDefImpl( STUDENTRECORDEXCHANGE, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTRECORDEXCHANGE_STATEPROVINCEID = new ElementDefImpl( STUDENTRECORDEXCHANGE, "StateProvinceId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTRECORDEXCHANGE_LOCALID = new ElementDefImpl( STUDENTRECORDEXCHANGE, "LocalId", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTRECORDEXCHANGE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTRECORDEXCHANGE, "StudentPersonalRefId", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTRECORDEXCHANGE_RECORDS = new ElementDefImpl( STUDENTRECORDEXCHANGE, "Records", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTRECORDEXCHANGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTRECORDEXCHANGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTRECORDEXCHANGE_SIF_METADATA = new ElementDefImpl( STUDENTRECORDEXCHANGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentRecordPackage> fields (7 entries)
-		EtranscriptsDTD.STUDENTRECORDPACKAGE_REFID = new ElementDefImpl( STUDENTRECORDPACKAGE, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTRECORDPACKAGE_SIF_REFID = new ElementDefImpl( STUDENTRECORDPACKAGE, "SIF_RefId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTRECORDPACKAGE_SIF_REFOBJECT = new ElementDefImpl( STUDENTRECORDPACKAGE, "SIF_RefObject", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTRECORDPACKAGE_XMLDATA = new ElementDefImpl( STUDENTRECORDPACKAGE, "XMLData", null, 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTRECORDPACKAGE_TEXTDATA = new ElementDefImpl( STUDENTRECORDPACKAGE, "TextData", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTRECORDPACKAGE_BINARYDATA = new ElementDefImpl( STUDENTRECORDPACKAGE, "BinaryData", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTRECORDPACKAGE_REFERENCE = new ElementDefImpl( STUDENTRECORDPACKAGE, "Reference", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTRECORDPACKAGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTRECORDPACKAGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTRECORDPACKAGE_SIF_METADATA = new ElementDefImpl( STUDENTRECORDPACKAGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTRECORDPACKAGE_REFID = new ElementDefImpl( STUDENTRECORDPACKAGE, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTRECORDPACKAGE_SIF_REFID = new ElementDefImpl( STUDENTRECORDPACKAGE, "SIF_RefId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTRECORDPACKAGE_SIF_REFOBJECT = new ElementDefImpl( STUDENTRECORDPACKAGE, "SIF_RefObject", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTRECORDPACKAGE_XMLDATA = new ElementDefImpl( STUDENTRECORDPACKAGE, "XMLData", null, 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTRECORDPACKAGE_TEXTDATA = new ElementDefImpl( STUDENTRECORDPACKAGE, "TextData", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTRECORDPACKAGE_BINARYDATA = new ElementDefImpl( STUDENTRECORDPACKAGE, "BinaryData", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTRECORDPACKAGE_REFERENCE = new ElementDefImpl( STUDENTRECORDPACKAGE, "Reference", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTRECORDPACKAGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTRECORDPACKAGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTRECORDPACKAGE_SIF_METADATA = new ElementDefImpl( STUDENTRECORDPACKAGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentRecordPackageRefId> fields (0 entries)
 
 		// <StudentSchoolEnrollmentData> fields (5 entries)
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTDATA_SCHOOLATTENDEDREFID = new ElementDefImpl( STUDENTSCHOOLENROLLMENTDATA, "SchoolAttendedRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTDATA_GRADELEVEL = new ElementDefImpl( STUDENTSCHOOLENROLLMENTDATA, "GradeLevel", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTDATA_ADVISOR = new ElementDefImpl( STUDENTSCHOOLENROLLMENTDATA, "Advisor", null, 3, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTDATA_COUNSELOR = new ElementDefImpl( STUDENTSCHOOLENROLLMENTDATA, "Counselor", null, 4, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTDATA_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSCHOOLENROLLMENTDATA, "SIF_ExtendedElements", null, 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTDATA_SCHOOLATTENDEDREFID = new ElementDefImpl( STUDENTSCHOOLENROLLMENTDATA, "SchoolAttendedRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTDATA_GRADELEVEL = new ElementDefImpl( STUDENTSCHOOLENROLLMENTDATA, "GradeLevel", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTDATA_ADVISOR = new ElementDefImpl( STUDENTSCHOOLENROLLMENTDATA, "Advisor", null, 3, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTDATA_COUNSELOR = new ElementDefImpl( STUDENTSCHOOLENROLLMENTDATA, "Counselor", null, 4, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTDATA_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSCHOOLENROLLMENTDATA, "SIF_ExtendedElements", null, 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <StudentSchoolEnrollmentHistory> fields (11 entries)
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_SCHOOLATTENDEDREFID = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "SchoolAttendedRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_SCHOOLYEAR = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "SchoolYear", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_ENTRYDATE = new ElementDefAlias( STUDENTSCHOOLENROLLMENTHISTORY, "EntryDate", null, "PartialDateType", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_EXITDATE = new ElementDefAlias( STUDENTSCHOOLENROLLMENTHISTORY, "ExitDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_ENTRYTYPE = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "EntryType", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_GRADELEVEL = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "GradeLevel", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_EXITSTATUS = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "ExitStatus", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_EXITTYPE = new ElementDefAlias( STUDENTSCHOOLENROLLMENTHISTORY, "ExitType", null, "EnrollmentHistoryExitType", 8, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_STUDENTLEARELATIONSHIP = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "StudentLEARelationship", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_STUDENTSCHOOLRELATIONSHIP = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "StudentSchoolRelationship", null, 10, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "SIF_ExtendedElements", null, 11, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_SCHOOLATTENDEDREFID = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "SchoolAttendedRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_SCHOOLYEAR = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "SchoolYear", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_ENTRYDATE = new ElementDefAlias( STUDENTSCHOOLENROLLMENTHISTORY, "EntryDate", null, "PartialDateType", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_EXITDATE = new ElementDefAlias( STUDENTSCHOOLENROLLMENTHISTORY, "ExitDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_ENTRYTYPE = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "EntryType", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_GRADELEVEL = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "GradeLevel", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_EXITSTATUS = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "ExitStatus", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_EXITTYPE = new ElementDefAlias( STUDENTSCHOOLENROLLMENTHISTORY, "ExitType", null, "EnrollmentHistoryExitType", 8, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_STUDENTLEARELATIONSHIP = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "StudentLEARelationship", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_STUDENTSCHOOLRELATIONSHIP = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "StudentSchoolRelationship", null, 10, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSCHOOLENROLLMENTHISTORY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSCHOOLENROLLMENTHISTORY, "SIF_ExtendedElements", null, 11, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <StudentSchoolRelationship> fields (3 entries)
-		EtranscriptsDTD.STUDENTSCHOOLRELATIONSHIP_MEMBERSHIPTYPE = new ElementDefImpl( STUDENTSCHOOLRELATIONSHIP, "MembershipType", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTSCHOOLRELATIONSHIP_RESIDENCYSTATUS = new ElementDefImpl( STUDENTSCHOOLRELATIONSHIP, "ResidencyStatus", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSCHOOLRELATIONSHIP_NONRESIDENTATTENDREASON = new ElementDefImpl( STUDENTSCHOOLRELATIONSHIP, "NonResidentAttendReason", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTSCHOOLRELATIONSHIP_MEMBERSHIPTYPE = new ElementDefImpl( STUDENTSCHOOLRELATIONSHIP, "MembershipType", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTSCHOOLRELATIONSHIP_RESIDENCYSTATUS = new ElementDefImpl( STUDENTSCHOOLRELATIONSHIP, "ResidencyStatus", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSCHOOLRELATIONSHIP_NONRESIDENTATTENDREASON = new ElementDefImpl( STUDENTSCHOOLRELATIONSHIP, "NonResidentAttendReason", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <StudentSpecialEducationRecord> fields (9 entries)
-		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_REFID = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_SIF_REFID = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "SIF_RefId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_SIF_REFOBJECT = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "SIF_RefObject", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_REPORTINGDATE = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "ReportingDate", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_LEAINFODATA = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "LEAInfoData", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_SCHOOLINFODATA = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "SchoolInfoData", null, 6, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_STUDENTPARTICIPATIONDATA = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "StudentParticipationData", null, 7, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_STUDENTPARTICIPATIONLIST = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "StudentParticipationList", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_STUDENTPLACEMENTLIST = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "StudentPlacementList", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTSPECIALEDUCATIONRECORD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTSPECIALEDUCATIONRECORD_SIF_METADATA = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_REFID = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "RefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_SIF_REFID = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "SIF_RefId", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_SIF_REFOBJECT = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "SIF_RefObject", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_REPORTINGDATE = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "ReportingDate", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_LEAINFODATA = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "LEAInfoData", null, 5, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_SCHOOLINFODATA = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "SchoolInfoData", null, 6, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_STUDENTPARTICIPATIONDATA = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "StudentParticipationData", null, 7, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_STUDENTPARTICIPATIONLIST = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "StudentParticipationList", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EtranscriptsDTD.STUDENTSPECIALEDUCATIONRECORD_STUDENTPLACEMENTLIST = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "StudentPlacementList", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTSPECIALEDUCATIONRECORD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTSPECIALEDUCATIONRECORD_SIF_METADATA = new ElementDefImpl( STUDENTSPECIALEDUCATIONRECORD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Term> fields (3 entries)
-		EtranscriptsDTD.TERM_TERMINFODATA = new ElementDefImpl( TERM, "TermInfoData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.TERM_COURSES = new ElementDefImpl( TERM, "Courses", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.TERM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TERM, "SIF_ExtendedElements", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.TERM_TERMINFODATA = new ElementDefImpl( TERM, "TermInfoData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.TERM_COURSES = new ElementDefImpl( TERM, "Courses", null, 2, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.TERM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TERM, "SIF_ExtendedElements", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <TermInfoData> fields (8 entries)
-		EtranscriptsDTD.TERMINFODATA_SCHOOLATTENDEDREFID = new ElementDefImpl( TERMINFODATA, "SchoolAttendedRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.TERMINFODATA_SCHOOLYEAR = new ElementDefImpl( TERMINFODATA, "SchoolYear", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		EtranscriptsDTD.TERMINFODATA_STARTDATE = new ElementDefAlias( TERMINFODATA, "StartDate", null, "PartialDateType", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.TERMINFODATA_ENDDATE = new ElementDefAlias( TERMINFODATA, "EndDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.TERMINFODATA_DESCRIPTION = new ElementDefImpl( TERMINFODATA, "Description", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.TERMINFODATA_TERMCODE = new ElementDefImpl( TERMINFODATA, "TermCode", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.TERMINFODATA_TRACK = new ElementDefImpl( TERMINFODATA, "Track", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		EtranscriptsDTD.TERMINFODATA_TERMSPAN = new ElementDefImpl( TERMINFODATA, "TermSpan", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		EtranscriptsDTD.TERMINFODATA_SCHOOLATTENDEDREFID = new ElementDefImpl( TERMINFODATA, "SchoolAttendedRefId", null, 1, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.TERMINFODATA_SCHOOLYEAR = new ElementDefImpl( TERMINFODATA, "SchoolYear", null, 2, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		EtranscriptsDTD.TERMINFODATA_STARTDATE = new ElementDefAlias( TERMINFODATA, "StartDate", null, "PartialDateType", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.TERMINFODATA_ENDDATE = new ElementDefAlias( TERMINFODATA, "EndDate", null, "PartialDateType", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.TERMINFODATA_DESCRIPTION = new ElementDefImpl( TERMINFODATA, "Description", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.TERMINFODATA_TERMCODE = new ElementDefImpl( TERMINFODATA, "TermCode", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.TERMINFODATA_TRACK = new ElementDefImpl( TERMINFODATA, "Track", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		EtranscriptsDTD.TERMINFODATA_TERMSPAN = new ElementDefImpl( TERMINFODATA, "TermSpan", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TermPerformance> fields (12 entries)
-		EtranscriptsDTD.TERMPERFORMANCE_TERMINFODATA = new ElementDefImpl( TERMPERFORMANCE, "TermInfoData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.TERMPERFORMANCE_GRADELEVELWHENTAKEN = new ElementDefAlias( TERMPERFORMANCE, "GradeLevelWhenTaken", null, "GradeLevel", 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		EtranscriptsDTD.TERMPERFORMANCE_CREDITSATTEMPTED = new ElementDefImpl( TERMPERFORMANCE, "CreditsAttempted", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.TERMPERFORMANCE_CREDITSEARNED = new ElementDefImpl( TERMPERFORMANCE, "CreditsEarned", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.TERMPERFORMANCE_GPACREDITSATTEMPTED = new ElementDefImpl( TERMPERFORMANCE, "GPACreditsAttempted", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.TERMPERFORMANCE_GPACREDITSEARNED = new ElementDefImpl( TERMPERFORMANCE, "GPACreditsEarned", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.TERMPERFORMANCE_GPAGRADEPOINTS = new ElementDefImpl( TERMPERFORMANCE, "GPAGradePoints", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.TERMPERFORMANCE_GPA = new ElementDefImpl( TERMPERFORMANCE, "GPA", null, 8, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.TERMPERFORMANCE_WEIGHTEDGPA = new ElementDefImpl( TERMPERFORMANCE, "WeightedGPA", null, 9, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.TERMPERFORMANCE_DAYSABSENT = new ElementDefImpl( TERMPERFORMANCE, "DaysAbsent", null, 10, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.TERMPERFORMANCE_DAYSPRESENT = new ElementDefImpl( TERMPERFORMANCE, "DaysPresent", null, 11, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		EtranscriptsDTD.TERMPERFORMANCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TERMPERFORMANCE, "SIF_ExtendedElements", null, 12, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
+		EtranscriptsDTD.TERMPERFORMANCE_TERMINFODATA = new ElementDefImpl( TERMPERFORMANCE, "TermInfoData", null, 1, SifDtd.ETRANSCRIPTS, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.TERMPERFORMANCE_GRADELEVELWHENTAKEN = new ElementDefAlias( TERMPERFORMANCE, "GradeLevelWhenTaken", null, "GradeLevel", 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		EtranscriptsDTD.TERMPERFORMANCE_CREDITSATTEMPTED = new ElementDefImpl( TERMPERFORMANCE, "CreditsAttempted", null, 3, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.TERMPERFORMANCE_CREDITSEARNED = new ElementDefImpl( TERMPERFORMANCE, "CreditsEarned", null, 4, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.TERMPERFORMANCE_GPACREDITSATTEMPTED = new ElementDefImpl( TERMPERFORMANCE, "GPACreditsAttempted", null, 5, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.TERMPERFORMANCE_GPACREDITSEARNED = new ElementDefImpl( TERMPERFORMANCE, "GPACreditsEarned", null, 6, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.TERMPERFORMANCE_GPAGRADEPOINTS = new ElementDefImpl( TERMPERFORMANCE, "GPAGradePoints", null, 7, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.TERMPERFORMANCE_GPA = new ElementDefImpl( TERMPERFORMANCE, "GPA", null, 8, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.TERMPERFORMANCE_WEIGHTEDGPA = new ElementDefImpl( TERMPERFORMANCE, "WeightedGPA", null, 9, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.TERMPERFORMANCE_DAYSABSENT = new ElementDefImpl( TERMPERFORMANCE, "DaysAbsent", null, 10, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.TERMPERFORMANCE_DAYSPRESENT = new ElementDefImpl( TERMPERFORMANCE, "DaysPresent", null, 11, SifDtd.ETRANSCRIPTS, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		EtranscriptsDTD.TERMPERFORMANCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TERMPERFORMANCE, "SIF_ExtendedElements", null, 12, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd
@@ -1343,6 +1348,7 @@ namespace OpenADK.Library.us.Etranscripts
 		dictionary["MarkData_MarkValueInfoDataRefId"] = EtranscriptsDTD.MARKDATA_MARKVALUEINFODATAREFID ;
 		dictionary["MarkData_Narrative"] = EtranscriptsDTD.MARKDATA_NARRATIVE ;
 		dictionary["MarkData_Numeric"] = EtranscriptsDTD.MARKDATA_NUMERIC ;
+		dictionary["MarkData_NumericAsDecimal"] = EtranscriptsDTD.MARKDATA_NUMERICASDECIMAL ;
 		dictionary["MarkData_Percentage"] = EtranscriptsDTD.MARKDATA_PERCENTAGE ;
 		dictionary[ "StudentSchoolRelationship" ] = STUDENTSCHOOLRELATIONSHIP;
 		dictionary["StudentSchoolRelationship_MembershipType"] = EtranscriptsDTD.STUDENTSCHOOLRELATIONSHIP_MEMBERSHIPTYPE ;
