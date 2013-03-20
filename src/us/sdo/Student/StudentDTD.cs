@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Student
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -108,6 +108,12 @@ namespace OpenADK.Library.us.Student
 	public static IElementDef CALENDARSUMMARY = null;
 	/** Defines the &lt;ContactFlags&gt; SIF Data Object */
 	public static IElementDef CONTACTFLAGS = null;
+	/** Defines the &lt;CorrelationSection&gt; SIF Data Object */
+	public static IElementDef CORRELATIONSECTION = null;
+	/** Defines the &lt;CorrelationSectionList&gt; SIF Data Object */
+	public static IElementDef CORRELATIONSECTIONLIST = null;
+	/** Defines the &lt;CorrelationType&gt; SIF Data Object */
+	public static IElementDef CORRELATIONTYPE = null;
 	/** Defines the &lt;CourseCredits&gt; SIF Data Object */
 	public static IElementDef COURSECREDITS = null;
 	/** Defines the &lt;CreditsAttempted&gt; SIF Data Object */
@@ -118,6 +124,12 @@ namespace OpenADK.Library.us.Student
 	public static IElementDef EDUCATIONAGENCYTYPE = null;
 	/** Defines the &lt;EnrollStatus&gt; SIF Data Object */
 	public static IElementDef ENROLLSTATUS = null;
+	/** Defines the &lt;EvaluationPart&gt; SIF Data Object */
+	public static IElementDef EVALUATIONPART = null;
+	/** Defines the &lt;EvaluationParts&gt; SIF Data Object */
+	public static IElementDef EVALUATIONPARTS = null;
+	/** Defines the &lt;EvaluationRecommendation&gt; SIF Data Object */
+	public static IElementDef EVALUATIONRECOMMENDATION = null;
 	/** Defines the &lt;Grade&gt; SIF Data Object */
 	public static IElementDef GRADE = null;
 	/** Defines the &lt;GradeClassification&gt; SIF Data Object */
@@ -160,6 +172,8 @@ namespace OpenADK.Library.us.Student
 	public static IElementDef MEDIUMOFINSTRUCTION = null;
 	/** Defines the &lt;MostRecent&gt; SIF Data Object */
 	public static IElementDef MOSTRECENT = null;
+	/** Defines the &lt;NameEvaluation&gt; SIF Data Object */
+	public static IElementDef NAMEEVALUATION = null;
 	/** Defines the &lt;Nonpromotion&gt; SIF Data Object */
 	public static IElementDef NONPROMOTION = null;
 	/** Defines the &lt;Offender&gt; SIF Data Object */
@@ -182,12 +196,18 @@ namespace OpenADK.Library.us.Student
 	public static IElementDef RELATEDTO = null;
 	/** Defines the &lt;RelatedToList&gt; SIF Data Object */
 	public static IElementDef RELATEDTOLIST = null;
+	/** Defines the &lt;Role&gt; SIF Data Object */
+	public static IElementDef ROLE = null;
+	/** Defines the &lt;Roles&gt; SIF Data Object */
+	public static IElementDef ROLES = null;
 	/** Defines the &lt;RoomInfo&gt; SIF Data Object */
 	public static IElementDef ROOMINFO = null;
 	/** Defines the &lt;RoomInfoRefId&gt; SIF Data Object */
 	public static IElementDef ROOMINFOREFID = null;
 	/** Defines the &lt;RoomType&gt; SIF Data Object */
 	public static IElementDef ROOMTYPE = null;
+	/** Defines the &lt;ScaleEvaluation&gt; SIF Data Object */
+	public static IElementDef SCALEEVALUATION = null;
 	/** Defines the &lt;SCEDCode&gt; SIF Data Object */
 	public static IElementDef SCEDCODE = null;
 	/** Defines the &lt;ScheduleInfo&gt; SIF Data Object */
@@ -212,6 +232,10 @@ namespace OpenADK.Library.us.Student
 	public static IElementDef SCHOOLINFO = null;
 	/** Defines the &lt;SchoolJurisdiction&gt; SIF Data Object */
 	public static IElementDef SCHOOLJURISDICTION = null;
+	/** Defines the &lt;ScoreEvaluation&gt; SIF Data Object */
+	public static IElementDef SCOREEVALUATION = null;
+	/** Defines the &lt;SectionCorrelation&gt; SIF Data Object */
+	public static IElementDef SECTIONCORRELATION = null;
 	/** Defines the &lt;SectionInfo&gt; SIF Data Object */
 	public static IElementDef SECTIONINFO = null;
 	/** Defines the &lt;SectionRoomList&gt; SIF Data Object */
@@ -220,12 +244,16 @@ namespace OpenADK.Library.us.Student
 	public static IElementDef STAFFASSIGNED = null;
 	/** Defines the &lt;StaffAssignment&gt; SIF Data Object */
 	public static IElementDef STAFFASSIGNMENT = null;
+	/** Defines the &lt;StaffEvaluation&gt; SIF Data Object */
+	public static IElementDef STAFFEVALUATION = null;
 	/** Defines the &lt;StaffList&gt; SIF Data Object */
 	public static IElementDef STAFFLIST = null;
 	/** Defines the &lt;StaffPersonal&gt; SIF Data Object */
 	public static IElementDef STAFFPERSONAL = null;
 	/** Defines the &lt;StaffPersonalRefId&gt; SIF Data Object */
 	public static IElementDef STAFFPERSONALREFID = null;
+	/** Defines the &lt;StaffSectionAssignment&gt; SIF Data Object */
+	public static IElementDef STAFFSECTIONASSIGNMENT = null;
 	/** Defines the &lt;StudentActivityInfo&gt; SIF Data Object */
 	public static IElementDef STUDENTACTIVITYINFO = null;
 	/** Defines the &lt;StudentActivityInfoLocation&gt; SIF Data Object */
@@ -498,6 +526,20 @@ namespace OpenADK.Library.us.Student
 	/** Defines the &lt;Other&gt; element as a child of &lt;ContactFlags&gt; */
 	public static IElementDef CONTACTFLAGS_OTHER = null;
 
+	// Field elements of CORRELATIONSECTION (1 fields)
+	/** Defines the Primary attribute as a child of &lt;CorrelationSection&gt; */
+	public static IElementDef CORRELATIONSECTION_PRIMARY = null;
+
+	// Field elements of CORRELATIONSECTIONLIST (1 fields)
+	/** Defines the &lt;CorrelationSection&gt; element as a child of &lt;CorrelationSectionList&gt; */
+	public static IElementDef CORRELATIONSECTIONLIST_CORRELATIONSECTION = null;
+
+	// Field elements of CORRELATIONTYPE (2 fields)
+	/** Defines the &lt;Code&gt; element as a child of &lt;CorrelationType&gt; */
+	public static IElementDef CORRELATIONTYPE_CODE = null;
+	/** Defines the &lt;OtherCodeList&gt; element as a child of &lt;CorrelationType&gt; */
+	public static IElementDef CORRELATIONTYPE_OTHERCODELIST = null;
+
 	// Field elements of COURSECREDITS (1 fields)
 	/** Defines the Type attribute as a child of &lt;CourseCredits&gt; */
 	public static IElementDef COURSECREDITS_TYPE = null;
@@ -555,6 +597,24 @@ namespace OpenADK.Library.us.Student
 	// Field elements of ENROLLSTATUS (1 fields)
 	/** Defines the Code attribute as a child of &lt;EnrollStatus&gt; */
 	public static IElementDef ENROLLSTATUS_CODE = null;
+
+	// Field elements of EVALUATIONPART (3 fields)
+	/** Defines the &lt;Name&gt; element as a child of &lt;EvaluationPart&gt; */
+	public static IElementDef EVALUATIONPART_NAME = null;
+	/** Defines the &lt;Score&gt; element as a child of &lt;EvaluationPart&gt; */
+	public static IElementDef EVALUATIONPART_SCORE = null;
+	/** Defines the &lt;Scale&gt; element as a child of &lt;EvaluationPart&gt; */
+	public static IElementDef EVALUATIONPART_SCALE = null;
+
+	// Field elements of EVALUATIONPARTS (1 fields)
+	/** Defines the &lt;EvaluationPart&gt; element as a child of &lt;EvaluationParts&gt; */
+	public static IElementDef EVALUATIONPARTS_EVALUATIONPART = null;
+
+	// Field elements of EVALUATIONRECOMMENDATION (2 fields)
+	/** Defines the &lt;Code&gt; element as a child of &lt;EvaluationRecommendation&gt; */
+	public static IElementDef EVALUATIONRECOMMENDATION_CODE = null;
+	/** Defines the &lt;OtherCodeList&gt; element as a child of &lt;EvaluationRecommendation&gt; */
+	public static IElementDef EVALUATIONRECOMMENDATION_OTHERCODELIST = null;
 
 	// Field elements of GRADE (7 fields)
 	/** Defines the &lt;Percentage&gt; element as a child of &lt;Grade&gt; */
@@ -736,6 +796,8 @@ namespace OpenADK.Library.us.Student
 	/** Defines the &lt;GradeLevel&gt; element as a child of &lt;MostRecent&gt; */
 	public static IElementDef MOSTRECENT_GRADELEVEL = null;
 
+	// Field elements of NAMEEVALUATION (0 fields)
+
 	// Field elements of NONPROMOTION (2 fields)
 	/** Defines the &lt;Code&gt; element as a child of &lt;Nonpromotion&gt; */
 	public static IElementDef NONPROMOTION_CODE = null;
@@ -802,6 +864,12 @@ namespace OpenADK.Library.us.Student
 	/** Defines the &lt;RelatedTo&gt; element as a child of &lt;RelatedToList&gt; */
 	public static IElementDef RELATEDTOLIST_RELATEDTO = null;
 
+	// Field elements of ROLE (0 fields)
+
+	// Field elements of ROLES (1 fields)
+	/** Defines the &lt;Role&gt; element as a child of &lt;Roles&gt; */
+	public static IElementDef ROLES_ROLE = null;
+
 	// Field elements of ROOMINFO (11 fields)
 	/** Defines the RefId attribute as a child of &lt;RoomInfo&gt; */
 	public static IElementDef ROOMINFO_REFID = null;
@@ -844,6 +912,8 @@ namespace OpenADK.Library.us.Student
 	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
 	public static IElementDef ROOMTYPE_SIF_METADATA = null;
 
+	// Field elements of SCALEEVALUATION (0 fields)
+
 	// Field elements of SCEDCODE (5 fields)
 	/** Defines the &lt;CourseDescription&gt; element as a child of &lt;SCEDCode&gt; */
 	public static IElementDef SCEDCODE_COURSEDESCRIPTION = null;
@@ -882,7 +952,7 @@ namespace OpenADK.Library.us.Student
 	/** Defines the &lt;ScheduleInfoOverride&gt; element as a child of &lt;ScheduleInfoOverrideList&gt; */
 	public static IElementDef SCHEDULEINFOOVERRIDELIST_SCHEDULEINFOOVERRIDE = null;
 
-	// Field elements of SCHOOLCOURSEINFO (15 fields)
+	// Field elements of SCHOOLCOURSEINFO (16 fields)
 	/** Defines the RefId attribute as a child of &lt;SchoolCourseInfo&gt; */
 	public static IElementDef SCHOOLCOURSEINFO_REFID = null;
 	/** Defines the SchoolInfoRefId attribute as a child of &lt;SchoolCourseInfo&gt; */
@@ -913,6 +983,8 @@ namespace OpenADK.Library.us.Student
 	public static IElementDef SCHOOLCOURSEINFO_DEPARTMENT = null;
 	/** Defines the &lt;SCEDCode&gt; element as a child of &lt;SchoolCourseInfo&gt; */
 	public static IElementDef SCHOOLCOURSEINFO_SCEDCODE = null;
+	/** Defines the &lt;DualCredit&gt; element as a child of &lt;SchoolCourseInfo&gt; */
+	public static IElementDef SCHOOLCOURSEINFO_DUALCREDIT = null;
 	/** SIF 1.5 and later: Defines the built-in SIF_ExtendedElements element common to all SIF Data Objects */
 	public static IElementDef SCHOOLCOURSEINFO_SIF_EXTENDEDELEMENTS = null;
 	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
@@ -946,7 +1018,7 @@ namespace OpenADK.Library.us.Student
 	/** Defines the SchoolInfoRefId attribute as a child of &lt;SchoolId&gt; */
 	public static IElementDef SCHOOLID_SCHOOLINFOREFID = null;
 
-	// Field elements of SCHOOLINFO (23 fields)
+	// Field elements of SCHOOLINFO (24 fields)
 	/** Defines the RefId attribute as a child of &lt;SchoolInfo&gt; */
 	public static IElementDef SCHOOLINFO_REFID = null;
 	/** Defines the &lt;LocalId&gt; element as a child of &lt;SchoolInfo&gt; */
@@ -989,6 +1061,8 @@ namespace OpenADK.Library.us.Student
 	public static IElementDef SCHOOLINFO_GRADELEVELS = null;
 	/** Defines the &lt;Title1Status&gt; element as a child of &lt;SchoolInfo&gt; */
 	public static IElementDef SCHOOLINFO_TITLE1STATUS = null;
+	/** Defines the &lt;ActiveSchoolYear&gt; element as a child of &lt;SchoolInfo&gt; */
+	public static IElementDef SCHOOLINFO_ACTIVESCHOOLYEAR = null;
 	/** Defines the &lt;OperationalStatus&gt; element as a child of &lt;SchoolInfo&gt; */
 	public static IElementDef SCHOOLINFO_OPERATIONALSTATUS = null;
 	/** Defines the &lt;CongressionalDistrict&gt; element as a child of &lt;SchoolInfo&gt; */
@@ -1001,6 +1075,22 @@ namespace OpenADK.Library.us.Student
 	// Field elements of SCHOOLJURISDICTION (1 fields)
 	/** Defines the Code attribute as a child of &lt;SchoolJurisdiction&gt; */
 	public static IElementDef SCHOOLJURISDICTION_CODE = null;
+
+	// Field elements of SCOREEVALUATION (0 fields)
+
+	// Field elements of SECTIONCORRELATION (4 fields)
+	/** Defines the RefId attribute as a child of &lt;SectionCorrelation&gt; */
+	public static IElementDef SECTIONCORRELATION_REFID = null;
+	/** Defines the &lt;CorrelationName&gt; element as a child of &lt;SectionCorrelation&gt; */
+	public static IElementDef SECTIONCORRELATION_CORRELATIONNAME = null;
+	/** Defines the &lt;CorrelationType&gt; element as a child of &lt;SectionCorrelation&gt; */
+	public static IElementDef SECTIONCORRELATION_CORRELATIONTYPE = null;
+	/** Defines the &lt;CorrelationSectionList&gt; element as a child of &lt;SectionCorrelation&gt; */
+	public static IElementDef SECTIONCORRELATION_CORRELATIONSECTIONLIST = null;
+	/** SIF 1.5 and later: Defines the built-in SIF_ExtendedElements element common to all SIF Data Objects */
+	public static IElementDef SECTIONCORRELATION_SIF_EXTENDEDELEMENTS = null;
+	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
+	public static IElementDef SECTIONCORRELATION_SIF_METADATA = null;
 
 	// Field elements of SECTIONINFO (15 fields)
 	/** Defines the RefId attribute as a child of &lt;SectionInfo&gt; */
@@ -1086,6 +1176,42 @@ namespace OpenADK.Library.us.Student
 	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
 	public static IElementDef STAFFASSIGNMENT_SIF_METADATA = null;
 
+	// Field elements of STAFFEVALUATION (15 fields)
+	/** Defines the &lt;StaffPersonalRefId&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_STAFFPERSONALREFID = null;
+	/** Defines the &lt;SchoolInfoRefId&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_SCHOOLINFOREFID = null;
+	/** Defines the &lt;NCESId&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_NCESID = null;
+	/** Defines the &lt;EvaluatorStateProvinceId&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_EVALUATORSTATEPROVINCEID = null;
+	/** Defines the &lt;BargainingUnit&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_BARGAININGUNIT = null;
+	/** Defines the &lt;EvaluationCycleName&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_EVALUATIONCYCLENAME = null;
+	/** Defines the &lt;EvaluationPreconferenceDate&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_EVALUATIONPRECONFERENCEDATE = null;
+	/** Defines the &lt;ProjectedEvaluationDate&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_PROJECTEDEVALUATIONDATE = null;
+	/** Defines the &lt;EvaluationDate&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_EVALUATIONDATE = null;
+	/** Defines the &lt;EvaluationPostconferenceDate&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_EVALUATIONPOSTCONFERENCEDATE = null;
+	/** Defines the &lt;EvaluationSystem&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_EVALUATIONSYSTEM = null;
+	/** Defines the &lt;EvaluationParts&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_EVALUATIONPARTS = null;
+	/** Defines the &lt;EvaluationHolisticScore&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_EVALUATIONHOLISTICSCORE = null;
+	/** Defines the &lt;EvaluationHolisticScale&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_EVALUATIONHOLISTICSCALE = null;
+	/** Defines the &lt;EvaluationRecommendation&gt; element as a child of &lt;StaffEvaluation&gt; */
+	public static IElementDef STAFFEVALUATION_EVALUATIONRECOMMENDATION = null;
+	/** SIF 1.5 and later: Defines the built-in SIF_ExtendedElements element common to all SIF Data Objects */
+	public static IElementDef STAFFEVALUATION_SIF_EXTENDEDELEMENTS = null;
+	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
+	public static IElementDef STAFFEVALUATION_SIF_METADATA = null;
+
 	// Field elements of STAFFLIST (1 fields)
 	/** Defines the &lt;StaffPersonalRefId&gt; element as a child of &lt;StaffList&gt; */
 	public static IElementDef STAFFLIST_STAFFPERSONALREFID = null;
@@ -1123,6 +1249,28 @@ namespace OpenADK.Library.us.Student
 	public static IElementDef STAFFPERSONAL_SIF_METADATA = null;
 
 	// Field elements of STAFFPERSONALREFID (0 fields)
+
+	// Field elements of STAFFSECTIONASSIGNMENT (8 fields)
+	/** Defines the RefId attribute as a child of &lt;StaffSectionAssignment&gt; */
+	public static IElementDef STAFFSECTIONASSIGNMENT_REFID = null;
+	/** Defines the &lt;StaffPersonalRefId&gt; element as a child of &lt;StaffSectionAssignment&gt; */
+	public static IElementDef STAFFSECTIONASSIGNMENT_STAFFPERSONALREFID = null;
+	/** Defines the &lt;SectionInfoRefId&gt; element as a child of &lt;StaffSectionAssignment&gt; */
+	public static IElementDef STAFFSECTIONASSIGNMENT_SECTIONINFOREFID = null;
+	/** Defines the &lt;AssignmentStartDate&gt; element as a child of &lt;StaffSectionAssignment&gt; */
+	public static IElementDef STAFFSECTIONASSIGNMENT_ASSIGNMENTSTARTDATE = null;
+	/** Defines the &lt;AssignmentEndDate&gt; element as a child of &lt;StaffSectionAssignment&gt; */
+	public static IElementDef STAFFSECTIONASSIGNMENT_ASSIGNMENTENDDATE = null;
+	/** Defines the &lt;TeacherOfRecord&gt; element as a child of &lt;StaffSectionAssignment&gt; */
+	public static IElementDef STAFFSECTIONASSIGNMENT_TEACHEROFRECORD = null;
+	/** Defines the &lt;Roles&gt; element as a child of &lt;StaffSectionAssignment&gt; */
+	public static IElementDef STAFFSECTIONASSIGNMENT_ROLES = null;
+	/** Defines the &lt;PercentResponsible&gt; element as a child of &lt;StaffSectionAssignment&gt; */
+	public static IElementDef STAFFSECTIONASSIGNMENT_PERCENTRESPONSIBLE = null;
+	/** SIF 1.5 and later: Defines the built-in SIF_ExtendedElements element common to all SIF Data Objects */
+	public static IElementDef STAFFSECTIONASSIGNMENT_SIF_EXTENDEDELEMENTS = null;
+	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
+	public static IElementDef STAFFSECTIONASSIGNMENT_SIF_METADATA = null;
 
 	// Field elements of STUDENTACTIVITYINFO (8 fields)
 	/** Defines the RefId attribute as a child of &lt;StudentActivityInfo&gt; */
@@ -1482,23 +1630,25 @@ namespace OpenADK.Library.us.Student
 	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
 	public static IElementDef STUDENTSCHOOLENROLLMENT_SIF_METADATA = null;
 
-	// Field elements of STUDENTSECTIONENROLLMENT (8 fields)
+	// Field elements of STUDENTSECTIONENROLLMENT (9 fields)
 	/** Defines the RefId attribute as a child of &lt;StudentSectionEnrollment&gt; */
 	public static IElementDef STUDENTSECTIONENROLLMENT_REFID = null;
 	/** Defines the StudentPersonalRefId attribute as a child of &lt;StudentSectionEnrollment&gt; */
 	public static IElementDef STUDENTSECTIONENROLLMENT_STUDENTPERSONALREFID = null;
 	/** Defines the SectionInfoRefId attribute as a child of &lt;StudentSectionEnrollment&gt; */
 	public static IElementDef STUDENTSECTIONENROLLMENT_SECTIONINFOREFID = null;
-	/** Defines the SchoolYear attribute as a child of &lt;StudentSectionEnrollment&gt; */
-	public static IElementDef STUDENTSECTIONENROLLMENT_SCHOOLYEAR = null;
 	/** Defines the &lt;EntryDate&gt; element as a child of &lt;StudentSectionEnrollment&gt; */
 	public static IElementDef STUDENTSECTIONENROLLMENT_ENTRYDATE = null;
+	/** Defines the SchoolYear attribute as a child of &lt;StudentSectionEnrollment&gt; */
+	public static IElementDef STUDENTSECTIONENROLLMENT_SCHOOLYEAR = null;
 	/** Defines the &lt;ExitDate&gt; element as a child of &lt;StudentSectionEnrollment&gt; */
 	public static IElementDef STUDENTSECTIONENROLLMENT_EXITDATE = null;
 	/** Defines the &lt;ScheduleInfoOverrideList&gt; element as a child of &lt;StudentSectionEnrollment&gt; */
 	public static IElementDef STUDENTSECTIONENROLLMENT_SCHEDULEINFOOVERRIDELIST = null;
 	/** Defines the &lt;CreditsAttempted&gt; element as a child of &lt;StudentSectionEnrollment&gt; */
 	public static IElementDef STUDENTSECTIONENROLLMENT_CREDITSATTEMPTED = null;
+	/** Defines the &lt;DualCredit&gt; element as a child of &lt;StudentSectionEnrollment&gt; */
+	public static IElementDef STUDENTSECTIONENROLLMENT_DUALCREDIT = null;
 	/** SIF 1.5 and later: Defines the built-in SIF_ExtendedElements element common to all SIF Data Objects */
 	public static IElementDef STUDENTSECTIONENROLLMENT_SIF_EXTENDEDELEMENTS = null;
 	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
@@ -1662,636 +1812,693 @@ namespace OpenADK.Library.us.Student
 	{
 		//  Objects defined by this SDO Library...
 
-		ACTION = new ElementDefImpl( null, "Action", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ACTIONLIST = new ElementDefImpl( null, "ActionList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ADMINISTRATORATTENDANCE = new ElementDefImpl( null, "AdministratorAttendance", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		AGENCYREPORTING = new ElementDefImpl( null, "AgencyReporting", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		ALERTMESSAGE = new ElementDefImpl( null, "AlertMessage", "AlertMsg", 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		ACTION = new ElementDefImpl( null, "Action", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ACTIONLIST = new ElementDefImpl( null, "ActionList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ADMINISTRATORATTENDANCE = new ElementDefImpl( null, "AdministratorAttendance", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		AGENCYREPORTING = new ElementDefImpl( null, "AgencyReporting", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		ALERTMESSAGE = new ElementDefImpl( null, "AlertMessage", "AlertMsg", 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		ALERTMESSAGE.DefineVersionInfo(SifVersion.SIF20, "AlertMessage", 0, (0)); // (Sif 20 alias)
-		ALERTMESSAGES = new ElementDefImpl( null, "AlertMessages", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		ATTENDANCECODEINFO = new ElementDefImpl( null, "AttendanceCodeInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		BELLPERIOD = new ElementDefImpl( null, "BellPeriod", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		BELLPERIODLIST = new ElementDefImpl( null, "BellPeriodList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		BELLSCHEDULE = new ElementDefImpl( null, "BellSchedule", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		BELLSCHEDULEDAY = new ElementDefImpl( null, "BellScheduleDay", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		BELLSCHEDULEDAYLIST = new ElementDefImpl( null, "BellScheduleDayList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CALENDARDATE = new ElementDefImpl( null, "CalendarDate", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		CALENDARDATETYPE = new ElementDefImpl( null, "CalendarDateType", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CALENDARSUMMARY = new ElementDefImpl( null, "CalendarSummary", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		CONTACTFLAGS = new ElementDefImpl( null, "ContactFlags", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		COURSECREDITS = new ElementDefImpl( null, "CourseCredits", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		CREDITSATTEMPTED = new ElementDefImpl( null, "CreditsAttempted", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DISCIPLINEINCIDENT = new ElementDefImpl( null, "DisciplineIncident", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		EDUCATIONAGENCYTYPE = new ElementDefImpl( null, "EducationAgencyType", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		ALERTMESSAGES = new ElementDefImpl( null, "AlertMessages", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		ATTENDANCECODEINFO = new ElementDefImpl( null, "AttendanceCodeInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		BELLPERIOD = new ElementDefImpl( null, "BellPeriod", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		BELLPERIODLIST = new ElementDefImpl( null, "BellPeriodList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		BELLSCHEDULE = new ElementDefImpl( null, "BellSchedule", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		BELLSCHEDULEDAY = new ElementDefImpl( null, "BellScheduleDay", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		BELLSCHEDULEDAYLIST = new ElementDefImpl( null, "BellScheduleDayList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CALENDARDATE = new ElementDefImpl( null, "CalendarDate", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		CALENDARDATETYPE = new ElementDefImpl( null, "CalendarDateType", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CALENDARSUMMARY = new ElementDefImpl( null, "CalendarSummary", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		CONTACTFLAGS = new ElementDefImpl( null, "ContactFlags", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		CORRELATIONSECTION = new ElementDefImpl( null, "CorrelationSection", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		CORRELATIONSECTIONLIST = new ElementDefImpl( null, "CorrelationSectionList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		CORRELATIONTYPE = new ElementDefImpl( null, "CorrelationType", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		COURSECREDITS = new ElementDefImpl( null, "CourseCredits", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		CREDITSATTEMPTED = new ElementDefImpl( null, "CreditsAttempted", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DISCIPLINEINCIDENT = new ElementDefImpl( null, "DisciplineIncident", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		EDUCATIONAGENCYTYPE = new ElementDefImpl( null, "EducationAgencyType", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		ENROLLSTATUS = new ElementDefImpl( null, "EnrollStatus", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF15r1 );
-		GRADE = new ElementDefImpl( null, "Grade", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		EVALUATIONPART = new ElementDefImpl( null, "EvaluationPart", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		EVALUATIONPARTS = new ElementDefImpl( null, "EvaluationParts", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		EVALUATIONRECOMMENDATION = new ElementDefImpl( null, "EvaluationRecommendation", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		GRADE = new ElementDefImpl( null, "Grade", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		GRADECLASSIFICATION = new ElementDefImpl( null, "GradeClassification", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF15r1 );
-		HOMEENROLLMENT = new ElementDefImpl( null, "HomeEnrollment", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		HOMEROOM = new ElementDefImpl( null, "Homeroom", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		INCIDENTACTION = new ElementDefImpl( null, "IncidentAction", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		INCIDENTACTIONLIST = new ElementDefImpl( null, "IncidentActionList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		INCIDENTCATEGORY = new ElementDefImpl( null, "IncidentCategory", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		INCIDENTLOCATION = new ElementDefImpl( null, "IncidentLocation", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		INCIDENTLOCATIONREFID = new ElementDefImpl( null, "IncidentLocationRefId", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		INCIDENTREPORTER = new ElementDefImpl( null, "IncidentReporter", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		INCIDENTTIME = new ElementDefImpl( null, "IncidentTime", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		LANGUAGEOFINSTRUCTION = new ElementDefImpl( null, "LanguageOfInstruction", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		LEACONTACT = new ElementDefImpl( null, "LEAContact", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		LEACONTACTLIST = new ElementDefImpl( null, "LEAContactList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		LEAINFO = new ElementDefImpl( null, "LEAInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		LOCATIONOFINSTRUCTION = new ElementDefImpl( null, "LocationOfInstruction", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		MANIFESTATIONDETERMINATION = new ElementDefImpl( null, "ManifestationDetermination", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MEDICALALERTMESSAGE = new ElementDefImpl( null, "MedicalAlertMessage", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		MEDICALALERTMESSAGES = new ElementDefImpl( null, "MedicalAlertMessages", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MEDIUMOFINSTRUCTION = new ElementDefImpl( null, "MediumOfInstruction", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		MOSTRECENT = new ElementDefImpl( null, "MostRecent", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		NONPROMOTION = new ElementDefImpl( null, "Nonpromotion", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		OFFENDER = new ElementDefImpl( null, "Offender", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		OFFENDERLIST = new ElementDefImpl( null, "OffenderList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		OTHERLEA = new ElementDefImpl( null, "OtherLEA", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		PRINCIPALINFO = new ElementDefImpl( null, "PrincipalInfo", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		PROMOTION = new ElementDefImpl( null, "Promotion", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		PROMOTIONINFO = new ElementDefImpl( null, "PromotionInfo", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		RECOGNITION = new ElementDefImpl( null, "Recognition", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		RECOGNITIONLIST = new ElementDefImpl( null, "RecognitionList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		RELATEDTO = new ElementDefImpl( null, "RelatedTo", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		RELATEDTOLIST = new ElementDefImpl( null, "RelatedToList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		ROOMINFO = new ElementDefImpl( null, "RoomInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		ROOMINFOREFID = new ElementDefImpl( null, "RoomInfoRefId", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		ROOMTYPE = new ElementDefImpl( null, "RoomType", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		SCEDCODE = new ElementDefImpl( null, "SCEDCode", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SCHEDULEINFO = new ElementDefImpl( null, "ScheduleInfo", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SCHEDULEINFOLIST = new ElementDefImpl( null, "ScheduleInfoList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SCHEDULEINFOOVERRIDE = new ElementDefImpl( null, "ScheduleInfoOverride", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SCHEDULEINFOOVERRIDELIST = new ElementDefImpl( null, "ScheduleInfoOverrideList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SCHOOLCOURSEINFO = new ElementDefImpl( null, "SchoolCourseInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		SCHOOLCOURSEINFOOVERRIDE = new ElementDefImpl( null, "SchoolCourseInfoOverride", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SCHOOLFOCUS = new ElementDefImpl( null, "SchoolFocus", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		SCHOOLFOCUSLIST = new ElementDefImpl( null, "SchoolFocusList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		HOMEENROLLMENT = new ElementDefImpl( null, "HomeEnrollment", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		HOMEROOM = new ElementDefImpl( null, "Homeroom", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		INCIDENTACTION = new ElementDefImpl( null, "IncidentAction", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		INCIDENTACTIONLIST = new ElementDefImpl( null, "IncidentActionList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		INCIDENTCATEGORY = new ElementDefImpl( null, "IncidentCategory", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		INCIDENTLOCATION = new ElementDefImpl( null, "IncidentLocation", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		INCIDENTLOCATIONREFID = new ElementDefImpl( null, "IncidentLocationRefId", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		INCIDENTREPORTER = new ElementDefImpl( null, "IncidentReporter", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		INCIDENTTIME = new ElementDefImpl( null, "IncidentTime", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		LANGUAGEOFINSTRUCTION = new ElementDefImpl( null, "LanguageOfInstruction", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		LEACONTACT = new ElementDefImpl( null, "LEAContact", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		LEACONTACTLIST = new ElementDefImpl( null, "LEAContactList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		LEAINFO = new ElementDefImpl( null, "LEAInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		LOCATIONOFINSTRUCTION = new ElementDefImpl( null, "LocationOfInstruction", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		MANIFESTATIONDETERMINATION = new ElementDefImpl( null, "ManifestationDetermination", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MEDICALALERTMESSAGE = new ElementDefImpl( null, "MedicalAlertMessage", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		MEDICALALERTMESSAGES = new ElementDefImpl( null, "MedicalAlertMessages", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MEDIUMOFINSTRUCTION = new ElementDefImpl( null, "MediumOfInstruction", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		MOSTRECENT = new ElementDefImpl( null, "MostRecent", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		NAMEEVALUATION = new ElementDefImpl( null, "NameEvaluation", "Name", 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		NONPROMOTION = new ElementDefImpl( null, "Nonpromotion", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		OFFENDER = new ElementDefImpl( null, "Offender", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		OFFENDERLIST = new ElementDefImpl( null, "OffenderList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		OTHERLEA = new ElementDefImpl( null, "OtherLEA", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		PRINCIPALINFO = new ElementDefImpl( null, "PrincipalInfo", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		PROMOTION = new ElementDefImpl( null, "Promotion", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		PROMOTIONINFO = new ElementDefImpl( null, "PromotionInfo", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		RECOGNITION = new ElementDefImpl( null, "Recognition", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		RECOGNITIONLIST = new ElementDefImpl( null, "RecognitionList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		RELATEDTO = new ElementDefImpl( null, "RelatedTo", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		RELATEDTOLIST = new ElementDefImpl( null, "RelatedToList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		ROLE = new ElementDefImpl( null, "Role", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		ROLES = new ElementDefImpl( null, "Roles", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		ROOMINFO = new ElementDefImpl( null, "RoomInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		ROOMINFOREFID = new ElementDefImpl( null, "RoomInfoRefId", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		ROOMTYPE = new ElementDefImpl( null, "RoomType", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		SCALEEVALUATION = new ElementDefImpl( null, "ScaleEvaluation", "Scale", 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SCEDCODE = new ElementDefImpl( null, "SCEDCode", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SCHEDULEINFO = new ElementDefImpl( null, "ScheduleInfo", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SCHEDULEINFOLIST = new ElementDefImpl( null, "ScheduleInfoList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SCHEDULEINFOOVERRIDE = new ElementDefImpl( null, "ScheduleInfoOverride", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SCHEDULEINFOOVERRIDELIST = new ElementDefImpl( null, "ScheduleInfoOverrideList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SCHOOLCOURSEINFO = new ElementDefImpl( null, "SchoolCourseInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		SCHOOLCOURSEINFOOVERRIDE = new ElementDefImpl( null, "SchoolCourseInfoOverride", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SCHOOLFOCUS = new ElementDefImpl( null, "SchoolFocus", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		SCHOOLFOCUSLIST = new ElementDefImpl( null, "SchoolFocusList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		SCHOOLID = new ElementDefImpl( null, "SchoolId", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF15r1 );
-		SCHOOLINFO = new ElementDefImpl( null, "SchoolInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
+		SCHOOLINFO = new ElementDefImpl( null, "SchoolInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
 		SCHOOLJURISDICTION = new ElementDefImpl( null, "SchoolJurisdiction", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		SECTIONINFO = new ElementDefImpl( null, "SectionInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		SECTIONROOMLIST = new ElementDefImpl( null, "SectionRoomList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		SCOREEVALUATION = new ElementDefImpl( null, "ScoreEvaluation", "Score", 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SECTIONCORRELATION = new ElementDefImpl( null, "SectionCorrelation", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF26, SifVersion.SIF26 );
+		SECTIONINFO = new ElementDefImpl( null, "SectionInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		SECTIONROOMLIST = new ElementDefImpl( null, "SectionRoomList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		STAFFASSIGNED = new ElementDefImpl( null, "StaffAssigned", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF15r1 );
-		STAFFASSIGNMENT = new ElementDefImpl( null, "StaffAssignment", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STAFFLIST = new ElementDefImpl( null, "StaffList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		STAFFPERSONAL = new ElementDefImpl( null, "StaffPersonal", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		STAFFPERSONALREFID = new ElementDefImpl( null, "StaffPersonalRefId", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTACTIVITYINFO = new ElementDefImpl( null, "StudentActivityInfo", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		STUDENTACTIVITYINFOLOCATION = new ElementDefImpl( null, "StudentActivityInfoLocation", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		STUDENTACTIVITYINFOLOCATIONREFID = new ElementDefImpl( null, "StudentActivityInfoLocationRefId", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTACTIVITYPARTICIPATION = new ElementDefImpl( null, "StudentActivityParticipation", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		STUDENTACTIVITYTYPE = new ElementDefImpl( null, "StudentActivityType", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		STUDENTADDRESS = new ElementDefImpl( null, "StudentAddress", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		STUDENTADDRESSLIST = new ElementDefImpl( null, "StudentAddressList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		STUDENTATTENDANCE = new ElementDefImpl( null, "StudentAttendance", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTATTENDANCESUMMARY = new ElementDefImpl( null, "StudentAttendanceSummary", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTCONTACT = new ElementDefImpl( null, "StudentContact", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		STUDENTCONTACTPERSONAL = new ElementDefImpl( null, "StudentContactPersonal", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTCONTACTRELATIONSHIP = new ElementDefImpl( null, "StudentContactRelationship", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTDAILYATTENDANCE = new ElementDefImpl( null, "StudentDailyAttendance", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		STUDENTGRADE = new ElementDefImpl( null, "StudentGrade", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		STUDENTPERSONAL = new ElementDefImpl( null, "StudentPersonal", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		STUDENTPICTURE = new ElementDefImpl( null, "StudentPicture", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		STUDENTSCHOOLENROLLMENT = new ElementDefImpl( null, "StudentSchoolEnrollment", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		STUDENTSECTIONENROLLMENT = new ElementDefImpl( null, "StudentSectionEnrollment", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		STUDENTSNAPSHOT = new ElementDefImpl( null, "StudentSnapshot", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		TEACHERATTENDANCE = new ElementDefImpl( null, "TeacherAttendance", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		TEACHERLIST = new ElementDefImpl( null, "TeacherList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		TEACHINGASSIGNMENT = new ElementDefImpl( null, "TeachingAssignment", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		TERMINFO = new ElementDefImpl( null, "TermInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		TIMETABLEDAY = new ElementDefImpl( null, "TimetableDay", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		TIMETABLEDAYLIST = new ElementDefImpl( null, "TimetableDayList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		TIMETABLEPERIOD = new ElementDefImpl( null, "TimetablePeriod", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		TIMETABLEPERIODLIST = new ElementDefImpl( null, "TimetablePeriodList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		VICTIM = new ElementDefImpl( null, "Victim", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		VICTIMLIST = new ElementDefImpl( null, "VictimList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		WEAPONTYPE = new ElementDefImpl( null, "WeaponType", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		WEAPONTYPELIST = new ElementDefImpl( null, "WeaponTypeList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		STAFFASSIGNMENT = new ElementDefImpl( null, "StaffAssignment", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STAFFEVALUATION = new ElementDefImpl( null, "StaffEvaluation", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF26, SifVersion.SIF26 );
+		STAFFLIST = new ElementDefImpl( null, "StaffList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		STAFFPERSONAL = new ElementDefImpl( null, "StaffPersonal", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		STAFFPERSONALREFID = new ElementDefImpl( null, "StaffPersonalRefId", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		STAFFSECTIONASSIGNMENT = new ElementDefImpl( null, "StaffSectionAssignment", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF26, SifVersion.SIF26 );
+		STUDENTACTIVITYINFO = new ElementDefImpl( null, "StudentActivityInfo", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		STUDENTACTIVITYINFOLOCATION = new ElementDefImpl( null, "StudentActivityInfoLocation", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		STUDENTACTIVITYINFOLOCATIONREFID = new ElementDefImpl( null, "StudentActivityInfoLocationRefId", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTACTIVITYPARTICIPATION = new ElementDefImpl( null, "StudentActivityParticipation", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		STUDENTACTIVITYTYPE = new ElementDefImpl( null, "StudentActivityType", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		STUDENTADDRESS = new ElementDefImpl( null, "StudentAddress", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		STUDENTADDRESSLIST = new ElementDefImpl( null, "StudentAddressList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		STUDENTATTENDANCE = new ElementDefImpl( null, "StudentAttendance", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTATTENDANCESUMMARY = new ElementDefImpl( null, "StudentAttendanceSummary", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTCONTACT = new ElementDefImpl( null, "StudentContact", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		STUDENTCONTACTPERSONAL = new ElementDefImpl( null, "StudentContactPersonal", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTCONTACTRELATIONSHIP = new ElementDefImpl( null, "StudentContactRelationship", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTDAILYATTENDANCE = new ElementDefImpl( null, "StudentDailyAttendance", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		STUDENTGRADE = new ElementDefImpl( null, "StudentGrade", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		STUDENTPERSONAL = new ElementDefImpl( null, "StudentPersonal", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		STUDENTPICTURE = new ElementDefImpl( null, "StudentPicture", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		STUDENTSCHOOLENROLLMENT = new ElementDefImpl( null, "StudentSchoolEnrollment", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		STUDENTSECTIONENROLLMENT = new ElementDefImpl( null, "StudentSectionEnrollment", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		STUDENTSNAPSHOT = new ElementDefImpl( null, "StudentSnapshot", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		TEACHERATTENDANCE = new ElementDefImpl( null, "TeacherAttendance", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		TEACHERLIST = new ElementDefImpl( null, "TeacherList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		TEACHINGASSIGNMENT = new ElementDefImpl( null, "TeachingAssignment", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		TERMINFO = new ElementDefImpl( null, "TermInfo", null, 0, SifDtd.STUDENT, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		TIMETABLEDAY = new ElementDefImpl( null, "TimetableDay", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		TIMETABLEDAYLIST = new ElementDefImpl( null, "TimetableDayList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		TIMETABLEPERIOD = new ElementDefImpl( null, "TimetablePeriod", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		TIMETABLEPERIODLIST = new ElementDefImpl( null, "TimetablePeriodList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		VICTIM = new ElementDefImpl( null, "Victim", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		VICTIMLIST = new ElementDefImpl( null, "VictimList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		WEAPONTYPE = new ElementDefImpl( null, "WeaponType", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		WEAPONTYPELIST = new ElementDefImpl( null, "WeaponTypeList", null, 0, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 
 		// <Action> fields (11 entries)
-		StudentDTD.ACTION_CODE = new ElementDefImpl( ACTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ACTION_OTHERCODELIST = new ElementDefImpl( ACTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.ACTION_STARTDATE = new ElementDefImpl( ACTION, "StartDate", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.ACTION_ENDDATE = new ElementDefImpl( ACTION, "EndDate", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.ACTION_DURATION = new ElementDefImpl( ACTION, "Duration", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.ACTION_ZEROTOLERANCE = new ElementDefImpl( ACTION, "ZeroTolerance", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ACTION_FULLYEAREXPULSION = new ElementDefImpl( ACTION, "FullYearExpulsion", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ACTION_SHORTENEDEXPULSION = new ElementDefImpl( ACTION, "ShortenedExpulsion", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ACTION_POLICENOTIFICATION = new ElementDefImpl( ACTION, "PoliceNotification", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ACTION_ARREST = new ElementDefImpl( ACTION, "Arrest", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ACTION_ALTERNATIVEEDUCATION = new ElementDefImpl( ACTION, "AlternativeEducation", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.ACTION_CODE = new ElementDefImpl( ACTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ACTION_OTHERCODELIST = new ElementDefImpl( ACTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.ACTION_STARTDATE = new ElementDefImpl( ACTION, "StartDate", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.ACTION_ENDDATE = new ElementDefImpl( ACTION, "EndDate", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.ACTION_DURATION = new ElementDefImpl( ACTION, "Duration", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.ACTION_ZEROTOLERANCE = new ElementDefImpl( ACTION, "ZeroTolerance", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ACTION_FULLYEAREXPULSION = new ElementDefImpl( ACTION, "FullYearExpulsion", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ACTION_SHORTENEDEXPULSION = new ElementDefImpl( ACTION, "ShortenedExpulsion", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ACTION_POLICENOTIFICATION = new ElementDefImpl( ACTION, "PoliceNotification", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ACTION_ARREST = new ElementDefImpl( ACTION, "Arrest", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ACTION_ALTERNATIVEEDUCATION = new ElementDefImpl( ACTION, "AlternativeEducation", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ActionList> fields (1 entries)
-		StudentDTD.ACTIONLIST_ACTION = new ElementDefImpl( ACTIONLIST, "Action", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.ACTIONLIST_ACTION = new ElementDefImpl( ACTIONLIST, "Action", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AdministratorAttendance> fields (2 entries)
-		StudentDTD.ADMINISTRATORATTENDANCE_COUNTSTOWARDATTENDANCE = new ElementDefImpl( ADMINISTRATORATTENDANCE, "CountsTowardAttendance", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ADMINISTRATORATTENDANCE_ATTENDANCEVALUE = new ElementDefImpl( ADMINISTRATORATTENDANCE, "AttendanceValue", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		StudentDTD.ADMINISTRATORATTENDANCE_COUNTSTOWARDATTENDANCE = new ElementDefImpl( ADMINISTRATORATTENDANCE, "CountsTowardAttendance", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ADMINISTRATORATTENDANCE_ATTENDANCEVALUE = new ElementDefImpl( ADMINISTRATORATTENDANCE, "AttendanceValue", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <AgencyReporting> fields (1 entries)
-		StudentDTD.AGENCYREPORTING_SIF_REFOBJECT = new ElementDefImpl( AGENCYREPORTING, "SIF_RefObject", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.AGENCYREPORTING_SIF_REFOBJECT = new ElementDefImpl( AGENCYREPORTING, "SIF_RefObject", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <AlertMsg> fields (1 entries)
-		StudentDTD.ALERTMESSAGE_TYPE = new ElementDefImpl( ALERTMESSAGE, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.ALERTMESSAGE_TYPE = new ElementDefImpl( ALERTMESSAGE, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <AlertMessages> fields (1 entries)
-		StudentDTD.ALERTMESSAGES_ALERTMESSAGE = new ElementDefImpl( ALERTMESSAGES, "AlertMessage", "AlertMsg", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.ALERTMESSAGES_ALERTMESSAGE = new ElementDefImpl( ALERTMESSAGES, "AlertMessage", "AlertMsg", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.ALERTMESSAGES_ALERTMESSAGE.DefineVersionInfo(SifVersion.SIF20, "AlertMessage", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <AttendanceCodeInfo> fields (10 entries)
-		StudentDTD.ATTENDANCECODEINFO_REFID = new ElementDefImpl( ATTENDANCECODEINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ATTENDANCECODEINFO_SCHOOLINFOREFID = new ElementDefImpl( ATTENDANCECODEINFO, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ATTENDANCECODEINFO_ATTENDANCECODE = new ElementDefImpl( ATTENDANCECODEINFO, "AttendanceCode", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ATTENDANCECODEINFO_ATTENDANCETYPE = new ElementDefImpl( ATTENDANCECODEINFO, "AttendanceType", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ATTENDANCECODEINFO_ATTENDANCESTATUS = new ElementDefImpl( ATTENDANCECODEINFO, "AttendanceStatus", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ATTENDANCECODEINFO_DESCRIPTION = new ElementDefImpl( ATTENDANCECODEINFO, "Description", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ATTENDANCECODEINFO_ABSENCEVALUE = new ElementDefImpl( ATTENDANCECODEINFO, "AbsenceValue", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		StudentDTD.ATTENDANCECODEINFO_REFID = new ElementDefImpl( ATTENDANCECODEINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ATTENDANCECODEINFO_SCHOOLINFOREFID = new ElementDefImpl( ATTENDANCECODEINFO, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ATTENDANCECODEINFO_ATTENDANCECODE = new ElementDefImpl( ATTENDANCECODEINFO, "AttendanceCode", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ATTENDANCECODEINFO_ATTENDANCETYPE = new ElementDefImpl( ATTENDANCECODEINFO, "AttendanceType", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ATTENDANCECODEINFO_ATTENDANCESTATUS = new ElementDefImpl( ATTENDANCECODEINFO, "AttendanceStatus", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ATTENDANCECODEINFO_DESCRIPTION = new ElementDefImpl( ATTENDANCECODEINFO, "Description", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ATTENDANCECODEINFO_ABSENCEVALUE = new ElementDefImpl( ATTENDANCECODEINFO, "AbsenceValue", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		StudentDTD.ATTENDANCECODEINFO_ATTENDANCEVALUE = new ElementDefImpl( ATTENDANCECODEINFO, "AttendanceValue", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.DECIMAL );
-		StudentDTD.ATTENDANCECODEINFO_USEDFORDAILYATTENDANCE = new ElementDefImpl( ATTENDANCECODEINFO, "UsedForDailyAttendance", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ATTENDANCECODEINFO_USEDFORPERIODATTENDANCE = new ElementDefImpl( ATTENDANCECODEINFO, "UsedForPeriodAttendance", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		ATTENDANCECODEINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ATTENDANCECODEINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ATTENDANCECODEINFO_SIF_METADATA = new ElementDefImpl( ATTENDANCECODEINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.ATTENDANCECODEINFO_USEDFORDAILYATTENDANCE = new ElementDefImpl( ATTENDANCECODEINFO, "UsedForDailyAttendance", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ATTENDANCECODEINFO_USEDFORPERIODATTENDANCE = new ElementDefImpl( ATTENDANCECODEINFO, "UsedForPeriodAttendance", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		ATTENDANCECODEINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ATTENDANCECODEINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ATTENDANCECODEINFO_SIF_METADATA = new ElementDefImpl( ATTENDANCECODEINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <BellPeriod> fields (7 entries)
-		StudentDTD.BELLPERIOD_TIMETABLEDAYIDENTIFIER = new ElementDefImpl( BELLPERIOD, "TimetableDayIdentifier", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.BELLPERIOD_TIMETABLEPERIODIDENTIFIER = new ElementDefImpl( BELLPERIOD, "TimetablePeriodIdentifier", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.BELLPERIOD_STARTTIME = new ElementDefImpl( BELLPERIOD, "StartTime", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.TIME );
-		StudentDTD.BELLPERIOD_ENDTIME = new ElementDefImpl( BELLPERIOD, "EndTime", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.TIME );
-		StudentDTD.BELLPERIOD_REGULARSCHOOLPERIOD = new ElementDefImpl( BELLPERIOD, "RegularSchoolPeriod", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.BELLPERIOD_INSTRUCTIONALMINUTES = new ElementDefImpl( BELLPERIOD, "InstructionalMinutes", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.BELLPERIOD_USEINATTENDANCECALCULATIONS = new ElementDefImpl( BELLPERIOD, "UseInAttendanceCalculations", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.BELLPERIOD_TIMETABLEDAYIDENTIFIER = new ElementDefImpl( BELLPERIOD, "TimetableDayIdentifier", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.BELLPERIOD_TIMETABLEPERIODIDENTIFIER = new ElementDefImpl( BELLPERIOD, "TimetablePeriodIdentifier", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.BELLPERIOD_STARTTIME = new ElementDefImpl( BELLPERIOD, "StartTime", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.TIME );
+		StudentDTD.BELLPERIOD_ENDTIME = new ElementDefImpl( BELLPERIOD, "EndTime", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.TIME );
+		StudentDTD.BELLPERIOD_REGULARSCHOOLPERIOD = new ElementDefImpl( BELLPERIOD, "RegularSchoolPeriod", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.BELLPERIOD_INSTRUCTIONALMINUTES = new ElementDefImpl( BELLPERIOD, "InstructionalMinutes", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.BELLPERIOD_USEINATTENDANCECALCULATIONS = new ElementDefImpl( BELLPERIOD, "UseInAttendanceCalculations", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <BellPeriodList> fields (1 entries)
-		StudentDTD.BELLPERIODLIST_BELLPERIOD = new ElementDefImpl( BELLPERIODLIST, "BellPeriod", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		StudentDTD.BELLPERIODLIST_BELLPERIOD = new ElementDefImpl( BELLPERIODLIST, "BellPeriod", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <BellSchedule> fields (7 entries)
-		StudentDTD.BELLSCHEDULE_REFID = new ElementDefImpl( BELLSCHEDULE, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.BELLSCHEDULE_SCHOOLINFOREFID = new ElementDefImpl( BELLSCHEDULE, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.BELLSCHEDULE_SCHOOLYEAR = new ElementDefImpl( BELLSCHEDULE, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.BELLSCHEDULE_BELLSCHEDULENAME = new ElementDefImpl( BELLSCHEDULE, "BellScheduleName", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.BELLSCHEDULE_TIMETABLEDAYLIST = new ElementDefImpl( BELLSCHEDULE, "TimetableDayList", null, 5, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		StudentDTD.BELLSCHEDULE_TIMETABLEPERIODLIST = new ElementDefImpl( BELLSCHEDULE, "TimetablePeriodList", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		StudentDTD.BELLSCHEDULE_BELLPERIODLIST = new ElementDefImpl( BELLSCHEDULE, "BellPeriodList", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		BELLSCHEDULE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BELLSCHEDULE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		BELLSCHEDULE_SIF_METADATA = new ElementDefImpl( BELLSCHEDULE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.BELLSCHEDULE_REFID = new ElementDefImpl( BELLSCHEDULE, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.BELLSCHEDULE_SCHOOLINFOREFID = new ElementDefImpl( BELLSCHEDULE, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.BELLSCHEDULE_SCHOOLYEAR = new ElementDefImpl( BELLSCHEDULE, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.BELLSCHEDULE_BELLSCHEDULENAME = new ElementDefImpl( BELLSCHEDULE, "BellScheduleName", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.BELLSCHEDULE_TIMETABLEDAYLIST = new ElementDefImpl( BELLSCHEDULE, "TimetableDayList", null, 5, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		StudentDTD.BELLSCHEDULE_TIMETABLEPERIODLIST = new ElementDefImpl( BELLSCHEDULE, "TimetablePeriodList", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		StudentDTD.BELLSCHEDULE_BELLPERIODLIST = new ElementDefImpl( BELLSCHEDULE, "BellPeriodList", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		BELLSCHEDULE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BELLSCHEDULE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		BELLSCHEDULE_SIF_METADATA = new ElementDefImpl( BELLSCHEDULE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <BellScheduleDay> fields (2 entries)
-		StudentDTD.BELLSCHEDULEDAY_BELLSCHEDULEREFID = new ElementDefImpl( BELLSCHEDULEDAY, "BellScheduleRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.BELLSCHEDULEDAY_TIMETABLEDAYIDENTIFIER = new ElementDefImpl( BELLSCHEDULEDAY, "TimetableDayIdentifier", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.BELLSCHEDULEDAY_BELLSCHEDULEREFID = new ElementDefImpl( BELLSCHEDULEDAY, "BellScheduleRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.BELLSCHEDULEDAY_TIMETABLEDAYIDENTIFIER = new ElementDefImpl( BELLSCHEDULEDAY, "TimetableDayIdentifier", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <BellScheduleDayList> fields (1 entries)
-		StudentDTD.BELLSCHEDULEDAYLIST_BELLSCHEDULEDAY = new ElementDefImpl( BELLSCHEDULEDAYLIST, "BellScheduleDay", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		StudentDTD.BELLSCHEDULEDAYLIST_BELLSCHEDULEDAY = new ElementDefImpl( BELLSCHEDULEDAYLIST, "BellScheduleDay", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <CalendarDate> fields (10 entries)
-		StudentDTD.CALENDARDATE_DATE = new ElementDefImpl( CALENDARDATE, "Date", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.CALENDARDATE_CALENDARSUMMARYREFID = new ElementDefImpl( CALENDARDATE, "CalendarSummaryRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CALENDARDATE_SCHOOLINFOREFID = new ElementDefImpl( CALENDARDATE, "SchoolInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CALENDARDATE_SCHOOLYEAR = new ElementDefImpl( CALENDARDATE, "SchoolYear", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.CALENDARDATE_CALENDARDATETYPE = new ElementDefImpl( CALENDARDATE, "CalendarDateType", null, 5, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.CALENDARDATE_CALENDARDATENUMBER = new ElementDefImpl( CALENDARDATE, "CalendarDateNumber", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.CALENDARDATE_STUDENTATTENDANCE = new ElementDefImpl( CALENDARDATE, "StudentAttendance", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.CALENDARDATE_TEACHERATTENDANCE = new ElementDefImpl( CALENDARDATE, "TeacherAttendance", null, 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.CALENDARDATE_ADMINISTRATORATTENDANCE = new ElementDefImpl( CALENDARDATE, "AdministratorAttendance", null, 9, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.CALENDARDATE_BELLSCHEDULEDAYLIST = new ElementDefImpl( CALENDARDATE, "BellScheduleDayList", null, 10, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CALENDARDATE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( CALENDARDATE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		CALENDARDATE_SIF_METADATA = new ElementDefImpl( CALENDARDATE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.CALENDARDATE_DATE = new ElementDefImpl( CALENDARDATE, "Date", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.CALENDARDATE_CALENDARSUMMARYREFID = new ElementDefImpl( CALENDARDATE, "CalendarSummaryRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CALENDARDATE_SCHOOLINFOREFID = new ElementDefImpl( CALENDARDATE, "SchoolInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CALENDARDATE_SCHOOLYEAR = new ElementDefImpl( CALENDARDATE, "SchoolYear", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.CALENDARDATE_CALENDARDATETYPE = new ElementDefImpl( CALENDARDATE, "CalendarDateType", null, 5, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.CALENDARDATE_CALENDARDATENUMBER = new ElementDefImpl( CALENDARDATE, "CalendarDateNumber", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.CALENDARDATE_STUDENTATTENDANCE = new ElementDefImpl( CALENDARDATE, "StudentAttendance", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.CALENDARDATE_TEACHERATTENDANCE = new ElementDefImpl( CALENDARDATE, "TeacherAttendance", null, 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.CALENDARDATE_ADMINISTRATORATTENDANCE = new ElementDefImpl( CALENDARDATE, "AdministratorAttendance", null, 9, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.CALENDARDATE_BELLSCHEDULEDAYLIST = new ElementDefImpl( CALENDARDATE, "BellScheduleDayList", null, 10, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CALENDARDATE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( CALENDARDATE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		CALENDARDATE_SIF_METADATA = new ElementDefImpl( CALENDARDATE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <CalendarDateType> fields (2 entries)
-		StudentDTD.CALENDARDATETYPE_CODE = new ElementDefImpl( CALENDARDATETYPE, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CALENDARDATETYPE_OTHERCODELIST = new ElementDefImpl( CALENDARDATETYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.CALENDARDATETYPE_CODE = new ElementDefImpl( CALENDARDATETYPE, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CALENDARDATETYPE_OTHERCODELIST = new ElementDefImpl( CALENDARDATETYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <CalendarSummary> fields (14 entries)
-		StudentDTD.CALENDARSUMMARY_REFID = new ElementDefImpl( CALENDARSUMMARY, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CALENDARSUMMARY_SCHOOLINFOREFID = new ElementDefImpl( CALENDARSUMMARY, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CALENDARSUMMARY_SCHOOLYEAR = new ElementDefImpl( CALENDARSUMMARY, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.CALENDARSUMMARY_LOCALID = new ElementDefImpl( CALENDARSUMMARY, "LocalId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CALENDARSUMMARY_DESCRIPTION = new ElementDefImpl( CALENDARSUMMARY, "Description", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CALENDARSUMMARY_DAYSINSESSION = new ElementDefImpl( CALENDARSUMMARY, "DaysInSession", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.CALENDARSUMMARY_STARTDATE = new ElementDefImpl( CALENDARSUMMARY, "StartDate", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.CALENDARSUMMARY_ENDDATE = new ElementDefImpl( CALENDARSUMMARY, "EndDate", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.CALENDARSUMMARY_FIRSTINSTRUCTIONDATE = new ElementDefImpl( CALENDARSUMMARY, "FirstInstructionDate", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.CALENDARSUMMARY_LASTINSTRUCTIONDATE = new ElementDefImpl( CALENDARSUMMARY, "LastInstructionDate", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.CALENDARSUMMARY_GRADUATIONDATE = new ElementDefAlias( CALENDARSUMMARY, "GraduationDate", null, "PartialDateType", 11, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CALENDARSUMMARY_INSTRUCTIONALMINUTES = new ElementDefImpl( CALENDARSUMMARY, "InstructionalMinutes", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.CALENDARSUMMARY_MINUTESPERDAY = new ElementDefImpl( CALENDARSUMMARY, "MinutesPerDay", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.CALENDARSUMMARY_GRADELEVELS = new ElementDefImpl( CALENDARSUMMARY, "GradeLevels", null, 14, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CALENDARSUMMARY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( CALENDARSUMMARY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		CALENDARSUMMARY_SIF_METADATA = new ElementDefImpl( CALENDARSUMMARY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.CALENDARSUMMARY_REFID = new ElementDefImpl( CALENDARSUMMARY, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CALENDARSUMMARY_SCHOOLINFOREFID = new ElementDefImpl( CALENDARSUMMARY, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CALENDARSUMMARY_SCHOOLYEAR = new ElementDefImpl( CALENDARSUMMARY, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.CALENDARSUMMARY_LOCALID = new ElementDefImpl( CALENDARSUMMARY, "LocalId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CALENDARSUMMARY_DESCRIPTION = new ElementDefImpl( CALENDARSUMMARY, "Description", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CALENDARSUMMARY_DAYSINSESSION = new ElementDefImpl( CALENDARSUMMARY, "DaysInSession", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.CALENDARSUMMARY_STARTDATE = new ElementDefImpl( CALENDARSUMMARY, "StartDate", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.CALENDARSUMMARY_ENDDATE = new ElementDefImpl( CALENDARSUMMARY, "EndDate", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.CALENDARSUMMARY_FIRSTINSTRUCTIONDATE = new ElementDefImpl( CALENDARSUMMARY, "FirstInstructionDate", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.CALENDARSUMMARY_LASTINSTRUCTIONDATE = new ElementDefImpl( CALENDARSUMMARY, "LastInstructionDate", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.CALENDARSUMMARY_GRADUATIONDATE = new ElementDefAlias( CALENDARSUMMARY, "GraduationDate", null, "PartialDateType", 11, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CALENDARSUMMARY_INSTRUCTIONALMINUTES = new ElementDefImpl( CALENDARSUMMARY, "InstructionalMinutes", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.CALENDARSUMMARY_MINUTESPERDAY = new ElementDefImpl( CALENDARSUMMARY, "MinutesPerDay", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.CALENDARSUMMARY_GRADELEVELS = new ElementDefImpl( CALENDARSUMMARY, "GradeLevels", null, 14, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CALENDARSUMMARY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( CALENDARSUMMARY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		CALENDARSUMMARY_SIF_METADATA = new ElementDefImpl( CALENDARSUMMARY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ContactFlags> fields (9 entries)
-		StudentDTD.CONTACTFLAGS_PICKUPRIGHTS = new ElementDefImpl( CONTACTFLAGS, "PickupRights", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.CONTACTFLAGS_PICKUPRIGHTS = new ElementDefImpl( CONTACTFLAGS, "PickupRights", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.CONTACTFLAGS_PICKUPRIGHTS.DefineVersionInfo(SifVersion.SIF20, "PickupRights", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.CONTACTFLAGS_PARENTLEGALGUARDIAN = new ElementDefImpl( CONTACTFLAGS, "ParentLegalGuardian", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CONTACTFLAGS_LIVESWITH = new ElementDefImpl( CONTACTFLAGS, "LivesWith", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CONTACTFLAGS_ACCESSTORECORDS = new ElementDefImpl( CONTACTFLAGS, "AccessToRecords", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CONTACTFLAGS_EMERGENCYCONTACT = new ElementDefImpl( CONTACTFLAGS, "EmergencyContact", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CONTACTFLAGS_HASCUSTODY = new ElementDefImpl( CONTACTFLAGS, "HasCustody", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CONTACTFLAGS_DISCIPLINARYCONTACT = new ElementDefImpl( CONTACTFLAGS, "DisciplinaryContact", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CONTACTFLAGS_PRIMARYCAREPROVIDER = new ElementDefImpl( CONTACTFLAGS, "PrimaryCareProvider", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.CONTACTFLAGS_OTHER = new ElementDefImpl( CONTACTFLAGS, "Other", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.CONTACTFLAGS_PARENTLEGALGUARDIAN = new ElementDefImpl( CONTACTFLAGS, "ParentLegalGuardian", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CONTACTFLAGS_LIVESWITH = new ElementDefImpl( CONTACTFLAGS, "LivesWith", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CONTACTFLAGS_ACCESSTORECORDS = new ElementDefImpl( CONTACTFLAGS, "AccessToRecords", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CONTACTFLAGS_EMERGENCYCONTACT = new ElementDefImpl( CONTACTFLAGS, "EmergencyContact", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CONTACTFLAGS_HASCUSTODY = new ElementDefImpl( CONTACTFLAGS, "HasCustody", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CONTACTFLAGS_DISCIPLINARYCONTACT = new ElementDefImpl( CONTACTFLAGS, "DisciplinaryContact", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CONTACTFLAGS_PRIMARYCAREPROVIDER = new ElementDefImpl( CONTACTFLAGS, "PrimaryCareProvider", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CONTACTFLAGS_OTHER = new ElementDefImpl( CONTACTFLAGS, "Other", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+
+		// <CorrelationSection> fields (1 entries)
+		StudentDTD.CORRELATIONSECTION_PRIMARY = new ElementDefImpl( CORRELATIONSECTION, "Primary", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+
+		// <CorrelationSectionList> fields (1 entries)
+		StudentDTD.CORRELATIONSECTIONLIST_CORRELATIONSECTION = new ElementDefImpl( CORRELATIONSECTIONLIST, "CorrelationSection", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+
+		// <CorrelationType> fields (2 entries)
+		StudentDTD.CORRELATIONTYPE_CODE = new ElementDefImpl( CORRELATIONTYPE, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.CORRELATIONTYPE_OTHERCODELIST = new ElementDefImpl( CORRELATIONTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
 
 		// <CourseCredits> fields (1 entries)
-		StudentDTD.COURSECREDITS_TYPE = new ElementDefImpl( COURSECREDITS, "Type", "Code", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.COURSECREDITS_TYPE = new ElementDefImpl( COURSECREDITS, "Type", "Code", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.COURSECREDITS_TYPE.DefineVersionInfo(SifVersion.SIF20, "Type", 1, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
 
 		// <CreditsAttempted> fields (1 entries)
-		StudentDTD.CREDITSATTEMPTED_TYPE = new ElementDefImpl( CREDITSATTEMPTED, "Type", "Code", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.CREDITSATTEMPTED_TYPE = new ElementDefImpl( CREDITSATTEMPTED, "Type", "Code", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.CREDITSATTEMPTED_TYPE.DefineVersionInfo(SifVersion.SIF20, "Type", 1, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
 
 		// <DisciplineIncident> fields (17 entries)
-		StudentDTD.DISCIPLINEINCIDENT_REFID = new ElementDefImpl( DISCIPLINEINCIDENT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.DISCIPLINEINCIDENT_SCHOOLYEAR = new ElementDefImpl( DISCIPLINEINCIDENT, "SchoolYear", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.DISCIPLINEINCIDENT_AGENCYREPORTING = new ElementDefImpl( DISCIPLINEINCIDENT, "AgencyReporting", null, 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.DISCIPLINEINCIDENT_INCIDENTNUMBER = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentNumber", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.DISCIPLINEINCIDENT_INCIDENTDATE = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentDate", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.DISCIPLINEINCIDENT_INCIDENTTIME = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentTime", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.DISCIPLINEINCIDENT_INCIDENTLOCATION = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentLocation", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.DISCIPLINEINCIDENT_INCIDENTLOCATIONREFID = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentLocationRefId", null, 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.DISCIPLINEINCIDENT_INCIDENTCOST = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentCost", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.DISCIPLINEINCIDENT_INCIDENTREPORTER = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentReporter", null, 10, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.DISCIPLINEINCIDENT_RELATEDTOLIST = new ElementDefImpl( DISCIPLINEINCIDENT, "RelatedToList", null, 11, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.DISCIPLINEINCIDENT_WEAPONTYPELIST = new ElementDefImpl( DISCIPLINEINCIDENT, "WeaponTypeList", null, 12, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.DISCIPLINEINCIDENT_INCIDENTCATEGORY = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentCategory", null, 13, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.DISCIPLINEINCIDENT_OFFENDERLIST = new ElementDefImpl( DISCIPLINEINCIDENT, "OffenderList", null, 14, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.DISCIPLINEINCIDENT_VICTIMLIST = new ElementDefImpl( DISCIPLINEINCIDENT, "VictimList", null, 15, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.DISCIPLINEINCIDENT_INCIDENTDESCRIPTION = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentDescription", null, 16, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.DISCIPLINEINCIDENT_INCIDENTACTIONLIST = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentActionList", null, 17, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		DISCIPLINEINCIDENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( DISCIPLINEINCIDENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		DISCIPLINEINCIDENT_SIF_METADATA = new ElementDefImpl( DISCIPLINEINCIDENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.DISCIPLINEINCIDENT_REFID = new ElementDefImpl( DISCIPLINEINCIDENT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.DISCIPLINEINCIDENT_SCHOOLYEAR = new ElementDefImpl( DISCIPLINEINCIDENT, "SchoolYear", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.DISCIPLINEINCIDENT_AGENCYREPORTING = new ElementDefImpl( DISCIPLINEINCIDENT, "AgencyReporting", null, 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.DISCIPLINEINCIDENT_INCIDENTNUMBER = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentNumber", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.DISCIPLINEINCIDENT_INCIDENTDATE = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentDate", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.DISCIPLINEINCIDENT_INCIDENTTIME = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentTime", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.DISCIPLINEINCIDENT_INCIDENTLOCATION = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentLocation", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.DISCIPLINEINCIDENT_INCIDENTLOCATIONREFID = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentLocationRefId", null, 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.DISCIPLINEINCIDENT_INCIDENTCOST = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentCost", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.DISCIPLINEINCIDENT_INCIDENTREPORTER = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentReporter", null, 10, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.DISCIPLINEINCIDENT_RELATEDTOLIST = new ElementDefImpl( DISCIPLINEINCIDENT, "RelatedToList", null, 11, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.DISCIPLINEINCIDENT_WEAPONTYPELIST = new ElementDefImpl( DISCIPLINEINCIDENT, "WeaponTypeList", null, 12, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.DISCIPLINEINCIDENT_INCIDENTCATEGORY = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentCategory", null, 13, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.DISCIPLINEINCIDENT_OFFENDERLIST = new ElementDefImpl( DISCIPLINEINCIDENT, "OffenderList", null, 14, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.DISCIPLINEINCIDENT_VICTIMLIST = new ElementDefImpl( DISCIPLINEINCIDENT, "VictimList", null, 15, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.DISCIPLINEINCIDENT_INCIDENTDESCRIPTION = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentDescription", null, 16, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.DISCIPLINEINCIDENT_INCIDENTACTIONLIST = new ElementDefImpl( DISCIPLINEINCIDENT, "IncidentActionList", null, 17, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		DISCIPLINEINCIDENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( DISCIPLINEINCIDENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		DISCIPLINEINCIDENT_SIF_METADATA = new ElementDefImpl( DISCIPLINEINCIDENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EducationAgencyType> fields (2 entries)
-		StudentDTD.EDUCATIONAGENCYTYPE_CODE = new ElementDefImpl( EDUCATIONAGENCYTYPE, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.EDUCATIONAGENCYTYPE_CODE = new ElementDefImpl( EDUCATIONAGENCYTYPE, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.EDUCATIONAGENCYTYPE_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.EDUCATIONAGENCYTYPE_OTHERCODELIST = new ElementDefImpl( EDUCATIONAGENCYTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.EDUCATIONAGENCYTYPE_OTHERCODELIST = new ElementDefImpl( EDUCATIONAGENCYTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EnrollStatus> fields (1 entries)
 		StudentDTD.ENROLLSTATUS_CODE = new ElementDefImpl( ENROLLSTATUS, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
 
+		// <EvaluationPart> fields (3 entries)
+		StudentDTD.EVALUATIONPART_NAME = new ElementDefAlias( EVALUATIONPART, "Name", null, "NameEvaluation", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.EVALUATIONPART_SCORE = new ElementDefAlias( EVALUATIONPART, "Score", null, "ScoreEvaluation", 2, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.EVALUATIONPART_SCALE = new ElementDefAlias( EVALUATIONPART, "Scale", null, "ScaleEvaluation", 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+
+		// <EvaluationParts> fields (1 entries)
+		StudentDTD.EVALUATIONPARTS_EVALUATIONPART = new ElementDefImpl( EVALUATIONPARTS, "EvaluationPart", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF26, SifVersion.SIF26 );
+
+		// <EvaluationRecommendation> fields (2 entries)
+		StudentDTD.EVALUATIONRECOMMENDATION_CODE = new ElementDefImpl( EVALUATIONRECOMMENDATION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.EVALUATIONRECOMMENDATION_OTHERCODELIST = new ElementDefImpl( EVALUATIONRECOMMENDATION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+
 		// <Grade> fields (7 entries)
-		StudentDTD.GRADE_PERCENTAGE = new ElementDefImpl( GRADE, "Percentage", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.GRADE_NUMERIC = new ElementDefImpl( GRADE, "Numeric", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.GRADE_OUTOF = new ElementDefImpl( GRADE, "OutOf", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.GRADE_LOW = new ElementDefImpl( GRADE, "Low", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.GRADE_HIGH = new ElementDefImpl( GRADE, "High", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.GRADE_LETTER = new ElementDefImpl( GRADE, "Letter", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.GRADE_NARRATIVE = new ElementDefImpl( GRADE, "Narrative", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.GRADE_PERCENTAGE = new ElementDefImpl( GRADE, "Percentage", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.GRADE_NUMERIC = new ElementDefImpl( GRADE, "Numeric", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.GRADE_OUTOF = new ElementDefImpl( GRADE, "OutOf", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.GRADE_LOW = new ElementDefImpl( GRADE, "Low", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.GRADE_HIGH = new ElementDefImpl( GRADE, "High", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.GRADE_LETTER = new ElementDefImpl( GRADE, "Letter", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.GRADE_NARRATIVE = new ElementDefImpl( GRADE, "Narrative", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <GradeClassification> fields (1 entries)
 		StudentDTD.GRADECLASSIFICATION_CODE = new ElementDefImpl( GRADECLASSIFICATION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
 
 		// <HomeEnrollment> fields (10 entries)
-		StudentDTD.HOMEENROLLMENT_STUDENTSCHOOLENROLLMENTREFID = new ElementDefImpl( HOMEENROLLMENT, "StudentSchoolEnrollmentRefId", "~XPathSurrogate{EnrollmentId/@StudentSchoolEnrollmentRefId=.}EnrollmentId", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.HOMEENROLLMENT_STUDENTSCHOOLENROLLMENTREFID = new ElementDefImpl( HOMEENROLLMENT, "StudentSchoolEnrollmentRefId", "~XPathSurrogate{EnrollmentId/@StudentSchoolEnrollmentRefId=.}EnrollmentId", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.HOMEENROLLMENT_STUDENTSCHOOLENROLLMENTREFID.DefineVersionInfo(SifVersion.SIF20, "StudentSchoolEnrollmentRefId", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.HOMEENROLLMENT_SCHOOLNAME = new ElementDefImpl( HOMEENROLLMENT, "SchoolName", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.HOMEENROLLMENT_SCHOOLINFOREFID = new ElementDefImpl( HOMEENROLLMENT, "SchoolInfoRefId", "~XPathSurrogate{SchoolId/@SchoolInfoRefId=.}SchoolId", 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.HOMEENROLLMENT_SCHOOLNAME = new ElementDefImpl( HOMEENROLLMENT, "SchoolName", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.HOMEENROLLMENT_SCHOOLINFOREFID = new ElementDefImpl( HOMEENROLLMENT, "SchoolInfoRefId", "~XPathSurrogate{SchoolId/@SchoolInfoRefId=.}SchoolId", 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.HOMEENROLLMENT_SCHOOLINFOREFID.DefineVersionInfo(SifVersion.SIF20, "SchoolInfoRefId", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.HOMEENROLLMENT_LOCALID = new ElementDefImpl( HOMEENROLLMENT, "LocalId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.HOMEENROLLMENT_STATEPROVINCEID = new ElementDefImpl( HOMEENROLLMENT, "StateProvinceId", "StatePrId", 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.HOMEENROLLMENT_LOCALID = new ElementDefImpl( HOMEENROLLMENT, "LocalId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.HOMEENROLLMENT_STATEPROVINCEID = new ElementDefImpl( HOMEENROLLMENT, "StateProvinceId", "StatePrId", 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.HOMEENROLLMENT_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.HOMEENROLLMENT_STATUS = new ElementDefImpl( HOMEENROLLMENT, "Status", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.HOMEENROLLMENT_GRADELEVEL = new ElementDefImpl( HOMEENROLLMENT, "GradeLevel", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		StudentDTD.HOMEENROLLMENT_HOMEROOM = new ElementDefImpl( HOMEENROLLMENT, "Homeroom", "~XPathSurrogate{HomeroomId/@RoomInfoRefId=.}HomeroomId", 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.HOMEENROLLMENT_STATUS = new ElementDefImpl( HOMEENROLLMENT, "Status", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.HOMEENROLLMENT_GRADELEVEL = new ElementDefImpl( HOMEENROLLMENT, "GradeLevel", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		StudentDTD.HOMEENROLLMENT_HOMEROOM = new ElementDefImpl( HOMEENROLLMENT, "Homeroom", "~XPathSurrogate{HomeroomId/@RoomInfoRefId=.}HomeroomId", 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.HOMEENROLLMENT_HOMEROOM.DefineVersionInfo(SifVersion.SIF20, "Homeroom", 8, 0); // (Sif 20 alias)
-		StudentDTD.HOMEENROLLMENT_HOMEROOMNUMBER = new ElementDefImpl( HOMEENROLLMENT, "HomeroomNumber", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.HOMEENROLLMENT_FULLYEARENROLLMENT = new ElementDefImpl( HOMEENROLLMENT, "FullYearEnrollment", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.HOMEENROLLMENT_HOMEROOMNUMBER = new ElementDefImpl( HOMEENROLLMENT, "HomeroomNumber", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.HOMEENROLLMENT_FULLYEARENROLLMENT = new ElementDefImpl( HOMEENROLLMENT, "FullYearEnrollment", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Homeroom> fields (1 entries)
-		StudentDTD.HOMEROOM_SIF_REFOBJECT = new ElementDefImpl( HOMEROOM, "SIF_RefObject", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.HOMEROOM_SIF_REFOBJECT = new ElementDefImpl( HOMEROOM, "SIF_RefObject", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <IncidentAction> fields (6 entries)
-		StudentDTD.INCIDENTACTION_STARTDATE = new ElementDefImpl( INCIDENTACTION, "StartDate", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.INCIDENTACTION_ENDDATE = new ElementDefImpl( INCIDENTACTION, "EndDate", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.INCIDENTACTION_DURATION = new ElementDefImpl( INCIDENTACTION, "Duration", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.INCIDENTACTION_ZEROTOLERANCE = new ElementDefImpl( INCIDENTACTION, "ZeroTolerance", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.INCIDENTACTION_POLICENOTIFICATION = new ElementDefImpl( INCIDENTACTION, "PoliceNotification", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.INCIDENTACTION_ARREST = new ElementDefImpl( INCIDENTACTION, "Arrest", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.INCIDENTACTION_STARTDATE = new ElementDefImpl( INCIDENTACTION, "StartDate", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.INCIDENTACTION_ENDDATE = new ElementDefImpl( INCIDENTACTION, "EndDate", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.INCIDENTACTION_DURATION = new ElementDefImpl( INCIDENTACTION, "Duration", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.INCIDENTACTION_ZEROTOLERANCE = new ElementDefImpl( INCIDENTACTION, "ZeroTolerance", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.INCIDENTACTION_POLICENOTIFICATION = new ElementDefImpl( INCIDENTACTION, "PoliceNotification", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.INCIDENTACTION_ARREST = new ElementDefImpl( INCIDENTACTION, "Arrest", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <IncidentActionList> fields (1 entries)
-		StudentDTD.INCIDENTACTIONLIST_INCIDENTACTION = new ElementDefImpl( INCIDENTACTIONLIST, "IncidentAction", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		StudentDTD.INCIDENTACTIONLIST_INCIDENTACTION = new ElementDefImpl( INCIDENTACTIONLIST, "IncidentAction", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <IncidentCategory> fields (3 entries)
-		StudentDTD.INCIDENTCATEGORY_CODE = new ElementDefImpl( INCIDENTCATEGORY, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.INCIDENTCATEGORY_OTHERCODELIST = new ElementDefImpl( INCIDENTCATEGORY, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.INCIDENTCATEGORY_CODECOMMENT = new ElementDefImpl( INCIDENTCATEGORY, "CodeComment", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.INCIDENTCATEGORY_CODE = new ElementDefImpl( INCIDENTCATEGORY, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.INCIDENTCATEGORY_OTHERCODELIST = new ElementDefImpl( INCIDENTCATEGORY, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.INCIDENTCATEGORY_CODECOMMENT = new ElementDefImpl( INCIDENTCATEGORY, "CodeComment", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <IncidentLocation> fields (1 entries)
-		StudentDTD.INCIDENTLOCATION_TYPE = new ElementDefImpl( INCIDENTLOCATION, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.INCIDENTLOCATION_TYPE = new ElementDefImpl( INCIDENTLOCATION, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <IncidentLocationRefId> fields (1 entries)
-		StudentDTD.INCIDENTLOCATIONREFID_SIF_REFOBJECT = new ElementDefImpl( INCIDENTLOCATIONREFID, "SIF_RefObject", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.INCIDENTLOCATIONREFID_SIF_REFOBJECT = new ElementDefImpl( INCIDENTLOCATIONREFID, "SIF_RefObject", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <IncidentReporter> fields (3 entries)
-		StudentDTD.INCIDENTREPORTER_TYPE = new ElementDefImpl( INCIDENTREPORTER, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.INCIDENTREPORTER_NAME = new ElementDefImpl( INCIDENTREPORTER, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.INCIDENTREPORTER_SIF_REFID = new ElementDefImpl( INCIDENTREPORTER, "SIF_RefId", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.INCIDENTREPORTER_TYPE = new ElementDefImpl( INCIDENTREPORTER, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.INCIDENTREPORTER_NAME = new ElementDefImpl( INCIDENTREPORTER, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.INCIDENTREPORTER_SIF_REFID = new ElementDefImpl( INCIDENTREPORTER, "SIF_RefId", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <IncidentTime> fields (1 entries)
-		StudentDTD.INCIDENTTIME_TYPE = new ElementDefImpl( INCIDENTTIME, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.INCIDENTTIME_TYPE = new ElementDefImpl( INCIDENTTIME, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <LanguageOfInstruction> fields (2 entries)
-		StudentDTD.LANGUAGEOFINSTRUCTION_CODE = new ElementDefImpl( LANGUAGEOFINSTRUCTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.LANGUAGEOFINSTRUCTION_OTHERCODELIST = new ElementDefImpl( LANGUAGEOFINSTRUCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.LANGUAGEOFINSTRUCTION_CODE = new ElementDefImpl( LANGUAGEOFINSTRUCTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.LANGUAGEOFINSTRUCTION_OTHERCODELIST = new ElementDefImpl( LANGUAGEOFINSTRUCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <LEAContact> fields (2 entries)
-		StudentDTD.LEACONTACT_PUBLISHINDIRECTORY = new ElementDefImpl( LEACONTACT, "PublishInDirectory", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.LEACONTACT_CONTACTINFO = new ElementDefImpl( LEACONTACT, "ContactInfo", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.LEACONTACT_PUBLISHINDIRECTORY = new ElementDefImpl( LEACONTACT, "PublishInDirectory", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.LEACONTACT_CONTACTINFO = new ElementDefImpl( LEACONTACT, "ContactInfo", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <LEAContactList> fields (1 entries)
-		StudentDTD.LEACONTACTLIST_LEACONTACT = new ElementDefImpl( LEACONTACTLIST, "LEAContact", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.LEACONTACTLIST_LEACONTACT = new ElementDefImpl( LEACONTACTLIST, "LEAContact", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <LEAInfo> fields (14 entries)
-		StudentDTD.LEAINFO_REFID = new ElementDefImpl( LEAINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.LEAINFO_LOCALID = new ElementDefImpl( LEAINFO, "LocalId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.LEAINFO_STATEPROVINCEID = new ElementDefImpl( LEAINFO, "StateProvinceId", "StatePrId", 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.LEAINFO_REFID = new ElementDefImpl( LEAINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.LEAINFO_LOCALID = new ElementDefImpl( LEAINFO, "LocalId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.LEAINFO_STATEPROVINCEID = new ElementDefImpl( LEAINFO, "StateProvinceId", "StatePrId", 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.LEAINFO_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.LEAINFO_NCESID = new ElementDefImpl( LEAINFO, "NCESId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.LEAINFO_LEANAME = new ElementDefImpl( LEAINFO, "LEAName", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.LEAINFO_LEAURL = new ElementDefImpl( LEAINFO, "LEAURL", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.LEAINFO_EDUCATIONAGENCYTYPE = new ElementDefImpl( LEAINFO, "EducationAgencyType", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		StudentDTD.LEAINFO_LEACONTACTLIST = new ElementDefImpl( LEAINFO, "LEAContactList", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.LEAINFO_NCESID = new ElementDefImpl( LEAINFO, "NCESId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.LEAINFO_LEANAME = new ElementDefImpl( LEAINFO, "LEAName", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.LEAINFO_LEAURL = new ElementDefImpl( LEAINFO, "LEAURL", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.LEAINFO_EDUCATIONAGENCYTYPE = new ElementDefImpl( LEAINFO, "EducationAgencyType", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		StudentDTD.LEAINFO_LEACONTACTLIST = new ElementDefImpl( LEAINFO, "LEAContactList", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.LEAINFO_LEACONTACTLIST.DefineVersionInfo(SifVersion.SIF20, "LEAContactList", 8, 0); // (Sif 20 alias)
-		StudentDTD.LEAINFO_PHONENUMBERLIST = new ElementDefImpl( LEAINFO, "PhoneNumberList", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.LEAINFO_PHONENUMBERLIST = new ElementDefImpl( LEAINFO, "PhoneNumberList", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.LEAINFO_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF20, "PhoneNumberList", 9, 0); // (Sif 20 alias)
-		StudentDTD.LEAINFO_ADDRESSLIST = new ElementDefImpl( LEAINFO, "AddressList", null, 10, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.LEAINFO_ADDRESSLIST = new ElementDefImpl( LEAINFO, "AddressList", null, 10, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.LEAINFO_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF20, "AddressList", 10, 0); // (Sif 20 alias)
-		StudentDTD.LEAINFO_IDENTIFICATIONINFOLIST = new ElementDefImpl( LEAINFO, "IdentificationInfoList", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.LEAINFO_IDENTIFICATIONINFOLIST = new ElementDefImpl( LEAINFO, "IdentificationInfoList", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.LEAINFO_IDENTIFICATIONINFOLIST.DefineVersionInfo(SifVersion.SIF20, "IdentificationInfoList", 11, 0); // (Sif 20 alias)
-		StudentDTD.LEAINFO_GRADELEVELS = new ElementDefImpl( LEAINFO, "GradeLevels", null, 12, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		StudentDTD.LEAINFO_OPERATIONALSTATUS = new ElementDefImpl( LEAINFO, "OperationalStatus", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.LEAINFO_CONGRESSIONALDISTRICT = new ElementDefImpl( LEAINFO, "CongressionalDistrict", null, 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		LEAINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LEAINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		LEAINFO_SIF_METADATA = new ElementDefImpl( LEAINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.LEAINFO_GRADELEVELS = new ElementDefImpl( LEAINFO, "GradeLevels", null, 12, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		StudentDTD.LEAINFO_OPERATIONALSTATUS = new ElementDefImpl( LEAINFO, "OperationalStatus", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.LEAINFO_CONGRESSIONALDISTRICT = new ElementDefImpl( LEAINFO, "CongressionalDistrict", null, 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		LEAINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LEAINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		LEAINFO_SIF_METADATA = new ElementDefImpl( LEAINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <LocationOfInstruction> fields (2 entries)
-		StudentDTD.LOCATIONOFINSTRUCTION_CODE = new ElementDefImpl( LOCATIONOFINSTRUCTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.LOCATIONOFINSTRUCTION_CODE = new ElementDefImpl( LOCATIONOFINSTRUCTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.LOCATIONOFINSTRUCTION_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.LOCATIONOFINSTRUCTION_OTHERCODELIST = new ElementDefImpl( LOCATIONOFINSTRUCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.LOCATIONOFINSTRUCTION_OTHERCODELIST = new ElementDefImpl( LOCATIONOFINSTRUCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ManifestationDetermination> fields (4 entries)
-		StudentDTD.MANIFESTATIONDETERMINATION_MEETINGHELD = new ElementDefImpl( MANIFESTATIONDETERMINATION, "MeetingHeld", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.MANIFESTATIONDETERMINATION_MEETINGDATE = new ElementDefImpl( MANIFESTATIONDETERMINATION, "MeetingDate", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.MANIFESTATIONDETERMINATION_DUETODISABILITY = new ElementDefImpl( MANIFESTATIONDETERMINATION, "DueToDisability", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.MANIFESTATIONDETERMINATION_MEETINGOUTCOME = new ElementDefImpl( MANIFESTATIONDETERMINATION, "MeetingOutcome", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.MANIFESTATIONDETERMINATION_MEETINGHELD = new ElementDefImpl( MANIFESTATIONDETERMINATION, "MeetingHeld", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.MANIFESTATIONDETERMINATION_MEETINGDATE = new ElementDefImpl( MANIFESTATIONDETERMINATION, "MeetingDate", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.MANIFESTATIONDETERMINATION_DUETODISABILITY = new ElementDefImpl( MANIFESTATIONDETERMINATION, "DueToDisability", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.MANIFESTATIONDETERMINATION_MEETINGOUTCOME = new ElementDefImpl( MANIFESTATIONDETERMINATION, "MeetingOutcome", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MedicalAlertMessage> fields (1 entries)
-		StudentDTD.MEDICALALERTMESSAGE_SEVERITY = new ElementDefImpl( MEDICALALERTMESSAGE, "Severity", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.MEDICALALERTMESSAGE_SEVERITY = new ElementDefImpl( MEDICALALERTMESSAGE, "Severity", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MedicalAlertMessages> fields (1 entries)
-		StudentDTD.MEDICALALERTMESSAGES_MEDICALALERTMESSAGE = new ElementDefImpl( MEDICALALERTMESSAGES, "MedicalAlertMessage", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.MEDICALALERTMESSAGES_MEDICALALERTMESSAGE = new ElementDefImpl( MEDICALALERTMESSAGES, "MedicalAlertMessage", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MediumOfInstruction> fields (2 entries)
-		StudentDTD.MEDIUMOFINSTRUCTION_CODE = new ElementDefImpl( MEDIUMOFINSTRUCTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.MEDIUMOFINSTRUCTION_CODE = new ElementDefImpl( MEDIUMOFINSTRUCTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.MEDIUMOFINSTRUCTION_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.MEDIUMOFINSTRUCTION_OTHERCODELIST = new ElementDefImpl( MEDIUMOFINSTRUCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.MEDIUMOFINSTRUCTION_OTHERCODELIST = new ElementDefImpl( MEDIUMOFINSTRUCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <MostRecent> fields (3 entries)
-		StudentDTD.MOSTRECENT_SCHOOLLOCALID = new ElementDefImpl( MOSTRECENT, "SchoolLocalId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.MOSTRECENT_HOMEROOMLOCALID = new ElementDefImpl( MOSTRECENT, "HomeroomLocalId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.MOSTRECENT_GRADELEVEL = new ElementDefImpl( MOSTRECENT, "GradeLevel", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.MOSTRECENT_SCHOOLLOCALID = new ElementDefImpl( MOSTRECENT, "SchoolLocalId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.MOSTRECENT_HOMEROOMLOCALID = new ElementDefImpl( MOSTRECENT, "HomeroomLocalId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.MOSTRECENT_GRADELEVEL = new ElementDefImpl( MOSTRECENT, "GradeLevel", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+
+		// <Name> fields (0 entries)
 
 		// <Nonpromotion> fields (2 entries)
-		StudentDTD.NONPROMOTION_CODE = new ElementDefImpl( NONPROMOTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.NONPROMOTION_OTHERCODELIST = new ElementDefImpl( NONPROMOTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		StudentDTD.NONPROMOTION_CODE = new ElementDefImpl( NONPROMOTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.NONPROMOTION_OTHERCODELIST = new ElementDefImpl( NONPROMOTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <Offender> fields (8 entries)
-		StudentDTD.OFFENDER_TYPE = new ElementDefImpl( OFFENDER, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.OFFENDER_NAME = new ElementDefImpl( OFFENDER, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.OFFENDER_SIF_REFID = new ElementDefImpl( OFFENDER, "SIF_RefId", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.OFFENDER_INJURY = new ElementDefImpl( OFFENDER, "Injury", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.OFFENDER_MANIFESTATIONDETERMINATION = new ElementDefImpl( OFFENDER, "ManifestationDetermination", null, 5, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.OFFENDER_ACTIONLIST = new ElementDefImpl( OFFENDER, "ActionList", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.OFFENDER_WEAPONTYPELIST = new ElementDefImpl( OFFENDER, "WeaponTypeList", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		StudentDTD.OFFENDER_RELATEDTOLIST = new ElementDefImpl( OFFENDER, "RelatedToList", null, 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		StudentDTD.OFFENDER_TYPE = new ElementDefImpl( OFFENDER, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.OFFENDER_NAME = new ElementDefImpl( OFFENDER, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.OFFENDER_SIF_REFID = new ElementDefImpl( OFFENDER, "SIF_RefId", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.OFFENDER_INJURY = new ElementDefImpl( OFFENDER, "Injury", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.OFFENDER_MANIFESTATIONDETERMINATION = new ElementDefImpl( OFFENDER, "ManifestationDetermination", null, 5, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.OFFENDER_ACTIONLIST = new ElementDefImpl( OFFENDER, "ActionList", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.OFFENDER_WEAPONTYPELIST = new ElementDefImpl( OFFENDER, "WeaponTypeList", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		StudentDTD.OFFENDER_RELATEDTOLIST = new ElementDefImpl( OFFENDER, "RelatedToList", null, 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <OffenderList> fields (1 entries)
-		StudentDTD.OFFENDERLIST_OFFENDER = new ElementDefImpl( OFFENDERLIST, "Offender", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.OFFENDERLIST_OFFENDER = new ElementDefImpl( OFFENDERLIST, "Offender", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <OtherLEA> fields (1 entries)
-		StudentDTD.OTHERLEA_SIF_REFOBJECT = new ElementDefImpl( OTHERLEA, "SIF_RefObject", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.OTHERLEA_SIF_REFOBJECT = new ElementDefImpl( OTHERLEA, "SIF_RefObject", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <PrincipalInfo> fields (2 entries)
-		StudentDTD.PRINCIPALINFO_CONTACTNAME = new ElementDefImpl( PRINCIPALINFO, "ContactName", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.PRINCIPALINFO_CONTACTTITLE = new ElementDefImpl( PRINCIPALINFO, "ContactTitle", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.PRINCIPALINFO_CONTACTNAME = new ElementDefImpl( PRINCIPALINFO, "ContactName", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.PRINCIPALINFO_CONTACTTITLE = new ElementDefImpl( PRINCIPALINFO, "ContactTitle", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Promotion> fields (2 entries)
-		StudentDTD.PROMOTION_CODE = new ElementDefImpl( PROMOTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.PROMOTION_OTHERCODELIST = new ElementDefImpl( PROMOTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		StudentDTD.PROMOTION_CODE = new ElementDefImpl( PROMOTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.PROMOTION_OTHERCODELIST = new ElementDefImpl( PROMOTION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <PromotionInfo> fields (3 entries)
-		StudentDTD.PROMOTIONINFO_PROMOTIONSTATUS = new ElementDefImpl( PROMOTIONINFO, "PromotionStatus", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.PROMOTIONINFO_PROMOTIONSTATUS = new ElementDefImpl( PROMOTIONINFO, "PromotionStatus", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.PROMOTIONINFO_PROMOTIONSTATUS.DefineVersionInfo(SifVersion.SIF24, "PromotionStatus", 1, (ElementDefImpl.FD_FIELD)); // (Sif 24 alias)
-		StudentDTD.PROMOTIONINFO_PROMOTION = new ElementDefImpl( PROMOTIONINFO, "Promotion", null, 2, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		StudentDTD.PROMOTIONINFO_NONPROMOTION = new ElementDefImpl( PROMOTIONINFO, "Nonpromotion", null, 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		StudentDTD.PROMOTIONINFO_PROMOTION = new ElementDefImpl( PROMOTIONINFO, "Promotion", null, 2, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		StudentDTD.PROMOTIONINFO_NONPROMOTION = new ElementDefImpl( PROMOTIONINFO, "Nonpromotion", null, 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <Recognition> fields (1 entries)
-		StudentDTD.RECOGNITION_CODE = new ElementDefImpl( RECOGNITION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.RECOGNITION_CODE = new ElementDefImpl( RECOGNITION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RecognitionList> fields (1 entries)
-		StudentDTD.RECOGNITIONLIST_RECOGNITION = new ElementDefImpl( RECOGNITIONLIST, "Recognition", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.RECOGNITIONLIST_RECOGNITION = new ElementDefImpl( RECOGNITIONLIST, "Recognition", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RelatedTo> fields (0 entries)
 
 		// <RelatedToList> fields (1 entries)
-		StudentDTD.RELATEDTOLIST_RELATEDTO = new ElementDefImpl( RELATEDTOLIST, "RelatedTo", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.RELATEDTOLIST_RELATEDTO = new ElementDefImpl( RELATEDTOLIST, "RelatedTo", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+
+		// <Role> fields (0 entries)
+
+		// <Roles> fields (1 entries)
+		StudentDTD.ROLES_ROLE = new ElementDefImpl( ROLES, "Role", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RoomInfo> fields (11 entries)
-		StudentDTD.ROOMINFO_REFID = new ElementDefImpl( ROOMINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ROOMINFO_SCHOOLINFOREFID = new ElementDefImpl( ROOMINFO, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ROOMINFO_ROOMNUMBER = new ElementDefImpl( ROOMINFO, "RoomNumber", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ROOMINFO_STAFFLIST = new ElementDefImpl( ROOMINFO, "StaffList", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.ROOMINFO_REFID = new ElementDefImpl( ROOMINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ROOMINFO_SCHOOLINFOREFID = new ElementDefImpl( ROOMINFO, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ROOMINFO_ROOMNUMBER = new ElementDefImpl( ROOMINFO, "RoomNumber", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ROOMINFO_STAFFLIST = new ElementDefImpl( ROOMINFO, "StaffList", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.ROOMINFO_STAFFLIST.DefineVersionInfo(SifVersion.SIF20, "StaffList", 4, 0); // (Sif 20 alias)
-		StudentDTD.ROOMINFO_DESCRIPTION = new ElementDefImpl( ROOMINFO, "Description", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ROOMINFO_BUILDING = new ElementDefImpl( ROOMINFO, "Building", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ROOMINFO_HOMEROOMNUMBER = new ElementDefImpl( ROOMINFO, "HomeroomNumber", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ROOMINFO_SIZE = new ElementDefImpl( ROOMINFO, "Size", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.ROOMINFO_CAPACITY = new ElementDefImpl( ROOMINFO, "Capacity", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.ROOMINFO_PHONENUMBER = new ElementDefImpl( ROOMINFO, "PhoneNumber", "~PhoneNumberSurrogate{}", 10, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.ROOMINFO_DESCRIPTION = new ElementDefImpl( ROOMINFO, "Description", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ROOMINFO_BUILDING = new ElementDefImpl( ROOMINFO, "Building", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ROOMINFO_HOMEROOMNUMBER = new ElementDefImpl( ROOMINFO, "HomeroomNumber", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ROOMINFO_SIZE = new ElementDefImpl( ROOMINFO, "Size", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.ROOMINFO_CAPACITY = new ElementDefImpl( ROOMINFO, "Capacity", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.ROOMINFO_PHONENUMBER = new ElementDefImpl( ROOMINFO, "PhoneNumber", "~PhoneNumberSurrogate{}", 10, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.ROOMINFO_PHONENUMBER.DefineVersionInfo(SifVersion.SIF20, "PhoneNumber", 10, 0); // (Sif 20 alias)
-		StudentDTD.ROOMINFO_ROOMTYPEREFID = new ElementDefImpl( ROOMINFO, "RoomTypeRefId", "~XPathSurrogate{TypeOfRoom/@RoomTypeRefId=.}TypeOfRoom", 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.ROOMINFO_ROOMTYPEREFID = new ElementDefImpl( ROOMINFO, "RoomTypeRefId", "~XPathSurrogate{TypeOfRoom/@RoomTypeRefId=.}TypeOfRoom", 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.ROOMINFO_ROOMTYPEREFID.DefineVersionInfo(SifVersion.SIF20, "RoomTypeRefId", 11, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		ROOMINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ROOMINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ROOMINFO_SIF_METADATA = new ElementDefImpl( ROOMINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		ROOMINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ROOMINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ROOMINFO_SIF_METADATA = new ElementDefImpl( ROOMINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <RoomInfoRefId> fields (0 entries)
 
 		// <RoomType> fields (3 entries)
-		StudentDTD.ROOMTYPE_REFID = new ElementDefImpl( ROOMTYPE, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ROOMTYPE_SCHOOLINFOREFID = new ElementDefImpl( ROOMTYPE, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.ROOMTYPE_DESCRIPTION = new ElementDefImpl( ROOMTYPE, "Description", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		ROOMTYPE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ROOMTYPE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ROOMTYPE_SIF_METADATA = new ElementDefImpl( ROOMTYPE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.ROOMTYPE_REFID = new ElementDefImpl( ROOMTYPE, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ROOMTYPE_SCHOOLINFOREFID = new ElementDefImpl( ROOMTYPE, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.ROOMTYPE_DESCRIPTION = new ElementDefImpl( ROOMTYPE, "Description", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		ROOMTYPE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ROOMTYPE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ROOMTYPE_SIF_METADATA = new ElementDefImpl( ROOMTYPE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
+
+		// <Scale> fields (0 entries)
 
 		// <SCEDCode> fields (5 entries)
-		StudentDTD.SCEDCODE_COURSEDESCRIPTION = new ElementDefImpl( SCEDCODE, "CourseDescription", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCEDCODE_COURSELEVEL = new ElementDefImpl( SCEDCODE, "CourseLevel", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCEDCODE_AVAILABLECREDIT = new ElementDefImpl( SCEDCODE, "AvailableCredit", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.SCEDCODE_SEQUENCENUMBER = new ElementDefImpl( SCEDCODE, "SequenceNumber", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.SCEDCODE_SEQUENCELIMIT = new ElementDefImpl( SCEDCODE, "SequenceLimit", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
+		StudentDTD.SCEDCODE_COURSEDESCRIPTION = new ElementDefImpl( SCEDCODE, "CourseDescription", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCEDCODE_COURSELEVEL = new ElementDefImpl( SCEDCODE, "CourseLevel", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCEDCODE_AVAILABLECREDIT = new ElementDefImpl( SCEDCODE, "AvailableCredit", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.SCEDCODE_SEQUENCENUMBER = new ElementDefImpl( SCEDCODE, "SequenceNumber", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.SCEDCODE_SEQUENCELIMIT = new ElementDefImpl( SCEDCODE, "SequenceLimit", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
 
 		// <ScheduleInfo> fields (4 entries)
-		StudentDTD.SCHEDULEINFO_TERMINFOREFID = new ElementDefImpl( SCHEDULEINFO, "TermInfoRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCHEDULEINFO_TEACHERLIST = new ElementDefImpl( SCHEDULEINFO, "TeacherList", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHEDULEINFO_TERMINFOREFID = new ElementDefImpl( SCHEDULEINFO, "TermInfoRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCHEDULEINFO_TEACHERLIST = new ElementDefImpl( SCHEDULEINFO, "TeacherList", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHEDULEINFO_TEACHERLIST.DefineVersionInfo(SifVersion.SIF20, "TeacherList", 2, 0); // (Sif 20 alias)
-		StudentDTD.SCHEDULEINFO_SECTIONROOMLIST = new ElementDefImpl( SCHEDULEINFO, "SectionRoomList", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHEDULEINFO_SECTIONROOMLIST = new ElementDefImpl( SCHEDULEINFO, "SectionRoomList", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHEDULEINFO_SECTIONROOMLIST.DefineVersionInfo(SifVersion.SIF20, "SectionRoomList", 3, 0); // (Sif 20 alias)
-		StudentDTD.SCHEDULEINFO_MEETINGTIMELIST = new ElementDefImpl( SCHEDULEINFO, "MeetingTimeList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHEDULEINFO_MEETINGTIMELIST = new ElementDefImpl( SCHEDULEINFO, "MeetingTimeList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHEDULEINFO_MEETINGTIMELIST.DefineVersionInfo(SifVersion.SIF20, "MeetingTimeList", 4, 0); // (Sif 20 alias)
 
 		// <ScheduleInfoList> fields (1 entries)
-		StudentDTD.SCHEDULEINFOLIST_SCHEDULEINFO = new ElementDefImpl( SCHEDULEINFOLIST, "ScheduleInfo", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHEDULEINFOLIST_SCHEDULEINFO = new ElementDefImpl( SCHEDULEINFOLIST, "ScheduleInfo", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <ScheduleInfoOverride> fields (3 entries)
-		StudentDTD.SCHEDULEINFOOVERRIDE_OVERRIDE = new ElementDefImpl( SCHEDULEINFOOVERRIDE, "Override", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCHEDULEINFOOVERRIDE_TERMINFOREFID = new ElementDefImpl( SCHEDULEINFOOVERRIDE, "TermInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCHEDULEINFOOVERRIDE_MEETINGTIMELIST = new ElementDefImpl( SCHEDULEINFOOVERRIDE, "MeetingTimeList", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHEDULEINFOOVERRIDE_OVERRIDE = new ElementDefImpl( SCHEDULEINFOOVERRIDE, "Override", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCHEDULEINFOOVERRIDE_TERMINFOREFID = new ElementDefImpl( SCHEDULEINFOOVERRIDE, "TermInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCHEDULEINFOOVERRIDE_MEETINGTIMELIST = new ElementDefImpl( SCHEDULEINFOOVERRIDE, "MeetingTimeList", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHEDULEINFOOVERRIDE_MEETINGTIMELIST.DefineVersionInfo(SifVersion.SIF20, "MeetingTimeList", 3, 0); // (Sif 20 alias)
 
 		// <ScheduleInfoOverrideList> fields (1 entries)
-		StudentDTD.SCHEDULEINFOOVERRIDELIST_SCHEDULEINFOOVERRIDE = new ElementDefImpl( SCHEDULEINFOOVERRIDELIST, "ScheduleInfoOverride", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHEDULEINFOOVERRIDELIST_SCHEDULEINFOOVERRIDE = new ElementDefImpl( SCHEDULEINFOOVERRIDELIST, "ScheduleInfoOverride", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
-		// <SchoolCourseInfo> fields (15 entries)
-		StudentDTD.SCHOOLCOURSEINFO_REFID = new ElementDefImpl( SCHOOLCOURSEINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCHOOLCOURSEINFO_SCHOOLINFOREFID = new ElementDefImpl( SCHOOLCOURSEINFO, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCHOOLCOURSEINFO_SCHOOLYEAR = new ElementDefImpl( SCHOOLCOURSEINFO, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.SCHOOLCOURSEINFO_COURSECODE = new ElementDefImpl( SCHOOLCOURSEINFO, "CourseCode", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		// <SchoolCourseInfo> fields (16 entries)
+		StudentDTD.SCHOOLCOURSEINFO_REFID = new ElementDefImpl( SCHOOLCOURSEINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFO_SCHOOLINFOREFID = new ElementDefImpl( SCHOOLCOURSEINFO, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFO_SCHOOLYEAR = new ElementDefImpl( SCHOOLCOURSEINFO, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.SCHOOLCOURSEINFO_COURSECODE = new ElementDefImpl( SCHOOLCOURSEINFO, "CourseCode", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFO_COURSECODE.DefineVersionInfo(SifVersion.SIF20, "CourseCode", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFO_STATECOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFO, "StateCourseCode", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFO_STATECOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFO, "StateCourseCode", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFO_STATECOURSECODE.DefineVersionInfo(SifVersion.SIF20, "StateCourseCode", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFO_DISTRICTCOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFO, "DistrictCourseCode", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFO_DISTRICTCOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFO, "DistrictCourseCode", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFO_DISTRICTCOURSECODE.DefineVersionInfo(SifVersion.SIF20, "DistrictCourseCode", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFO_SUBJECTAREALIST = new ElementDefImpl( SCHOOLCOURSEINFO, "SubjectAreaList", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHOOLCOURSEINFO_SUBJECTAREALIST = new ElementDefImpl( SCHOOLCOURSEINFO, "SubjectAreaList", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHOOLCOURSEINFO_SUBJECTAREALIST.DefineVersionInfo(SifVersion.SIF20, "SubjectAreaList", 7, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFO_COURSETITLE = new ElementDefImpl( SCHOOLCOURSEINFO, "CourseTitle", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFO_COURSETITLE = new ElementDefImpl( SCHOOLCOURSEINFO, "CourseTitle", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFO_COURSETITLE.DefineVersionInfo(SifVersion.SIF20, "CourseTitle", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFO_DESCRIPTION = new ElementDefImpl( SCHOOLCOURSEINFO, "Description", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFO_DESCRIPTION = new ElementDefImpl( SCHOOLCOURSEINFO, "Description", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFO_DESCRIPTION.DefineVersionInfo(SifVersion.SIF20, "Description", 9, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFO_INSTRUCTIONALLEVEL = new ElementDefImpl( SCHOOLCOURSEINFO, "InstructionalLevel", "~XPathSurrogate{InstructionalLevel=@Code}", 8, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHOOLCOURSEINFO_INSTRUCTIONALLEVEL = new ElementDefImpl( SCHOOLCOURSEINFO, "InstructionalLevel", "~XPathSurrogate{InstructionalLevel=@Code}", 8, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHOOLCOURSEINFO_INSTRUCTIONALLEVEL.DefineVersionInfo(SifVersion.SIF15r1, "~XPathSurrogate{InstructionalLevel=@Code}InstructionalLevel", 9, 0); // (Sif 15r1 alias)
 		StudentDTD.SCHOOLCOURSEINFO_INSTRUCTIONALLEVEL.DefineVersionInfo(SifVersion.SIF20, "InstructionalLevel", 10, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFO_COURSECREDITS = new ElementDefImpl( SCHOOLCOURSEINFO, "CourseCredits", null, 9, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		StudentDTD.SCHOOLCOURSEINFO_COURSECREDITS = new ElementDefImpl( SCHOOLCOURSEINFO, "CourseCredits", null, 9, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		StudentDTD.SCHOOLCOURSEINFO_COURSECREDITS.DefineVersionInfo(SifVersion.SIF15r1, "CourseCredits", 10, 0); // (Sif 15r1 alias)
 		StudentDTD.SCHOOLCOURSEINFO_COURSECREDITS.DefineVersionInfo(SifVersion.SIF20, "CourseCredits", 11, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFO_COREACADEMICCOURSE = new ElementDefImpl( SCHOOLCOURSEINFO, "CoreAcademicCourse", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFO_COREACADEMICCOURSE = new ElementDefImpl( SCHOOLCOURSEINFO, "CoreAcademicCourse", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFO_COREACADEMICCOURSE.DefineVersionInfo(SifVersion.SIF20, "CoreAcademicCourse", 12, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFO_GRADUATIONREQUIREMENT = new ElementDefImpl( SCHOOLCOURSEINFO, "GraduationRequirement", "GradRequirement", 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFO_GRADUATIONREQUIREMENT = new ElementDefImpl( SCHOOLCOURSEINFO, "GraduationRequirement", "GradRequirement", 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFO_GRADUATIONREQUIREMENT.DefineVersionInfo(SifVersion.SIF20, "GraduationRequirement", 13, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFO_DEPARTMENT = new ElementDefImpl( SCHOOLCOURSEINFO, "Department", null, 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCHOOLCOURSEINFO_SCEDCODE = new ElementDefImpl( SCHOOLCOURSEINFO, "SCEDCode", null, 15, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SCHOOLCOURSEINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLCOURSEINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SCHOOLCOURSEINFO_SIF_METADATA = new ElementDefImpl( SCHOOLCOURSEINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.SCHOOLCOURSEINFO_DEPARTMENT = new ElementDefImpl( SCHOOLCOURSEINFO, "Department", null, 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFO_SCEDCODE = new ElementDefImpl( SCHOOLCOURSEINFO, "SCEDCode", null, 15, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.SCHOOLCOURSEINFO_DUALCREDIT = new ElementDefImpl( SCHOOLCOURSEINFO, "DualCredit", null, 16, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SCHOOLCOURSEINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLCOURSEINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SCHOOLCOURSEINFO_SIF_METADATA = new ElementDefImpl( SCHOOLCOURSEINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SchoolCourseInfoOverride> fields (8 entries)
-		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_OVERRIDE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "Override", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_COURSECODE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "CourseCode", "CourseCodeOverride", 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_OVERRIDE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "Override", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_COURSECODE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "CourseCode", "CourseCodeOverride", 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_COURSECODE.DefineVersionInfo(SifVersion.SIF20, "CourseCode", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_STATECOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "StateCourseCode", "StateCourseCodeOverride", 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_STATECOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "StateCourseCode", "StateCourseCodeOverride", 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_STATECOURSECODE.DefineVersionInfo(SifVersion.SIF20, "StateCourseCode", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_DISTRICTCOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "DistrictCourseCode", "DistrictCourseCodeOverride", 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_DISTRICTCOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "DistrictCourseCode", "DistrictCourseCodeOverride", 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_DISTRICTCOURSECODE.DefineVersionInfo(SifVersion.SIF20, "DistrictCourseCode", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_SUBJECTAREA = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "SubjectArea", "SubjectAreaOverride", 5, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_SUBJECTAREA = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "SubjectArea", "SubjectAreaOverride", 5, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_SUBJECTAREA.DefineVersionInfo(SifVersion.SIF20, "SubjectArea", 5, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_COURSETITLE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "CourseTitle", "CourseTitleOverride", 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_COURSETITLE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "CourseTitle", "CourseTitleOverride", 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_COURSETITLE.DefineVersionInfo(SifVersion.SIF20, "CourseTitle", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_INSTRUCTIONALLEVEL = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "InstructionalLevel", "~XPathSurrogate{InstructionalLevelOverride=@Code}InstructionalLevelOverride", 7, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_INSTRUCTIONALLEVEL = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "InstructionalLevel", "~XPathSurrogate{InstructionalLevelOverride=@Code}InstructionalLevelOverride", 7, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_INSTRUCTIONALLEVEL.DefineVersionInfo(SifVersion.SIF20, "InstructionalLevel", 7, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_COURSECREDITS = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "CourseCredits", "CourseCreditsOverride", 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_COURSECREDITS = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "CourseCredits", "CourseCreditsOverride", 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		StudentDTD.SCHOOLCOURSEINFOOVERRIDE_COURSECREDITS.DefineVersionInfo(SifVersion.SIF20, "CourseCredits", 8, 0); // (Sif 20 alias)
 
 		// <SchoolFocus> fields (0 entries)
 
 		// <SchoolFocusList> fields (1 entries)
-		StudentDTD.SCHOOLFOCUSLIST_SCHOOLFOCUS = new ElementDefImpl( SCHOOLFOCUSLIST, "SchoolFocus", "~XPathSurrogate{SchoolFocus/@Type=.}", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLFOCUSLIST_SCHOOLFOCUS = new ElementDefImpl( SCHOOLFOCUSLIST, "SchoolFocus", "~XPathSurrogate{SchoolFocus/@Type=.}", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLFOCUSLIST_SCHOOLFOCUS.DefineVersionInfo(SifVersion.SIF20, "SchoolFocus", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <SchoolId> fields (1 entries)
 		StudentDTD.SCHOOLID_SCHOOLINFOREFID = new ElementDefImpl( SCHOOLID, "SchoolInfoRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
 
-		// <SchoolInfo> fields (23 entries)
-		StudentDTD.SCHOOLINFO_REFID = new ElementDefImpl( SCHOOLINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCHOOLINFO_LOCALID = new ElementDefImpl( SCHOOLINFO, "LocalId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCHOOLINFO_SCHOOLNAME = new ElementDefImpl( SCHOOLINFO, "SchoolName", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		// <SchoolInfo> fields (24 entries)
+		StudentDTD.SCHOOLINFO_REFID = new ElementDefImpl( SCHOOLINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_LOCALID = new ElementDefImpl( SCHOOLINFO, "LocalId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_SCHOOLNAME = new ElementDefImpl( SCHOOLINFO, "SchoolName", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_SCHOOLNAME.DefineVersionInfo(SifVersion.SIF15r1, "SchoolName", 5, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
-		StudentDTD.SCHOOLINFO_STATEPROVINCEID = new ElementDefImpl( SCHOOLINFO, "StateProvinceId", "StatePrId", 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_STATEPROVINCEID = new ElementDefImpl( SCHOOLINFO, "StateProvinceId", "StatePrId", 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 		StudentDTD.SCHOOLINFO_SCHOOLJURISDICTION = new ElementDefImpl( SCHOOLINFO, "SchoolJurisdiction", null, 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF15r1 );
 		StudentDTD.SCHOOLINFO_SCHOOLJURISDICTION.DefineVersionInfo(SifVersion.SIF15r1, "SchoolJurisdiction", 8, 0); // (Sif 15r1 alias)
-		StudentDTD.SCHOOLINFO_SCHOOLTYPE = new ElementDefImpl( SCHOOLINFO, "SchoolType", "~XPathSurrogate{SchoolType/@Code=.}", 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_SCHOOLTYPE = new ElementDefImpl( SCHOOLINFO, "SchoolType", "~XPathSurrogate{SchoolType/@Code=.}", 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_SCHOOLTYPE.DefineVersionInfo(SifVersion.SIF15r1, "~XPathSurrogate{SchoolType/@Code=.}SchoolType", 9, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.SCHOOLINFO_SCHOOLTYPE.DefineVersionInfo(SifVersion.SIF20, "SchoolType", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_NCESID = new ElementDefImpl( SCHOOLINFO, "NCESId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SCHOOLINFO_SCHOOLURL = new ElementDefImpl( SCHOOLINFO, "SchoolURL", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_NCESID = new ElementDefImpl( SCHOOLINFO, "NCESId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_SCHOOLURL = new ElementDefImpl( SCHOOLINFO, "SchoolURL", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_SCHOOLURL.DefineVersionInfo(SifVersion.SIF15r1, "SchoolURL", 11, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.SCHOOLINFO_SCHOOLURL.DefineVersionInfo(SifVersion.SIF20, "SchoolURL", 10, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_LEAINFOREFID = new ElementDefImpl( SCHOOLINFO, "LEAInfoRefId", "~XPathSurrogate{SchoolDistrict/@LEAInfoRefId=.}SchoolDistrict", 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_LEAINFOREFID = new ElementDefImpl( SCHOOLINFO, "LEAInfoRefId", "~XPathSurrogate{SchoolDistrict/@LEAInfoRefId=.}SchoolDistrict", 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_LEAINFOREFID.DefineVersionInfo(SifVersion.SIF20, "LEAInfoRefId", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_PRINCIPALINFO = new ElementDefImpl( SCHOOLINFO, "PrincipalInfo", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHOOLINFO_PRINCIPALINFO = new ElementDefImpl( SCHOOLINFO, "PrincipalInfo", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHOOLINFO_PRINCIPALINFO.DefineVersionInfo(SifVersion.SIF15r1, "PrincipalInfo", 12, 0); // (Sif 15r1 alias)
 		StudentDTD.SCHOOLINFO_PRINCIPALINFO.DefineVersionInfo(SifVersion.SIF20, "PrincipalInfo", 11, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_OTHERLEA = new ElementDefImpl( SCHOOLINFO, "OtherLEA", "~XPathSurrogate{OtherLEA/@LEAInfoRefId=.}", 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_OTHERLEA = new ElementDefImpl( SCHOOLINFO, "OtherLEA", "~XPathSurrogate{OtherLEA/@LEAInfoRefId=.}", 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_OTHERLEA.DefineVersionInfo(SifVersion.SIF20, "OtherLEA", 7, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_PHONENUMBERLIST = new ElementDefImpl( SCHOOLINFO, "PhoneNumberList", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHOOLINFO_PHONENUMBERLIST = new ElementDefImpl( SCHOOLINFO, "PhoneNumberList", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHOOLINFO_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF15r1, "PhoneNumberList", 14, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		StudentDTD.SCHOOLINFO_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF20, "PhoneNumberList", 14, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_ADDRESSLIST = new ElementDefImpl( SCHOOLINFO, "AddressList", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHOOLINFO_ADDRESSLIST = new ElementDefImpl( SCHOOLINFO, "AddressList", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHOOLINFO_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF15r1, "AddressList", 15, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		StudentDTD.SCHOOLINFO_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF20, "AddressList", 13, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_IDENTIFICATIONINFOLIST = new ElementDefImpl( SCHOOLINFO, "IdentificationInfoList", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SCHOOLINFO_IDENTIFICATIONINFOLIST = new ElementDefImpl( SCHOOLINFO, "IdentificationInfoList", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SCHOOLINFO_IDENTIFICATIONINFOLIST.DefineVersionInfo(SifVersion.SIF15r1, "IdentificationInfoList", 16, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		StudentDTD.SCHOOLINFO_IDENTIFICATIONINFOLIST.DefineVersionInfo(SifVersion.SIF20, "IdentificationInfoList", 15, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_SCHOOLFOCUSLIST = new ElementDefImpl( SCHOOLINFO, "SchoolFocusList", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.SCHOOLINFO_SCHOOLFOCUSLIST = new ElementDefImpl( SCHOOLINFO, "SchoolFocusList", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.SCHOOLINFO_SCHOOLFOCUSLIST.DefineVersionInfo(SifVersion.SIF20, "SchoolFocusList", 9, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_SESSIONTYPE = new ElementDefImpl( SCHOOLINFO, "SessionType", "~XPathSurrogate{SessionType/@Code=.}", 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_SESSIONTYPE = new ElementDefImpl( SCHOOLINFO, "SessionType", "~XPathSurrogate{SessionType/@Code=.}", 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_SESSIONTYPE.DefineVersionInfo(SifVersion.SIF15r1, "~XPathSurrogate{SessionType/@Code=.}SessionType", 17, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.SCHOOLINFO_SESSIONTYPE.DefineVersionInfo(SifVersion.SIF20, "SessionType", 16, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 		StudentDTD.SCHOOLINFO_LOWGRADELEVEL = new ElementDefImpl( SCHOOLINFO, "LowGradeLevel", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_LOWGRADELEVEL.DefineVersionInfo(SifVersion.SIF15r1, "LowGradeLevel", 18, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.SCHOOLINFO_HIGHGRADELEVEL = new ElementDefImpl( SCHOOLINFO, "HighGradeLevel", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_HIGHGRADELEVEL.DefineVersionInfo(SifVersion.SIF15r1, "HighGradeLevel", 19, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
-		StudentDTD.SCHOOLINFO_SCHOOLCONTACTLIST = new ElementDefImpl( SCHOOLINFO, "SchoolContactList", null, 13, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.SCHOOLINFO_SCHOOLCONTACTLIST = new ElementDefImpl( SCHOOLINFO, "SchoolContactList", null, 13, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.SCHOOLINFO_SCHOOLCONTACTLIST.DefineVersionInfo(SifVersion.SIF20, "SchoolContactList", 12, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_GRADELEVELS = new ElementDefImpl( SCHOOLINFO, "GradeLevels", null, 20, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.SCHOOLINFO_GRADELEVELS = new ElementDefImpl( SCHOOLINFO, "GradeLevels", null, 20, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.SCHOOLINFO_GRADELEVELS.DefineVersionInfo(SifVersion.SIF20, "GradeLevels", 17, 0); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_TITLE1STATUS = new ElementDefImpl( SCHOOLINFO, "Title1Status", null, 21, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_TITLE1STATUS = new ElementDefImpl( SCHOOLINFO, "Title1Status", null, 21, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_TITLE1STATUS.DefineVersionInfo(SifVersion.SIF20, "Title1Status", 18, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_OPERATIONALSTATUS = new ElementDefImpl( SCHOOLINFO, "OperationalStatus", null, 22, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_ACTIVESCHOOLYEAR = new ElementDefImpl( SCHOOLINFO, "ActiveSchoolYear", null, 21, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.SCHOOLINFO_OPERATIONALSTATUS = new ElementDefImpl( SCHOOLINFO, "OperationalStatus", null, 22, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_OPERATIONALSTATUS.DefineVersionInfo(SifVersion.SIF20, "OperationalStatus", 19, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.SCHOOLINFO_CONGRESSIONALDISTRICT = new ElementDefImpl( SCHOOLINFO, "CongressionalDistrict", null, 23, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SCHOOLINFO_CONGRESSIONALDISTRICT = new ElementDefImpl( SCHOOLINFO, "CongressionalDistrict", null, 23, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SCHOOLINFO_CONGRESSIONALDISTRICT.DefineVersionInfo(SifVersion.SIF20, "CongressionalDistrict", 20, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		SCHOOLINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SCHOOLINFO_SIF_METADATA = new ElementDefImpl( SCHOOLINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SCHOOLINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SCHOOLINFO_SIF_METADATA = new ElementDefImpl( SCHOOLINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SchoolJurisdiction> fields (1 entries)
 		StudentDTD.SCHOOLJURISDICTION_CODE = new ElementDefImpl( SCHOOLJURISDICTION, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
 
+		// <Score> fields (0 entries)
+
+		// <SectionCorrelation> fields (4 entries)
+		StudentDTD.SECTIONCORRELATION_REFID = new ElementDefImpl( SECTIONCORRELATION, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SECTIONCORRELATION_CORRELATIONNAME = new ElementDefImpl( SECTIONCORRELATION, "CorrelationName", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SECTIONCORRELATION_CORRELATIONTYPE = new ElementDefImpl( SECTIONCORRELATION, "CorrelationType", null, 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		StudentDTD.SECTIONCORRELATION_CORRELATIONSECTIONLIST = new ElementDefImpl( SECTIONCORRELATION, "CorrelationSectionList", null, 4, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		SECTIONCORRELATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SECTIONCORRELATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SECTIONCORRELATION_SIF_METADATA = new ElementDefImpl( SECTIONCORRELATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
+
 		// <SectionInfo> fields (15 entries)
-		StudentDTD.SECTIONINFO_REFID = new ElementDefImpl( SECTIONINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SECTIONINFO_SCHOOLCOURSEINFOREFID = new ElementDefImpl( SECTIONINFO, "SchoolCourseInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SECTIONINFO_SCHOOLYEAR = new ElementDefImpl( SECTIONINFO, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.SECTIONINFO_SCHEDULEINFOLIST = new ElementDefImpl( SECTIONINFO, "ScheduleInfoList", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SECTIONINFO_REFID = new ElementDefImpl( SECTIONINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SECTIONINFO_SCHOOLCOURSEINFOREFID = new ElementDefImpl( SECTIONINFO, "SchoolCourseInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SECTIONINFO_SCHOOLYEAR = new ElementDefImpl( SECTIONINFO, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.SECTIONINFO_SCHEDULEINFOLIST = new ElementDefImpl( SECTIONINFO, "ScheduleInfoList", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SECTIONINFO_SCHEDULEINFOLIST.DefineVersionInfo(SifVersion.SIF20, "ScheduleInfoList", 6, 0); // (Sif 20 alias)
-		StudentDTD.SECTIONINFO_MEDIUMOFINSTRUCTION = new ElementDefImpl( SECTIONINFO, "MediumOfInstruction", null, 4, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SECTIONINFO_MEDIUMOFINSTRUCTION = new ElementDefImpl( SECTIONINFO, "MediumOfInstruction", null, 4, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SECTIONINFO_MEDIUMOFINSTRUCTION.DefineVersionInfo(SifVersion.SIF20, "MediumOfInstruction", 7, 0); // (Sif 20 alias)
-		StudentDTD.SECTIONINFO_LOCALID = new ElementDefImpl( SECTIONINFO, "LocalId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SECTIONINFO_DESCRIPTION = new ElementDefImpl( SECTIONINFO, "Description", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SECTIONINFO_LANGUAGEOFINSTRUCTION = new ElementDefImpl( SECTIONINFO, "LanguageOfInstruction", null, 5, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SECTIONINFO_LOCALID = new ElementDefImpl( SECTIONINFO, "LocalId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SECTIONINFO_DESCRIPTION = new ElementDefImpl( SECTIONINFO, "Description", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SECTIONINFO_LANGUAGEOFINSTRUCTION = new ElementDefImpl( SECTIONINFO, "LanguageOfInstruction", null, 5, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SECTIONINFO_LANGUAGEOFINSTRUCTION.DefineVersionInfo(SifVersion.SIF20, "LanguageOfInstruction", 8, 0); // (Sif 20 alias)
-		StudentDTD.SECTIONINFO_LOCATIONOFINSTRUCTION = new ElementDefImpl( SECTIONINFO, "LocationOfInstruction", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SECTIONINFO_LOCATIONOFINSTRUCTION = new ElementDefImpl( SECTIONINFO, "LocationOfInstruction", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SECTIONINFO_LOCATIONOFINSTRUCTION.DefineVersionInfo(SifVersion.SIF20, "LocationOfInstruction", 9, 0); // (Sif 20 alias)
-		StudentDTD.SECTIONINFO_SCHOOLCOURSEINFOOVERRIDE = new ElementDefImpl( SECTIONINFO, "SchoolCourseInfoOverride", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.SECTIONINFO_SCHOOLCOURSEINFOOVERRIDE = new ElementDefImpl( SECTIONINFO, "SchoolCourseInfoOverride", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.SECTIONINFO_SCHOOLCOURSEINFOOVERRIDE.DefineVersionInfo(SifVersion.SIF20, "SchoolCourseInfoOverride", 11, 0); // (Sif 20 alias)
-		StudentDTD.SECTIONINFO_SUMMERSCHOOL = new ElementDefImpl( SECTIONINFO, "SummerSchool", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SECTIONINFO_COURSESECTIONCODE = new ElementDefImpl( SECTIONINFO, "CourseSectionCode", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SECTIONINFO_SECTIONCODE = new ElementDefImpl( SECTIONINFO, "SectionCode", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SECTIONINFO_COUNTFORATTENDANCE = new ElementDefImpl( SECTIONINFO, "CountForAttendance", null, 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.SECTIONINFO_BELLSCHEDULEREFID = new ElementDefImpl( SECTIONINFO, "BellScheduleRefId", null, 15, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		SECTIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SECTIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SECTIONINFO_SIF_METADATA = new ElementDefImpl( SECTIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.SECTIONINFO_SUMMERSCHOOL = new ElementDefImpl( SECTIONINFO, "SummerSchool", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SECTIONINFO_COURSESECTIONCODE = new ElementDefImpl( SECTIONINFO, "CourseSectionCode", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SECTIONINFO_SECTIONCODE = new ElementDefImpl( SECTIONINFO, "SectionCode", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SECTIONINFO_COUNTFORATTENDANCE = new ElementDefImpl( SECTIONINFO, "CountForAttendance", null, 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.SECTIONINFO_BELLSCHEDULEREFID = new ElementDefImpl( SECTIONINFO, "BellScheduleRefId", null, 15, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		SECTIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SECTIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SECTIONINFO_SIF_METADATA = new ElementDefImpl( SECTIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SectionRoomList> fields (1 entries)
-		StudentDTD.SECTIONROOMLIST_ROOMINFOREFID = new ElementDefImpl( SECTIONROOMLIST, "RoomInfoRefId", "~XPathSurrogate{SectionRoom/@RoomInfoRefId=.}SectionRoom", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.SECTIONROOMLIST_ROOMINFOREFID = new ElementDefImpl( SECTIONROOMLIST, "RoomInfoRefId", "~XPathSurrogate{SectionRoom/@RoomInfoRefId=.}SectionRoom", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.SECTIONROOMLIST_ROOMINFOREFID.DefineVersionInfo(SifVersion.SIF20, "RoomInfoRefId", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <StaffAssigned> fields (2 entries)
@@ -2299,486 +2506,518 @@ namespace OpenADK.Library.us.Student
 		StudentDTD.STAFFASSIGNED_STAFFPERSONALREFID = new ElementDefImpl( STAFFASSIGNED, "StaffPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
 
 		// <StaffAssignment> fields (16 entries)
-		StudentDTD.STAFFASSIGNMENT_REFID = new ElementDefImpl( STAFFASSIGNMENT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STAFFASSIGNMENT_SCHOOLINFOREFID = new ElementDefImpl( STAFFASSIGNMENT, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STAFFASSIGNMENT_SCHOOLYEAR = new ElementDefImpl( STAFFASSIGNMENT, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.STAFFASSIGNMENT_STAFFPERSONALREFID = new ElementDefImpl( STAFFASSIGNMENT, "StaffPersonalRefId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STAFFASSIGNMENT_DESCRIPTION = new ElementDefImpl( STAFFASSIGNMENT, "Description", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STAFFASSIGNMENT_PRIMARYASSIGNMENT = new ElementDefImpl( STAFFASSIGNMENT, "PrimaryAssignment", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STAFFASSIGNMENT_JOBSTARTDATE = new ElementDefImpl( STAFFASSIGNMENT, "JobStartDate", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		StudentDTD.STAFFASSIGNMENT_REFID = new ElementDefImpl( STAFFASSIGNMENT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFASSIGNMENT_SCHOOLINFOREFID = new ElementDefImpl( STAFFASSIGNMENT, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFASSIGNMENT_SCHOOLYEAR = new ElementDefImpl( STAFFASSIGNMENT, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.STAFFASSIGNMENT_STAFFPERSONALREFID = new ElementDefImpl( STAFFASSIGNMENT, "StaffPersonalRefId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFASSIGNMENT_DESCRIPTION = new ElementDefImpl( STAFFASSIGNMENT, "Description", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFASSIGNMENT_PRIMARYASSIGNMENT = new ElementDefImpl( STAFFASSIGNMENT, "PrimaryAssignment", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFASSIGNMENT_JOBSTARTDATE = new ElementDefImpl( STAFFASSIGNMENT, "JobStartDate", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		StudentDTD.STAFFASSIGNMENT_JOBSTARTDATE.DefineVersionInfo(SifVersion.SIF20, "JobStartDate", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STAFFASSIGNMENT_JOBENDDATE = new ElementDefImpl( STAFFASSIGNMENT, "JobEndDate", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		StudentDTD.STAFFASSIGNMENT_JOBENDDATE = new ElementDefImpl( STAFFASSIGNMENT, "JobEndDate", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		StudentDTD.STAFFASSIGNMENT_JOBENDDATE.DefineVersionInfo(SifVersion.SIF20, "JobEndDate", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STAFFASSIGNMENT_JOBFTE = new ElementDefImpl( STAFFASSIGNMENT, "JobFTE", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		StudentDTD.STAFFASSIGNMENT_JOBFTE = new ElementDefImpl( STAFFASSIGNMENT, "JobFTE", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		StudentDTD.STAFFASSIGNMENT_JOBFTE.DefineVersionInfo(SifVersion.SIF20, "JobFTE", 9, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STAFFASSIGNMENT_JOBFUNCTION = new ElementDefImpl( STAFFASSIGNMENT, "JobFunction", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.STAFFASSIGNMENT_JOBFUNCTION = new ElementDefImpl( STAFFASSIGNMENT, "JobFunction", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.STAFFASSIGNMENT_JOBFUNCTION.DefineVersionInfo(SifVersion.SIF20, "JobFunction", 10, 0); // (Sif 20 alias)
-		StudentDTD.STAFFASSIGNMENT_TEACHINGASSIGNMENT = new ElementDefImpl( STAFFASSIGNMENT, "TeachingAssignment", null, 10, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.STAFFASSIGNMENT_TEACHINGASSIGNMENT = new ElementDefImpl( STAFFASSIGNMENT, "TeachingAssignment", null, 10, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.STAFFASSIGNMENT_TEACHINGASSIGNMENT.DefineVersionInfo(SifVersion.SIF20, "TeachingAssignment", 11, 0); // (Sif 20 alias)
 		StudentDTD.STAFFASSIGNMENT_GRADECLASSIFICATION = new ElementDefImpl( STAFFASSIGNMENT, "GradeClassification", null, 11, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF15r1 );
-		StudentDTD.STAFFASSIGNMENT_GRADELEVELS = new ElementDefImpl( STAFFASSIGNMENT, "GradeLevels", null, 12, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.STAFFASSIGNMENT_ITINERANTTEACHER = new ElementDefImpl( STAFFASSIGNMENT, "ItinerantTeacher", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STAFFASSIGNMENT_GRADELEVELS = new ElementDefImpl( STAFFASSIGNMENT, "GradeLevels", null, 12, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.STAFFASSIGNMENT_ITINERANTTEACHER = new ElementDefImpl( STAFFASSIGNMENT, "ItinerantTeacher", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STAFFASSIGNMENT_ITINERANTTEACHER.DefineVersionInfo(SifVersion.SIF20, "ItinerantTeacher", 13, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STAFFASSIGNMENT_INSTRUCTIONALLEVEL = new ElementDefImpl( STAFFASSIGNMENT, "InstructionalLevel", "~XPathSurrogate{InstructionLevel=@Code}InstructionLevel", 13, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.STAFFASSIGNMENT_INSTRUCTIONALLEVEL = new ElementDefImpl( STAFFASSIGNMENT, "InstructionalLevel", "~XPathSurrogate{InstructionLevel=@Code}InstructionLevel", 13, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.STAFFASSIGNMENT_INSTRUCTIONALLEVEL.DefineVersionInfo(SifVersion.SIF20, "InstructionalLevel", 14, 0); // (Sif 20 alias)
-		StudentDTD.STAFFASSIGNMENT_EMPLOYEEPERSONALREFID = new ElementDefImpl( STAFFASSIGNMENT, "EmployeePersonalRefId", "~XPathSurrogate{HRId/@EmployeePersonalRefId=.}HRId", 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STAFFASSIGNMENT_EMPLOYEEPERSONALREFID = new ElementDefImpl( STAFFASSIGNMENT, "EmployeePersonalRefId", "~XPathSurrogate{HRId/@EmployeePersonalRefId=.}HRId", 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STAFFASSIGNMENT_EMPLOYEEPERSONALREFID.DefineVersionInfo(SifVersion.SIF20, "EmployeePersonalRefId", 15, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		STAFFASSIGNMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STAFFASSIGNMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STAFFASSIGNMENT_SIF_METADATA = new ElementDefImpl( STAFFASSIGNMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		STAFFASSIGNMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STAFFASSIGNMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STAFFASSIGNMENT_SIF_METADATA = new ElementDefImpl( STAFFASSIGNMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
+
+		// <StaffEvaluation> fields (15 entries)
+		StudentDTD.STAFFEVALUATION_STAFFPERSONALREFID = new ElementDefImpl( STAFFEVALUATION, "StaffPersonalRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFEVALUATION_SCHOOLINFOREFID = new ElementDefImpl( STAFFEVALUATION, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFEVALUATION_NCESID = new ElementDefImpl( STAFFEVALUATION, "NCESId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFEVALUATION_EVALUATORSTATEPROVINCEID = new ElementDefImpl( STAFFEVALUATION, "EvaluatorStateProvinceId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFEVALUATION_BARGAININGUNIT = new ElementDefImpl( STAFFEVALUATION, "BargainingUnit", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFEVALUATION_EVALUATIONCYCLENAME = new ElementDefImpl( STAFFEVALUATION, "EvaluationCycleName", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFEVALUATION_EVALUATIONPRECONFERENCEDATE = new ElementDefImpl( STAFFEVALUATION, "EvaluationPreconferenceDate", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STAFFEVALUATION_PROJECTEDEVALUATIONDATE = new ElementDefImpl( STAFFEVALUATION, "ProjectedEvaluationDate", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STAFFEVALUATION_EVALUATIONDATE = new ElementDefImpl( STAFFEVALUATION, "EvaluationDate", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STAFFEVALUATION_EVALUATIONPOSTCONFERENCEDATE = new ElementDefImpl( STAFFEVALUATION, "EvaluationPostconferenceDate", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STAFFEVALUATION_EVALUATIONSYSTEM = new ElementDefImpl( STAFFEVALUATION, "EvaluationSystem", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFEVALUATION_EVALUATIONPARTS = new ElementDefImpl( STAFFEVALUATION, "EvaluationParts", null, 12, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		StudentDTD.STAFFEVALUATION_EVALUATIONHOLISTICSCORE = new ElementDefImpl( STAFFEVALUATION, "EvaluationHolisticScore", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFEVALUATION_EVALUATIONHOLISTICSCALE = new ElementDefImpl( STAFFEVALUATION, "EvaluationHolisticScale", null, 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFEVALUATION_EVALUATIONRECOMMENDATION = new ElementDefImpl( STAFFEVALUATION, "EvaluationRecommendation", null, 15, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		STAFFEVALUATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STAFFEVALUATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STAFFEVALUATION_SIF_METADATA = new ElementDefImpl( STAFFEVALUATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StaffList> fields (1 entries)
-		StudentDTD.STAFFLIST_STAFFPERSONALREFID = new ElementDefImpl( STAFFLIST, "StaffPersonalRefId", "~XPathSurrogate{Staff/@StaffPersonalRefId=.}Staff", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STAFFLIST_STAFFPERSONALREFID = new ElementDefImpl( STAFFLIST, "StaffPersonalRefId", "~XPathSurrogate{Staff/@StaffPersonalRefId=.}Staff", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STAFFLIST_STAFFPERSONALREFID.DefineVersionInfo(SifVersion.SIF20, "StaffPersonalRefId", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <StaffPersonal> fields (13 entries)
-		StudentDTD.STAFFPERSONAL_REFID = new ElementDefImpl( STAFFPERSONAL, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STAFFPERSONAL_OTHERIDLIST = new ElementDefImpl( STAFFPERSONAL, "OtherIdList", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STAFFPERSONAL_REFID = new ElementDefImpl( STAFFPERSONAL, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFPERSONAL_OTHERIDLIST = new ElementDefImpl( STAFFPERSONAL, "OtherIdList", null, 2, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STAFFPERSONAL_OTHERIDLIST.DefineVersionInfo(SifVersion.SIF15r1, "OtherIdList", 5, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		StudentDTD.STAFFPERSONAL_OTHERIDLIST.DefineVersionInfo(SifVersion.SIF20, "OtherIdList", 5, 0); // (Sif 20 alias)
-		StudentDTD.STAFFPERSONAL_LOCALID = new ElementDefImpl( STAFFPERSONAL, "LocalId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STAFFPERSONAL_LOCALID = new ElementDefImpl( STAFFPERSONAL, "LocalId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STAFFPERSONAL_LOCALID.DefineVersionInfo(SifVersion.SIF20, "LocalId", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STAFFPERSONAL_NAME = new ElementDefImpl( STAFFPERSONAL, "Name", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STAFFPERSONAL_NAME = new ElementDefImpl( STAFFPERSONAL, "Name", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STAFFPERSONAL_NAME.DefineVersionInfo(SifVersion.SIF15r1, "Name", 6, 0); // (Sif 15r1 alias)
-		StudentDTD.STAFFPERSONAL_STATEPROVINCEID = new ElementDefImpl( STAFFPERSONAL, "StateProvinceId", "StatePrId", 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STAFFPERSONAL_STATEPROVINCEID = new ElementDefImpl( STAFFPERSONAL, "StateProvinceId", "StatePrId", 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STAFFPERSONAL_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STAFFPERSONAL_ELECTRONICIDLIST = new ElementDefImpl( STAFFPERSONAL, "ElectronicIdList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.STAFFPERSONAL_ELECTRONICIDLIST = new ElementDefImpl( STAFFPERSONAL, "ElectronicIdList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.STAFFPERSONAL_ELECTRONICIDLIST.DefineVersionInfo(SifVersion.SIF20, "ElectronicIdList", 4, 0); // (Sif 20 alias)
-		StudentDTD.STAFFPERSONAL_TITLE = new ElementDefImpl( STAFFPERSONAL, "Title", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STAFFPERSONAL_TITLE = new ElementDefImpl( STAFFPERSONAL, "Title", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STAFFPERSONAL_TITLE.DefineVersionInfo(SifVersion.SIF15r1, "Title", 7, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.STAFFPERSONAL_TITLE.DefineVersionInfo(SifVersion.SIF20, "Title", 9, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STAFFPERSONAL_EMAILLIST = new ElementDefImpl( STAFFPERSONAL, "EmailList", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STAFFPERSONAL_EMAILLIST = new ElementDefImpl( STAFFPERSONAL, "EmailList", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STAFFPERSONAL_EMAILLIST.DefineVersionInfo(SifVersion.SIF15r1, "EmailList", 8, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		StudentDTD.STAFFPERSONAL_EMAILLIST.DefineVersionInfo(SifVersion.SIF20, "EmailList", 12, 0); // (Sif 20 alias)
-		StudentDTD.STAFFPERSONAL_DEMOGRAPHICS = new ElementDefImpl( STAFFPERSONAL, "Demographics", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STAFFPERSONAL_DEMOGRAPHICS = new ElementDefImpl( STAFFPERSONAL, "Demographics", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STAFFPERSONAL_DEMOGRAPHICS.DefineVersionInfo(SifVersion.SIF15r1, "Demographics", 9, 0); // (Sif 15r1 alias)
 		StudentDTD.STAFFPERSONAL_DEMOGRAPHICS.DefineVersionInfo(SifVersion.SIF20, "Demographics", 8, 0); // (Sif 20 alias)
-		StudentDTD.STAFFPERSONAL_OTHERNAMES = new ElementDefImpl( STAFFPERSONAL, "OtherNames", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.STAFFPERSONAL_ADDRESSLIST = new ElementDefImpl( STAFFPERSONAL, "AddressList", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STAFFPERSONAL_OTHERNAMES = new ElementDefImpl( STAFFPERSONAL, "OtherNames", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.STAFFPERSONAL_ADDRESSLIST = new ElementDefImpl( STAFFPERSONAL, "AddressList", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STAFFPERSONAL_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF15r1, "AddressList", 10, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		StudentDTD.STAFFPERSONAL_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF20, "AddressList", 10, 0); // (Sif 20 alias)
-		StudentDTD.STAFFPERSONAL_PHONENUMBERLIST = new ElementDefImpl( STAFFPERSONAL, "PhoneNumberList", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STAFFPERSONAL_PHONENUMBERLIST = new ElementDefImpl( STAFFPERSONAL, "PhoneNumberList", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STAFFPERSONAL_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF15r1, "PhoneNumberList", 11, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		StudentDTD.STAFFPERSONAL_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF20, "PhoneNumberList", 11, 0); // (Sif 20 alias)
-		StudentDTD.STAFFPERSONAL_EMPLOYEEPERSONALREFID = new ElementDefImpl( STAFFPERSONAL, "EmployeePersonalRefId", "~XPathSurrogate{EmployeeLink/@EmployeePersonalRefId=.}EmployeeLink", 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STAFFPERSONAL_EMPLOYEEPERSONALREFID = new ElementDefImpl( STAFFPERSONAL, "EmployeePersonalRefId", "~XPathSurrogate{EmployeeLink/@EmployeePersonalRefId=.}EmployeeLink", 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STAFFPERSONAL_EMPLOYEEPERSONALREFID.DefineVersionInfo(SifVersion.SIF20, "EmployeePersonalRefId", 13, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		STAFFPERSONAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STAFFPERSONAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STAFFPERSONAL_SIF_METADATA = new ElementDefImpl( STAFFPERSONAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		STAFFPERSONAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STAFFPERSONAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STAFFPERSONAL_SIF_METADATA = new ElementDefImpl( STAFFPERSONAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StaffPersonalRefId> fields (0 entries)
 
+		// <StaffSectionAssignment> fields (8 entries)
+		StudentDTD.STAFFSECTIONASSIGNMENT_REFID = new ElementDefImpl( STAFFSECTIONASSIGNMENT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFSECTIONASSIGNMENT_STAFFPERSONALREFID = new ElementDefImpl( STAFFSECTIONASSIGNMENT, "StaffPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFSECTIONASSIGNMENT_SECTIONINFOREFID = new ElementDefImpl( STAFFSECTIONASSIGNMENT, "SectionInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFSECTIONASSIGNMENT_ASSIGNMENTSTARTDATE = new ElementDefImpl( STAFFSECTIONASSIGNMENT, "AssignmentStartDate", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		StudentDTD.STAFFSECTIONASSIGNMENT_ASSIGNMENTENDDATE = new ElementDefImpl( STAFFSECTIONASSIGNMENT, "AssignmentEndDate", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		StudentDTD.STAFFSECTIONASSIGNMENT_TEACHEROFRECORD = new ElementDefImpl( STAFFSECTIONASSIGNMENT, "TeacherOfRecord", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STAFFSECTIONASSIGNMENT_ROLES = new ElementDefImpl( STAFFSECTIONASSIGNMENT, "Roles", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		StudentDTD.STAFFSECTIONASSIGNMENT_PERCENTRESPONSIBLE = new ElementDefImpl( STAFFSECTIONASSIGNMENT, "PercentResponsible", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		STAFFSECTIONASSIGNMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STAFFSECTIONASSIGNMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STAFFSECTIONASSIGNMENT_SIF_METADATA = new ElementDefImpl( STAFFSECTIONASSIGNMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
+
 		// <StudentActivityInfo> fields (8 entries)
-		StudentDTD.STUDENTACTIVITYINFO_REFID = new ElementDefImpl( STUDENTACTIVITYINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYINFO_TITLE = new ElementDefImpl( STUDENTACTIVITYINFO, "Title", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYINFO_DESCRIPTION = new ElementDefImpl( STUDENTACTIVITYINFO, "Description", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYINFO_STUDENTACTIVITY = new ElementDefAlias( STUDENTACTIVITYINFO, "StudentActivity", null, "StudentActivityType", 4, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		StudentDTD.STUDENTACTIVITYINFO_STUDENTACTIVITYLEVEL = new ElementDefImpl( STUDENTACTIVITYINFO, "StudentActivityLevel", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYINFO_GRADELEVELS = new ElementDefImpl( STUDENTACTIVITYINFO, "GradeLevels", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		StudentDTD.STUDENTACTIVITYINFO_CURRICULARSTATUS = new ElementDefImpl( STUDENTACTIVITYINFO, "CurricularStatus", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYINFO_LOCATION = new ElementDefAlias( STUDENTACTIVITYINFO, "Location", null, "StudentActivityInfoLocation", 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		StudentDTD.STUDENTACTIVITYINFO_REFID = new ElementDefImpl( STUDENTACTIVITYINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYINFO_TITLE = new ElementDefImpl( STUDENTACTIVITYINFO, "Title", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYINFO_DESCRIPTION = new ElementDefImpl( STUDENTACTIVITYINFO, "Description", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYINFO_STUDENTACTIVITY = new ElementDefAlias( STUDENTACTIVITYINFO, "StudentActivity", null, "StudentActivityType", 4, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		StudentDTD.STUDENTACTIVITYINFO_STUDENTACTIVITYLEVEL = new ElementDefImpl( STUDENTACTIVITYINFO, "StudentActivityLevel", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYINFO_GRADELEVELS = new ElementDefImpl( STUDENTACTIVITYINFO, "GradeLevels", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		StudentDTD.STUDENTACTIVITYINFO_CURRICULARSTATUS = new ElementDefImpl( STUDENTACTIVITYINFO, "CurricularStatus", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYINFO_LOCATION = new ElementDefAlias( STUDENTACTIVITYINFO, "Location", null, "StudentActivityInfoLocation", 8, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <StudentActivityInfoLocation> fields (3 entries)
-		StudentDTD.STUDENTACTIVITYINFOLOCATION_TYPE = new ElementDefImpl( STUDENTACTIVITYINFOLOCATION, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYINFOLOCATION_LOCATIONNAME = new ElementDefImpl( STUDENTACTIVITYINFOLOCATION, "LocationName", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYINFOLOCATION_LOCATIONREFID = new ElementDefAlias( STUDENTACTIVITYINFOLOCATION, "LocationRefId", null, "StudentActivityInfoLocationRefId", 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYINFOLOCATION_TYPE = new ElementDefImpl( STUDENTACTIVITYINFOLOCATION, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYINFOLOCATION_LOCATIONNAME = new ElementDefImpl( STUDENTACTIVITYINFOLOCATION, "LocationName", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYINFOLOCATION_LOCATIONREFID = new ElementDefAlias( STUDENTACTIVITYINFOLOCATION, "LocationRefId", null, "StudentActivityInfoLocationRefId", 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <StudentActivityInfoLocationRefId> fields (1 entries)
-		StudentDTD.STUDENTACTIVITYINFOLOCATIONREFID_SIF_REFOBJECT = new ElementDefImpl( STUDENTACTIVITYINFOLOCATIONREFID, "SIF_RefObject", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYINFOLOCATIONREFID_SIF_REFOBJECT = new ElementDefImpl( STUDENTACTIVITYINFOLOCATIONREFID, "SIF_RefObject", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <StudentActivityParticipation> fields (9 entries)
-		StudentDTD.STUDENTACTIVITYPARTICIPATION_REFID = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYPARTICIPATION_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYPARTICIPATION_STUDENTACTIVITYINFOREFID = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "StudentActivityInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYPARTICIPATION_SCHOOLYEAR = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "SchoolYear", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.STUDENTACTIVITYPARTICIPATION_PARTICIPATIONCOMMENT = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "ParticipationComment", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYPARTICIPATION_STARTDATE = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "StartDate", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.STUDENTACTIVITYPARTICIPATION_ENDDATE = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "EndDate", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.STUDENTACTIVITYPARTICIPATION_ROLE = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "Role", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYPARTICIPATION_RECOGNITIONLIST = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "RecognitionList", null, 9, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		StudentDTD.STUDENTACTIVITYPARTICIPATION_REFID = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYPARTICIPATION_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYPARTICIPATION_STUDENTACTIVITYINFOREFID = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "StudentActivityInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYPARTICIPATION_SCHOOLYEAR = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "SchoolYear", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.STUDENTACTIVITYPARTICIPATION_PARTICIPATIONCOMMENT = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "ParticipationComment", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYPARTICIPATION_STARTDATE = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "StartDate", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STUDENTACTIVITYPARTICIPATION_ENDDATE = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "EndDate", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STUDENTACTIVITYPARTICIPATION_ROLE = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "Role", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYPARTICIPATION_RECOGNITIONLIST = new ElementDefImpl( STUDENTACTIVITYPARTICIPATION, "RecognitionList", null, 9, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <StudentActivityType> fields (2 entries)
-		StudentDTD.STUDENTACTIVITYTYPE_CODE = new ElementDefImpl( STUDENTACTIVITYTYPE, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTACTIVITYTYPE_OTHERCODELIST = new ElementDefImpl( STUDENTACTIVITYTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		StudentDTD.STUDENTACTIVITYTYPE_CODE = new ElementDefImpl( STUDENTACTIVITYTYPE, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTACTIVITYTYPE_OTHERCODELIST = new ElementDefImpl( STUDENTACTIVITYTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <StudentAddress> fields (3 entries)
-		StudentDTD.STUDENTADDRESS_PICKUPORDROPOFF = new ElementDefImpl( STUDENTADDRESS, "PickupOrDropoff", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTADDRESS_DAYOFWEEK = new ElementDefImpl( STUDENTADDRESS, "DayOfWeek", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTADDRESS_ADDRESS = new ElementDefImpl( STUDENTADDRESS, "Address", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTADDRESS_PICKUPORDROPOFF = new ElementDefImpl( STUDENTADDRESS, "PickupOrDropoff", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTADDRESS_DAYOFWEEK = new ElementDefImpl( STUDENTADDRESS, "DayOfWeek", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTADDRESS_ADDRESS = new ElementDefImpl( STUDENTADDRESS, "Address", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <StudentAddressList> fields (3 entries)
 		StudentDTD.STUDENTADDRESSLIST_PICKUPORDROPOFF = new ElementDefImpl( STUDENTADDRESSLIST, "PickupOrDropoff", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
 		StudentDTD.STUDENTADDRESSLIST_DAYOFWEEK = new ElementDefImpl( STUDENTADDRESSLIST, "DayOfWeek", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		StudentDTD.STUDENTADDRESSLIST_ADDRESS = new ElementDefImpl( STUDENTADDRESSLIST, "Address", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTADDRESSLIST_ADDRESS = new ElementDefImpl( STUDENTADDRESSLIST, "Address", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTADDRESSLIST_ADDRESS.DefineVersionInfo(SifVersion.SIF20, "Address", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <StudentAttendance> fields (2 entries)
-		StudentDTD.STUDENTATTENDANCE_COUNTSTOWARDATTENDANCE = new ElementDefImpl( STUDENTATTENDANCE, "CountsTowardAttendance", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTATTENDANCE_ATTENDANCEVALUE = new ElementDefImpl( STUDENTATTENDANCE, "AttendanceValue", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		StudentDTD.STUDENTATTENDANCE_COUNTSTOWARDATTENDANCE = new ElementDefImpl( STUDENTATTENDANCE, "CountsTowardAttendance", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTATTENDANCE_ATTENDANCEVALUE = new ElementDefImpl( STUDENTATTENDANCE, "AttendanceValue", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <StudentAttendanceSummary> fields (15 entries)
-		StudentDTD.STUDENTATTENDANCESUMMARY_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "StudentPersonalRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTATTENDANCESUMMARY_SCHOOLINFOREFID = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTATTENDANCESUMMARY_SCHOOLYEAR = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.STUDENTATTENDANCESUMMARY_STARTDATE = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "StartDate", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.STUDENTATTENDANCESUMMARY_STARTDAY = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "StartDay", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.STUDENTATTENDANCESUMMARY_ENDDATE = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "EndDate", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.STUDENTATTENDANCESUMMARY_ENDDAY = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "EndDay", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.STUDENTATTENDANCESUMMARY_RESIDENT = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "Resident", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTATTENDANCESUMMARY_FTE = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "FTE", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.STUDENTATTENDANCESUMMARY_DAYSATTENDED = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "DaysAttended", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.STUDENTATTENDANCESUMMARY_EXCUSEDABSENCES = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "ExcusedAbsences", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.STUDENTATTENDANCESUMMARY_UNEXCUSEDABSENCES = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "UnexcusedAbsences", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.STUDENTATTENDANCESUMMARY_DAYSTARDY = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "DaysTardy", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.STUDENTATTENDANCESUMMARY_DAYSINMEMBERSHIP = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "DaysInMembership", null, 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.STUDENTATTENDANCESUMMARY_STUDENTSCHOOLENROLLMENTREFID = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "StudentSchoolEnrollmentRefId", null, 15, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTATTENDANCESUMMARY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTATTENDANCESUMMARY_SIF_METADATA = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.STUDENTATTENDANCESUMMARY_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "StudentPersonalRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTATTENDANCESUMMARY_SCHOOLINFOREFID = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTATTENDANCESUMMARY_SCHOOLYEAR = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.STUDENTATTENDANCESUMMARY_STARTDATE = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "StartDate", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STUDENTATTENDANCESUMMARY_STARTDAY = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "StartDay", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.STUDENTATTENDANCESUMMARY_ENDDATE = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "EndDate", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STUDENTATTENDANCESUMMARY_ENDDAY = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "EndDay", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.STUDENTATTENDANCESUMMARY_RESIDENT = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "Resident", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTATTENDANCESUMMARY_FTE = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "FTE", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.STUDENTATTENDANCESUMMARY_DAYSATTENDED = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "DaysAttended", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.STUDENTATTENDANCESUMMARY_EXCUSEDABSENCES = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "ExcusedAbsences", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.STUDENTATTENDANCESUMMARY_UNEXCUSEDABSENCES = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "UnexcusedAbsences", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.STUDENTATTENDANCESUMMARY_DAYSTARDY = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "DaysTardy", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.STUDENTATTENDANCESUMMARY_DAYSINMEMBERSHIP = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "DaysInMembership", null, 14, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.STUDENTATTENDANCESUMMARY_STUDENTSCHOOLENROLLMENTREFID = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "StudentSchoolEnrollmentRefId", null, 15, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTATTENDANCESUMMARY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTATTENDANCESUMMARY_SIF_METADATA = new ElementDefImpl( STUDENTATTENDANCESUMMARY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentContact> fields (16 entries)
-		StudentDTD.STUDENTCONTACT_REFID = new ElementDefImpl( STUDENTCONTACT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTCONTACT_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTCONTACT, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTCONTACT_REFID = new ElementDefImpl( STUDENTCONTACT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTCONTACT_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTCONTACT, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTCONTACT_TYPE = new ElementDefImpl( STUDENTCONTACT, "Type", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		StudentDTD.STUDENTCONTACT_LOCALID = new ElementDefImpl( STUDENTCONTACT, "LocalId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTCONTACT_NAME = new ElementDefImpl( STUDENTCONTACT, "Name", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTCONTACT_LOCALID = new ElementDefImpl( STUDENTCONTACT, "LocalId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTCONTACT_NAME = new ElementDefImpl( STUDENTCONTACT, "Name", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTCONTACT_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 5, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTCONTACT_PHONENUMBERLIST = new ElementDefImpl( STUDENTCONTACT, "PhoneNumberList", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTCONTACT_PHONENUMBERLIST = new ElementDefImpl( STUDENTCONTACT, "PhoneNumberList", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTCONTACT_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF20, "PhoneNumberList", 9, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTCONTACT_OTHERNAMES = new ElementDefImpl( STUDENTCONTACT, "OtherNames", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.STUDENTCONTACT_EMAILLIST = new ElementDefImpl( STUDENTCONTACT, "EmailList", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTCONTACT_OTHERNAMES = new ElementDefImpl( STUDENTCONTACT, "OtherNames", null, 6, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.STUDENTCONTACT_EMAILLIST = new ElementDefImpl( STUDENTCONTACT, "EmailList", null, 6, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTCONTACT_EMAILLIST.DefineVersionInfo(SifVersion.SIF20, "EmailList", 10, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTCONTACT_DEMOGRAPHICS = new ElementDefImpl( STUDENTCONTACT, "Demographics", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		StudentDTD.STUDENTCONTACT_ADDRESSLIST = new ElementDefImpl( STUDENTCONTACT, "AddressList", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTCONTACT_DEMOGRAPHICS = new ElementDefImpl( STUDENTCONTACT, "Demographics", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		StudentDTD.STUDENTCONTACT_ADDRESSLIST = new ElementDefImpl( STUDENTCONTACT, "AddressList", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTCONTACT_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF20, "AddressList", 8, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTCONTACT_OTHERIDLIST = new ElementDefImpl( STUDENTCONTACT, "OtherIdList", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTCONTACT_OTHERIDLIST = new ElementDefImpl( STUDENTCONTACT, "OtherIdList", null, 9, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTCONTACT_OTHERIDLIST.DefineVersionInfo(SifVersion.SIF20, "OtherIdList", 4, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTCONTACT_RELATIONSHIP = new ElementDefImpl( STUDENTCONTACT, "Relationship", null, 10, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTCONTACT_RELATIONSHIP = new ElementDefImpl( STUDENTCONTACT, "Relationship", null, 10, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTCONTACT_RELATIONSHIP.DefineVersionInfo(SifVersion.SIF20, "Relationship", 11, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTCONTACT_EMPLOYERTYPE = new ElementDefImpl( STUDENTCONTACT, "EmployerType", "~XPathSurrogate{EmployerType/@Code=.}", 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTCONTACT_EMPLOYERTYPE = new ElementDefImpl( STUDENTCONTACT, "EmployerType", "~XPathSurrogate{EmployerType/@Code=.}", 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTCONTACT_EMPLOYERTYPE.DefineVersionInfo(SifVersion.SIF20, "EmployerType", 12, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTCONTACT_EDUCATIONALLEVEL = new ElementDefImpl( STUDENTCONTACT, "EducationalLevel", "~XPathSurrogate{EducationalLevel/@Code=.}", 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTCONTACT_EDUCATIONALLEVEL = new ElementDefImpl( STUDENTCONTACT, "EducationalLevel", "~XPathSurrogate{EducationalLevel/@Code=.}", 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTCONTACT_EDUCATIONALLEVEL.DefineVersionInfo(SifVersion.SIF20, "EducationalLevel", 13, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTCONTACT_CONTACTFLAGS = new ElementDefImpl( STUDENTCONTACT, "ContactFlags", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTCONTACT_CONTACTFLAGS = new ElementDefImpl( STUDENTCONTACT, "ContactFlags", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTCONTACT_CONTACTFLAGS.DefineVersionInfo(SifVersion.SIF20, "ContactFlags", 14, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTCONTACT_CONTACTSEQUENCE = new ElementDefImpl( STUDENTCONTACT, "ContactSequence", null, 15, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		STUDENTCONTACT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTCONTACT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTCONTACT_SIF_METADATA = new ElementDefImpl( STUDENTCONTACT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.STUDENTCONTACT_CONTACTSEQUENCE = new ElementDefImpl( STUDENTCONTACT, "ContactSequence", null, 15, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		STUDENTCONTACT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTCONTACT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTCONTACT_SIF_METADATA = new ElementDefImpl( STUDENTCONTACT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentContactPersonal> fields (5 entries)
-		StudentDTD.STUDENTCONTACTPERSONAL_REFID = new ElementDefImpl( STUDENTCONTACTPERSONAL, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTCONTACTPERSONAL_PERSONINFO = new ElementDefImpl( STUDENTCONTACTPERSONAL, "PersonInfo", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		StudentDTD.STUDENTCONTACTPERSONAL_EMPLOYERTYPE = new ElementDefImpl( STUDENTCONTACTPERSONAL, "EmployerType", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTCONTACTPERSONAL_EDUCATIONLEVEL = new ElementDefImpl( STUDENTCONTACTPERSONAL, "EducationLevel", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTCONTACTPERSONAL_OPTOUTEMAIL = new ElementDefImpl( STUDENTCONTACTPERSONAL, "OptOutEmail", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTCONTACTPERSONAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTCONTACTPERSONAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTCONTACTPERSONAL_SIF_METADATA = new ElementDefImpl( STUDENTCONTACTPERSONAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.STUDENTCONTACTPERSONAL_REFID = new ElementDefImpl( STUDENTCONTACTPERSONAL, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTCONTACTPERSONAL_PERSONINFO = new ElementDefImpl( STUDENTCONTACTPERSONAL, "PersonInfo", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		StudentDTD.STUDENTCONTACTPERSONAL_EMPLOYERTYPE = new ElementDefImpl( STUDENTCONTACTPERSONAL, "EmployerType", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTCONTACTPERSONAL_EDUCATIONLEVEL = new ElementDefImpl( STUDENTCONTACTPERSONAL, "EducationLevel", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTCONTACTPERSONAL_OPTOUTEMAIL = new ElementDefImpl( STUDENTCONTACTPERSONAL, "OptOutEmail", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTCONTACTPERSONAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTCONTACTPERSONAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTCONTACTPERSONAL_SIF_METADATA = new ElementDefImpl( STUDENTCONTACTPERSONAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentContactRelationship> fields (5 entries)
-		StudentDTD.STUDENTCONTACTRELATIONSHIP_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "StudentPersonalRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTCONTACTRELATIONSHIP_STUDENTCONTACTPERSONALREFID = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "StudentContactPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTCONTACTRELATIONSHIP_RELATIONSHIP = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "Relationship", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		StudentDTD.STUDENTCONTACTRELATIONSHIP_CONTACTFLAGS = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "ContactFlags", null, 4, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		StudentDTD.STUDENTCONTACTRELATIONSHIP_CONTACTSEQUENCE = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "ContactSequence", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.INT );
-		STUDENTCONTACTRELATIONSHIP_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTCONTACTRELATIONSHIP_SIF_METADATA = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.STUDENTCONTACTRELATIONSHIP_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "StudentPersonalRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTCONTACTRELATIONSHIP_STUDENTCONTACTPERSONALREFID = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "StudentContactPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTCONTACTRELATIONSHIP_RELATIONSHIP = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "Relationship", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		StudentDTD.STUDENTCONTACTRELATIONSHIP_CONTACTFLAGS = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "ContactFlags", null, 4, SifDtd.STUDENT, "us", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		StudentDTD.STUDENTCONTACTRELATIONSHIP_CONTACTSEQUENCE = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "ContactSequence", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.INT );
+		STUDENTCONTACTRELATIONSHIP_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTCONTACTRELATIONSHIP_SIF_METADATA = new ElementDefImpl( STUDENTCONTACTRELATIONSHIP, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentDailyAttendance> fields (9 entries)
-		StudentDTD.STUDENTDAILYATTENDANCE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTDAILYATTENDANCE, "StudentPersonalRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTDAILYATTENDANCE_SCHOOLINFOREFID = new ElementDefImpl( STUDENTDAILYATTENDANCE, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTDAILYATTENDANCE_DATE = new ElementDefImpl( STUDENTDAILYATTENDANCE, "Date", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.STUDENTDAILYATTENDANCE_SCHOOLYEAR = new ElementDefImpl( STUDENTDAILYATTENDANCE, "SchoolYear", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
+		StudentDTD.STUDENTDAILYATTENDANCE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTDAILYATTENDANCE, "StudentPersonalRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTDAILYATTENDANCE_SCHOOLINFOREFID = new ElementDefImpl( STUDENTDAILYATTENDANCE, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTDAILYATTENDANCE_DATE = new ElementDefImpl( STUDENTDAILYATTENDANCE, "Date", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STUDENTDAILYATTENDANCE_SCHOOLYEAR = new ElementDefImpl( STUDENTDAILYATTENDANCE, "SchoolYear", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
 		StudentDTD.STUDENTDAILYATTENDANCE_DAILYATTENDANCECODE = new ElementDefAlias( STUDENTDAILYATTENDANCE, "DailyAttendanceCode", null, "AttendanceCode", 4, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		StudentDTD.STUDENTDAILYATTENDANCE_TIMEIN = new ElementDefImpl( STUDENTDAILYATTENDANCE, "TimeIn", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.TIME );
+		StudentDTD.STUDENTDAILYATTENDANCE_TIMEIN = new ElementDefImpl( STUDENTDAILYATTENDANCE, "TimeIn", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.TIME );
 		StudentDTD.STUDENTDAILYATTENDANCE_TIMEIN.DefineVersionInfo(SifVersion.SIF20, "TimeIn", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTDAILYATTENDANCE_ATTENDANCECODEINFOREFID = new ElementDefImpl( STUDENTDAILYATTENDANCE, "AttendanceCodeInfoRefId", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTDAILYATTENDANCE_TIMEOUT = new ElementDefImpl( STUDENTDAILYATTENDANCE, "TimeOut", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.TIME );
+		StudentDTD.STUDENTDAILYATTENDANCE_ATTENDANCECODEINFOREFID = new ElementDefImpl( STUDENTDAILYATTENDANCE, "AttendanceCodeInfoRefId", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTDAILYATTENDANCE_TIMEOUT = new ElementDefImpl( STUDENTDAILYATTENDANCE, "TimeOut", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.TIME );
 		StudentDTD.STUDENTDAILYATTENDANCE_TIMEOUT.DefineVersionInfo(SifVersion.SIF20, "TimeOut", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTDAILYATTENDANCE_ATTENDANCENOTE = new ElementDefImpl( STUDENTDAILYATTENDANCE, "AttendanceNote", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTDAILYATTENDANCE_ATTENDANCENOTE = new ElementDefImpl( STUDENTDAILYATTENDANCE, "AttendanceNote", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTDAILYATTENDANCE_ATTENDANCENOTE.DefineVersionInfo(SifVersion.SIF20, "AttendanceNote", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		STUDENTDAILYATTENDANCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTDAILYATTENDANCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTDAILYATTENDANCE_SIF_METADATA = new ElementDefImpl( STUDENTDAILYATTENDANCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		STUDENTDAILYATTENDANCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTDAILYATTENDANCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTDAILYATTENDANCE_SIF_METADATA = new ElementDefImpl( STUDENTDAILYATTENDANCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentGrade> fields (6 entries)
-		StudentDTD.STUDENTGRADE_REFID = new ElementDefImpl( STUDENTGRADE, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTGRADE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTGRADE, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTGRADE_SECTIONINFOREFID = new ElementDefImpl( STUDENTGRADE, "SectionInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTGRADE_SCHOOLINFOREFID = new ElementDefImpl( STUDENTGRADE, "SchoolInfoRefId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTGRADE_SCHOOLYEAR = new ElementDefImpl( STUDENTGRADE, "SchoolYear", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.STUDENTGRADE_GRADE = new ElementDefImpl( STUDENTGRADE, "Grade", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		StudentDTD.STUDENTGRADE_REFID = new ElementDefImpl( STUDENTGRADE, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTGRADE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTGRADE, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTGRADE_SECTIONINFOREFID = new ElementDefImpl( STUDENTGRADE, "SectionInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTGRADE_SCHOOLINFOREFID = new ElementDefImpl( STUDENTGRADE, "SchoolInfoRefId", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTGRADE_SCHOOLYEAR = new ElementDefImpl( STUDENTGRADE, "SchoolYear", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.STUDENTGRADE_GRADE = new ElementDefImpl( STUDENTGRADE, "Grade", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <StudentPersonal> fields (31 entries)
-		StudentDTD.STUDENTPERSONAL_REFID = new ElementDefImpl( STUDENTPERSONAL, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTPERSONAL_ALERTMESSAGES = new ElementDefImpl( STUDENTPERSONAL, "AlertMessages", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTPERSONAL_REFID = new ElementDefImpl( STUDENTPERSONAL, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_ALERTMESSAGES = new ElementDefImpl( STUDENTPERSONAL, "AlertMessages", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTPERSONAL_ALERTMESSAGES.DefineVersionInfo(SifVersion.SIF20, "AlertMessages", 2, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTPERSONAL_LOCALID = new ElementDefImpl( STUDENTPERSONAL, "LocalId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_LOCALID = new ElementDefImpl( STUDENTPERSONAL, "LocalId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_LOCALID.DefineVersionInfo(SifVersion.SIF20, "LocalId", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTPERSONAL_OTHERIDLIST = new ElementDefImpl( STUDENTPERSONAL, "OtherIdList", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTPERSONAL_OTHERIDLIST = new ElementDefImpl( STUDENTPERSONAL, "OtherIdList", null, 3, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTPERSONAL_OTHERIDLIST.DefineVersionInfo(SifVersion.SIF15r1, "OtherIdList", 6, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTPERSONAL_OTHERIDLIST.DefineVersionInfo(SifVersion.SIF20, "OtherIdList", 7, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTPERSONAL_MEDICALALERTMESSAGES = new ElementDefImpl( STUDENTPERSONAL, "MedicalAlertMessages", null, 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.STUDENTPERSONAL_STATEPROVINCEID = new ElementDefImpl( STUDENTPERSONAL, "StateProvinceId", "StatePrId", 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_MEDICALALERTMESSAGES = new ElementDefImpl( STUDENTPERSONAL, "MedicalAlertMessages", null, 3, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.STUDENTPERSONAL_STATEPROVINCEID = new ElementDefImpl( STUDENTPERSONAL, "StateProvinceId", "StatePrId", 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTPERSONAL_NAME = new ElementDefImpl( STUDENTPERSONAL, "Name", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTPERSONAL_NAME = new ElementDefImpl( STUDENTPERSONAL, "Name", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTPERSONAL_NAME.DefineVersionInfo(SifVersion.SIF15r1, "Name", 7, 0); // (Sif 15r1 alias)
 		StudentDTD.STUDENTPERSONAL_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 8, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTPERSONAL_ELECTRONICIDLIST = new ElementDefImpl( STUDENTPERSONAL, "ElectronicIdList", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.STUDENTPERSONAL_ELECTRONICIDLIST = new ElementDefImpl( STUDENTPERSONAL, "ElectronicIdList", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.STUDENTPERSONAL_ELECTRONICIDLIST.DefineVersionInfo(SifVersion.SIF20, "ElectronicIdList", 6, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTPERSONAL_EMAILLIST = new ElementDefImpl( STUDENTPERSONAL, "EmailList", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTPERSONAL_EMAILLIST = new ElementDefImpl( STUDENTPERSONAL, "EmailList", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTPERSONAL_EMAILLIST.DefineVersionInfo(SifVersion.SIF15r1, "EmailList", 8, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTPERSONAL_EMAILLIST.DefineVersionInfo(SifVersion.SIF20, "EmailList", 13, 0); // (Sif 20 alias)
 		StudentDTD.STUDENTPERSONAL_EMAILLIST.DefineVersionInfo(SifVersion.SIF20r1, "EmailList", 14, 0); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_PROJECTEDGRADUATIONYEAR = new ElementDefImpl( STUDENTPERSONAL, "ProjectedGraduationYear", "~GradYearSurrogate{}GradYear", 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
+		StudentDTD.STUDENTPERSONAL_PROJECTEDGRADUATIONYEAR = new ElementDefImpl( STUDENTPERSONAL, "ProjectedGraduationYear", "~GradYearSurrogate{}GradYear", 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
 		StudentDTD.STUDENTPERSONAL_PROJECTEDGRADUATIONYEAR.DefineVersionInfo(SifVersion.SIF15r1, "~GradYearSurrogate{}GradYear", 9, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTPERSONAL_PROJECTEDGRADUATIONYEAR.DefineVersionInfo(SifVersion.SIF20, "ProjectedGraduationYear", 14, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 		StudentDTD.STUDENTPERSONAL_PROJECTEDGRADUATIONYEAR.DefineVersionInfo(SifVersion.SIF20r1, "ProjectedGraduationYear", 15, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_ONTIMEGRADUATIONYEAR = new ElementDefImpl( STUDENTPERSONAL, "OnTimeGraduationYear", "~GradYearSurrogate{}GradYear", 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
+		StudentDTD.STUDENTPERSONAL_ONTIMEGRADUATIONYEAR = new ElementDefImpl( STUDENTPERSONAL, "OnTimeGraduationYear", "~GradYearSurrogate{}GradYear", 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
 		StudentDTD.STUDENTPERSONAL_ONTIMEGRADUATIONYEAR.DefineVersionInfo(SifVersion.SIF15r1, "~GradYearSurrogate{}GradYear", 10, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTPERSONAL_ONTIMEGRADUATIONYEAR.DefineVersionInfo(SifVersion.SIF20, "OnTimeGraduationYear", 15, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 		StudentDTD.STUDENTPERSONAL_ONTIMEGRADUATIONYEAR.DefineVersionInfo(SifVersion.SIF20r1, "OnTimeGraduationYear", 16, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_GRADUATIONDATE = new ElementDefAlias( STUDENTPERSONAL, "GraduationDate", "~GradYearSurrogate{}GradYear", "PartialDateType", 8, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_GRADUATIONDATE = new ElementDefAlias( STUDENTPERSONAL, "GraduationDate", "~GradYearSurrogate{}GradYear", "PartialDateType", 8, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_GRADUATIONDATE.DefineVersionInfo(SifVersion.SIF15r1, "~GradYearSurrogate{}GradYear", 11, 0); // (Sif 15r1 alias)
 		StudentDTD.STUDENTPERSONAL_GRADUATIONDATE.DefineVersionInfo(SifVersion.SIF20, "GraduationDate", 16, 0); // (Sif 20 alias)
 		StudentDTD.STUDENTPERSONAL_GRADUATIONDATE.DefineVersionInfo(SifVersion.SIF20r1, "GraduationDate", 17, 0); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_DEMOGRAPHICS = new ElementDefImpl( STUDENTPERSONAL, "Demographics", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTPERSONAL_DEMOGRAPHICS = new ElementDefImpl( STUDENTPERSONAL, "Demographics", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTPERSONAL_DEMOGRAPHICS.DefineVersionInfo(SifVersion.SIF15r1, "Demographics", 12, 0); // (Sif 15r1 alias)
 		StudentDTD.STUDENTPERSONAL_DEMOGRAPHICS.DefineVersionInfo(SifVersion.SIF20, "Demographics", 10, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTPERSONAL_OTHERNAMES = new ElementDefImpl( STUDENTPERSONAL, "OtherNames", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.STUDENTPERSONAL_ADDRESSLIST = new ElementDefAlias( STUDENTPERSONAL, "AddressList", "~StudentAddressSurrogate{}StudentAddress", "StudentAddressList", 10, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTPERSONAL_OTHERNAMES = new ElementDefImpl( STUDENTPERSONAL, "OtherNames", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.STUDENTPERSONAL_ADDRESSLIST = new ElementDefAlias( STUDENTPERSONAL, "AddressList", "~StudentAddressSurrogate{}StudentAddress", "StudentAddressList", 10, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTPERSONAL_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF15r1, "~StudentAddressSurrogate{}StudentAddress", 13, 0); // (Sif 15r1 alias)
 		StudentDTD.STUDENTPERSONAL_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF20, "AddressList", 11, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTPERSONAL_PHONENUMBERLIST = new ElementDefImpl( STUDENTPERSONAL, "PhoneNumberList", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTPERSONAL_PHONENUMBERLIST = new ElementDefImpl( STUDENTPERSONAL, "PhoneNumberList", null, 11, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTPERSONAL_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF15r1, "PhoneNumberList", 14, (ElementDefImpl.FD_COLLAPSE)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTPERSONAL_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF20, "PhoneNumberList", 12, 0); // (Sif 20 alias)
 		StudentDTD.STUDENTPERSONAL_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF20r1, "PhoneNumberList", 13, 0); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_STUDENTADDRESS = new ElementDefImpl( STUDENTPERSONAL, "StudentAddress", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20r1, SifVersion.SIF25 );
-		StudentDTD.STUDENTPERSONAL_MOSTRECENT = new ElementDefImpl( STUDENTPERSONAL, "MostRecent", null, 17, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.STUDENTPERSONAL_STUDENTADDRESS = new ElementDefImpl( STUDENTPERSONAL, "StudentAddress", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20r1, SifVersion.SIF26 );
+		StudentDTD.STUDENTPERSONAL_MOSTRECENT = new ElementDefImpl( STUDENTPERSONAL, "MostRecent", null, 17, SifDtd.STUDENT, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 		StudentDTD.STUDENTPERSONAL_MOSTRECENT.DefineVersionInfo(SifVersion.SIF20r1, "MostRecent", 18, 0); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_ACCEPTABLEUSEPOLICY = new ElementDefImpl( STUDENTPERSONAL, "AcceptableUsePolicy", null, 18, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_ACCEPTABLEUSEPOLICY = new ElementDefImpl( STUDENTPERSONAL, "AcceptableUsePolicy", null, 18, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_ACCEPTABLEUSEPOLICY.DefineVersionInfo(SifVersion.SIF20r1, "AcceptableUsePolicy", 19, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_IDEA = new ElementDefImpl( STUDENTPERSONAL, "IDEA", null, 19, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_IDEA = new ElementDefImpl( STUDENTPERSONAL, "IDEA", null, 19, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_IDEA.DefineVersionInfo(SifVersion.SIF20r1, "IDEA", 20, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_MIGRANT = new ElementDefImpl( STUDENTPERSONAL, "Migrant", null, 20, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_MIGRANT = new ElementDefImpl( STUDENTPERSONAL, "Migrant", null, 20, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_MIGRANT.DefineVersionInfo(SifVersion.SIF20r1, "Migrant", 21, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_TITLE1 = new ElementDefImpl( STUDENTPERSONAL, "Title1", null, 21, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_TITLE1 = new ElementDefImpl( STUDENTPERSONAL, "Title1", null, 21, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_TITLE1.DefineVersionInfo(SifVersion.SIF20r1, "Title1", 22, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_GIFTEDTALENTED = new ElementDefImpl( STUDENTPERSONAL, "GiftedTalented", null, 22, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_GIFTEDTALENTED = new ElementDefImpl( STUDENTPERSONAL, "GiftedTalented", null, 22, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_GIFTEDTALENTED.DefineVersionInfo(SifVersion.SIF20r1, "GiftedTalented", 23, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_ECONOMICDISADVANTAGE = new ElementDefImpl( STUDENTPERSONAL, "EconomicDisadvantage", null, 23, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_ECONOMICDISADVANTAGE = new ElementDefImpl( STUDENTPERSONAL, "EconomicDisadvantage", null, 23, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_ECONOMICDISADVANTAGE.DefineVersionInfo(SifVersion.SIF20r1, "EconomicDisadvantage", 24, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_ELL = new ElementDefImpl( STUDENTPERSONAL, "ELL", null, 24, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_ELL = new ElementDefImpl( STUDENTPERSONAL, "ELL", null, 24, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_ELL.DefineVersionInfo(SifVersion.SIF20r1, "ELL", 25, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_HOMELESS = new ElementDefImpl( STUDENTPERSONAL, "Homeless", null, 25, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_HOMELESS = new ElementDefImpl( STUDENTPERSONAL, "Homeless", null, 25, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_HOMELESS.DefineVersionInfo(SifVersion.SIF20r1, "Homeless", 26, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_SECTION504 = new ElementDefImpl( STUDENTPERSONAL, "Section504", null, 26, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_SECTION504 = new ElementDefImpl( STUDENTPERSONAL, "Section504", null, 26, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_SECTION504.DefineVersionInfo(SifVersion.SIF20r1, "Section504", 27, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_VOCATIONALCONCENTRATOR = new ElementDefImpl( STUDENTPERSONAL, "VocationalConcentrator", null, 27, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_VOCATIONALCONCENTRATOR = new ElementDefImpl( STUDENTPERSONAL, "VocationalConcentrator", null, 27, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_VOCATIONALCONCENTRATOR.DefineVersionInfo(SifVersion.SIF20r1, "VocationalConcentrator", 28, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_IMMIGRANT = new ElementDefImpl( STUDENTPERSONAL, "Immigrant", null, 28, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_IMMIGRANT = new ElementDefImpl( STUDENTPERSONAL, "Immigrant", null, 28, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_IMMIGRANT.DefineVersionInfo(SifVersion.SIF20r1, "Immigrant", 29, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_NEGLECTEDDELINQUENT = new ElementDefImpl( STUDENTPERSONAL, "NeglectedDelinquent", null, 29, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPERSONAL_NEGLECTEDDELINQUENT = new ElementDefImpl( STUDENTPERSONAL, "NeglectedDelinquent", null, 29, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPERSONAL_NEGLECTEDDELINQUENT.DefineVersionInfo(SifVersion.SIF20r1, "NeglectedDelinquent", 30, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		StudentDTD.STUDENTPERSONAL_FIRSTUSENROLLMENT = new ElementDefImpl( STUDENTPERSONAL, "FirstUSEnrollment", null, 31, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		STUDENTPERSONAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPERSONAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTPERSONAL_SIF_METADATA = new ElementDefImpl( STUDENTPERSONAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.STUDENTPERSONAL_FIRSTUSENROLLMENT = new ElementDefImpl( STUDENTPERSONAL, "FirstUSEnrollment", null, 31, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		STUDENTPERSONAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPERSONAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTPERSONAL_SIF_METADATA = new ElementDefImpl( STUDENTPERSONAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentPicture> fields (4 entries)
-		StudentDTD.STUDENTPICTURE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTPICTURE, "StudentPersonalRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTPICTURE_PICTURESOURCE = new ElementDefImpl( STUDENTPICTURE, "PictureSource", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPICTURE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTPICTURE, "StudentPersonalRefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTPICTURE_PICTURESOURCE = new ElementDefImpl( STUDENTPICTURE, "PictureSource", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTPICTURE_PICTURESOURCE.DefineVersionInfo(SifVersion.SIF20, "PictureSource", 3, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTPICTURE_SCHOOLYEAR = new ElementDefImpl( STUDENTPICTURE, "SchoolYear", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.STUDENTPICTURE_OKTOPUBLISH = new ElementDefImpl( STUDENTPICTURE, "OKToPublish", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTPICTURE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPICTURE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTPICTURE_SIF_METADATA = new ElementDefImpl( STUDENTPICTURE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.STUDENTPICTURE_SCHOOLYEAR = new ElementDefImpl( STUDENTPICTURE, "SchoolYear", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.STUDENTPICTURE_OKTOPUBLISH = new ElementDefImpl( STUDENTPICTURE, "OKToPublish", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTPICTURE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPICTURE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTPICTURE_SIF_METADATA = new ElementDefImpl( STUDENTPICTURE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentSchoolEnrollment> fields (24 entries)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_REFID = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTSCHOOLENROLLMENT_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_REFID = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_STUDENTPERSONALREFID.DefineVersionInfo(SifVersion.SIF15r1, "StudentPersonalRefId", 2, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_STUDENTPERSONALREFID.DefineVersionInfo(SifVersion.SIF20, "StudentPersonalRefId", 2, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_SCHOOLINFOREFID = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "SchoolInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_SCHOOLINFOREFID = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "SchoolInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_SCHOOLINFOREFID.DefineVersionInfo(SifVersion.SIF15r1, "SchoolInfoRefId", 3, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_SCHOOLINFOREFID.DefineVersionInfo(SifVersion.SIF20, "SchoolInfoRefId", 3, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_MEMBERSHIPTYPE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "MembershipType", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_MEMBERSHIPTYPE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "MembershipType", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_MEMBERSHIPTYPE.DefineVersionInfo(SifVersion.SIF15r1, "MembershipType", 4, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_MEMBERSHIPTYPE.DefineVersionInfo(SifVersion.SIF20, "MembershipType", 4, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_TIMEFRAME = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "TimeFrame", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_TIMEFRAME = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "TimeFrame", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_TIMEFRAME.DefineVersionInfo(SifVersion.SIF15r1, "TimeFrame", 5, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_TIMEFRAME.DefineVersionInfo(SifVersion.SIF20, "TimeFrame", 5, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_SCHOOLYEAR = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "SchoolYear", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_SCHOOLYEAR = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "SchoolYear", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_SCHOOLYEAR.DefineVersionInfo(SifVersion.SIF20, "SchoolYear", 6, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_ENROLLSTATUS = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "EnrollStatus", null, 6, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF15r1 );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_ENROLLSTATUS.DefineVersionInfo(SifVersion.SIF15r1, "EnrollStatus", 7, 0); // (Sif 15r1 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_ENTRYDATE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "EntryDate", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_ENTRYDATE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "EntryDate", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_ENTRYDATE.DefineVersionInfo(SifVersion.SIF15r1, "EntryDate", 8, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_ENTRYDATE.DefineVersionInfo(SifVersion.SIF20, "EntryDate", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_ENTRYTYPE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "EntryType", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_ENTRYTYPE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "EntryType", null, 8, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_ENTRYTYPE.DefineVersionInfo(SifVersion.SIF15r1, "EntryType", 9, 0); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_ENTRYTYPE.DefineVersionInfo(SifVersion.SIF20, "EntryType", 8, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_GRADELEVEL = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "GradeLevel", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_GRADELEVEL = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "GradeLevel", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_GRADELEVEL.DefineVersionInfo(SifVersion.SIF15r1, "GradeLevel", 10, 0); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_GRADELEVEL.DefineVersionInfo(SifVersion.SIF20, "GradeLevel", 9, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_HOMEROOM = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "Homeroom", "~XPathSurrogate{Homeroom/@RoomInfoRefId=.}", 10, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_HOMEROOM = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "Homeroom", "~XPathSurrogate{Homeroom/@RoomInfoRefId=.}", 10, SifDtd.STUDENT, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_HOMEROOM.DefineVersionInfo(SifVersion.SIF15r1, "~XPathSurrogate{Homeroom/@RoomInfoRefId=.}Homeroom", 11, 0); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_HOMEROOM.DefineVersionInfo(SifVersion.SIF20, "Homeroom", 10, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_ADVISOR = new ElementDefAlias( STUDENTSCHOOLENROLLMENT, "Advisor", null, "SIF_RefId", 11, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_ADVISOR = new ElementDefAlias( STUDENTSCHOOLENROLLMENT, "Advisor", null, "SIF_RefId", 11, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_STAFFASSIGNED = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "StaffAssigned", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF15r1 );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_STAFFASSIGNED.DefineVersionInfo(SifVersion.SIF15r1, "StaffAssigned", 12, (ElementDefImpl.FD_REPEATABLE)); // (Sif 15r1 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_COUNSELOR = new ElementDefAlias( STUDENTSCHOOLENROLLMENT, "Counselor", null, "SIF_RefId", 12, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITDATE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "ExitDate", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_COUNSELOR = new ElementDefAlias( STUDENTSCHOOLENROLLMENT, "Counselor", null, "SIF_RefId", 12, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITDATE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "ExitDate", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITDATE.DefineVersionInfo(SifVersion.SIF15r1, "ExitDate", 13, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITDATE.DefineVersionInfo(SifVersion.SIF23, "ExitDate", 14, (ElementDefImpl.FD_FIELD)); // (Sif 23 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITSTATUS = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "ExitStatus", null, 13, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITSTATUS = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "ExitStatus", null, 13, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITSTATUS.DefineVersionInfo(SifVersion.SIF15r1, "ExitStatus", 14, 0); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITSTATUS.DefineVersionInfo(SifVersion.SIF23, "ExitStatus", 15, 0); // (Sif 23 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_CALENDAR = new ElementDefAlias( STUDENTSCHOOLENROLLMENT, "Calendar", null, "SIF_RefId", 13, SifDtd.GLOBAL, null, 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITTYPE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "ExitType", null, 14, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_CALENDAR = new ElementDefAlias( STUDENTSCHOOLENROLLMENT, "Calendar", null, "SIF_RefId", 13, SifDtd.GLOBAL, null, 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITTYPE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "ExitType", null, 14, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITTYPE.DefineVersionInfo(SifVersion.SIF15r1, "ExitType", 15, 0); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_EXITTYPE.DefineVersionInfo(SifVersion.SIF23, "ExitType", 16, 0); // (Sif 23 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_FTE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "FTE", null, 15, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_FTE = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "FTE", null, 15, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_FTE.DefineVersionInfo(SifVersion.SIF15r1, "FTE", 16, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_FTE.DefineVersionInfo(SifVersion.SIF23, "FTE", 19, (ElementDefImpl.FD_FIELD)); // (Sif 23 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_FTPTSTATUS = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "FTPTStatus", null, 16, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_FTPTSTATUS = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "FTPTStatus", null, 16, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_FTPTSTATUS.DefineVersionInfo(SifVersion.SIF15r1, "FTPTStatus", 17, (ElementDefImpl.FD_FIELD)); // (Sif 15r1 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_FTPTSTATUS.DefineVersionInfo(SifVersion.SIF23, "FTPTStatus", 20, (ElementDefImpl.FD_FIELD)); // (Sif 23 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_RECORDCLOSUREREASON = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "RecordClosureReason", null, 17, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTSCHOOLENROLLMENT_RESIDENCYSTATUS = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "ResidencyStatus", "~XPathSurrogate{ResidencyStatus=@Code}", 18, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_RECORDCLOSUREREASON = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "RecordClosureReason", null, 17, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_RESIDENCYSTATUS = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "ResidencyStatus", "~XPathSurrogate{ResidencyStatus=@Code}", 18, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_RESIDENCYSTATUS.DefineVersionInfo(SifVersion.SIF20, "ResidencyStatus", 18, 0); // (Sif 20 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_RESIDENCYSTATUS.DefineVersionInfo(SifVersion.SIF23, "ResidencyStatus", 21, 0); // (Sif 23 alias)
-		StudentDTD.STUDENTSCHOOLENROLLMENT_PROMOTIONINFO = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "PromotionInfo", null, 18, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		StudentDTD.STUDENTSCHOOLENROLLMENT_NONRESIDENTATTENDREASON = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "NonResidentAttendReason", null, 19, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_PROMOTIONINFO = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "PromotionInfo", null, 18, SifDtd.STUDENT, "us", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		StudentDTD.STUDENTSCHOOLENROLLMENT_NONRESIDENTATTENDREASON = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "NonResidentAttendReason", null, 19, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSCHOOLENROLLMENT_NONRESIDENTATTENDREASON.DefineVersionInfo(SifVersion.SIF20, "NonResidentAttendReason", 19, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 		StudentDTD.STUDENTSCHOOLENROLLMENT_NONRESIDENTATTENDREASON.DefineVersionInfo(SifVersion.SIF23, "NonResidentAttendReason", 22, (ElementDefImpl.FD_FIELD)); // (Sif 23 alias)
-		STUDENTSCHOOLENROLLMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTSCHOOLENROLLMENT_SIF_METADATA = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		STUDENTSCHOOLENROLLMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTSCHOOLENROLLMENT_SIF_METADATA = new ElementDefImpl( STUDENTSCHOOLENROLLMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
-		// <StudentSectionEnrollment> fields (8 entries)
-		StudentDTD.STUDENTSECTIONENROLLMENT_REFID = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTSECTIONENROLLMENT_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTSECTIONENROLLMENT_SECTIONINFOREFID = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SectionInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTSECTIONENROLLMENT_SCHOOLYEAR = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SchoolYear", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.STUDENTSECTIONENROLLMENT_ENTRYDATE = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "EntryDate", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
+		// <StudentSectionEnrollment> fields (9 entries)
+		StudentDTD.STUDENTSECTIONENROLLMENT_REFID = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSECTIONENROLLMENT_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSECTIONENROLLMENT_SECTIONINFOREFID = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SectionInfoRefId", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSECTIONENROLLMENT_ENTRYDATE = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "EntryDate", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
 		StudentDTD.STUDENTSECTIONENROLLMENT_ENTRYDATE.DefineVersionInfo(SifVersion.SIF20, "EntryDate", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSECTIONENROLLMENT_EXITDATE = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "ExitDate", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
+		StudentDTD.STUDENTSECTIONENROLLMENT_SCHOOLYEAR = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SchoolYear", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.STUDENTSECTIONENROLLMENT_EXITDATE = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "ExitDate", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
 		StudentDTD.STUDENTSECTIONENROLLMENT_EXITDATE.DefineVersionInfo(SifVersion.SIF20, "ExitDate", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSECTIONENROLLMENT_SCHEDULEINFOOVERRIDELIST = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "ScheduleInfoOverrideList", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		StudentDTD.STUDENTSECTIONENROLLMENT_SCHEDULEINFOOVERRIDELIST = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "ScheduleInfoOverrideList", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		StudentDTD.STUDENTSECTIONENROLLMENT_SCHEDULEINFOOVERRIDELIST.DefineVersionInfo(SifVersion.SIF20, "ScheduleInfoOverrideList", 7, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTSECTIONENROLLMENT_CREDITSATTEMPTED = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "CreditsAttempted", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSECTIONENROLLMENT_CREDITSATTEMPTED = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "CreditsAttempted", null, 7, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSECTIONENROLLMENT_CREDITSATTEMPTED.DefineVersionInfo(SifVersion.SIF20, "CreditsAttempted", 8, 0); // (Sif 20 alias)
-		STUDENTSECTIONENROLLMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTSECTIONENROLLMENT_SIF_METADATA = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.STUDENTSECTIONENROLLMENT_DUALCREDIT = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "DualCredit", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTSECTIONENROLLMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTSECTIONENROLLMENT_SIF_METADATA = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentSnapshot> fields (30 entries)
-		StudentDTD.STUDENTSNAPSHOT_SNAPDATE = new ElementDefImpl( STUDENTSNAPSHOT, "SnapDate", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.STUDENTSNAPSHOT_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSNAPSHOT, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTSNAPSHOT_SCHOOLYEAR = new ElementDefImpl( STUDENTSNAPSHOT, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
+		StudentDTD.STUDENTSNAPSHOT_SNAPDATE = new ElementDefImpl( STUDENTSNAPSHOT, "SnapDate", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STUDENTSNAPSHOT_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSNAPSHOT, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_SCHOOLYEAR = new ElementDefImpl( STUDENTSNAPSHOT, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
 		StudentDTD.STUDENTSNAPSHOT_SCHOOLYEAR.DefineVersionInfo(SifVersion.SIF20, "SchoolYear", 3, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_NAME = new ElementDefImpl( STUDENTSNAPSHOT, "Name", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		StudentDTD.STUDENTSNAPSHOT_LOCALID = new ElementDefImpl( STUDENTSNAPSHOT, "LocalId", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_NAME = new ElementDefImpl( STUDENTSNAPSHOT, "Name", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		StudentDTD.STUDENTSNAPSHOT_LOCALID = new ElementDefImpl( STUDENTSNAPSHOT, "LocalId", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_LOCALID.DefineVersionInfo(SifVersion.SIF20, "LocalId", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_STATEPROVINCEID = new ElementDefImpl( STUDENTSNAPSHOT, "StateProvinceId", "StatePrId", 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_STATEPROVINCEID = new ElementDefImpl( STUDENTSNAPSHOT, "StateProvinceId", "StatePrId", 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_ADDRESS = new ElementDefImpl( STUDENTSNAPSHOT, "Address", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		StudentDTD.STUDENTSNAPSHOT_RACELIST = new ElementDefImpl( STUDENTSNAPSHOT, "RaceList", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.STUDENTSNAPSHOT_ADDRESS = new ElementDefImpl( STUDENTSNAPSHOT, "Address", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		StudentDTD.STUDENTSNAPSHOT_RACELIST = new ElementDefImpl( STUDENTSNAPSHOT, "RaceList", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.STUDENTSNAPSHOT_RACELIST.DefineVersionInfo(SifVersion.SIF20, "RaceList", 8, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_GENDER = new ElementDefImpl( STUDENTSNAPSHOT, "Gender", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_GENDER = new ElementDefImpl( STUDENTSNAPSHOT, "Gender", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_GENDER.DefineVersionInfo(SifVersion.SIF20, "Gender", 10, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_HISPANICLATINO = new ElementDefImpl( STUDENTSNAPSHOT, "HispanicLatino", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTSNAPSHOT_BIRTHDATE = new ElementDefImpl( STUDENTSNAPSHOT, "BirthDate", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		StudentDTD.STUDENTSNAPSHOT_HISPANICLATINO = new ElementDefImpl( STUDENTSNAPSHOT, "HispanicLatino", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_BIRTHDATE = new ElementDefImpl( STUDENTSNAPSHOT, "BirthDate", null, 10, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		StudentDTD.STUDENTSNAPSHOT_BIRTHDATE.DefineVersionInfo(SifVersion.SIF20, "BirthDate", 11, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_AGE = new ElementDefImpl( STUDENTSNAPSHOT, "Age", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
+		StudentDTD.STUDENTSNAPSHOT_AGE = new ElementDefImpl( STUDENTSNAPSHOT, "Age", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
 		StudentDTD.STUDENTSNAPSHOT_AGE.DefineVersionInfo(SifVersion.SIF20, "Age", 12, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_PROJECTEDGRADUATIONYEAR = new ElementDefImpl( STUDENTSNAPSHOT, "ProjectedGraduationYear", "~GradYearSurrogate{}", 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
+		StudentDTD.STUDENTSNAPSHOT_PROJECTEDGRADUATIONYEAR = new ElementDefImpl( STUDENTSNAPSHOT, "ProjectedGraduationYear", "~GradYearSurrogate{}", 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
 		StudentDTD.STUDENTSNAPSHOT_PROJECTEDGRADUATIONYEAR.DefineVersionInfo(SifVersion.SIF20, "ProjectedGraduationYear", 13, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_ONTIMEGRADUATIONYEAR = new ElementDefImpl( STUDENTSNAPSHOT, "OnTimeGraduationYear", "~GradYearSurrogate{}", 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
+		StudentDTD.STUDENTSNAPSHOT_ONTIMEGRADUATIONYEAR = new ElementDefImpl( STUDENTSNAPSHOT, "OnTimeGraduationYear", "~GradYearSurrogate{}", 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
 		StudentDTD.STUDENTSNAPSHOT_ONTIMEGRADUATIONYEAR.DefineVersionInfo(SifVersion.SIF20, "OnTimeGraduationYear", 14, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_GRADUATIONDATE = new ElementDefAlias( STUDENTSNAPSHOT, "GraduationDate", "~GradYearSurrogate{}GradYear", "PartialDateType", 14, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_GRADUATIONDATE = new ElementDefAlias( STUDENTSNAPSHOT, "GraduationDate", "~GradYearSurrogate{}GradYear", "PartialDateType", 14, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_GRADUATIONDATE.DefineVersionInfo(SifVersion.SIF20, "GraduationDate", 15, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_GRADUATIONAWARD = new ElementDefImpl( STUDENTSNAPSHOT, "GraduationAward", "~XPathSurrogate{GradAward/@Type=.}GradAward", 15, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_GRADUATIONAWARD = new ElementDefImpl( STUDENTSNAPSHOT, "GraduationAward", "~XPathSurrogate{GradAward/@Type=.}GradAward", 15, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_GRADUATIONAWARD.DefineVersionInfo(SifVersion.SIF20, "GraduationAward", 16, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_GRADUATIONONTIME = new ElementDefImpl( STUDENTSNAPSHOT, "GraduationOnTime", "GradOnTime", 16, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_GRADUATIONONTIME = new ElementDefImpl( STUDENTSNAPSHOT, "GraduationOnTime", "GradOnTime", 16, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_GRADUATIONONTIME.DefineVersionInfo(SifVersion.SIF20, "GraduationOnTime", 17, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_HOMEENROLLMENT = new ElementDefImpl( STUDENTSNAPSHOT, "HomeEnrollment", null, 17, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		StudentDTD.STUDENTSNAPSHOT_HOMEENROLLMENT = new ElementDefImpl( STUDENTSNAPSHOT, "HomeEnrollment", null, 17, SifDtd.STUDENT, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		StudentDTD.STUDENTSNAPSHOT_HOMEENROLLMENT.DefineVersionInfo(SifVersion.SIF20, "HomeEnrollment", 18, 0); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_IDEA = new ElementDefImpl( STUDENTSNAPSHOT, "IDEA", null, 18, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_IDEA = new ElementDefImpl( STUDENTSNAPSHOT, "IDEA", null, 18, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_IDEA.DefineVersionInfo(SifVersion.SIF20, "IDEA", 19, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_MIGRANT = new ElementDefImpl( STUDENTSNAPSHOT, "Migrant", null, 19, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_MIGRANT = new ElementDefImpl( STUDENTSNAPSHOT, "Migrant", null, 19, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_MIGRANT.DefineVersionInfo(SifVersion.SIF20, "Migrant", 20, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_TITLE1 = new ElementDefImpl( STUDENTSNAPSHOT, "Title1", null, 20, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_TITLE1 = new ElementDefImpl( STUDENTSNAPSHOT, "Title1", null, 20, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_TITLE1.DefineVersionInfo(SifVersion.SIF20, "Title1", 21, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_GIFTEDTALENTED = new ElementDefImpl( STUDENTSNAPSHOT, "GiftedTalented", null, 21, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_GIFTEDTALENTED = new ElementDefImpl( STUDENTSNAPSHOT, "GiftedTalented", null, 21, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_GIFTEDTALENTED.DefineVersionInfo(SifVersion.SIF20, "GiftedTalented", 22, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_ECONOMICDISADVANTAGE = new ElementDefImpl( STUDENTSNAPSHOT, "EconomicDisadvantage", null, 22, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_ECONOMICDISADVANTAGE = new ElementDefImpl( STUDENTSNAPSHOT, "EconomicDisadvantage", null, 22, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_ECONOMICDISADVANTAGE.DefineVersionInfo(SifVersion.SIF20, "EconomicDisadvantage", 23, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_ELL = new ElementDefImpl( STUDENTSNAPSHOT, "ELL", null, 23, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_ELL = new ElementDefImpl( STUDENTSNAPSHOT, "ELL", null, 23, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_ELL.DefineVersionInfo(SifVersion.SIF20, "ELL", 24, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_HOMELESS = new ElementDefImpl( STUDENTSNAPSHOT, "Homeless", null, 24, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_HOMELESS = new ElementDefImpl( STUDENTSNAPSHOT, "Homeless", null, 24, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_HOMELESS.DefineVersionInfo(SifVersion.SIF20, "Homeless", 25, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_SECTION504 = new ElementDefImpl( STUDENTSNAPSHOT, "Section504", null, 25, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_SECTION504 = new ElementDefImpl( STUDENTSNAPSHOT, "Section504", null, 25, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_SECTION504.DefineVersionInfo(SifVersion.SIF20, "Section504", 26, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_VOCATIONALCONCENTRATOR = new ElementDefImpl( STUDENTSNAPSHOT, "VocationalConcentrator", null, 26, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_VOCATIONALCONCENTRATOR = new ElementDefImpl( STUDENTSNAPSHOT, "VocationalConcentrator", null, 26, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_VOCATIONALCONCENTRATOR.DefineVersionInfo(SifVersion.SIF20, "VocationalConcentrator", 27, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_IMMIGRANT = new ElementDefImpl( STUDENTSNAPSHOT, "Immigrant", null, 27, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_IMMIGRANT = new ElementDefImpl( STUDENTSNAPSHOT, "Immigrant", null, 27, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.STUDENTSNAPSHOT_IMMIGRANT.DefineVersionInfo(SifVersion.SIF20, "Immigrant", 28, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.STUDENTSNAPSHOT_NEGLECTEDDELINQUENT = new ElementDefImpl( STUDENTSNAPSHOT, "NeglectedDelinquent", null, 29, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.STUDENTSNAPSHOT_FREEANDREDUCEDSTATUS = new ElementDefImpl( STUDENTSNAPSHOT, "FreeAndReducedStatus", null, 30, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTSNAPSHOT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSNAPSHOT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTSNAPSHOT_SIF_METADATA = new ElementDefImpl( STUDENTSNAPSHOT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.STUDENTSNAPSHOT_NEGLECTEDDELINQUENT = new ElementDefImpl( STUDENTSNAPSHOT, "NeglectedDelinquent", null, 29, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSNAPSHOT_FREEANDREDUCEDSTATUS = new ElementDefImpl( STUDENTSNAPSHOT, "FreeAndReducedStatus", null, 30, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTSNAPSHOT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSNAPSHOT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTSNAPSHOT_SIF_METADATA = new ElementDefImpl( STUDENTSNAPSHOT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TeacherAttendance> fields (2 entries)
-		StudentDTD.TEACHERATTENDANCE_COUNTSTOWARDATTENDANCE = new ElementDefImpl( TEACHERATTENDANCE, "CountsTowardAttendance", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.TEACHERATTENDANCE_ATTENDANCEVALUE = new ElementDefImpl( TEACHERATTENDANCE, "AttendanceValue", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		StudentDTD.TEACHERATTENDANCE_COUNTSTOWARDATTENDANCE = new ElementDefImpl( TEACHERATTENDANCE, "CountsTowardAttendance", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.TEACHERATTENDANCE_ATTENDANCEVALUE = new ElementDefImpl( TEACHERATTENDANCE, "AttendanceValue", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <TeacherList> fields (1 entries)
-		StudentDTD.TEACHERLIST_STAFFPERSONALREFID = new ElementDefImpl( TEACHERLIST, "StaffPersonalRefId", "~XPathSurrogate{Teacher/@StaffPersonalRefId=.}Teacher", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.TEACHERLIST_STAFFPERSONALREFID = new ElementDefImpl( TEACHERLIST, "StaffPersonalRefId", "~XPathSurrogate{Teacher/@StaffPersonalRefId=.}Teacher", 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.TEACHERLIST_STAFFPERSONALREFID.DefineVersionInfo(SifVersion.SIF20, "StaffPersonalRefId", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <TeachingAssignment> fields (2 entries)
-		StudentDTD.TEACHINGASSIGNMENT_CODE = new ElementDefImpl( TEACHINGASSIGNMENT, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.TEACHINGASSIGNMENT_CODE = new ElementDefImpl( TEACHINGASSIGNMENT, "Code", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		StudentDTD.TEACHINGASSIGNMENT_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		StudentDTD.TEACHINGASSIGNMENT_OTHERCODELIST = new ElementDefImpl( TEACHINGASSIGNMENT, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.TEACHINGASSIGNMENT_OTHERCODELIST = new ElementDefImpl( TEACHINGASSIGNMENT, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TermInfo> fields (13 entries)
-		StudentDTD.TERMINFO_REFID = new ElementDefImpl( TERMINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.TERMINFO_SCHOOLINFOREFID = new ElementDefImpl( TERMINFO, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.TERMINFO_SCHOOLYEAR = new ElementDefImpl( TERMINFO, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
-		StudentDTD.TERMINFO_STARTDATE = new ElementDefImpl( TERMINFO, "StartDate", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.TERMINFO_ENDDATE = new ElementDefImpl( TERMINFO, "EndDate", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
-		StudentDTD.TERMINFO_DESCRIPTION = new ElementDefImpl( TERMINFO, "Description", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.TERMINFO_RELATIVEDURATION = new ElementDefImpl( TERMINFO, "RelativeDuration", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		StudentDTD.TERMINFO_TERMCODE = new ElementDefImpl( TERMINFO, "TermCode", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.TERMINFO_TRACK = new ElementDefImpl( TERMINFO, "Track", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.TERMINFO_TERMSPAN = new ElementDefImpl( TERMINFO, "TermSpan", null, 10, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		StudentDTD.TERMINFO_MARKINGTERM = new ElementDefImpl( TERMINFO, "MarkingTerm", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.TERMINFO_SCHEDULINGTERM = new ElementDefImpl( TERMINFO, "SchedulingTerm", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.TERMINFO_ATTENDANCETERM = new ElementDefImpl( TERMINFO, "AttendanceTerm", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		TERMINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TERMINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		TERMINFO_SIF_METADATA = new ElementDefImpl( TERMINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.TERMINFO_REFID = new ElementDefImpl( TERMINFO, "RefId", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.TERMINFO_SCHOOLINFOREFID = new ElementDefImpl( TERMINFO, "SchoolInfoRefId", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.TERMINFO_SCHOOLYEAR = new ElementDefImpl( TERMINFO, "SchoolYear", null, 3, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.TERMINFO_STARTDATE = new ElementDefImpl( TERMINFO, "StartDate", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.TERMINFO_ENDDATE = new ElementDefImpl( TERMINFO, "EndDate", null, 5, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.TERMINFO_DESCRIPTION = new ElementDefImpl( TERMINFO, "Description", null, 6, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.TERMINFO_RELATIVEDURATION = new ElementDefImpl( TERMINFO, "RelativeDuration", null, 7, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		StudentDTD.TERMINFO_TERMCODE = new ElementDefImpl( TERMINFO, "TermCode", null, 8, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.TERMINFO_TRACK = new ElementDefImpl( TERMINFO, "Track", null, 9, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.TERMINFO_TERMSPAN = new ElementDefImpl( TERMINFO, "TermSpan", null, 10, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		StudentDTD.TERMINFO_MARKINGTERM = new ElementDefImpl( TERMINFO, "MarkingTerm", null, 11, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.TERMINFO_SCHEDULINGTERM = new ElementDefImpl( TERMINFO, "SchedulingTerm", null, 12, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.TERMINFO_ATTENDANCETERM = new ElementDefImpl( TERMINFO, "AttendanceTerm", null, 13, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		TERMINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TERMINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		TERMINFO_SIF_METADATA = new ElementDefImpl( TERMINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TimetableDay> fields (2 entries)
-		StudentDTD.TIMETABLEDAY_IDENTIFIER = new ElementDefImpl( TIMETABLEDAY, "Identifier", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.TIMETABLEDAY_NAME = new ElementDefImpl( TIMETABLEDAY, "Name", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.TIMETABLEDAY_IDENTIFIER = new ElementDefImpl( TIMETABLEDAY, "Identifier", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.TIMETABLEDAY_NAME = new ElementDefImpl( TIMETABLEDAY, "Name", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <TimetableDayList> fields (1 entries)
-		StudentDTD.TIMETABLEDAYLIST_TIMETABLEDAY = new ElementDefImpl( TIMETABLEDAYLIST, "TimetableDay", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		StudentDTD.TIMETABLEDAYLIST_TIMETABLEDAY = new ElementDefImpl( TIMETABLEDAYLIST, "TimetableDay", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <TimetablePeriod> fields (2 entries)
-		StudentDTD.TIMETABLEPERIOD_IDENTIFIER = new ElementDefImpl( TIMETABLEPERIOD, "Identifier", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.TIMETABLEPERIOD_NAME = new ElementDefImpl( TIMETABLEPERIOD, "Name", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.TIMETABLEPERIOD_IDENTIFIER = new ElementDefImpl( TIMETABLEPERIOD, "Identifier", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.TIMETABLEPERIOD_NAME = new ElementDefImpl( TIMETABLEPERIOD, "Name", null, 2, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <TimetablePeriodList> fields (1 entries)
-		StudentDTD.TIMETABLEPERIODLIST_TIMETABLEPERIOD = new ElementDefImpl( TIMETABLEPERIODLIST, "TimetablePeriod", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		StudentDTD.TIMETABLEPERIODLIST_TIMETABLEPERIOD = new ElementDefImpl( TIMETABLEPERIODLIST, "TimetablePeriod", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <Victim> fields (4 entries)
-		StudentDTD.VICTIM_TYPE = new ElementDefImpl( VICTIM, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.VICTIM_NAME = new ElementDefImpl( VICTIM, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		StudentDTD.VICTIM_SIF_REFID = new ElementDefImpl( VICTIM, "SIF_RefId", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		StudentDTD.VICTIM_INJURY = new ElementDefImpl( VICTIM, "Injury", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.VICTIM_TYPE = new ElementDefImpl( VICTIM, "Type", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.VICTIM_NAME = new ElementDefImpl( VICTIM, "Name", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		StudentDTD.VICTIM_SIF_REFID = new ElementDefImpl( VICTIM, "SIF_RefId", null, 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.VICTIM_INJURY = new ElementDefImpl( VICTIM, "Injury", null, 4, SifDtd.STUDENT, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <VictimList> fields (1 entries)
-		StudentDTD.VICTIMLIST_VICTIM = new ElementDefImpl( VICTIMLIST, "Victim", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		StudentDTD.VICTIMLIST_VICTIM = new ElementDefImpl( VICTIMLIST, "Victim", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <WeaponType> fields (0 entries)
 
 		// <WeaponTypeList> fields (1 entries)
-		StudentDTD.WEAPONTYPELIST_WEAPONTYPE = new ElementDefImpl( WEAPONTYPELIST, "WeaponType", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		StudentDTD.WEAPONTYPELIST_WEAPONTYPE = new ElementDefImpl( WEAPONTYPELIST, "WeaponType", null, 1, SifDtd.STUDENT, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 	}
 
 	#region Update SifDtd
@@ -2825,6 +3064,9 @@ namespace OpenADK.Library.us.Student
 		dictionary[ "StaffList" ] = STAFFLIST;
 		dictionary["StaffList_Staff"] = StudentDTD.STAFFLIST_STAFFPERSONALREFID ;
 		dictionary["StaffList_StaffPersonalRefId"] = StudentDTD.STAFFLIST_STAFFPERSONALREFID ;//2.0 alias
+		dictionary[ "CorrelationType" ] = CORRELATIONTYPE;
+		dictionary["CorrelationType_Code"] = StudentDTD.CORRELATIONTYPE_CODE ;
+		dictionary["CorrelationType_OtherCodeList"] = StudentDTD.CORRELATIONTYPE_OTHERCODELIST ;
 		dictionary[ "AgencyReporting" ] = AGENCYREPORTING;
 		dictionary["AgencyReporting_SIF_RefObject"] = StudentDTD.AGENCYREPORTING_SIF_REFOBJECT ;
 		dictionary[ "SchoolCourseInfoOverride" ] = SCHOOLCOURSEINFOOVERRIDE;
@@ -2896,6 +3138,13 @@ namespace OpenADK.Library.us.Student
 		dictionary["StudentPersonal_StudentAddress"] = StudentDTD.STUDENTPERSONAL_ADDRESSLIST ;
 		dictionary["StudentPersonal_Title1"] = StudentDTD.STUDENTPERSONAL_TITLE1 ;
 		dictionary["StudentPersonal_VocationalConcentrator"] = StudentDTD.STUDENTPERSONAL_VOCATIONALCONCENTRATOR ;
+		dictionary[ "SectionCorrelation" ] = SECTIONCORRELATION;
+		dictionary[ "SectionCorrelation_SIF_ExtendedElements" ] = SECTIONCORRELATION_SIF_EXTENDEDELEMENTS ;
+		dictionary[ "SectionCorrelation_SIF_Metadata" ] = SECTIONCORRELATION_SIF_METADATA;
+		dictionary["SectionCorrelation_CorrelationName"] = StudentDTD.SECTIONCORRELATION_CORRELATIONNAME ;
+		dictionary["SectionCorrelation_CorrelationSectionList"] = StudentDTD.SECTIONCORRELATION_CORRELATIONSECTIONLIST ;
+		dictionary["SectionCorrelation_CorrelationType"] = StudentDTD.SECTIONCORRELATION_CORRELATIONTYPE ;
+		dictionary["SectionCorrelation_RefId"] = StudentDTD.SECTIONCORRELATION_REFID ;
 		dictionary[ "IncidentAction" ] = INCIDENTACTION;
 		dictionary["IncidentAction_Arrest"] = StudentDTD.INCIDENTACTION_ARREST ;
 		dictionary["IncidentAction_Duration"] = StudentDTD.INCIDENTACTION_DURATION ;
@@ -2947,6 +3196,7 @@ namespace OpenADK.Library.us.Student
 		dictionary[ "CreditsAttempted" ] = CREDITSATTEMPTED;
 		dictionary["CreditsAttempted_Code"] = StudentDTD.CREDITSATTEMPTED_TYPE ;
 		dictionary["CreditsAttempted_Type"] = StudentDTD.CREDITSATTEMPTED_TYPE ;//2.0 alias
+		dictionary[ "NameEvaluation" ] = NAMEEVALUATION;
 		dictionary[ "StudentAddressList" ] = STUDENTADDRESSLIST;
 		dictionary["StudentAddressList_Address"] = StudentDTD.STUDENTADDRESSLIST_ADDRESS ;
 		dictionary["StudentAddressList_DayOfWeek"] = StudentDTD.STUDENTADDRESSLIST_DAYOFWEEK ;
@@ -2995,6 +3245,7 @@ namespace OpenADK.Library.us.Student
 		dictionary[ "SchoolInfo" ] = SCHOOLINFO;
 		dictionary[ "SchoolInfo_SIF_ExtendedElements" ] = SCHOOLINFO_SIF_EXTENDEDELEMENTS ;
 		dictionary[ "SchoolInfo_SIF_Metadata" ] = SCHOOLINFO_SIF_METADATA;
+		dictionary["SchoolInfo_ActiveSchoolYear"] = StudentDTD.SCHOOLINFO_ACTIVESCHOOLYEAR ;
 		dictionary["SchoolInfo_Address"] = CommonDTD.ADDRESSLIST_ADDRESS ;//Collapsed in 1.1
 		dictionary["SchoolInfo_AddressList"] = StudentDTD.SCHOOLINFO_ADDRESSLIST ;
 		dictionary["SchoolInfo_CongressionalDistrict"] = StudentDTD.SCHOOLINFO_CONGRESSIONALDISTRICT ;
@@ -3033,6 +3284,8 @@ namespace OpenADK.Library.us.Student
 		dictionary["StudentContactRelationship_Relationship"] = StudentDTD.STUDENTCONTACTRELATIONSHIP_RELATIONSHIP ;
 		dictionary["StudentContactRelationship_StudentContactPersonalRefId"] = StudentDTD.STUDENTCONTACTRELATIONSHIP_STUDENTCONTACTPERSONALREFID ;
 		dictionary["StudentContactRelationship_StudentPersonalRefId"] = StudentDTD.STUDENTCONTACTRELATIONSHIP_STUDENTPERSONALREFID ;
+		dictionary[ "Roles" ] = ROLES;
+		dictionary["Roles_Role"] = StudentDTD.ROLES_ROLE ;
 		dictionary[ "TeacherList" ] = TEACHERLIST;
 		dictionary["TeacherList_StaffPersonalRefId"] = StudentDTD.TEACHERLIST_STAFFPERSONALREFID ;//2.0 alias
 		dictionary["TeacherList_Teacher"] = StudentDTD.TEACHERLIST_STAFFPERSONALREFID ;
@@ -3136,6 +3389,7 @@ namespace OpenADK.Library.us.Student
 		dictionary[ "StudentSectionEnrollment_SIF_ExtendedElements" ] = STUDENTSECTIONENROLLMENT_SIF_EXTENDEDELEMENTS ;
 		dictionary[ "StudentSectionEnrollment_SIF_Metadata" ] = STUDENTSECTIONENROLLMENT_SIF_METADATA;
 		dictionary["StudentSectionEnrollment_CreditsAttempted"] = StudentDTD.STUDENTSECTIONENROLLMENT_CREDITSATTEMPTED ;
+		dictionary["StudentSectionEnrollment_DualCredit"] = StudentDTD.STUDENTSECTIONENROLLMENT_DUALCREDIT ;
 		dictionary["StudentSectionEnrollment_EntryDate"] = StudentDTD.STUDENTSECTIONENROLLMENT_ENTRYDATE ;
 		dictionary["StudentSectionEnrollment_ExitDate"] = StudentDTD.STUDENTSECTIONENROLLMENT_EXITDATE ;
 		dictionary["StudentSectionEnrollment_RefId"] = StudentDTD.STUDENTSECTIONENROLLMENT_REFID ;
@@ -3213,6 +3467,9 @@ namespace OpenADK.Library.us.Student
 		dictionary["StudentSnapshot_StudentPersonalRefId"] = StudentDTD.STUDENTSNAPSHOT_STUDENTPERSONALREFID ;
 		dictionary["StudentSnapshot_Title1"] = StudentDTD.STUDENTSNAPSHOT_TITLE1 ;
 		dictionary["StudentSnapshot_VocationalConcentrator"] = StudentDTD.STUDENTSNAPSHOT_VOCATIONALCONCENTRATOR ;
+		dictionary[ "EvaluationRecommendation" ] = EVALUATIONRECOMMENDATION;
+		dictionary["EvaluationRecommendation_Code"] = StudentDTD.EVALUATIONRECOMMENDATION_CODE ;
+		dictionary["EvaluationRecommendation_OtherCodeList"] = StudentDTD.EVALUATIONRECOMMENDATION_OTHERCODELIST ;
 		dictionary[ "SectionRoomList" ] = SECTIONROOMLIST;
 		dictionary["SectionRoomList_RoomInfoRefId"] = StudentDTD.SECTIONROOMLIST_ROOMINFOREFID ;//2.0 alias
 		dictionary["SectionRoomList_SectionRoom"] = StudentDTD.SECTIONROOMLIST_ROOMINFOREFID ;
@@ -3298,6 +3555,10 @@ namespace OpenADK.Library.us.Student
 		dictionary[ "CourseCredits" ] = COURSECREDITS;
 		dictionary["CourseCredits_Code"] = StudentDTD.COURSECREDITS_TYPE ;
 		dictionary["CourseCredits_Type"] = StudentDTD.COURSECREDITS_TYPE ;//2.0 alias
+		dictionary[ "EvaluationPart" ] = EVALUATIONPART;
+		dictionary["EvaluationPart_Name"] = StudentDTD.EVALUATIONPART_NAME ;
+		dictionary["EvaluationPart_Scale"] = StudentDTD.EVALUATIONPART_SCALE ;
+		dictionary["EvaluationPart_Score"] = StudentDTD.EVALUATIONPART_SCORE ;
 		dictionary[ "LocationOfInstruction" ] = LOCATIONOFINSTRUCTION;
 		dictionary["LocationOfInstruction_Code"] = StudentDTD.LOCATIONOFINSTRUCTION_CODE ;
 		dictionary["LocationOfInstruction_OtherCodeList"] = StudentDTD.LOCATIONOFINSTRUCTION_OTHERCODELIST ;
@@ -3306,6 +3567,24 @@ namespace OpenADK.Library.us.Student
 		dictionary[ "BellScheduleDay" ] = BELLSCHEDULEDAY;
 		dictionary["BellScheduleDay_BellScheduleRefId"] = StudentDTD.BELLSCHEDULEDAY_BELLSCHEDULEREFID ;
 		dictionary["BellScheduleDay_TimetableDayIdentifier"] = StudentDTD.BELLSCHEDULEDAY_TIMETABLEDAYIDENTIFIER ;
+		dictionary[ "StaffEvaluation" ] = STAFFEVALUATION;
+		dictionary[ "StaffEvaluation_SIF_ExtendedElements" ] = STAFFEVALUATION_SIF_EXTENDEDELEMENTS ;
+		dictionary[ "StaffEvaluation_SIF_Metadata" ] = STAFFEVALUATION_SIF_METADATA;
+		dictionary["StaffEvaluation_BargainingUnit"] = StudentDTD.STAFFEVALUATION_BARGAININGUNIT ;
+		dictionary["StaffEvaluation_EvaluationCycleName"] = StudentDTD.STAFFEVALUATION_EVALUATIONCYCLENAME ;
+		dictionary["StaffEvaluation_EvaluationDate"] = StudentDTD.STAFFEVALUATION_EVALUATIONDATE ;
+		dictionary["StaffEvaluation_EvaluationHolisticScale"] = StudentDTD.STAFFEVALUATION_EVALUATIONHOLISTICSCALE ;
+		dictionary["StaffEvaluation_EvaluationHolisticScore"] = StudentDTD.STAFFEVALUATION_EVALUATIONHOLISTICSCORE ;
+		dictionary["StaffEvaluation_EvaluationParts"] = StudentDTD.STAFFEVALUATION_EVALUATIONPARTS ;
+		dictionary["StaffEvaluation_EvaluationPostconferenceDate"] = StudentDTD.STAFFEVALUATION_EVALUATIONPOSTCONFERENCEDATE ;
+		dictionary["StaffEvaluation_EvaluationPreconferenceDate"] = StudentDTD.STAFFEVALUATION_EVALUATIONPRECONFERENCEDATE ;
+		dictionary["StaffEvaluation_EvaluationRecommendation"] = StudentDTD.STAFFEVALUATION_EVALUATIONRECOMMENDATION ;
+		dictionary["StaffEvaluation_EvaluationSystem"] = StudentDTD.STAFFEVALUATION_EVALUATIONSYSTEM ;
+		dictionary["StaffEvaluation_EvaluatorStateProvinceId"] = StudentDTD.STAFFEVALUATION_EVALUATORSTATEPROVINCEID ;
+		dictionary["StaffEvaluation_NCESId"] = StudentDTD.STAFFEVALUATION_NCESID ;
+		dictionary["StaffEvaluation_ProjectedEvaluationDate"] = StudentDTD.STAFFEVALUATION_PROJECTEDEVALUATIONDATE ;
+		dictionary["StaffEvaluation_SchoolInfoRefId"] = StudentDTD.STAFFEVALUATION_SCHOOLINFOREFID ;
+		dictionary["StaffEvaluation_StaffPersonalRefId"] = StudentDTD.STAFFEVALUATION_STAFFPERSONALREFID ;
 		dictionary[ "BellPeriod" ] = BELLPERIOD;
 		dictionary["BellPeriod_EndTime"] = StudentDTD.BELLPERIOD_ENDTIME ;
 		dictionary["BellPeriod_InstructionalMinutes"] = StudentDTD.BELLPERIOD_INSTRUCTIONALMINUTES ;
@@ -3314,6 +3593,8 @@ namespace OpenADK.Library.us.Student
 		dictionary["BellPeriod_TimetableDayIdentifier"] = StudentDTD.BELLPERIOD_TIMETABLEDAYIDENTIFIER ;
 		dictionary["BellPeriod_TimetablePeriodIdentifier"] = StudentDTD.BELLPERIOD_TIMETABLEPERIODIDENTIFIER ;
 		dictionary["BellPeriod_UseInAttendanceCalculations"] = StudentDTD.BELLPERIOD_USEINATTENDANCECALCULATIONS ;
+		dictionary[ "CorrelationSection" ] = CORRELATIONSECTION;
+		dictionary["CorrelationSection_Primary"] = StudentDTD.CORRELATIONSECTION_PRIMARY ;
 		dictionary[ "IncidentReporter" ] = INCIDENTREPORTER;
 		dictionary["IncidentReporter_Name"] = StudentDTD.INCIDENTREPORTER_NAME ;
 		dictionary["IncidentReporter_SIF_RefId"] = StudentDTD.INCIDENTREPORTER_SIF_REFID ;
@@ -3340,6 +3621,7 @@ namespace OpenADK.Library.us.Student
 		dictionary[ "MediumOfInstruction" ] = MEDIUMOFINSTRUCTION;
 		dictionary["MediumOfInstruction_Code"] = StudentDTD.MEDIUMOFINSTRUCTION_CODE ;
 		dictionary["MediumOfInstruction_OtherCodeList"] = StudentDTD.MEDIUMOFINSTRUCTION_OTHERCODELIST ;
+		dictionary[ "ScaleEvaluation" ] = SCALEEVALUATION;
 		dictionary[ "HomeEnrollment" ] = HOMEENROLLMENT;
 		dictionary["HomeEnrollment_EnrollmentId"] = StudentDTD.HOMEENROLLMENT_STUDENTSCHOOLENROLLMENTREFID ;
 		dictionary["HomeEnrollment_FullYearEnrollment"] = StudentDTD.HOMEENROLLMENT_FULLYEARENROLLMENT ;
@@ -3381,6 +3663,18 @@ namespace OpenADK.Library.us.Student
 		dictionary["StudentAddress_Address"] = StudentDTD.STUDENTADDRESS_ADDRESS ;
 		dictionary["StudentAddress_DayOfWeek"] = StudentDTD.STUDENTADDRESS_DAYOFWEEK ;
 		dictionary["StudentAddress_PickupOrDropoff"] = StudentDTD.STUDENTADDRESS_PICKUPORDROPOFF ;
+		dictionary[ "StaffSectionAssignment" ] = STAFFSECTIONASSIGNMENT;
+		dictionary[ "StaffSectionAssignment_SIF_ExtendedElements" ] = STAFFSECTIONASSIGNMENT_SIF_EXTENDEDELEMENTS ;
+		dictionary[ "StaffSectionAssignment_SIF_Metadata" ] = STAFFSECTIONASSIGNMENT_SIF_METADATA;
+		dictionary["StaffSectionAssignment_AssignmentEndDate"] = StudentDTD.STAFFSECTIONASSIGNMENT_ASSIGNMENTENDDATE ;
+		dictionary["StaffSectionAssignment_AssignmentStartDate"] = StudentDTD.STAFFSECTIONASSIGNMENT_ASSIGNMENTSTARTDATE ;
+		dictionary["StaffSectionAssignment_PercentResponsible"] = StudentDTD.STAFFSECTIONASSIGNMENT_PERCENTRESPONSIBLE ;
+		dictionary["StaffSectionAssignment_RefId"] = StudentDTD.STAFFSECTIONASSIGNMENT_REFID ;
+		dictionary["StaffSectionAssignment_Roles"] = StudentDTD.STAFFSECTIONASSIGNMENT_ROLES ;
+		dictionary["StaffSectionAssignment_SectionInfoRefId"] = StudentDTD.STAFFSECTIONASSIGNMENT_SECTIONINFOREFID ;
+		dictionary["StaffSectionAssignment_StaffPersonalRefId"] = StudentDTD.STAFFSECTIONASSIGNMENT_STAFFPERSONALREFID ;
+		dictionary["StaffSectionAssignment_TeacherOfRecord"] = StudentDTD.STAFFSECTIONASSIGNMENT_TEACHEROFRECORD ;
+		dictionary[ "Role" ] = ROLE;
 		dictionary[ "LanguageOfInstruction" ] = LANGUAGEOFINSTRUCTION;
 		dictionary["LanguageOfInstruction_Code"] = StudentDTD.LANGUAGEOFINSTRUCTION_CODE ;
 		dictionary["LanguageOfInstruction_OtherCodeList"] = StudentDTD.LANGUAGEOFINSTRUCTION_OTHERCODELIST ;
@@ -3395,6 +3689,8 @@ namespace OpenADK.Library.us.Student
 		dictionary["SCEDCode_CourseLevel"] = StudentDTD.SCEDCODE_COURSELEVEL ;
 		dictionary["SCEDCode_SequenceLimit"] = StudentDTD.SCEDCODE_SEQUENCELIMIT ;
 		dictionary["SCEDCode_SequenceNumber"] = StudentDTD.SCEDCODE_SEQUENCENUMBER ;
+		dictionary[ "EvaluationParts" ] = EVALUATIONPARTS;
+		dictionary["EvaluationParts_EvaluationPart"] = StudentDTD.EVALUATIONPARTS_EVALUATIONPART ;
 		dictionary[ "StaffPersonalRefId" ] = STAFFPERSONALREFID;
 		dictionary[ "Homeroom" ] = HOMEROOM;
 		dictionary["Homeroom_SIF_RefObject"] = StudentDTD.HOMEROOM_SIF_REFOBJECT ;
@@ -3415,6 +3711,8 @@ namespace OpenADK.Library.us.Student
 		dictionary[ "TimetableDay" ] = TIMETABLEDAY;
 		dictionary["TimetableDay_Identifier"] = StudentDTD.TIMETABLEDAY_IDENTIFIER ;
 		dictionary["TimetableDay_Name"] = StudentDTD.TIMETABLEDAY_NAME ;
+		dictionary[ "CorrelationSectionList" ] = CORRELATIONSECTIONLIST;
+		dictionary["CorrelationSectionList_CorrelationSection"] = StudentDTD.CORRELATIONSECTIONLIST_CORRELATIONSECTION ;
 		dictionary[ "StudentContact" ] = STUDENTCONTACT;
 		dictionary[ "StudentContact_SIF_ExtendedElements" ] = STUDENTCONTACT_SIF_EXTENDEDELEMENTS ;
 		dictionary[ "StudentContact_SIF_Metadata" ] = STUDENTCONTACT_SIF_METADATA;
@@ -3477,6 +3775,7 @@ namespace OpenADK.Library.us.Student
 		dictionary[ "Promotion" ] = PROMOTION;
 		dictionary["Promotion_Code"] = StudentDTD.PROMOTION_CODE ;
 		dictionary["Promotion_OtherCodeList"] = StudentDTD.PROMOTION_OTHERCODELIST ;
+		dictionary[ "ScoreEvaluation" ] = SCOREEVALUATION;
 		dictionary[ "ScheduleInfoOverrideList" ] = SCHEDULEINFOOVERRIDELIST;
 		dictionary["ScheduleInfoOverrideList_ScheduleInfoOverride"] = StudentDTD.SCHEDULEINFOOVERRIDELIST_SCHEDULEINFOOVERRIDE ;
 		dictionary[ "AdministratorAttendance" ] = ADMINISTRATORATTENDANCE;
@@ -3514,6 +3813,7 @@ namespace OpenADK.Library.us.Student
 		dictionary["SchoolCourseInfo_Department"] = StudentDTD.SCHOOLCOURSEINFO_DEPARTMENT ;
 		dictionary["SchoolCourseInfo_Description"] = StudentDTD.SCHOOLCOURSEINFO_DESCRIPTION ;
 		dictionary["SchoolCourseInfo_DistrictCourseCode"] = StudentDTD.SCHOOLCOURSEINFO_DISTRICTCOURSECODE ;
+		dictionary["SchoolCourseInfo_DualCredit"] = StudentDTD.SCHOOLCOURSEINFO_DUALCREDIT ;
 		dictionary["SchoolCourseInfo_GradRequirement"] = StudentDTD.SCHOOLCOURSEINFO_GRADUATIONREQUIREMENT ;
 		dictionary["SchoolCourseInfo_GraduationRequirement"] = StudentDTD.SCHOOLCOURSEINFO_GRADUATIONREQUIREMENT ;//2.0 alias
 		dictionary["SchoolCourseInfo_InstructionalLevel"] = StudentDTD.SCHOOLCOURSEINFO_INSTRUCTIONALLEVEL ;

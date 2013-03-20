@@ -55,15 +55,18 @@ namespace OpenADK.Library.au
 	Learning = 0x0000040,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	Reporting = 0x0000080,
+	Sif3assessment = 0x0000080,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	Datamodel = 0x00000100,
+	Reporting = 0x00000100,
 
 	/// <summary>Identifies the null Sdo library</summary>
-	Gradebook = 0x00000200,
+	Datamodel = 0x00000200,
+
+	/// <summary>Identifies the null Sdo library</summary>
+	Gradebook = 0x00000400,
 
 	/// <summary>Identifies the Infrastructure Sdo library</summary>
-	Infrastructure = 0x00000400,
+	Infrastructure = 0x00000800,
 
 }}

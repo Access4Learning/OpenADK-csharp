@@ -4,9 +4,9 @@
 //
 
 using System;
-using Edustructures.SifWorks.Impl;
+using OpenADK.Library.Impl;
 
-namespace Edustructures.SifWorks.Tools.Metadata
+namespace OpenADK.Library.Tools.Metadata
 {
     public class AdkMetadata
     {

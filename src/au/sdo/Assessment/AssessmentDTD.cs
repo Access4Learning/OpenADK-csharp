@@ -20,7 +20,7 @@ namespace OpenADK.Library.au.Assessment
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -80,10 +80,6 @@ namespace OpenADK.Library.au.Assessment
 	public static IElementDef ASSESSMENT = null;
 	/** Defines the &lt;AssessmentAdministration&gt; SIF Data Object */
 	public static IElementDef ASSESSMENTADMINISTRATION = null;
-	/** Defines the &lt;AssessmentDescriptor&gt; SIF Data Object */
-	public static IElementDef ASSESSMENTDESCRIPTOR = null;
-	/** Defines the &lt;AssessmentDescriptors&gt; SIF Data Object */
-	public static IElementDef ASSESSMENTDESCRIPTORS = null;
 	/** Defines the &lt;AssessmentForm&gt; SIF Data Object */
 	public static IElementDef ASSESSMENTFORM = null;
 	/** Defines the &lt;AssessmentItem&gt; SIF Data Object */
@@ -181,12 +177,6 @@ namespace OpenADK.Library.au.Assessment
 	public static IElementDef ASSESSMENTADMINISTRATION_SIF_EXTENDEDELEMENTS = null;
 	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
 	public static IElementDef ASSESSMENTADMINISTRATION_SIF_METADATA = null;
-
-	// Field elements of ASSESSMENTDESCRIPTOR (0 fields)
-
-	// Field elements of ASSESSMENTDESCRIPTORS (1 fields)
-	/** Defines the &lt;AssessmentDescriptor&gt; element as a child of &lt;AssessmentDescriptors&gt; */
-	public static IElementDef ASSESSMENTDESCRIPTORS_ASSESSMENTDESCRIPTOR = null;
 
 	// Field elements of ASSESSMENTFORM (9 fields)
 	/** Defines the RefId attribute as a child of &lt;AssessmentForm&gt; */
@@ -422,7 +412,7 @@ namespace OpenADK.Library.au.Assessment
 	/** Defines the &lt;SpecialCondition&gt; element as a child of &lt;SpecialConditions&gt; */
 	public static IElementDef SPECIALCONDITIONS_SPECIALCONDITION = null;
 
-	// Field elements of STUDENTSCORESET (6 fields)
+	// Field elements of STUDENTSCORESET (8 fields)
 	/** Defines the RefId attribute as a child of &lt;StudentScoreSet&gt; */
 	public static IElementDef STUDENTSCORESET_REFID = null;
 	/** Defines the &lt;ScoreMetric&gt; element as a child of &lt;StudentScoreSet&gt; */
@@ -435,6 +425,10 @@ namespace OpenADK.Library.au.Assessment
 	public static IElementDef STUDENTSCORESET_ASSESSMENTREGISTRATIONREFID = null;
 	/** Defines the &lt;Scores&gt; element as a child of &lt;StudentScoreSet&gt; */
 	public static IElementDef STUDENTSCORESET_SCORES = null;
+	/** Defines the &lt;StartDateTime&gt; element as a child of &lt;StudentScoreSet&gt; */
+	public static IElementDef STUDENTSCORESET_STARTDATETIME = null;
+	/** Defines the &lt;FinishDateTime&gt; element as a child of &lt;StudentScoreSet&gt; */
+	public static IElementDef STUDENTSCORESET_FINISHDATETIME = null;
 	/** SIF 1.5 and later: Defines the built-in SIF_ExtendedElements element common to all SIF Data Objects */
 	public static IElementDef STUDENTSCORESET_SIF_EXTENDEDELEMENTS = null;
 	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
@@ -452,221 +446,216 @@ namespace OpenADK.Library.au.Assessment
 	{
 		//  Objects defined by this SDO Library...
 
-		ASSESSMENT = new ElementDefImpl( null, "Assessment", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTADMINISTRATION = new ElementDefImpl( null, "AssessmentAdministration", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTDESCRIPTOR = new ElementDefImpl( null, "AssessmentDescriptor", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ASSESSMENTDESCRIPTORS = new ElementDefImpl( null, "AssessmentDescriptors", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTFORM = new ElementDefImpl( null, "AssessmentForm", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTITEM = new ElementDefImpl( null, "AssessmentItem", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTPACKAGE = new ElementDefImpl( null, "AssessmentPackage", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTREGISTRATION = new ElementDefImpl( null, "AssessmentRegistration", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTSTUDENTSNAPSHOT = new ElementDefImpl( null, "AssessmentStudentSnapshot", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTSUBTEST = new ElementDefImpl( null, "AssessmentSubTest", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTSUBTESTREFID = new ElementDefImpl( null, "AssessmentSubTestRefId", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ASSESSMENTSUBTESTREFIDS = new ElementDefImpl( null, "AssessmentSubTestRefIds", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CHOICE = new ElementDefImpl( null, "Choice", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CUTSCORES = new ElementDefImpl( null, "CutScores", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		FORMNUMBER = new ElementDefImpl( null, "FormNumber", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		FORMNUMBERS = new ElementDefImpl( null, "FormNumbers", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ITEM = new ElementDefImpl( null, "Item", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ITEMS = new ElementDefImpl( null, "Items", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		PERFORMANCELEVEL = new ElementDefImpl( null, "PerformanceLevel", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		PERFORMANCELEVELS = new ElementDefImpl( null, "PerformanceLevels", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		RESPONSECHOICES = new ElementDefImpl( null, "ResponseChoices", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		SCORE = new ElementDefImpl( null, "Score", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		SCORERANGE = new ElementDefImpl( null, "ScoreRange", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		SCORES = new ElementDefImpl( null, "Scores", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		SPECIALCONDITION = new ElementDefImpl( null, "SpecialCondition", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		SPECIALCONDITIONS = new ElementDefImpl( null, "SpecialConditions", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTSCORESET = new ElementDefImpl( null, "StudentScoreSet", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTSPECIALCONDITION = new ElementDefImpl( null, "StudentSpecialCondition", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTSPECIALCONDITIONS = new ElementDefImpl( null, "StudentSpecialConditions", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		ASSESSMENT = new ElementDefImpl( null, "Assessment", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTADMINISTRATION = new ElementDefImpl( null, "AssessmentAdministration", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTFORM = new ElementDefImpl( null, "AssessmentForm", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTITEM = new ElementDefImpl( null, "AssessmentItem", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTPACKAGE = new ElementDefImpl( null, "AssessmentPackage", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTREGISTRATION = new ElementDefImpl( null, "AssessmentRegistration", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTSTUDENTSNAPSHOT = new ElementDefImpl( null, "AssessmentStudentSnapshot", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTSUBTEST = new ElementDefImpl( null, "AssessmentSubTest", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTSUBTESTREFID = new ElementDefImpl( null, "AssessmentSubTestRefId", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ASSESSMENTSUBTESTREFIDS = new ElementDefImpl( null, "AssessmentSubTestRefIds", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CHOICE = new ElementDefImpl( null, "Choice", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CUTSCORES = new ElementDefImpl( null, "CutScores", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		FORMNUMBER = new ElementDefImpl( null, "FormNumber", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		FORMNUMBERS = new ElementDefImpl( null, "FormNumbers", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ITEM = new ElementDefImpl( null, "Item", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ITEMS = new ElementDefImpl( null, "Items", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		PERFORMANCELEVEL = new ElementDefImpl( null, "PerformanceLevel", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		PERFORMANCELEVELS = new ElementDefImpl( null, "PerformanceLevels", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		RESPONSECHOICES = new ElementDefImpl( null, "ResponseChoices", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		SCORE = new ElementDefImpl( null, "Score", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		SCORERANGE = new ElementDefImpl( null, "ScoreRange", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		SCORES = new ElementDefImpl( null, "Scores", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		SPECIALCONDITION = new ElementDefImpl( null, "SpecialCondition", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		SPECIALCONDITIONS = new ElementDefImpl( null, "SpecialConditions", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTSCORESET = new ElementDefImpl( null, "StudentScoreSet", null, 0, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTSPECIALCONDITION = new ElementDefImpl( null, "StudentSpecialCondition", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTSPECIALCONDITIONS = new ElementDefImpl( null, "StudentSpecialConditions", null, 0, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 
 		// <Assessment> fields (5 entries)
-		AssessmentDTD.ASSESSMENT_REFID = new ElementDefImpl( ASSESSMENT, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENT_NAME = new ElementDefImpl( ASSESSMENT, "Name", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENT_ASSESSMENTID = new ElementDefImpl( ASSESSMENT, "AssessmentId", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENT_ASSESSMENTPACKAGEREFID = new ElementDefImpl( ASSESSMENT, "AssessmentPackageRefId", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENT_ASSESSMENTDESCRIPTORS = new ElementDefImpl( ASSESSMENT, "AssessmentDescriptors", null, 5, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ASSESSMENT_SIF_METADATA = new ElementDefImpl( ASSESSMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		AssessmentDTD.ASSESSMENT_REFID = new ElementDefImpl( ASSESSMENT, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENT_NAME = new ElementDefImpl( ASSESSMENT, "Name", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENT_ASSESSMENTID = new ElementDefImpl( ASSESSMENT, "AssessmentId", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENT_ASSESSMENTPACKAGEREFID = new ElementDefImpl( ASSESSMENT, "AssessmentPackageRefId", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENT_ASSESSMENTDESCRIPTORS = new ElementDefImpl( ASSESSMENT, "AssessmentDescriptors", null, 5, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ASSESSMENT_SIF_METADATA = new ElementDefImpl( ASSESSMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AssessmentAdministration> fields (12 entries)
-		AssessmentDTD.ASSESSMENTADMINISTRATION_REFID = new ElementDefImpl( ASSESSMENTADMINISTRATION, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_ASSESSMENTFORMREFID = new ElementDefImpl( ASSESSMENTADMINISTRATION, "AssessmentFormRefId", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_ADMINISTRATIONNAME = new ElementDefImpl( ASSESSMENTADMINISTRATION, "AdministrationName", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_SPECIALCONDITIONS = new ElementDefImpl( ASSESSMENTADMINISTRATION, "SpecialConditions", null, 4, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_ADMINISTRATIONDATETIME = new ElementDefImpl( ASSESSMENTADMINISTRATION, "AdministrationDateTime", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_STARTDATETIME = new ElementDefImpl( ASSESSMENTADMINISTRATION, "StartDateTime", null, 6, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_FINISHDATETIME = new ElementDefImpl( ASSESSMENTADMINISTRATION, "FinishDateTime", null, 7, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_DUEDATETIME = new ElementDefImpl( ASSESSMENTADMINISTRATION, "DueDateTime", null, 8, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_ADDRESS = new ElementDefImpl( ASSESSMENTADMINISTRATION, "Address", null, 9, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_STAFFPERSONALREFID = new ElementDefImpl( ASSESSMENTADMINISTRATION, "StaffPersonalRefId", null, 10, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_LEAINFOREFID = new ElementDefImpl( ASSESSMENTADMINISTRATION, "LEAInfoRefId", null, 11, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTADMINISTRATION_SCHOOLINFOREFID = new ElementDefImpl( ASSESSMENTADMINISTRATION, "SchoolInfoRefId", null, 12, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ASSESSMENTADMINISTRATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTADMINISTRATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ASSESSMENTADMINISTRATION_SIF_METADATA = new ElementDefImpl( ASSESSMENTADMINISTRATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
-
-		// <AssessmentDescriptor> fields (0 entries)
-
-		// <AssessmentDescriptors> fields (1 entries)
-		AssessmentDTD.ASSESSMENTDESCRIPTORS_ASSESSMENTDESCRIPTOR = new ElementDefImpl( ASSESSMENTDESCRIPTORS, "AssessmentDescriptor", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_REFID = new ElementDefImpl( ASSESSMENTADMINISTRATION, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_ASSESSMENTFORMREFID = new ElementDefImpl( ASSESSMENTADMINISTRATION, "AssessmentFormRefId", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_ADMINISTRATIONNAME = new ElementDefImpl( ASSESSMENTADMINISTRATION, "AdministrationName", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_SPECIALCONDITIONS = new ElementDefImpl( ASSESSMENTADMINISTRATION, "SpecialConditions", null, 4, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_ADMINISTRATIONDATETIME = new ElementDefImpl( ASSESSMENTADMINISTRATION, "AdministrationDateTime", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_STARTDATETIME = new ElementDefImpl( ASSESSMENTADMINISTRATION, "StartDateTime", null, 6, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_FINISHDATETIME = new ElementDefImpl( ASSESSMENTADMINISTRATION, "FinishDateTime", null, 7, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_DUEDATETIME = new ElementDefImpl( ASSESSMENTADMINISTRATION, "DueDateTime", null, 8, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_ADDRESS = new ElementDefImpl( ASSESSMENTADMINISTRATION, "Address", null, 9, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_STAFFPERSONALREFID = new ElementDefImpl( ASSESSMENTADMINISTRATION, "StaffPersonalRefId", null, 10, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_LEAINFOREFID = new ElementDefImpl( ASSESSMENTADMINISTRATION, "LEAInfoRefId", null, 11, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTADMINISTRATION_SCHOOLINFOREFID = new ElementDefImpl( ASSESSMENTADMINISTRATION, "SchoolInfoRefId", null, 12, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ASSESSMENTADMINISTRATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTADMINISTRATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ASSESSMENTADMINISTRATION_SIF_METADATA = new ElementDefImpl( ASSESSMENTADMINISTRATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AssessmentForm> fields (9 entries)
-		AssessmentDTD.ASSESSMENTFORM_REFID = new ElementDefImpl( ASSESSMENTFORM, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTFORM_ASSESSMENTREFID = new ElementDefImpl( ASSESSMENTFORM, "AssessmentRefId", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTFORM_ASSESSMENTTYPE = new ElementDefImpl( ASSESSMENTFORM, "AssessmentType", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTFORM_FORMNAME = new ElementDefImpl( ASSESSMENTFORM, "FormName", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTFORM_FORMNUMBERS = new ElementDefImpl( ASSESSMENTFORM, "FormNumbers", null, 5, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTFORM_LEVEL = new ElementDefImpl( ASSESSMENTFORM, "Level", null, 6, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTFORM_PERIOD = new ElementDefImpl( ASSESSMENTFORM, "Period", null, 7, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTFORM_YEARLEVELS = new ElementDefImpl( ASSESSMENTFORM, "YearLevels", null, 8, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTFORM_ASSESSMENTSUBTESTREFIDS = new ElementDefImpl( ASSESSMENTFORM, "AssessmentSubTestRefIds", null, 9, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTFORM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTFORM, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ASSESSMENTFORM_SIF_METADATA = new ElementDefImpl( ASSESSMENTFORM, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		AssessmentDTD.ASSESSMENTFORM_REFID = new ElementDefImpl( ASSESSMENTFORM, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTFORM_ASSESSMENTREFID = new ElementDefImpl( ASSESSMENTFORM, "AssessmentRefId", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTFORM_ASSESSMENTTYPE = new ElementDefImpl( ASSESSMENTFORM, "AssessmentType", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTFORM_FORMNAME = new ElementDefImpl( ASSESSMENTFORM, "FormName", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTFORM_FORMNUMBERS = new ElementDefImpl( ASSESSMENTFORM, "FormNumbers", null, 5, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTFORM_LEVEL = new ElementDefImpl( ASSESSMENTFORM, "Level", null, 6, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTFORM_PERIOD = new ElementDefImpl( ASSESSMENTFORM, "Period", null, 7, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTFORM_YEARLEVELS = new ElementDefImpl( ASSESSMENTFORM, "YearLevels", null, 8, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTFORM_ASSESSMENTSUBTESTREFIDS = new ElementDefImpl( ASSESSMENTFORM, "AssessmentSubTestRefIds", null, 9, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTFORM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTFORM, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ASSESSMENTFORM_SIF_METADATA = new ElementDefImpl( ASSESSMENTFORM, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AssessmentItem> fields (12 entries)
-		AssessmentDTD.ASSESSMENTITEM_REFID = new ElementDefImpl( ASSESSMENTITEM, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTITEM_ASSESSMENTFORMREFID = new ElementDefImpl( ASSESSMENTITEM, "AssessmentFormRefId", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTITEM_RESPONSETYPE = new ElementDefImpl( ASSESSMENTITEM, "ResponseType", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTITEM_ITEMLABEL = new ElementDefImpl( ASSESSMENTITEM, "ItemLabel", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTITEM_ITEMNAME = new ElementDefImpl( ASSESSMENTITEM, "ItemName", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTITEM_LEARNINGSTANDARDITEMS = new ElementDefImpl( ASSESSMENTITEM, "LearningStandardItems", null, 6, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTITEM_STIMULUS = new ElementDefAlias( ASSESSMENTITEM, "Stimulus", null, "AbstractContentElementType", 7, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTITEM_STEM = new ElementDefAlias( ASSESSMENTITEM, "Stem", null, "AbstractContentElementType", 8, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTITEM_RESPONSECHOICES = new ElementDefImpl( ASSESSMENTITEM, "ResponseChoices", null, 9, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTITEM_ITEMSCOREMAXIMUM = new ElementDefImpl( ASSESSMENTITEM, "ItemScoreMaximum", null, 10, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTITEM_ITEMSCOREMINIMUM = new ElementDefImpl( ASSESSMENTITEM, "ItemScoreMinimum", null, 11, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTITEM_PERFORMANCELEVELS = new ElementDefImpl( ASSESSMENTITEM, "PerformanceLevels", null, 12, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTITEM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTITEM, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ASSESSMENTITEM_SIF_METADATA = new ElementDefImpl( ASSESSMENTITEM, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		AssessmentDTD.ASSESSMENTITEM_REFID = new ElementDefImpl( ASSESSMENTITEM, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTITEM_ASSESSMENTFORMREFID = new ElementDefImpl( ASSESSMENTITEM, "AssessmentFormRefId", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTITEM_RESPONSETYPE = new ElementDefImpl( ASSESSMENTITEM, "ResponseType", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTITEM_ITEMLABEL = new ElementDefImpl( ASSESSMENTITEM, "ItemLabel", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTITEM_ITEMNAME = new ElementDefImpl( ASSESSMENTITEM, "ItemName", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTITEM_LEARNINGSTANDARDITEMS = new ElementDefImpl( ASSESSMENTITEM, "LearningStandardItems", null, 6, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTITEM_STIMULUS = new ElementDefAlias( ASSESSMENTITEM, "Stimulus", null, "AbstractContentElementType", 7, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTITEM_STEM = new ElementDefAlias( ASSESSMENTITEM, "Stem", null, "AbstractContentElementType", 8, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTITEM_RESPONSECHOICES = new ElementDefImpl( ASSESSMENTITEM, "ResponseChoices", null, 9, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTITEM_ITEMSCOREMAXIMUM = new ElementDefImpl( ASSESSMENTITEM, "ItemScoreMaximum", null, 10, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTITEM_ITEMSCOREMINIMUM = new ElementDefImpl( ASSESSMENTITEM, "ItemScoreMinimum", null, 11, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTITEM_PERFORMANCELEVELS = new ElementDefImpl( ASSESSMENTITEM, "PerformanceLevels", null, 12, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTITEM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTITEM, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ASSESSMENTITEM_SIF_METADATA = new ElementDefImpl( ASSESSMENTITEM, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AssessmentPackage> fields (2 entries)
-		AssessmentDTD.ASSESSMENTPACKAGE_REFID = new ElementDefImpl( ASSESSMENTPACKAGE, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTPACKAGE_XMLDATA = new ElementDefImpl( ASSESSMENTPACKAGE, "XMLData", null, 2, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ASSESSMENTPACKAGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTPACKAGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ASSESSMENTPACKAGE_SIF_METADATA = new ElementDefImpl( ASSESSMENTPACKAGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		AssessmentDTD.ASSESSMENTPACKAGE_REFID = new ElementDefImpl( ASSESSMENTPACKAGE, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTPACKAGE_XMLDATA = new ElementDefImpl( ASSESSMENTPACKAGE, "XMLData", null, 2, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ASSESSMENTPACKAGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTPACKAGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ASSESSMENTPACKAGE_SIF_METADATA = new ElementDefImpl( ASSESSMENTPACKAGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AssessmentRegistration> fields (11 entries)
-		AssessmentDTD.ASSESSMENTREGISTRATION_REFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTREGISTRATION_STUDENTPERSONALREFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "StudentPersonalRefId", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTREGISTRATION_ASSESSMENTADMINISTRATIONREFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "AssessmentAdministrationRefId", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTREGISTRATION_CREATIONDATETIME = new ElementDefImpl( ASSESSMENTREGISTRATION, "CreationDateTime", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATETIME );
-		AssessmentDTD.ASSESSMENTREGISTRATION_STUDENTSPECIALCONDITIONS = new ElementDefImpl( ASSESSMENTREGISTRATION, "StudentSpecialConditions", null, 5, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTREGISTRATION_STUDENTYEARLEVEL = new ElementDefAlias( ASSESSMENTREGISTRATION, "StudentYearLevel", null, "YearLevel", 6, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTREGISTRATION_ASSESSMENTYEARLEVEL = new ElementDefAlias( ASSESSMENTREGISTRATION, "AssessmentYearLevel", null, "YearLevel", 7, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTREGISTRATION_ASSESSMENTSTUDENTSNAPSHOT = new ElementDefImpl( ASSESSMENTREGISTRATION, "AssessmentStudentSnapshot", null, 8, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTREGISTRATION_LEAINFOREFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "LEAInfoRefId", null, 9, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTREGISTRATION_SCHOOLINFOREFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "SchoolInfoRefId", null, 10, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTREGISTRATION_STAFFPERSONALREFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "StaffPersonalRefId", null, 11, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ASSESSMENTREGISTRATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTREGISTRATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ASSESSMENTREGISTRATION_SIF_METADATA = new ElementDefImpl( ASSESSMENTREGISTRATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		AssessmentDTD.ASSESSMENTREGISTRATION_REFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTREGISTRATION_STUDENTPERSONALREFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "StudentPersonalRefId", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTREGISTRATION_ASSESSMENTADMINISTRATIONREFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "AssessmentAdministrationRefId", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTREGISTRATION_CREATIONDATETIME = new ElementDefImpl( ASSESSMENTREGISTRATION, "CreationDateTime", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		AssessmentDTD.ASSESSMENTREGISTRATION_STUDENTSPECIALCONDITIONS = new ElementDefImpl( ASSESSMENTREGISTRATION, "StudentSpecialConditions", null, 5, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTREGISTRATION_STUDENTYEARLEVEL = new ElementDefAlias( ASSESSMENTREGISTRATION, "StudentYearLevel", null, "YearLevel", 6, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTREGISTRATION_ASSESSMENTYEARLEVEL = new ElementDefAlias( ASSESSMENTREGISTRATION, "AssessmentYearLevel", null, "YearLevel", 7, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTREGISTRATION_ASSESSMENTSTUDENTSNAPSHOT = new ElementDefImpl( ASSESSMENTREGISTRATION, "AssessmentStudentSnapshot", null, 8, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTREGISTRATION_LEAINFOREFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "LEAInfoRefId", null, 9, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTREGISTRATION_SCHOOLINFOREFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "SchoolInfoRefId", null, 10, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTREGISTRATION_STAFFPERSONALREFID = new ElementDefImpl( ASSESSMENTREGISTRATION, "StaffPersonalRefId", null, 11, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ASSESSMENTREGISTRATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTREGISTRATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ASSESSMENTREGISTRATION_SIF_METADATA = new ElementDefImpl( ASSESSMENTREGISTRATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AssessmentStudentSnapshot> fields (2 entries)
-		AssessmentDTD.ASSESSMENTSTUDENTSNAPSHOT_SEX = new ElementDefImpl( ASSESSMENTSTUDENTSNAPSHOT, "Sex", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTSTUDENTSNAPSHOT_BIRTHDATE = new ElementDefImpl( ASSESSMENTSTUDENTSNAPSHOT, "BirthDate", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
+		AssessmentDTD.ASSESSMENTSTUDENTSNAPSHOT_SEX = new ElementDefImpl( ASSESSMENTSTUDENTSNAPSHOT, "Sex", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTSTUDENTSNAPSHOT_BIRTHDATE = new ElementDefImpl( ASSESSMENTSTUDENTSNAPSHOT, "BirthDate", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
 
 		// <AssessmentSubTest> fields (13 entries)
-		AssessmentDTD.ASSESSMENTSUBTEST_REFID = new ElementDefImpl( ASSESSMENTSUBTEST, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTSUBTEST_NAME = new ElementDefImpl( ASSESSMENTSUBTEST, "Name", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTSUBTEST_SCORERANGE = new ElementDefImpl( ASSESSMENTSUBTEST, "ScoreRange", null, 3, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTSUBTEST_PERFORMANCELEVELS = new ElementDefImpl( ASSESSMENTSUBTEST, "PerformanceLevels", null, 4, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTSUBTEST_SUBJECTAREA = new ElementDefImpl( ASSESSMENTSUBTEST, "SubjectArea", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTSUBTEST_YEARLEVELS = new ElementDefImpl( ASSESSMENTSUBTEST, "YearLevels", null, 6, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTSUBTEST_ASSESSMENTSUBTESTREFIDS = new ElementDefImpl( ASSESSMENTSUBTEST, "AssessmentSubTestRefIds", null, 7, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTSUBTEST_SUBTESTTIER = new ElementDefImpl( ASSESSMENTSUBTEST, "SubTestTier", null, 8, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.INT );
-		AssessmentDTD.ASSESSMENTSUBTEST_LEARNINGSTANDARDITEMREFIDS = new ElementDefAlias( ASSESSMENTSUBTEST, "LearningStandardItemRefIds", null, "LearningStandardItems", 9, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.ASSESSMENTSUBTEST_ABBREVIATION = new ElementDefImpl( ASSESSMENTSUBTEST, "Abbreviation", null, 10, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTSUBTEST_DESCRIPTION = new ElementDefImpl( ASSESSMENTSUBTEST, "Description", null, 11, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ASSESSMENTSUBTEST_NUMBEROFITEMS = new ElementDefImpl( ASSESSMENTSUBTEST, "NumberOfItems", null, 12, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.INT );
-		AssessmentDTD.ASSESSMENTSUBTEST_CONTAINERONLY = new ElementDefImpl( ASSESSMENTSUBTEST, "ContainerOnly", null, 13, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		ASSESSMENTSUBTEST_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTSUBTEST, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ASSESSMENTSUBTEST_SIF_METADATA = new ElementDefImpl( ASSESSMENTSUBTEST, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		AssessmentDTD.ASSESSMENTSUBTEST_REFID = new ElementDefImpl( ASSESSMENTSUBTEST, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTSUBTEST_NAME = new ElementDefImpl( ASSESSMENTSUBTEST, "Name", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTSUBTEST_SCORERANGE = new ElementDefImpl( ASSESSMENTSUBTEST, "ScoreRange", null, 3, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTSUBTEST_PERFORMANCELEVELS = new ElementDefImpl( ASSESSMENTSUBTEST, "PerformanceLevels", null, 4, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTSUBTEST_SUBJECTAREA = new ElementDefImpl( ASSESSMENTSUBTEST, "SubjectArea", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTSUBTEST_YEARLEVELS = new ElementDefImpl( ASSESSMENTSUBTEST, "YearLevels", null, 6, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTSUBTEST_ASSESSMENTSUBTESTREFIDS = new ElementDefImpl( ASSESSMENTSUBTEST, "AssessmentSubTestRefIds", null, 7, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTSUBTEST_SUBTESTTIER = new ElementDefImpl( ASSESSMENTSUBTEST, "SubTestTier", null, 8, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.INT );
+		AssessmentDTD.ASSESSMENTSUBTEST_LEARNINGSTANDARDITEMREFIDS = new ElementDefAlias( ASSESSMENTSUBTEST, "LearningStandardItemRefIds", null, "LearningStandardItems", 9, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.ASSESSMENTSUBTEST_ABBREVIATION = new ElementDefImpl( ASSESSMENTSUBTEST, "Abbreviation", null, 10, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTSUBTEST_DESCRIPTION = new ElementDefImpl( ASSESSMENTSUBTEST, "Description", null, 11, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTSUBTEST_NUMBEROFITEMS = new ElementDefImpl( ASSESSMENTSUBTEST, "NumberOfItems", null, 12, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.INT );
+		AssessmentDTD.ASSESSMENTSUBTEST_CONTAINERONLY = new ElementDefImpl( ASSESSMENTSUBTEST, "ContainerOnly", null, 13, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		ASSESSMENTSUBTEST_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ASSESSMENTSUBTEST, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ASSESSMENTSUBTEST_SIF_METADATA = new ElementDefImpl( ASSESSMENTSUBTEST, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AssessmentSubTestRefId> fields (0 entries)
 
 		// <AssessmentSubTestRefIds> fields (1 entries)
-		AssessmentDTD.ASSESSMENTSUBTESTREFIDS_ASSESSMENTSUBTESTREFID = new ElementDefImpl( ASSESSMENTSUBTESTREFIDS, "AssessmentSubTestRefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		AssessmentDTD.ASSESSMENTSUBTESTREFIDS_ASSESSMENTSUBTESTREFID = new ElementDefImpl( ASSESSMENTSUBTESTREFIDS, "AssessmentSubTestRefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Choice> fields (3 entries)
-		AssessmentDTD.CHOICE_CHOICELABEL = new ElementDefImpl( CHOICE, "ChoiceLabel", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.CHOICE_CHOICECONTENT = new ElementDefAlias( CHOICE, "ChoiceContent", null, "AbstractContentElementType", 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AssessmentDTD.CHOICE_CREDITVALUE = new ElementDefImpl( CHOICE, "CreditValue", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.FLOAT );
+		AssessmentDTD.CHOICE_CHOICELABEL = new ElementDefImpl( CHOICE, "ChoiceLabel", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.CHOICE_CHOICECONTENT = new ElementDefAlias( CHOICE, "ChoiceContent", null, "AbstractContentElementType", 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.CHOICE_CREDITVALUE = new ElementDefImpl( CHOICE, "CreditValue", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.FLOAT );
 
 		// <CutScores> fields (3 entries)
-		AssessmentDTD.CUTSCORES_SCOREMETRIC = new ElementDefImpl( CUTSCORES, "ScoreMetric", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.CUTSCORES_LOWERCUT = new ElementDefImpl( CUTSCORES, "LowerCut", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.CUTSCORES_UPPERCUT = new ElementDefImpl( CUTSCORES, "UpperCut", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		AssessmentDTD.CUTSCORES_SCOREMETRIC = new ElementDefImpl( CUTSCORES, "ScoreMetric", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.CUTSCORES_LOWERCUT = new ElementDefImpl( CUTSCORES, "LowerCut", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.CUTSCORES_UPPERCUT = new ElementDefImpl( CUTSCORES, "UpperCut", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <FormNumber> fields (0 entries)
 
 		// <FormNumbers> fields (1 entries)
-		AssessmentDTD.FORMNUMBERS_FORMNUMBER = new ElementDefImpl( FORMNUMBERS, "FormNumber", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		AssessmentDTD.FORMNUMBERS_FORMNUMBER = new ElementDefImpl( FORMNUMBERS, "FormNumber", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Item> fields (11 entries)
-		AssessmentDTD.ITEM_RESPONSE = new ElementDefImpl( ITEM, "Response", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ITEM_RESPONSELOCATION = new ElementDefImpl( ITEM, "ResponseLocation", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ITEM_RESPONSESTATUS = new ElementDefImpl( ITEM, "ResponseStatus", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ITEM_RESPONSETIME = new ElementDefImpl( ITEM, "ResponseTime", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DURATION );
-		AssessmentDTD.ITEM_ITEMNUMBER = new ElementDefImpl( ITEM, "ItemNumber", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ITEM_ITEMNAME = new ElementDefImpl( ITEM, "ItemName", null, 6, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ITEM_DIAGNOSTICSTATEMENT = new ElementDefImpl( ITEM, "DiagnosticStatement", null, 7, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ITEM_NUMBEROFATTEMPTS = new ElementDefImpl( ITEM, "NumberOfAttempts", null, 8, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.INT );
-		AssessmentDTD.ITEM_ASSESSMENTITEMREFID = new ElementDefImpl( ITEM, "AssessmentItemRefId", null, 9, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ITEM_ITEMSCORE = new ElementDefImpl( ITEM, "ItemScore", null, 10, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.ITEM_ITEMAIDSETUSED = new ElementDefImpl( ITEM, "ItemAidSetUsed", null, 11, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		AssessmentDTD.ITEM_RESPONSE = new ElementDefImpl( ITEM, "Response", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ITEM_RESPONSELOCATION = new ElementDefImpl( ITEM, "ResponseLocation", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ITEM_RESPONSESTATUS = new ElementDefImpl( ITEM, "ResponseStatus", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ITEM_RESPONSETIME = new ElementDefImpl( ITEM, "ResponseTime", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DURATION );
+		AssessmentDTD.ITEM_ITEMNUMBER = new ElementDefImpl( ITEM, "ItemNumber", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ITEM_ITEMNAME = new ElementDefImpl( ITEM, "ItemName", null, 6, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ITEM_DIAGNOSTICSTATEMENT = new ElementDefImpl( ITEM, "DiagnosticStatement", null, 7, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ITEM_NUMBEROFATTEMPTS = new ElementDefImpl( ITEM, "NumberOfAttempts", null, 8, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.INT );
+		AssessmentDTD.ITEM_ASSESSMENTITEMREFID = new ElementDefImpl( ITEM, "AssessmentItemRefId", null, 9, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ITEM_ITEMSCORE = new ElementDefImpl( ITEM, "ItemScore", null, 10, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.ITEM_ITEMAIDSETUSED = new ElementDefImpl( ITEM, "ItemAidSetUsed", null, 11, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Items> fields (1 entries)
-		AssessmentDTD.ITEMS_ITEM = new ElementDefImpl( ITEMS, "Item", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		AssessmentDTD.ITEMS_ITEM = new ElementDefImpl( ITEMS, "Item", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <PerformanceLevel> fields (2 entries)
-		AssessmentDTD.PERFORMANCELEVEL_LEVELNAME = new ElementDefImpl( PERFORMANCELEVEL, "LevelName", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.PERFORMANCELEVEL_CUTSCORES = new ElementDefImpl( PERFORMANCELEVEL, "CutScores", null, 2, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		AssessmentDTD.PERFORMANCELEVEL_LEVELNAME = new ElementDefImpl( PERFORMANCELEVEL, "LevelName", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.PERFORMANCELEVEL_CUTSCORES = new ElementDefImpl( PERFORMANCELEVEL, "CutScores", null, 2, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <PerformanceLevels> fields (1 entries)
-		AssessmentDTD.PERFORMANCELEVELS_PERFORMANCELEVEL = new ElementDefImpl( PERFORMANCELEVELS, "PerformanceLevel", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		AssessmentDTD.PERFORMANCELEVELS_PERFORMANCELEVEL = new ElementDefImpl( PERFORMANCELEVELS, "PerformanceLevel", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <ResponseChoices> fields (1 entries)
-		AssessmentDTD.RESPONSECHOICES_CHOICE = new ElementDefImpl( RESPONSECHOICES, "Choice", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		AssessmentDTD.RESPONSECHOICES_CHOICE = new ElementDefImpl( RESPONSECHOICES, "Choice", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <Score> fields (5 entries)
-		AssessmentDTD.SCORE_ASSESSMENTSUBTESTREFID = new ElementDefImpl( SCORE, "AssessmentSubTestRefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.SCORE_SCOREVALUE = new ElementDefImpl( SCORE, "ScoreValue", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.SCORE_DIAGNOSTICSTATEMENT = new ElementDefImpl( SCORE, "DiagnosticStatement", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.SCORE_DESCRIPTION = new ElementDefImpl( SCORE, "Description", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.SCORE_NUMBEROFRESPONSES = new ElementDefImpl( SCORE, "NumberOfResponses", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.INT );
+		AssessmentDTD.SCORE_ASSESSMENTSUBTESTREFID = new ElementDefImpl( SCORE, "AssessmentSubTestRefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.SCORE_SCOREVALUE = new ElementDefImpl( SCORE, "ScoreValue", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.SCORE_DIAGNOSTICSTATEMENT = new ElementDefImpl( SCORE, "DiagnosticStatement", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.SCORE_DESCRIPTION = new ElementDefImpl( SCORE, "Description", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.SCORE_NUMBEROFRESPONSES = new ElementDefImpl( SCORE, "NumberOfResponses", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.INT );
 
 		// <ScoreRange> fields (3 entries)
-		AssessmentDTD.SCORERANGE_SCOREMETRIC = new ElementDefImpl( SCORERANGE, "ScoreMetric", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.SCORERANGE_MINIMUM = new ElementDefImpl( SCORERANGE, "Minimum", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.SCORERANGE_MAXIMUM = new ElementDefImpl( SCORERANGE, "Maximum", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		AssessmentDTD.SCORERANGE_SCOREMETRIC = new ElementDefImpl( SCORERANGE, "ScoreMetric", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.SCORERANGE_MINIMUM = new ElementDefImpl( SCORERANGE, "Minimum", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.SCORERANGE_MAXIMUM = new ElementDefImpl( SCORERANGE, "Maximum", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Scores> fields (1 entries)
-		AssessmentDTD.SCORES_SCORE = new ElementDefImpl( SCORES, "Score", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		AssessmentDTD.SCORES_SCORE = new ElementDefImpl( SCORES, "Score", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <SpecialCondition> fields (2 entries)
-		AssessmentDTD.SPECIALCONDITION_CODE = new ElementDefImpl( SPECIALCONDITION, "Code", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.SPECIALCONDITION_SIF_ACTION = new ElementDefImpl( SPECIALCONDITION, "SIF_Action", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		AssessmentDTD.SPECIALCONDITION_CODE = new ElementDefImpl( SPECIALCONDITION, "Code", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.SPECIALCONDITION_SIF_ACTION = new ElementDefImpl( SPECIALCONDITION, "SIF_Action", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SpecialConditions> fields (1 entries)
-		AssessmentDTD.SPECIALCONDITIONS_SPECIALCONDITION = new ElementDefImpl( SPECIALCONDITIONS, "SpecialCondition", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		AssessmentDTD.SPECIALCONDITIONS_SPECIALCONDITION = new ElementDefImpl( SPECIALCONDITIONS, "SpecialCondition", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
-		// <StudentScoreSet> fields (6 entries)
-		AssessmentDTD.STUDENTSCORESET_REFID = new ElementDefImpl( STUDENTSCORESET, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.STUDENTSCORESET_SCOREMETRIC = new ElementDefImpl( STUDENTSCORESET, "ScoreMetric", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.STUDENTSCORESET_ASSESSMENTADMINISTRATIONREFID = new ElementDefImpl( STUDENTSCORESET, "AssessmentAdministrationRefId", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.STUDENTSCORESET_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSCORESET, "StudentPersonalRefId", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.STUDENTSCORESET_ASSESSMENTREGISTRATIONREFID = new ElementDefImpl( STUDENTSCORESET, "AssessmentRegistrationRefId", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AssessmentDTD.STUDENTSCORESET_SCORES = new ElementDefImpl( STUDENTSCORESET, "Scores", null, 6, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTSCORESET_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSCORESET, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTSCORESET_SIF_METADATA = new ElementDefImpl( STUDENTSCORESET, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		// <StudentScoreSet> fields (8 entries)
+		AssessmentDTD.STUDENTSCORESET_REFID = new ElementDefImpl( STUDENTSCORESET, "RefId", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.STUDENTSCORESET_SCOREMETRIC = new ElementDefImpl( STUDENTSCORESET, "ScoreMetric", null, 2, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.STUDENTSCORESET_ASSESSMENTADMINISTRATIONREFID = new ElementDefImpl( STUDENTSCORESET, "AssessmentAdministrationRefId", null, 3, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.STUDENTSCORESET_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSCORESET, "StudentPersonalRefId", null, 4, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.STUDENTSCORESET_ASSESSMENTREGISTRATIONREFID = new ElementDefImpl( STUDENTSCORESET, "AssessmentRegistrationRefId", null, 5, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AssessmentDTD.STUDENTSCORESET_SCORES = new ElementDefImpl( STUDENTSCORESET, "Scores", null, 6, SifDtd.ASSESSMENT, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AssessmentDTD.STUDENTSCORESET_STARTDATETIME = new ElementDefImpl( STUDENTSCORESET, "StartDateTime", null, 7, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		AssessmentDTD.STUDENTSCORESET_FINISHDATETIME = new ElementDefImpl( STUDENTSCORESET, "FinishDateTime", null, 8, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DATETIME );
+		STUDENTSCORESET_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSCORESET, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTSCORESET_SIF_METADATA = new ElementDefImpl( STUDENTSCORESET, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentSpecialCondition> fields (1 entries)
-		AssessmentDTD.STUDENTSPECIALCONDITION_CODE = new ElementDefImpl( STUDENTSPECIALCONDITION, "Code", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		AssessmentDTD.STUDENTSPECIALCONDITION_CODE = new ElementDefImpl( STUDENTSPECIALCONDITION, "Code", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <StudentSpecialConditions> fields (1 entries)
-		AssessmentDTD.STUDENTSPECIALCONDITIONS_STUDENTSPECIALCONDITION = new ElementDefImpl( STUDENTSPECIALCONDITIONS, "StudentSpecialCondition", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		AssessmentDTD.STUDENTSPECIALCONDITIONS_STUDENTSPECIALCONDITION = new ElementDefImpl( STUDENTSPECIALCONDITIONS, "StudentSpecialCondition", null, 1, SifDtd.ASSESSMENT, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 	}
 
 	#region Update SifDtd
@@ -724,7 +713,6 @@ namespace OpenADK.Library.au.Assessment
 		dictionary["AssessmentAdministration_SpecialConditions"] = AssessmentDTD.ASSESSMENTADMINISTRATION_SPECIALCONDITIONS ;
 		dictionary["AssessmentAdministration_StaffPersonalRefId"] = AssessmentDTD.ASSESSMENTADMINISTRATION_STAFFPERSONALREFID ;
 		dictionary["AssessmentAdministration_StartDateTime"] = AssessmentDTD.ASSESSMENTADMINISTRATION_STARTDATETIME ;
-		dictionary[ "AssessmentDescriptor" ] = ASSESSMENTDESCRIPTOR;
 		dictionary[ "AssessmentForm" ] = ASSESSMENTFORM;
 		dictionary[ "AssessmentForm_SIF_ExtendedElements" ] = ASSESSMENTFORM_SIF_EXTENDEDELEMENTS ;
 		dictionary[ "AssessmentForm_SIF_Metadata" ] = ASSESSMENTFORM_SIF_METADATA;
@@ -774,9 +762,11 @@ namespace OpenADK.Library.au.Assessment
 		dictionary[ "StudentScoreSet_SIF_Metadata" ] = STUDENTSCORESET_SIF_METADATA;
 		dictionary["StudentScoreSet_AssessmentAdministrationRefId"] = AssessmentDTD.STUDENTSCORESET_ASSESSMENTADMINISTRATIONREFID ;
 		dictionary["StudentScoreSet_AssessmentRegistrationRefId"] = AssessmentDTD.STUDENTSCORESET_ASSESSMENTREGISTRATIONREFID ;
+		dictionary["StudentScoreSet_FinishDateTime"] = AssessmentDTD.STUDENTSCORESET_FINISHDATETIME ;
 		dictionary["StudentScoreSet_RefId"] = AssessmentDTD.STUDENTSCORESET_REFID ;
 		dictionary["StudentScoreSet_ScoreMetric"] = AssessmentDTD.STUDENTSCORESET_SCOREMETRIC ;
 		dictionary["StudentScoreSet_Scores"] = AssessmentDTD.STUDENTSCORESET_SCORES ;
+		dictionary["StudentScoreSet_StartDateTime"] = AssessmentDTD.STUDENTSCORESET_STARTDATETIME ;
 		dictionary["StudentScoreSet_StudentPersonalRefId"] = AssessmentDTD.STUDENTSCORESET_STUDENTPERSONALREFID ;
 		dictionary[ "FormNumber" ] = FORMNUMBER;
 		dictionary[ "Items" ] = ITEMS;
@@ -800,8 +790,6 @@ namespace OpenADK.Library.au.Assessment
 		dictionary["CutScores_UpperCut"] = AssessmentDTD.CUTSCORES_UPPERCUT ;
 		dictionary[ "FormNumbers" ] = FORMNUMBERS;
 		dictionary["FormNumbers_FormNumber"] = AssessmentDTD.FORMNUMBERS_FORMNUMBER ;
-		dictionary[ "AssessmentDescriptors" ] = ASSESSMENTDESCRIPTORS;
-		dictionary["AssessmentDescriptors_AssessmentDescriptor"] = AssessmentDTD.ASSESSMENTDESCRIPTORS_ASSESSMENTDESCRIPTOR ;
 		dictionary[ "Assessment" ] = ASSESSMENT;
 		dictionary[ "Assessment_SIF_ExtendedElements" ] = ASSESSMENT_SIF_EXTENDEDELEMENTS ;
 		dictionary[ "Assessment_SIF_Metadata" ] = ASSESSMENT_SIF_METADATA;

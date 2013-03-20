@@ -94,10 +94,13 @@ namespace OpenADK.Library
         /// <summary>Identifies the SIF 2.5 Specification</summary>
         public static readonly SifVersion SIF25 = new SifVersion(2, 5, 0);
 
+        /// <summary>Identifies the SIF 2.5 Specification</summary>
+        public static readonly SifVersion SIF26 = new SifVersion(2, 6, 0);
+
 
         //// WARNING: MAKE SURE TO UPDATE THE GETINSTANCE METHOD WHEN ADDING NEW VERSIONS ////
         /// <summary>Identifies the latest SIF Specification supported by the Library Adk </summary>
-        public static readonly SifVersion LATEST = SIF25;
+        public static readonly SifVersion LATEST = SIF26;
 
         /// <summary>
         /// Returns the earliest SIFVersion supported by the ADK for the major version
@@ -192,6 +195,10 @@ namespace OpenADK.Library
                     else if (minor == 5)
                     {
                         return SIF25;
+                    }
+                    else if (minor == 6)
+                    {
+                        return SIF26;
                     }
                 }
             }

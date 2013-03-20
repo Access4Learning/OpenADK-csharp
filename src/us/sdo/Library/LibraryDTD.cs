@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Library
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -210,104 +210,104 @@ namespace OpenADK.Library.us.Library
 	{
 		//  Objects defined by this SDO Library...
 
-		CHECKOUTINFO = new ElementDefImpl( null, "CheckoutInfo", "DueInfo", 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		CHECKOUTINFO = new ElementDefImpl( null, "CheckoutInfo", "DueInfo", 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		CHECKOUTINFO.DefineVersionInfo(SifVersion.SIF20, "CheckoutInfo", 0, (0)); // (Sif 20 alias)
-		FINEINFO = new ElementDefImpl( null, "FineInfo", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		FINEINFOLIST = new ElementDefImpl( null, "FineInfoList", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		HOLDINFO = new ElementDefImpl( null, "HoldInfo", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		HOLDINFOLIST = new ElementDefImpl( null, "HoldInfoList", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		ITEMINFO = new ElementDefImpl( null, "ItemInfo", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		LIBRARYPATRONSTATUS = new ElementDefImpl( null, "LibraryPatronStatus", null, 0, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		MESSAGE = new ElementDefImpl( null, "Message", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		MESSAGELIST = new ElementDefImpl( null, "MessageList", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
-		TRANSACTION = new ElementDefImpl( null, "Transaction", "CircTx", 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		FINEINFO = new ElementDefImpl( null, "FineInfo", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		FINEINFOLIST = new ElementDefImpl( null, "FineInfoList", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		HOLDINFO = new ElementDefImpl( null, "HoldInfo", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		HOLDINFOLIST = new ElementDefImpl( null, "HoldInfoList", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		ITEMINFO = new ElementDefImpl( null, "ItemInfo", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		LIBRARYPATRONSTATUS = new ElementDefImpl( null, "LibraryPatronStatus", null, 0, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		MESSAGE = new ElementDefImpl( null, "Message", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		MESSAGELIST = new ElementDefImpl( null, "MessageList", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
+		TRANSACTION = new ElementDefImpl( null, "Transaction", "CircTx", 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		TRANSACTION.DefineVersionInfo(SifVersion.SIF20, "Transaction", 0, (0)); // (Sif 20 alias)
-		TRANSACTIONLIST = new ElementDefImpl( null, "TransactionList", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		TRANSACTIONLIST = new ElementDefImpl( null, "TransactionList", null, 0, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 
 
 		// <DueInfo> fields (1 entries)
-		LibraryDTD.CHECKOUTINFO_RETURNBY = new ElementDefImpl( CHECKOUTINFO, "ReturnBy", "~TimeStampSurrogate{}Date", 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATETIME );
+		LibraryDTD.CHECKOUTINFO_RETURNBY = new ElementDefImpl( CHECKOUTINFO, "ReturnBy", "~TimeStampSurrogate{}Date", 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATETIME );
 		LibraryDTD.CHECKOUTINFO_RETURNBY.DefineVersionInfo(SifVersion.SIF20, "ReturnBy", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <FineInfo> fields (5 entries)
-		LibraryDTD.FINEINFO_TYPE = new ElementDefImpl( FINEINFO, "Type", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		LibraryDTD.FINEINFO_ASSESSED = new ElementDefImpl( FINEINFO, "Assessed", "~TimeStampSurrogate{}Date", 2, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATETIME );
+		LibraryDTD.FINEINFO_TYPE = new ElementDefImpl( FINEINFO, "Type", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		LibraryDTD.FINEINFO_ASSESSED = new ElementDefImpl( FINEINFO, "Assessed", "~TimeStampSurrogate{}Date", 2, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATETIME );
 		LibraryDTD.FINEINFO_ASSESSED.DefineVersionInfo(SifVersion.SIF20, "Assessed", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		LibraryDTD.FINEINFO_DESCRIPTION = new ElementDefImpl( FINEINFO, "Description", null, 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		LibraryDTD.FINEINFO_AMOUNT = new ElementDefAlias( FINEINFO, "Amount", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		LibraryDTD.FINEINFO_REFERENCE = new ElementDefImpl( FINEINFO, "Reference", null, 5, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		LibraryDTD.FINEINFO_DESCRIPTION = new ElementDefImpl( FINEINFO, "Description", null, 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		LibraryDTD.FINEINFO_AMOUNT = new ElementDefAlias( FINEINFO, "Amount", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		LibraryDTD.FINEINFO_REFERENCE = new ElementDefImpl( FINEINFO, "Reference", null, 5, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <FineInfoList> fields (1 entries)
-		LibraryDTD.FINEINFOLIST_FINEINFO = new ElementDefImpl( FINEINFOLIST, "FineInfo", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.FINEINFOLIST_FINEINFO = new ElementDefImpl( FINEINFOLIST, "FineInfo", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <HoldInfo> fields (5 entries)
-		LibraryDTD.HOLDINFO_TYPE = new ElementDefImpl( HOLDINFO, "Type", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		LibraryDTD.HOLDINFO_DATEPLACED = new ElementDefImpl( HOLDINFO, "DatePlaced", null, 2, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
-		LibraryDTD.HOLDINFO_DATENEEDED = new ElementDefImpl( HOLDINFO, "DateNeeded", null, 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
-		LibraryDTD.HOLDINFO_MADEAVAILABLE = new ElementDefImpl( HOLDINFO, "MadeAvailable", null, 4, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
-		LibraryDTD.HOLDINFO_EXPIRES = new ElementDefImpl( HOLDINFO, "Expires", null, 5, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
+		LibraryDTD.HOLDINFO_TYPE = new ElementDefImpl( HOLDINFO, "Type", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		LibraryDTD.HOLDINFO_DATEPLACED = new ElementDefImpl( HOLDINFO, "DatePlaced", null, 2, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
+		LibraryDTD.HOLDINFO_DATENEEDED = new ElementDefImpl( HOLDINFO, "DateNeeded", null, 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
+		LibraryDTD.HOLDINFO_MADEAVAILABLE = new ElementDefImpl( HOLDINFO, "MadeAvailable", null, 4, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
+		LibraryDTD.HOLDINFO_EXPIRES = new ElementDefImpl( HOLDINFO, "Expires", null, 5, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
 
 		// <HoldInfoList> fields (1 entries)
-		LibraryDTD.HOLDINFOLIST_HOLDINFO = new ElementDefImpl( HOLDINFOLIST, "HoldInfo", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.HOLDINFOLIST_HOLDINFO = new ElementDefImpl( HOLDINFOLIST, "HoldInfo", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <ItemInfo> fields (6 entries)
-		LibraryDTD.ITEMINFO_TYPE = new ElementDefImpl( ITEMINFO, "Type", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		LibraryDTD.ITEMINFO_TITLE = new ElementDefImpl( ITEMINFO, "Title", "ItemTitle", 2, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		LibraryDTD.ITEMINFO_TYPE = new ElementDefImpl( ITEMINFO, "Type", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		LibraryDTD.ITEMINFO_TITLE = new ElementDefImpl( ITEMINFO, "Title", "ItemTitle", 2, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		LibraryDTD.ITEMINFO_TITLE.DefineVersionInfo(SifVersion.SIF20, "Title", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		LibraryDTD.ITEMINFO_AUTHOR = new ElementDefImpl( ITEMINFO, "Author", null, 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		LibraryDTD.ITEMINFO_ELECTRONICID = new ElementDefImpl( ITEMINFO, "ElectronicId", "ItemElectronicId", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		LibraryDTD.ITEMINFO_AUTHOR = new ElementDefImpl( ITEMINFO, "Author", null, 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		LibraryDTD.ITEMINFO_ELECTRONICID = new ElementDefImpl( ITEMINFO, "ElectronicId", "ItemElectronicId", 3, SifDtd.COMMON, "us", 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		LibraryDTD.ITEMINFO_ELECTRONICID.DefineVersionInfo(SifVersion.SIF20, "ElectronicId", 4, 0); // (Sif 20 alias)
-		LibraryDTD.ITEMINFO_CALLNUMBER = new ElementDefImpl( ITEMINFO, "CallNumber", null, 4, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		LibraryDTD.ITEMINFO_CALLNUMBER = new ElementDefImpl( ITEMINFO, "CallNumber", null, 4, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		LibraryDTD.ITEMINFO_CALLNUMBER.DefineVersionInfo(SifVersion.SIF20, "CallNumber", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		LibraryDTD.ITEMINFO_PRICE = new ElementDefAlias( ITEMINFO, "Price", "CopyPrice", "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		LibraryDTD.ITEMINFO_PRICE = new ElementDefAlias( ITEMINFO, "Price", "CopyPrice", "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		LibraryDTD.ITEMINFO_PRICE.DefineVersionInfo(SifVersion.SIF20, "Price", 6, 0); // (Sif 20 alias)
 
 		// <LibraryPatronStatus> fields (12 entries)
-		LibraryDTD.LIBRARYPATRONSTATUS_LIBRARYTYPE = new ElementDefImpl( LIBRARYPATRONSTATUS, "LibraryType", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		LibraryDTD.LIBRARYPATRONSTATUS_SIF_REFID = new ElementDefImpl( LIBRARYPATRONSTATUS, "SIF_RefId", "SifRefId", 2, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		LibraryDTD.LIBRARYPATRONSTATUS_LIBRARYTYPE = new ElementDefImpl( LIBRARYPATRONSTATUS, "LibraryType", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		LibraryDTD.LIBRARYPATRONSTATUS_SIF_REFID = new ElementDefImpl( LIBRARYPATRONSTATUS, "SIF_RefId", "SifRefId", 2, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		LibraryDTD.LIBRARYPATRONSTATUS_SIF_REFID.DefineVersionInfo(SifVersion.SIF20, "SIF_RefId", 2, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		LibraryDTD.LIBRARYPATRONSTATUS_SIF_REFOBJECT = new ElementDefImpl( LIBRARYPATRONSTATUS, "SIF_RefObject", "SifRefIdType", 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		LibraryDTD.LIBRARYPATRONSTATUS_SIF_REFOBJECT = new ElementDefImpl( LIBRARYPATRONSTATUS, "SIF_RefObject", "SifRefIdType", 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		LibraryDTD.LIBRARYPATRONSTATUS_SIF_REFOBJECT.DefineVersionInfo(SifVersion.SIF20, "SIF_RefObject", 3, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		LibraryDTD.LIBRARYPATRONSTATUS_ELECTRONICIDLIST = new ElementDefImpl( LIBRARYPATRONSTATUS, "ElectronicIdList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.LIBRARYPATRONSTATUS_ELECTRONICIDLIST = new ElementDefImpl( LIBRARYPATRONSTATUS, "ElectronicIdList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		LibraryDTD.LIBRARYPATRONSTATUS_ELECTRONICIDLIST.DefineVersionInfo(SifVersion.SIF20, "ElectronicIdList", 4, 0); // (Sif 20 alias)
-		LibraryDTD.LIBRARYPATRONSTATUS_TRANSACTIONLIST = new ElementDefImpl( LIBRARYPATRONSTATUS, "TransactionList", null, 5, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.LIBRARYPATRONSTATUS_TRANSACTIONLIST = new ElementDefImpl( LIBRARYPATRONSTATUS, "TransactionList", null, 5, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		LibraryDTD.LIBRARYPATRONSTATUS_TRANSACTIONLIST.DefineVersionInfo(SifVersion.SIF20, "TransactionList", 5, 0); // (Sif 20 alias)
-		LibraryDTD.LIBRARYPATRONSTATUS_MESSAGELIST = new ElementDefImpl( LIBRARYPATRONSTATUS, "MessageList", null, 6, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.LIBRARYPATRONSTATUS_MESSAGELIST = new ElementDefImpl( LIBRARYPATRONSTATUS, "MessageList", null, 6, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		LibraryDTD.LIBRARYPATRONSTATUS_MESSAGELIST.DefineVersionInfo(SifVersion.SIF20, "MessageList", 6, 0); // (Sif 20 alias)
-		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFCHECKOUTS = new ElementDefImpl( LIBRARYPATRONSTATUS, "NumberOfCheckouts", "NumCheckouts", 7, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
+		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFCHECKOUTS = new ElementDefImpl( LIBRARYPATRONSTATUS, "NumberOfCheckouts", "NumCheckouts", 7, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
 		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFCHECKOUTS.DefineVersionInfo(SifVersion.SIF20, "NumberOfCheckouts", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFOVERDUES = new ElementDefImpl( LIBRARYPATRONSTATUS, "NumberOfOverdues", "NumOverdues", 8, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
+		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFOVERDUES = new ElementDefImpl( LIBRARYPATRONSTATUS, "NumberOfOverdues", "NumOverdues", 8, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
 		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFOVERDUES.DefineVersionInfo(SifVersion.SIF20, "NumberOfOverdues", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFFINES = new ElementDefImpl( LIBRARYPATRONSTATUS, "NumberOfFines", "NumFines", 9, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
+		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFFINES = new ElementDefImpl( LIBRARYPATRONSTATUS, "NumberOfFines", "NumFines", 9, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
 		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFFINES.DefineVersionInfo(SifVersion.SIF20, "NumberOfFines", 9, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		LibraryDTD.LIBRARYPATRONSTATUS_FINEAMOUNT = new ElementDefAlias( LIBRARYPATRONSTATUS, "FineAmount", null, "MonetaryAmount", 10, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFREFUNDS = new ElementDefImpl( LIBRARYPATRONSTATUS, "NumberOfRefunds", "NumRefunds", 11, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
+		LibraryDTD.LIBRARYPATRONSTATUS_FINEAMOUNT = new ElementDefAlias( LIBRARYPATRONSTATUS, "FineAmount", null, "MonetaryAmount", 10, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFREFUNDS = new ElementDefImpl( LIBRARYPATRONSTATUS, "NumberOfRefunds", "NumRefunds", 11, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
 		LibraryDTD.LIBRARYPATRONSTATUS_NUMBEROFREFUNDS.DefineVersionInfo(SifVersion.SIF20, "NumberOfRefunds", 11, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		LibraryDTD.LIBRARYPATRONSTATUS_REFUNDAMOUNT = new ElementDefAlias( LIBRARYPATRONSTATUS, "RefundAmount", null, "MonetaryAmount", 12, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		LIBRARYPATRONSTATUS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LIBRARYPATRONSTATUS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		LIBRARYPATRONSTATUS_SIF_METADATA = new ElementDefImpl( LIBRARYPATRONSTATUS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LibraryDTD.LIBRARYPATRONSTATUS_REFUNDAMOUNT = new ElementDefAlias( LIBRARYPATRONSTATUS, "RefundAmount", null, "MonetaryAmount", 12, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		LIBRARYPATRONSTATUS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LIBRARYPATRONSTATUS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		LIBRARYPATRONSTATUS_SIF_METADATA = new ElementDefImpl( LIBRARYPATRONSTATUS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Message> fields (3 entries)
-		LibraryDTD.MESSAGE_PRIORITY = new ElementDefImpl( MESSAGE, "Priority", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		LibraryDTD.MESSAGE_SENT = new ElementDefImpl( MESSAGE, "Sent", "~TimeStampSurrogate{}Date", 2, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATETIME );
+		LibraryDTD.MESSAGE_PRIORITY = new ElementDefImpl( MESSAGE, "Priority", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		LibraryDTD.MESSAGE_SENT = new ElementDefImpl( MESSAGE, "Sent", "~TimeStampSurrogate{}Date", 2, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATETIME );
 		LibraryDTD.MESSAGE_SENT.DefineVersionInfo(SifVersion.SIF20, "Sent", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		LibraryDTD.MESSAGE_TEXT = new ElementDefImpl( MESSAGE, "Text", null, 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		LibraryDTD.MESSAGE_TEXT = new ElementDefImpl( MESSAGE, "Text", null, 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MessageList> fields (1 entries)
-		LibraryDTD.MESSAGELIST_MESSAGE = new ElementDefImpl( MESSAGELIST, "Message", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.MESSAGELIST_MESSAGE = new ElementDefImpl( MESSAGELIST, "Message", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <CircTx> fields (4 entries)
-		LibraryDTD.TRANSACTION_ITEMINFO = new ElementDefImpl( TRANSACTION, "ItemInfo", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.TRANSACTION_ITEMINFO = new ElementDefImpl( TRANSACTION, "ItemInfo", null, 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		LibraryDTD.TRANSACTION_ITEMINFO.DefineVersionInfo(SifVersion.SIF20, "ItemInfo", 1, 0); // (Sif 20 alias)
-		LibraryDTD.TRANSACTION_CHECKOUTINFO = new ElementDefImpl( TRANSACTION, "CheckoutInfo", "DueInfo", 2, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.TRANSACTION_CHECKOUTINFO = new ElementDefImpl( TRANSACTION, "CheckoutInfo", "DueInfo", 2, SifDtd.LIBRARY, "us", 0, SifVersion.SIF11, SifVersion.SIF26 );
 		LibraryDTD.TRANSACTION_CHECKOUTINFO.DefineVersionInfo(SifVersion.SIF20, "CheckoutInfo", 2, 0); // (Sif 20 alias)
-		LibraryDTD.TRANSACTION_FINEINFOLIST = new ElementDefImpl( TRANSACTION, "FineInfoList", null, 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.TRANSACTION_FINEINFOLIST = new ElementDefImpl( TRANSACTION, "FineInfoList", null, 3, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		LibraryDTD.TRANSACTION_FINEINFOLIST.DefineVersionInfo(SifVersion.SIF20, "FineInfoList", 3, 0); // (Sif 20 alias)
-		LibraryDTD.TRANSACTION_HOLDINFOLIST = new ElementDefImpl( TRANSACTION, "HoldInfoList", null, 4, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.TRANSACTION_HOLDINFOLIST = new ElementDefImpl( TRANSACTION, "HoldInfoList", null, 4, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		LibraryDTD.TRANSACTION_HOLDINFOLIST.DefineVersionInfo(SifVersion.SIF20, "HoldInfoList", 4, 0); // (Sif 20 alias)
 
 		// <TransactionList> fields (1 entries)
-		LibraryDTD.TRANSACTIONLIST_TRANSACTION = new ElementDefImpl( TRANSACTIONLIST, "Transaction", "CircTx", 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		LibraryDTD.TRANSACTIONLIST_TRANSACTION = new ElementDefImpl( TRANSACTIONLIST, "Transaction", "CircTx", 1, SifDtd.LIBRARY, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 		LibraryDTD.TRANSACTIONLIST_TRANSACTION.DefineVersionInfo(SifVersion.SIF20, "Transaction", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 	}
 

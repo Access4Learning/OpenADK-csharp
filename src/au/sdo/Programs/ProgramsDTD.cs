@@ -20,7 +20,7 @@ namespace OpenADK.Library.au.Programs
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -188,69 +188,69 @@ namespace OpenADK.Library.au.Programs
 	{
 		//  Objects defined by this SDO Library...
 
-		MANAGINGSCHOOL = new ElementDefImpl( null, "ManagingSchool", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		PROGRAMAVAILABILITY = new ElementDefImpl( null, "ProgramAvailability", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		PROGRAMFUNDINGSOURCE = new ElementDefImpl( null, "ProgramFundingSource", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		PROGRAMFUNDINGSOURCES = new ElementDefImpl( null, "ProgramFundingSources", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		PROGRAMSTATUS = new ElementDefImpl( null, "ProgramStatus", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		REFERRALSOURCE = new ElementDefImpl( null, "ReferralSource", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTPARTICIPATION = new ElementDefImpl( null, "StudentParticipation", null, 0, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
+		MANAGINGSCHOOL = new ElementDefImpl( null, "ManagingSchool", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		PROGRAMAVAILABILITY = new ElementDefImpl( null, "ProgramAvailability", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		PROGRAMFUNDINGSOURCE = new ElementDefImpl( null, "ProgramFundingSource", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		PROGRAMFUNDINGSOURCES = new ElementDefImpl( null, "ProgramFundingSources", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		PROGRAMSTATUS = new ElementDefImpl( null, "ProgramStatus", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		REFERRALSOURCE = new ElementDefImpl( null, "ReferralSource", null, 0, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTPARTICIPATION = new ElementDefImpl( null, "StudentParticipation", null, 0, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
 
 
 		// <ManagingSchool> fields (1 entries)
-		ProgramsDTD.MANAGINGSCHOOL_SIF_REFOBJECT = new ElementDefImpl( MANAGINGSCHOOL, "SIF_RefObject", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProgramsDTD.MANAGINGSCHOOL_SIF_REFOBJECT = new ElementDefImpl( MANAGINGSCHOOL, "SIF_RefObject", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ProgramAvailability> fields (2 entries)
-		ProgramsDTD.PROGRAMAVAILABILITY_CODE = new ElementDefImpl( PROGRAMAVAILABILITY, "Code", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProgramsDTD.PROGRAMAVAILABILITY_OTHERCODELIST = new ElementDefImpl( PROGRAMAVAILABILITY, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		ProgramsDTD.PROGRAMAVAILABILITY_CODE = new ElementDefImpl( PROGRAMAVAILABILITY, "Code", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProgramsDTD.PROGRAMAVAILABILITY_OTHERCODELIST = new ElementDefImpl( PROGRAMAVAILABILITY, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <ProgramFundingSource> fields (2 entries)
-		ProgramsDTD.PROGRAMFUNDINGSOURCE_CODE = new ElementDefImpl( PROGRAMFUNDINGSOURCE, "Code", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProgramsDTD.PROGRAMFUNDINGSOURCE_OTHERCODELIST = new ElementDefImpl( PROGRAMFUNDINGSOURCE, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		ProgramsDTD.PROGRAMFUNDINGSOURCE_CODE = new ElementDefImpl( PROGRAMFUNDINGSOURCE, "Code", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProgramsDTD.PROGRAMFUNDINGSOURCE_OTHERCODELIST = new ElementDefImpl( PROGRAMFUNDINGSOURCE, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <ProgramFundingSources> fields (1 entries)
-		ProgramsDTD.PROGRAMFUNDINGSOURCES_PROGRAMFUNDINGSOURCE = new ElementDefImpl( PROGRAMFUNDINGSOURCES, "ProgramFundingSource", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		ProgramsDTD.PROGRAMFUNDINGSOURCES_PROGRAMFUNDINGSOURCE = new ElementDefImpl( PROGRAMFUNDINGSOURCES, "ProgramFundingSource", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <ProgramStatus> fields (2 entries)
-		ProgramsDTD.PROGRAMSTATUS_CODE = new ElementDefImpl( PROGRAMSTATUS, "Code", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProgramsDTD.PROGRAMSTATUS_OTHERCODELIST = new ElementDefImpl( PROGRAMSTATUS, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		ProgramsDTD.PROGRAMSTATUS_CODE = new ElementDefImpl( PROGRAMSTATUS, "Code", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProgramsDTD.PROGRAMSTATUS_OTHERCODELIST = new ElementDefImpl( PROGRAMSTATUS, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <ReferralSource> fields (2 entries)
-		ProgramsDTD.REFERRALSOURCE_CODE = new ElementDefImpl( REFERRALSOURCE, "Code", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProgramsDTD.REFERRALSOURCE_OTHERCODELIST = new ElementDefImpl( REFERRALSOURCE, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		ProgramsDTD.REFERRALSOURCE_CODE = new ElementDefImpl( REFERRALSOURCE, "Code", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProgramsDTD.REFERRALSOURCE_OTHERCODELIST = new ElementDefImpl( REFERRALSOURCE, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <StudentParticipation> fields (27 entries)
-		ProgramsDTD.STUDENTPARTICIPATION_REFID = new ElementDefImpl( STUDENTPARTICIPATION, "RefId", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProgramsDTD.STUDENTPARTICIPATION_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTPARTICIPATION, "StudentPersonalRefId", null, 2, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProgramsDTD.STUDENTPARTICIPATION_STUDENTPARTICIPATIONASOFDATE = new ElementDefImpl( STUDENTPARTICIPATION, "StudentParticipationAsOfDate", null, 3, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMTYPE = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramType", null, 4, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMFUNDINGSOURCES = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramFundingSources", null, 5, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		ProgramsDTD.STUDENTPARTICIPATION_MANAGINGSCHOOL = new ElementDefImpl( STUDENTPARTICIPATION, "ManagingSchool", null, 6, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProgramsDTD.STUDENTPARTICIPATION_STUDENTSPECIALEDUCATIONFTE = new ElementDefImpl( STUDENTPARTICIPATION, "StudentSpecialEducationFTE", null, 7, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		ProgramsDTD.STUDENTPARTICIPATION_REFID = new ElementDefImpl( STUDENTPARTICIPATION, "RefId", null, 1, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProgramsDTD.STUDENTPARTICIPATION_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTPARTICIPATION, "StudentPersonalRefId", null, 2, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProgramsDTD.STUDENTPARTICIPATION_STUDENTPARTICIPATIONASOFDATE = new ElementDefImpl( STUDENTPARTICIPATION, "StudentParticipationAsOfDate", null, 3, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMTYPE = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramType", null, 4, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMFUNDINGSOURCES = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramFundingSources", null, 5, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		ProgramsDTD.STUDENTPARTICIPATION_MANAGINGSCHOOL = new ElementDefImpl( STUDENTPARTICIPATION, "ManagingSchool", null, 6, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProgramsDTD.STUDENTPARTICIPATION_STUDENTSPECIALEDUCATIONFTE = new ElementDefImpl( STUDENTPARTICIPATION, "StudentSpecialEducationFTE", null, 7, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		ProgramsDTD.STUDENTPARTICIPATION_STUDENTSPECIALEDUCATIONFTE.DefineVersionInfo(SifVersion.SIF24, "StudentSpecialEducationFTE", 26, (ElementDefImpl.FD_FIELD)); // (Sif 24 alias)
-		ProgramsDTD.STUDENTPARTICIPATION_REFERRALDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ReferralDate", null, 7, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_PARTICIPATIONCONTACT = new ElementDefImpl( STUDENTPARTICIPATION, "ParticipationContact", null, 8, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		ProgramsDTD.STUDENTPARTICIPATION_REFERRALDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ReferralDate", null, 7, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_PARTICIPATIONCONTACT = new ElementDefImpl( STUDENTPARTICIPATION, "ParticipationContact", null, 8, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		ProgramsDTD.STUDENTPARTICIPATION_PARTICIPATIONCONTACT.DefineVersionInfo(SifVersion.SIF24, "ParticipationContact", 27, (ElementDefImpl.FD_FIELD)); // (Sif 24 alias)
-		ProgramsDTD.STUDENTPARTICIPATION_REFERRALSOURCE = new ElementDefImpl( STUDENTPARTICIPATION, "ReferralSource", null, 8, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMSTATUS = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramStatus", null, 9, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ProgramsDTD.STUDENTPARTICIPATION_GIFTEDELIGIBILITYCRITERIA = new ElementDefImpl( STUDENTPARTICIPATION, "GiftedEligibilityCriteria", null, 10, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProgramsDTD.STUDENTPARTICIPATION_EVALUATIONPARENTALCONSENTDATE = new ElementDefImpl( STUDENTPARTICIPATION, "EvaluationParentalConsentDate", null, 11, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_EVALUATIONDATE = new ElementDefImpl( STUDENTPARTICIPATION, "EvaluationDate", null, 12, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_EVALUATIONEXTENSIONDATE = new ElementDefImpl( STUDENTPARTICIPATION, "EvaluationExtensionDate", null, 13, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_EXTENSIONCOMMENTS = new ElementDefImpl( STUDENTPARTICIPATION, "ExtensionComments", null, 14, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ProgramsDTD.STUDENTPARTICIPATION_REEVALUATIONDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ReevaluationDate", null, 15, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMELIGIBILITYDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramEligibilityDate", null, 16, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMPLANDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramPlanDate", null, 17, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMPLANEFFECTIVEDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramPlanEffectiveDate", null, 18, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_NOREPDATE = new ElementDefImpl( STUDENTPARTICIPATION, "NOREPDate", null, 19, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_PLACEMENTPARENTALCONSENTDATE = new ElementDefImpl( STUDENTPARTICIPATION, "PlacementParentalConsentDate", null, 20, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMPLACEMENTDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramPlacementDate", null, 21, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		ProgramsDTD.STUDENTPARTICIPATION_EXTENDEDSCHOOLYEAR = new ElementDefImpl( STUDENTPARTICIPATION, "ExtendedSchoolYear", null, 22, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		ProgramsDTD.STUDENTPARTICIPATION_EXTENDEDDAY = new ElementDefImpl( STUDENTPARTICIPATION, "ExtendedDay", null, 23, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMAVAILABILITY = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramAvailability", null, 24, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ProgramsDTD.STUDENTPARTICIPATION_ENTRYPERSON = new ElementDefImpl( STUDENTPARTICIPATION, "EntryPerson", null, 25, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTPARTICIPATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPARTICIPATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTPARTICIPATION_SIF_METADATA = new ElementDefImpl( STUDENTPARTICIPATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		ProgramsDTD.STUDENTPARTICIPATION_REFERRALSOURCE = new ElementDefImpl( STUDENTPARTICIPATION, "ReferralSource", null, 8, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMSTATUS = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramStatus", null, 9, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ProgramsDTD.STUDENTPARTICIPATION_GIFTEDELIGIBILITYCRITERIA = new ElementDefImpl( STUDENTPARTICIPATION, "GiftedEligibilityCriteria", null, 10, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProgramsDTD.STUDENTPARTICIPATION_EVALUATIONPARENTALCONSENTDATE = new ElementDefImpl( STUDENTPARTICIPATION, "EvaluationParentalConsentDate", null, 11, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_EVALUATIONDATE = new ElementDefImpl( STUDENTPARTICIPATION, "EvaluationDate", null, 12, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_EVALUATIONEXTENSIONDATE = new ElementDefImpl( STUDENTPARTICIPATION, "EvaluationExtensionDate", null, 13, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_EXTENSIONCOMMENTS = new ElementDefImpl( STUDENTPARTICIPATION, "ExtensionComments", null, 14, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ProgramsDTD.STUDENTPARTICIPATION_REEVALUATIONDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ReevaluationDate", null, 15, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMELIGIBILITYDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramEligibilityDate", null, 16, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMPLANDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramPlanDate", null, 17, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMPLANEFFECTIVEDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramPlanEffectiveDate", null, 18, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_NOREPDATE = new ElementDefImpl( STUDENTPARTICIPATION, "NOREPDate", null, 19, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_PLACEMENTPARENTALCONSENTDATE = new ElementDefImpl( STUDENTPARTICIPATION, "PlacementParentalConsentDate", null, 20, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMPLACEMENTDATE = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramPlacementDate", null, 21, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		ProgramsDTD.STUDENTPARTICIPATION_EXTENDEDSCHOOLYEAR = new ElementDefImpl( STUDENTPARTICIPATION, "ExtendedSchoolYear", null, 22, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		ProgramsDTD.STUDENTPARTICIPATION_EXTENDEDDAY = new ElementDefImpl( STUDENTPARTICIPATION, "ExtendedDay", null, 23, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		ProgramsDTD.STUDENTPARTICIPATION_PROGRAMAVAILABILITY = new ElementDefImpl( STUDENTPARTICIPATION, "ProgramAvailability", null, 24, SifDtd.PROGRAMS, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ProgramsDTD.STUDENTPARTICIPATION_ENTRYPERSON = new ElementDefImpl( STUDENTPARTICIPATION, "EntryPerson", null, 25, SifDtd.PROGRAMS, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTPARTICIPATION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPARTICIPATION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTPARTICIPATION_SIF_METADATA = new ElementDefImpl( STUDENTPARTICIPATION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

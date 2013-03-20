@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Dw
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -190,76 +190,76 @@ namespace OpenADK.Library.us.Dw
 	{
 		//  Objects defined by this SDO Library...
 
-		AGGREGATECHARACTERISTICINFO = new ElementDefImpl( null, "AggregateCharacteristicInfo", null, 0, SifDtd.DW, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		AGGREGATECHARACTERISTICINFOREFID = new ElementDefImpl( null, "AggregateCharacteristicInfoRefId", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		AGGREGATESTATISTICFACT = new ElementDefImpl( null, "AggregateStatisticFact", null, 0, SifDtd.DW, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		AGGREGATESTATISTICINFO = new ElementDefImpl( null, "AggregateStatisticInfo", null, 0, SifDtd.DW, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		CALCULATIONRULE = new ElementDefImpl( null, "CalculationRule", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		CHARACTERISTICS = new ElementDefImpl( null, "Characteristics", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		EXCLUSIONRULE = new ElementDefImpl( null, "ExclusionRule", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		EXCLUSIONRULES = new ElementDefImpl( null, "ExclusionRules", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		LOCATION = new ElementDefImpl( null, "Location", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		LOCATIONREFID = new ElementDefImpl( null, "LocationRefId", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		AGGREGATECHARACTERISTICINFO = new ElementDefImpl( null, "AggregateCharacteristicInfo", null, 0, SifDtd.DW, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		AGGREGATECHARACTERISTICINFOREFID = new ElementDefImpl( null, "AggregateCharacteristicInfoRefId", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		AGGREGATESTATISTICFACT = new ElementDefImpl( null, "AggregateStatisticFact", null, 0, SifDtd.DW, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		AGGREGATESTATISTICINFO = new ElementDefImpl( null, "AggregateStatisticInfo", null, 0, SifDtd.DW, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		CALCULATIONRULE = new ElementDefImpl( null, "CalculationRule", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		CHARACTERISTICS = new ElementDefImpl( null, "Characteristics", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		EXCLUSIONRULE = new ElementDefImpl( null, "ExclusionRule", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		EXCLUSIONRULES = new ElementDefImpl( null, "ExclusionRules", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		LOCATION = new ElementDefImpl( null, "Location", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		LOCATIONREFID = new ElementDefImpl( null, "LocationRefId", null, 0, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 
 		// <AggregateCharacteristicInfo> fields (4 entries)
-		DwDTD.AGGREGATECHARACTERISTICINFO_REFID = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "RefId", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.AGGREGATECHARACTERISTICINFO_DESCRIPTION = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "Description", null, 2, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.AGGREGATECHARACTERISTICINFO_DEFINITION = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "Definition", null, 3, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.AGGREGATECHARACTERISTICINFO_ELEMENTNAME = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "ElementName", null, 4, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		AGGREGATECHARACTERISTICINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		AGGREGATECHARACTERISTICINFO_SIF_METADATA = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		DwDTD.AGGREGATECHARACTERISTICINFO_REFID = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "RefId", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.AGGREGATECHARACTERISTICINFO_DESCRIPTION = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "Description", null, 2, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.AGGREGATECHARACTERISTICINFO_DEFINITION = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "Definition", null, 3, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.AGGREGATECHARACTERISTICINFO_ELEMENTNAME = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "ElementName", null, 4, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		AGGREGATECHARACTERISTICINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		AGGREGATECHARACTERISTICINFO_SIF_METADATA = new ElementDefImpl( AGGREGATECHARACTERISTICINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AggregateCharacteristicInfoRefId> fields (0 entries)
 
 		// <AggregateStatisticFact> fields (5 entries)
-		DwDTD.AGGREGATESTATISTICFACT_REFID = new ElementDefImpl( AGGREGATESTATISTICFACT, "RefId", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.AGGREGATESTATISTICFACT_CHARACTERISTICS = new ElementDefImpl( AGGREGATESTATISTICFACT, "Characteristics", null, 2, SifDtd.DW, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		DwDTD.AGGREGATESTATISTICFACT_REFID = new ElementDefImpl( AGGREGATESTATISTICFACT, "RefId", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.AGGREGATESTATISTICFACT_CHARACTERISTICS = new ElementDefImpl( AGGREGATESTATISTICFACT, "Characteristics", null, 2, SifDtd.DW, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		DwDTD.AGGREGATESTATISTICFACT_CHARACTERISTICS.DefineVersionInfo(SifVersion.SIF20, "Characteristics", 3, 0); // (Sif 20 alias)
-		DwDTD.AGGREGATESTATISTICFACT_AGGREGATESTATISTICINFOREFID = new ElementDefImpl( AGGREGATESTATISTICFACT, "AggregateStatisticInfoRefId", "~XPathSurrogate{Statistic/@AggregateStatisticInfoRefId=.}Statistic", 3, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		DwDTD.AGGREGATESTATISTICFACT_AGGREGATESTATISTICINFOREFID = new ElementDefImpl( AGGREGATESTATISTICFACT, "AggregateStatisticInfoRefId", "~XPathSurrogate{Statistic/@AggregateStatisticInfoRefId=.}Statistic", 3, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		DwDTD.AGGREGATESTATISTICFACT_AGGREGATESTATISTICINFOREFID.DefineVersionInfo(SifVersion.SIF20, "AggregateStatisticInfoRefId", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		DwDTD.AGGREGATESTATISTICFACT_EXCLUDED = new ElementDefImpl( AGGREGATESTATISTICFACT, "Excluded", null, 4, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.AGGREGATESTATISTICFACT_VALUE = new ElementDefImpl( AGGREGATESTATISTICFACT, "Value", null, 5, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		AGGREGATESTATISTICFACT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( AGGREGATESTATISTICFACT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		AGGREGATESTATISTICFACT_SIF_METADATA = new ElementDefImpl( AGGREGATESTATISTICFACT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		DwDTD.AGGREGATESTATISTICFACT_EXCLUDED = new ElementDefImpl( AGGREGATESTATISTICFACT, "Excluded", null, 4, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.AGGREGATESTATISTICFACT_VALUE = new ElementDefImpl( AGGREGATESTATISTICFACT, "Value", null, 5, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		AGGREGATESTATISTICFACT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( AGGREGATESTATISTICFACT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		AGGREGATESTATISTICFACT_SIF_METADATA = new ElementDefImpl( AGGREGATESTATISTICFACT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <AggregateStatisticInfo> fields (11 entries)
-		DwDTD.AGGREGATESTATISTICINFO_REFID = new ElementDefImpl( AGGREGATESTATISTICINFO, "RefId", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.AGGREGATESTATISTICINFO_STATISTICNAME = new ElementDefImpl( AGGREGATESTATISTICINFO, "StatisticName", null, 2, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.AGGREGATESTATISTICINFO_CALCULATIONRULE = new ElementDefImpl( AGGREGATESTATISTICINFO, "CalculationRule", null, 3, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.AGGREGATESTATISTICINFO_APPROVALDATE = new ElementDefImpl( AGGREGATESTATISTICINFO, "ApprovalDate", null, 4, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		DwDTD.AGGREGATESTATISTICINFO_EXPIRATIONDATE = new ElementDefImpl( AGGREGATESTATISTICINFO, "ExpirationDate", null, 5, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		DwDTD.AGGREGATESTATISTICINFO_EXCLUSIONRULES = new ElementDefImpl( AGGREGATESTATISTICINFO, "ExclusionRules", null, 6, SifDtd.DW, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		DwDTD.AGGREGATESTATISTICINFO_REFID = new ElementDefImpl( AGGREGATESTATISTICINFO, "RefId", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.AGGREGATESTATISTICINFO_STATISTICNAME = new ElementDefImpl( AGGREGATESTATISTICINFO, "StatisticName", null, 2, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.AGGREGATESTATISTICINFO_CALCULATIONRULE = new ElementDefImpl( AGGREGATESTATISTICINFO, "CalculationRule", null, 3, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.AGGREGATESTATISTICINFO_APPROVALDATE = new ElementDefImpl( AGGREGATESTATISTICINFO, "ApprovalDate", null, 4, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		DwDTD.AGGREGATESTATISTICINFO_EXPIRATIONDATE = new ElementDefImpl( AGGREGATESTATISTICINFO, "ExpirationDate", null, 5, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		DwDTD.AGGREGATESTATISTICINFO_EXCLUSIONRULES = new ElementDefImpl( AGGREGATESTATISTICINFO, "ExclusionRules", null, 6, SifDtd.DW, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		DwDTD.AGGREGATESTATISTICINFO_EXCLUSIONRULES.DefineVersionInfo(SifVersion.SIF20, "ExclusionRules", 6, 0); // (Sif 20 alias)
-		DwDTD.AGGREGATESTATISTICINFO_SOURCE = new ElementDefImpl( AGGREGATESTATISTICINFO, "Source", null, 7, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.AGGREGATESTATISTICINFO_EFFECTIVEDATE = new ElementDefImpl( AGGREGATESTATISTICINFO, "EffectiveDate", null, 8, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		DwDTD.AGGREGATESTATISTICINFO_DISCONTINUEDATE = new ElementDefImpl( AGGREGATESTATISTICINFO, "DiscontinueDate", null, 9, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		DwDTD.AGGREGATESTATISTICINFO_LOCATION = new ElementDefImpl( AGGREGATESTATISTICINFO, "Location", null, 10, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		DwDTD.AGGREGATESTATISTICINFO_MEASURE = new ElementDefImpl( AGGREGATESTATISTICINFO, "Measure", "~XPathSurrogate{Measure/@Type=.}", 11, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		DwDTD.AGGREGATESTATISTICINFO_SOURCE = new ElementDefImpl( AGGREGATESTATISTICINFO, "Source", null, 7, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.AGGREGATESTATISTICINFO_EFFECTIVEDATE = new ElementDefImpl( AGGREGATESTATISTICINFO, "EffectiveDate", null, 8, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		DwDTD.AGGREGATESTATISTICINFO_DISCONTINUEDATE = new ElementDefImpl( AGGREGATESTATISTICINFO, "DiscontinueDate", null, 9, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		DwDTD.AGGREGATESTATISTICINFO_LOCATION = new ElementDefImpl( AGGREGATESTATISTICINFO, "Location", null, 10, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		DwDTD.AGGREGATESTATISTICINFO_MEASURE = new ElementDefImpl( AGGREGATESTATISTICINFO, "Measure", "~XPathSurrogate{Measure/@Type=.}", 11, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		DwDTD.AGGREGATESTATISTICINFO_MEASURE.DefineVersionInfo(SifVersion.SIF20, "Measure", 11, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		AGGREGATESTATISTICINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( AGGREGATESTATISTICINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		AGGREGATESTATISTICINFO_SIF_METADATA = new ElementDefImpl( AGGREGATESTATISTICINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		AGGREGATESTATISTICINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( AGGREGATESTATISTICINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		AGGREGATESTATISTICINFO_SIF_METADATA = new ElementDefImpl( AGGREGATESTATISTICINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <CalculationRule> fields (1 entries)
-		DwDTD.CALCULATIONRULE_TYPE = new ElementDefImpl( CALCULATIONRULE, "Type", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		DwDTD.CALCULATIONRULE_TYPE = new ElementDefImpl( CALCULATIONRULE, "Type", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Characteristics> fields (1 entries)
-		DwDTD.CHARACTERISTICS_AGGREGATECHARACTERISTICINFOREFID = new ElementDefImpl( CHARACTERISTICS, "AggregateCharacteristicInfoRefId", "~XPathSurrogate{Characteristic/@AggregateCharacteristicInfoRefId=.}Characteristic", 1, SifDtd.DW, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		DwDTD.CHARACTERISTICS_AGGREGATECHARACTERISTICINFOREFID = new ElementDefImpl( CHARACTERISTICS, "AggregateCharacteristicInfoRefId", "~XPathSurrogate{Characteristic/@AggregateCharacteristicInfoRefId=.}Characteristic", 1, SifDtd.DW, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		DwDTD.CHARACTERISTICS_AGGREGATECHARACTERISTICINFOREFID.DefineVersionInfo(SifVersion.SIF20, "AggregateCharacteristicInfoRefId", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <ExclusionRule> fields (1 entries)
-		DwDTD.EXCLUSIONRULE_TYPE = new ElementDefImpl( EXCLUSIONRULE, "Type", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		DwDTD.EXCLUSIONRULE_TYPE = new ElementDefImpl( EXCLUSIONRULE, "Type", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ExclusionRules> fields (1 entries)
-		DwDTD.EXCLUSIONRULES_EXCLUSIONRULE = new ElementDefImpl( EXCLUSIONRULES, "ExclusionRule", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		DwDTD.EXCLUSIONRULES_EXCLUSIONRULE = new ElementDefImpl( EXCLUSIONRULES, "ExclusionRule", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Location> fields (3 entries)
-		DwDTD.LOCATION_TYPE = new ElementDefImpl( LOCATION, "Type", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.LOCATION_LOCATIONNAME = new ElementDefImpl( LOCATION, "LocationName", null, 2, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		DwDTD.LOCATION_LOCATIONREFID = new ElementDefImpl( LOCATION, "LocationRefId", null, 3, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		DwDTD.LOCATION_TYPE = new ElementDefImpl( LOCATION, "Type", null, 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.LOCATION_LOCATIONNAME = new ElementDefImpl( LOCATION, "LocationName", null, 2, SifDtd.DW, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		DwDTD.LOCATION_LOCATIONREFID = new ElementDefImpl( LOCATION, "LocationRefId", null, 3, SifDtd.DW, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <LocationRefId> fields (1 entries)
-		DwDTD.LOCATIONREFID_SIF_REFOBJECT = new ElementDefImpl( LOCATIONREFID, "SIF_RefObject", "ObjectName", 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		DwDTD.LOCATIONREFID_SIF_REFOBJECT = new ElementDefImpl( LOCATIONREFID, "SIF_RefObject", "ObjectName", 1, SifDtd.DW, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		DwDTD.LOCATIONREFID_SIF_REFOBJECT.DefineVersionInfo(SifVersion.SIF20, "SIF_RefObject", 1, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
 	}
 

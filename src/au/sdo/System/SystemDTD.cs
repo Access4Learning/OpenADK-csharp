@@ -20,7 +20,7 @@ namespace OpenADK.Library.au.System
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -150,50 +150,50 @@ namespace OpenADK.Library.au.System
 	{
 		//  Objects defined by this SDO Library...
 
-		ROLE = new ElementDefImpl( null, "Role", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ROLELIST = new ElementDefImpl( null, "RoleList", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ROLESCOPE = new ElementDefImpl( null, "RoleScope", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ROLESCOPELIST = new ElementDefImpl( null, "RoleScopeList", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ROLESCOPEREFID = new ElementDefImpl( null, "RoleScopeRefId", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		SYSTEMCONTEXT = new ElementDefImpl( null, "SystemContext", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		SYSTEMCONTEXTLIST = new ElementDefImpl( null, "SystemContextList", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		SYSTEMROLE = new ElementDefImpl( null, "SystemRole", null, 0, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		SYSTENROLESIF_REFID = new ElementDefImpl( null, "SystenRoleSIF_RefId", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		ROLE = new ElementDefImpl( null, "Role", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ROLELIST = new ElementDefImpl( null, "RoleList", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ROLESCOPE = new ElementDefImpl( null, "RoleScope", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ROLESCOPELIST = new ElementDefImpl( null, "RoleScopeList", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ROLESCOPEREFID = new ElementDefImpl( null, "RoleScopeRefId", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		SYSTEMCONTEXT = new ElementDefImpl( null, "SystemContext", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		SYSTEMCONTEXTLIST = new ElementDefImpl( null, "SystemContextList", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		SYSTEMROLE = new ElementDefImpl( null, "SystemRole", null, 0, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		SYSTENROLESIF_REFID = new ElementDefImpl( null, "SystenRoleSIF_RefId", null, 0, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 
 		// <Role> fields (2 entries)
-		SystemDTD.ROLE_ROLEID = new ElementDefImpl( ROLE, "RoleId", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		SystemDTD.ROLE_ROLESCOPELIST = new ElementDefImpl( ROLE, "RoleScopeList", null, 2, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		SystemDTD.ROLE_ROLEID = new ElementDefImpl( ROLE, "RoleId", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		SystemDTD.ROLE_ROLESCOPELIST = new ElementDefImpl( ROLE, "RoleScopeList", null, 2, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <RoleList> fields (1 entries)
-		SystemDTD.ROLELIST_ROLE = new ElementDefImpl( ROLELIST, "Role", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		SystemDTD.ROLELIST_ROLE = new ElementDefImpl( ROLELIST, "Role", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <RoleScope> fields (2 entries)
-		SystemDTD.ROLESCOPE_ROLESCOPENAME = new ElementDefImpl( ROLESCOPE, "RoleScopeName", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		SystemDTD.ROLESCOPE_ROLESCOPEREFID = new ElementDefImpl( ROLESCOPE, "RoleScopeRefId", null, 2, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		SystemDTD.ROLESCOPE_ROLESCOPENAME = new ElementDefImpl( ROLESCOPE, "RoleScopeName", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		SystemDTD.ROLESCOPE_ROLESCOPEREFID = new ElementDefImpl( ROLESCOPE, "RoleScopeRefId", null, 2, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RoleScopeList> fields (1 entries)
-		SystemDTD.ROLESCOPELIST_ROLESCOPE = new ElementDefImpl( ROLESCOPELIST, "RoleScope", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		SystemDTD.ROLESCOPELIST_ROLESCOPE = new ElementDefImpl( ROLESCOPELIST, "RoleScope", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <RoleScopeRefId> fields (1 entries)
-		SystemDTD.ROLESCOPEREFID_SIF_REFOBJECT = new ElementDefImpl( ROLESCOPEREFID, "SIF_RefObject", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		SystemDTD.ROLESCOPEREFID_SIF_REFOBJECT = new ElementDefImpl( ROLESCOPEREFID, "SIF_RefObject", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SystemContext> fields (2 entries)
-		SystemDTD.SYSTEMCONTEXT_SYSTEMID = new ElementDefImpl( SYSTEMCONTEXT, "SystemId", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		SystemDTD.SYSTEMCONTEXT_ROLELIST = new ElementDefImpl( SYSTEMCONTEXT, "RoleList", null, 2, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		SystemDTD.SYSTEMCONTEXT_SYSTEMID = new ElementDefImpl( SYSTEMCONTEXT, "SystemId", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		SystemDTD.SYSTEMCONTEXT_ROLELIST = new ElementDefImpl( SYSTEMCONTEXT, "RoleList", null, 2, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <SystemContextList> fields (1 entries)
-		SystemDTD.SYSTEMCONTEXTLIST_SYSTEMCONTEXT = new ElementDefImpl( SYSTEMCONTEXTLIST, "SystemContext", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		SystemDTD.SYSTEMCONTEXTLIST_SYSTEMCONTEXT = new ElementDefImpl( SYSTEMCONTEXTLIST, "SystemContext", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <SystemRole> fields (2 entries)
-		SystemDTD.SYSTEMROLE_REFID = new ElementDefImpl( SYSTEMROLE, "RefId", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		SystemDTD.SYSTEMROLE_SIF_REFID = new ElementDefAlias( SYSTEMROLE, "SIF_RefId", null, "SystenRoleSIF_RefId", 2, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		SYSTEMROLE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SYSTEMROLE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SYSTEMROLE_SIF_METADATA = new ElementDefImpl( SYSTEMROLE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SystemDTD.SYSTEMROLE_REFID = new ElementDefImpl( SYSTEMROLE, "RefId", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		SystemDTD.SYSTEMROLE_SIF_REFID = new ElementDefAlias( SYSTEMROLE, "SIF_RefId", null, "SystenRoleSIF_RefId", 2, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		SYSTEMROLE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SYSTEMROLE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SYSTEMROLE_SIF_METADATA = new ElementDefImpl( SYSTEMROLE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SystenRoleSIF_RefId> fields (2 entries)
-		SystemDTD.SYSTENROLESIF_REFID_SIF_REFOBJECT = new ElementDefImpl( SYSTENROLESIF_REFID, "SIF_RefObject", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		SystemDTD.SYSTENROLESIF_REFID_SYSTEMCONTEXTLIST = new ElementDefImpl( SYSTENROLESIF_REFID, "SystemContextList", null, 2, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		SystemDTD.SYSTENROLESIF_REFID_SIF_REFOBJECT = new ElementDefImpl( SYSTENROLESIF_REFID, "SIF_RefObject", null, 1, SifDtd.SYSTEM, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		SystemDTD.SYSTENROLESIF_REFID_SYSTEMCONTEXTLIST = new ElementDefImpl( SYSTENROLESIF_REFID, "SystemContextList", null, 2, SifDtd.SYSTEM, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

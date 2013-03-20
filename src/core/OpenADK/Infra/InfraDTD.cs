@@ -18,7 +18,7 @@ namespace OpenADK.Library.Infra
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -1012,231 +1012,231 @@ namespace OpenADK.Library.Infra
 	{
 		//  Objects defined by this SDO Library...
 
-		C = new ElementDefImpl( null, "C", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		PASSWORD = new ElementDefImpl( null, "Password", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		R = new ElementDefImpl( null, "R", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIFCOLUMNHEADER = new ElementDefImpl( null, "SIFColumnHeader", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIFORDERBYELEMENT = new ElementDefImpl( null, "SIFOrderByElement", "SIF_Element", 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIFSELECTELEMENT = new ElementDefImpl( null, "SIFSelectElement", "SIF_Element", 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_ACK = new ElementDefImpl( null, "SIF_Ack", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_ADDPUBLISHERS = new ElementDefImpl( null, "SIF_AddPublishers", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_AGENTACL = new ElementDefImpl( null, "SIF_AgentACL", null, 0, SifDtd.INFRA, null, (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_APPLICATION = new ElementDefImpl( null, "SIF_Application", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_BODY = new ElementDefImpl( null, "SIF_Body", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SIF_CANCELREQUESTS = new ElementDefImpl( null, "SIF_CancelRequests", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF21, SifVersion.SIF25 );
-		SIF_CHANGEPUBLISHERS = new ElementDefImpl( null, "SIF_ChangePublishers", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		C = new ElementDefImpl( null, "C", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		PASSWORD = new ElementDefImpl( null, "Password", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		R = new ElementDefImpl( null, "R", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIFCOLUMNHEADER = new ElementDefImpl( null, "SIFColumnHeader", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIFORDERBYELEMENT = new ElementDefImpl( null, "SIFOrderByElement", "SIF_Element", 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIFSELECTELEMENT = new ElementDefImpl( null, "SIFSelectElement", "SIF_Element", 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_ACK = new ElementDefImpl( null, "SIF_Ack", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_ADDPUBLISHERS = new ElementDefImpl( null, "SIF_AddPublishers", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_AGENTACL = new ElementDefImpl( null, "SIF_AgentACL", null, 0, SifDtd.INFRA, null, (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_APPLICATION = new ElementDefImpl( null, "SIF_Application", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_BODY = new ElementDefImpl( null, "SIF_Body", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SIF_CANCELREQUESTS = new ElementDefImpl( null, "SIF_CancelRequests", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF21, SifVersion.SIF26 );
+		SIF_CHANGEPUBLISHERS = new ElementDefImpl( null, "SIF_ChangePublishers", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 		SIF_COLUMNHEADERS = new ElementDefImpl( null, "SIF_ColumnHeaders", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF23 );
-		SIF_CONDITION = new ElementDefImpl( null, "SIF_Condition", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_CONDITIONGROUP = new ElementDefImpl( null, "SIF_ConditionGroup", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_CONDITIONS = new ElementDefImpl( null, "SIF_Conditions", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_CONTEXT = new ElementDefImpl( null, "SIF_Context", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_CONTEXTS = new ElementDefImpl( null, "SIF_Contexts", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_DATA = new ElementDefImpl( null, "SIF_Data", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_DELETEPUBLISHERS = new ElementDefImpl( null, "SIF_DeletePublishers", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_ELEMENT = new ElementDefImpl( null, "SIF_Element", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_ERROR = new ElementDefImpl( null, "SIF_Error", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_EVENT = new ElementDefImpl( null, "SIF_Event", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_EVENTOBJECT = new ElementDefImpl( null, "SIF_EventObject", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_EXAMPLE = new ElementDefImpl( null, "SIF_Example", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_EXTENDEDQUERY = new ElementDefImpl( null, "SIF_ExtendedQuery", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_EXTENDEDQUERYRESULTS = new ElementDefImpl( null, "SIF_ExtendedQueryResults", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_FROM = new ElementDefImpl( null, "SIF_From", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_GETAGENTACL = new ElementDefImpl( null, "SIF_GetAgentACL", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_GETMESSAGE = new ElementDefImpl( null, "SIF_GetMessage", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_GETZONESTATUS = new ElementDefImpl( null, "SIF_GetZoneStatus", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_HEADER = new ElementDefImpl( null, "SIF_Header", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_JOIN = new ElementDefImpl( null, "SIF_Join", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_JOINON = new ElementDefImpl( null, "SIF_JoinOn", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_LEFTELEMENT = new ElementDefImpl( null, "SIF_LeftElement", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_LOGENTRY = new ElementDefImpl( null, "SIF_LogEntry", null, 0, SifDtd.INFRA, null, (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SIF_LOGENTRYHEADER = new ElementDefImpl( null, "SIF_LogEntryHeader", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		SIF_LOGOBJECT = new ElementDefImpl( null, "SIF_LogObject", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_LOGOBJECTS = new ElementDefImpl( null, "SIF_LogObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		SIF_OBJECT = new ElementDefImpl( null, "SIF_Object", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_OBJECTDATA = new ElementDefImpl( null, "SIF_ObjectData", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_OBJECTLIST = new ElementDefImpl( null, "SIF_ObjectList", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_ORDERBY = new ElementDefImpl( null, "SIF_OrderBy", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_PING = new ElementDefImpl( null, "SIF_Ping", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_PROPERTY = new ElementDefImpl( null, "SIF_Property", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_PROTOCOL = new ElementDefImpl( null, "SIF_Protocol", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_PROTOCOLNAME = new ElementDefImpl( null, "SIF_ProtocolName", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_PROVIDE = new ElementDefImpl( null, "SIF_Provide", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_PROVIDEACCESS = new ElementDefImpl( null, "SIF_ProvideAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_PROVIDEOBJECTS = new ElementDefImpl( null, "SIF_ProvideObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_PROVIDER = new ElementDefImpl( null, "SIF_Provider", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_PROVIDERS = new ElementDefImpl( null, "SIF_Providers", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_PROVISION = new ElementDefImpl( null, "SIF_Provision", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_PUBLISHADDACCESS = new ElementDefImpl( null, "SIF_PublishAddAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_PUBLISHADDOBJECTS = new ElementDefImpl( null, "SIF_PublishAddObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_PUBLISHCHANGEACCESS = new ElementDefImpl( null, "SIF_PublishChangeAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_PUBLISHCHANGEOBJECTS = new ElementDefImpl( null, "SIF_PublishChangeObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_PUBLISHDELETEACCESS = new ElementDefImpl( null, "SIF_PublishDeleteAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_PUBLISHDELETEOBJECTS = new ElementDefImpl( null, "SIF_PublishDeleteObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_PUBLISHER = new ElementDefImpl( null, "SIF_Publisher", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_QUERY = new ElementDefImpl( null, "SIF_Query", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_QUERYOBJECT = new ElementDefImpl( null, "SIF_QueryObject", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_REGISTER = new ElementDefImpl( null, "SIF_Register", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_REQUEST = new ElementDefImpl( null, "SIF_Request", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_REQUESTACCESS = new ElementDefImpl( null, "SIF_RequestAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_REQUESTER = new ElementDefImpl( null, "SIF_Requester", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_REQUESTERS = new ElementDefImpl( null, "SIF_Requesters", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_REQUESTMSGID = new ElementDefImpl( null, "SIF_RequestMsgId", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_REQUESTMSGIDS = new ElementDefImpl( null, "SIF_RequestMsgIds", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF21, SifVersion.SIF25 );
-		SIF_REQUESTOBJECTS = new ElementDefImpl( null, "SIF_RequestObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_RESPONDACCESS = new ElementDefImpl( null, "SIF_RespondAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_RESPONDER = new ElementDefImpl( null, "SIF_Responder", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_RESPONDERS = new ElementDefImpl( null, "SIF_Responders", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_RESPONDOBJECTS = new ElementDefImpl( null, "SIF_RespondObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_RESPONSE = new ElementDefImpl( null, "SIF_Response", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_RIGHTELEMENT = new ElementDefImpl( null, "SIF_RightElement", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_ROWS = new ElementDefImpl( null, "SIF_Rows", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_SECURECHANNEL = new ElementDefImpl( null, "SIF_SecureChannel", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SECURITY = new ElementDefImpl( null, "SIF_Security", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SELECT = new ElementDefImpl( null, "SIF_Select", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_SERVICEINPUT = new ElementDefImpl( null, "SIF_ServiceInput", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SIF_SERVICENOTIFY = new ElementDefImpl( null, "SIF_ServiceNotify", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SIF_SERVICEOUTPUT = new ElementDefImpl( null, "SIF_ServiceOutput", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		SIF_SIFNODE = new ElementDefImpl( null, "SIF_SIFNode", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SIFNODES = new ElementDefImpl( null, "SIF_SIFNodes", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SLEEP = new ElementDefImpl( null, "SIF_Sleep", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_STATUS = new ElementDefImpl( null, "SIF_Status", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SUBSCRIBE = new ElementDefImpl( null, "SIF_Subscribe", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SUBSCRIBEACCESS = new ElementDefImpl( null, "SIF_SubscribeAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_SUBSCRIBEOBJECTS = new ElementDefImpl( null, "SIF_SubscribeObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_SUBSCRIBER = new ElementDefImpl( null, "SIF_Subscriber", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SUBSCRIBERS = new ElementDefImpl( null, "SIF_Subscribers", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SUPPORTEDAUTHENTICATION = new ElementDefImpl( null, "SIF_SupportedAuthentication", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SUPPORTEDPROTOCOLS = new ElementDefImpl( null, "SIF_SupportedProtocols", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SUPPORTEDVERSIONS = new ElementDefImpl( null, "SIF_SupportedVersions", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SYSTEMCONTROL = new ElementDefImpl( null, "SIF_SystemControl", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_SYSTEMCONTROLDATA = new ElementDefImpl( null, "SIF_SystemControlData", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_UNPROVIDE = new ElementDefImpl( null, "SIF_Unprovide", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_UNREGISTER = new ElementDefImpl( null, "SIF_Unregister", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_UNSUBSCRIBE = new ElementDefImpl( null, "SIF_Unsubscribe", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_VENDOR = new ElementDefImpl( null, "SIF_Vendor", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_VERSION = new ElementDefImpl( null, "SIF_Version", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		SIF_VERSIONLIST = new ElementDefImpl( null, "SIF_VersionList", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_WAKEUP = new ElementDefImpl( null, "SIF_Wakeup", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		SIF_WHERE = new ElementDefImpl( null, "SIF_Where", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_ZONESTATUS = new ElementDefImpl( null, "SIF_ZoneStatus", null, 0, SifDtd.INFRA, null, (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
+		SIF_CONDITION = new ElementDefImpl( null, "SIF_Condition", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_CONDITIONGROUP = new ElementDefImpl( null, "SIF_ConditionGroup", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_CONDITIONS = new ElementDefImpl( null, "SIF_Conditions", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_CONTEXT = new ElementDefImpl( null, "SIF_Context", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_CONTEXTS = new ElementDefImpl( null, "SIF_Contexts", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_DATA = new ElementDefImpl( null, "SIF_Data", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_DELETEPUBLISHERS = new ElementDefImpl( null, "SIF_DeletePublishers", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_ELEMENT = new ElementDefImpl( null, "SIF_Element", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_ERROR = new ElementDefImpl( null, "SIF_Error", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_EVENT = new ElementDefImpl( null, "SIF_Event", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_EVENTOBJECT = new ElementDefImpl( null, "SIF_EventObject", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_EXAMPLE = new ElementDefImpl( null, "SIF_Example", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_EXTENDEDQUERY = new ElementDefImpl( null, "SIF_ExtendedQuery", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_EXTENDEDQUERYRESULTS = new ElementDefImpl( null, "SIF_ExtendedQueryResults", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_FROM = new ElementDefImpl( null, "SIF_From", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_GETAGENTACL = new ElementDefImpl( null, "SIF_GetAgentACL", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_GETMESSAGE = new ElementDefImpl( null, "SIF_GetMessage", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_GETZONESTATUS = new ElementDefImpl( null, "SIF_GetZoneStatus", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_HEADER = new ElementDefImpl( null, "SIF_Header", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_JOIN = new ElementDefImpl( null, "SIF_Join", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_JOINON = new ElementDefImpl( null, "SIF_JoinOn", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_LEFTELEMENT = new ElementDefImpl( null, "SIF_LeftElement", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_LOGENTRY = new ElementDefImpl( null, "SIF_LogEntry", null, 0, SifDtd.INFRA, null, (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SIF_LOGENTRYHEADER = new ElementDefImpl( null, "SIF_LogEntryHeader", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		SIF_LOGOBJECT = new ElementDefImpl( null, "SIF_LogObject", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_LOGOBJECTS = new ElementDefImpl( null, "SIF_LogObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		SIF_OBJECT = new ElementDefImpl( null, "SIF_Object", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_OBJECTDATA = new ElementDefImpl( null, "SIF_ObjectData", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_OBJECTLIST = new ElementDefImpl( null, "SIF_ObjectList", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_ORDERBY = new ElementDefImpl( null, "SIF_OrderBy", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_PING = new ElementDefImpl( null, "SIF_Ping", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_PROPERTY = new ElementDefImpl( null, "SIF_Property", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_PROTOCOL = new ElementDefImpl( null, "SIF_Protocol", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_PROTOCOLNAME = new ElementDefImpl( null, "SIF_ProtocolName", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_PROVIDE = new ElementDefImpl( null, "SIF_Provide", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_PROVIDEACCESS = new ElementDefImpl( null, "SIF_ProvideAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_PROVIDEOBJECTS = new ElementDefImpl( null, "SIF_ProvideObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_PROVIDER = new ElementDefImpl( null, "SIF_Provider", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_PROVIDERS = new ElementDefImpl( null, "SIF_Providers", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_PROVISION = new ElementDefImpl( null, "SIF_Provision", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_PUBLISHADDACCESS = new ElementDefImpl( null, "SIF_PublishAddAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_PUBLISHADDOBJECTS = new ElementDefImpl( null, "SIF_PublishAddObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_PUBLISHCHANGEACCESS = new ElementDefImpl( null, "SIF_PublishChangeAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_PUBLISHCHANGEOBJECTS = new ElementDefImpl( null, "SIF_PublishChangeObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_PUBLISHDELETEACCESS = new ElementDefImpl( null, "SIF_PublishDeleteAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_PUBLISHDELETEOBJECTS = new ElementDefImpl( null, "SIF_PublishDeleteObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_PUBLISHER = new ElementDefImpl( null, "SIF_Publisher", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_QUERY = new ElementDefImpl( null, "SIF_Query", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_QUERYOBJECT = new ElementDefImpl( null, "SIF_QueryObject", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_REGISTER = new ElementDefImpl( null, "SIF_Register", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_REQUEST = new ElementDefImpl( null, "SIF_Request", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_REQUESTACCESS = new ElementDefImpl( null, "SIF_RequestAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_REQUESTER = new ElementDefImpl( null, "SIF_Requester", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_REQUESTERS = new ElementDefImpl( null, "SIF_Requesters", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_REQUESTMSGID = new ElementDefImpl( null, "SIF_RequestMsgId", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_REQUESTMSGIDS = new ElementDefImpl( null, "SIF_RequestMsgIds", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF21, SifVersion.SIF26 );
+		SIF_REQUESTOBJECTS = new ElementDefImpl( null, "SIF_RequestObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_RESPONDACCESS = new ElementDefImpl( null, "SIF_RespondAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_RESPONDER = new ElementDefImpl( null, "SIF_Responder", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_RESPONDERS = new ElementDefImpl( null, "SIF_Responders", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_RESPONDOBJECTS = new ElementDefImpl( null, "SIF_RespondObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_RESPONSE = new ElementDefImpl( null, "SIF_Response", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_RIGHTELEMENT = new ElementDefImpl( null, "SIF_RightElement", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_ROWS = new ElementDefImpl( null, "SIF_Rows", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_SECURECHANNEL = new ElementDefImpl( null, "SIF_SecureChannel", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SECURITY = new ElementDefImpl( null, "SIF_Security", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SELECT = new ElementDefImpl( null, "SIF_Select", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_SERVICEINPUT = new ElementDefImpl( null, "SIF_ServiceInput", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SIF_SERVICENOTIFY = new ElementDefImpl( null, "SIF_ServiceNotify", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SIF_SERVICEOUTPUT = new ElementDefImpl( null, "SIF_ServiceOutput", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
+		SIF_SIFNODE = new ElementDefImpl( null, "SIF_SIFNode", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SIFNODES = new ElementDefImpl( null, "SIF_SIFNodes", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SLEEP = new ElementDefImpl( null, "SIF_Sleep", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_STATUS = new ElementDefImpl( null, "SIF_Status", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SUBSCRIBE = new ElementDefImpl( null, "SIF_Subscribe", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SUBSCRIBEACCESS = new ElementDefImpl( null, "SIF_SubscribeAccess", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_SUBSCRIBEOBJECTS = new ElementDefImpl( null, "SIF_SubscribeObjects", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_SUBSCRIBER = new ElementDefImpl( null, "SIF_Subscriber", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SUBSCRIBERS = new ElementDefImpl( null, "SIF_Subscribers", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SUPPORTEDAUTHENTICATION = new ElementDefImpl( null, "SIF_SupportedAuthentication", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SUPPORTEDPROTOCOLS = new ElementDefImpl( null, "SIF_SupportedProtocols", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SUPPORTEDVERSIONS = new ElementDefImpl( null, "SIF_SupportedVersions", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SYSTEMCONTROL = new ElementDefImpl( null, "SIF_SystemControl", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_SYSTEMCONTROLDATA = new ElementDefImpl( null, "SIF_SystemControlData", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_UNPROVIDE = new ElementDefImpl( null, "SIF_Unprovide", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_UNREGISTER = new ElementDefImpl( null, "SIF_Unregister", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_UNSUBSCRIBE = new ElementDefImpl( null, "SIF_Unsubscribe", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_VENDOR = new ElementDefImpl( null, "SIF_Vendor", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_VERSION = new ElementDefImpl( null, "SIF_Version", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		SIF_VERSIONLIST = new ElementDefImpl( null, "SIF_VersionList", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_WAKEUP = new ElementDefImpl( null, "SIF_Wakeup", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		SIF_WHERE = new ElementDefImpl( null, "SIF_Where", null, 0, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_ZONESTATUS = new ElementDefImpl( null, "SIF_ZoneStatus", null, 0, SifDtd.INFRA, null, (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
 
 
 		// <C> fields (0 entries)
 
 		// <Password> fields (2 entries)
-		InfraDTD.PASSWORD_ALGORITHM = new ElementDefImpl( PASSWORD, "Algorithm", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.PASSWORD_KEYNAME = new ElementDefImpl( PASSWORD, "KeyName", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.PASSWORD_ALGORITHM = new ElementDefImpl( PASSWORD, "Algorithm", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.PASSWORD_KEYNAME = new ElementDefImpl( PASSWORD, "KeyName", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <R> fields (1 entries)
-		InfraDTD.R_C = new ElementDefImpl( R, "C", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.R_C = new ElementDefImpl( R, "C", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIFColumnHeader> fields (3 entries)
-		InfraDTD.SIFCOLUMNHEADER_OBJECTNAME = new ElementDefImpl( SIFCOLUMNHEADER, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIFCOLUMNHEADER_ALIAS = new ElementDefImpl( SIFCOLUMNHEADER, "Alias", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIFCOLUMNHEADER_XSITYPE = new ElementDefImpl( SIFCOLUMNHEADER, "XsiType", "xsi:type", 3, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIFCOLUMNHEADER_OBJECTNAME = new ElementDefImpl( SIFCOLUMNHEADER, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIFCOLUMNHEADER_ALIAS = new ElementDefImpl( SIFCOLUMNHEADER, "Alias", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIFCOLUMNHEADER_XSITYPE = new ElementDefImpl( SIFCOLUMNHEADER, "XsiType", "xsi:type", 3, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Element> fields (2 entries)
-		InfraDTD.SIFORDERBYELEMENT_OBJECTNAME = new ElementDefImpl( SIFORDERBYELEMENT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIFORDERBYELEMENT_ORDERING = new ElementDefImpl( SIFORDERBYELEMENT, "Ordering", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIFORDERBYELEMENT_OBJECTNAME = new ElementDefImpl( SIFORDERBYELEMENT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIFORDERBYELEMENT_ORDERING = new ElementDefImpl( SIFORDERBYELEMENT, "Ordering", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Element> fields (2 entries)
-		InfraDTD.SIFSELECTELEMENT_ALIAS = new ElementDefImpl( SIFSELECTELEMENT, "Alias", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIFSELECTELEMENT_OBJECTNAME = new ElementDefImpl( SIFSELECTELEMENT, "ObjectName", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIFSELECTELEMENT_ALIAS = new ElementDefImpl( SIFSELECTELEMENT, "Alias", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIFSELECTELEMENT_OBJECTNAME = new ElementDefImpl( SIFSELECTELEMENT, "ObjectName", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Ack> fields (5 entries)
-		InfraDTD.SIF_ACK_SIF_HEADER = new ElementDefImpl( SIF_ACK, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_ACK_SIF_ORIGINALSOURCEID = new ElementDefImpl( SIF_ACK, "SIF_OriginalSourceId", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_ACK_SIF_ORIGINALMSGID = new ElementDefImpl( SIF_ACK, "SIF_OriginalMsgId", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_ACK_SIF_STATUS = new ElementDefImpl( SIF_ACK, "SIF_Status", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_ACK_SIF_ERROR = new ElementDefImpl( SIF_ACK, "SIF_Error", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_ACK_SIF_HEADER = new ElementDefImpl( SIF_ACK, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_ACK_SIF_ORIGINALSOURCEID = new ElementDefImpl( SIF_ACK, "SIF_OriginalSourceId", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_ACK_SIF_ORIGINALMSGID = new ElementDefImpl( SIF_ACK, "SIF_OriginalMsgId", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_ACK_SIF_STATUS = new ElementDefImpl( SIF_ACK, "SIF_Status", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_ACK_SIF_ERROR = new ElementDefImpl( SIF_ACK, "SIF_Error", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_AddPublishers> fields (1 entries)
-		InfraDTD.SIF_ADDPUBLISHERS_SIF_PUBLISHER = new ElementDefImpl( SIF_ADDPUBLISHERS, "SIF_Publisher", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_ADDPUBLISHERS_SIF_PUBLISHER = new ElementDefImpl( SIF_ADDPUBLISHERS, "SIF_Publisher", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_AgentACL> fields (7 entries)
-		InfraDTD.SIF_AGENTACL_SIF_PROVIDEACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_ProvideAccess", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_AGENTACL_SIF_SUBSCRIBEACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_SubscribeAccess", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_AGENTACL_SIF_PUBLISHADDACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_PublishAddAccess", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_AGENTACL_SIF_PUBLISHCHANGEACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_PublishChangeAccess", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_AGENTACL_SIF_PUBLISHDELETEACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_PublishDeleteAccess", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_AGENTACL_SIF_REQUESTACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_RequestAccess", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_AGENTACL_SIF_RESPONDACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_RespondAccess", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_AGENTACL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SIF_AGENTACL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SIF_AGENTACL_SIF_METADATA = new ElementDefImpl( SIF_AGENTACL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, Adk.Dtd.GetType().Namespace.Substring(Adk.Dtd.GetType().Namespace.LastIndexOf('.') + 1), (0), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_AGENTACL_SIF_PROVIDEACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_ProvideAccess", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_AGENTACL_SIF_SUBSCRIBEACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_SubscribeAccess", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_AGENTACL_SIF_PUBLISHADDACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_PublishAddAccess", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_AGENTACL_SIF_PUBLISHCHANGEACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_PublishChangeAccess", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_AGENTACL_SIF_PUBLISHDELETEACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_PublishDeleteAccess", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_AGENTACL_SIF_REQUESTACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_RequestAccess", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_AGENTACL_SIF_RESPONDACCESS = new ElementDefImpl( SIF_AGENTACL, "SIF_RespondAccess", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_AGENTACL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SIF_AGENTACL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SIF_AGENTACL_SIF_METADATA = new ElementDefImpl( SIF_AGENTACL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, Adk.Dtd.GetType().Namespace.Substring(Adk.Dtd.GetType().Namespace.LastIndexOf('.') + 1), (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Application> fields (3 entries)
-		InfraDTD.SIF_APPLICATION_SIF_VENDOR = new ElementDefImpl( SIF_APPLICATION, "SIF_Vendor", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_APPLICATION_SIF_PRODUCT = new ElementDefImpl( SIF_APPLICATION, "SIF_Product", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_APPLICATION_SIF_VERSION = new ElementDefImpl( SIF_APPLICATION, "SIF_Version", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_APPLICATION_SIF_VENDOR = new ElementDefImpl( SIF_APPLICATION, "SIF_Vendor", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_APPLICATION_SIF_PRODUCT = new ElementDefImpl( SIF_APPLICATION, "SIF_Product", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_APPLICATION_SIF_VERSION = new ElementDefImpl( SIF_APPLICATION, "SIF_Version", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Body> fields (0 entries)
 
 		// <SIF_CancelRequests> fields (2 entries)
-		InfraDTD.SIF_CANCELREQUESTS_SIF_NOTIFICATIONTYPE = new ElementDefImpl( SIF_CANCELREQUESTS, "SIF_NotificationType", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_CANCELREQUESTS_SIF_REQUESTMSGIDS = new ElementDefImpl( SIF_CANCELREQUESTS, "SIF_RequestMsgIds", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF21, SifVersion.SIF25 );
+		InfraDTD.SIF_CANCELREQUESTS_SIF_NOTIFICATIONTYPE = new ElementDefImpl( SIF_CANCELREQUESTS, "SIF_NotificationType", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_CANCELREQUESTS_SIF_REQUESTMSGIDS = new ElementDefImpl( SIF_CANCELREQUESTS, "SIF_RequestMsgIds", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF21, SifVersion.SIF26 );
 
 		// <SIF_ChangePublishers> fields (1 entries)
-		InfraDTD.SIF_CHANGEPUBLISHERS_SIF_PUBLISHER = new ElementDefImpl( SIF_CHANGEPUBLISHERS, "SIF_Publisher", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_CHANGEPUBLISHERS_SIF_PUBLISHER = new ElementDefImpl( SIF_CHANGEPUBLISHERS, "SIF_Publisher", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_ColumnHeaders> fields (1 entries)
 		InfraDTD.SIF_COLUMNHEADERS_SIF_ELEMENT = new ElementDefAlias( SIF_COLUMNHEADERS, "SIF_Element", null, "SIFColumnHeader", 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF23, SifTypeConverters.STRING );
 
 		// <SIF_Condition> fields (3 entries)
-		InfraDTD.SIF_CONDITION_SIF_ELEMENT = new ElementDefImpl( SIF_CONDITION, "SIF_Element", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_CONDITION_SIF_OPERATOR = new ElementDefImpl( SIF_CONDITION, "SIF_Operator", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_CONDITION_SIF_VALUE = new ElementDefImpl( SIF_CONDITION, "SIF_Value", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_CONDITION_SIF_ELEMENT = new ElementDefImpl( SIF_CONDITION, "SIF_Element", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_CONDITION_SIF_OPERATOR = new ElementDefImpl( SIF_CONDITION, "SIF_Operator", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_CONDITION_SIF_VALUE = new ElementDefImpl( SIF_CONDITION, "SIF_Value", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_ConditionGroup> fields (2 entries)
-		InfraDTD.SIF_CONDITIONGROUP_TYPE = new ElementDefImpl( SIF_CONDITIONGROUP, "Type", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_CONDITIONGROUP_SIF_CONDITIONS = new ElementDefImpl( SIF_CONDITIONGROUP, "SIF_Conditions", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_CONDITIONGROUP_TYPE = new ElementDefImpl( SIF_CONDITIONGROUP, "Type", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_CONDITIONGROUP_SIF_CONDITIONS = new ElementDefImpl( SIF_CONDITIONGROUP, "SIF_Conditions", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_Conditions> fields (2 entries)
-		InfraDTD.SIF_CONDITIONS_TYPE = new ElementDefImpl( SIF_CONDITIONS, "Type", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_CONDITIONS_SIF_CONDITION = new ElementDefImpl( SIF_CONDITIONS, "SIF_Condition", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_CONDITIONS_TYPE = new ElementDefImpl( SIF_CONDITIONS, "Type", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_CONDITIONS_SIF_CONDITION = new ElementDefImpl( SIF_CONDITIONS, "SIF_Condition", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_Context> fields (0 entries)
 
 		// <SIF_Contexts> fields (1 entries)
-		InfraDTD.SIF_CONTEXTS_SIF_CONTEXT = new ElementDefImpl( SIF_CONTEXTS, "SIF_Context", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_CONTEXTS_SIF_CONTEXT = new ElementDefImpl( SIF_CONTEXTS, "SIF_Context", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Data> fields (0 entries)
 
 		// <SIF_DeletePublishers> fields (1 entries)
-		InfraDTD.SIF_DELETEPUBLISHERS_SIF_PUBLISHER = new ElementDefImpl( SIF_DELETEPUBLISHERS, "SIF_Publisher", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_DELETEPUBLISHERS_SIF_PUBLISHER = new ElementDefImpl( SIF_DELETEPUBLISHERS, "SIF_Publisher", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Element> fields (0 entries)
 
 		// <SIF_Error> fields (4 entries)
-		InfraDTD.SIF_ERROR_SIF_CATEGORY = new ElementDefImpl( SIF_ERROR, "SIF_Category", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
-		InfraDTD.SIF_ERROR_SIF_CODE = new ElementDefImpl( SIF_ERROR, "SIF_Code", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
-		InfraDTD.SIF_ERROR_SIF_DESC = new ElementDefImpl( SIF_ERROR, "SIF_Desc", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_ERROR_SIF_EXTENDEDDESC = new ElementDefImpl( SIF_ERROR, "SIF_ExtendedDesc", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_ERROR_SIF_CATEGORY = new ElementDefImpl( SIF_ERROR, "SIF_Category", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
+		InfraDTD.SIF_ERROR_SIF_CODE = new ElementDefImpl( SIF_ERROR, "SIF_Code", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
+		InfraDTD.SIF_ERROR_SIF_DESC = new ElementDefImpl( SIF_ERROR, "SIF_Desc", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_ERROR_SIF_EXTENDEDDESC = new ElementDefImpl( SIF_ERROR, "SIF_ExtendedDesc", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Event> fields (2 entries)
-		InfraDTD.SIF_EVENT_SIF_HEADER = new ElementDefImpl( SIF_EVENT, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_EVENT_SIF_OBJECTDATA = new ElementDefImpl( SIF_EVENT, "SIF_ObjectData", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_EVENT_SIF_HEADER = new ElementDefImpl( SIF_EVENT, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_EVENT_SIF_OBJECTDATA = new ElementDefImpl( SIF_EVENT, "SIF_ObjectData", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_EventObject> fields (2 entries)
-		InfraDTD.SIF_EVENTOBJECT_OBJECTNAME = new ElementDefImpl( SIF_EVENTOBJECT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_EVENTOBJECT_ACTION = new ElementDefImpl( SIF_EVENTOBJECT, "Action", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_EVENTOBJECT_OBJECTNAME = new ElementDefImpl( SIF_EVENTOBJECT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_EVENTOBJECT_ACTION = new ElementDefImpl( SIF_EVENTOBJECT, "Action", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Example> fields (0 entries)
 
 		// <SIF_ExtendedQuery> fields (5 entries)
-		InfraDTD.SIF_EXTENDEDQUERY_SIF_DESTINATIONPROVIDER = new ElementDefImpl( SIF_EXTENDEDQUERY, "SIF_DestinationProvider", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_EXTENDEDQUERY_SIF_SELECT = new ElementDefImpl( SIF_EXTENDEDQUERY, "SIF_Select", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_EXTENDEDQUERY_SIF_FROM = new ElementDefImpl( SIF_EXTENDEDQUERY, "SIF_From", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_EXTENDEDQUERY_SIF_WHERE = new ElementDefImpl( SIF_EXTENDEDQUERY, "SIF_Where", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_EXTENDEDQUERY_SIF_ORDERBY = new ElementDefImpl( SIF_EXTENDEDQUERY, "SIF_OrderBy", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_EXTENDEDQUERY_SIF_DESTINATIONPROVIDER = new ElementDefImpl( SIF_EXTENDEDQUERY, "SIF_DestinationProvider", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_EXTENDEDQUERY_SIF_SELECT = new ElementDefImpl( SIF_EXTENDEDQUERY, "SIF_Select", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_EXTENDEDQUERY_SIF_FROM = new ElementDefImpl( SIF_EXTENDEDQUERY, "SIF_From", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_EXTENDEDQUERY_SIF_WHERE = new ElementDefImpl( SIF_EXTENDEDQUERY, "SIF_Where", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_EXTENDEDQUERY_SIF_ORDERBY = new ElementDefImpl( SIF_EXTENDEDQUERY, "SIF_OrderBy", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_ExtendedQueryResults> fields (2 entries)
-		InfraDTD.SIF_EXTENDEDQUERYRESULTS_SIF_COLUMNHEADERS = new ElementDefImpl( SIF_EXTENDEDQUERYRESULTS, "SIF_ColumnHeaders", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_EXTENDEDQUERYRESULTS_SIF_ROWS = new ElementDefImpl( SIF_EXTENDEDQUERYRESULTS, "SIF_Rows", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_EXTENDEDQUERYRESULTS_SIF_COLUMNHEADERS = new ElementDefImpl( SIF_EXTENDEDQUERYRESULTS, "SIF_ColumnHeaders", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_EXTENDEDQUERYRESULTS_SIF_ROWS = new ElementDefImpl( SIF_EXTENDEDQUERYRESULTS, "SIF_Rows", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_From> fields (3 entries)
-		InfraDTD.SIF_FROM_OBJECTNAME = new ElementDefImpl( SIF_FROM, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_FROM_SIF_OBJECT = new ElementDefImpl( SIF_FROM, "SIF_Object", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_FROM_SIF_JOIN = new ElementDefImpl( SIF_FROM, "SIF_Join", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_FROM_OBJECTNAME = new ElementDefImpl( SIF_FROM, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_FROM_SIF_OBJECT = new ElementDefImpl( SIF_FROM, "SIF_Object", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_FROM_SIF_JOIN = new ElementDefImpl( SIF_FROM, "SIF_Join", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_GetAgentACL> fields (0 entries)
 
@@ -1245,374 +1245,374 @@ namespace OpenADK.Library.Infra
 		// <SIF_GetZoneStatus> fields (0 entries)
 
 		// <SIF_Header> fields (6 entries)
-		InfraDTD.SIF_HEADER_SIF_MSGID = new ElementDefImpl( SIF_HEADER, "SIF_MsgId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_HEADER_SIF_TIMESTAMP = new ElementDefImpl( SIF_HEADER, "SIF_Timestamp", "~TimeStampSurrogate{}SIF_Date", 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATETIME );
+		InfraDTD.SIF_HEADER_SIF_MSGID = new ElementDefImpl( SIF_HEADER, "SIF_MsgId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_HEADER_SIF_TIMESTAMP = new ElementDefImpl( SIF_HEADER, "SIF_Timestamp", "~TimeStampSurrogate{}SIF_Date", 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATETIME );
 		InfraDTD.SIF_HEADER_SIF_TIMESTAMP.DefineVersionInfo(SifVersion.SIF20, "SIF_Timestamp", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_HEADER_SIF_SECURITY = new ElementDefImpl( SIF_HEADER, "SIF_Security", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_HEADER_SIF_SOURCEID = new ElementDefImpl( SIF_HEADER, "SIF_SourceId", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_HEADER_SIF_DESTINATIONID = new ElementDefImpl( SIF_HEADER, "SIF_DestinationId", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_HEADER_SIF_CONTEXTS = new ElementDefImpl( SIF_HEADER, "SIF_Contexts", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_HEADER_SIF_SECURITY = new ElementDefImpl( SIF_HEADER, "SIF_Security", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_HEADER_SIF_SOURCEID = new ElementDefImpl( SIF_HEADER, "SIF_SourceId", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_HEADER_SIF_DESTINATIONID = new ElementDefImpl( SIF_HEADER, "SIF_DestinationId", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_HEADER_SIF_CONTEXTS = new ElementDefImpl( SIF_HEADER, "SIF_Contexts", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Join> fields (2 entries)
-		InfraDTD.SIF_JOIN_TYPE = new ElementDefImpl( SIF_JOIN, "Type", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_JOIN_SIF_JOINON = new ElementDefImpl( SIF_JOIN, "SIF_JoinOn", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_JOIN_TYPE = new ElementDefImpl( SIF_JOIN, "Type", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_JOIN_SIF_JOINON = new ElementDefImpl( SIF_JOIN, "SIF_JoinOn", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_JoinOn> fields (2 entries)
-		InfraDTD.SIF_JOINON_SIF_LEFTELEMENT = new ElementDefImpl( SIF_JOINON, "SIF_LeftElement", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_JOINON_SIF_RIGHTELEMENT = new ElementDefImpl( SIF_JOINON, "SIF_RightElement", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_JOINON_SIF_LEFTELEMENT = new ElementDefImpl( SIF_JOINON, "SIF_LeftElement", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_JOINON_SIF_RIGHTELEMENT = new ElementDefImpl( SIF_JOINON, "SIF_RightElement", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_LeftElement> fields (1 entries)
-		InfraDTD.SIF_LEFTELEMENT_OBJECTNAME = new ElementDefImpl( SIF_LEFTELEMENT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_LEFTELEMENT_OBJECTNAME = new ElementDefImpl( SIF_LEFTELEMENT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_LogEntry> fields (10 entries)
-		InfraDTD.SIF_LOGENTRY_SOURCE = new ElementDefImpl( SIF_LOGENTRY, "Source", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_LOGENTRY_LOGLEVEL = new ElementDefImpl( SIF_LOGENTRY, "LogLevel", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_LOGENTRY_SIF_LOGENTRYHEADER = new ElementDefImpl( SIF_LOGENTRY, "SIF_LogEntryHeader", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		InfraDTD.SIF_LOGENTRY_SIF_ORIGINALHEADER = new ElementDefAlias( SIF_LOGENTRY, "SIF_OriginalHeader", null, "SIF_LogEntryHeader", 4, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		InfraDTD.SIF_LOGENTRY_SIF_CATEGORY = new ElementDefImpl( SIF_LOGENTRY, "SIF_Category", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_LOGENTRY_SIF_CODE = new ElementDefImpl( SIF_LOGENTRY, "SIF_Code", null, 6, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
+		InfraDTD.SIF_LOGENTRY_SOURCE = new ElementDefImpl( SIF_LOGENTRY, "Source", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_LOGENTRY_LOGLEVEL = new ElementDefImpl( SIF_LOGENTRY, "LogLevel", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_LOGENTRY_SIF_LOGENTRYHEADER = new ElementDefImpl( SIF_LOGENTRY, "SIF_LogEntryHeader", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		InfraDTD.SIF_LOGENTRY_SIF_ORIGINALHEADER = new ElementDefAlias( SIF_LOGENTRY, "SIF_OriginalHeader", null, "SIF_LogEntryHeader", 4, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		InfraDTD.SIF_LOGENTRY_SIF_CATEGORY = new ElementDefImpl( SIF_LOGENTRY, "SIF_Category", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_LOGENTRY_SIF_CODE = new ElementDefImpl( SIF_LOGENTRY, "SIF_Code", null, 6, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
 		InfraDTD.SIF_LOGENTRY_SIF_CODE.DefineVersionInfo(SifVersion.SIF20, "SIF_Code", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_LOGENTRY_SIF_APPLICATIONCODE = new ElementDefImpl( SIF_LOGENTRY, "SIF_ApplicationCode", null, 7, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_LOGENTRY_SIF_DESC = new ElementDefImpl( SIF_LOGENTRY, "SIF_Desc", null, 8, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_LOGENTRY_SIF_EXTENDEDDESC = new ElementDefImpl( SIF_LOGENTRY, "SIF_ExtendedDesc", null, 9, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_LOGENTRY_SIF_LOGOBJECTS = new ElementDefImpl( SIF_LOGENTRY, "SIF_LogObjects", null, 10, SifDtd.INFRA, null, (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		InfraDTD.SIF_LOGENTRY_SIF_APPLICATIONCODE = new ElementDefImpl( SIF_LOGENTRY, "SIF_ApplicationCode", null, 7, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_LOGENTRY_SIF_DESC = new ElementDefImpl( SIF_LOGENTRY, "SIF_Desc", null, 8, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_LOGENTRY_SIF_EXTENDEDDESC = new ElementDefImpl( SIF_LOGENTRY, "SIF_ExtendedDesc", null, 9, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_LOGENTRY_SIF_LOGOBJECTS = new ElementDefImpl( SIF_LOGENTRY, "SIF_LogObjects", null, 10, SifDtd.INFRA, null, (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		InfraDTD.SIF_LOGENTRY_SIF_LOGOBJECTS.DefineVersionInfo(SifVersion.SIF20, "SIF_LogObjects", 10, 0); // (Sif 20 alias)
-		SIF_LOGENTRY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SIF_LOGENTRY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SIF_LOGENTRY_SIF_METADATA = new ElementDefImpl( SIF_LOGENTRY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, Adk.Dtd.GetType().Namespace.Substring(Adk.Dtd.GetType().Namespace.LastIndexOf('.') + 1), (0), SifVersion.SIF20, SifVersion.SIF25 );
+		SIF_LOGENTRY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SIF_LOGENTRY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SIF_LOGENTRY_SIF_METADATA = new ElementDefImpl( SIF_LOGENTRY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, Adk.Dtd.GetType().Namespace.Substring(Adk.Dtd.GetType().Namespace.LastIndexOf('.') + 1), (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_LogEntryHeader> fields (1 entries)
-		InfraDTD.SIF_LOGENTRYHEADER_SIF_HEADER = new ElementDefImpl( SIF_LOGENTRYHEADER, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		InfraDTD.SIF_LOGENTRYHEADER_SIF_HEADER = new ElementDefImpl( SIF_LOGENTRYHEADER, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <SIF_LogObject> fields (1 entries)
-		InfraDTD.SIF_LOGOBJECT_OBJECTNAME = new ElementDefImpl( SIF_LOGOBJECT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_LOGOBJECT_OBJECTNAME = new ElementDefImpl( SIF_LOGOBJECT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_LogObjects> fields (1 entries)
-		InfraDTD.SIF_LOGOBJECTS_SIF_LOGOBJECT = new ElementDefImpl( SIF_LOGOBJECTS, "SIF_LogObject", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_LOGOBJECTS_SIF_LOGOBJECT = new ElementDefImpl( SIF_LOGOBJECTS, "SIF_LogObject", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Object> fields (3 entries)
-		InfraDTD.SIF_OBJECT_OBJECTNAME = new ElementDefImpl( SIF_OBJECT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_OBJECT_SIF_EXTENDEDQUERYSUPPORT = new ElementDefImpl( SIF_OBJECT, "SIF_ExtendedQuerySupport", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		InfraDTD.SIF_OBJECT_SIF_CONTEXTS = new ElementDefImpl( SIF_OBJECT, "SIF_Contexts", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_OBJECT_OBJECTNAME = new ElementDefImpl( SIF_OBJECT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_OBJECT_SIF_EXTENDEDQUERYSUPPORT = new ElementDefImpl( SIF_OBJECT, "SIF_ExtendedQuerySupport", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		InfraDTD.SIF_OBJECT_SIF_CONTEXTS = new ElementDefImpl( SIF_OBJECT, "SIF_Contexts", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_ObjectData> fields (1 entries)
-		InfraDTD.SIF_OBJECTDATA_SIF_EVENTOBJECT = new ElementDefImpl( SIF_OBJECTDATA, "SIF_EventObject", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_OBJECTDATA_SIF_EVENTOBJECT = new ElementDefImpl( SIF_OBJECTDATA, "SIF_EventObject", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_ObjectList> fields (1 entries)
-		InfraDTD.SIF_OBJECTLIST_SIF_OBJECT = new ElementDefImpl( SIF_OBJECTLIST, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_OBJECTLIST_SIF_OBJECT = new ElementDefImpl( SIF_OBJECTLIST, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_OrderBy> fields (1 entries)
-		InfraDTD.SIF_ORDERBY_SIF_ELEMENT = new ElementDefAlias( SIF_ORDERBY, "SIF_Element", null, "SIFOrderByElement", 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_ORDERBY_SIF_ELEMENT = new ElementDefAlias( SIF_ORDERBY, "SIF_Element", null, "SIFOrderByElement", 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Ping> fields (0 entries)
 
 		// <SIF_Property> fields (2 entries)
-		InfraDTD.SIF_PROPERTY_SIF_NAME = new ElementDefImpl( SIF_PROPERTY, "SIF_Name", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_PROPERTY_SIF_VALUE = new ElementDefImpl( SIF_PROPERTY, "SIF_Value", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_PROPERTY_SIF_NAME = new ElementDefImpl( SIF_PROPERTY, "SIF_Name", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_PROPERTY_SIF_VALUE = new ElementDefImpl( SIF_PROPERTY, "SIF_Value", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Protocol> fields (4 entries)
-		InfraDTD.SIF_PROTOCOL_TYPE = new ElementDefImpl( SIF_PROTOCOL, "Type", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_PROTOCOL_SECURE = new ElementDefImpl( SIF_PROTOCOL, "Secure", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_PROTOCOL_SIF_URL = new ElementDefImpl( SIF_PROTOCOL, "SIF_URL", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_PROTOCOL_SIF_PROPERTY = new ElementDefImpl( SIF_PROTOCOL, "SIF_Property", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_PROTOCOL_TYPE = new ElementDefImpl( SIF_PROTOCOL, "Type", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_PROTOCOL_SECURE = new ElementDefImpl( SIF_PROTOCOL, "Secure", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_PROTOCOL_SIF_URL = new ElementDefImpl( SIF_PROTOCOL, "SIF_URL", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_PROTOCOL_SIF_PROPERTY = new ElementDefImpl( SIF_PROTOCOL, "SIF_Property", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_ProtocolName> fields (0 entries)
 
 		// <SIF_Provide> fields (2 entries)
-		InfraDTD.SIF_PROVIDE_SIF_HEADER = new ElementDefImpl( SIF_PROVIDE, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_PROVIDE_SIF_OBJECT = new ElementDefImpl( SIF_PROVIDE, "SIF_Object", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_PROVIDE_SIF_HEADER = new ElementDefImpl( SIF_PROVIDE, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_PROVIDE_SIF_OBJECT = new ElementDefImpl( SIF_PROVIDE, "SIF_Object", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_ProvideAccess> fields (1 entries)
-		InfraDTD.SIF_PROVIDEACCESS_SIF_OBJECT = new ElementDefImpl( SIF_PROVIDEACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_PROVIDEACCESS_SIF_OBJECT = new ElementDefImpl( SIF_PROVIDEACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_ProvideObjects> fields (1 entries)
-		InfraDTD.SIF_PROVIDEOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_PROVIDEOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_PROVIDEOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_PROVIDEOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Provider> fields (2 entries)
-		InfraDTD.SIF_PROVIDER_SOURCEID = new ElementDefImpl( SIF_PROVIDER, "SourceId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_PROVIDER_SIF_OBJECTLIST = new ElementDefImpl( SIF_PROVIDER, "SIF_ObjectList", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_PROVIDER_SOURCEID = new ElementDefImpl( SIF_PROVIDER, "SourceId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_PROVIDER_SIF_OBJECTLIST = new ElementDefImpl( SIF_PROVIDER, "SIF_ObjectList", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_PROVIDER_SIF_OBJECTLIST.DefineVersionInfo(SifVersion.SIF20, "SIF_ObjectList", 2, 0); // (Sif 20 alias)
 
 		// <SIF_Providers> fields (1 entries)
-		InfraDTD.SIF_PROVIDERS_SIF_PROVIDER = new ElementDefImpl( SIF_PROVIDERS, "SIF_Provider", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_PROVIDERS_SIF_PROVIDER = new ElementDefImpl( SIF_PROVIDERS, "SIF_Provider", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_Provision> fields (8 entries)
-		InfraDTD.SIF_PROVISION_SIF_HEADER = new ElementDefImpl( SIF_PROVISION, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_PROVISION_SIF_PROVIDEOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_ProvideObjects", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_PROVISION_SIF_SUBSCRIBEOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_SubscribeObjects", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_PROVISION_SIF_PUBLISHADDOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_PublishAddObjects", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_PROVISION_SIF_PUBLISHCHANGEOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_PublishChangeObjects", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_PROVISION_SIF_PUBLISHDELETEOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_PublishDeleteObjects", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_PROVISION_SIF_REQUESTOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_RequestObjects", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_PROVISION_SIF_RESPONDOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_RespondObjects", null, 8, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_PROVISION_SIF_HEADER = new ElementDefImpl( SIF_PROVISION, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_PROVISION_SIF_PROVIDEOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_ProvideObjects", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_PROVISION_SIF_SUBSCRIBEOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_SubscribeObjects", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_PROVISION_SIF_PUBLISHADDOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_PublishAddObjects", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_PROVISION_SIF_PUBLISHCHANGEOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_PublishChangeObjects", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_PROVISION_SIF_PUBLISHDELETEOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_PublishDeleteObjects", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_PROVISION_SIF_REQUESTOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_RequestObjects", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_PROVISION_SIF_RESPONDOBJECTS = new ElementDefImpl( SIF_PROVISION, "SIF_RespondObjects", null, 8, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_PublishAddAccess> fields (1 entries)
-		InfraDTD.SIF_PUBLISHADDACCESS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHADDACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_PUBLISHADDACCESS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHADDACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_PublishAddObjects> fields (1 entries)
-		InfraDTD.SIF_PUBLISHADDOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHADDOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_PUBLISHADDOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHADDOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_PublishChangeAccess> fields (1 entries)
-		InfraDTD.SIF_PUBLISHCHANGEACCESS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHCHANGEACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_PUBLISHCHANGEACCESS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHCHANGEACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_PublishChangeObjects> fields (1 entries)
-		InfraDTD.SIF_PUBLISHCHANGEOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHCHANGEOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_PUBLISHCHANGEOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHCHANGEOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_PublishDeleteAccess> fields (1 entries)
-		InfraDTD.SIF_PUBLISHDELETEACCESS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHDELETEACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_PUBLISHDELETEACCESS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHDELETEACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_PublishDeleteObjects> fields (1 entries)
-		InfraDTD.SIF_PUBLISHDELETEOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHDELETEOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_PUBLISHDELETEOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_PUBLISHDELETEOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Publisher> fields (2 entries)
-		InfraDTD.SIF_PUBLISHER_SOURCEID = new ElementDefImpl( SIF_PUBLISHER, "SourceId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_PUBLISHER_SIF_OBJECTLIST = new ElementDefImpl( SIF_PUBLISHER, "SIF_ObjectList", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_PUBLISHER_SOURCEID = new ElementDefImpl( SIF_PUBLISHER, "SourceId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_PUBLISHER_SIF_OBJECTLIST = new ElementDefImpl( SIF_PUBLISHER, "SIF_ObjectList", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Query> fields (3 entries)
-		InfraDTD.SIF_QUERY_SIF_QUERYOBJECT = new ElementDefImpl( SIF_QUERY, "SIF_QueryObject", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_QUERY_SIF_CONDITIONGROUP = new ElementDefImpl( SIF_QUERY, "SIF_ConditionGroup", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_QUERY_SIF_EXAMPLE = new ElementDefImpl( SIF_QUERY, "SIF_Example", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_QUERY_SIF_QUERYOBJECT = new ElementDefImpl( SIF_QUERY, "SIF_QueryObject", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_QUERY_SIF_CONDITIONGROUP = new ElementDefImpl( SIF_QUERY, "SIF_ConditionGroup", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_QUERY_SIF_EXAMPLE = new ElementDefImpl( SIF_QUERY, "SIF_Example", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_QueryObject> fields (2 entries)
-		InfraDTD.SIF_QUERYOBJECT_OBJECTNAME = new ElementDefImpl( SIF_QUERYOBJECT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_QUERYOBJECT_SIF_ELEMENT = new ElementDefImpl( SIF_QUERYOBJECT, "SIF_Element", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_QUERYOBJECT_OBJECTNAME = new ElementDefImpl( SIF_QUERYOBJECT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_QUERYOBJECT_SIF_ELEMENT = new ElementDefImpl( SIF_QUERYOBJECT, "SIF_Element", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Register> fields (10 entries)
-		InfraDTD.SIF_REGISTER_SIF_HEADER = new ElementDefImpl( SIF_REGISTER, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_REGISTER_SIF_NAME = new ElementDefImpl( SIF_REGISTER, "SIF_Name", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_REGISTER_SIF_VERSION = new ElementDefImpl( SIF_REGISTER, "SIF_Version", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_REGISTER_SIF_MAXBUFFERSIZE = new ElementDefImpl( SIF_REGISTER, "SIF_MaxBufferSize", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
-		InfraDTD.SIF_REGISTER_SIF_MODE = new ElementDefImpl( SIF_REGISTER, "SIF_Mode", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_REGISTER_SIF_PROTOCOL = new ElementDefImpl( SIF_REGISTER, "SIF_Protocol", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_REGISTER_SIF_NODEVENDOR = new ElementDefImpl( SIF_REGISTER, "SIF_NodeVendor", null, 7, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_REGISTER_SIF_NODEVERSION = new ElementDefImpl( SIF_REGISTER, "SIF_NodeVersion", null, 8, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_REGISTER_SIF_APPLICATION = new ElementDefImpl( SIF_REGISTER, "SIF_Application", null, 9, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_REGISTER_SIF_ICON = new ElementDefImpl( SIF_REGISTER, "SIF_Icon", null, 10, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_REGISTER_SIF_HEADER = new ElementDefImpl( SIF_REGISTER, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_REGISTER_SIF_NAME = new ElementDefImpl( SIF_REGISTER, "SIF_Name", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_REGISTER_SIF_VERSION = new ElementDefImpl( SIF_REGISTER, "SIF_Version", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_REGISTER_SIF_MAXBUFFERSIZE = new ElementDefImpl( SIF_REGISTER, "SIF_MaxBufferSize", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
+		InfraDTD.SIF_REGISTER_SIF_MODE = new ElementDefImpl( SIF_REGISTER, "SIF_Mode", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_REGISTER_SIF_PROTOCOL = new ElementDefImpl( SIF_REGISTER, "SIF_Protocol", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_REGISTER_SIF_NODEVENDOR = new ElementDefImpl( SIF_REGISTER, "SIF_NodeVendor", null, 7, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_REGISTER_SIF_NODEVERSION = new ElementDefImpl( SIF_REGISTER, "SIF_NodeVersion", null, 8, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_REGISTER_SIF_APPLICATION = new ElementDefImpl( SIF_REGISTER, "SIF_Application", null, 9, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_REGISTER_SIF_ICON = new ElementDefImpl( SIF_REGISTER, "SIF_Icon", null, 10, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Request> fields (5 entries)
-		InfraDTD.SIF_REQUEST_SIF_HEADER = new ElementDefImpl( SIF_REQUEST, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_REQUEST_SIF_VERSION = new ElementDefImpl( SIF_REQUEST, "SIF_Version", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_REQUEST_SIF_MAXBUFFERSIZE = new ElementDefImpl( SIF_REQUEST, "SIF_MaxBufferSize", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
-		InfraDTD.SIF_REQUEST_SIF_QUERY = new ElementDefImpl( SIF_REQUEST, "SIF_Query", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_REQUEST_SIF_HEADER = new ElementDefImpl( SIF_REQUEST, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_REQUEST_SIF_VERSION = new ElementDefImpl( SIF_REQUEST, "SIF_Version", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_REQUEST_SIF_MAXBUFFERSIZE = new ElementDefImpl( SIF_REQUEST, "SIF_MaxBufferSize", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
+		InfraDTD.SIF_REQUEST_SIF_QUERY = new ElementDefImpl( SIF_REQUEST, "SIF_Query", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_REQUEST_SIF_QUERY.DefineVersionInfo(SifVersion.SIF20, "SIF_Query", 4, 0); // (Sif 20 alias)
-		InfraDTD.SIF_REQUEST_SIF_EXTENDEDQUERY = new ElementDefImpl( SIF_REQUEST, "SIF_ExtendedQuery", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_REQUEST_SIF_EXTENDEDQUERY = new ElementDefImpl( SIF_REQUEST, "SIF_ExtendedQuery", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_RequestAccess> fields (1 entries)
-		InfraDTD.SIF_REQUESTACCESS_SIF_OBJECT = new ElementDefImpl( SIF_REQUESTACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_REQUESTACCESS_SIF_OBJECT = new ElementDefImpl( SIF_REQUESTACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Requester> fields (2 entries)
-		InfraDTD.SIF_REQUESTER_SOURCEID = new ElementDefImpl( SIF_REQUESTER, "SourceId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_REQUESTER_SIF_OBJECTLIST = new ElementDefImpl( SIF_REQUESTER, "SIF_ObjectList", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_REQUESTER_SOURCEID = new ElementDefImpl( SIF_REQUESTER, "SourceId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_REQUESTER_SIF_OBJECTLIST = new ElementDefImpl( SIF_REQUESTER, "SIF_ObjectList", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Requesters> fields (1 entries)
-		InfraDTD.SIF_REQUESTERS_SIF_REQUESTER = new ElementDefImpl( SIF_REQUESTERS, "SIF_Requester", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_REQUESTERS_SIF_REQUESTER = new ElementDefImpl( SIF_REQUESTERS, "SIF_Requester", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_RequestMsgId> fields (0 entries)
 
 		// <SIF_RequestMsgIds> fields (1 entries)
-		InfraDTD.SIF_REQUESTMSGIDS_SIF_REQUESTMSGID = new ElementDefImpl( SIF_REQUESTMSGIDS, "SIF_RequestMsgId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF21, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_REQUESTMSGIDS_SIF_REQUESTMSGID = new ElementDefImpl( SIF_REQUESTMSGIDS, "SIF_RequestMsgId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF21, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_RequestObjects> fields (1 entries)
-		InfraDTD.SIF_REQUESTOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_REQUESTOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_REQUESTOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_REQUESTOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_RespondAccess> fields (1 entries)
-		InfraDTD.SIF_RESPONDACCESS_SIF_OBJECT = new ElementDefImpl( SIF_RESPONDACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_RESPONDACCESS_SIF_OBJECT = new ElementDefImpl( SIF_RESPONDACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Responder> fields (2 entries)
-		InfraDTD.SIF_RESPONDER_SOURCEID = new ElementDefImpl( SIF_RESPONDER, "SourceId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_RESPONDER_SIF_OBJECTLIST = new ElementDefImpl( SIF_RESPONDER, "SIF_ObjectList", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_RESPONDER_SOURCEID = new ElementDefImpl( SIF_RESPONDER, "SourceId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_RESPONDER_SIF_OBJECTLIST = new ElementDefImpl( SIF_RESPONDER, "SIF_ObjectList", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Responders> fields (1 entries)
-		InfraDTD.SIF_RESPONDERS_SIF_RESPONDER = new ElementDefImpl( SIF_RESPONDERS, "SIF_Responder", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_RESPONDERS_SIF_RESPONDER = new ElementDefImpl( SIF_RESPONDERS, "SIF_Responder", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_RespondObjects> fields (1 entries)
-		InfraDTD.SIF_RESPONDOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_RESPONDOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_RESPONDOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_RESPONDOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Response> fields (7 entries)
-		InfraDTD.SIF_RESPONSE_SIF_HEADER = new ElementDefImpl( SIF_RESPONSE, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_RESPONSE_SIF_REQUESTMSGID = new ElementDefImpl( SIF_RESPONSE, "SIF_RequestMsgId", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_RESPONSE_SIF_ERROR = new ElementDefImpl( SIF_RESPONSE, "SIF_Error", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_RESPONSE_SIF_HEADER = new ElementDefImpl( SIF_RESPONSE, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_RESPONSE_SIF_REQUESTMSGID = new ElementDefImpl( SIF_RESPONSE, "SIF_RequestMsgId", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_RESPONSE_SIF_ERROR = new ElementDefImpl( SIF_RESPONSE, "SIF_Error", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_RESPONSE_SIF_ERROR.DefineVersionInfo(SifVersion.SIF20, "SIF_Error", 5, 0); // (Sif 20 alias)
-		InfraDTD.SIF_RESPONSE_SIF_PACKETNUMBER = new ElementDefImpl( SIF_RESPONSE, "SIF_PacketNumber", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
+		InfraDTD.SIF_RESPONSE_SIF_PACKETNUMBER = new ElementDefImpl( SIF_RESPONSE, "SIF_PacketNumber", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
 		InfraDTD.SIF_RESPONSE_SIF_PACKETNUMBER.DefineVersionInfo(SifVersion.SIF20, "SIF_PacketNumber", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_RESPONSE_SIF_MOREPACKETS = new ElementDefImpl( SIF_RESPONSE, "SIF_MorePackets", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_RESPONSE_SIF_MOREPACKETS = new ElementDefImpl( SIF_RESPONSE, "SIF_MorePackets", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfraDTD.SIF_RESPONSE_SIF_MOREPACKETS.DefineVersionInfo(SifVersion.SIF20, "SIF_MorePackets", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_RESPONSE_SIF_OBJECTDATA = new ElementDefImpl( SIF_RESPONSE, "SIF_ObjectData", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_RESPONSE_SIF_EXTENDEDQUERYRESULTS = new ElementDefImpl( SIF_RESPONSE, "SIF_ExtendedQueryResults", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_RESPONSE_SIF_OBJECTDATA = new ElementDefImpl( SIF_RESPONSE, "SIF_ObjectData", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_RESPONSE_SIF_EXTENDEDQUERYRESULTS = new ElementDefImpl( SIF_RESPONSE, "SIF_ExtendedQueryResults", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_RightElement> fields (1 entries)
-		InfraDTD.SIF_RIGHTELEMENT_OBJECTNAME = new ElementDefImpl( SIF_RIGHTELEMENT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_RIGHTELEMENT_OBJECTNAME = new ElementDefImpl( SIF_RIGHTELEMENT, "ObjectName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Rows> fields (1 entries)
-		InfraDTD.SIF_ROWS_R = new ElementDefImpl( SIF_ROWS, "R", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_ROWS_R = new ElementDefImpl( SIF_ROWS, "R", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_SecureChannel> fields (2 entries)
-		InfraDTD.SIF_SECURECHANNEL_SIF_AUTHENTICATIONLEVEL = new ElementDefImpl( SIF_SECURECHANNEL, "SIF_AuthenticationLevel", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SECURECHANNEL_SIF_ENCRYPTIONLEVEL = new ElementDefImpl( SIF_SECURECHANNEL, "SIF_EncryptionLevel", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SECURECHANNEL_SIF_AUTHENTICATIONLEVEL = new ElementDefImpl( SIF_SECURECHANNEL, "SIF_AuthenticationLevel", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SECURECHANNEL_SIF_ENCRYPTIONLEVEL = new ElementDefImpl( SIF_SECURECHANNEL, "SIF_EncryptionLevel", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Security> fields (1 entries)
-		InfraDTD.SIF_SECURITY_SIF_SECURECHANNEL = new ElementDefImpl( SIF_SECURITY, "SIF_SecureChannel", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_SECURITY_SIF_SECURECHANNEL = new ElementDefImpl( SIF_SECURITY, "SIF_SecureChannel", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_Select> fields (3 entries)
-		InfraDTD.SIF_SELECT_DISTINCT = new ElementDefImpl( SIF_SELECT, "Distinct", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		InfraDTD.SIF_SELECT_ROWCOUNT = new ElementDefImpl( SIF_SELECT, "RowCount", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SELECT_SIF_ELEMENT = new ElementDefAlias( SIF_SELECT, "SIF_Element", null, "SIFSelectElement", 3, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SELECT_DISTINCT = new ElementDefImpl( SIF_SELECT, "Distinct", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		InfraDTD.SIF_SELECT_ROWCOUNT = new ElementDefImpl( SIF_SELECT, "RowCount", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SELECT_SIF_ELEMENT = new ElementDefAlias( SIF_SELECT, "SIF_Element", null, "SIFSelectElement", 3, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_ServiceInput> fields (10 entries)
-		InfraDTD.SIF_SERVICEINPUT_SIF_HEADER = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		InfraDTD.SIF_SERVICEINPUT_SIF_SERVICE = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Service", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICEINPUT_SIF_OPERATION = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Operation", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICEINPUT_SIF_SERVICEMSGID = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_ServiceMsgId", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICEINPUT_SIF_VERSION = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Version", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICEINPUT_SIF_MAXBUFFERSIZE = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_MaxBufferSize", null, 6, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		InfraDTD.SIF_SERVICEINPUT_SIF_PACKETNUMBER = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_PacketNumber", null, 7, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		InfraDTD.SIF_SERVICEINPUT_SIF_MOREPACKETS = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_MorePackets", null, 8, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICEINPUT_SIF_ERROR = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Error", null, 9, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		InfraDTD.SIF_SERVICEINPUT_SIF_BODY = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Body", null, 10, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
+		InfraDTD.SIF_SERVICEINPUT_SIF_HEADER = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
+		InfraDTD.SIF_SERVICEINPUT_SIF_SERVICE = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Service", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICEINPUT_SIF_OPERATION = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Operation", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICEINPUT_SIF_SERVICEMSGID = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_ServiceMsgId", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICEINPUT_SIF_VERSION = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Version", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICEINPUT_SIF_MAXBUFFERSIZE = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_MaxBufferSize", null, 6, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		InfraDTD.SIF_SERVICEINPUT_SIF_PACKETNUMBER = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_PacketNumber", null, 7, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		InfraDTD.SIF_SERVICEINPUT_SIF_MOREPACKETS = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_MorePackets", null, 8, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICEINPUT_SIF_ERROR = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Error", null, 9, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
+		InfraDTD.SIF_SERVICEINPUT_SIF_BODY = new ElementDefImpl( SIF_SERVICEINPUT, "SIF_Body", null, 10, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <SIF_ServiceNotify> fields (8 entries)
-		InfraDTD.SIF_SERVICENOTIFY_SIF_HEADER = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		InfraDTD.SIF_SERVICENOTIFY_SIF_SERVICE = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_Service", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICENOTIFY_SIF_OPERATION = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_Operation", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICENOTIFY_SIF_SERVICEMSGID = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_ServiceMsgId", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICENOTIFY_SIF_PACKETNUMBER = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_PacketNumber", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		InfraDTD.SIF_SERVICENOTIFY_SIF_MOREPACKETS = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_MorePackets", null, 6, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICENOTIFY_SIF_ERROR = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_Error", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		InfraDTD.SIF_SERVICENOTIFY_SIF_BODY = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_Body", null, 8, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
+		InfraDTD.SIF_SERVICENOTIFY_SIF_HEADER = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
+		InfraDTD.SIF_SERVICENOTIFY_SIF_SERVICE = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_Service", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICENOTIFY_SIF_OPERATION = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_Operation", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICENOTIFY_SIF_SERVICEMSGID = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_ServiceMsgId", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICENOTIFY_SIF_PACKETNUMBER = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_PacketNumber", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		InfraDTD.SIF_SERVICENOTIFY_SIF_MOREPACKETS = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_MorePackets", null, 6, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICENOTIFY_SIF_ERROR = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_Error", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
+		InfraDTD.SIF_SERVICENOTIFY_SIF_BODY = new ElementDefImpl( SIF_SERVICENOTIFY, "SIF_Body", null, 8, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <SIF_ServiceOutput> fields (8 entries)
-		InfraDTD.SIF_SERVICEOUTPUT_SIF_HEADER = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		InfraDTD.SIF_SERVICEOUTPUT_SIF_SERVICE = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_Service", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICEOUTPUT_SIF_OPERATION = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_Operation", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICEOUTPUT_SIF_SERVICEMSGID = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_ServiceMsgId", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICEOUTPUT_SIF_PACKETNUMBER = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_PacketNumber", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		InfraDTD.SIF_SERVICEOUTPUT_SIF_MOREPACKETS = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_MorePackets", null, 6, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SERVICEOUTPUT_SIF_ERROR = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_Error", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF25 );
-		InfraDTD.SIF_SERVICEOUTPUT_SIF_BODY = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_Body", null, 8, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICEOUTPUT_SIF_HEADER = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
+		InfraDTD.SIF_SERVICEOUTPUT_SIF_SERVICE = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_Service", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICEOUTPUT_SIF_OPERATION = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_Operation", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICEOUTPUT_SIF_SERVICEMSGID = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_ServiceMsgId", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICEOUTPUT_SIF_PACKETNUMBER = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_PacketNumber", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		InfraDTD.SIF_SERVICEOUTPUT_SIF_MOREPACKETS = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_MorePackets", null, 6, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SERVICEOUTPUT_SIF_ERROR = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_Error", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF23, SifVersion.SIF26 );
+		InfraDTD.SIF_SERVICEOUTPUT_SIF_BODY = new ElementDefImpl( SIF_SERVICEOUTPUT, "SIF_Body", null, 8, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_SIFNode> fields (15 entries)
-		InfraDTD.SIF_SIFNODE_TYPE = new ElementDefImpl( SIF_SIFNODE, "Type", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SIFNODE_SIF_NAME = new ElementDefImpl( SIF_SIFNODE, "SIF_Name", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SIFNODE_TYPE = new ElementDefImpl( SIF_SIFNODE, "Type", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SIFNODE_SIF_NAME = new ElementDefImpl( SIF_SIFNODE, "SIF_Name", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfraDTD.SIF_SIFNODE_SIF_NAME.DefineVersionInfo(SifVersion.SIF20, "SIF_Name", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_SIFNODE_SIF_ICON = new ElementDefImpl( SIF_SIFNODE, "SIF_Icon", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SIFNODE_SIF_SOURCEID = new ElementDefImpl( SIF_SIFNODE, "SIF_SourceId", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SIFNODE_SIF_ICON = new ElementDefImpl( SIF_SIFNODE, "SIF_Icon", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SIFNODE_SIF_SOURCEID = new ElementDefImpl( SIF_SIFNODE, "SIF_SourceId", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfraDTD.SIF_SIFNODE_SIF_SOURCEID.DefineVersionInfo(SifVersion.SIF20, "SIF_SourceId", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_SIFNODE_SIF_NODEVENDOR = new ElementDefImpl( SIF_SIFNODE, "SIF_NodeVendor", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SIFNODE_SIF_MODE = new ElementDefImpl( SIF_SIFNODE, "SIF_Mode", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SIFNODE_SIF_NODEVENDOR = new ElementDefImpl( SIF_SIFNODE, "SIF_NodeVendor", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SIFNODE_SIF_MODE = new ElementDefImpl( SIF_SIFNODE, "SIF_Mode", null, 4, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfraDTD.SIF_SIFNODE_SIF_MODE.DefineVersionInfo(SifVersion.SIF20, "SIF_Mode", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_SIFNODE_SIF_PROTOCOL = new ElementDefImpl( SIF_SIFNODE, "SIF_Protocol", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_SIFNODE_SIF_PROTOCOL = new ElementDefImpl( SIF_SIFNODE, "SIF_Protocol", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_SIFNODE_SIF_PROTOCOL.DefineVersionInfo(SifVersion.SIF20, "SIF_Protocol", 9, 0); // (Sif 20 alias)
-		InfraDTD.SIF_SIFNODE_SIF_NODEVERSION = new ElementDefImpl( SIF_SIFNODE, "SIF_NodeVersion", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SIFNODE_SIF_APPLICATION = new ElementDefImpl( SIF_SIFNODE, "SIF_Application", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_SIFNODE_SIF_VERSIONLIST = new ElementDefImpl( SIF_SIFNODE, "SIF_VersionList", null, 6, SifDtd.INFRA, null, (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_SIFNODE_SIF_NODEVERSION = new ElementDefImpl( SIF_SIFNODE, "SIF_NodeVersion", null, 5, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SIFNODE_SIF_APPLICATION = new ElementDefImpl( SIF_SIFNODE, "SIF_Application", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_SIFNODE_SIF_VERSIONLIST = new ElementDefImpl( SIF_SIFNODE, "SIF_VersionList", null, 6, SifDtd.INFRA, null, (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_SIFNODE_SIF_VERSIONLIST.DefineVersionInfo(SifVersion.SIF20, "SIF_VersionList", 10, 0); // (Sif 20 alias)
-		InfraDTD.SIF_SIFNODE_SIF_AUTHENTICATIONLEVEL = new ElementDefImpl( SIF_SIFNODE, "SIF_AuthenticationLevel", null, 7, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SIFNODE_SIF_AUTHENTICATIONLEVEL = new ElementDefImpl( SIF_SIFNODE, "SIF_AuthenticationLevel", null, 7, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfraDTD.SIF_SIFNODE_SIF_AUTHENTICATIONLEVEL.DefineVersionInfo(SifVersion.SIF20, "SIF_AuthenticationLevel", 11, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_SIFNODE_SIF_ENCRYPTIONLEVEL = new ElementDefImpl( SIF_SIFNODE, "SIF_EncryptionLevel", null, 8, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SIFNODE_SIF_ENCRYPTIONLEVEL = new ElementDefImpl( SIF_SIFNODE, "SIF_EncryptionLevel", null, 8, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfraDTD.SIF_SIFNODE_SIF_ENCRYPTIONLEVEL.DefineVersionInfo(SifVersion.SIF20, "SIF_EncryptionLevel", 12, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_SIFNODE_SIF_MAXBUFFERSIZE = new ElementDefImpl( SIF_SIFNODE, "SIF_MaxBufferSize", null, 9, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
+		InfraDTD.SIF_SIFNODE_SIF_MAXBUFFERSIZE = new ElementDefImpl( SIF_SIFNODE, "SIF_MaxBufferSize", null, 9, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
 		InfraDTD.SIF_SIFNODE_SIF_MAXBUFFERSIZE.DefineVersionInfo(SifVersion.SIF20, "SIF_MaxBufferSize", 13, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_SIFNODE_SIF_SLEEPING = new ElementDefImpl( SIF_SIFNODE, "SIF_Sleeping", null, 10, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SIFNODE_SIF_SLEEPING = new ElementDefImpl( SIF_SIFNODE, "SIF_Sleeping", null, 10, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfraDTD.SIF_SIFNODE_SIF_SLEEPING.DefineVersionInfo(SifVersion.SIF20, "SIF_Sleeping", 14, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 		InfraDTD.SIF_SIFNODE_SIF_DYNAMICCONNECTIONDATA = new ElementDefImpl( SIF_SIFNODE, "SIF_DynamicConnectionData", null, 11, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
 
 		// <SIF_SIFNodes> fields (1 entries)
-		InfraDTD.SIF_SIFNODES_SIF_SIFNODE = new ElementDefImpl( SIF_SIFNODES, "SIF_SIFNode", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_SIFNODES_SIF_SIFNODE = new ElementDefImpl( SIF_SIFNODES, "SIF_SIFNode", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_Sleep> fields (0 entries)
 
 		// <SIF_Status> fields (3 entries)
-		InfraDTD.SIF_STATUS_SIF_CODE = new ElementDefImpl( SIF_STATUS, "SIF_Code", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.INT );
-		InfraDTD.SIF_STATUS_SIF_DESC = new ElementDefImpl( SIF_STATUS, "SIF_Desc", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_STATUS_SIF_DATA = new ElementDefImpl( SIF_STATUS, "SIF_Data", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_STATUS_SIF_CODE = new ElementDefImpl( SIF_STATUS, "SIF_Code", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.INT );
+		InfraDTD.SIF_STATUS_SIF_DESC = new ElementDefImpl( SIF_STATUS, "SIF_Desc", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_STATUS_SIF_DATA = new ElementDefImpl( SIF_STATUS, "SIF_Data", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfraDTD.SIF_STATUS_SIF_DATA.DefineVersionInfo(SifVersion.SIF20, "SIF_Data", 3, 0); // (Sif 20 alias)
 
 		// <SIF_Subscribe> fields (2 entries)
-		InfraDTD.SIF_SUBSCRIBE_SIF_HEADER = new ElementDefImpl( SIF_SUBSCRIBE, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_SUBSCRIBE_SIF_OBJECT = new ElementDefImpl( SIF_SUBSCRIBE, "SIF_Object", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_SUBSCRIBE_SIF_HEADER = new ElementDefImpl( SIF_SUBSCRIBE, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_SUBSCRIBE_SIF_OBJECT = new ElementDefImpl( SIF_SUBSCRIBE, "SIF_Object", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_SubscribeAccess> fields (1 entries)
-		InfraDTD.SIF_SUBSCRIBEACCESS_SIF_OBJECT = new ElementDefImpl( SIF_SUBSCRIBEACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_SUBSCRIBEACCESS_SIF_OBJECT = new ElementDefImpl( SIF_SUBSCRIBEACCESS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_SubscribeObjects> fields (1 entries)
-		InfraDTD.SIF_SUBSCRIBEOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_SUBSCRIBEOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_SUBSCRIBEOBJECTS_SIF_OBJECT = new ElementDefImpl( SIF_SUBSCRIBEOBJECTS, "SIF_Object", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_Subscriber> fields (2 entries)
-		InfraDTD.SIF_SUBSCRIBER_SOURCEID = new ElementDefImpl( SIF_SUBSCRIBER, "SourceId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_SUBSCRIBER_SIF_OBJECTLIST = new ElementDefImpl( SIF_SUBSCRIBER, "SIF_ObjectList", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_SUBSCRIBER_SOURCEID = new ElementDefImpl( SIF_SUBSCRIBER, "SourceId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_SUBSCRIBER_SIF_OBJECTLIST = new ElementDefImpl( SIF_SUBSCRIBER, "SIF_ObjectList", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_SUBSCRIBER_SIF_OBJECTLIST.DefineVersionInfo(SifVersion.SIF20, "SIF_ObjectList", 2, 0); // (Sif 20 alias)
 
 		// <SIF_Subscribers> fields (1 entries)
-		InfraDTD.SIF_SUBSCRIBERS_SIF_SUBSCRIBER = new ElementDefImpl( SIF_SUBSCRIBERS, "SIF_Subscriber", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_SUBSCRIBERS_SIF_SUBSCRIBER = new ElementDefImpl( SIF_SUBSCRIBERS, "SIF_Subscriber", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_SupportedAuthentication> fields (1 entries)
-		InfraDTD.SIF_SUPPORTEDAUTHENTICATION_SIF_PROTOCOLNAME = new ElementDefImpl( SIF_SUPPORTEDAUTHENTICATION, "SIF_ProtocolName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SUPPORTEDAUTHENTICATION_SIF_PROTOCOLNAME = new ElementDefImpl( SIF_SUPPORTEDAUTHENTICATION, "SIF_ProtocolName", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_SupportedProtocols> fields (1 entries)
-		InfraDTD.SIF_SUPPORTEDPROTOCOLS_SIF_PROTOCOL = new ElementDefImpl( SIF_SUPPORTEDPROTOCOLS, "SIF_Protocol", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_SUPPORTEDPROTOCOLS_SIF_PROTOCOL = new ElementDefImpl( SIF_SUPPORTEDPROTOCOLS, "SIF_Protocol", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_SupportedVersions> fields (1 entries)
-		InfraDTD.SIF_SUPPORTEDVERSIONS_SIF_VERSION = new ElementDefImpl( SIF_SUPPORTEDVERSIONS, "SIF_Version", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SUPPORTEDVERSIONS_SIF_VERSION = new ElementDefImpl( SIF_SUPPORTEDVERSIONS, "SIF_Version", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_SystemControl> fields (2 entries)
-		InfraDTD.SIF_SYSTEMCONTROL_SIF_HEADER = new ElementDefImpl( SIF_SYSTEMCONTROL, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_SYSTEMCONTROL_SIF_SYSTEMCONTROLDATA = new ElementDefImpl( SIF_SYSTEMCONTROL, "SIF_SystemControlData", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_SYSTEMCONTROL_SIF_HEADER = new ElementDefImpl( SIF_SYSTEMCONTROL, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_SYSTEMCONTROL_SIF_SYSTEMCONTROLDATA = new ElementDefImpl( SIF_SYSTEMCONTROL, "SIF_SystemControlData", null, 2, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_SystemControlData> fields (0 entries)
 
 		// <SIF_Unprovide> fields (2 entries)
-		InfraDTD.SIF_UNPROVIDE_SIF_HEADER = new ElementDefImpl( SIF_UNPROVIDE, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_UNPROVIDE_SIF_OBJECT = new ElementDefImpl( SIF_UNPROVIDE, "SIF_Object", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_UNPROVIDE_SIF_HEADER = new ElementDefImpl( SIF_UNPROVIDE, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_UNPROVIDE_SIF_OBJECT = new ElementDefImpl( SIF_UNPROVIDE, "SIF_Object", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_Unregister> fields (1 entries)
-		InfraDTD.SIF_UNREGISTER_SIF_HEADER = new ElementDefImpl( SIF_UNREGISTER, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_UNREGISTER_SIF_HEADER = new ElementDefImpl( SIF_UNREGISTER, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_Unsubscribe> fields (2 entries)
-		InfraDTD.SIF_UNSUBSCRIBE_SIF_HEADER = new ElementDefImpl( SIF_UNSUBSCRIBE, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
-		InfraDTD.SIF_UNSUBSCRIBE_SIF_OBJECT = new ElementDefImpl( SIF_UNSUBSCRIBE, "SIF_Object", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_UNSUBSCRIBE_SIF_HEADER = new ElementDefImpl( SIF_UNSUBSCRIBE, "SIF_Header", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
+		InfraDTD.SIF_UNSUBSCRIBE_SIF_OBJECT = new ElementDefImpl( SIF_UNSUBSCRIBE, "SIF_Object", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_Vendor> fields (3 entries)
-		InfraDTD.SIF_VENDOR_SIF_NAME = new ElementDefImpl( SIF_VENDOR, "SIF_Name", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_VENDOR_SIF_PRODUCT = new ElementDefImpl( SIF_VENDOR, "SIF_Product", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_VENDOR_SIF_VERSION = new ElementDefImpl( SIF_VENDOR, "SIF_Version", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_VENDOR_SIF_NAME = new ElementDefImpl( SIF_VENDOR, "SIF_Name", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_VENDOR_SIF_PRODUCT = new ElementDefImpl( SIF_VENDOR, "SIF_Product", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_VENDOR_SIF_VERSION = new ElementDefImpl( SIF_VENDOR, "SIF_Version", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26 );
 
 		// <SIF_Version> fields (0 entries)
 
 		// <SIF_VersionList> fields (1 entries)
-		InfraDTD.SIF_VERSIONLIST_SIF_VERSION = new ElementDefImpl( SIF_VERSIONLIST, "SIF_Version", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_VERSIONLIST_SIF_VERSION = new ElementDefImpl( SIF_VERSIONLIST, "SIF_Version", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SIF_Wakeup> fields (0 entries)
 
 		// <SIF_Where> fields (1 entries)
-		InfraDTD.SIF_WHERE_SIF_CONDITIONGROUP = new ElementDefImpl( SIF_WHERE, "SIF_ConditionGroup", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_WHERE_SIF_CONDITIONGROUP = new ElementDefImpl( SIF_WHERE, "SIF_ConditionGroup", null, 1, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SIF_ZoneStatus> fields (17 entries)
-		InfraDTD.SIF_ZONESTATUS_ZONEID = new ElementDefImpl( SIF_ZONESTATUS, "ZoneId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_ZONESTATUS_SIF_NAME = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Name", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_ZONESTATUS_SIF_VENDOR = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Vendor", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_ZONESTATUS_ZONEID = new ElementDefImpl( SIF_ZONESTATUS, "ZoneId", null, 1, SifDtd.INFRA, null, (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_ZONESTATUS_SIF_NAME = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Name", null, 2, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_ZONESTATUS_SIF_VENDOR = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Vendor", null, 3, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_ZONESTATUS_SIF_VENDOR.DefineVersionInfo(SifVersion.SIF20, "SIF_Vendor", 4, 0); // (Sif 20 alias)
-		InfraDTD.SIF_ZONESTATUS_SIF_ICON = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Icon", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		InfraDTD.SIF_ZONESTATUS_SIF_PROVIDERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Providers", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_ZONESTATUS_SIF_ICON = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Icon", null, 3, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		InfraDTD.SIF_ZONESTATUS_SIF_PROVIDERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Providers", null, 4, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_ZONESTATUS_SIF_PROVIDERS.DefineVersionInfo(SifVersion.SIF20, "SIF_Providers", 5, 0); // (Sif 20 alias)
-		InfraDTD.SIF_ZONESTATUS_SIF_SUBSCRIBERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Subscribers", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_ZONESTATUS_SIF_SUBSCRIBERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Subscribers", null, 5, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_ZONESTATUS_SIF_SUBSCRIBERS.DefineVersionInfo(SifVersion.SIF20, "SIF_Subscribers", 6, 0); // (Sif 20 alias)
-		InfraDTD.SIF_ZONESTATUS_SIF_SIFNODES = new ElementDefImpl( SIF_ZONESTATUS, "SIF_SIFNodes", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_ZONESTATUS_SIF_SIFNODES = new ElementDefImpl( SIF_ZONESTATUS, "SIF_SIFNodes", null, 6, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_ZONESTATUS_SIF_SIFNODES.DefineVersionInfo(SifVersion.SIF20, "SIF_SIFNodes", 12, 0); // (Sif 20 alias)
-		InfraDTD.SIF_ZONESTATUS_SIF_ADDPUBLISHERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_AddPublishers", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_ZONESTATUS_SIF_SUPPORTEDAUTHENTICATION = new ElementDefImpl( SIF_ZONESTATUS, "SIF_SupportedAuthentication", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_ZONESTATUS_SIF_ADDPUBLISHERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_AddPublishers", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_ZONESTATUS_SIF_SUPPORTEDAUTHENTICATION = new ElementDefImpl( SIF_ZONESTATUS, "SIF_SupportedAuthentication", null, 7, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_ZONESTATUS_SIF_SUPPORTEDAUTHENTICATION.DefineVersionInfo(SifVersion.SIF20, "SIF_SupportedAuthentication", 13, 0); // (Sif 20 alias)
-		InfraDTD.SIF_ZONESTATUS_SIF_CHANGEPUBLISHERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_ChangePublishers", null, 8, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_ZONESTATUS_SIF_SUPPORTEDPROTOCOLS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_SupportedProtocols", null, 8, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_ZONESTATUS_SIF_CHANGEPUBLISHERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_ChangePublishers", null, 8, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_ZONESTATUS_SIF_SUPPORTEDPROTOCOLS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_SupportedProtocols", null, 8, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_ZONESTATUS_SIF_SUPPORTEDPROTOCOLS.DefineVersionInfo(SifVersion.SIF20, "SIF_SupportedProtocols", 14, 0); // (Sif 20 alias)
-		InfraDTD.SIF_ZONESTATUS_SIF_DELETEPUBLISHERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_DeletePublishers", null, 9, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_ZONESTATUS_SIF_SUPPORTEDVERSIONS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_SupportedVersions", null, 9, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF25 );
+		InfraDTD.SIF_ZONESTATUS_SIF_DELETEPUBLISHERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_DeletePublishers", null, 9, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_ZONESTATUS_SIF_SUPPORTEDVERSIONS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_SupportedVersions", null, 9, SifDtd.INFRA, null, 0, SifVersion.SIF11, SifVersion.SIF26 );
 		InfraDTD.SIF_ZONESTATUS_SIF_SUPPORTEDVERSIONS.DefineVersionInfo(SifVersion.SIF20, "SIF_SupportedVersions", 15, 0); // (Sif 20 alias)
-		InfraDTD.SIF_ZONESTATUS_SIF_ADMINISTRATIONURL = new ElementDefImpl( SIF_ZONESTATUS, "SIF_AdministrationURL", null, 10, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		InfraDTD.SIF_ZONESTATUS_SIF_ADMINISTRATIONURL = new ElementDefImpl( SIF_ZONESTATUS, "SIF_AdministrationURL", null, 10, SifDtd.INFRA, null, (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfraDTD.SIF_ZONESTATUS_SIF_ADMINISTRATIONURL.DefineVersionInfo(SifVersion.SIF20, "SIF_AdministrationURL", 16, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		InfraDTD.SIF_ZONESTATUS_SIF_RESPONDERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Responders", null, 10, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_ZONESTATUS_SIF_REQUESTERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Requesters", null, 11, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		InfraDTD.SIF_ZONESTATUS_SIF_CONTEXTS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Contexts", null, 17, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SIF_ZONESTATUS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SIF_ZONESTATUS_SIF_METADATA = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, Adk.Dtd.GetType().Namespace.Substring(Adk.Dtd.GetType().Namespace.LastIndexOf('.') + 1), (0), SifVersion.SIF20, SifVersion.SIF25 );
+		InfraDTD.SIF_ZONESTATUS_SIF_RESPONDERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Responders", null, 10, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_ZONESTATUS_SIF_REQUESTERS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Requesters", null, 11, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		InfraDTD.SIF_ZONESTATUS_SIF_CONTEXTS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Contexts", null, 17, SifDtd.INFRA, null, 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SIF_ZONESTATUS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SIF_ZONESTATUS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SIF_ZONESTATUS_SIF_METADATA = new ElementDefImpl( SIF_ZONESTATUS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, Adk.Dtd.GetType().Namespace.Substring(Adk.Dtd.GetType().Namespace.LastIndexOf('.') + 1), (0), SifVersion.SIF20, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

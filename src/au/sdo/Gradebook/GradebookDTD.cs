@@ -20,7 +20,7 @@ namespace OpenADK.Library.au.Gradebook
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -132,38 +132,38 @@ namespace OpenADK.Library.au.Gradebook
 	{
 		//  Objects defined by this SDO Library...
 
-		AUDITINFO = new ElementDefImpl( null, "AuditInfo", null, 0, SifDtd.GRADEBOOK, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CREATIONUSER = new ElementDefImpl( null, "CreationUser", null, 0, SifDtd.GRADEBOOK, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STUDENTPERIODATTENDANCE = new ElementDefImpl( null, "StudentPeriodAttendance", null, 0, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
+		AUDITINFO = new ElementDefImpl( null, "AuditInfo", null, 0, SifDtd.GRADEBOOK, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CREATIONUSER = new ElementDefImpl( null, "CreationUser", null, 0, SifDtd.GRADEBOOK, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STUDENTPERIODATTENDANCE = new ElementDefImpl( null, "StudentPeriodAttendance", null, 0, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
 
 
 		// <AuditInfo> fields (2 entries)
-		GradebookDTD.AUDITINFO_CREATIONUSER = new ElementDefImpl( AUDITINFO, "CreationUser", null, 1, SifDtd.GRADEBOOK, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		GradebookDTD.AUDITINFO_CREATIONDATETIME = new ElementDefImpl( AUDITINFO, "CreationDateTime", null, 2, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATETIME );
+		GradebookDTD.AUDITINFO_CREATIONUSER = new ElementDefImpl( AUDITINFO, "CreationUser", null, 1, SifDtd.GRADEBOOK, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		GradebookDTD.AUDITINFO_CREATIONDATETIME = new ElementDefImpl( AUDITINFO, "CreationDateTime", null, 2, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATETIME );
 
 		// <CreationUser> fields (2 entries)
-		GradebookDTD.CREATIONUSER_TYPE = new ElementDefImpl( CREATIONUSER, "Type", null, 1, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.CREATIONUSER_USERID = new ElementDefImpl( CREATIONUSER, "UserId", null, 2, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		GradebookDTD.CREATIONUSER_TYPE = new ElementDefImpl( CREATIONUSER, "Type", null, 1, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.CREATIONUSER_USERID = new ElementDefImpl( CREATIONUSER, "UserId", null, 2, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <StudentPeriodAttendance> fields (13 entries)
-		GradebookDTD.STUDENTPERIODATTENDANCE_REFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "RefId", null, 1, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "StudentPersonalRefId", null, 2, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_SCHOOLINFOREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SchoolInfoRefId", null, 3, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_DATE = new ElementDefImpl( STUDENTPERIODATTENDANCE, "Date", null, 4, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.DATE );
-		GradebookDTD.STUDENTPERIODATTENDANCE_SESSIONINFOREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SessionInfoRefId", null, 5, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_TIMETABLEPERIOD = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimetablePeriod", null, 6, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_TIMEIN = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimeIn", null, 7, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.TIME );
-		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCECODE = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AttendanceCode", null, 7, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		GradebookDTD.STUDENTPERIODATTENDANCE_REFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "RefId", null, 1, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "StudentPersonalRefId", null, 2, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_SCHOOLINFOREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SchoolInfoRefId", null, 3, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_DATE = new ElementDefImpl( STUDENTPERIODATTENDANCE, "Date", null, 4, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
+		GradebookDTD.STUDENTPERIODATTENDANCE_SESSIONINFOREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SessionInfoRefId", null, 5, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_TIMETABLEPERIOD = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimetablePeriod", null, 6, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_TIMEIN = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimeIn", null, 7, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.TIME );
+		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCECODE = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AttendanceCode", null, 7, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCECODE.DefineVersionInfo(SifVersion.SIF24, "AttendanceCode", 9, 0); // (Sif 24 alias)
-		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCESTATUS = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AttendanceStatus", null, 8, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCESTATUS = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AttendanceStatus", null, 8, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCESTATUS.DefineVersionInfo(SifVersion.SIF24, "AttendanceStatus", 10, (ElementDefImpl.FD_FIELD)); // (Sif 24 alias)
-		GradebookDTD.STUDENTPERIODATTENDANCE_TIMEOUT = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimeOut", null, 8, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.TIME );
-		GradebookDTD.STUDENTPERIODATTENDANCE_SCHOOLYEAR = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SchoolYear", null, 9, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
+		GradebookDTD.STUDENTPERIODATTENDANCE_TIMEOUT = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimeOut", null, 8, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.TIME );
+		GradebookDTD.STUDENTPERIODATTENDANCE_SCHOOLYEAR = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SchoolYear", null, 9, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
 		GradebookDTD.STUDENTPERIODATTENDANCE_SCHOOLYEAR.DefineVersionInfo(SifVersion.SIF24, "SchoolYear", 11, (ElementDefImpl.FD_FIELD)); // (Sif 24 alias)
-		GradebookDTD.STUDENTPERIODATTENDANCE_AUDITINFO = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AuditInfo", null, 12, SifDtd.GRADEBOOK, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCECOMMENT = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AttendanceComment", null, 13, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTPERIODATTENDANCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTPERIODATTENDANCE_SIF_METADATA = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.STUDENTPERIODATTENDANCE_AUDITINFO = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AuditInfo", null, 12, SifDtd.GRADEBOOK, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCECOMMENT = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AttendanceComment", null, 13, SifDtd.GRADEBOOK, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTPERIODATTENDANCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTPERIODATTENDANCE_SIF_METADATA = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd

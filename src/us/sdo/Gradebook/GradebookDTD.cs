@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Gradebook
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -404,192 +404,192 @@ namespace OpenADK.Library.us.Gradebook
 	{
 		//  Objects defined by this SDO Library...
 
-		AUDITINFO = new ElementDefImpl( null, "AuditInfo", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		CREATIONUSER = new ElementDefImpl( null, "CreationUser", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		DETAILEDDESCRIPTION = new ElementDefImpl( null, "DetailedDescription", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GRADINGASSIGNMENT = new ElementDefImpl( null, "GradingAssignment", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		GRADINGASSIGNMENTSCORE = new ElementDefImpl( null, "GradingAssignmentScore", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		GRADINGCATEGORY = new ElementDefImpl( null, "GradingCategory", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		LETTER = new ElementDefImpl( null, "Letter", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MARK = new ElementDefImpl( null, "Mark", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MARKINFO = new ElementDefImpl( null, "MarkInfo", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		MARKINFOLIST = new ElementDefImpl( null, "MarkInfoList", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MARKINFOREFID = new ElementDefImpl( null, "MarkInfoRefId", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		MARKLIST = new ElementDefImpl( null, "MarkList", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MARKVALUEINFO = new ElementDefImpl( null, "MarkValueInfo", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		NARRATIVE = new ElementDefImpl( null, "Narrative", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		NUMERIC = new ElementDefImpl( null, "Numeric", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		OFFICIALSTUDENTPERIODATTENDANCE = new ElementDefImpl( null, "OfficialStudentPeriodAttendance", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		PERCENTAGE = new ElementDefImpl( null, "Percentage", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SECTIONMARKINFO = new ElementDefImpl( null, "SectionMarkInfo", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTPERIODATTENDANCE = new ElementDefImpl( null, "StudentPeriodAttendance", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTSECTIONMARKS = new ElementDefImpl( null, "StudentSectionMarks", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF25 );
-		TERMMARKLISTS = new ElementDefImpl( null, "TermMarkLists", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		VALIDMARK = new ElementDefImpl( null, "ValidMark", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		AUDITINFO = new ElementDefImpl( null, "AuditInfo", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		CREATIONUSER = new ElementDefImpl( null, "CreationUser", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		DETAILEDDESCRIPTION = new ElementDefImpl( null, "DetailedDescription", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GRADINGASSIGNMENT = new ElementDefImpl( null, "GradingAssignment", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		GRADINGASSIGNMENTSCORE = new ElementDefImpl( null, "GradingAssignmentScore", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		GRADINGCATEGORY = new ElementDefImpl( null, "GradingCategory", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		LETTER = new ElementDefImpl( null, "Letter", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MARK = new ElementDefImpl( null, "Mark", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MARKINFO = new ElementDefImpl( null, "MarkInfo", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		MARKINFOLIST = new ElementDefImpl( null, "MarkInfoList", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MARKINFOREFID = new ElementDefImpl( null, "MarkInfoRefId", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		MARKLIST = new ElementDefImpl( null, "MarkList", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MARKVALUEINFO = new ElementDefImpl( null, "MarkValueInfo", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		NARRATIVE = new ElementDefImpl( null, "Narrative", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		NUMERIC = new ElementDefImpl( null, "Numeric", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		OFFICIALSTUDENTPERIODATTENDANCE = new ElementDefImpl( null, "OfficialStudentPeriodAttendance", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		PERCENTAGE = new ElementDefImpl( null, "Percentage", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SECTIONMARKINFO = new ElementDefImpl( null, "SectionMarkInfo", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTPERIODATTENDANCE = new ElementDefImpl( null, "StudentPeriodAttendance", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTSECTIONMARKS = new ElementDefImpl( null, "StudentSectionMarks", null, 0, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF20, SifVersion.SIF26 );
+		TERMMARKLISTS = new ElementDefImpl( null, "TermMarkLists", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		VALIDMARK = new ElementDefImpl( null, "ValidMark", null, 0, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 
 		// <AuditInfo> fields (2 entries)
-		GradebookDTD.AUDITINFO_CREATIONUSER = new ElementDefImpl( AUDITINFO, "CreationUser", null, 1, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		GradebookDTD.AUDITINFO_CREATIONDATETIME = new ElementDefImpl( AUDITINFO, "CreationDateTime", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATETIME );
+		GradebookDTD.AUDITINFO_CREATIONUSER = new ElementDefImpl( AUDITINFO, "CreationUser", null, 1, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		GradebookDTD.AUDITINFO_CREATIONDATETIME = new ElementDefImpl( AUDITINFO, "CreationDateTime", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATETIME );
 
 		// <CreationUser> fields (2 entries)
-		GradebookDTD.CREATIONUSER_TYPE = new ElementDefImpl( CREATIONUSER, "Type", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.CREATIONUSER_USERID = new ElementDefImpl( CREATIONUSER, "UserId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		GradebookDTD.CREATIONUSER_TYPE = new ElementDefImpl( CREATIONUSER, "Type", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.CREATIONUSER_USERID = new ElementDefImpl( CREATIONUSER, "UserId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <DetailedDescription> fields (1 entries)
-		GradebookDTD.DETAILEDDESCRIPTION_TYPE = new ElementDefImpl( DETAILEDDESCRIPTION, "Type", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		GradebookDTD.DETAILEDDESCRIPTION_TYPE = new ElementDefImpl( DETAILEDDESCRIPTION, "Type", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <GradingAssignment> fields (11 entries)
-		GradebookDTD.GRADINGASSIGNMENT_REFID = new ElementDefImpl( GRADINGASSIGNMENT, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENT_SECTIONINFOREFID = new ElementDefImpl( GRADINGASSIGNMENT, "SectionInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENT_TERMINFOREFID = new ElementDefImpl( GRADINGASSIGNMENT, "TermInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENT_SCHOOLINFOREFID = new ElementDefImpl( GRADINGASSIGNMENT, "SchoolInfoRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENT_GRADINGCATEGORYREFID = new ElementDefImpl( GRADINGASSIGNMENT, "GradingCategoryRefId", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENT_DESCRIPTION = new ElementDefImpl( GRADINGASSIGNMENT, "Description", null, 6, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENT_POINTSPOSSIBLE = new ElementDefImpl( GRADINGASSIGNMENT, "PointsPossible", null, 7, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		GradebookDTD.GRADINGASSIGNMENT_CREATEDATE = new ElementDefImpl( GRADINGASSIGNMENT, "CreateDate", null, 8, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		GradebookDTD.GRADINGASSIGNMENT_DUEDATE = new ElementDefImpl( GRADINGASSIGNMENT, "DueDate", null, 9, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		GradebookDTD.GRADINGASSIGNMENT_WEIGHT = new ElementDefImpl( GRADINGASSIGNMENT, "Weight", null, 10, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		GradebookDTD.GRADINGASSIGNMENT_DETAILEDDESCRIPTION = new ElementDefImpl( GRADINGASSIGNMENT, "DetailedDescription", null, 11, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GRADINGASSIGNMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( GRADINGASSIGNMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		GRADINGASSIGNMENT_SIF_METADATA = new ElementDefImpl( GRADINGASSIGNMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.GRADINGASSIGNMENT_REFID = new ElementDefImpl( GRADINGASSIGNMENT, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENT_SECTIONINFOREFID = new ElementDefImpl( GRADINGASSIGNMENT, "SectionInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENT_TERMINFOREFID = new ElementDefImpl( GRADINGASSIGNMENT, "TermInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENT_SCHOOLINFOREFID = new ElementDefImpl( GRADINGASSIGNMENT, "SchoolInfoRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENT_GRADINGCATEGORYREFID = new ElementDefImpl( GRADINGASSIGNMENT, "GradingCategoryRefId", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENT_DESCRIPTION = new ElementDefImpl( GRADINGASSIGNMENT, "Description", null, 6, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENT_POINTSPOSSIBLE = new ElementDefImpl( GRADINGASSIGNMENT, "PointsPossible", null, 7, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		GradebookDTD.GRADINGASSIGNMENT_CREATEDATE = new ElementDefImpl( GRADINGASSIGNMENT, "CreateDate", null, 8, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		GradebookDTD.GRADINGASSIGNMENT_DUEDATE = new ElementDefImpl( GRADINGASSIGNMENT, "DueDate", null, 9, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		GradebookDTD.GRADINGASSIGNMENT_WEIGHT = new ElementDefImpl( GRADINGASSIGNMENT, "Weight", null, 10, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		GradebookDTD.GRADINGASSIGNMENT_DETAILEDDESCRIPTION = new ElementDefImpl( GRADINGASSIGNMENT, "DetailedDescription", null, 11, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GRADINGASSIGNMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( GRADINGASSIGNMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		GRADINGASSIGNMENT_SIF_METADATA = new ElementDefImpl( GRADINGASSIGNMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <GradingAssignmentScore> fields (8 entries)
-		GradebookDTD.GRADINGASSIGNMENTSCORE_STUDENTPERSONALREFID = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "StudentPersonalRefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENTSCORE_SECTIONINFOREFID = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "SectionInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENTSCORE_SCHOOLINFOREFID = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "SchoolInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENTSCORE_GRADINGASSIGNMENTREFID = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "GradingAssignmentRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENTSCORE_SCOREPOINTS = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "ScorePoints", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		GradebookDTD.GRADINGASSIGNMENTSCORE_SCOREPERCENT = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "ScorePercent", null, 6, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		GradebookDTD.GRADINGASSIGNMENTSCORE_SCORELETTER = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "ScoreLetter", null, 7, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGASSIGNMENTSCORE_SCOREDESCRIPTION = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "ScoreDescription", null, 8, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GRADINGASSIGNMENTSCORE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		GRADINGASSIGNMENTSCORE_SIF_METADATA = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.GRADINGASSIGNMENTSCORE_STUDENTPERSONALREFID = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "StudentPersonalRefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENTSCORE_SECTIONINFOREFID = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "SectionInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENTSCORE_SCHOOLINFOREFID = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "SchoolInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENTSCORE_GRADINGASSIGNMENTREFID = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "GradingAssignmentRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENTSCORE_SCOREPOINTS = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "ScorePoints", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		GradebookDTD.GRADINGASSIGNMENTSCORE_SCOREPERCENT = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "ScorePercent", null, 6, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		GradebookDTD.GRADINGASSIGNMENTSCORE_SCORELETTER = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "ScoreLetter", null, 7, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGASSIGNMENTSCORE_SCOREDESCRIPTION = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "ScoreDescription", null, 8, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GRADINGASSIGNMENTSCORE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		GRADINGASSIGNMENTSCORE_SIF_METADATA = new ElementDefImpl( GRADINGASSIGNMENTSCORE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <GradingCategory> fields (5 entries)
-		GradebookDTD.GRADINGCATEGORY_REFID = new ElementDefImpl( GRADINGCATEGORY, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGCATEGORY_SECTIONINFOREFID = new ElementDefImpl( GRADINGCATEGORY, "SectionInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGCATEGORY_TERMINFOREFID = new ElementDefImpl( GRADINGCATEGORY, "TermInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGCATEGORY_SCHOOLINFOREFID = new ElementDefImpl( GRADINGCATEGORY, "SchoolInfoRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.GRADINGCATEGORY_DESCRIPTION = new ElementDefImpl( GRADINGCATEGORY, "Description", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GRADINGCATEGORY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( GRADINGCATEGORY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		GRADINGCATEGORY_SIF_METADATA = new ElementDefImpl( GRADINGCATEGORY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.GRADINGCATEGORY_REFID = new ElementDefImpl( GRADINGCATEGORY, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGCATEGORY_SECTIONINFOREFID = new ElementDefImpl( GRADINGCATEGORY, "SectionInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGCATEGORY_TERMINFOREFID = new ElementDefImpl( GRADINGCATEGORY, "TermInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGCATEGORY_SCHOOLINFOREFID = new ElementDefImpl( GRADINGCATEGORY, "SchoolInfoRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.GRADINGCATEGORY_DESCRIPTION = new ElementDefImpl( GRADINGCATEGORY, "Description", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GRADINGCATEGORY_SIF_EXTENDEDELEMENTS = new ElementDefImpl( GRADINGCATEGORY, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		GRADINGCATEGORY_SIF_METADATA = new ElementDefImpl( GRADINGCATEGORY, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Letter> fields (2 entries)
-		GradebookDTD.LETTER_ISACCEPTED = new ElementDefImpl( LETTER, "IsAccepted", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		GradebookDTD.LETTER_VALIDMARK = new ElementDefImpl( LETTER, "ValidMark", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.LETTER_ISACCEPTED = new ElementDefImpl( LETTER, "IsAccepted", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		GradebookDTD.LETTER_VALIDMARK = new ElementDefImpl( LETTER, "ValidMark", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Mark> fields (5 entries)
-		GradebookDTD.MARK_MARKINFOREFID = new ElementDefImpl( MARK, "MarkInfoRefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.MARK_PERCENTAGE = new ElementDefImpl( MARK, "Percentage", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		GradebookDTD.MARK_NUMERIC = new ElementDefImpl( MARK, "Numeric", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		GradebookDTD.MARK_LETTER = new ElementDefImpl( MARK, "Letter", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.MARK_NARRATIVE = new ElementDefImpl( MARK, "Narrative", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		GradebookDTD.MARK_MARKINFOREFID = new ElementDefImpl( MARK, "MarkInfoRefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.MARK_PERCENTAGE = new ElementDefImpl( MARK, "Percentage", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		GradebookDTD.MARK_NUMERIC = new ElementDefImpl( MARK, "Numeric", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		GradebookDTD.MARK_LETTER = new ElementDefImpl( MARK, "Letter", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.MARK_NARRATIVE = new ElementDefImpl( MARK, "Narrative", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MarkInfo> fields (6 entries)
-		GradebookDTD.MARKINFO_REFID = new ElementDefImpl( MARKINFO, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.MARKINFO_MARKVALUEINFOREFID = new ElementDefImpl( MARKINFO, "MarkValueInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.MARKINFO_SCHOOLINFOREFID = new ElementDefImpl( MARKINFO, "SchoolInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		GradebookDTD.MARKINFO_REFID = new ElementDefImpl( MARKINFO, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.MARKINFO_MARKVALUEINFOREFID = new ElementDefImpl( MARKINFO, "MarkValueInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.MARKINFO_SCHOOLINFOREFID = new ElementDefImpl( MARKINFO, "SchoolInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		GradebookDTD.MARKINFO_SIF_ACTION = new ElementDefImpl( MARKINFO, "SIF_Action", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF20, SifTypeConverters.STRING );
-		GradebookDTD.MARKINFO_SCHOOLYEAR = new ElementDefImpl( MARKINFO, "SchoolYear", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
+		GradebookDTD.MARKINFO_SCHOOLYEAR = new ElementDefImpl( MARKINFO, "SchoolYear", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
 		GradebookDTD.MARKINFO_SCHOOLYEAR.DefineVersionInfo(SifVersion.SIF20r1, "SchoolYear", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		GradebookDTD.MARKINFO_DESCRIPTION = new ElementDefImpl( MARKINFO, "Description", null, 6, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		GradebookDTD.MARKINFO_DESCRIPTION = new ElementDefImpl( MARKINFO, "Description", null, 6, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		GradebookDTD.MARKINFO_DESCRIPTION.DefineVersionInfo(SifVersion.SIF20r1, "Description", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20r1 alias)
-		MARKINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( MARKINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		MARKINFO_SIF_METADATA = new ElementDefImpl( MARKINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		MARKINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( MARKINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		MARKINFO_SIF_METADATA = new ElementDefImpl( MARKINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <MarkInfoList> fields (3 entries)
-		GradebookDTD.MARKINFOLIST_TERMINFOREFID = new ElementDefImpl( MARKINFOLIST, "TermInfoRefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.MARKINFOLIST_SIF_ACTION = new ElementDefImpl( MARKINFOLIST, "SIF_Action", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.MARKINFOLIST_MARKINFOREFID = new ElementDefImpl( MARKINFOLIST, "MarkInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		GradebookDTD.MARKINFOLIST_TERMINFOREFID = new ElementDefImpl( MARKINFOLIST, "TermInfoRefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.MARKINFOLIST_SIF_ACTION = new ElementDefImpl( MARKINFOLIST, "SIF_Action", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.MARKINFOLIST_MARKINFOREFID = new ElementDefImpl( MARKINFOLIST, "MarkInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <MarkInfoRefId> fields (0 entries)
 
 		// <MarkList> fields (1 entries)
-		GradebookDTD.MARKLIST_MARK = new ElementDefImpl( MARKLIST, "Mark", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.MARKLIST_MARK = new ElementDefImpl( MARKLIST, "Mark", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <MarkValueInfo> fields (8 entries)
-		GradebookDTD.MARKVALUEINFO_REFID = new ElementDefImpl( MARKVALUEINFO, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.MARKVALUEINFO_SCHOOLINFOREFID = new ElementDefImpl( MARKVALUEINFO, "SchoolInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.MARKVALUEINFO_SCHOOLYEAR = new ElementDefImpl( MARKVALUEINFO, "SchoolYear", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		GradebookDTD.MARKVALUEINFO_NAME = new ElementDefImpl( MARKVALUEINFO, "Name", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.MARKVALUEINFO_PERCENTAGE = new ElementDefImpl( MARKVALUEINFO, "Percentage", null, 5, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		GradebookDTD.MARKVALUEINFO_NUMERIC = new ElementDefImpl( MARKVALUEINFO, "Numeric", null, 6, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		GradebookDTD.MARKVALUEINFO_LETTER = new ElementDefImpl( MARKVALUEINFO, "Letter", null, 7, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		GradebookDTD.MARKVALUEINFO_NARRATIVE = new ElementDefImpl( MARKVALUEINFO, "Narrative", null, 8, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		MARKVALUEINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( MARKVALUEINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		MARKVALUEINFO_SIF_METADATA = new ElementDefImpl( MARKVALUEINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.MARKVALUEINFO_REFID = new ElementDefImpl( MARKVALUEINFO, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.MARKVALUEINFO_SCHOOLINFOREFID = new ElementDefImpl( MARKVALUEINFO, "SchoolInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.MARKVALUEINFO_SCHOOLYEAR = new ElementDefImpl( MARKVALUEINFO, "SchoolYear", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		GradebookDTD.MARKVALUEINFO_NAME = new ElementDefImpl( MARKVALUEINFO, "Name", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.MARKVALUEINFO_PERCENTAGE = new ElementDefImpl( MARKVALUEINFO, "Percentage", null, 5, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		GradebookDTD.MARKVALUEINFO_NUMERIC = new ElementDefImpl( MARKVALUEINFO, "Numeric", null, 6, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		GradebookDTD.MARKVALUEINFO_LETTER = new ElementDefImpl( MARKVALUEINFO, "Letter", null, 7, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		GradebookDTD.MARKVALUEINFO_NARRATIVE = new ElementDefImpl( MARKVALUEINFO, "Narrative", null, 8, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		MARKVALUEINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( MARKVALUEINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		MARKVALUEINFO_SIF_METADATA = new ElementDefImpl( MARKVALUEINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Narrative> fields (2 entries)
-		GradebookDTD.NARRATIVE_ISACCEPTED = new ElementDefImpl( NARRATIVE, "IsAccepted", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		GradebookDTD.NARRATIVE_MAXIMUMSIZE = new ElementDefImpl( NARRATIVE, "MaximumSize", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
+		GradebookDTD.NARRATIVE_ISACCEPTED = new ElementDefImpl( NARRATIVE, "IsAccepted", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		GradebookDTD.NARRATIVE_MAXIMUMSIZE = new ElementDefImpl( NARRATIVE, "MaximumSize", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
 
 		// <Numeric> fields (5 entries)
-		GradebookDTD.NUMERIC_ISACCEPTED = new ElementDefImpl( NUMERIC, "IsAccepted", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		GradebookDTD.NUMERIC_PRECISION = new ElementDefImpl( NUMERIC, "Precision", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		GradebookDTD.NUMERIC_SCALE = new ElementDefImpl( NUMERIC, "Scale", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.INT );
-		GradebookDTD.NUMERIC_LOW = new ElementDefImpl( NUMERIC, "Low", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		GradebookDTD.NUMERIC_HIGH = new ElementDefImpl( NUMERIC, "High", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		GradebookDTD.NUMERIC_ISACCEPTED = new ElementDefImpl( NUMERIC, "IsAccepted", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		GradebookDTD.NUMERIC_PRECISION = new ElementDefImpl( NUMERIC, "Precision", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		GradebookDTD.NUMERIC_SCALE = new ElementDefImpl( NUMERIC, "Scale", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.INT );
+		GradebookDTD.NUMERIC_LOW = new ElementDefImpl( NUMERIC, "Low", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		GradebookDTD.NUMERIC_HIGH = new ElementDefImpl( NUMERIC, "High", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <OfficialStudentPeriodAttendance> fields (11 entries)
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_REFID = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_STUDENTPERSONALREFID = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "StudentPersonalRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_SECTIONINFOREFID = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "SectionInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_SCHOOLINFOREFID = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "SchoolInfoRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_DATE = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "Date", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_TIMETABLEPERIOD = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "TimetablePeriod", null, 6, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_TIMEIN = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "TimeIn", null, 7, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.TIME );
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_TIMEOUT = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "TimeOut", null, 8, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.TIME );
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_ATTENDANCECODE = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "AttendanceCode", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_AUDITINFO = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "AuditInfo", null, 10, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_ATTENDANCECOMMENT = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "AttendanceComment", null, 11, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		OFFICIALSTUDENTPERIODATTENDANCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		OFFICIALSTUDENTPERIODATTENDANCE_SIF_METADATA = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_REFID = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_STUDENTPERSONALREFID = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "StudentPersonalRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_SECTIONINFOREFID = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "SectionInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_SCHOOLINFOREFID = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "SchoolInfoRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_DATE = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "Date", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_TIMETABLEPERIOD = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "TimetablePeriod", null, 6, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_TIMEIN = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "TimeIn", null, 7, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.TIME );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_TIMEOUT = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "TimeOut", null, 8, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.TIME );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_ATTENDANCECODE = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "AttendanceCode", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_AUDITINFO = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "AuditInfo", null, 10, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		GradebookDTD.OFFICIALSTUDENTPERIODATTENDANCE_ATTENDANCECOMMENT = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "AttendanceComment", null, 11, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		OFFICIALSTUDENTPERIODATTENDANCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		OFFICIALSTUDENTPERIODATTENDANCE_SIF_METADATA = new ElementDefImpl( OFFICIALSTUDENTPERIODATTENDANCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <Percentage> fields (3 entries)
-		GradebookDTD.PERCENTAGE_ISACCEPTED = new ElementDefImpl( PERCENTAGE, "IsAccepted", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		GradebookDTD.PERCENTAGE_MINIMUM = new ElementDefImpl( PERCENTAGE, "Minimum", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		GradebookDTD.PERCENTAGE_MAXIMUM = new ElementDefImpl( PERCENTAGE, "Maximum", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		GradebookDTD.PERCENTAGE_ISACCEPTED = new ElementDefImpl( PERCENTAGE, "IsAccepted", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		GradebookDTD.PERCENTAGE_MINIMUM = new ElementDefImpl( PERCENTAGE, "Minimum", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		GradebookDTD.PERCENTAGE_MAXIMUM = new ElementDefImpl( PERCENTAGE, "Maximum", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <SectionMarkInfo> fields (3 entries)
-		GradebookDTD.SECTIONMARKINFO_SECTIONINFOREFID = new ElementDefImpl( SECTIONMARKINFO, "SectionInfoRefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.SECTIONMARKINFO_SCHOOLINFOREFID = new ElementDefImpl( SECTIONMARKINFO, "SchoolInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.SECTIONMARKINFO_TERMMARKLISTS = new ElementDefImpl( SECTIONMARKINFO, "TermMarkLists", null, 3, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		SECTIONMARKINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SECTIONMARKINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		SECTIONMARKINFO_SIF_METADATA = new ElementDefImpl( SECTIONMARKINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.SECTIONMARKINFO_SECTIONINFOREFID = new ElementDefImpl( SECTIONMARKINFO, "SectionInfoRefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.SECTIONMARKINFO_SCHOOLINFOREFID = new ElementDefImpl( SECTIONMARKINFO, "SchoolInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.SECTIONMARKINFO_TERMMARKLISTS = new ElementDefImpl( SECTIONMARKINFO, "TermMarkLists", null, 3, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		SECTIONMARKINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SECTIONMARKINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SECTIONMARKINFO_SIF_METADATA = new ElementDefImpl( SECTIONMARKINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentPeriodAttendance> fields (11 entries)
-		GradebookDTD.STUDENTPERIODATTENDANCE_REFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "StudentPersonalRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_SECTIONINFOREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SectionInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_SCHOOLINFOREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SchoolInfoRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_DATE = new ElementDefImpl( STUDENTPERIODATTENDANCE, "Date", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		GradebookDTD.STUDENTPERIODATTENDANCE_TIMETABLEPERIOD = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimetablePeriod", null, 6, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_TIMEIN = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimeIn", null, 7, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.TIME );
-		GradebookDTD.STUDENTPERIODATTENDANCE_TIMEOUT = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimeOut", null, 8, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.TIME );
-		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCECODE = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AttendanceCode", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTPERIODATTENDANCE_AUDITINFO = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AuditInfo", null, 10, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCECOMMENT = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AttendanceComment", null, 11, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTPERIODATTENDANCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTPERIODATTENDANCE_SIF_METADATA = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.STUDENTPERIODATTENDANCE_REFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "RefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "StudentPersonalRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_SECTIONINFOREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SectionInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_SCHOOLINFOREFID = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SchoolInfoRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_DATE = new ElementDefImpl( STUDENTPERIODATTENDANCE, "Date", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		GradebookDTD.STUDENTPERIODATTENDANCE_TIMETABLEPERIOD = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimetablePeriod", null, 6, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_TIMEIN = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimeIn", null, 7, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.TIME );
+		GradebookDTD.STUDENTPERIODATTENDANCE_TIMEOUT = new ElementDefImpl( STUDENTPERIODATTENDANCE, "TimeOut", null, 8, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.TIME );
+		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCECODE = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AttendanceCode", null, 9, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTPERIODATTENDANCE_AUDITINFO = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AuditInfo", null, 10, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		GradebookDTD.STUDENTPERIODATTENDANCE_ATTENDANCECOMMENT = new ElementDefImpl( STUDENTPERIODATTENDANCE, "AttendanceComment", null, 11, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTPERIODATTENDANCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTPERIODATTENDANCE_SIF_METADATA = new ElementDefImpl( STUDENTPERIODATTENDANCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <StudentSectionMarks> fields (6 entries)
-		GradebookDTD.STUDENTSECTIONMARKS_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSECTIONMARKS, "StudentPersonalRefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTSECTIONMARKS_SECTIONINFOREFID = new ElementDefImpl( STUDENTSECTIONMARKS, "SectionInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTSECTIONMARKS_TERMINFOREFID = new ElementDefImpl( STUDENTSECTIONMARKS, "TermInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTSECTIONMARKS_SCHOOLINFOREFID = new ElementDefImpl( STUDENTSECTIONMARKS, "SchoolInfoRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.STUDENTSECTIONMARKS_ISFINAL = new ElementDefImpl( STUDENTSECTIONMARKS, "IsFinal", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
-		GradebookDTD.STUDENTSECTIONMARKS_MARKLIST = new ElementDefImpl( STUDENTSECTIONMARKS, "MarkList", null, 6, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		STUDENTSECTIONMARKS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSECTIONMARKS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		STUDENTSECTIONMARKS_SIF_METADATA = new ElementDefImpl( STUDENTSECTIONMARKS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.STUDENTSECTIONMARKS_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSECTIONMARKS, "StudentPersonalRefId", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTSECTIONMARKS_SECTIONINFOREFID = new ElementDefImpl( STUDENTSECTIONMARKS, "SectionInfoRefId", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTSECTIONMARKS_TERMINFOREFID = new ElementDefImpl( STUDENTSECTIONMARKS, "TermInfoRefId", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTSECTIONMARKS_SCHOOLINFOREFID = new ElementDefImpl( STUDENTSECTIONMARKS, "SchoolInfoRefId", null, 4, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.STUDENTSECTIONMARKS_ISFINAL = new ElementDefImpl( STUDENTSECTIONMARKS, "IsFinal", null, 5, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
+		GradebookDTD.STUDENTSECTIONMARKS_MARKLIST = new ElementDefImpl( STUDENTSECTIONMARKS, "MarkList", null, 6, SifDtd.GRADEBOOK, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		STUDENTSECTIONMARKS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSECTIONMARKS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTSECTIONMARKS_SIF_METADATA = new ElementDefImpl( STUDENTSECTIONMARKS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TermMarkLists> fields (1 entries)
-		GradebookDTD.TERMMARKLISTS_MARKINFOLIST = new ElementDefImpl( TERMMARKLISTS, "MarkInfoList", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		GradebookDTD.TERMMARKLISTS_MARKINFOLIST = new ElementDefImpl( TERMMARKLISTS, "MarkInfoList", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ValidMark> fields (3 entries)
-		GradebookDTD.VALIDMARK_CODE = new ElementDefImpl( VALIDMARK, "Code", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		GradebookDTD.VALIDMARK_NUMERICEQUIVALENT = new ElementDefImpl( VALIDMARK, "NumericEquivalent", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		GradebookDTD.VALIDMARK_DESCRIPTION = new ElementDefImpl( VALIDMARK, "Description", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		GradebookDTD.VALIDMARK_CODE = new ElementDefImpl( VALIDMARK, "Code", null, 1, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		GradebookDTD.VALIDMARK_NUMERICEQUIVALENT = new ElementDefImpl( VALIDMARK, "NumericEquivalent", null, 2, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		GradebookDTD.VALIDMARK_DESCRIPTION = new ElementDefImpl( VALIDMARK, "Description", null, 3, SifDtd.GRADEBOOK, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 	}
 
 	#region Update SifDtd

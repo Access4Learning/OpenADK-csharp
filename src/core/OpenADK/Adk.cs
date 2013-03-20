@@ -64,7 +64,8 @@ namespace OpenADK.Library
                 SifVersion.SIF22,
                 SifVersion.SIF23,
                 SifVersion.SIF24,
-                SifVersion.SIF25
+                SifVersion.SIF25,
+                SifVersion.SIF26
             };
 
 

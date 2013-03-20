@@ -20,7 +20,7 @@ namespace OpenADK.Library.au.Learning
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -490,7 +490,7 @@ namespace OpenADK.Library.au.Learning
 	/** Defines the &lt;TeachingGroupTeacher&gt; element as a child of &lt;TeacherList&gt; */
 	public static IElementDef TEACHERLIST_TEACHINGGROUPTEACHER = null;
 
-	// Field elements of TEACHINGGROUP (19 fields)
+	// Field elements of TEACHINGGROUP (20 fields)
 	/** Defines the RefId attribute as a child of &lt;TeachingGroup&gt; */
 	public static IElementDef TEACHINGGROUP_REFID = null;
 	/** Defines the &lt;SchoolYear&gt; element as a child of &lt;TeachingGroup&gt; */
@@ -521,6 +521,8 @@ namespace OpenADK.Library.au.Learning
 	public static IElementDef TEACHINGGROUP_TIMETABLESUBJECTLOCALID = null;
 	/** Defines the &lt;StudentList&gt; element as a child of &lt;TeachingGroup&gt; */
 	public static IElementDef TEACHINGGROUP_STUDENTLIST = null;
+	/** Defines the &lt;Semester&gt; element as a child of &lt;TeachingGroup&gt; */
+	public static IElementDef TEACHINGGROUP_SEMESTER = null;
 	/** Defines the &lt;TeacherList&gt; element as a child of &lt;TeachingGroup&gt; */
 	public static IElementDef TEACHINGGROUP_TEACHERLIST = null;
 	/** Defines the &lt;MinClassSize&gt; element as a child of &lt;TeachingGroup&gt; */
@@ -576,300 +578,306 @@ namespace OpenADK.Library.au.Learning
 	{
 		//  Objects defined by this SDO Library...
 
-		ALTERNATEIDENTIFICATIONCODE = new ElementDefImpl( null, "AlternateIdentificationCode", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ALTERNATEIDENTIFICATIONCODES = new ElementDefImpl( null, "AlternateIdentificationCodes", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		APPROVAL = new ElementDefImpl( null, "Approval", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		APPROVALS = new ElementDefImpl( null, "Approvals", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ASSOCIATEDOBJECT = new ElementDefImpl( null, "AssociatedObject", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ASSOCIATEDOBJECTS = new ElementDefImpl( null, "AssociatedObjects", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		AUTHOR = new ElementDefImpl( null, "Author", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		AUTHORS = new ElementDefImpl( null, "Authors", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		COMPONENT = new ElementDefImpl( null, "Component", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		COMPONENTS = new ElementDefImpl( null, "Components", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CONTACT = new ElementDefImpl( null, "Contact", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		CONTACTS = new ElementDefImpl( null, "Contacts", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		COPYRIGHT = new ElementDefImpl( null, "Copyright", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EVALUATION = new ElementDefImpl( null, "Evaluation", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		EVALUATIONS = new ElementDefImpl( null, "Evaluations", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LEARNINGRESOURCE = new ElementDefImpl( null, "LearningResource", null, 0, SifDtd.LEARNING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		LEARNINGRESOURCELOCATION = new ElementDefImpl( null, "LearningResourceLocation", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LEARNINGRESOURCEPACKAGE = new ElementDefImpl( null, "LearningResourcePackage", null, 0, SifDtd.LEARNING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		LEARNINGRESOURCEREFIDS = new ElementDefImpl( null, "LearningResourceRefIds", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LEARNINGSTANDARDDOCUMENT = new ElementDefImpl( null, "LearningStandardDocument", null, 0, SifDtd.LEARNING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		LEARNINGSTANDARDDOCUMENTREFID = new ElementDefImpl( null, "LearningStandardDocumentRefId", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LEARNINGSTANDARDITEM = new ElementDefImpl( null, "LearningStandardItem", null, 0, SifDtd.LEARNING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF25 );
-		LEARNINGSTANDARDS = new ElementDefImpl( null, "LearningStandards", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		ORGANIZATION = new ElementDefImpl( null, "Organization", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		ORGANIZATIONS = new ElementDefImpl( null, "Organizations", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		PREDECESSORITEMS = new ElementDefImpl( null, "PredecessorItems", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		RELATEDLEARNINGSTANDARDITEM = new ElementDefImpl( null, "RelatedLearningStandardItem", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		RELATEDLEARNINGSTANDARDITEMS = new ElementDefImpl( null, "RelatedLearningStandardItems", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		RELATEDLEARNINGSTANDARDS = new ElementDefImpl( null, "RelatedLearningStandards", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		RESOURCESLIST = new ElementDefImpl( null, "ResourcesList", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STANDARDHIERARCHYLEVEL = new ElementDefImpl( null, "StandardHierarchyLevel", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STANDARDIDENTIFIER = new ElementDefImpl( null, "StandardIdentifier", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STANDARDSETTINGBODY = new ElementDefImpl( null, "StandardSettingBody", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STATEMENT = new ElementDefImpl( null, "Statement", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		STATEMENTCODE = new ElementDefImpl( null, "StatementCode", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		STATEMENTCODES = new ElementDefImpl( null, "StatementCodes", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STATEMENTS = new ElementDefImpl( null, "Statements", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STRATEGIES = new ElementDefImpl( null, "Strategies", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		STRATEGY = new ElementDefImpl( null, "Strategy", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		STUDENTLIST = new ElementDefImpl( null, "StudentList", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TEACHERLIST = new ElementDefImpl( null, "TeacherList", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TEACHINGGROUP = new ElementDefImpl( null, "TeachingGroup", null, 0, SifDtd.LEARNING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF25 );
-		TEACHINGGROUPPERIOD = new ElementDefImpl( null, "TeachingGroupPeriod", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		TEACHINGGROUPPERIODLIST = new ElementDefImpl( null, "TeachingGroupPeriodList", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		TEACHINGGROUPSTUDENT = new ElementDefImpl( null, "TeachingGroupStudent", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		TEACHINGGROUPTEACHER = new ElementDefImpl( null, "TeachingGroupTeacher", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		ALTERNATEIDENTIFICATIONCODE = new ElementDefImpl( null, "AlternateIdentificationCode", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ALTERNATEIDENTIFICATIONCODES = new ElementDefImpl( null, "AlternateIdentificationCodes", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		APPROVAL = new ElementDefImpl( null, "Approval", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		APPROVALS = new ElementDefImpl( null, "Approvals", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ASSOCIATEDOBJECT = new ElementDefImpl( null, "AssociatedObject", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ASSOCIATEDOBJECTS = new ElementDefImpl( null, "AssociatedObjects", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		AUTHOR = new ElementDefImpl( null, "Author", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		AUTHORS = new ElementDefImpl( null, "Authors", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		COMPONENT = new ElementDefImpl( null, "Component", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		COMPONENTS = new ElementDefImpl( null, "Components", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CONTACT = new ElementDefImpl( null, "Contact", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		CONTACTS = new ElementDefImpl( null, "Contacts", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		COPYRIGHT = new ElementDefImpl( null, "Copyright", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EVALUATION = new ElementDefImpl( null, "Evaluation", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		EVALUATIONS = new ElementDefImpl( null, "Evaluations", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LEARNINGRESOURCE = new ElementDefImpl( null, "LearningResource", null, 0, SifDtd.LEARNING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		LEARNINGRESOURCELOCATION = new ElementDefImpl( null, "LearningResourceLocation", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LEARNINGRESOURCEPACKAGE = new ElementDefImpl( null, "LearningResourcePackage", null, 0, SifDtd.LEARNING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		LEARNINGRESOURCEREFIDS = new ElementDefImpl( null, "LearningResourceRefIds", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LEARNINGSTANDARDDOCUMENT = new ElementDefImpl( null, "LearningStandardDocument", null, 0, SifDtd.LEARNING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		LEARNINGSTANDARDDOCUMENTREFID = new ElementDefImpl( null, "LearningStandardDocumentRefId", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LEARNINGSTANDARDITEM = new ElementDefImpl( null, "LearningStandardItem", null, 0, SifDtd.LEARNING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF24, SifVersion.SIF26 );
+		LEARNINGSTANDARDS = new ElementDefImpl( null, "LearningStandards", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		ORGANIZATION = new ElementDefImpl( null, "Organization", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		ORGANIZATIONS = new ElementDefImpl( null, "Organizations", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		PREDECESSORITEMS = new ElementDefImpl( null, "PredecessorItems", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		RELATEDLEARNINGSTANDARDITEM = new ElementDefImpl( null, "RelatedLearningStandardItem", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		RELATEDLEARNINGSTANDARDITEMS = new ElementDefImpl( null, "RelatedLearningStandardItems", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		RELATEDLEARNINGSTANDARDS = new ElementDefImpl( null, "RelatedLearningStandards", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		RESOURCESLIST = new ElementDefImpl( null, "ResourcesList", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STANDARDHIERARCHYLEVEL = new ElementDefImpl( null, "StandardHierarchyLevel", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STANDARDIDENTIFIER = new ElementDefImpl( null, "StandardIdentifier", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STANDARDSETTINGBODY = new ElementDefImpl( null, "StandardSettingBody", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STATEMENT = new ElementDefImpl( null, "Statement", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		STATEMENTCODE = new ElementDefImpl( null, "StatementCode", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		STATEMENTCODES = new ElementDefImpl( null, "StatementCodes", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STATEMENTS = new ElementDefImpl( null, "Statements", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STRATEGIES = new ElementDefImpl( null, "Strategies", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		STRATEGY = new ElementDefImpl( null, "Strategy", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		STUDENTLIST = new ElementDefImpl( null, "StudentList", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TEACHERLIST = new ElementDefImpl( null, "TeacherList", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TEACHINGGROUP = new ElementDefImpl( null, "TeachingGroup", null, 0, SifDtd.LEARNING, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		TEACHINGGROUPPERIOD = new ElementDefImpl( null, "TeachingGroupPeriod", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		TEACHINGGROUPPERIODLIST = new ElementDefImpl( null, "TeachingGroupPeriodList", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		TEACHINGGROUPSTUDENT = new ElementDefImpl( null, "TeachingGroupStudent", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		TEACHINGGROUPTEACHER = new ElementDefImpl( null, "TeachingGroupTeacher", null, 0, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 
 		// <AlternateIdentificationCode> fields (0 entries)
 
 		// <AlternateIdentificationCodes> fields (1 entries)
-		LearningDTD.ALTERNATEIDENTIFICATIONCODES_ALTERNATEIDENTIFICATIONCODE = new ElementDefImpl( ALTERNATEIDENTIFICATIONCODES, "AlternateIdentificationCode", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.ALTERNATEIDENTIFICATIONCODES_ALTERNATEIDENTIFICATIONCODE = new ElementDefImpl( ALTERNATEIDENTIFICATIONCODES, "AlternateIdentificationCode", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Approval> fields (2 entries)
-		LearningDTD.APPROVAL_ORGANIZATION = new ElementDefImpl( APPROVAL, "Organization", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.APPROVAL_DATE = new ElementDefImpl( APPROVAL, "Date", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
+		LearningDTD.APPROVAL_ORGANIZATION = new ElementDefImpl( APPROVAL, "Organization", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.APPROVAL_DATE = new ElementDefImpl( APPROVAL, "Date", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
 
 		// <Approvals> fields (1 entries)
-		LearningDTD.APPROVALS_APPROVAL = new ElementDefImpl( APPROVALS, "Approval", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		LearningDTD.APPROVALS_APPROVAL = new ElementDefImpl( APPROVALS, "Approval", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <AssociatedObject> fields (1 entries)
-		LearningDTD.ASSOCIATEDOBJECT_SIF_REFOBJECT = new ElementDefImpl( ASSOCIATEDOBJECT, "SIF_RefObject", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.ASSOCIATEDOBJECT_SIF_REFOBJECT = new ElementDefImpl( ASSOCIATEDOBJECT, "SIF_RefObject", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <AssociatedObjects> fields (1 entries)
-		LearningDTD.ASSOCIATEDOBJECTS_ASSOCIATEDOBJECT = new ElementDefImpl( ASSOCIATEDOBJECTS, "AssociatedObject", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.ASSOCIATEDOBJECTS_ASSOCIATEDOBJECT = new ElementDefImpl( ASSOCIATEDOBJECTS, "AssociatedObject", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Author> fields (0 entries)
 
 		// <Authors> fields (1 entries)
-		LearningDTD.AUTHORS_AUTHOR = new ElementDefImpl( AUTHORS, "Author", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.AUTHORS_AUTHOR = new ElementDefImpl( AUTHORS, "Author", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Component> fields (5 entries)
-		LearningDTD.COMPONENT_NAME = new ElementDefImpl( COMPONENT, "Name", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.COMPONENT_REFERENCE = new ElementDefImpl( COMPONENT, "Reference", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.COMPONENT_DESCRIPTION = new ElementDefImpl( COMPONENT, "Description", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.COMPONENT_STRATEGIES = new ElementDefImpl( COMPONENT, "Strategies", null, 4, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.COMPONENT_ASSOCIATEDOBJECTS = new ElementDefImpl( COMPONENT, "AssociatedObjects", null, 5, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		LearningDTD.COMPONENT_NAME = new ElementDefImpl( COMPONENT, "Name", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.COMPONENT_REFERENCE = new ElementDefImpl( COMPONENT, "Reference", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.COMPONENT_DESCRIPTION = new ElementDefImpl( COMPONENT, "Description", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.COMPONENT_STRATEGIES = new ElementDefImpl( COMPONENT, "Strategies", null, 4, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.COMPONENT_ASSOCIATEDOBJECTS = new ElementDefImpl( COMPONENT, "AssociatedObjects", null, 5, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <Components> fields (1 entries)
-		LearningDTD.COMPONENTS_COMPONENT = new ElementDefImpl( COMPONENTS, "Component", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		LearningDTD.COMPONENTS_COMPONENT = new ElementDefImpl( COMPONENTS, "Component", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <Contact> fields (4 entries)
-		LearningDTD.CONTACT_NAME = new ElementDefImpl( CONTACT, "Name", null, 1, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.CONTACT_ADDRESS = new ElementDefImpl( CONTACT, "Address", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.CONTACT_PHONENUMBER = new ElementDefImpl( CONTACT, "PhoneNumber", null, 3, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.CONTACT_EMAIL = new ElementDefImpl( CONTACT, "Email", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.CONTACT_NAME = new ElementDefImpl( CONTACT, "Name", null, 1, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.CONTACT_ADDRESS = new ElementDefImpl( CONTACT, "Address", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.CONTACT_PHONENUMBER = new ElementDefImpl( CONTACT, "PhoneNumber", null, 3, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.CONTACT_EMAIL = new ElementDefImpl( CONTACT, "Email", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Contacts> fields (1 entries)
-		LearningDTD.CONTACTS_CONTACT = new ElementDefImpl( CONTACTS, "Contact", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		LearningDTD.CONTACTS_CONTACT = new ElementDefImpl( CONTACTS, "Contact", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <Copyright> fields (2 entries)
-		LearningDTD.COPYRIGHT_DATE = new ElementDefImpl( COPYRIGHT, "Date", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.COPYRIGHT_HOLDER = new ElementDefImpl( COPYRIGHT, "Holder", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.COPYRIGHT_DATE = new ElementDefImpl( COPYRIGHT, "Date", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.COPYRIGHT_HOLDER = new ElementDefImpl( COPYRIGHT, "Holder", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Evaluation> fields (4 entries)
-		LearningDTD.EVALUATION_REFID = new ElementDefImpl( EVALUATION, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.EVALUATION_DESCRIPTION = new ElementDefImpl( EVALUATION, "Description", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.EVALUATION_DATE = new ElementDefImpl( EVALUATION, "Date", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.EVALUATION_NAME = new ElementDefImpl( EVALUATION, "Name", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
+		LearningDTD.EVALUATION_REFID = new ElementDefImpl( EVALUATION, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.EVALUATION_DESCRIPTION = new ElementDefImpl( EVALUATION, "Description", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.EVALUATION_DATE = new ElementDefImpl( EVALUATION, "Date", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.EVALUATION_NAME = new ElementDefImpl( EVALUATION, "Name", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <Evaluations> fields (1 entries)
-		LearningDTD.EVALUATIONS_EVALUATION = new ElementDefImpl( EVALUATIONS, "Evaluation", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25 );
+		LearningDTD.EVALUATIONS_EVALUATION = new ElementDefImpl( EVALUATIONS, "Evaluation", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26 );
 
 		// <LearningResource> fields (18 entries)
-		LearningDTD.LEARNINGRESOURCE_REFID = new ElementDefImpl( LEARNINGRESOURCE, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCE_LANGUAGE = new ElementDefImpl( LEARNINGRESOURCE, "Language", "xml:lang", 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCE_NAME = new ElementDefImpl( LEARNINGRESOURCE, "Name", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCE_AUTHOR = new ElementDefImpl( LEARNINGRESOURCE, "Author", null, 4, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCE_CONTACTS = new ElementDefImpl( LEARNINGRESOURCE, "Contacts", null, 5, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGRESOURCE_LOCATION = new ElementDefAlias( LEARNINGRESOURCE, "Location", null, "LearningResourceLocation", 6, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCE_STATUS = new ElementDefImpl( LEARNINGRESOURCE, "Status", null, 7, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCE_DESCRIPTION = new ElementDefImpl( LEARNINGRESOURCE, "Description", null, 8, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCE_YEARLEVELS = new ElementDefImpl( LEARNINGRESOURCE, "YearLevels", null, 9, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGRESOURCE_SUBJECTAREAS = new ElementDefAlias( LEARNINGRESOURCE, "SubjectAreas", null, "SubjectAreaList", 10, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGRESOURCE_MEDIATYPES = new ElementDefImpl( LEARNINGRESOURCE, "MediaTypes", null, 11, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGRESOURCE_USEAGREEMENT = new ElementDefImpl( LEARNINGRESOURCE, "UseAgreement", null, 12, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCE_AGREEMENTDATE = new ElementDefImpl( LEARNINGRESOURCE, "AgreementDate", null, 13, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.LEARNINGRESOURCE_APPROVALS = new ElementDefImpl( LEARNINGRESOURCE, "Approvals", null, 14, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGRESOURCE_EVALUATIONS = new ElementDefImpl( LEARNINGRESOURCE, "Evaluations", null, 15, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGRESOURCE_COMPONENTS = new ElementDefImpl( LEARNINGRESOURCE, "Components", null, 16, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGRESOURCE_LEARNINGSTANDARDS = new ElementDefImpl( LEARNINGRESOURCE, "LearningStandards", null, 17, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGRESOURCE_LEARNINGRESOURCEPACKAGEREFID = new ElementDefImpl( LEARNINGRESOURCE, "LearningResourcePackageRefId", null, 18, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LEARNINGRESOURCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LEARNINGRESOURCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		LEARNINGRESOURCE_SIF_METADATA = new ElementDefImpl( LEARNINGRESOURCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LearningDTD.LEARNINGRESOURCE_REFID = new ElementDefImpl( LEARNINGRESOURCE, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCE_LANGUAGE = new ElementDefImpl( LEARNINGRESOURCE, "Language", "xml:lang", 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCE_NAME = new ElementDefImpl( LEARNINGRESOURCE, "Name", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCE_AUTHOR = new ElementDefImpl( LEARNINGRESOURCE, "Author", null, 4, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCE_CONTACTS = new ElementDefImpl( LEARNINGRESOURCE, "Contacts", null, 5, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGRESOURCE_LOCATION = new ElementDefAlias( LEARNINGRESOURCE, "Location", null, "LearningResourceLocation", 6, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCE_STATUS = new ElementDefImpl( LEARNINGRESOURCE, "Status", null, 7, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCE_DESCRIPTION = new ElementDefImpl( LEARNINGRESOURCE, "Description", null, 8, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCE_YEARLEVELS = new ElementDefImpl( LEARNINGRESOURCE, "YearLevels", null, 9, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGRESOURCE_SUBJECTAREAS = new ElementDefAlias( LEARNINGRESOURCE, "SubjectAreas", null, "SubjectAreaList", 10, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGRESOURCE_MEDIATYPES = new ElementDefImpl( LEARNINGRESOURCE, "MediaTypes", null, 11, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGRESOURCE_USEAGREEMENT = new ElementDefImpl( LEARNINGRESOURCE, "UseAgreement", null, 12, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCE_AGREEMENTDATE = new ElementDefImpl( LEARNINGRESOURCE, "AgreementDate", null, 13, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.LEARNINGRESOURCE_APPROVALS = new ElementDefImpl( LEARNINGRESOURCE, "Approvals", null, 14, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGRESOURCE_EVALUATIONS = new ElementDefImpl( LEARNINGRESOURCE, "Evaluations", null, 15, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGRESOURCE_COMPONENTS = new ElementDefImpl( LEARNINGRESOURCE, "Components", null, 16, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGRESOURCE_LEARNINGSTANDARDS = new ElementDefImpl( LEARNINGRESOURCE, "LearningStandards", null, 17, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGRESOURCE_LEARNINGRESOURCEPACKAGEREFID = new ElementDefImpl( LEARNINGRESOURCE, "LearningResourcePackageRefId", null, 18, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LEARNINGRESOURCE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LEARNINGRESOURCE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		LEARNINGRESOURCE_SIF_METADATA = new ElementDefImpl( LEARNINGRESOURCE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <LearningResourceLocation> fields (1 entries)
-		LearningDTD.LEARNINGRESOURCELOCATION_REFERENCETYPE = new ElementDefImpl( LEARNINGRESOURCELOCATION, "ReferenceType", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCELOCATION_REFERENCETYPE = new ElementDefImpl( LEARNINGRESOURCELOCATION, "ReferenceType", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <LearningResourcePackage> fields (5 entries)
-		LearningDTD.LEARNINGRESOURCEPACKAGE_REFID = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCEPACKAGE_XMLDATA = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "XMLData", null, 2, SifDtd.GLOBAL, null, 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGRESOURCEPACKAGE_TEXTDATA = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "TextData", null, 3, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCEPACKAGE_BINARYDATA = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "BinaryData", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGRESOURCEPACKAGE_REFERENCE = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "Reference", null, 5, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LEARNINGRESOURCEPACKAGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		LEARNINGRESOURCEPACKAGE_SIF_METADATA = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LearningDTD.LEARNINGRESOURCEPACKAGE_REFID = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCEPACKAGE_XMLDATA = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "XMLData", null, 2, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGRESOURCEPACKAGE_TEXTDATA = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "TextData", null, 3, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCEPACKAGE_BINARYDATA = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "BinaryData", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGRESOURCEPACKAGE_REFERENCE = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "Reference", null, 5, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LEARNINGRESOURCEPACKAGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		LEARNINGRESOURCEPACKAGE_SIF_METADATA = new ElementDefImpl( LEARNINGRESOURCEPACKAGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <LearningResourceRefIds> fields (0 entries)
 
 		// <LearningStandardDocument> fields (20 entries)
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_REFID = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_LANGUAGE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Language", "xml:lang", 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_TITLE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Title", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_DESCRIPTION = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Description", null, 4, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_RICHDESCRIPTION = new ElementDefAlias( LEARNINGSTANDARDDOCUMENT, "RichDescription", null, "AbstractContentElementType", 5, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_SOURCE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Source", null, 6, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_ORGANIZATIONS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Organizations", null, 7, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_AUTHORS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Authors", null, 8, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_ORGANIZATIONCONTACTPOINT = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "OrganizationContactPoint", null, 9, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_SUBJECTAREAS = new ElementDefAlias( LEARNINGSTANDARDDOCUMENT, "SubjectAreas", null, "SubjectAreaList", 10, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_DOCUMENTSTATUS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "DocumentStatus", null, 11, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_DOCUMENTDATE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "DocumentDate", null, 12, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_LOCALADOPTIONDATE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "LocalAdoptionDate", null, 13, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_LOCALARCHIVEDATE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "LocalArchiveDate", null, 14, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_ENDOFLIFEDATE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "EndOfLifeDate", null, 15, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_COPYRIGHT = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Copyright", null, 16, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_YEARLEVELS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "YearLevels", null, 17, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_REPOSITORYDATE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "RepositoryDate", null, 18, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.DATE );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_LEARNINGSTANDARDITEMREFID = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "LearningStandardItemRefId", null, 19, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDDOCUMENT_RELATEDLEARNINGSTANDARDS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "RelatedLearningStandards", null, 20, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LEARNINGSTANDARDDOCUMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		LEARNINGSTANDARDDOCUMENT_SIF_METADATA = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_REFID = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_LANGUAGE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Language", "xml:lang", 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_TITLE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Title", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_DESCRIPTION = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Description", null, 4, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_RICHDESCRIPTION = new ElementDefAlias( LEARNINGSTANDARDDOCUMENT, "RichDescription", null, "AbstractContentElementType", 5, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_SOURCE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Source", null, 6, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_ORGANIZATIONS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Organizations", null, 7, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_AUTHORS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Authors", null, 8, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_ORGANIZATIONCONTACTPOINT = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "OrganizationContactPoint", null, 9, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_SUBJECTAREAS = new ElementDefAlias( LEARNINGSTANDARDDOCUMENT, "SubjectAreas", null, "SubjectAreaList", 10, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_DOCUMENTSTATUS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "DocumentStatus", null, 11, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_DOCUMENTDATE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "DocumentDate", null, 12, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_LOCALADOPTIONDATE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "LocalAdoptionDate", null, 13, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_LOCALARCHIVEDATE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "LocalArchiveDate", null, 14, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_ENDOFLIFEDATE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "EndOfLifeDate", null, 15, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_COPYRIGHT = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "Copyright", null, 16, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_YEARLEVELS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "YearLevels", null, 17, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_REPOSITORYDATE = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "RepositoryDate", null, 18, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.DATE );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_LEARNINGSTANDARDITEMREFID = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "LearningStandardItemRefId", null, 19, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDDOCUMENT_RELATEDLEARNINGSTANDARDS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "RelatedLearningStandards", null, 20, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LEARNINGSTANDARDDOCUMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		LEARNINGSTANDARDDOCUMENT_SIF_METADATA = new ElementDefImpl( LEARNINGSTANDARDDOCUMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <LearningStandardDocumentRefId> fields (0 entries)
 
 		// <LearningStandardItem> fields (15 entries)
-		LearningDTD.LEARNINGSTANDARDITEM_REFID = new ElementDefImpl( LEARNINGSTANDARDITEM, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDITEM_LANGUAGE = new ElementDefImpl( LEARNINGSTANDARDITEM, "Language", "xml:lang", 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDITEM_RESOURCES = new ElementDefAlias( LEARNINGSTANDARDITEM, "Resources", null, "ResourcesList", 3, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDITEM_STANDARDSETTINGBODY = new ElementDefImpl( LEARNINGSTANDARDITEM, "StandardSettingBody", null, 4, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDITEM_STANDARDHIERARCHYLEVEL = new ElementDefImpl( LEARNINGSTANDARDITEM, "StandardHierarchyLevel", null, 5, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDITEM_PREDECESSORITEMS = new ElementDefImpl( LEARNINGSTANDARDITEM, "PredecessorItems", null, 6, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDITEM_STATEMENTCODES = new ElementDefImpl( LEARNINGSTANDARDITEM, "StatementCodes", null, 7, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDITEM_STATEMENTS = new ElementDefImpl( LEARNINGSTANDARDITEM, "Statements", null, 8, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDITEM_YEARLEVELS = new ElementDefImpl( LEARNINGSTANDARDITEM, "YearLevels", null, 9, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDITEM_ACSTRANDSUBJECTAREA = new ElementDefImpl( LEARNINGSTANDARDITEM, "ACStrandSubjectArea", null, 10, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDITEM_STANDARDIDENTIFIER = new ElementDefImpl( LEARNINGSTANDARDITEM, "StandardIdentifier", null, 11, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDITEM_LEARNINGSTANDARDDOCUMENTREFID = new ElementDefImpl( LEARNINGSTANDARDITEM, "LearningStandardDocumentRefId", null, 12, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDITEM_RELATEDLEARNINGSTANDARDITEMS = new ElementDefImpl( LEARNINGSTANDARDITEM, "RelatedLearningStandardItems", null, 13, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.LEARNINGSTANDARDITEM_LEVEL4 = new ElementDefImpl( LEARNINGSTANDARDITEM, "Level4", null, 14, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.LEARNINGSTANDARDITEM_LEVEL5 = new ElementDefImpl( LEARNINGSTANDARDITEM, "Level5", null, 15, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LEARNINGSTANDARDITEM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LEARNINGSTANDARDITEM, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		LEARNINGSTANDARDITEM_SIF_METADATA = new ElementDefImpl( LEARNINGSTANDARDITEM, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LearningDTD.LEARNINGSTANDARDITEM_REFID = new ElementDefImpl( LEARNINGSTANDARDITEM, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDITEM_LANGUAGE = new ElementDefImpl( LEARNINGSTANDARDITEM, "Language", "xml:lang", 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDITEM_RESOURCES = new ElementDefAlias( LEARNINGSTANDARDITEM, "Resources", null, "ResourcesList", 3, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDITEM_STANDARDSETTINGBODY = new ElementDefImpl( LEARNINGSTANDARDITEM, "StandardSettingBody", null, 4, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDITEM_STANDARDHIERARCHYLEVEL = new ElementDefImpl( LEARNINGSTANDARDITEM, "StandardHierarchyLevel", null, 5, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDITEM_PREDECESSORITEMS = new ElementDefImpl( LEARNINGSTANDARDITEM, "PredecessorItems", null, 6, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDITEM_STATEMENTCODES = new ElementDefImpl( LEARNINGSTANDARDITEM, "StatementCodes", null, 7, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDITEM_STATEMENTS = new ElementDefImpl( LEARNINGSTANDARDITEM, "Statements", null, 8, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDITEM_YEARLEVELS = new ElementDefImpl( LEARNINGSTANDARDITEM, "YearLevels", null, 9, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDITEM_ACSTRANDSUBJECTAREA = new ElementDefImpl( LEARNINGSTANDARDITEM, "ACStrandSubjectArea", null, 10, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDITEM_STANDARDIDENTIFIER = new ElementDefImpl( LEARNINGSTANDARDITEM, "StandardIdentifier", null, 11, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDITEM_LEARNINGSTANDARDDOCUMENTREFID = new ElementDefImpl( LEARNINGSTANDARDITEM, "LearningStandardDocumentRefId", null, 12, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDITEM_RELATEDLEARNINGSTANDARDITEMS = new ElementDefImpl( LEARNINGSTANDARDITEM, "RelatedLearningStandardItems", null, 13, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.LEARNINGSTANDARDITEM_LEVEL4 = new ElementDefImpl( LEARNINGSTANDARDITEM, "Level4", null, 14, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDITEM_LEVEL5 = new ElementDefImpl( LEARNINGSTANDARDITEM, "Level5", null, 15, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LEARNINGSTANDARDITEM_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LEARNINGSTANDARDITEM, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		LEARNINGSTANDARDITEM_SIF_METADATA = new ElementDefImpl( LEARNINGSTANDARDITEM, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <LearningStandards> fields (1 entries)
-		LearningDTD.LEARNINGSTANDARDS_LEARNINGSTANDARDITEMREFID = new ElementDefImpl( LEARNINGSTANDARDS, "LearningStandardItemRefId", null, 1, SifDtd.COMMON, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.LEARNINGSTANDARDS_LEARNINGSTANDARDITEMREFID = new ElementDefImpl( LEARNINGSTANDARDS, "LearningStandardItemRefId", null, 1, SifDtd.COMMON, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Organization> fields (0 entries)
 
 		// <Organizations> fields (1 entries)
-		LearningDTD.ORGANIZATIONS_ORGANIZATION = new ElementDefImpl( ORGANIZATIONS, "Organization", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.ORGANIZATIONS_ORGANIZATION = new ElementDefImpl( ORGANIZATIONS, "Organization", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <PredecessorItems> fields (1 entries)
-		LearningDTD.PREDECESSORITEMS_LEARNINGRESOURCEREFID = new ElementDefAlias( PREDECESSORITEMS, "LearningResourceRefId", null, "LearningResourceRefIds", 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.PREDECESSORITEMS_LEARNINGRESOURCEREFID = new ElementDefAlias( PREDECESSORITEMS, "LearningResourceRefId", null, "LearningResourceRefIds", 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RelatedLearningStandardItem> fields (1 entries)
-		LearningDTD.RELATEDLEARNINGSTANDARDITEM_RELATIONSHIPTYPE = new ElementDefImpl( RELATEDLEARNINGSTANDARDITEM, "RelationshipType", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.RELATEDLEARNINGSTANDARDITEM_RELATIONSHIPTYPE = new ElementDefImpl( RELATEDLEARNINGSTANDARDITEM, "RelationshipType", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RelatedLearningStandardItems> fields (1 entries)
-		LearningDTD.RELATEDLEARNINGSTANDARDITEMS_RELATEDLEARNINGSTANDARDITEM = new ElementDefImpl( RELATEDLEARNINGSTANDARDITEMS, "RelatedLearningStandardItem", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.RELATEDLEARNINGSTANDARDITEMS_RELATEDLEARNINGSTANDARDITEM = new ElementDefImpl( RELATEDLEARNINGSTANDARDITEMS, "RelatedLearningStandardItem", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <RelatedLearningStandards> fields (1 entries)
-		LearningDTD.RELATEDLEARNINGSTANDARDS_LEARNINGSTANDARDDOCUMENTREFID = new ElementDefImpl( RELATEDLEARNINGSTANDARDS, "LearningStandardDocumentRefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.RELATEDLEARNINGSTANDARDS_LEARNINGSTANDARDDOCUMENTREFID = new ElementDefImpl( RELATEDLEARNINGSTANDARDS, "LearningStandardDocumentRefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <ResourcesList> fields (2 entries)
-		LearningDTD.RESOURCESLIST_RESOURCETYPE = new ElementDefImpl( RESOURCESLIST, "ResourceType", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.RESOURCESLIST_LEARNINGRESOURCEREFID = new ElementDefAlias( RESOURCESLIST, "LearningResourceRefId", null, "LearningResourceRefIds", 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.RESOURCESLIST_RESOURCETYPE = new ElementDefImpl( RESOURCESLIST, "ResourceType", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.RESOURCESLIST_LEARNINGRESOURCEREFID = new ElementDefAlias( RESOURCESLIST, "LearningResourceRefId", null, "LearningResourceRefIds", 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <StandardHierarchyLevel> fields (2 entries)
-		LearningDTD.STANDARDHIERARCHYLEVEL_NUMBER = new ElementDefImpl( STANDARDHIERARCHYLEVEL, "Number", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.INT );
-		LearningDTD.STANDARDHIERARCHYLEVEL_DESCRIPTION = new ElementDefImpl( STANDARDHIERARCHYLEVEL, "Description", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.STANDARDHIERARCHYLEVEL_NUMBER = new ElementDefImpl( STANDARDHIERARCHYLEVEL, "Number", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.STANDARDHIERARCHYLEVEL_DESCRIPTION = new ElementDefImpl( STANDARDHIERARCHYLEVEL, "Description", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <StandardIdentifier> fields (9 entries)
-		LearningDTD.STANDARDIDENTIFIER_YEARCREATED = new ElementDefAlias( STANDARDIDENTIFIER, "YearCreated", null, "Year", 1, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.INT );
-		LearningDTD.STANDARDIDENTIFIER_ACSTRANDSUBJECTAREA = new ElementDefImpl( STANDARDIDENTIFIER, "ACStrandSubjectArea", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.STANDARDIDENTIFIER_STANDARDNUMBER = new ElementDefImpl( STANDARDIDENTIFIER, "StandardNumber", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.STANDARDIDENTIFIER_YEARLEVELS = new ElementDefImpl( STANDARDIDENTIFIER, "YearLevels", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.STANDARDIDENTIFIER_BENCHMARK = new ElementDefImpl( STANDARDIDENTIFIER, "Benchmark", null, 5, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.STANDARDIDENTIFIER_YEARLEVEL = new ElementDefImpl( STANDARDIDENTIFIER, "YearLevel", null, 6, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.STANDARDIDENTIFIER_INDICATORNUMBER = new ElementDefImpl( STANDARDIDENTIFIER, "IndicatorNumber", null, 7, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.STANDARDIDENTIFIER_ALTERNATEIDENTIFICATIONCODES = new ElementDefImpl( STANDARDIDENTIFIER, "AlternateIdentificationCodes", null, 8, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF25 );
-		LearningDTD.STANDARDIDENTIFIER_ORGANIZATION = new ElementDefImpl( STANDARDIDENTIFIER, "Organization", null, 9, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.STANDARDIDENTIFIER_YEARCREATED = new ElementDefAlias( STANDARDIDENTIFIER, "YearCreated", null, "Year", 1, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.STANDARDIDENTIFIER_ACSTRANDSUBJECTAREA = new ElementDefImpl( STANDARDIDENTIFIER, "ACStrandSubjectArea", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.STANDARDIDENTIFIER_STANDARDNUMBER = new ElementDefImpl( STANDARDIDENTIFIER, "StandardNumber", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.STANDARDIDENTIFIER_YEARLEVELS = new ElementDefImpl( STANDARDIDENTIFIER, "YearLevels", null, 4, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.STANDARDIDENTIFIER_BENCHMARK = new ElementDefImpl( STANDARDIDENTIFIER, "Benchmark", null, 5, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.STANDARDIDENTIFIER_YEARLEVEL = new ElementDefImpl( STANDARDIDENTIFIER, "YearLevel", null, 6, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.STANDARDIDENTIFIER_INDICATORNUMBER = new ElementDefImpl( STANDARDIDENTIFIER, "IndicatorNumber", null, 7, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.STANDARDIDENTIFIER_ALTERNATEIDENTIFICATIONCODES = new ElementDefImpl( STANDARDIDENTIFIER, "AlternateIdentificationCodes", null, 8, SifDtd.LEARNING, "au", 0, SifVersion.SIF24, SifVersion.SIF26 );
+		LearningDTD.STANDARDIDENTIFIER_ORGANIZATION = new ElementDefImpl( STANDARDIDENTIFIER, "Organization", null, 9, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <StandardSettingBody> fields (3 entries)
-		LearningDTD.STANDARDSETTINGBODY_COUNTRY = new ElementDefImpl( STANDARDSETTINGBODY, "Country", null, 1, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.STANDARDSETTINGBODY_STATEPROVINCE = new ElementDefImpl( STANDARDSETTINGBODY, "StateProvince", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.STANDARDSETTINGBODY_SETTINGBODYNAME = new ElementDefImpl( STANDARDSETTINGBODY, "SettingBodyName", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.STANDARDSETTINGBODY_COUNTRY = new ElementDefImpl( STANDARDSETTINGBODY, "Country", null, 1, SifDtd.COMMON, "au", 0, SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.STANDARDSETTINGBODY_STATEPROVINCE = new ElementDefImpl( STANDARDSETTINGBODY, "StateProvince", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.STANDARDSETTINGBODY_SETTINGBODYNAME = new ElementDefImpl( STANDARDSETTINGBODY, "SettingBodyName", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Statement> fields (0 entries)
 
 		// <StatementCode> fields (0 entries)
 
 		// <StatementCodes> fields (1 entries)
-		LearningDTD.STATEMENTCODES_STATEMENTCODE = new ElementDefImpl( STATEMENTCODES, "StatementCode", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.STATEMENTCODES_STATEMENTCODE = new ElementDefImpl( STATEMENTCODES, "StatementCode", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Statements> fields (1 entries)
-		LearningDTD.STATEMENTS_STATEMENT = new ElementDefImpl( STATEMENTS, "Statement", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.STATEMENTS_STATEMENT = new ElementDefImpl( STATEMENTS, "Statement", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Strategies> fields (1 entries)
-		LearningDTD.STRATEGIES_STRATEGY = new ElementDefImpl( STRATEGIES, "Strategy", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.STRATEGIES_STRATEGY = new ElementDefImpl( STRATEGIES, "Strategy", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF24, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Strategy> fields (0 entries)
 
 		// <StudentList> fields (1 entries)
-		LearningDTD.STUDENTLIST_TEACHINGGROUPSTUDENT = new ElementDefImpl( STUDENTLIST, "TeachingGroupStudent", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.STUDENTLIST_TEACHINGGROUPSTUDENT = new ElementDefImpl( STUDENTLIST, "TeachingGroupStudent", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <TeacherList> fields (1 entries)
-		LearningDTD.TEACHERLIST_TEACHINGGROUPTEACHER = new ElementDefImpl( TEACHERLIST, "TeachingGroupTeacher", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.TEACHERLIST_TEACHINGGROUPTEACHER = new ElementDefImpl( TEACHERLIST, "TeachingGroupTeacher", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF23, SifVersion.SIF26 );
 
-		// <TeachingGroup> fields (19 entries)
-		LearningDTD.TEACHINGGROUP_REFID = new ElementDefImpl( TEACHINGGROUP, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_SCHOOLYEAR = new ElementDefImpl( TEACHINGGROUP, "SchoolYear", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		LearningDTD.TEACHINGGROUP_LOCALID = new ElementDefImpl( TEACHINGGROUP, "LocalId", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_SHORTNAME = new ElementDefImpl( TEACHINGGROUP, "ShortName", null, 4, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_LONGNAME = new ElementDefImpl( TEACHINGGROUP, "LongName", null, 5, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_SET = new ElementDefImpl( TEACHINGGROUP, "Set", null, 6, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_BLOCK = new ElementDefImpl( TEACHINGGROUP, "Block", null, 7, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_CURRICULUMLEVEL = new ElementDefImpl( TEACHINGGROUP, "CurriculumLevel", null, 8, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_SCHOOLINFOREFID = new ElementDefImpl( TEACHINGGROUP, "SchoolInfoRefId", null, 9, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_SCHOOLLOCALID = new ElementDefImpl( TEACHINGGROUP, "SchoolLocalId", null, 10, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_SCHOOLCOURSEINFOREFID = new ElementDefImpl( TEACHINGGROUP, "SchoolCourseInfoRefId", null, 11, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_SCHOOLCOURSELOCALID = new ElementDefImpl( TEACHINGGROUP, "SchoolCourseLocalId", null, 12, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_TIMETABLESUBJECTREFID = new ElementDefImpl( TEACHINGGROUP, "TimeTableSubjectRefId", null, 13, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_TIMETABLESUBJECTLOCALID = new ElementDefImpl( TEACHINGGROUP, "TimeTableSubjectLocalId", null, 14, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUP_STUDENTLIST = new ElementDefImpl( TEACHINGGROUP, "StudentList", null, 15, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		LearningDTD.TEACHINGGROUP_TEACHERLIST = new ElementDefImpl( TEACHINGGROUP, "TeacherList", null, 16, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		LearningDTD.TEACHINGGROUP_MINCLASSSIZE = new ElementDefImpl( TEACHINGGROUP, "MinClassSize", null, 17, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		LearningDTD.TEACHINGGROUP_MAXCLASSSIZE = new ElementDefImpl( TEACHINGGROUP, "MaxClassSize", null, 18, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.INT );
-		LearningDTD.TEACHINGGROUP_TEACHINGGROUPPERIODLIST = new ElementDefImpl( TEACHINGGROUP, "TeachingGroupPeriodList", null, 19, SifDtd.LEARNING, "au", 0, SifVersion.SIF25, SifVersion.SIF25 );
-		TEACHINGGROUP_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TEACHINGGROUP, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		TEACHINGGROUP_SIF_METADATA = new ElementDefImpl( TEACHINGGROUP, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		// <TeachingGroup> fields (20 entries)
+		LearningDTD.TEACHINGGROUP_REFID = new ElementDefImpl( TEACHINGGROUP, "RefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_SCHOOLYEAR = new ElementDefImpl( TEACHINGGROUP, "SchoolYear", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.TEACHINGGROUP_LOCALID = new ElementDefImpl( TEACHINGGROUP, "LocalId", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_SHORTNAME = new ElementDefImpl( TEACHINGGROUP, "ShortName", null, 4, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_LONGNAME = new ElementDefImpl( TEACHINGGROUP, "LongName", null, 5, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_SET = new ElementDefImpl( TEACHINGGROUP, "Set", null, 6, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_BLOCK = new ElementDefImpl( TEACHINGGROUP, "Block", null, 7, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_CURRICULUMLEVEL = new ElementDefImpl( TEACHINGGROUP, "CurriculumLevel", null, 8, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_SCHOOLINFOREFID = new ElementDefImpl( TEACHINGGROUP, "SchoolInfoRefId", null, 9, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_SCHOOLLOCALID = new ElementDefImpl( TEACHINGGROUP, "SchoolLocalId", null, 10, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_SCHOOLCOURSEINFOREFID = new ElementDefImpl( TEACHINGGROUP, "SchoolCourseInfoRefId", null, 11, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_SCHOOLCOURSELOCALID = new ElementDefImpl( TEACHINGGROUP, "SchoolCourseLocalId", null, 12, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_TIMETABLESUBJECTREFID = new ElementDefImpl( TEACHINGGROUP, "TimeTableSubjectRefId", null, 13, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_TIMETABLESUBJECTLOCALID = new ElementDefImpl( TEACHINGGROUP, "TimeTableSubjectLocalId", null, 14, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUP_STUDENTLIST = new ElementDefImpl( TEACHINGGROUP, "StudentList", null, 15, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		LearningDTD.TEACHINGGROUP_STUDENTLIST.DefineVersionInfo(SifVersion.SIF26, "StudentList", 16, 0); // (Sif 26 alias)
+		LearningDTD.TEACHINGGROUP_SEMESTER = new ElementDefImpl( TEACHINGGROUP, "Semester", null, 15, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.TEACHINGGROUP_TEACHERLIST = new ElementDefImpl( TEACHINGGROUP, "TeacherList", null, 16, SifDtd.LEARNING, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		LearningDTD.TEACHINGGROUP_TEACHERLIST.DefineVersionInfo(SifVersion.SIF26, "TeacherList", 17, 0); // (Sif 26 alias)
+		LearningDTD.TEACHINGGROUP_MINCLASSSIZE = new ElementDefImpl( TEACHINGGROUP, "MinClassSize", null, 17, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.TEACHINGGROUP_MINCLASSSIZE.DefineVersionInfo(SifVersion.SIF26, "MinClassSize", 18, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		LearningDTD.TEACHINGGROUP_MAXCLASSSIZE = new ElementDefImpl( TEACHINGGROUP, "MaxClassSize", null, 18, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.INT );
+		LearningDTD.TEACHINGGROUP_MAXCLASSSIZE.DefineVersionInfo(SifVersion.SIF26, "MaxClassSize", 19, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		LearningDTD.TEACHINGGROUP_TEACHINGGROUPPERIODLIST = new ElementDefImpl( TEACHINGGROUP, "TeachingGroupPeriodList", null, 19, SifDtd.LEARNING, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		LearningDTD.TEACHINGGROUP_TEACHINGGROUPPERIODLIST.DefineVersionInfo(SifVersion.SIF26, "TeachingGroupPeriodList", 20, 0); // (Sif 26 alias)
+		TEACHINGGROUP_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TEACHINGGROUP, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		TEACHINGGROUP_SIF_METADATA = new ElementDefImpl( TEACHINGGROUP, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <TeachingGroupPeriod> fields (7 entries)
-		LearningDTD.TEACHINGGROUPPERIOD_TIMETABLECELLREFID = new ElementDefImpl( TEACHINGGROUPPERIOD, "TimeTableCellRefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUPPERIOD_ROOMNUMBER = new ElementDefImpl( TEACHINGGROUPPERIOD, "RoomNumber", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUPPERIOD_STAFFLOCALID = new ElementDefImpl( TEACHINGGROUPPERIOD, "StaffLocalId", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUPPERIOD_DAYID = new ElementDefImpl( TEACHINGGROUPPERIOD, "DayId", null, 4, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUPPERIOD_PERIODID = new ElementDefImpl( TEACHINGGROUPPERIOD, "PeriodId", null, 5, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUPPERIOD_STARTTIME = new ElementDefImpl( TEACHINGGROUPPERIOD, "StartTime", null, 6, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.TIME );
-		LearningDTD.TEACHINGGROUPPERIOD_CELLTYPE = new ElementDefImpl( TEACHINGGROUPPERIOD, "CellType", null, 7, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPPERIOD_TIMETABLECELLREFID = new ElementDefImpl( TEACHINGGROUPPERIOD, "TimeTableCellRefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPPERIOD_ROOMNUMBER = new ElementDefImpl( TEACHINGGROUPPERIOD, "RoomNumber", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPPERIOD_STAFFLOCALID = new ElementDefImpl( TEACHINGGROUPPERIOD, "StaffLocalId", null, 3, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPPERIOD_DAYID = new ElementDefImpl( TEACHINGGROUPPERIOD, "DayId", null, 4, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPPERIOD_PERIODID = new ElementDefImpl( TEACHINGGROUPPERIOD, "PeriodId", null, 5, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPPERIOD_STARTTIME = new ElementDefImpl( TEACHINGGROUPPERIOD, "StartTime", null, 6, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.TIME );
+		LearningDTD.TEACHINGGROUPPERIOD_CELLTYPE = new ElementDefImpl( TEACHINGGROUPPERIOD, "CellType", null, 7, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <TeachingGroupPeriodList> fields (1 entries)
-		LearningDTD.TEACHINGGROUPPERIODLIST_TEACHINGGROUPPERIOD = new ElementDefImpl( TEACHINGGROUPPERIODLIST, "TeachingGroupPeriod", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF25, SifVersion.SIF25 );
+		LearningDTD.TEACHINGGROUPPERIODLIST_TEACHINGGROUPPERIOD = new ElementDefImpl( TEACHINGGROUPPERIODLIST, "TeachingGroupPeriod", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF25, SifVersion.SIF26 );
 
 		// <TeachingGroupStudent> fields (3 entries)
-		LearningDTD.TEACHINGGROUPSTUDENT_STUDENTPERSONALREFID = new ElementDefImpl( TEACHINGGROUPSTUDENT, "StudentPersonalRefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUPSTUDENT_STUDENTLOCALID = new ElementDefImpl( TEACHINGGROUPSTUDENT, "StudentLocalId", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUPSTUDENT_NAME = new ElementDefImpl( TEACHINGGROUPSTUDENT, "Name", null, 3, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
+		LearningDTD.TEACHINGGROUPSTUDENT_STUDENTPERSONALREFID = new ElementDefImpl( TEACHINGGROUPSTUDENT, "StudentPersonalRefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPSTUDENT_STUDENTLOCALID = new ElementDefImpl( TEACHINGGROUPSTUDENT, "StudentLocalId", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPSTUDENT_NAME = new ElementDefImpl( TEACHINGGROUPSTUDENT, "Name", null, 3, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 
 		// <TeachingGroupTeacher> fields (4 entries)
-		LearningDTD.TEACHINGGROUPTEACHER_STAFFPERSONALREFID = new ElementDefImpl( TEACHINGGROUPTEACHER, "StaffPersonalRefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUPTEACHER_STAFFLOCALID = new ElementDefImpl( TEACHINGGROUPTEACHER, "StaffLocalId", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
-		LearningDTD.TEACHINGGROUPTEACHER_NAME = new ElementDefImpl( TEACHINGGROUPTEACHER, "Name", null, 3, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF25 );
-		LearningDTD.TEACHINGGROUPTEACHER_ASSOCIATION = new ElementDefImpl( TEACHINGGROUPTEACHER, "Association", null, 4, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF25, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPTEACHER_STAFFPERSONALREFID = new ElementDefImpl( TEACHINGGROUPTEACHER, "StaffPersonalRefId", null, 1, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPTEACHER_STAFFLOCALID = new ElementDefImpl( TEACHINGGROUPTEACHER, "StaffLocalId", null, 2, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
+		LearningDTD.TEACHINGGROUPTEACHER_NAME = new ElementDefImpl( TEACHINGGROUPTEACHER, "Name", null, 3, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		LearningDTD.TEACHINGGROUPTEACHER_ASSOCIATION = new ElementDefImpl( TEACHINGGROUPTEACHER, "Association", null, 4, SifDtd.LEARNING, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 	}
 
 	#region Update SifDtd
@@ -941,6 +949,7 @@ namespace OpenADK.Library.au.Learning
 		dictionary["TeachingGroup_SchoolInfoRefId"] = LearningDTD.TEACHINGGROUP_SCHOOLINFOREFID ;
 		dictionary["TeachingGroup_SchoolLocalId"] = LearningDTD.TEACHINGGROUP_SCHOOLLOCALID ;
 		dictionary["TeachingGroup_SchoolYear"] = LearningDTD.TEACHINGGROUP_SCHOOLYEAR ;
+		dictionary["TeachingGroup_Semester"] = LearningDTD.TEACHINGGROUP_SEMESTER ;
 		dictionary["TeachingGroup_Set"] = LearningDTD.TEACHINGGROUP_SET ;
 		dictionary["TeachingGroup_ShortName"] = LearningDTD.TEACHINGGROUP_SHORTNAME ;
 		dictionary["TeachingGroup_StudentList"] = LearningDTD.TEACHINGGROUP_STUDENTLIST ;

@@ -20,7 +20,7 @@ namespace OpenADK.Library.us.Hrfin
 
 // BEGIN FILE... (SIFDTD_Comments_CS.txt)
 
-/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
+	/// <summary>Metadata for the Schools Interoperability Framework (SIF)</summary>
 	/// <remarks>
 	/// <para>
 	/// SIFDTD defines global {@linkplain com.edustructures.sifworks.ElementDef} 
@@ -192,17 +192,21 @@ namespace OpenADK.Library.us.Hrfin
 	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
 	public static IElementDef ACCOUNTINGPERIOD_SIF_METADATA = null;
 
-	// Field elements of ANNUALITEM (10 fields)
+	// Field elements of ANNUALITEM (19 fields)
 	/** Defines the &lt;AccountType&gt; element as a child of &lt;AnnualItem&gt; */
 	public static IElementDef ANNUALITEM_ACCOUNTTYPE = null;
 	/** Defines the &lt;FundType&gt; element as a child of &lt;AnnualItem&gt; */
 	public static IElementDef ANNUALITEM_FUNDTYPE = null;
-	/** Defines the &lt;ExpenditureArea&gt; element as a child of &lt;AnnualItem&gt; */
-	public static IElementDef ANNUALITEM_EXPENDITUREAREA = null;
+	/** Defines the &lt;AccountTypeDetail&gt; element as a child of &lt;AnnualItem&gt; */
+	public static IElementDef ANNUALITEM_ACCOUNTTYPEDETAIL = null;
 	/** Defines the &lt;StateProvinceId&gt; element as a child of &lt;AnnualItem&gt; */
 	public static IElementDef ANNUALITEM_STATEPROVINCEID = null;
+	/** Defines the &lt;ExpenditureArea&gt; element as a child of &lt;AnnualItem&gt; */
+	public static IElementDef ANNUALITEM_EXPENDITUREAREA = null;
 	/** Defines the &lt;Function&gt; element as a child of &lt;AnnualItem&gt; */
 	public static IElementDef ANNUALITEM_FUNCTION = null;
+	/** Defines the &lt;FundClassificationCode&gt; element as a child of &lt;AnnualItem&gt; */
+	public static IElementDef ANNUALITEM_FUNDCLASSIFICATIONCODE = null;
 	/** Defines the &lt;Object&gt; element as a child of &lt;AnnualItem&gt; */
 	public static IElementDef ANNUALITEM_OBJECT = null;
 	/** Defines the &lt;InstructionalProgram&gt; element as a child of &lt;AnnualItem&gt; */
@@ -213,6 +217,20 @@ namespace OpenADK.Library.us.Hrfin
 	public static IElementDef ANNUALITEM_SPECIALAMOUNTTYPE = null;
 	/** Defines the &lt;GLAmountType&gt; element as a child of &lt;AnnualItem&gt; */
 	public static IElementDef ANNUALITEM_GLAMOUNTTYPE = null;
+	/** Defines the &lt;InstructionalLevel&gt; element as a child of &lt;AnnualItem&gt; */
+	public static IElementDef ANNUALITEM_INSTRUCTIONALLEVEL = null;
+	/** Defines the &lt;OperationalUnit&gt; element as a child of &lt;AnnualItem&gt; */
+	public static IElementDef ANNUALITEM_OPERATIONALUNIT = null;
+	/** Defines the &lt;ProjectCode&gt; element as a child of &lt;AnnualItem&gt; */
+	public static IElementDef ANNUALITEM_PROJECTCODE = null;
+	/** Defines the &lt;Source&gt; element as a child of &lt;AnnualItem&gt; */
+	public static IElementDef ANNUALITEM_SOURCE = null;
+	/** Defines the &lt;ChartOfAccountCode&gt; element as a child of &lt;AnnualItem&gt; */
+	public static IElementDef ANNUALITEM_CHARTOFACCOUNTCODE = null;
+	/** Defines the &lt;SubjectMatter&gt; element as a child of &lt;AnnualItem&gt; */
+	public static IElementDef ANNUALITEM_SUBJECTMATTER = null;
+	/** Defines the &lt;JobClassification&gt; element as a child of &lt;AnnualItem&gt; */
+	public static IElementDef ANNUALITEM_JOBCLASSIFICATION = null;
 
 	// Field elements of ANNUALITEMS (1 fields)
 	/** Defines the &lt;AnnualItem&gt; element as a child of &lt;AnnualItems&gt; */
@@ -776,442 +794,460 @@ namespace OpenADK.Library.us.Hrfin
 	{
 		//  Objects defined by this SDO Library...
 
-		ACCOUNTINGPERIOD = new ElementDefImpl( null, "AccountingPeriod", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ANNUALITEM = new ElementDefImpl( null, "AnnualItem", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		ANNUALITEMS = new ElementDefImpl( null, "AnnualItems", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		BILLEDENTITY = new ElementDefImpl( null, "BilledEntity", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		BILLING = new ElementDefImpl( null, "Billing", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		BUDGETACCOUNT = new ElementDefImpl( null, "BudgetAccount", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		BUDGETACCOUNTS = new ElementDefImpl( null, "BudgetAccounts", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEEASSIGNMENT = new ElementDefImpl( null, "EmployeeAssignment", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEECONTRACT = new ElementDefImpl( null, "EmployeeContract", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEEPERSONAL = new ElementDefImpl( null, "EmployeePersonal", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEEPICTURE = new ElementDefImpl( null, "EmployeePicture", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEEWAGE = new ElementDefImpl( null, "EmployeeWage", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYMENTRECORD = new ElementDefImpl( null, "EmploymentRecord", "EmployeeHR", 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
+		ACCOUNTINGPERIOD = new ElementDefImpl( null, "AccountingPeriod", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ANNUALITEM = new ElementDefImpl( null, "AnnualItem", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		ANNUALITEMS = new ElementDefImpl( null, "AnnualItems", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		BILLEDENTITY = new ElementDefImpl( null, "BilledEntity", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		BILLING = new ElementDefImpl( null, "Billing", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		BUDGETACCOUNT = new ElementDefImpl( null, "BudgetAccount", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		BUDGETACCOUNTS = new ElementDefImpl( null, "BudgetAccounts", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEEASSIGNMENT = new ElementDefImpl( null, "EmployeeAssignment", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEECONTRACT = new ElementDefImpl( null, "EmployeeContract", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEEPERSONAL = new ElementDefImpl( null, "EmployeePersonal", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEEPICTURE = new ElementDefImpl( null, "EmployeePicture", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEEWAGE = new ElementDefImpl( null, "EmployeeWage", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYMENTRECORD = new ElementDefImpl( null, "EmploymentRecord", "EmployeeHR", 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
 		EMPLOYMENTRECORD.DefineVersionInfo(SifVersion.SIF20, "EmploymentRecord", 0, (0)); // (Sif 20 alias)
-		EXPENSEACCOUNT = new ElementDefImpl( null, "ExpenseAccount", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		EXPENSEACCOUNTS = new ElementDefImpl( null, "ExpenseAccounts", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		FEDERALTAXID = new ElementDefImpl( null, "FederalTaxId", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FINANCIALACCOUNT = new ElementDefImpl( null, "FinancialAccount", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO = new ElementDefImpl( null, "FinancialAccountAccountingPeriodLocationInfo", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALANNUAL = new ElementDefImpl( null, "FinancialAnnual", "FinAnnual", 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
+		EXPENSEACCOUNT = new ElementDefImpl( null, "ExpenseAccount", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		EXPENSEACCOUNTS = new ElementDefImpl( null, "ExpenseAccounts", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		FEDERALTAXID = new ElementDefImpl( null, "FederalTaxId", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FINANCIALACCOUNT = new ElementDefImpl( null, "FinancialAccount", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO = new ElementDefImpl( null, "FinancialAccountAccountingPeriodLocationInfo", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALANNUAL = new ElementDefImpl( null, "FinancialAnnual", "FinAnnual", 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FINANCIALANNUAL.DefineVersionInfo(SifVersion.SIF20, "FinancialAnnual", 0, (0)); // (Sif 20 alias)
-		FINANCIALBUDGET = new ElementDefImpl( null, "FinancialBudget", "FinBudget", 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
+		FINANCIALBUDGET = new ElementDefImpl( null, "FinancialBudget", "FinBudget", 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
 		FINANCIALBUDGET.DefineVersionInfo(SifVersion.SIF20, "FinancialBudget", 0, (0)); // (Sif 20 alias)
-		FINANCIALCLASS = new ElementDefImpl( null, "FinancialClass", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALINCOMESTATEMENT = new ElementDefImpl( null, "FinancialIncomeStatement", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALTRANSACTION = new ElementDefImpl( null, "FinancialTransaction", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FISAMOUNT = new ElementDefImpl( null, "FISAmount", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FINANCIALCLASS = new ElementDefImpl( null, "FinancialClass", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALINCOMESTATEMENT = new ElementDefImpl( null, "FinancialIncomeStatement", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALTRANSACTION = new ElementDefImpl( null, "FinancialTransaction", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FISAMOUNT = new ElementDefImpl( null, "FISAmount", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		FISAMOUNT.DefineVersionInfo(SifVersion.SIF20, "Amount", 0, (0)); // (Sif 20 alias)
-		FISAMOUNTS = new ElementDefImpl( null, "FISAmounts", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		FISCALYEAR = new ElementDefImpl( null, "FiscalYear", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FISPERIOD = new ElementDefImpl( null, "FISPeriod", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FTAMOUNT = new ElementDefImpl( null, "FTAmount", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		FISAMOUNTS = new ElementDefImpl( null, "FISAmounts", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		FISCALYEAR = new ElementDefImpl( null, "FiscalYear", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FISPERIOD = new ElementDefImpl( null, "FISPeriod", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FTAMOUNT = new ElementDefImpl( null, "FTAmount", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		FTAMOUNT.DefineVersionInfo(SifVersion.SIF20, "Amount", 0, (0)); // (Sif 20 alias)
-		FTAMOUNTS = new ElementDefImpl( null, "FTAmounts", "Amounts", 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		HROTHERIDLIST = new ElementDefImpl( null, "HrOtherIdList", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		HRPROGRAMTYPE = new ElementDefImpl( null, "HRProgramType", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		JOBCLASSIFICATION = new ElementDefImpl( null, "JobClassification", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		LEAINFOREFID = new ElementDefImpl( null, "LEAInfoRefId", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		LOCATIONINFO = new ElementDefImpl( null, "LocationInfo", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		OTHERLEAS = new ElementDefImpl( null, "OtherLEAs", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		PARENTLOCATIONINFO = new ElementDefImpl( null, "ParentLocationInfo", "LocationInfoRefId", 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		FTAMOUNTS = new ElementDefImpl( null, "FTAmounts", "Amounts", 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		HROTHERIDLIST = new ElementDefImpl( null, "HrOtherIdList", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		HRPROGRAMTYPE = new ElementDefImpl( null, "HRProgramType", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		JOBCLASSIFICATION = new ElementDefImpl( null, "JobClassification", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		LEAINFOREFID = new ElementDefImpl( null, "LEAInfoRefId", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		LOCATIONINFO = new ElementDefImpl( null, "LocationInfo", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		OTHERLEAS = new ElementDefImpl( null, "OtherLEAs", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		PARENTLOCATIONINFO = new ElementDefImpl( null, "ParentLocationInfo", "LocationInfoRefId", 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		PARENTLOCATIONINFO.DefineVersionInfo(SifVersion.SIF20, "ParentLocationInfo", 0, (0)); // (Sif 20 alias)
-		PAYMENT = new ElementDefImpl( null, "Payment", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF25 );
-		PAYRATE = new ElementDefImpl( null, "PayRate", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		PAYRATES = new ElementDefImpl( null, "PayRates", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		PERIOD = new ElementDefImpl( null, "Period", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
-		PURCHASING = new ElementDefImpl( null, "Purchasing", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		PURCHASINGITEM = new ElementDefImpl( null, "PurchasingItem", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		PURCHASINGITEMS = new ElementDefImpl( null, "PurchasingItems", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		PAYMENT = new ElementDefImpl( null, "Payment", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF11, SifVersion.SIF26 );
+		PAYRATE = new ElementDefImpl( null, "PayRate", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		PAYRATES = new ElementDefImpl( null, "PayRates", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		PERIOD = new ElementDefImpl( null, "Period", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
+		PURCHASING = new ElementDefImpl( null, "Purchasing", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		PURCHASINGITEM = new ElementDefImpl( null, "PurchasingItem", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		PURCHASINGITEMS = new ElementDefImpl( null, "PurchasingItems", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 		SCHOOL = new ElementDefImpl( null, "School", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF15r1 );
 		SISID = new ElementDefImpl( null, "SISId", null, 0, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF15r1 );
-		TIMEWORKED = new ElementDefImpl( null, "TimeWorked", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		VENDORINFO = new ElementDefImpl( null, "VendorInfo", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
-		W4 = new ElementDefImpl( null, "W4", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF25 );
+		TIMEWORKED = new ElementDefImpl( null, "TimeWorked", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		VENDORINFO = new ElementDefImpl( null, "VendorInfo", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
+		W4 = new ElementDefImpl( null, "W4", null, 0, SifDtd.HRFIN, "us", (ElementDefImpl.FD_OBJECT), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 
 		// <AccountingPeriod> fields (6 entries)
-		HrfinDTD.ACCOUNTINGPERIOD_REFID = new ElementDefImpl( ACCOUNTINGPERIOD, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.ACCOUNTINGPERIOD_NAME = new ElementDefImpl( ACCOUNTINGPERIOD, "Name", "AccountingPeriodName", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.ACCOUNTINGPERIOD_REFID = new ElementDefImpl( ACCOUNTINGPERIOD, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ACCOUNTINGPERIOD_NAME = new ElementDefImpl( ACCOUNTINGPERIOD, "Name", "AccountingPeriodName", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.ACCOUNTINGPERIOD_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.ACCOUNTINGPERIOD_DESCRIPTION = new ElementDefImpl( ACCOUNTINGPERIOD, "Description", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.ACCOUNTINGPERIOD_FISCALYEARREFID = new ElementDefImpl( ACCOUNTINGPERIOD, "FiscalYearRefId", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.ACCOUNTINGPERIOD_STARTDATE = new ElementDefImpl( ACCOUNTINGPERIOD, "StartDate", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		HrfinDTD.ACCOUNTINGPERIOD_ENDDATE = new ElementDefImpl( ACCOUNTINGPERIOD, "EndDate", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		ACCOUNTINGPERIOD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ACCOUNTINGPERIOD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		ACCOUNTINGPERIOD_SIF_METADATA = new ElementDefImpl( ACCOUNTINGPERIOD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.ACCOUNTINGPERIOD_DESCRIPTION = new ElementDefImpl( ACCOUNTINGPERIOD, "Description", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ACCOUNTINGPERIOD_FISCALYEARREFID = new ElementDefImpl( ACCOUNTINGPERIOD, "FiscalYearRefId", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ACCOUNTINGPERIOD_STARTDATE = new ElementDefImpl( ACCOUNTINGPERIOD, "StartDate", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		HrfinDTD.ACCOUNTINGPERIOD_ENDDATE = new ElementDefImpl( ACCOUNTINGPERIOD, "EndDate", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		ACCOUNTINGPERIOD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( ACCOUNTINGPERIOD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		ACCOUNTINGPERIOD_SIF_METADATA = new ElementDefImpl( ACCOUNTINGPERIOD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
-		// <AnnualItem> fields (10 entries)
-		HrfinDTD.ANNUALITEM_ACCOUNTTYPE = new ElementDefImpl( ANNUALITEM, "AccountType", "AcctType", 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		// <AnnualItem> fields (19 entries)
+		HrfinDTD.ANNUALITEM_ACCOUNTTYPE = new ElementDefImpl( ANNUALITEM, "AccountType", "AcctType", 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.ANNUALITEM_ACCOUNTTYPE.DefineVersionInfo(SifVersion.SIF20, "AccountType", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.ANNUALITEM_FUNDTYPE = new ElementDefImpl( ANNUALITEM, "FundType", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.ANNUALITEM_EXPENDITUREAREA = new ElementDefImpl( ANNUALITEM, "ExpenditureArea", "ExpArea", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_FUNDTYPE = new ElementDefImpl( ANNUALITEM, "FundType", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_FUNDTYPE.DefineVersionInfo(SifVersion.SIF26, "FundType", 3, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		HrfinDTD.ANNUALITEM_ACCOUNTTYPEDETAIL = new ElementDefImpl( ANNUALITEM, "AccountTypeDetail", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_STATEPROVINCEID = new ElementDefImpl( ANNUALITEM, "StateProvinceId", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF26, "StateProvinceId", 5, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		HrfinDTD.ANNUALITEM_EXPENDITUREAREA = new ElementDefImpl( ANNUALITEM, "ExpenditureArea", "ExpArea", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.ANNUALITEM_EXPENDITUREAREA.DefineVersionInfo(SifVersion.SIF20, "ExpenditureArea", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.ANNUALITEM_STATEPROVINCEID = new ElementDefImpl( ANNUALITEM, "StateProvinceId", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.ANNUALITEM_FUNCTION = new ElementDefImpl( ANNUALITEM, "Function", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_EXPENDITUREAREA.DefineVersionInfo(SifVersion.SIF26, "ExpenditureArea", 6, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		HrfinDTD.ANNUALITEM_FUNCTION = new ElementDefImpl( ANNUALITEM, "Function", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.ANNUALITEM_FUNCTION.DefineVersionInfo(SifVersion.SIF20, "Function", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.ANNUALITEM_OBJECT = new ElementDefImpl( ANNUALITEM, "Object", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_FUNCTION.DefineVersionInfo(SifVersion.SIF26, "Function", 7, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		HrfinDTD.ANNUALITEM_FUNDCLASSIFICATIONCODE = new ElementDefImpl( ANNUALITEM, "FundClassificationCode", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_OBJECT = new ElementDefImpl( ANNUALITEM, "Object", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.ANNUALITEM_OBJECT.DefineVersionInfo(SifVersion.SIF20, "Object", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.ANNUALITEM_INSTRUCTIONALPROGRAM = new ElementDefImpl( ANNUALITEM, "InstructionalProgram", "InstProgram", 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_OBJECT.DefineVersionInfo(SifVersion.SIF26, "Object", 8, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		HrfinDTD.ANNUALITEM_INSTRUCTIONALPROGRAM = new ElementDefImpl( ANNUALITEM, "InstructionalProgram", "InstProgram", 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.ANNUALITEM_INSTRUCTIONALPROGRAM.DefineVersionInfo(SifVersion.SIF20, "InstructionalProgram", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.ANNUALITEM_AMOUNT = new ElementDefAlias( ANNUALITEM, "Amount", null, "MonetaryAmount", 7, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		HrfinDTD.ANNUALITEM_INSTRUCTIONALPROGRAM.DefineVersionInfo(SifVersion.SIF26, "InstructionalProgram", 9, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		HrfinDTD.ANNUALITEM_AMOUNT = new ElementDefAlias( ANNUALITEM, "Amount", null, "MonetaryAmount", 7, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		HrfinDTD.ANNUALITEM_AMOUNT.DefineVersionInfo(SifVersion.SIF20, "Amount", 8, 0); // (Sif 20 alias)
-		HrfinDTD.ANNUALITEM_SPECIALAMOUNTTYPE = new ElementDefImpl( ANNUALITEM, "SpecialAmountType", "SpecAmtType", 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_AMOUNT.DefineVersionInfo(SifVersion.SIF26, "Amount", 10, 0); // (Sif 26 alias)
+		HrfinDTD.ANNUALITEM_SPECIALAMOUNTTYPE = new ElementDefImpl( ANNUALITEM, "SpecialAmountType", "SpecAmtType", 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.ANNUALITEM_SPECIALAMOUNTTYPE.DefineVersionInfo(SifVersion.SIF20, "SpecialAmountType", 9, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.ANNUALITEM_GLAMOUNTTYPE = new ElementDefImpl( ANNUALITEM, "GLAmountType", "GLAmtType", 9, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_SPECIALAMOUNTTYPE.DefineVersionInfo(SifVersion.SIF26, "SpecialAmountType", 18, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		HrfinDTD.ANNUALITEM_GLAMOUNTTYPE = new ElementDefImpl( ANNUALITEM, "GLAmountType", "GLAmtType", 9, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.ANNUALITEM_GLAMOUNTTYPE.DefineVersionInfo(SifVersion.SIF20, "GLAmountType", 10, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
+		HrfinDTD.ANNUALITEM_GLAMOUNTTYPE.DefineVersionInfo(SifVersion.SIF26, "GLAmountType", 19, (ElementDefImpl.FD_FIELD)); // (Sif 26 alias)
+		HrfinDTD.ANNUALITEM_INSTRUCTIONALLEVEL = new ElementDefImpl( ANNUALITEM, "InstructionalLevel", null, 11, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_OPERATIONALUNIT = new ElementDefImpl( ANNUALITEM, "OperationalUnit", null, 12, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_PROJECTCODE = new ElementDefImpl( ANNUALITEM, "ProjectCode", null, 13, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_SOURCE = new ElementDefImpl( ANNUALITEM, "Source", null, 14, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_CHARTOFACCOUNTCODE = new ElementDefImpl( ANNUALITEM, "ChartOfAccountCode", null, 15, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_SUBJECTMATTER = new ElementDefImpl( ANNUALITEM, "SubjectMatter", null, 16, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.ANNUALITEM_JOBCLASSIFICATION = new ElementDefImpl( ANNUALITEM, "JobClassification", null, 17, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <AnnualItems> fields (1 entries)
-		HrfinDTD.ANNUALITEMS_ANNUALITEM = new ElementDefImpl( ANNUALITEMS, "AnnualItem", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.ANNUALITEMS_ANNUALITEM = new ElementDefImpl( ANNUALITEMS, "AnnualItem", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <BilledEntity> fields (1 entries)
-		HrfinDTD.BILLEDENTITY_SIF_REFOBJECT = new ElementDefImpl( BILLEDENTITY, "SIF_RefObject", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.BILLEDENTITY_SIF_REFOBJECT = new ElementDefImpl( BILLEDENTITY, "SIF_RefObject", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Billing> fields (6 entries)
-		HrfinDTD.BILLING_REFID = new ElementDefImpl( BILLING, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.BILLING_BILLEDENTITY = new ElementDefImpl( BILLING, "BilledEntity", null, 2, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.BILLING_REFID = new ElementDefImpl( BILLING, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.BILLING_BILLEDENTITY = new ElementDefImpl( BILLING, "BilledEntity", null, 2, SifDtd.HRFIN, "us", 0, SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.BILLING_ENTITYID = new ElementDefImpl( BILLING, "EntityId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		HrfinDTD.BILLING_BILLINGDATE = new ElementDefImpl( BILLING, "BillingDate", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
-		HrfinDTD.BILLING_TRANSACTIONDESCRIPTION = new ElementDefImpl( BILLING, "TransactionDescription", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.BILLING_BILLEDAMOUNT = new ElementDefAlias( BILLING, "BilledAmount", null, "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		BILLING_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BILLING, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		BILLING_SIF_METADATA = new ElementDefImpl( BILLING, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.BILLING_BILLINGDATE = new ElementDefImpl( BILLING, "BillingDate", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
+		HrfinDTD.BILLING_TRANSACTIONDESCRIPTION = new ElementDefImpl( BILLING, "TransactionDescription", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.BILLING_BILLEDAMOUNT = new ElementDefAlias( BILLING, "BilledAmount", null, "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		BILLING_SIF_EXTENDEDELEMENTS = new ElementDefImpl( BILLING, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		BILLING_SIF_METADATA = new ElementDefImpl( BILLING, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <BudgetAccount> fields (5 entries)
-		HrfinDTD.BUDGETACCOUNT_ACCOUNTCLASS = new ElementDefImpl( BUDGETACCOUNT, "AccountClass", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.BUDGETACCOUNT_FUNDBREAKDOWN = new ElementDefImpl( BUDGETACCOUNT, "FundBreakdown", "FundBreak", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.BUDGETACCOUNT_ACCOUNTCLASS = new ElementDefImpl( BUDGETACCOUNT, "AccountClass", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.BUDGETACCOUNT_FUNDBREAKDOWN = new ElementDefImpl( BUDGETACCOUNT, "FundBreakdown", "FundBreak", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.BUDGETACCOUNT_FUNDBREAKDOWN.DefineVersionInfo(SifVersion.SIF20, "FundBreakdown", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.BUDGETACCOUNT_FUNCTIONBREAKDOWN = new ElementDefImpl( BUDGETACCOUNT, "FunctionBreakdown", "FuncBreak", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.BUDGETACCOUNT_FUNCTIONBREAKDOWN = new ElementDefImpl( BUDGETACCOUNT, "FunctionBreakdown", "FuncBreak", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.BUDGETACCOUNT_FUNCTIONBREAKDOWN.DefineVersionInfo(SifVersion.SIF20, "FunctionBreakdown", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.BUDGETACCOUNT_OBJECTBREAKDOWN = new ElementDefImpl( BUDGETACCOUNT, "ObjectBreakdown", "ObjBreak", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.BUDGETACCOUNT_OBJECTBREAKDOWN = new ElementDefImpl( BUDGETACCOUNT, "ObjectBreakdown", "ObjBreak", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.BUDGETACCOUNT_OBJECTBREAKDOWN.DefineVersionInfo(SifVersion.SIF20, "ObjectBreakdown", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.BUDGETACCOUNT_BUDGETAMOUNT = new ElementDefAlias( BUDGETACCOUNT, "BudgetAmount", null, "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		HrfinDTD.BUDGETACCOUNT_BUDGETAMOUNT = new ElementDefAlias( BUDGETACCOUNT, "BudgetAmount", null, "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <BudgetAccounts> fields (1 entries)
-		HrfinDTD.BUDGETACCOUNTS_BUDGETACCOUNT = new ElementDefImpl( BUDGETACCOUNTS, "BudgetAccount", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.BUDGETACCOUNTS_BUDGETACCOUNT = new ElementDefImpl( BUDGETACCOUNTS, "BudgetAccount", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <EmployeeAssignment> fields (12 entries)
-		HrfinDTD.EMPLOYEEASSIGNMENT_REFID = new ElementDefImpl( EMPLOYEEASSIGNMENT, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEEASSIGNMENT_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLOYEEASSIGNMENT, "EmployeePersonalRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEEASSIGNMENT_DESCRIPTION = new ElementDefImpl( EMPLOYEEASSIGNMENT, "Description", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEEASSIGNMENT_LOCATIONINFOREFID = new ElementDefImpl( EMPLOYEEASSIGNMENT, "LocationInfoRefId", "~XPathSurrogate{LocationId/@LocationInfoRefId=.}LocationId", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEEASSIGNMENT_REFID = new ElementDefImpl( EMPLOYEEASSIGNMENT, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEEASSIGNMENT_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLOYEEASSIGNMENT, "EmployeePersonalRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEEASSIGNMENT_DESCRIPTION = new ElementDefImpl( EMPLOYEEASSIGNMENT, "Description", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEEASSIGNMENT_LOCATIONINFOREFID = new ElementDefImpl( EMPLOYEEASSIGNMENT, "LocationInfoRefId", "~XPathSurrogate{LocationId/@LocationInfoRefId=.}LocationId", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.EMPLOYEEASSIGNMENT_LOCATIONINFOREFID.DefineVersionInfo(SifVersion.SIF20, "LocationInfoRefId", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEEASSIGNMENT_PRIMARYASSIGNMENT = new ElementDefImpl( EMPLOYEEASSIGNMENT, "PrimaryAssignment", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEEASSIGNMENT_JOBSTARTDATE = new ElementDefImpl( EMPLOYEEASSIGNMENT, "JobStartDate", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.EMPLOYEEASSIGNMENT_PRIMARYASSIGNMENT = new ElementDefImpl( EMPLOYEEASSIGNMENT, "PrimaryAssignment", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEEASSIGNMENT_JOBSTARTDATE = new ElementDefImpl( EMPLOYEEASSIGNMENT, "JobStartDate", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.EMPLOYEEASSIGNMENT_JOBSTARTDATE.DefineVersionInfo(SifVersion.SIF20, "JobStartDate", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEEASSIGNMENT_JOBENDDATE = new ElementDefImpl( EMPLOYEEASSIGNMENT, "JobEndDate", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.EMPLOYEEASSIGNMENT_JOBENDDATE = new ElementDefImpl( EMPLOYEEASSIGNMENT, "JobEndDate", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.EMPLOYEEASSIGNMENT_JOBENDDATE.DefineVersionInfo(SifVersion.SIF20, "JobEndDate", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEEASSIGNMENT_JOBFTE = new ElementDefImpl( EMPLOYEEASSIGNMENT, "JobFTE", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		HrfinDTD.EMPLOYEEASSIGNMENT_JOBFTE = new ElementDefImpl( EMPLOYEEASSIGNMENT, "JobFTE", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		HrfinDTD.EMPLOYEEASSIGNMENT_JOBFTE.DefineVersionInfo(SifVersion.SIF20, "JobFTE", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEEASSIGNMENT_JOBCLASSIFICATION = new ElementDefImpl( EMPLOYEEASSIGNMENT, "JobClassification", "~XPathSurrogate{JobClassification/@Code=Code}", 8, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEASSIGNMENT_JOBCLASSIFICATION = new ElementDefImpl( EMPLOYEEASSIGNMENT, "JobClassification", "~XPathSurrogate{JobClassification/@Code=Code}", 8, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.EMPLOYEEASSIGNMENT_JOBCLASSIFICATION.DefineVersionInfo(SifVersion.SIF20, "JobClassification", 9, 0); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEEASSIGNMENT_PROGRAMTYPE = new ElementDefAlias( EMPLOYEEASSIGNMENT, "ProgramType", "~XPathSurrogate{ProgramType/@Code=Code}", "HRProgramType", 9, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEASSIGNMENT_PROGRAMTYPE = new ElementDefAlias( EMPLOYEEASSIGNMENT, "ProgramType", "~XPathSurrogate{ProgramType/@Code=Code}", "HRProgramType", 9, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.EMPLOYEEASSIGNMENT_PROGRAMTYPE.DefineVersionInfo(SifVersion.SIF20, "ProgramType", 10, 0); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEEASSIGNMENT_FUNDINGSOURCE = new ElementDefAlias( EMPLOYEEASSIGNMENT, "FundingSource", "~XPathSurrogate{FundingSource/@Code=Code}", "ProgramFundingSource", 10, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEASSIGNMENT_FUNDINGSOURCE = new ElementDefAlias( EMPLOYEEASSIGNMENT, "FundingSource", "~XPathSurrogate{FundingSource/@Code=Code}", "ProgramFundingSource", 10, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.EMPLOYEEASSIGNMENT_FUNDINGSOURCE.DefineVersionInfo(SifVersion.SIF20, "FundingSource", 11, 0); // (Sif 20 alias)
 		HrfinDTD.EMPLOYEEASSIGNMENT_SISID = new ElementDefImpl( EMPLOYEEASSIGNMENT, "SISId", null, 11, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF15r1 );
-		EMPLOYEEASSIGNMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEEASSIGNMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEEASSIGNMENT_SIF_METADATA = new ElementDefImpl( EMPLOYEEASSIGNMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EMPLOYEEASSIGNMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEEASSIGNMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEEASSIGNMENT_SIF_METADATA = new ElementDefImpl( EMPLOYEEASSIGNMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EmployeeContract> fields (8 entries)
-		HrfinDTD.EMPLOYEECONTRACT_REFID = new ElementDefImpl( EMPLOYEECONTRACT, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEECONTRACT_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLOYEECONTRACT, "EmployeePersonalRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEECONTRACT_BASESALARY = new ElementDefAlias( EMPLOYEECONTRACT, "BaseSalary", null, "MonetaryAmount", 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		HrfinDTD.EMPLOYEECONTRACT_CONTRACTSTARTDATE = new ElementDefImpl( EMPLOYEECONTRACT, "ContractStartDate", "ContractStart", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.EMPLOYEECONTRACT_REFID = new ElementDefImpl( EMPLOYEECONTRACT, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEECONTRACT_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLOYEECONTRACT, "EmployeePersonalRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEECONTRACT_BASESALARY = new ElementDefAlias( EMPLOYEECONTRACT, "BaseSalary", null, "MonetaryAmount", 3, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		HrfinDTD.EMPLOYEECONTRACT_CONTRACTSTARTDATE = new ElementDefImpl( EMPLOYEECONTRACT, "ContractStartDate", "ContractStart", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.EMPLOYEECONTRACT_CONTRACTSTARTDATE.DefineVersionInfo(SifVersion.SIF20, "ContractStartDate", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEECONTRACT_CONTRACTENDDATE = new ElementDefImpl( EMPLOYEECONTRACT, "ContractEndDate", "ContractEnd", 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.EMPLOYEECONTRACT_CONTRACTENDDATE = new ElementDefImpl( EMPLOYEECONTRACT, "ContractEndDate", "ContractEnd", 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.EMPLOYEECONTRACT_CONTRACTENDDATE.DefineVersionInfo(SifVersion.SIF20, "ContractEndDate", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEECONTRACT_CONTRACTTERM = new ElementDefImpl( EMPLOYEECONTRACT, "ContractTerm", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEECONTRACT_CONTRACTDAYS = new ElementDefImpl( EMPLOYEECONTRACT, "ContractDays", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
-		HrfinDTD.EMPLOYEECONTRACT_ASSIGNMENTDAYS = new ElementDefImpl( EMPLOYEECONTRACT, "AssignmentDays", null, 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
-		EMPLOYEECONTRACT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEECONTRACT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEECONTRACT_SIF_METADATA = new ElementDefImpl( EMPLOYEECONTRACT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEECONTRACT_CONTRACTTERM = new ElementDefImpl( EMPLOYEECONTRACT, "ContractTerm", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEECONTRACT_CONTRACTDAYS = new ElementDefImpl( EMPLOYEECONTRACT, "ContractDays", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
+		HrfinDTD.EMPLOYEECONTRACT_ASSIGNMENTDAYS = new ElementDefImpl( EMPLOYEECONTRACT, "AssignmentDays", null, 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
+		EMPLOYEECONTRACT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEECONTRACT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEECONTRACT_SIF_METADATA = new ElementDefImpl( EMPLOYEECONTRACT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EmployeePersonal> fields (9 entries)
-		HrfinDTD.EMPLOYEEPERSONAL_REFID = new ElementDefImpl( EMPLOYEEPERSONAL, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEEPERSONAL_OTHERIDLIST = new ElementDefAlias( EMPLOYEEPERSONAL, "OtherIdList", null, "HrOtherIdList", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEPERSONAL_REFID = new ElementDefImpl( EMPLOYEEPERSONAL, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEEPERSONAL_OTHERIDLIST = new ElementDefAlias( EMPLOYEEPERSONAL, "OtherIdList", null, "HrOtherIdList", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.EMPLOYEEPERSONAL_OTHERIDLIST.DefineVersionInfo(SifVersion.SIF20, "OtherIdList", 3, 0); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEEPERSONAL_STATEPROVINCEID = new ElementDefImpl( EMPLOYEEPERSONAL, "StateProvinceId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEEPERSONAL_NAME = new ElementDefImpl( EMPLOYEEPERSONAL, "Name", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEPERSONAL_STATEPROVINCEID = new ElementDefImpl( EMPLOYEEPERSONAL, "StateProvinceId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEEPERSONAL_NAME = new ElementDefImpl( EMPLOYEEPERSONAL, "Name", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.EMPLOYEEPERSONAL_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 4, 0); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEEPERSONAL_EMAILLIST = new ElementDefImpl( EMPLOYEEPERSONAL, "EmailList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEPERSONAL_EMAILLIST = new ElementDefImpl( EMPLOYEEPERSONAL, "EmailList", null, 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.EMPLOYEEPERSONAL_EMAILLIST.DefineVersionInfo(SifVersion.SIF20, "EmailList", 8, 0); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEEPERSONAL_DEMOGRAPHICS = new ElementDefImpl( EMPLOYEEPERSONAL, "Demographics", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEPERSONAL_DEMOGRAPHICS = new ElementDefImpl( EMPLOYEEPERSONAL, "Demographics", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.EMPLOYEEPERSONAL_SSN = new ElementDefImpl( EMPLOYEEPERSONAL, "Ssn", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEEPERSONAL_ADDRESSLIST = new ElementDefImpl( EMPLOYEEPERSONAL, "AddressList", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEPERSONAL_ADDRESSLIST = new ElementDefImpl( EMPLOYEEPERSONAL, "AddressList", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.EMPLOYEEPERSONAL_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF20, "AddressList", 6, 0); // (Sif 20 alias)
-		HrfinDTD.EMPLOYEEPERSONAL_PHONENUMBERLIST = new ElementDefImpl( EMPLOYEEPERSONAL, "PhoneNumberList", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEPERSONAL_PHONENUMBERLIST = new ElementDefImpl( EMPLOYEEPERSONAL, "PhoneNumberList", null, 8, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.EMPLOYEEPERSONAL_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF20, "PhoneNumberList", 7, 0); // (Sif 20 alias)
-		EMPLOYEEPERSONAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEEPERSONAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEEPERSONAL_SIF_METADATA = new ElementDefImpl( EMPLOYEEPERSONAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EMPLOYEEPERSONAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEEPERSONAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEEPERSONAL_SIF_METADATA = new ElementDefImpl( EMPLOYEEPERSONAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EmployeePicture> fields (2 entries)
-		HrfinDTD.EMPLOYEEPICTURE_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLOYEEPICTURE, "EmployeePersonalRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEEPICTURE_PICTURESOURCE = new ElementDefImpl( EMPLOYEEPICTURE, "PictureSource", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		EMPLOYEEPICTURE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEEPICTURE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEEPICTURE_SIF_METADATA = new ElementDefImpl( EMPLOYEEPICTURE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEPICTURE_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLOYEEPICTURE, "EmployeePersonalRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEEPICTURE_PICTURESOURCE = new ElementDefImpl( EMPLOYEEPICTURE, "PictureSource", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		EMPLOYEEPICTURE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEEPICTURE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEEPICTURE_SIF_METADATA = new ElementDefImpl( EMPLOYEEPICTURE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EmployeeWage> fields (3 entries)
-		HrfinDTD.EMPLOYEEWAGE_REFID = new ElementDefImpl( EMPLOYEEWAGE, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEEWAGE_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLOYEEWAGE, "EmployeePersonalRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYEEWAGE_PAYRATES = new ElementDefImpl( EMPLOYEEWAGE, "PayRates", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.EMPLOYEEWAGE_REFID = new ElementDefImpl( EMPLOYEEWAGE, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEEWAGE_EMPLOYEEPERSONALREFID = new ElementDefImpl( EMPLOYEEWAGE, "EmployeePersonalRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYEEWAGE_PAYRATES = new ElementDefImpl( EMPLOYEEWAGE, "PayRates", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.EMPLOYEEWAGE_PAYRATES.DefineVersionInfo(SifVersion.SIF20, "PayRates", 3, 0); // (Sif 20 alias)
-		EMPLOYEEWAGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEEWAGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYEEWAGE_SIF_METADATA = new ElementDefImpl( EMPLOYEEWAGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EMPLOYEEWAGE_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYEEWAGE, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYEEWAGE_SIF_METADATA = new ElementDefImpl( EMPLOYEEWAGE, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <EmployeeHR> fields (13 entries)
 		HrfinDTD.EMPLOYMENTRECORD_REFID = new ElementDefImpl( EMPLOYMENTRECORD, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYMENTRECORD_SIF_REFOBJECT = new ElementDefImpl( EMPLOYMENTRECORD, "SIF_RefObject", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYMENTRECORD_SIF_REFID = new ElementDefImpl( EMPLOYMENTRECORD, "SIF_RefId", "EmployeePersonalRefId", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYMENTRECORD_SIF_REFOBJECT = new ElementDefImpl( EMPLOYMENTRECORD, "SIF_RefObject", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYMENTRECORD_SIF_REFID = new ElementDefImpl( EMPLOYMENTRECORD, "SIF_RefId", "EmployeePersonalRefId", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.EMPLOYMENTRECORD_SIF_REFID.DefineVersionInfo(SifVersion.SIF20, "SIF_RefId", 1, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYMENTRECORD_LEAINFOREFID = new ElementDefImpl( EMPLOYMENTRECORD, "LEAInfoRefId", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EMPLOYMENTRECORD_ACTIVE = new ElementDefImpl( EMPLOYMENTRECORD, "Active", "~XPathSurrogate{Active/@Code=.}", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
+		HrfinDTD.EMPLOYMENTRECORD_LEAINFOREFID = new ElementDefImpl( EMPLOYMENTRECORD, "LEAInfoRefId", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYMENTRECORD_ACTIVE = new ElementDefImpl( EMPLOYMENTRECORD, "Active", "~XPathSurrogate{Active/@Code=.}", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
 		HrfinDTD.EMPLOYMENTRECORD_ACTIVE.DefineVersionInfo(SifVersion.SIF20, "Active", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYMENTRECORD_FULLTIMESTATUS = new ElementDefImpl( EMPLOYMENTRECORD, "FullTimeStatus", "~XPathSurrogate{FullTimeStatus/@Code=.}", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYMENTRECORD_FULLTIMESTATUS = new ElementDefImpl( EMPLOYMENTRECORD, "FullTimeStatus", "~XPathSurrogate{FullTimeStatus/@Code=.}", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.EMPLOYMENTRECORD_FULLTIMESTATUS.DefineVersionInfo(SifVersion.SIF20, "FullTimeStatus", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYMENTRECORD_HIREDATE = new ElementDefImpl( EMPLOYMENTRECORD, "HireDate", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.EMPLOYMENTRECORD_HIREDATE = new ElementDefImpl( EMPLOYMENTRECORD, "HireDate", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.EMPLOYMENTRECORD_HIREDATE.DefineVersionInfo(SifVersion.SIF20, "HireDate", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYMENTRECORD_TOTALYEARSEXPERIENCE = new ElementDefImpl( EMPLOYMENTRECORD, "TotalYearsExperience", "TotalYears", 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
+		HrfinDTD.EMPLOYMENTRECORD_TOTALYEARSEXPERIENCE = new ElementDefImpl( EMPLOYMENTRECORD, "TotalYearsExperience", "TotalYears", 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
 		HrfinDTD.EMPLOYMENTRECORD_TOTALYEARSEXPERIENCE.DefineVersionInfo(SifVersion.SIF20, "TotalYearsExperience", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYMENTRECORD_POSITIONTITLE = new ElementDefImpl( EMPLOYMENTRECORD, "PositionTitle", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYMENTRECORD_POSITIONTITLE = new ElementDefImpl( EMPLOYMENTRECORD, "PositionTitle", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.EMPLOYMENTRECORD_POSITIONTITLE.DefineVersionInfo(SifVersion.SIF20, "PositionTitle", 9, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYMENTRECORD_TERMINATIONDATE = new ElementDefImpl( EMPLOYMENTRECORD, "TerminationDate", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		HrfinDTD.EMPLOYMENTRECORD_POSITIONNUMBER = new ElementDefImpl( EMPLOYMENTRECORD, "PositionNumber", null, 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.EMPLOYMENTRECORD_TERMINATIONDATE = new ElementDefImpl( EMPLOYMENTRECORD, "TerminationDate", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		HrfinDTD.EMPLOYMENTRECORD_POSITIONNUMBER = new ElementDefImpl( EMPLOYMENTRECORD, "PositionNumber", null, 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.EMPLOYMENTRECORD_POSITIONNUMBER.DefineVersionInfo(SifVersion.SIF20, "PositionNumber", 10, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYMENTRECORD_SENIORITYDATE = new ElementDefImpl( EMPLOYMENTRECORD, "SeniorityDate", null, 9, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.EMPLOYMENTRECORD_SENIORITYDATE = new ElementDefImpl( EMPLOYMENTRECORD, "SeniorityDate", null, 9, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.EMPLOYMENTRECORD_SENIORITYDATE.DefineVersionInfo(SifVersion.SIF20, "SeniorityDate", 11, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.EMPLOYMENTRECORD_TENUREDATE = new ElementDefImpl( EMPLOYMENTRECORD, "TenureDate", null, 10, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.EMPLOYMENTRECORD_TENUREDATE = new ElementDefImpl( EMPLOYMENTRECORD, "TenureDate", null, 10, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.EMPLOYMENTRECORD_TENUREDATE.DefineVersionInfo(SifVersion.SIF20, "TenureDate", 12, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		EMPLOYMENTRECORD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYMENTRECORD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		EMPLOYMENTRECORD_SIF_METADATA = new ElementDefImpl( EMPLOYMENTRECORD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		EMPLOYMENTRECORD_SIF_EXTENDEDELEMENTS = new ElementDefImpl( EMPLOYMENTRECORD, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		EMPLOYMENTRECORD_SIF_METADATA = new ElementDefImpl( EMPLOYMENTRECORD, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <ExpenseAccount> fields (2 entries)
-		HrfinDTD.EXPENSEACCOUNT_ACCOUNTCODE = new ElementDefImpl( EXPENSEACCOUNT, "AccountCode", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.EXPENSEACCOUNT_AMOUNT = new ElementDefAlias( EXPENSEACCOUNT, "Amount", null, "MonetaryAmount", 2, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		HrfinDTD.EXPENSEACCOUNT_ACCOUNTCODE = new ElementDefImpl( EXPENSEACCOUNT, "AccountCode", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.EXPENSEACCOUNT_AMOUNT = new ElementDefAlias( EXPENSEACCOUNT, "Amount", null, "MonetaryAmount", 2, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <ExpenseAccounts> fields (1 entries)
-		HrfinDTD.EXPENSEACCOUNTS_EXPENSEACCOUNT = new ElementDefImpl( EXPENSEACCOUNTS, "ExpenseAccount", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.EXPENSEACCOUNTS_EXPENSEACCOUNT = new ElementDefImpl( EXPENSEACCOUNTS, "ExpenseAccount", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FederalTaxId> fields (1 entries)
-		HrfinDTD.FEDERALTAXID_CODE = new ElementDefImpl( FEDERALTAXID, "Code", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.FEDERALTAXID_CODE = new ElementDefImpl( FEDERALTAXID, "Code", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <FinancialAccount> fields (7 entries)
-		HrfinDTD.FINANCIALACCOUNT_REFID = new ElementDefImpl( FINANCIALACCOUNT, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALACCOUNT_ACCOUNTNUMBER = new ElementDefImpl( FINANCIALACCOUNT, "AccountNumber", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALACCOUNT_NAME = new ElementDefImpl( FINANCIALACCOUNT, "Name", "FinancialAccountName", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALACCOUNT_REFID = new ElementDefImpl( FINANCIALACCOUNT, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALACCOUNT_ACCOUNTNUMBER = new ElementDefImpl( FINANCIALACCOUNT, "AccountNumber", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALACCOUNT_NAME = new ElementDefImpl( FINANCIALACCOUNT, "Name", "FinancialAccountName", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.FINANCIALACCOUNT_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FINANCIALACCOUNT_DESCRIPTION = new ElementDefImpl( FINANCIALACCOUNT, "Description", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALACCOUNT_FINANCIALCLASSREFID = new ElementDefImpl( FINANCIALACCOUNT, "FinancialClassRefId", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALACCOUNT_CREATIONDATE = new ElementDefImpl( FINANCIALACCOUNT, "CreationDate", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		HrfinDTD.FINANCIALACCOUNT_CREATIONTIME = new ElementDefImpl( FINANCIALACCOUNT, "CreationTime", "~SIFTimeSurrogate{}", 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.TIME );
+		HrfinDTD.FINANCIALACCOUNT_DESCRIPTION = new ElementDefImpl( FINANCIALACCOUNT, "Description", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALACCOUNT_FINANCIALCLASSREFID = new ElementDefImpl( FINANCIALACCOUNT, "FinancialClassRefId", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALACCOUNT_CREATIONDATE = new ElementDefImpl( FINANCIALACCOUNT, "CreationDate", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		HrfinDTD.FINANCIALACCOUNT_CREATIONTIME = new ElementDefImpl( FINANCIALACCOUNT, "CreationTime", "~SIFTimeSurrogate{}", 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.TIME );
 		HrfinDTD.FINANCIALACCOUNT_CREATIONTIME.DefineVersionInfo(SifVersion.SIF20, "CreationTime", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		FINANCIALACCOUNT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALACCOUNT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALACCOUNT_SIF_METADATA = new ElementDefImpl( FINANCIALACCOUNT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FINANCIALACCOUNT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALACCOUNT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALACCOUNT_SIF_METADATA = new ElementDefImpl( FINANCIALACCOUNT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FinancialAccountAccountingPeriodLocationInfo> fields (4 entries)
-		HrfinDTD.FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_REFID = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_FINANCIALACCOUNTREFID = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "FinancialAccountRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_ACCOUNTINGPERIODREFID = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "AccountingPeriodRefId", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_LOCATIONINFOREFID = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "LocationInfoRefId", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_SIF_METADATA = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_REFID = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_FINANCIALACCOUNTREFID = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "FinancialAccountRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_ACCOUNTINGPERIODREFID = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "AccountingPeriodRefId", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_LOCATIONINFOREFID = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "LocationInfoRefId", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO_SIF_METADATA = new ElementDefImpl( FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FinAnnual> fields (4 entries)
-		HrfinDTD.FINANCIALANNUAL_REPORTDATE = new ElementDefImpl( FINANCIALANNUAL, "ReportDate", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		HrfinDTD.FINANCIALANNUAL_STATEPROVINCEID = new ElementDefImpl( FINANCIALANNUAL, "StateProvinceId", "StatePrId", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALANNUAL_REPORTDATE = new ElementDefImpl( FINANCIALANNUAL, "ReportDate", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		HrfinDTD.FINANCIALANNUAL_STATEPROVINCEID = new ElementDefImpl( FINANCIALANNUAL, "StateProvinceId", "StatePrId", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.FINANCIALANNUAL_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FINANCIALANNUAL_FISCALYEAR = new ElementDefImpl( FINANCIALANNUAL, "FiscalYear", "FiscalYr", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
+		HrfinDTD.FINANCIALANNUAL_FISCALYEAR = new ElementDefImpl( FINANCIALANNUAL, "FiscalYear", "FiscalYr", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
 		HrfinDTD.FINANCIALANNUAL_FISCALYEAR.DefineVersionInfo(SifVersion.SIF20, "FiscalYear", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FINANCIALANNUAL_ANNUALITEMS = new ElementDefImpl( FINANCIALANNUAL, "AnnualItems", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.FINANCIALANNUAL_ANNUALITEMS = new ElementDefImpl( FINANCIALANNUAL, "AnnualItems", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.FINANCIALANNUAL_ANNUALITEMS.DefineVersionInfo(SifVersion.SIF20, "AnnualItems", 4, 0); // (Sif 20 alias)
-		FINANCIALANNUAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALANNUAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALANNUAL_SIF_METADATA = new ElementDefImpl( FINANCIALANNUAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FINANCIALANNUAL_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALANNUAL, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALANNUAL_SIF_METADATA = new ElementDefImpl( FINANCIALANNUAL, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FinBudget> fields (4 entries)
-		HrfinDTD.FINANCIALBUDGET_REPORTDATE = new ElementDefImpl( FINANCIALBUDGET, "ReportDate", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		HrfinDTD.FINANCIALBUDGET_STATEPROVINCEID = new ElementDefImpl( FINANCIALBUDGET, "StateProvinceId", "StatePrId", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALBUDGET_REPORTDATE = new ElementDefImpl( FINANCIALBUDGET, "ReportDate", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		HrfinDTD.FINANCIALBUDGET_STATEPROVINCEID = new ElementDefImpl( FINANCIALBUDGET, "StateProvinceId", "StatePrId", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.FINANCIALBUDGET_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FINANCIALBUDGET_FISCALYEAR = new ElementDefImpl( FINANCIALBUDGET, "FiscalYear", "FiscalYr", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
+		HrfinDTD.FINANCIALBUDGET_FISCALYEAR = new ElementDefImpl( FINANCIALBUDGET, "FiscalYear", "FiscalYr", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
 		HrfinDTD.FINANCIALBUDGET_FISCALYEAR.DefineVersionInfo(SifVersion.SIF20, "FiscalYear", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FINANCIALBUDGET_BUDGETACCOUNTS = new ElementDefImpl( FINANCIALBUDGET, "BudgetAccounts", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.FINANCIALBUDGET_BUDGETACCOUNTS = new ElementDefImpl( FINANCIALBUDGET, "BudgetAccounts", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.FINANCIALBUDGET_BUDGETACCOUNTS.DefineVersionInfo(SifVersion.SIF20, "BudgetAccounts", 4, 0); // (Sif 20 alias)
-		FINANCIALBUDGET_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALBUDGET, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALBUDGET_SIF_METADATA = new ElementDefImpl( FINANCIALBUDGET, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FINANCIALBUDGET_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALBUDGET, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALBUDGET_SIF_METADATA = new ElementDefImpl( FINANCIALBUDGET, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FinancialClass> fields (4 entries)
-		HrfinDTD.FINANCIALCLASS_REFID = new ElementDefImpl( FINANCIALCLASS, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALCLASS_NAME = new ElementDefImpl( FINANCIALCLASS, "Name", "FinancialClassName", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALCLASS_REFID = new ElementDefImpl( FINANCIALCLASS, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALCLASS_NAME = new ElementDefImpl( FINANCIALCLASS, "Name", "FinancialClassName", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.FINANCIALCLASS_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FINANCIALCLASS_DESCRIPTION = new ElementDefImpl( FINANCIALCLASS, "Description", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALCLASS_CLASSTYPE = new ElementDefImpl( FINANCIALCLASS, "ClassType", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FINANCIALCLASS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALCLASS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALCLASS_SIF_METADATA = new ElementDefImpl( FINANCIALCLASS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.FINANCIALCLASS_DESCRIPTION = new ElementDefImpl( FINANCIALCLASS, "Description", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALCLASS_CLASSTYPE = new ElementDefImpl( FINANCIALCLASS, "ClassType", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FINANCIALCLASS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALCLASS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALCLASS_SIF_METADATA = new ElementDefImpl( FINANCIALCLASS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FinancialIncomeStatement> fields (7 entries)
-		HrfinDTD.FINANCIALINCOMESTATEMENT_REFID = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALINCOMESTATEMENT_GENERATIONDATE = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "GenerationDate", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		HrfinDTD.FINANCIALINCOMESTATEMENT_GENERATIONTIME = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "GenerationTime", "~SIFTimeSurrogate{}", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.TIME );
+		HrfinDTD.FINANCIALINCOMESTATEMENT_REFID = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALINCOMESTATEMENT_GENERATIONDATE = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "GenerationDate", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		HrfinDTD.FINANCIALINCOMESTATEMENT_GENERATIONTIME = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "GenerationTime", "~SIFTimeSurrogate{}", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.TIME );
 		HrfinDTD.FINANCIALINCOMESTATEMENT_GENERATIONTIME.DefineVersionInfo(SifVersion.SIF20, "GenerationTime", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FINANCIALINCOMESTATEMENT_LOCATIONINFOREFID = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "LocationInfoRefId", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALINCOMESTATEMENT_PERIOD = new ElementDefAlias( FINANCIALINCOMESTATEMENT, "Period", "FISPeriod", "FISPeriod", 5, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.FINANCIALINCOMESTATEMENT_LOCATIONINFOREFID = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "LocationInfoRefId", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALINCOMESTATEMENT_PERIOD = new ElementDefAlias( FINANCIALINCOMESTATEMENT, "Period", "FISPeriod", "FISPeriod", 5, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.FINANCIALINCOMESTATEMENT_PERIOD.DefineVersionInfo(SifVersion.SIF20, "Period", 5, 0); // (Sif 20 alias)
-		HrfinDTD.FINANCIALINCOMESTATEMENT_AMOUNTS = new ElementDefAlias( FINANCIALINCOMESTATEMENT, "Amounts", null, "FISAmounts", 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.FINANCIALINCOMESTATEMENT_AMOUNTS = new ElementDefAlias( FINANCIALINCOMESTATEMENT, "Amounts", null, "FISAmounts", 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.FINANCIALINCOMESTATEMENT_AMOUNTS.DefineVersionInfo(SifVersion.SIF20, "Amounts", 6, 0); // (Sif 20 alias)
-		HrfinDTD.FINANCIALINCOMESTATEMENT_PROGRAM = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "Program", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FINANCIALINCOMESTATEMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALINCOMESTATEMENT_SIF_METADATA = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.FINANCIALINCOMESTATEMENT_PROGRAM = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "Program", null, 7, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FINANCIALINCOMESTATEMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALINCOMESTATEMENT_SIF_METADATA = new ElementDefImpl( FINANCIALINCOMESTATEMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FinancialTransaction> fields (6 entries)
-		HrfinDTD.FINANCIALTRANSACTION_REFID = new ElementDefImpl( FINANCIALTRANSACTION, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALTRANSACTION_TRANSACTIONDATE = new ElementDefImpl( FINANCIALTRANSACTION, "TransactionDate", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.FINANCIALTRANSACTION_REFID = new ElementDefImpl( FINANCIALTRANSACTION, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALTRANSACTION_TRANSACTIONDATE = new ElementDefImpl( FINANCIALTRANSACTION, "TransactionDate", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.FINANCIALTRANSACTION_TRANSACTIONDATE.DefineVersionInfo(SifVersion.SIF20, "TransactionDate", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FINANCIALTRANSACTION_TRANSACTIONTIME = new ElementDefImpl( FINANCIALTRANSACTION, "TransactionTime", "~SIFTimeSurrogate{}", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.TIME );
+		HrfinDTD.FINANCIALTRANSACTION_TRANSACTIONTIME = new ElementDefImpl( FINANCIALTRANSACTION, "TransactionTime", "~SIFTimeSurrogate{}", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.TIME );
 		HrfinDTD.FINANCIALTRANSACTION_TRANSACTIONTIME.DefineVersionInfo(SifVersion.SIF20, "TransactionTime", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FINANCIALTRANSACTION_AMOUNTS = new ElementDefAlias( FINANCIALTRANSACTION, "Amounts", null, "FTAmounts", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.FINANCIALTRANSACTION_AMOUNTS = new ElementDefAlias( FINANCIALTRANSACTION, "Amounts", null, "FTAmounts", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.FINANCIALTRANSACTION_AMOUNTS.DefineVersionInfo(SifVersion.SIF20, "Amounts", 4, 0); // (Sif 20 alias)
-		HrfinDTD.FINANCIALTRANSACTION_PROGRAM = new ElementDefImpl( FINANCIALTRANSACTION, "Program", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FINANCIALTRANSACTION_DESCRIPTION = new ElementDefImpl( FINANCIALTRANSACTION, "Description", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		FINANCIALTRANSACTION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALTRANSACTION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FINANCIALTRANSACTION_SIF_METADATA = new ElementDefImpl( FINANCIALTRANSACTION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.FINANCIALTRANSACTION_PROGRAM = new ElementDefImpl( FINANCIALTRANSACTION, "Program", null, 5, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FINANCIALTRANSACTION_DESCRIPTION = new ElementDefImpl( FINANCIALTRANSACTION, "Description", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		FINANCIALTRANSACTION_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FINANCIALTRANSACTION, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FINANCIALTRANSACTION_SIF_METADATA = new ElementDefImpl( FINANCIALTRANSACTION, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FISAmount> fields (3 entries)
-		HrfinDTD.FISAMOUNT_CURRENCY = new ElementDefImpl( FISAMOUNT, "Currency", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FISAMOUNT_FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFOREFID = new ElementDefImpl( FISAMOUNT, "FinancialAccountAccountingPeriodLocationInfoRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.FISAMOUNT_CURRENCY = new ElementDefImpl( FISAMOUNT, "Currency", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FISAMOUNT_FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFOREFID = new ElementDefImpl( FISAMOUNT, "FinancialAccountAccountingPeriodLocationInfoRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.FISAMOUNT_FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFOREFID.DefineVersionInfo(SifVersion.SIF20, "FinancialAccountAccountingPeriodLocationInfoRefId", 2, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
-		HrfinDTD.FISAMOUNT_FINANCIALCLASSREFID = new ElementDefImpl( FISAMOUNT, "FinancialClassRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.FISAMOUNT_FINANCIALCLASSREFID = new ElementDefImpl( FISAMOUNT, "FinancialClassRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.FISAMOUNT_FINANCIALCLASSREFID.DefineVersionInfo(SifVersion.SIF20, "FinancialClassRefId", 3, (ElementDefImpl.FD_ATTRIBUTE)); // (Sif 20 alias)
 
 		// <FISAmounts> fields (1 entries)
-		HrfinDTD.FISAMOUNTS_AMOUNT = new ElementDefAlias( FISAMOUNTS, "Amount", "FISAmount", "FISAmount", 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		HrfinDTD.FISAMOUNTS_AMOUNT = new ElementDefAlias( FISAMOUNTS, "Amount", "FISAmount", "FISAmount", 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		HrfinDTD.FISAMOUNTS_AMOUNT.DefineVersionInfo(SifVersion.SIF20, "Amount", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <FiscalYear> fields (4 entries)
-		HrfinDTD.FISCALYEAR_REFID = new ElementDefImpl( FISCALYEAR, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FISCALYEAR_DESCRIPTION = new ElementDefImpl( FISCALYEAR, "Description", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FISCALYEAR_STARTDATE = new ElementDefImpl( FISCALYEAR, "StartDate", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.FISCALYEAR_REFID = new ElementDefImpl( FISCALYEAR, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FISCALYEAR_DESCRIPTION = new ElementDefImpl( FISCALYEAR, "Description", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FISCALYEAR_STARTDATE = new ElementDefImpl( FISCALYEAR, "StartDate", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.FISCALYEAR_STARTDATE.DefineVersionInfo(SifVersion.SIF20, "StartDate", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FISCALYEAR_ENDDATE = new ElementDefImpl( FISCALYEAR, "EndDate", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.FISCALYEAR_ENDDATE = new ElementDefImpl( FISCALYEAR, "EndDate", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.FISCALYEAR_ENDDATE.DefineVersionInfo(SifVersion.SIF20, "EndDate", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		FISCALYEAR_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FISCALYEAR, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		FISCALYEAR_SIF_METADATA = new ElementDefImpl( FISCALYEAR, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		FISCALYEAR_SIF_EXTENDEDELEMENTS = new ElementDefImpl( FISCALYEAR, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		FISCALYEAR_SIF_METADATA = new ElementDefImpl( FISCALYEAR, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <FISPeriod> fields (2 entries)
-		HrfinDTD.FISPERIOD_STARTDATE = new ElementDefImpl( FISPERIOD, "StartDate", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.FISPERIOD_STARTDATE = new ElementDefImpl( FISPERIOD, "StartDate", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.FISPERIOD_STARTDATE.DefineVersionInfo(SifVersion.SIF20, "StartDate", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.FISPERIOD_ENDDATE = new ElementDefImpl( FISPERIOD, "EndDate", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.FISPERIOD_ENDDATE = new ElementDefImpl( FISPERIOD, "EndDate", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
 		HrfinDTD.FISPERIOD_ENDDATE.DefineVersionInfo(SifVersion.SIF20, "EndDate", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
 
 		// <FTAmount> fields (3 entries)
-		HrfinDTD.FTAMOUNT_FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFOREFID = new ElementDefImpl( FTAMOUNT, "FinancialAccountAccountingPeriodLocationInfoRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FTAMOUNT_TYPE = new ElementDefImpl( FTAMOUNT, "Type", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.FTAMOUNT_CURRENCY = new ElementDefImpl( FTAMOUNT, "Currency", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.FTAMOUNT_FINANCIALACCOUNTACCOUNTINGPERIODLOCATIONINFOREFID = new ElementDefImpl( FTAMOUNT, "FinancialAccountAccountingPeriodLocationInfoRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FTAMOUNT_TYPE = new ElementDefImpl( FTAMOUNT, "Type", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.FTAMOUNT_CURRENCY = new ElementDefImpl( FTAMOUNT, "Currency", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Amounts> fields (1 entries)
-		HrfinDTD.FTAMOUNTS_AMOUNT = new ElementDefAlias( FTAMOUNTS, "Amount", "FTAmount", "FTAmount", 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		HrfinDTD.FTAMOUNTS_AMOUNT = new ElementDefAlias( FTAMOUNTS, "Amount", "FTAmount", "FTAmount", 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		HrfinDTD.FTAMOUNTS_AMOUNT.DefineVersionInfo(SifVersion.SIF20, "Amount", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <HrOtherIdList> fields (1 entries)
-		HrfinDTD.HROTHERIDLIST_OTHERID = new ElementDefImpl( HROTHERIDLIST, "OtherId", "HROtherId", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.HROTHERIDLIST_OTHERID = new ElementDefImpl( HROTHERIDLIST, "OtherId", "HROtherId", 1, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.HROTHERIDLIST_OTHERID.DefineVersionInfo(SifVersion.SIF20, "OtherId", 1, (ElementDefImpl.FD_REPEATABLE)); // (Sif 20 alias)
 
 		// <HRProgramType> fields (2 entries)
-		HrfinDTD.HRPROGRAMTYPE_CODE = new ElementDefImpl( HRPROGRAMTYPE, "Code", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.HRPROGRAMTYPE_OTHERCODELIST = new ElementDefImpl( HRPROGRAMTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.HRPROGRAMTYPE_CODE = new ElementDefImpl( HRPROGRAMTYPE, "Code", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.HRPROGRAMTYPE_OTHERCODELIST = new ElementDefImpl( HRPROGRAMTYPE, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <JobClassification> fields (2 entries)
-		HrfinDTD.JOBCLASSIFICATION_CODE = new ElementDefImpl( JOBCLASSIFICATION, "Code", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.JOBCLASSIFICATION_CODE = new ElementDefImpl( JOBCLASSIFICATION, "Code", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.JOBCLASSIFICATION_CODE.DefineVersionInfo(SifVersion.SIF20, "Code", 1, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.JOBCLASSIFICATION_OTHERCODELIST = new ElementDefImpl( JOBCLASSIFICATION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.JOBCLASSIFICATION_OTHERCODELIST = new ElementDefImpl( JOBCLASSIFICATION, "OtherCodeList", null, 2, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <LEAInfoRefId> fields (0 entries)
 
 		// <LocationInfo> fields (15 entries)
-		HrfinDTD.LOCATIONINFO_REFID = new ElementDefImpl( LOCATIONINFO, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.LOCATIONINFO_LOCATIONTYPE = new ElementDefImpl( LOCATIONINFO, "LocationType", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.LOCATIONINFO_SITECATEGORY = new ElementDefImpl( LOCATIONINFO, "SiteCategory", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.LOCATIONINFO_NAME = new ElementDefImpl( LOCATIONINFO, "Name", "LocationName", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_REFID = new ElementDefImpl( LOCATIONINFO, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_LOCATIONTYPE = new ElementDefImpl( LOCATIONINFO, "LocationType", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_SITECATEGORY = new ElementDefImpl( LOCATIONINFO, "SiteCategory", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_NAME = new ElementDefImpl( LOCATIONINFO, "Name", "LocationName", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.LOCATIONINFO_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.LOCATIONINFO_DESCRIPTION = new ElementDefImpl( LOCATIONINFO, "Description", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.LOCATIONINFO_LOCALID = new ElementDefImpl( LOCATIONINFO, "LocalId", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.LOCATIONINFO_IDENTIFICATIONINFOLIST = new ElementDefImpl( LOCATIONINFO, "IdentificationInfoList", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.LOCATIONINFO_DESCRIPTION = new ElementDefImpl( LOCATIONINFO, "Description", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_LOCALID = new ElementDefImpl( LOCATIONINFO, "LocalId", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_IDENTIFICATIONINFOLIST = new ElementDefImpl( LOCATIONINFO, "IdentificationInfoList", null, 7, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.LOCATIONINFO_IDENTIFICATIONINFOLIST.DefineVersionInfo(SifVersion.SIF20, "IdentificationInfoList", 7, 0); // (Sif 20 alias)
-		HrfinDTD.LOCATIONINFO_STATEPROVINCEID = new ElementDefImpl( LOCATIONINFO, "StateProvinceId", "StatePrId", 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_STATEPROVINCEID = new ElementDefImpl( LOCATIONINFO, "StateProvinceId", "StatePrId", 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.LOCATIONINFO_STATEPROVINCEID.DefineVersionInfo(SifVersion.SIF20, "StateProvinceId", 8, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.LOCATIONINFO_NCESID = new ElementDefImpl( LOCATIONINFO, "NCESId", null, 9, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.LOCATIONINFO_LEAINFOREFID = new ElementDefImpl( LOCATIONINFO, "LEAInfoRefId", "~XPathSurrogate{SchoolDistrict/@LEAInfoRefId=.}SchoolDistrict", 10, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_NCESID = new ElementDefImpl( LOCATIONINFO, "NCESId", null, 9, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_LEAINFOREFID = new ElementDefImpl( LOCATIONINFO, "LEAInfoRefId", "~XPathSurrogate{SchoolDistrict/@LEAInfoRefId=.}SchoolDistrict", 10, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.LOCATIONINFO_LEAINFOREFID.DefineVersionInfo(SifVersion.SIF20, "LEAInfoRefId", 10, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.LOCATIONINFO_OTHERLEAS = new ElementDefImpl( LOCATIONINFO, "OtherLEAs", null, 11, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.LOCATIONINFO_OTHERLEAS = new ElementDefImpl( LOCATIONINFO, "OtherLEAs", null, 11, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.LOCATIONINFO_OTHERLEAS.DefineVersionInfo(SifVersion.SIF20, "OtherLEAs", 11, 0); // (Sif 20 alias)
-		HrfinDTD.LOCATIONINFO_PARENTLOCATIONINFO = new ElementDefImpl( LOCATIONINFO, "ParentLocationInfo", null, 12, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.LOCATIONINFO_SCHOOLINFOREFID = new ElementDefImpl( LOCATIONINFO, "SchoolInfoRefId", "~XPathSurrogate{School/@SchoolInfoRefId=.}School", 13, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_PARENTLOCATIONINFO = new ElementDefImpl( LOCATIONINFO, "ParentLocationInfo", null, 12, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.LOCATIONINFO_SCHOOLINFOREFID = new ElementDefImpl( LOCATIONINFO, "SchoolInfoRefId", "~XPathSurrogate{School/@SchoolInfoRefId=.}School", 13, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.LOCATIONINFO_SCHOOLINFOREFID.DefineVersionInfo(SifVersion.SIF20, "SchoolInfoRefId", 13, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.LOCATIONINFO_ADDRESSLIST = new ElementDefImpl( LOCATIONINFO, "AddressList", null, 14, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.LOCATIONINFO_ADDRESSLIST = new ElementDefImpl( LOCATIONINFO, "AddressList", null, 14, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.LOCATIONINFO_ADDRESSLIST.DefineVersionInfo(SifVersion.SIF20, "AddressList", 14, 0); // (Sif 20 alias)
-		HrfinDTD.LOCATIONINFO_PHONENUMBERLIST = new ElementDefImpl( LOCATIONINFO, "PhoneNumberList", null, 15, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.LOCATIONINFO_PHONENUMBERLIST = new ElementDefImpl( LOCATIONINFO, "PhoneNumberList", null, 15, SifDtd.COMMON, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.LOCATIONINFO_PHONENUMBERLIST.DefineVersionInfo(SifVersion.SIF20, "PhoneNumberList", 15, 0); // (Sif 20 alias)
-		LOCATIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LOCATIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		LOCATIONINFO_SIF_METADATA = new ElementDefImpl( LOCATIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		LOCATIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( LOCATIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		LOCATIONINFO_SIF_METADATA = new ElementDefImpl( LOCATIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <OtherLEAs> fields (1 entries)
-		HrfinDTD.OTHERLEAS_LEAINFOREFID = new ElementDefImpl( OTHERLEAS, "LEAInfoRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.OTHERLEAS_LEAINFOREFID = new ElementDefImpl( OTHERLEAS, "LEAInfoRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <LocationInfoRefId> fields (1 entries)
-		HrfinDTD.PARENTLOCATIONINFO_SIF_REFOBJECT = new ElementDefImpl( PARENTLOCATIONINFO, "SIF_RefObject", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.PARENTLOCATIONINFO_SIF_REFOBJECT = new ElementDefImpl( PARENTLOCATIONINFO, "SIF_RefObject", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <Payment> fields (7 entries)
-		HrfinDTD.PAYMENT_REFID = new ElementDefImpl( PAYMENT, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.PAYMENT_REFID = new ElementDefImpl( PAYMENT, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.PAYMENT_ENTITYID = new ElementDefImpl( PAYMENT, "EntityId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		HrfinDTD.PAYMENT_BILLINGREFID = new ElementDefImpl( PAYMENT, "BillingRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.PAYMENT_RECEIVEDDATE = new ElementDefImpl( PAYMENT, "ReceivedDate", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DATE );
-		HrfinDTD.PAYMENT_TRANSACTIONDESCRIPTION = new ElementDefImpl( PAYMENT, "TransactionDescription", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.PAYMENT_BILLINGREFID = new ElementDefImpl( PAYMENT, "BillingRefId", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.PAYMENT_RECEIVEDDATE = new ElementDefImpl( PAYMENT, "ReceivedDate", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DATE );
+		HrfinDTD.PAYMENT_TRANSACTIONDESCRIPTION = new ElementDefImpl( PAYMENT, "TransactionDescription", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.PAYMENT_TRANSACTIONDESCRIPTION.DefineVersionInfo(SifVersion.SIF20, "TransactionDescription", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.PAYMENT_RECEIVEDAMOUNT = new ElementDefAlias( PAYMENT, "ReceivedAmount", null, "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		HrfinDTD.PAYMENT_RECEIVEDAMOUNT = new ElementDefAlias( PAYMENT, "ReceivedAmount", null, "MonetaryAmount", 5, SifDtd.GLOBAL, null, 0, SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 		HrfinDTD.PAYMENT_RECEIVEDAMOUNT.DefineVersionInfo(SifVersion.SIF20, "ReceivedAmount", 4, 0); // (Sif 20 alias)
-		HrfinDTD.PAYMENT_RECEIVEDTRANSACTIONID = new ElementDefImpl( PAYMENT, "ReceivedTransactionId", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.PAYMENT_RECEIVEDTRANSACTIONID = new ElementDefImpl( PAYMENT, "ReceivedTransactionId", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF11, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.PAYMENT_RECEIVEDTRANSACTIONID.DefineVersionInfo(SifVersion.SIF20, "ReceivedTransactionId", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		PAYMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PAYMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		PAYMENT_SIF_METADATA = new ElementDefImpl( PAYMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		PAYMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PAYMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		PAYMENT_SIF_METADATA = new ElementDefImpl( PAYMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <PayRate> fields (3 entries)
-		HrfinDTD.PAYRATE_TYPE = new ElementDefImpl( PAYRATE, "Type", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.PAYRATE_AMOUNT = new ElementDefAlias( PAYRATE, "Amount", null, "MonetaryAmount", 2, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		HrfinDTD.PAYRATE_PERCENTAGE = new ElementDefImpl( PAYRATE, "Percentage", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
+		HrfinDTD.PAYRATE_TYPE = new ElementDefImpl( PAYRATE, "Type", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.PAYRATE_AMOUNT = new ElementDefAlias( PAYRATE, "Amount", null, "MonetaryAmount", 2, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		HrfinDTD.PAYRATE_PERCENTAGE = new ElementDefImpl( PAYRATE, "Percentage", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
 
 		// <PayRates> fields (1 entries)
-		HrfinDTD.PAYRATES_PAYRATE = new ElementDefImpl( PAYRATES, "PayRate", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.PAYRATES_PAYRATE = new ElementDefImpl( PAYRATES, "PayRate", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF26 );
 
 		// <Period> fields (2 entries)
-		HrfinDTD.PERIOD_STARTDATE = new ElementDefImpl( PERIOD, "StartDate", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
-		HrfinDTD.PERIOD_ENDDATE = new ElementDefImpl( PERIOD, "EndDate", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF25, SifTypeConverters.DATE );
+		HrfinDTD.PERIOD_STARTDATE = new ElementDefImpl( PERIOD, "StartDate", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
+		HrfinDTD.PERIOD_ENDDATE = new ElementDefImpl( PERIOD, "EndDate", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF20, SifVersion.SIF26, SifTypeConverters.DATE );
 
 		// <Purchasing> fields (8 entries)
-		HrfinDTD.PURCHASING_REFID = new ElementDefImpl( PURCHASING, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.PURCHASING_FORMTYPE = new ElementDefImpl( PURCHASING, "FormType", "~XPathSurrogate{FormType/@Code=.}", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.PURCHASING_REFID = new ElementDefImpl( PURCHASING, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.PURCHASING_FORMTYPE = new ElementDefImpl( PURCHASING, "FormType", "~XPathSurrogate{FormType/@Code=.}", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.PURCHASING_FORMTYPE.DefineVersionInfo(SifVersion.SIF20, "FormType", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.PURCHASING_FORMNUMBER = new ElementDefImpl( PURCHASING, "FormNumber", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.PURCHASING_FORMNUMBER = new ElementDefImpl( PURCHASING, "FormNumber", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.PURCHASING_FORMNUMBER.DefineVersionInfo(SifVersion.SIF20, "FormNumber", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.PURCHASING_FISCALYEARREFID = new ElementDefImpl( PURCHASING, "FiscalYearRefId", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.PURCHASING_VENDORINFOREFID = new ElementDefImpl( PURCHASING, "VendorInfoRefId", "~XPathSurrogate{Vendor/@VendorInfoRefId=.}Vendor", 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.PURCHASING_FISCALYEARREFID = new ElementDefImpl( PURCHASING, "FiscalYearRefId", null, 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.PURCHASING_VENDORINFOREFID = new ElementDefImpl( PURCHASING, "VendorInfoRefId", "~XPathSurrogate{Vendor/@VendorInfoRefId=.}Vendor", 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.PURCHASING_VENDORINFOREFID.DefineVersionInfo(SifVersion.SIF20, "VendorInfoRefId", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.PURCHASING_LOCATIONINFOREFID = new ElementDefImpl( PURCHASING, "LocationInfoRefId", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.PURCHASING_EMPLOYEEPERSONALREFID = new ElementDefImpl( PURCHASING, "EmployeePersonalRefId", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.PURCHASING_PURCHASINGITEMS = new ElementDefImpl( PURCHASING, "PurchasingItems", null, 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.PURCHASING_LOCATIONINFOREFID = new ElementDefImpl( PURCHASING, "LocationInfoRefId", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.PURCHASING_EMPLOYEEPERSONALREFID = new ElementDefImpl( PURCHASING, "EmployeePersonalRefId", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.PURCHASING_PURCHASINGITEMS = new ElementDefImpl( PURCHASING, "PurchasingItems", null, 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.PURCHASING_PURCHASINGITEMS.DefineVersionInfo(SifVersion.SIF20, "PurchasingItems", 8, 0); // (Sif 20 alias)
-		PURCHASING_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PURCHASING, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		PURCHASING_SIF_METADATA = new ElementDefImpl( PURCHASING, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		PURCHASING_SIF_EXTENDEDELEMENTS = new ElementDefImpl( PURCHASING, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		PURCHASING_SIF_METADATA = new ElementDefImpl( PURCHASING, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <PurchasingItem> fields (5 entries)
-		HrfinDTD.PURCHASINGITEM_ITEMNUMBER = new ElementDefImpl( PURCHASINGITEM, "ItemNumber", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.PURCHASINGITEM_ITEMDESCRIPTION = new ElementDefImpl( PURCHASINGITEM, "ItemDescription", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.PURCHASINGITEM_QUANTITY = new ElementDefImpl( PURCHASINGITEM, "Quantity", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.PURCHASINGITEM_UNITCOST = new ElementDefAlias( PURCHASINGITEM, "UnitCost", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		HrfinDTD.PURCHASINGITEM_EXPENSEACCOUNTS = new ElementDefImpl( PURCHASINGITEM, "ExpenseAccounts", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF25 );
+		HrfinDTD.PURCHASINGITEM_ITEMNUMBER = new ElementDefImpl( PURCHASINGITEM, "ItemNumber", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.PURCHASINGITEM_ITEMDESCRIPTION = new ElementDefImpl( PURCHASINGITEM, "ItemDescription", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.PURCHASINGITEM_QUANTITY = new ElementDefImpl( PURCHASINGITEM, "Quantity", null, 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.PURCHASINGITEM_UNITCOST = new ElementDefAlias( PURCHASINGITEM, "UnitCost", null, "MonetaryAmount", 4, SifDtd.GLOBAL, null, 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		HrfinDTD.PURCHASINGITEM_EXPENSEACCOUNTS = new ElementDefImpl( PURCHASINGITEM, "ExpenseAccounts", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_COLLAPSE), SifVersion.SIF15r1, SifVersion.SIF26 );
 		HrfinDTD.PURCHASINGITEM_EXPENSEACCOUNTS.DefineVersionInfo(SifVersion.SIF20, "ExpenseAccounts", 5, 0); // (Sif 20 alias)
 
 		// <PurchasingItems> fields (1 entries)
-		HrfinDTD.PURCHASINGITEMS_PURCHASINGITEM = new ElementDefImpl( PURCHASINGITEMS, "PurchasingItem", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.PURCHASINGITEMS_PURCHASINGITEM = new ElementDefImpl( PURCHASINGITEMS, "PurchasingItem", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <School> fields (1 entries)
 		HrfinDTD.SCHOOL_SCHOOLINFOREFID = new ElementDefImpl( SCHOOL, "SchoolInfoRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
@@ -1220,52 +1256,52 @@ namespace OpenADK.Library.us.Hrfin
 		HrfinDTD.SISID_STAFFPERSONALREFID = new ElementDefImpl( SISID, "StaffPersonalRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
 
 		// <TimeWorked> fields (7 entries)
-		HrfinDTD.TIMEWORKED_REFID = new ElementDefImpl( TIMEWORKED, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.TIMEWORKED_EMPLOYEEPERSONALREFID = new ElementDefImpl( TIMEWORKED, "EmployeePersonalRefId", "~XPathSurrogate{EmployeeId/@EmployeePersonalRefId=.}EmployeeId", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.TIMEWORKED_REFID = new ElementDefImpl( TIMEWORKED, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.TIMEWORKED_EMPLOYEEPERSONALREFID = new ElementDefImpl( TIMEWORKED, "EmployeePersonalRefId", "~XPathSurrogate{EmployeeId/@EmployeePersonalRefId=.}EmployeeId", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.TIMEWORKED_EMPLOYEEPERSONALREFID.DefineVersionInfo(SifVersion.SIF20, "EmployeePersonalRefId", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.TIMEWORKED_LOCATIONINFOREFID = new ElementDefImpl( TIMEWORKED, "LocationInfoRefId", "~XPathSurrogate{EmployeeSiteId/@LocationInfoRefId=.}EmployeeSiteId", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.TIMEWORKED_LOCATIONINFOREFID = new ElementDefImpl( TIMEWORKED, "LocationInfoRefId", "~XPathSurrogate{EmployeeSiteId/@LocationInfoRefId=.}EmployeeSiteId", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.TIMEWORKED_LOCATIONINFOREFID.DefineVersionInfo(SifVersion.SIF20, "LocationInfoRefId", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.TIMEWORKED_JOBFUNCTION = new ElementDefImpl( TIMEWORKED, "JobFunction", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25 );
-		HrfinDTD.TIMEWORKED_REGULARHOURS = new ElementDefImpl( TIMEWORKED, "RegularHours", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		HrfinDTD.TIMEWORKED_OVERTIMEHOURS = new ElementDefImpl( TIMEWORKED, "OvertimeHours", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DECIMAL );
-		HrfinDTD.TIMEWORKED_PAYPERIOD = new ElementDefImpl( TIMEWORKED, "PayPeriod", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		TIMEWORKED_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TIMEWORKED, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		TIMEWORKED_SIF_METADATA = new ElementDefImpl( TIMEWORKED, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.TIMEWORKED_JOBFUNCTION = new ElementDefImpl( TIMEWORKED, "JobFunction", null, 4, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26 );
+		HrfinDTD.TIMEWORKED_REGULARHOURS = new ElementDefImpl( TIMEWORKED, "RegularHours", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		HrfinDTD.TIMEWORKED_OVERTIMEHOURS = new ElementDefImpl( TIMEWORKED, "OvertimeHours", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DECIMAL );
+		HrfinDTD.TIMEWORKED_PAYPERIOD = new ElementDefImpl( TIMEWORKED, "PayPeriod", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		TIMEWORKED_SIF_EXTENDEDELEMENTS = new ElementDefImpl( TIMEWORKED, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		TIMEWORKED_SIF_METADATA = new ElementDefImpl( TIMEWORKED, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <VendorInfo> fields (11 entries)
-		HrfinDTD.VENDORINFO_REFID = new ElementDefImpl( VENDORINFO, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.VENDORINFO_NAME = new ElementDefImpl( VENDORINFO, "Name", "VendorName", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.VENDORINFO_REFID = new ElementDefImpl( VENDORINFO, "RefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.VENDORINFO_NAME = new ElementDefImpl( VENDORINFO, "Name", "VendorName", 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.VENDORINFO_NAME.DefineVersionInfo(SifVersion.SIF20, "Name", 2, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.VENDORINFO_CONTACTINFO = new ElementDefImpl( VENDORINFO, "ContactInfo", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF25 );
+		HrfinDTD.VENDORINFO_CONTACTINFO = new ElementDefImpl( VENDORINFO, "ContactInfo", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF20, SifVersion.SIF26 );
 		HrfinDTD.VENDORINFO_ADDRESS = new ElementDefImpl( VENDORINFO, "Address", null, 3, SifDtd.COMMON, "us", 0, SifVersion.SIF15r1, SifVersion.SIF15r1 );
 		HrfinDTD.VENDORINFO_PHONENUMBER = new ElementDefImpl( VENDORINFO, "PhoneNumber", "~PhoneNumberSurrogate{}", 4, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF15r1 );
 		HrfinDTD.VENDORINFO_EMAIL = new ElementDefImpl( VENDORINFO, "Email", null, 5, SifDtd.COMMON, "us", (ElementDefImpl.FD_REPEATABLE), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
 		HrfinDTD.VENDORINFO_CONTACTNAME = new ElementDefImpl( VENDORINFO, "ContactName", null, 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF15r1, SifTypeConverters.STRING );
-		HrfinDTD.VENDORINFO_CUSTOMERID = new ElementDefImpl( VENDORINFO, "CustomerId", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.VENDORINFO_CUSTOMERID = new ElementDefImpl( VENDORINFO, "CustomerId", null, 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.VENDORINFO_CUSTOMERID.DefineVersionInfo(SifVersion.SIF20, "CustomerId", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.VENDORINFO_EMPLOYEEPERSONALREFID = new ElementDefImpl( VENDORINFO, "EmployeePersonalRefId", "~XPathSurrogate{EmployeeId/@EmployeePersonalRefId=.}EmployeeId", 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.VENDORINFO_EMPLOYEEPERSONALREFID = new ElementDefImpl( VENDORINFO, "EmployeePersonalRefId", "~XPathSurrogate{EmployeeId/@EmployeePersonalRefId=.}EmployeeId", 8, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.VENDORINFO_EMPLOYEEPERSONALREFID.DefineVersionInfo(SifVersion.SIF20, "EmployeePersonalRefId", 5, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.VENDORINFO_SEND1099 = new ElementDefImpl( VENDORINFO, "Send1099", "~XPathSurrogate{Send1099/@Code=.}", 9, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
+		HrfinDTD.VENDORINFO_SEND1099 = new ElementDefImpl( VENDORINFO, "Send1099", "~XPathSurrogate{Send1099/@Code=.}", 9, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
 		HrfinDTD.VENDORINFO_SEND1099.DefineVersionInfo(SifVersion.SIF20, "Send1099", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.VENDORINFO_FEDERALTAXID = new ElementDefImpl( VENDORINFO, "FederalTaxId", null, 10, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.VENDORINFO_FEDERALTAXID = new ElementDefImpl( VENDORINFO, "FederalTaxId", null, 10, SifDtd.HRFIN, "us", 0, SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.VENDORINFO_FEDERALTAXID.DefineVersionInfo(SifVersion.SIF20, "FederalTaxId", 7, 0); // (Sif 20 alias)
-		VENDORINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( VENDORINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		VENDORINFO_SIF_METADATA = new ElementDefImpl( VENDORINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		VENDORINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( VENDORINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		VENDORINFO_SIF_METADATA = new ElementDefImpl( VENDORINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <W4> fields (7 entries)
-		HrfinDTD.W4_EMPLOYEEPERSONALREFID = new ElementDefImpl( W4, "EmployeePersonalRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
-		HrfinDTD.W4_W4DATE = new ElementDefImpl( W4, "W4Date", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.DATE );
-		HrfinDTD.W4_MARITALSTATUSRATE = new ElementDefImpl( W4, "MaritalStatusRate", "~XPathSurrogate{MaritalStatusRate/@Code=.}", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.W4_EMPLOYEEPERSONALREFID = new ElementDefImpl( W4, "EmployeePersonalRefId", null, 1, SifDtd.HRFIN, "us", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
+		HrfinDTD.W4_W4DATE = new ElementDefImpl( W4, "W4Date", null, 2, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.DATE );
+		HrfinDTD.W4_MARITALSTATUSRATE = new ElementDefImpl( W4, "MaritalStatusRate", "~XPathSurrogate{MaritalStatusRate/@Code=.}", 3, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.W4_MARITALSTATUSRATE.DefineVersionInfo(SifVersion.SIF20, "MaritalStatusRate", 3, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.W4_FEDERALALLOWANCESNUMBER = new ElementDefImpl( W4, "FederalAllowancesNumber", "FedAllowancesNumber", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
+		HrfinDTD.W4_FEDERALALLOWANCESNUMBER = new ElementDefImpl( W4, "FederalAllowancesNumber", "FedAllowancesNumber", 4, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
 		HrfinDTD.W4_FEDERALALLOWANCESNUMBER.DefineVersionInfo(SifVersion.SIF20, "FederalAllowancesNumber", 4, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.W4_STATEALLOWANCESNUMBER = new ElementDefImpl( W4, "StateAllowancesNumber", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.INT );
-		HrfinDTD.W4_STATEPROVINCE = new ElementDefImpl( W4, "StateProvince", "~XPathSurrogate{StatePr/@Code=.}StatePr", 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.STRING );
+		HrfinDTD.W4_STATEALLOWANCESNUMBER = new ElementDefImpl( W4, "StateAllowancesNumber", null, 5, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.INT );
+		HrfinDTD.W4_STATEPROVINCE = new ElementDefImpl( W4, "StateProvince", "~XPathSurrogate{StatePr/@Code=.}StatePr", 6, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.STRING );
 		HrfinDTD.W4_STATEPROVINCE.DefineVersionInfo(SifVersion.SIF20, "StateProvince", 6, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		HrfinDTD.W4_EXEMPT = new ElementDefImpl( W4, "Exempt", "~XPathSurrogate{Exempt/@Code=.}", 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF25, SifTypeConverters.BOOLEAN );
+		HrfinDTD.W4_EXEMPT = new ElementDefImpl( W4, "Exempt", "~XPathSurrogate{Exempt/@Code=.}", 7, SifDtd.HRFIN, "us", (ElementDefImpl.FD_FIELD), SifVersion.SIF15r1, SifVersion.SIF26, SifTypeConverters.BOOLEAN );
 		HrfinDTD.W4_EXEMPT.DefineVersionInfo(SifVersion.SIF20, "Exempt", 7, (ElementDefImpl.FD_FIELD)); // (Sif 20 alias)
-		W4_SIF_EXTENDEDELEMENTS = new ElementDefImpl( W4, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF25 );
-		W4_SIF_METADATA = new ElementDefImpl( W4, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF25 );
+		W4_SIF_EXTENDEDELEMENTS = new ElementDefImpl( W4, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		W4_SIF_METADATA = new ElementDefImpl( W4, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "us", (0), SifVersion.SIF20, SifVersion.SIF26 );
 	}
 
 	#region Update SifDtd
@@ -1311,20 +1347,29 @@ namespace OpenADK.Library.us.Hrfin
 		dictionary["EmployeePicture_PictureSource"] = HrfinDTD.EMPLOYEEPICTURE_PICTURESOURCE ;
 		dictionary[ "AnnualItem" ] = ANNUALITEM;
 		dictionary["AnnualItem_AccountType"] = HrfinDTD.ANNUALITEM_ACCOUNTTYPE ;//2.0 alias
+		dictionary["AnnualItem_AccountTypeDetail"] = HrfinDTD.ANNUALITEM_ACCOUNTTYPEDETAIL ;
 		dictionary["AnnualItem_AcctType"] = HrfinDTD.ANNUALITEM_ACCOUNTTYPE ;
 		dictionary["AnnualItem_Amount"] = HrfinDTD.ANNUALITEM_AMOUNT ;
+		dictionary["AnnualItem_ChartOfAccountCode"] = HrfinDTD.ANNUALITEM_CHARTOFACCOUNTCODE ;
 		dictionary["AnnualItem_ExpArea"] = HrfinDTD.ANNUALITEM_EXPENDITUREAREA ;
 		dictionary["AnnualItem_ExpenditureArea"] = HrfinDTD.ANNUALITEM_EXPENDITUREAREA ;//2.0 alias
 		dictionary["AnnualItem_Function"] = HrfinDTD.ANNUALITEM_FUNCTION ;
+		dictionary["AnnualItem_FundClassificationCode"] = HrfinDTD.ANNUALITEM_FUNDCLASSIFICATIONCODE ;
 		dictionary["AnnualItem_FundType"] = HrfinDTD.ANNUALITEM_FUNDTYPE ;
 		dictionary["AnnualItem_GLAmountType"] = HrfinDTD.ANNUALITEM_GLAMOUNTTYPE ;//2.0 alias
 		dictionary["AnnualItem_GLAmtType"] = HrfinDTD.ANNUALITEM_GLAMOUNTTYPE ;
 		dictionary["AnnualItem_InstProgram"] = HrfinDTD.ANNUALITEM_INSTRUCTIONALPROGRAM ;
+		dictionary["AnnualItem_InstructionalLevel"] = HrfinDTD.ANNUALITEM_INSTRUCTIONALLEVEL ;
 		dictionary["AnnualItem_InstructionalProgram"] = HrfinDTD.ANNUALITEM_INSTRUCTIONALPROGRAM ;//2.0 alias
+		dictionary["AnnualItem_JobClassification"] = HrfinDTD.ANNUALITEM_JOBCLASSIFICATION ;
 		dictionary["AnnualItem_Object"] = HrfinDTD.ANNUALITEM_OBJECT ;
+		dictionary["AnnualItem_OperationalUnit"] = HrfinDTD.ANNUALITEM_OPERATIONALUNIT ;
+		dictionary["AnnualItem_ProjectCode"] = HrfinDTD.ANNUALITEM_PROJECTCODE ;
+		dictionary["AnnualItem_Source"] = HrfinDTD.ANNUALITEM_SOURCE ;
 		dictionary["AnnualItem_SpecAmtType"] = HrfinDTD.ANNUALITEM_SPECIALAMOUNTTYPE ;
 		dictionary["AnnualItem_SpecialAmountType"] = HrfinDTD.ANNUALITEM_SPECIALAMOUNTTYPE ;//2.0 alias
 		dictionary["AnnualItem_StateProvinceId"] = HrfinDTD.ANNUALITEM_STATEPROVINCEID ;
+		dictionary["AnnualItem_SubjectMatter"] = HrfinDTD.ANNUALITEM_SUBJECTMATTER ;
 		dictionary[ "FinancialTransaction" ] = FINANCIALTRANSACTION;
 		dictionary[ "FinancialTransaction_SIF_ExtendedElements" ] = FINANCIALTRANSACTION_SIF_EXTENDEDELEMENTS ;
 		dictionary[ "FinancialTransaction_SIF_Metadata" ] = FINANCIALTRANSACTION_SIF_METADATA;

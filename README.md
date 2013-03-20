@@ -13,7 +13,7 @@ Instructions for generating data model files
 
 Ant must be installed on build computer.
 
-1. Download both OpenADK .NET and OpenADK Java as sibling projects from LaunchPad.
+1. Download both OpenADK .NET and OpenADK Java as sibling projects from GitHub.
 2. From the command line, browse to the open-adk-java/adk-generator folder.
 3. Run 'ant dotnet.deploy'
 
@@ -22,7 +22,7 @@ This will build the .NET SDO libraries and add them to the correct directories i
 In the case of Visual Studio, the .sln files have already been created so you can open the solution of your choice. They are located in the 'src' directory.
 
 In Visual Studio, use the solution explorer to add the newly generated SDO directory.  
-Select the project, i.e. OpenADK-UK-SDO. Then at the top of the solution explorer select the 'show all files' button. The generated folders should appear. Right click on the new folders and select 'add to project'.
+Select the project, i.e. OpenADK-UK-SDO. Then at the top of the solution explorer select the 'show all files' button. The generated folders should appear. Right click on the new folders and select 'Include In Project'.
 
 The solution should now be ready to go.
 
