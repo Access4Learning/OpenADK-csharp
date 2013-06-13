@@ -70,4 +70,22 @@ public class StandardPeriodList : SifList<Period>
 		AddChild( LearningDTD.STANDARDPERIODLIST_PERIOD, new Period( PeriodIndex, ShortName, LongName, Type ) );
 	}
 
+    ///<summary>Adds the value of the <c>&lt;Period&gt;</c> element.</summary>
+    /// <param name="PeriodIndex">Ordinal position of period within the day (1,2,3,etc)</param>
+    /// <param name="ShortName">A ShortName</param>
+    /// <param name="LongName">A LongName</param>
+    /// <param name="StartTime">Start Time</param>
+    /// <param name="EndTime">End Time</param>
+    /// <param name="Type">What this period represents. Note that currently some programs represent registration, breaks and lunches as a "period" and some don't. This Type could differ from the lesson Type (see section C4) if this teacher is doing something in this period which differs from the majority of the school.</param>
+    ///<remarks>
+    /// <para>This form of <c>setPeriod</c> is provided as a convenience method
+    /// that is functionally equivalent to the method <c>AddPeriod</c></para>
+    /// <para>Version: 2.5</para>
+    /// <para>Since: 2.3</para>
+    /// </remarks>
+    public void AddPeriod(int? PeriodIndex, string ShortName, string LongName, DateTime? startTime, DateTime? endTime, PeriodType Type)
+    {
+        AddChild(LearningDTD.STANDARDPERIODLIST_PERIOD, new Period(PeriodIndex, ShortName, LongName, startTime, endTime, Type));
+    }
+
 }}
