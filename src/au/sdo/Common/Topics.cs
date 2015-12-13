@@ -82,6 +82,9 @@ namespace OpenADK.Library.au.Common
 	/// <summary>SystemRole ("SystemRole")</summary>
 	public static readonly Topics SYSTEMROLE = new Topics("SystemRole");
 
+	/// <summary>StudentSectionEnrollment  SIF 3.0 Version ("StudentSectionEnrollment ")</summary>
+	public static readonly Topics STUDENTSECTIONENROLLMENT = new Topics("StudentSectionEnrollment ");
+
 	/// <summary>AssessmentItem ("AssessmentItem")</summary>
 	public static readonly Topics ASSESSMENTITEM = new Topics("AssessmentItem");
 
@@ -114,6 +117,9 @@ namespace OpenADK.Library.au.Common
 
 	/// <summary>StudentPeriodAttendance ("StudentPeriodAttendance")</summary>
 	public static readonly Topics STUDENTPERIODATTENDANCE = new Topics("StudentPeriodAttendance");
+
+	/// <summary>SectionInfo SIF 3.0 Version ("SectionInfo")</summary>
+	public static readonly Topics SECTIONINFO = new Topics("SectionInfo");
 
 	/// <summary>RoomInfo ("RoomInfo")</summary>
 	public static readonly Topics ROOMINFO = new Topics("RoomInfo");

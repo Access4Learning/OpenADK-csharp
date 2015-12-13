@@ -25,6 +25,9 @@ namespace OpenADK.Library.au.Common
 	[Serializable]
 	public class AUCodeSetsStaffStatusType : SifEnum
 	{
+	/// <summary>Suspended ("S")</summary>
+	public static readonly AUCodeSetsStaffStatusType SUSPENDED = new AUCodeSetsStaffStatusType("S");
+
 	/// <summary>On Leave ("O")</summary>
 	public static readonly AUCodeSetsStaffStatusType ON_LEAVE = new AUCodeSetsStaffStatusType("O");
 

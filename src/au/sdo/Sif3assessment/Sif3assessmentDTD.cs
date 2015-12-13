@@ -1864,7 +1864,7 @@ namespace OpenADK.Library.au.Sif3assessment
 
 		// <TraitScore> fields (3 entries)
 		Sif3assessmentDTD.TRAITSCORE_TRAITSCORETYPE = new ElementDefImpl( TRAITSCORE, "TraitScoreType", null, 1, SifDtd.SIF3ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
-		Sif3assessmentDTD.TRAITSCORE_TRAITSCOREVALUE = new ElementDefImpl( TRAITSCORE, "TraitScoreValue", "TraitScore", 2, SifDtd.SIF3ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		Sif3assessmentDTD.TRAITSCORE_TRAITSCOREVALUE = new ElementDefImpl( TRAITSCORE, "TraitScoreValue", null, 2, SifDtd.SIF3ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
 		Sif3assessmentDTD.TRAITSCORE_TRAITSCORECODE = new ElementDefImpl( TRAITSCORE, "TraitScoreCode", null, 3, SifDtd.SIF3ASSESSMENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <TraitScoreList> fields (1 entries)
@@ -1963,9 +1963,9 @@ namespace OpenADK.Library.au.Sif3assessment
 		dictionary[ "TestingStatusList" ] = TESTINGSTATUSLIST;
 		dictionary["TestingStatusList_TestingStatus"] = Sif3assessmentDTD.TESTINGSTATUSLIST_TESTINGSTATUS ;
 		dictionary[ "TraitScore" ] = TRAITSCORE;
-		dictionary["TraitScore_TraitScore"] = Sif3assessmentDTD.TRAITSCORE_TRAITSCOREVALUE ;
 		dictionary["TraitScore_TraitScoreCode"] = Sif3assessmentDTD.TRAITSCORE_TRAITSCORECODE ;
 		dictionary["TraitScore_TraitScoreType"] = Sif3assessmentDTD.TRAITSCORE_TRAITSCORETYPE ;
+		dictionary["TraitScore_TraitScoreValue"] = Sif3assessmentDTD.TRAITSCORE_TRAITSCOREVALUE ;
 		dictionary[ "ItemAidList" ] = ITEMAIDLIST;
 		dictionary["ItemAidList_ItemAid"] = Sif3assessmentDTD.ITEMAIDLIST_ITEMAID ;
 		dictionary[ "AssessmentItemBank" ] = ASSESSMENTITEMBANK;

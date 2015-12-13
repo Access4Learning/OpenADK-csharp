@@ -82,6 +82,12 @@ namespace OpenADK.Library.au.School
 	public static IElementDef ACADEMICYEARRANGE = null;
 	/** Defines the &lt;End&gt; SIF Data Object */
 	public static IElementDef END = null;
+	/** Defines the &lt;LanguageOfInstruction&gt; SIF Data Object */
+	public static IElementDef LANGUAGEOFINSTRUCTION = null;
+	/** Defines the &lt;LocationOfInstruction&gt; SIF Data Object */
+	public static IElementDef LOCATIONOFINSTRUCTION = null;
+	/** Defines the &lt;MediumOfInstruction&gt; SIF Data Object */
+	public static IElementDef MEDIUMOFINSTRUCTION = null;
 	/** Defines the &lt;PersonPicture&gt; SIF Data Object */
 	public static IElementDef PERSONPICTURE = null;
 	/** Defines the &lt;Program&gt; SIF Data Object */
@@ -100,6 +106,8 @@ namespace OpenADK.Library.au.School
 	public static IElementDef RESOURCEUSAGE = null;
 	/** Defines the &lt;ResourceUsageContentType&gt; SIF Data Object */
 	public static IElementDef RESOURCEUSAGECONTENTTYPE = null;
+	/** Defines the &lt;SchoolCourseInfoOverride&gt; SIF Data Object */
+	public static IElementDef SCHOOLCOURSEINFOOVERRIDE = null;
 	/** Defines the &lt;SchoolFocus&gt; SIF Data Object */
 	public static IElementDef SCHOOLFOCUS = null;
 	/** Defines the &lt;SchoolFocusList&gt; SIF Data Object */
@@ -114,6 +122,8 @@ namespace OpenADK.Library.au.School
 	public static IElementDef SCHOOLPROGRAMLIST = null;
 	/** Defines the &lt;SchoolPrograms&gt; SIF Data Object */
 	public static IElementDef SCHOOLPROGRAMS = null;
+	/** Defines the &lt;SectionInfo&gt; SIF Data Object */
+	public static IElementDef SECTIONINFO = null;
 	/** Defines the &lt;SessionInfo&gt; SIF Data Object */
 	public static IElementDef SESSIONINFO = null;
 	/** Defines the &lt;Start&gt; SIF Data Object */
@@ -151,6 +161,24 @@ namespace OpenADK.Library.au.School
 	public static IElementDef END_CODE = null;
 	/** Defines the &lt;OtherCodeList&gt; element as a child of &lt;End&gt; */
 	public static IElementDef END_OTHERCODELIST = null;
+
+	// Field elements of LANGUAGEOFINSTRUCTION (2 fields)
+	/** Defines the &lt;Code&gt; element as a child of &lt;LanguageOfInstruction&gt; */
+	public static IElementDef LANGUAGEOFINSTRUCTION_CODE = null;
+	/** Defines the &lt;OtherCodeList&gt; element as a child of &lt;LanguageOfInstruction&gt; */
+	public static IElementDef LANGUAGEOFINSTRUCTION_OTHERCODELIST = null;
+
+	// Field elements of LOCATIONOFINSTRUCTION (2 fields)
+	/** Defines the &lt;Code&gt; element as a child of &lt;LocationOfInstruction&gt; */
+	public static IElementDef LOCATIONOFINSTRUCTION_CODE = null;
+	/** Defines the &lt;OtherCodeList&gt; element as a child of &lt;LocationOfInstruction&gt; */
+	public static IElementDef LOCATIONOFINSTRUCTION_OTHERCODELIST = null;
+
+	// Field elements of MEDIUMOFINSTRUCTION (2 fields)
+	/** Defines the &lt;Code&gt; element as a child of &lt;MediumOfInstruction&gt; */
+	public static IElementDef MEDIUMOFINSTRUCTION_CODE = null;
+	/** Defines the &lt;OtherCodeList&gt; element as a child of &lt;MediumOfInstruction&gt; */
+	public static IElementDef MEDIUMOFINSTRUCTION_OTHERCODELIST = null;
 
 	// Field elements of PERSONPICTURE (5 fields)
 	/** Defines the RefId attribute as a child of &lt;PersonPicture&gt; */
@@ -229,6 +257,24 @@ namespace OpenADK.Library.au.School
 	public static IElementDef RESOURCEUSAGECONTENTTYPE_CODE = null;
 	/** Defines the &lt;LocalDescription&gt; element as a child of &lt;ResourceUsageContentType&gt; */
 	public static IElementDef RESOURCEUSAGECONTENTTYPE_LOCALDESCRIPTION = null;
+
+	// Field elements of SCHOOLCOURSEINFOOVERRIDE (8 fields)
+	/** Defines the Override attribute as a child of &lt;SchoolCourseInfoOverride&gt; */
+	public static IElementDef SCHOOLCOURSEINFOOVERRIDE_OVERRIDE = null;
+	/** Defines the &lt;CourseCode&gt; element as a child of &lt;SchoolCourseInfoOverride&gt; */
+	public static IElementDef SCHOOLCOURSEINFOOVERRIDE_COURSECODE = null;
+	/** Defines the &lt;StateCourseCode&gt; element as a child of &lt;SchoolCourseInfoOverride&gt; */
+	public static IElementDef SCHOOLCOURSEINFOOVERRIDE_STATECOURSECODE = null;
+	/** Defines the &lt;DistrictCourseCode&gt; element as a child of &lt;SchoolCourseInfoOverride&gt; */
+	public static IElementDef SCHOOLCOURSEINFOOVERRIDE_DISTRICTCOURSECODE = null;
+	/** Defines the &lt;SubjectArea&gt; element as a child of &lt;SchoolCourseInfoOverride&gt; */
+	public static IElementDef SCHOOLCOURSEINFOOVERRIDE_SUBJECTAREA = null;
+	/** Defines the &lt;CourseTitle&gt; element as a child of &lt;SchoolCourseInfoOverride&gt; */
+	public static IElementDef SCHOOLCOURSEINFOOVERRIDE_COURSETITLE = null;
+	/** Defines the &lt;InstructionalLevel&gt; element as a child of &lt;SchoolCourseInfoOverride&gt; */
+	public static IElementDef SCHOOLCOURSEINFOOVERRIDE_INSTRUCTIONALLEVEL = null;
+	/** Defines the &lt;CourseCredits&gt; element as a child of &lt;SchoolCourseInfoOverride&gt; */
+	public static IElementDef SCHOOLCOURSEINFOOVERRIDE_COURSECREDITS = null;
 
 	// Field elements of SCHOOLFOCUS (0 fields)
 
@@ -341,6 +387,40 @@ namespace OpenADK.Library.au.School
 	public static IElementDef SCHOOLPROGRAMS_SIF_EXTENDEDELEMENTS = null;
 	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
 	public static IElementDef SCHOOLPROGRAMS_SIF_METADATA = null;
+
+	// Field elements of SECTIONINFO (14 fields)
+	/** Defines the RefId attribute as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_REFID = null;
+	/** Defines the &lt;SchoolCourseInfoRefId&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_SCHOOLCOURSEINFOREFID = null;
+	/** Defines the &lt;LocalId&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_LOCALID = null;
+	/** Defines the &lt;Description&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_DESCRIPTION = null;
+	/** Defines the &lt;SchoolYear&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_SCHOOLYEAR = null;
+	/** Defines the &lt;TermInfoRefId&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_TERMINFOREFID = null;
+	/** Defines the &lt;MediumOfInstruction&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_MEDIUMOFINSTRUCTION = null;
+	/** Defines the &lt;LanguageOfInstruction&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_LANGUAGEOFINSTRUCTION = null;
+	/** Defines the &lt;LocationOfInstruction&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_LOCATIONOFINSTRUCTION = null;
+	/** Defines the &lt;SummerSchool&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_SUMMERSCHOOL = null;
+	/** Defines the &lt;SchoolCourseInfoOverride&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_SCHOOLCOURSEINFOOVERRIDE = null;
+	/** Defines the &lt;CourseSectionCode&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_COURSESECTIONCODE = null;
+	/** Defines the &lt;SectionCode&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_SECTIONCODE = null;
+	/** Defines the &lt;CountForAttendance&gt; element as a child of &lt;SectionInfo&gt; */
+	public static IElementDef SECTIONINFO_COUNTFORATTENDANCE = null;
+	/** SIF 1.5 and later: Defines the built-in SIF_ExtendedElements element common to all SIF Data Objects */
+	public static IElementDef SECTIONINFO_SIF_EXTENDEDELEMENTS = null;
+	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
+	public static IElementDef SECTIONINFO_SIF_METADATA = null;
 
 	// Field elements of SESSIONINFO (16 fields)
 	/** Defines the RefId attribute as a child of &lt;SessionInfo&gt; */
@@ -527,6 +607,9 @@ namespace OpenADK.Library.au.School
 		ACADEMICYEAR = new ElementDefImpl( null, "AcademicYear", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		ACADEMICYEARRANGE = new ElementDefImpl( null, "AcademicYearRange", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		END = new ElementDefImpl( null, "End", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		LANGUAGEOFINSTRUCTION = new ElementDefImpl( null, "LanguageOfInstruction", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		LOCATIONOFINSTRUCTION = new ElementDefImpl( null, "LocationOfInstruction", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		MEDIUMOFINSTRUCTION = new ElementDefImpl( null, "MediumOfInstruction", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
 		PERSONPICTURE = new ElementDefImpl( null, "PersonPicture", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
 		PROGRAM = new ElementDefImpl( null, "Program", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		RESOURCEREPORTCOLUMN = new ElementDefImpl( null, "ResourceReportColumn", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
@@ -536,6 +619,7 @@ namespace OpenADK.Library.au.School
 		RESOURCEREPORTLINE_SIF_REFIDTYPE = new ElementDefImpl( null, "ResourceReportLine_SIF_RefIDType", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
 		RESOURCEUSAGE = new ElementDefImpl( null, "ResourceUsage", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF25, SifVersion.SIF26 );
 		RESOURCEUSAGECONTENTTYPE = new ElementDefImpl( null, "ResourceUsageContentType", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF25, SifVersion.SIF26 );
+		SCHOOLCOURSEINFOOVERRIDE = new ElementDefImpl( null, "SchoolCourseInfoOverride", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
 		SCHOOLFOCUS = new ElementDefImpl( null, "SchoolFocus", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SCHOOLFOCUSLIST = new ElementDefImpl( null, "SchoolFocusList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		SCHOOLGROUP = new ElementDefImpl( null, "SchoolGroup", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
@@ -543,6 +627,7 @@ namespace OpenADK.Library.au.School
 		SCHOOLINFO = new ElementDefImpl( null, "SchoolInfo", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
 		SCHOOLPROGRAMLIST = new ElementDefImpl( null, "SchoolProgramList", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		SCHOOLPROGRAMS = new ElementDefImpl( null, "SchoolPrograms", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		SECTIONINFO = new ElementDefImpl( null, "SectionInfo", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF26, SifVersion.SIF26 );
 		SESSIONINFO = new ElementDefImpl( null, "SessionInfo", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
 		START = new ElementDefImpl( null, "Start", null, 0, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		TIMETABLE = new ElementDefImpl( null, "TimeTable", null, 0, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
@@ -565,6 +650,18 @@ namespace OpenADK.Library.au.School
 		// <End> fields (2 entries)
 		SchoolDTD.END_CODE = new ElementDefImpl( END, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.END_OTHERCODELIST = new ElementDefImpl( END, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+
+		// <LanguageOfInstruction> fields (2 entries)
+		SchoolDTD.LANGUAGEOFINSTRUCTION_CODE = new ElementDefImpl( LANGUAGEOFINSTRUCTION, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.LANGUAGEOFINSTRUCTION_OTHERCODELIST = new ElementDefImpl( LANGUAGEOFINSTRUCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
+
+		// <LocationOfInstruction> fields (2 entries)
+		SchoolDTD.LOCATIONOFINSTRUCTION_CODE = new ElementDefImpl( LOCATIONOFINSTRUCTION, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.LOCATIONOFINSTRUCTION_OTHERCODELIST = new ElementDefImpl( LOCATIONOFINSTRUCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
+
+		// <MediumOfInstruction> fields (2 entries)
+		SchoolDTD.MEDIUMOFINSTRUCTION_CODE = new ElementDefImpl( MEDIUMOFINSTRUCTION, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.MEDIUMOFINSTRUCTION_OTHERCODELIST = new ElementDefImpl( MEDIUMOFINSTRUCTION, "OtherCodeList", null, 2, SifDtd.COMMON, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
 
 		// <PersonPicture> fields (5 entries)
 		SchoolDTD.PERSONPICTURE_REFID = new ElementDefImpl( PERSONPICTURE, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
@@ -613,6 +710,16 @@ namespace OpenADK.Library.au.School
 		// <ResourceUsageContentType> fields (2 entries)
 		SchoolDTD.RESOURCEUSAGECONTENTTYPE_CODE = new ElementDefImpl( RESOURCEUSAGECONTENTTYPE, "Code", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
 		SchoolDTD.RESOURCEUSAGECONTENTTYPE_LOCALDESCRIPTION = new ElementDefImpl( RESOURCEUSAGECONTENTTYPE, "LocalDescription", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF25, SifVersion.SIF26, SifTypeConverters.STRING );
+
+		// <SchoolCourseInfoOverride> fields (8 entries)
+		SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_OVERRIDE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "Override", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_COURSECODE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "CourseCode", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_STATECOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "StateCourseCode", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_DISTRICTCOURSECODE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "DistrictCourseCode", null, 4, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_SUBJECTAREA = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "SubjectArea", null, 5, SifDtd.COMMON, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_COURSETITLE = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "CourseTitle", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_INSTRUCTIONALLEVEL = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "InstructionalLevel", null, 7, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_COURSECREDITS = new ElementDefImpl( SCHOOLCOURSEINFOOVERRIDE, "CourseCredits", null, 8, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
 
 		// <SchoolFocus> fields (0 entries)
 
@@ -733,6 +840,24 @@ namespace OpenADK.Library.au.School
 		SchoolDTD.SCHOOLPROGRAMS_SCHOOLPROGRAMLIST = new ElementDefImpl( SCHOOLPROGRAMS, "SchoolProgramList", null, 4, SifDtd.SCHOOL, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		SCHOOLPROGRAMS_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SCHOOLPROGRAMS, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
 		SCHOOLPROGRAMS_SIF_METADATA = new ElementDefImpl( SCHOOLPROGRAMS, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
+
+		// <SectionInfo> fields (14 entries)
+		SchoolDTD.SECTIONINFO_REFID = new ElementDefImpl( SECTIONINFO, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SECTIONINFO_SCHOOLCOURSEINFOREFID = new ElementDefImpl( SECTIONINFO, "SchoolCourseInfoRefId", null, 2, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SECTIONINFO_LOCALID = new ElementDefImpl( SECTIONINFO, "LocalId", null, 3, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SECTIONINFO_DESCRIPTION = new ElementDefImpl( SECTIONINFO, "Description", null, 4, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SECTIONINFO_SCHOOLYEAR = new ElementDefImpl( SECTIONINFO, "SchoolYear", null, 5, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.INT );
+		SchoolDTD.SECTIONINFO_TERMINFOREFID = new ElementDefImpl( SECTIONINFO, "TermInfoRefId", null, 6, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SECTIONINFO_MEDIUMOFINSTRUCTION = new ElementDefImpl( SECTIONINFO, "MediumOfInstruction", null, 7, SifDtd.SCHOOL, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		SchoolDTD.SECTIONINFO_LANGUAGEOFINSTRUCTION = new ElementDefImpl( SECTIONINFO, "LanguageOfInstruction", null, 8, SifDtd.SCHOOL, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		SchoolDTD.SECTIONINFO_LOCATIONOFINSTRUCTION = new ElementDefImpl( SECTIONINFO, "LocationOfInstruction", null, 9, SifDtd.SCHOOL, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		SchoolDTD.SECTIONINFO_SUMMERSCHOOL = new ElementDefImpl( SECTIONINFO, "SummerSchool", null, 10, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SECTIONINFO_SCHOOLCOURSEINFOOVERRIDE = new ElementDefImpl( SECTIONINFO, "SchoolCourseInfoOverride", null, 11, SifDtd.SCHOOL, "au", 0, SifVersion.SIF26, SifVersion.SIF26 );
+		SchoolDTD.SECTIONINFO_COURSESECTIONCODE = new ElementDefImpl( SECTIONINFO, "CourseSectionCode", null, 12, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SECTIONINFO_SECTIONCODE = new ElementDefImpl( SECTIONINFO, "SectionCode", null, 13, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SchoolDTD.SECTIONINFO_COUNTFORATTENDANCE = new ElementDefImpl( SECTIONINFO, "CountForAttendance", null, 14, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		SECTIONINFO_SIF_EXTENDEDELEMENTS = new ElementDefImpl( SECTIONINFO, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		SECTIONINFO_SIF_METADATA = new ElementDefImpl( SECTIONINFO, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
 		// <SessionInfo> fields (16 entries)
 		SchoolDTD.SESSIONINFO_REFID = new ElementDefImpl( SESSIONINFO, "RefId", null, 1, SifDtd.SCHOOL, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
@@ -869,6 +994,18 @@ namespace OpenADK.Library.au.School
 		dictionary["TimeTableDayList_TimeTableDay"] = SchoolDTD.TIMETABLEDAYLIST_TIMETABLEDAY ;
 		dictionary[ "SchoolProgramList" ] = SCHOOLPROGRAMLIST;
 		dictionary["SchoolProgramList_Program"] = SchoolDTD.SCHOOLPROGRAMLIST_PROGRAM ;
+		dictionary[ "LanguageOfInstruction" ] = LANGUAGEOFINSTRUCTION;
+		dictionary["LanguageOfInstruction_Code"] = SchoolDTD.LANGUAGEOFINSTRUCTION_CODE ;
+		dictionary["LanguageOfInstruction_OtherCodeList"] = SchoolDTD.LANGUAGEOFINSTRUCTION_OTHERCODELIST ;
+		dictionary[ "SchoolCourseInfoOverride" ] = SCHOOLCOURSEINFOOVERRIDE;
+		dictionary["SchoolCourseInfoOverride_CourseCode"] = SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_COURSECODE ;
+		dictionary["SchoolCourseInfoOverride_CourseCredits"] = SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_COURSECREDITS ;
+		dictionary["SchoolCourseInfoOverride_CourseTitle"] = SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_COURSETITLE ;
+		dictionary["SchoolCourseInfoOverride_DistrictCourseCode"] = SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_DISTRICTCOURSECODE ;
+		dictionary["SchoolCourseInfoOverride_InstructionalLevel"] = SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_INSTRUCTIONALLEVEL ;
+		dictionary["SchoolCourseInfoOverride_Override"] = SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_OVERRIDE ;
+		dictionary["SchoolCourseInfoOverride_StateCourseCode"] = SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_STATECOURSECODE ;
+		dictionary["SchoolCourseInfoOverride_SubjectArea"] = SchoolDTD.SCHOOLCOURSEINFOOVERRIDE_SUBJECTAREA ;
 		dictionary[ "TimeTableCell" ] = TIMETABLECELL;
 		dictionary[ "TimeTableCell_SIF_ExtendedElements" ] = TIMETABLECELL_SIF_EXTENDEDELEMENTS ;
 		dictionary[ "TimeTableCell_SIF_Metadata" ] = TIMETABLECELL_SIF_METADATA;
@@ -977,6 +1114,9 @@ namespace OpenADK.Library.au.School
 		dictionary["Program_Type"] = SchoolDTD.PROGRAM_TYPE ;
 		dictionary[ "SchoolFocusList" ] = SCHOOLFOCUSLIST;
 		dictionary["SchoolFocusList_SchoolFocus"] = SchoolDTD.SCHOOLFOCUSLIST_SCHOOLFOCUS ;
+		dictionary[ "LocationOfInstruction" ] = LOCATIONOFINSTRUCTION;
+		dictionary["LocationOfInstruction_Code"] = SchoolDTD.LOCATIONOFINSTRUCTION_CODE ;
+		dictionary["LocationOfInstruction_OtherCodeList"] = SchoolDTD.LOCATIONOFINSTRUCTION_OTHERCODELIST ;
 		dictionary[ "ResourceUsageContentType" ] = RESOURCEUSAGECONTENTTYPE;
 		dictionary["ResourceUsageContentType_Code"] = SchoolDTD.RESOURCEUSAGECONTENTTYPE_CODE ;
 		dictionary["ResourceUsageContentType_LocalDescription"] = SchoolDTD.RESOURCEUSAGECONTENTTYPE_LOCALDESCRIPTION ;
@@ -1010,6 +1150,23 @@ namespace OpenADK.Library.au.School
 		dictionary["PersonPicture_PictureSource"] = SchoolDTD.PERSONPICTURE_PICTURESOURCE ;
 		dictionary["PersonPicture_RefId"] = SchoolDTD.PERSONPICTURE_REFID ;
 		dictionary["PersonPicture_SchoolYear"] = SchoolDTD.PERSONPICTURE_SCHOOLYEAR ;
+		dictionary[ "SectionInfo" ] = SECTIONINFO;
+		dictionary[ "SectionInfo_SIF_ExtendedElements" ] = SECTIONINFO_SIF_EXTENDEDELEMENTS ;
+		dictionary[ "SectionInfo_SIF_Metadata" ] = SECTIONINFO_SIF_METADATA;
+		dictionary["SectionInfo_CountForAttendance"] = SchoolDTD.SECTIONINFO_COUNTFORATTENDANCE ;
+		dictionary["SectionInfo_CourseSectionCode"] = SchoolDTD.SECTIONINFO_COURSESECTIONCODE ;
+		dictionary["SectionInfo_Description"] = SchoolDTD.SECTIONINFO_DESCRIPTION ;
+		dictionary["SectionInfo_LanguageOfInstruction"] = SchoolDTD.SECTIONINFO_LANGUAGEOFINSTRUCTION ;
+		dictionary["SectionInfo_LocalId"] = SchoolDTD.SECTIONINFO_LOCALID ;
+		dictionary["SectionInfo_LocationOfInstruction"] = SchoolDTD.SECTIONINFO_LOCATIONOFINSTRUCTION ;
+		dictionary["SectionInfo_MediumOfInstruction"] = SchoolDTD.SECTIONINFO_MEDIUMOFINSTRUCTION ;
+		dictionary["SectionInfo_RefId"] = SchoolDTD.SECTIONINFO_REFID ;
+		dictionary["SectionInfo_SchoolCourseInfoOverride"] = SchoolDTD.SECTIONINFO_SCHOOLCOURSEINFOOVERRIDE ;
+		dictionary["SectionInfo_SchoolCourseInfoRefId"] = SchoolDTD.SECTIONINFO_SCHOOLCOURSEINFOREFID ;
+		dictionary["SectionInfo_SchoolYear"] = SchoolDTD.SECTIONINFO_SCHOOLYEAR ;
+		dictionary["SectionInfo_SectionCode"] = SchoolDTD.SECTIONINFO_SECTIONCODE ;
+		dictionary["SectionInfo_SummerSchool"] = SchoolDTD.SECTIONINFO_SUMMERSCHOOL ;
+		dictionary["SectionInfo_TermInfoRefId"] = SchoolDTD.SECTIONINFO_TERMINFOREFID ;
 		dictionary[ "SchoolGroupList" ] = SCHOOLGROUPLIST;
 		dictionary["SchoolGroupList_SchoolGroup"] = SchoolDTD.SCHOOLGROUPLIST_SCHOOLGROUP ;
 		dictionary[ "ResourceReportLine_SIF_RefIDType" ] = RESOURCEREPORTLINE_SIF_REFIDTYPE;
@@ -1020,6 +1177,9 @@ namespace OpenADK.Library.au.School
 		dictionary["ResourceReportColumn_ColumnDelimiter"] = SchoolDTD.RESOURCEREPORTCOLUMN_COLUMNDELIMITER ;
 		dictionary["ResourceReportColumn_ColumnDescription"] = SchoolDTD.RESOURCEREPORTCOLUMN_COLUMNDESCRIPTION ;
 		dictionary["ResourceReportColumn_ColumnName"] = SchoolDTD.RESOURCEREPORTCOLUMN_COLUMNNAME ;
+		dictionary[ "MediumOfInstruction" ] = MEDIUMOFINSTRUCTION;
+		dictionary["MediumOfInstruction_Code"] = SchoolDTD.MEDIUMOFINSTRUCTION_CODE ;
+		dictionary["MediumOfInstruction_OtherCodeList"] = SchoolDTD.MEDIUMOFINSTRUCTION_OTHERCODELIST ;
 		dictionary[ "SchoolFocus" ] = SCHOOLFOCUS;
 		dictionary[ "AcademicYear" ] = ACADEMICYEAR;
 		dictionary["AcademicYear_Code"] = SchoolDTD.ACADEMICYEAR_CODE ;

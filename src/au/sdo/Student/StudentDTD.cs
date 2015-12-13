@@ -204,6 +204,8 @@ namespace OpenADK.Library.au.Student
 	public static IElementDef STUDENTSCHOOLENROLLMENT = null;
 	/** Defines the &lt;StudentSDTN&gt; SIF Data Object */
 	public static IElementDef STUDENTSDTN = null;
+	/** Defines the &lt;StudentSectionEnrollment&gt; SIF Data Object */
+	public static IElementDef STUDENTSECTIONENROLLMENT = null;
 	/** Defines the &lt;StudentSnapshot&gt; SIF Data Object */
 	public static IElementDef STUDENTSNAPSHOT = null;
 	/** Defines the &lt;StudentSubjectChoice&gt; SIF Data Object */
@@ -1144,6 +1146,24 @@ namespace OpenADK.Library.au.Student
 	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
 	public static IElementDef STUDENTSDTN_SIF_METADATA = null;
 
+	// Field elements of STUDENTSECTIONENROLLMENT (6 fields)
+	/** Defines the RefId attribute as a child of &lt;StudentSectionEnrollment&gt; */
+	public static IElementDef STUDENTSECTIONENROLLMENT_REFID = null;
+	/** Defines the &lt;StudentPersonalRefId&gt; element as a child of &lt;StudentSectionEnrollment&gt; */
+	public static IElementDef STUDENTSECTIONENROLLMENT_STUDENTPERSONALREFID = null;
+	/** Defines the &lt;SectionInfoRefId&gt; element as a child of &lt;StudentSectionEnrollment&gt; */
+	public static IElementDef STUDENTSECTIONENROLLMENT_SECTIONINFOREFID = null;
+	/** Defines the &lt;SchoolYear&gt; element as a child of &lt;StudentSectionEnrollment&gt; */
+	public static IElementDef STUDENTSECTIONENROLLMENT_SCHOOLYEAR = null;
+	/** Defines the &lt;EntryDate&gt; element as a child of &lt;StudentSectionEnrollment&gt; */
+	public static IElementDef STUDENTSECTIONENROLLMENT_ENTRYDATE = null;
+	/** Defines the &lt;ExitDate&gt; element as a child of &lt;StudentSectionEnrollment&gt; */
+	public static IElementDef STUDENTSECTIONENROLLMENT_EXITDATE = null;
+	/** SIF 1.5 and later: Defines the built-in SIF_ExtendedElements element common to all SIF Data Objects */
+	public static IElementDef STUDENTSECTIONENROLLMENT_SIF_EXTENDEDELEMENTS = null;
+	/** SIF 2.0 and later: Defines the built-in SIF_Metadata element common to all SIF Data Objects */
+	public static IElementDef STUDENTSECTIONENROLLMENT_SIF_METADATA = null;
+
 	// Field elements of STUDENTSNAPSHOT (14 fields)
 	/** Defines the SnapDate attribute as a child of &lt;StudentSnapshot&gt; */
 	public static IElementDef STUDENTSNAPSHOT_SNAPDATE = null;
@@ -1318,6 +1338,7 @@ namespace OpenADK.Library.au.Student
 		STUDENTPICTURE = new ElementDefImpl( null, "StudentPicture", null, 0, SifDtd.STUDENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
 		STUDENTSCHOOLENROLLMENT = new ElementDefImpl( null, "StudentSchoolEnrollment", null, 0, SifDtd.STUDENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
 		STUDENTSDTN = new ElementDefImpl( null, "StudentSDTN", null, 0, SifDtd.STUDENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
+		STUDENTSECTIONENROLLMENT = new ElementDefImpl( null, "StudentSectionEnrollment", null, 0, SifDtd.STUDENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF26, SifVersion.SIF26 );
 		STUDENTSNAPSHOT = new ElementDefImpl( null, "StudentSnapshot", null, 0, SifDtd.STUDENT, "au", (ElementDefImpl.FD_OBJECT), SifVersion.SIF23, SifVersion.SIF26 );
 		STUDENTSUBJECTCHOICE = new ElementDefImpl( null, "StudentSubjectChoice", null, 0, SifDtd.STUDENT, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		STUDENTSUBJECTCHOICELIST = new ElementDefImpl( null, "StudentSubjectChoiceList", null, 0, SifDtd.STUDENT, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
@@ -1911,6 +1932,16 @@ namespace OpenADK.Library.au.Student
 		STUDENTSDTN_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSDTN, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
 		STUDENTSDTN_SIF_METADATA = new ElementDefImpl( STUDENTSDTN, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
 
+		// <StudentSectionEnrollment> fields (6 entries)
+		StudentDTD.STUDENTSECTIONENROLLMENT_REFID = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "RefId", null, 1, SifDtd.STUDENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSECTIONENROLLMENT_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSECTIONENROLLMENT_SECTIONINFOREFID = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SectionInfoRefId", null, 3, SifDtd.STUDENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.STRING );
+		StudentDTD.STUDENTSECTIONENROLLMENT_SCHOOLYEAR = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SchoolYear", null, 4, SifDtd.STUDENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.INT );
+		StudentDTD.STUDENTSECTIONENROLLMENT_ENTRYDATE = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "EntryDate", null, 5, SifDtd.STUDENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DATE );
+		StudentDTD.STUDENTSECTIONENROLLMENT_EXITDATE = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "ExitDate", null, 6, SifDtd.STUDENT, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF26, SifVersion.SIF26, SifTypeConverters.DATE );
+		STUDENTSECTIONENROLLMENT_SIF_EXTENDEDELEMENTS = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SIF_ExtendedElements", null, 127, SifDtd.GLOBAL, null, (0), SifVersion.SIF15r1, SifVersion.SIF26 );
+		STUDENTSECTIONENROLLMENT_SIF_METADATA = new ElementDefImpl( STUDENTSECTIONENROLLMENT, "SIF_Metadata", null, 128, SifDtd.DATAMODEL, "au", (0), SifVersion.SIF20, SifVersion.SIF26 );
+
 		// <StudentSnapshot> fields (14 entries)
 		StudentDTD.STUDENTSNAPSHOT_SNAPDATE = new ElementDefImpl( STUDENTSNAPSHOT, "SnapDate", null, 1, SifDtd.STUDENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.DATE );
 		StudentDTD.STUDENTSNAPSHOT_STUDENTPERSONALREFID = new ElementDefImpl( STUDENTSNAPSHOT, "StudentPersonalRefId", null, 2, SifDtd.STUDENT, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
@@ -2486,6 +2517,15 @@ namespace OpenADK.Library.au.Student
 		dictionary["CalendarSummary_YearLevels"] = StudentDTD.CALENDARSUMMARY_YEARLEVELS ;
 		dictionary[ "EnrollmentList" ] = ENROLLMENTLIST;
 		dictionary["EnrollmentList_Enrollment"] = StudentDTD.ENROLLMENTLIST_ENROLLMENT ;
+		dictionary[ "StudentSectionEnrollment" ] = STUDENTSECTIONENROLLMENT;
+		dictionary[ "StudentSectionEnrollment_SIF_ExtendedElements" ] = STUDENTSECTIONENROLLMENT_SIF_EXTENDEDELEMENTS ;
+		dictionary[ "StudentSectionEnrollment_SIF_Metadata" ] = STUDENTSECTIONENROLLMENT_SIF_METADATA;
+		dictionary["StudentSectionEnrollment_EntryDate"] = StudentDTD.STUDENTSECTIONENROLLMENT_ENTRYDATE ;
+		dictionary["StudentSectionEnrollment_ExitDate"] = StudentDTD.STUDENTSECTIONENROLLMENT_EXITDATE ;
+		dictionary["StudentSectionEnrollment_RefId"] = StudentDTD.STUDENTSECTIONENROLLMENT_REFID ;
+		dictionary["StudentSectionEnrollment_SchoolYear"] = StudentDTD.STUDENTSECTIONENROLLMENT_SCHOOLYEAR ;
+		dictionary["StudentSectionEnrollment_SectionInfoRefId"] = StudentDTD.STUDENTSECTIONENROLLMENT_SECTIONINFOREFID ;
+		dictionary["StudentSectionEnrollment_StudentPersonalRefId"] = StudentDTD.STUDENTSECTIONENROLLMENT_STUDENTPERSONALREFID ;
 		dictionary[ "StudentSubjectChoiceList" ] = STUDENTSUBJECTCHOICELIST;
 		dictionary["StudentSubjectChoiceList_StudentSubjectChoice"] = StudentDTD.STUDENTSUBJECTCHOICELIST_STUDENTSUBJECTCHOICE ;
 		dictionary[ "Staff" ] = STAFF;
