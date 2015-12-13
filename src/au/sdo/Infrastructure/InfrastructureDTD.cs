@@ -128,7 +128,7 @@ namespace OpenADK.Library.au.Infrastructure
 
 		// <Identity> fields (6 entries)
 		InfrastructureDTD.IDENTITY_REFID = new ElementDefImpl( IDENTITY, "RefId", null, 1, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_ATTRIBUTE), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
-		InfrastructureDTD.IDENTITY_SIF_REFID = new ElementDefImpl( IDENTITY, "SIF_RefId", null, 2, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
+		InfrastructureDTD.IDENTITY_SIF_REFID = new ElementDefImpl( IDENTITY, "SIF_RefId", null, 2, SifDtd.GLOBAL, null, 0, SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING);
 		InfrastructureDTD.IDENTITY_AUTHENTICATIONSOURCE = new ElementDefImpl( IDENTITY, "AuthenticationSource", null, 3, SifDtd.INFRASTRUCTURE, "au", (ElementDefImpl.FD_FIELD), SifVersion.SIF23, SifVersion.SIF26, SifTypeConverters.STRING );
 		InfrastructureDTD.IDENTITY_IDENTITYASSERTIONS = new ElementDefImpl( IDENTITY, "IdentityAssertions", null, 4, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
 		InfrastructureDTD.IDENTITY_PASSWORDLIST = new ElementDefImpl( IDENTITY, "PasswordList", null, 5, SifDtd.INFRASTRUCTURE, "au", 0, SifVersion.SIF23, SifVersion.SIF26 );
