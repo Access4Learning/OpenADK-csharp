@@ -229,6 +229,7 @@
     <Compile Include="sdo\Common\YearLevelCode.cs" />
     <Compile Include="sdo\Common\YearLevels.cs" />
     <Compile Include="sdo\Common\YesNoLower.cs" />
+    <Compile Include="sdo\Common\YesNoMixed.cs" />
     <Compile Include="sdo\Common\YesNoUnkNotProvided.cs" />
     <Compile Include="sdo\Common\YNLower.cs" />
     <Compile Include="sdo\Datamodel\Created.cs" />
@@ -357,11 +358,16 @@
     <Compile Include="sdo\Reporting\SubmissionReason.cs" />
     <Compile Include="sdo\School\AcademicYear.cs" />
     <Compile Include="sdo\School\AcademicYearRange.cs" />
+    <Compile Include="sdo\School\AUCodeSetsMediumOfInstructionType.cs" />
+    <Compile Include="sdo\School\AUCodeSetsReceivingLocationOfInstructionType.cs" />
     <Compile Include="sdo\School\AUCodeSetsResourceUsageContentTypeType.cs" />
     <Compile Include="sdo\School\AUSchoolFocusCodeType.cs" />
     <Compile Include="sdo\School\CampusSchoolLevelType.cs" />
     <Compile Include="sdo\School\End.cs" />
     <Compile Include="sdo\School\FederalElectorateType.cs" />
+    <Compile Include="sdo\School\LanguageOfInstruction.cs" />
+    <Compile Include="sdo\School\LocationOfInstruction.cs" />
+    <Compile Include="sdo\School\MediumOfInstruction.cs" />
     <Compile Include="sdo\School\PersonPicture.cs" />
     <Compile Include="sdo\School\Program.cs" />
     <Compile Include="sdo\School\ResourceReportColumn.cs" />
@@ -373,6 +379,7 @@
     <Compile Include="sdo\School\ResourceUsage.cs" />
     <Compile Include="sdo\School\ResourceUsageContentType.cs" />
     <Compile Include="sdo\School\SchoolCoEdStatusType.cs" />
+    <Compile Include="sdo\School\SchoolCourseInfoOverride.cs" />
     <Compile Include="sdo\School\SchoolDTD.cs" />
     <Compile Include="sdo\School\SchoolFocus.cs" />
     <Compile Include="sdo\School\SchoolFocusList.cs" />
@@ -385,6 +392,7 @@
     <Compile Include="sdo\School\SchoolPrograms.cs" />
     <Compile Include="sdo\School\SchoolSectorCodeType.cs" />
     <Compile Include="sdo\School\SchoolSystemType.cs" />
+    <Compile Include="sdo\School\SectionInfo.cs" />
     <Compile Include="sdo\School\SessionInfo.cs" />
     <Compile Include="sdo\School\Start.cs" />
     <Compile Include="sdo\School\SystemicStatusType.cs" />
@@ -614,6 +622,7 @@
     <Compile Include="sdo\Student\StudentSchoolEnrollment.cs" />
     <Compile Include="sdo\Student\StudentSDTN.cs" />
     <Compile Include="sdo\Student\StudentSDTNProgressLevelType.cs" />
+    <Compile Include="sdo\Student\StudentSectionEnrollment.cs" />
     <Compile Include="sdo\Student\StudentSnapshot.cs" />
     <Compile Include="sdo\Student\StudentSnapshotSex.cs" />
     <Compile Include="sdo\Student\StudentSnapshotSexCodeType.cs" />
