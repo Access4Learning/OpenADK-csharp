@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenADK-US-SDO", "us\OpenADK-US-SDO.csproj", "{B706E722-0A7F-4527-BBA7-963C08C7678D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenADK-NET-Core", "core\OpenADK-NET-Core.csproj", "{F50DBBCA-3AA9-4B8E-8B43-71F5DE0B7EB0}"
