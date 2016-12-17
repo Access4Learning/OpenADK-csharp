@@ -46,6 +46,27 @@ public class Period : SifElement
 		this.SetType( type );
 	}
 
+    /// <summary>
+    /// Constructor that accepts values for all mandatory fields
+    /// </summary>
+    ///<param name="periodIndex">Ordinal position of period within the day (1,2,3,etc)</param>
+    ///<param name="shortName">A ShortName</param>
+    ///<param name="longName">A LongName</param>
+	///<param name="startTime">A StartTime</param>
+    ///<param name="endTime">A EndTime</param>
+    ///<param name="type">What this period represents. Note that currently some programs represent registration, breaks and lunches as a "period" and some don't. This Type could differ from the lesson Type (see section C4) if this teacher is doing something in this period which differs from the majority of the school.</param>
+    ///
+    public Period(int? periodIndex, string shortName, string longName, DateTime? startTime, DateTime? endTime, PeriodType type)
+        : base(LearningDTD.PERIOD)
+    {
+        this.PeriodIndex = periodIndex;
+        this.ShortName = shortName;
+        this.LongName = longName;
+        this.StartTime = startTime;
+        this.EndTime = endTime;
+        this.SetType(type);
+    }
+
 	/// <summary>
 	/// Constructor used by the .Net Serialization formatter
 	/// </summary>
